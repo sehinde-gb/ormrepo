@@ -1,0 +1,70 @@
+
+$fira-sans: 'FiraSansSemiBold',"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+footer {
+  padding: 50px 0;
+  background-color: #003434;
+}
+
+.middle-logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.foot-links {
+  color: #F9F1DC;
+  font-family: $fira-sans;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.foot-links:hover {
+  color: #F9F1DC;
+  text-decoration: none;
+  border-bottom: 2px solid #F9F1DC;
+}
+
+p.copyright {
+  color: #F9F1DC;
+  font-family: $fira-sans;
+  font-size: 12px;
+  margin: 15px 0 0;
+
+}
+
+
+@media(max-width:767px) {
+  footer {
+    padding: 50px 0;
+    background-color: #003434;
+  }
+
+  .middle-logo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .foot-links {
+    color: #F9F1DC;
+    font-family: $fira-sans;
+    font-size: 14px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+  }
+
+  .foot-links:hover {
+    color: #F9F1DC;
+    text-decoration: none;
+    border-bottom: 2px solid #F9F1DC;
+  }
+
+  p.copyright {
+    color: #F9F1DC;
+    font-family: $fira-sans;
+    font-size: 12px;
+    margin: 15px 0 0;
+
+  }
+
+}

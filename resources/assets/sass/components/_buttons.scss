@@ -1,0 +1,288 @@
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #F9F1DC;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #808080 !important;
+  color: whitesmoke !important;
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus  {
+  background-color: #003434;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #bbbbbb !important;
+  color: white !important;
+}
+
+
+.btn-small,
+.btn-small:active,
+.btn-small:visited,
+.btn-small:focus {
+  background-color: #B8B8B8;
+  color: white;
+  border: 0;
+  outline: 0;
+  font-family: $lato;
+  font-size: 14px;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn-small:hover {
+  background-color: #107896;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  color: white;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  outline: 0;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+  margin-left: 135px;
+}
+
+.btn-danger:hover {
+  background-color: #d43f3a !important;
+  color: white !important;
+}
+
+.btn-add,
+.btn-add:active,
+.btn-add:visited,
+.btn-add:focus {
+  background-color: #717171;
+  color: #ffffff;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  width: 80px;
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-add:hover {
+  background-color: #f9f1dc !important;
+  color: #717171 !important;
+}
+
+.btn-tag  {
+  background-color: blue;
+  outline: 0;
+  border: 0;
+  color: white;
+  font-family: $lato;
+  font-size: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.btn-link {
+  margin-left: 250px;
+}
+
+.button-group {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-centre {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.banner {
+  padding: 100px 0;
+  color: #f8f8f8;
+  background: url(../images/banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.banner ul {
+  margin-bottom: 0;
+}
+
+.banner-social-buttons {
+  float: right;
+  margin-top: 0;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-minus {
+  padding-top: 15px;
+  color: white;
+}
+
+@media(max-width:1199px) {
+
+
+
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited,
+  .btn-primary:focus {
+    background-color: #F9F1DC;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+
+  .btn-secondary,
+  .btn-secondary:active,
+  .btn-secondary:visited,
+  .btn-secondary:focus {
+    background-color: #003434;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    background-color: #bbbbbb !important;
+    color: white !important;
+  }
+
+  .btn-danger,
+  .btn-danger:active,
+  .btn-danger:visited,
+  .btn-danger:focus {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    outline: 0;
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+    margin-left: 85px;
+  }
+
+  .btn-danger:hover {
+    background-color: #d43f3a !important;
+    color: white !important;
+  }
+
+  .btn-add,
+  .btn-add:active,
+  .btn-add:visited,
+  .btn-add:focus {
+    background-color: #717171;
+    color: #ffffff;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    height: 40px;
+    width: 180px;
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-add:hover {
+    background-color: #f9f1dc !important;
+    color: #717171 !important;
+  }
+
+  .btn-tag {
+    background-color: blue;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: $lato;
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+
+
+}
+
+

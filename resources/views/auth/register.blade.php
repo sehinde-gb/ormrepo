@@ -1,0 +1,79 @@
+@extends('layouts.app')
+
+@section('meta-title', 'Sign Up')
+
+@section('content')
+
+    <div class="form-page">
+        <div class="logo-container">
+            <div class="own-logo">
+                <img class="bordered-logo"
+                     src="/images/logo_small.png"
+                     alt="The ormrepo thoughtful logo">
+            </div><!-- /.own-logo -->
+        </div><!-- /.logo-container -->
+
+
+        <div class="sign-container">
+            <div class="register-fluid">
+                <div class="header">
+                    <h4 class="leader">Sign Up</h4>
+                </div><!-- /.header -->
+
+
+                <div class="row">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <div class="form-group form-group-lg">
+                            <label for="input1" class="control-label">Username</label>
+                            <input autofocus id="username" type="text" name="username" class="form-control" value="{{ old('username') }}">
+                        </div><!-- /.form-group form-group-lg -->
+
+
+                        <div class="form-group form-group-lg">
+                            <label for="input1" class="control-label">Name</label>
+                            <input autofocus id="name" type="text" name="name" class="form-control" value="{{ old('name') }}">
+                        </div><!-- /.form-group form-group-lg -->
+
+                        <div class="form-group form-group-lg">
+                            <label for="input1" class="control-label">E-Mail Address</label>
+                            <input autofocus id="email" type="email
+" name="email" class="form-control" value="{{ old('email') }}">
+                        </div><!-- /.form-group form-group-lg -->
+
+                        <div class="form-group form-group-lg">
+                            <label for="input1 password"  class="control-label">Password</label>
+                                <input id="password"
+                                       class="form-control"
+                                       type="password"
+                                       value="123"
+                                       name="password"
+                                       placeholder="password">
+
+                            <p><label><input id="methods" type="checkbox"> Show password</label></p>
+                        </div><!-- /.form-group form-group-lg -->
+
+                        <div class="form-group form-group-lg">
+                            <label for="input1 password_confirmation"  class="control-label">Confirm Password</label>
+                            <p>
+                                <input id="password_confirmation"
+                                       class="form-control"
+                                       type="password"
+                                       value="123"
+                                       name="password_confirmation"
+                                       placeholder="Confirm password">
+                            </p>
+                            <p><label><input id="methods" type="checkbox"> Show password</label></p>
+                        </div><!-- /.form-group form-group-lg -->
+
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-secondary">Register</button>
+                        </div><!-- /.button-group -->
+                    </form>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /.sign-container -->
+
+    </div><!-- /.auth-page -->
+
+@endsection

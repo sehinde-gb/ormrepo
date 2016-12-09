@@ -1,0 +1,347 @@
+/* Main page */
+.hero {
+  background-color: #003434;
+  background-size: cover;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-right: -25px;
+  margin-left: -30px;
+}
+
+.collection {
+  padding-bottom: 50px;
+}
+
+.button-blog {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns {
+  height: 40%;
+}
+
+/* for further column styling in the blog area see utility classes */
+
+.newsletter-container {
+  min-height: 500px;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-header {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../images/intro-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-left: 280px;
+}
+
+/* Portfolio Section */
+
+.content-section-a {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.content-section-b {
+  background-color: white;
+  padding: 50px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+
+.col-lg-6 {
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+
+.content-section-c {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.tile-wrapper {
+  height: auto;
+  width: auto;
+  border: 1px solid blue;
+}
+
+input[type=text] {
+  background-color: #f8f8f8;
+  color: black;
+  width: 475px;
+  height: 40px;
+}
+
+#box {
+  background-color: #003434;
+  color: white;
+  width: 475px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* End of main page */
+
+/* Show */
+
+.main-container {
+  min-height: 1000px;
+  width: 100%;
+  background-color: #003434;
+  //overflow: overlay;
+}
+
+.heading {
+  min-height: 200px;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.article-container {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.left-container {
+  padding: 50px;
+  min-height: 800px;
+  min-width: 50%;
+}
+
+.right-container {
+  padding-top: 50px;
+  padding-left: 100px;
+  min-height: 800px;
+  min-width: 30%;
+  display: flex;
+  flex: 0 0 400px;
+}
+
+textarea {
+  min-height: 100px;
+  min-width: 50%;
+  margin-bottom: 5px;
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+.category {
+  background-color: none;
+  border-radius: none;
+  color: none;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 12px;
+  height: 24px;
+  line-height: 16px;
+}
+
+
+.previous {
+  padding-right: 200px;
+}
+
+.next {
+  padding-left: 200px;
+}
+
+.fa-4x {
+  font-size: 38px;
+  color: #f9f1dc;
+}
+
+
+.fa-long-arrow-left {
+  color: #f8f8f8;
+}
+
+.fa-long-arrow-right {
+  color: #f8f8f8;
+}
+
+.fa-calendar {
+  padding-top: 5px;
+}
+
+.social-buttons {
+  margin-top: 25px;
+}
+
+/* Edit */
+form {
+  width: 520px;
+  }
+
+
+
+
+@media(max-width:767px) {
+
+  .hero {
+    background-color: #003434;
+    background-size: cover;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+
+  .columns {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .column {
+    height: 100px;
+    width: 100% !important;
+  }
+
+  .columns.is-gapless {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .newsletter-container {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  #box {
+    background-color: #003434;
+    color: white;
+    width: 50%;
+    height: 40px;
+  }
+
+
+  input[type=text] {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #f8f8f8;
+    color: black;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .banner ul {
+    margin-bottom: 40px;
+  }
+
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-divider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .list-inline {
+    padding-top: 20px;
+  }
+
+  /* End of main page */
+
+  /* Show page */
+
+  .main-container {
+    background-color:  #003434;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .left-container {
+    min-height: 700px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  /* Wend of show page */
+
+
+}
+

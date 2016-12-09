@@ -1,0 +1,395 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-family: "Lato Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2 a {
+    font-family: "Lato Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+h3 {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Lato Bold", "Helvetica Neue", Arial,sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #f9f1dc;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 1200px;
+}
+
+h5 {
+    color: #4d5656;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+
+h6 {
+    font-family: "Lato Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #003434;
+    text-align: center;
+    padding-left: 40px;
+}
+
+h7 {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #003434;
+    margin: 0;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.topnav {
+    font-size: 14px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.search-box {
+    margin-top: 14px;
+}
+
+.hero {
+    /*
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    */
+    background-color: #003434;
+    background-size: cover;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+.tile-wrapper {
+    height: auto;
+    width: auto;
+    border: 1px solid blue;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+
+
+.column {
+    height: 300px;
+}
+
+.fa-2x {
+    color: #fdfdfd;
+    padding-left: 20px;
+}
+
+.is-beige {
+    background-color: #f9f1dc;
+}
+
+.is-grey {
+    background-color: #bbbbbb;
+
+}
+
+.btn-primary {
+    background-color: #f9f1dc;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: #003434;
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 88px;
+    width: 242px;
+    cursor: pointer;
+    margin-left: 320px;
+    margin-bottom: 50px;
+}
+
+
+input[type=text] {
+    background-color: #003434;
+    color: white;
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+.btn-add {
+    height: 40px;
+    width: 80px;
+    margin-right: 50px;
+}
+
+
+
+.is-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-flex-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+.column h1 {
+    padding-left: 30px;
+}
+
+
+
+.is-light-grey {
+    background-color: #dbdbdb;
+}
+
+.is-dark-grey {
+    background-color: #606060;
+}
+
+p {
+    color: white;
+}
+
+.newsletter-container {
+    height: 500px;
+    width: 100%;
+
+}
+
+.is-typ-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-left: 280px;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.col-lg-6 {
+    padding-left: 0;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../images/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+.is-aligned {
+    vertical-align: baseline;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

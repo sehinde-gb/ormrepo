@@ -1,0 +1,10 @@
+/node_modules
+ /public/storage
+ /vendor
+ /.idea
+ .env
+ .idea
+.env.example
+.gitattributes
+.gitignore
+yarn.lock
