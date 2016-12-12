@@ -14,6 +14,8 @@
 
     Auth::routes();
 
+    Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
+
     Route::get('/search/{query}', function($query) {
        return App\Blog::search($query)->get();
     });
@@ -58,7 +60,7 @@
 
     });
 
-    Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
+
 
     Route::get('/rss', 'RssController@generate');
 

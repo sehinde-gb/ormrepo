@@ -672,7 +672,6 @@ label {
 }
 
 .nav-search {
-  padding-left: 200px;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;

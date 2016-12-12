@@ -18,6 +18,7 @@
     {
         /**
          * Display a listing of the resource.
+         * @param Request $request
          * @return \Illuminate\Http\Response
          * @throws BlogNotFoundException
          */
@@ -52,24 +53,22 @@
         }
 
 
-
         /**
          * Display the specified resource.
          *
-         * @param $id
+         * @param Blog $blog
          * @return Response
          * @throws BlogNotFoundException
+         * @internal param $id
          * @internal param int $post
          */
 
-        public function show($id)
+        public function show(Blog $blog)
         {
 
             try {
 
-                $index = 'Show a Post';
-
-                $blog = Blog::findOrFail($id);
+                //$blog = Blog::findOrFail($id);
 
                 $previous = Blog::where('id', '<=', $blog->id)->first();
                 //dd($previous);
@@ -107,6 +106,8 @@
             try {
 
                 $blog = Blog::findBySlug($slug);
+
+                //dd($blog);
 
             } catch (\Exception $e) {
 
