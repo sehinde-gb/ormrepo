@@ -8,3 +8,4 @@
 .gitattributes
 .gitignore
 yarn.lock
+.idea/workspace.xml

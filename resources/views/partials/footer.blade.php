@@ -4,7 +4,8 @@
     <div class="container">
         <div class="middle-logo">
             <img class="logo"
-                 src="/images/logo_medium.png"
+                 srcset="/images/logo_medium.png 1080w,
+                        /images/logo_small.png 760w"
                  alt="The ormrepo thoughtful logo">
         </div>
         <!-- /.middle-logo -->
