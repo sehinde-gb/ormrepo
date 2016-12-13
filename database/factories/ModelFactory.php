@@ -34,3 +34,12 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
             'user_id' => factory('App\User')->create()->id,
         ];
     });
+
+
+    $factory->define(App\Category::class, function (Faker\Generator $faker) {
+
+        return [
+            'name' => $faker->unique()->word,
+            'slug' => $faker->unique()->word,
+        ];
+    });

@@ -20,6 +20,18 @@
        return App\Blog::search($query)->get();
     });
 
+    Route::get('categorys', function() {
+        $categorys = App\Category::orderBy('name')->get()->groupBy(function ($category) {
+            return substr($category->name, 0, 1);
+
+        });
+
+        //return $categorys;
+
+        return view('categorys.index', compact('categorys'));
+
+    });
+
 
     Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
 

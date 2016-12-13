@@ -45,14 +45,14 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-three">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                             @elseif($blog->id == 2)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                                 <div class="column is-one-quarter is--beige is-five is-hidden-mobile">
@@ -62,14 +62,14 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-six">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                             @elseif($blog->id == 4)
                                 <div class="column is-one-quarter is-grey is-flex is-seven">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                                 <div class="column is-one-quarter is--beige is-flex-bottom is-eight">
@@ -79,14 +79,14 @@
                                 <div class="column is-one-quarter is-grey is-flex">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                             @elseif($blog->id == 6)
                                 <div class="column is-one-quarter is-dark-grey is-flex">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
 
