@@ -38,7 +38,7 @@
          *
          * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
          */
-        public function categories()
+        public function categorys()
         {
             return $this->belongsToMany('App\Category')->withTimestamps();
         }

@@ -6,13 +6,16 @@
 
     class Category extends Model
     {
+        protected $table = 'categorys';
+
         /**
          * Fillable fields for a Category.
          *
          * @var array
          */
         protected $fillable = [
-            'name'
+            'name',
+            'slug'
         ];
 
 

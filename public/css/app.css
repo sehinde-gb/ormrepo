@@ -980,7 +980,7 @@ p.copyright {
 }
 
 .register-fluid {
-  min-height: 850px;
+  min-height: 900px;
   overflow-y: hidden;
   /* don't show content that exceeds my height */
   padding-top: 50px;
@@ -993,7 +993,7 @@ p.copyright {
 }
 
 .login-fluid {
-  min-height: 500px;
+  min-height: 600px;
   overflow-y: hidden;
   /* don't show content that exceeds my height */
   padding-top: 50px;

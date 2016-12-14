@@ -24,6 +24,7 @@
                 <div class="row">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        @include ('partials.errors')
                         <div class="form-group form-group-lg">
                             <label for="input1" class="control-label">Username</label>
                             <input autofocus id="username" type="text" name="username" class="form-control" value="{{ old('username') }}">
