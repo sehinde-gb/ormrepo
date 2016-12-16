@@ -18,7 +18,7 @@
 <div class="section">
     <div class="container">
         <ul class="has-columns">
-            @foreach($categorys as $letter => $categoryCollection)
+            @foreach($categories as $letter => $categoryCollection)
                 <div class="letter-group">
                     <h3 class="title is-1 letter">
                         {{ $letter }}
@@ -27,7 +27,7 @@
                     <ul>
                         @foreach($categoryCollection as $category)
                             <li class="title is-5">
-                                <a href="/categorys/{{ $category->name }}">{{ $category->name }}</a>
+                                <a href="/categories/{{ $category->name }}">{{ $category->name }}</a>
                             </li><!-- /.title is-5 -->
                         @endforeach
                     </ul>

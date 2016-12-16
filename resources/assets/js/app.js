@@ -1,10 +1,14 @@
+import autosize from 'autosize';
+
+autosize(document.querySelectorAll('textarea'));
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+//require('./bootstrap');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,11 +19,11 @@ require('./bootstrap');
 
 //Vue.component('Example', require('./components/Example.vue'));
 //Vue.component('modal', require('./components/Modal.vue'));
-Vue.component('Example', require('./components/Example.vue'));
+//Vue.component('Example', require('./components/Example.vue'));
 
 
-const app = new Vue({
-    el: '#app'
-});
+//const app = new Vue({
+  //  el: '#app'
+//});
 
 

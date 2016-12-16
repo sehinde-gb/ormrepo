@@ -12,7 +12,9 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+    use Carbon\Carbon;
+
+    $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
@@ -31,7 +33,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
             'excerpt' => $faker->paragraph,
             'body' => $faker->sentence,
             'slug' => $faker->name,
-            'user_id' => factory('App\User')->create()->id,
+            'user_id' => factory('App\User')->create()->id
+
         ];
     });
 
@@ -41,5 +44,16 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         return [
             'name' => $faker->unique()->word,
             'slug' => $faker->unique()->word,
+        ];
+    });
+
+    $factory->define(App\Comment::class, function (Faker\Generator $faker) {
+
+        return [
+            'user_id' => factory('App\User')->create()->id,
+            'blog_id' => factory('App\Blog')->create()->id,
+            'parent_id' => '2',
+            'body' => $faker->paragraph,
+
         ];
     });

@@ -8,7 +8,7 @@
     use Carbon\Carbon;
     use Laravel\Scout\Searchable;
     use App\Comment;
-    use Illuminate\Support\Facades\Auth;
+
 
     class Blog extends Model
     {
@@ -34,11 +34,11 @@
         }
 
         /**
-         * Get the categories associated with a given post
+         * Get the categories associated with a given blog
          *
          * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
          */
-        public function categorys()
+        public function categories()
         {
             return $this->belongsToMany('App\Category')->withTimestamps();
         }
@@ -102,6 +102,7 @@
          * Add a comment to the blog.
          *
          * @param array $attributes
+         * @return Model
          */
         public function addComment($attributes)
         {
@@ -140,7 +141,18 @@
          */
         public function scopeTrending($query, $take = 3)
         {
-            return $query->orderBy('read', 'desc')->take($take)->get();
+            return $query->orderBy('reads', 'desc')->take($take)->get();
+        }
+
+
+        /**
+         * Returns the latest published blog post.
+         *
+         * @param $query
+         */
+        public function scopeLatest($query)
+        {
+            return $query->where('published_at', '<=', Carbon::now());
         }
 
         /**
@@ -192,15 +204,7 @@
             return Carbon::parse($date)->format('d-m-Y');
         }
 
-        /**
-         * Returns the latest published blog post.
-         *
-         * @param $query
-         */
-        public function scopeLatest($query)
-        {
-            return $query->where('published_at', '<=', Carbon::now());
-        }
+
 
 
     }

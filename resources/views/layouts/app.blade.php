@@ -72,6 +72,8 @@
 </script>
 
 <script type="application/javascript" src="/js/bootstrap.js"></script>
+<script type="application/javascript" src="/js/app.js"></script>
+
 <script src="/js/password.js"></script>
 
 <script>

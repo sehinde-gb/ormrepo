@@ -21,23 +21,9 @@
     });
 
     # Tags
-    Route::get('categorys/{categorys}', 'CategorysController@show');
-    Route::get('categorys', 'CategorysController@index');
-    /*
-    Route::get('categorys', function() {
+    Route::get('categories/{categories}', 'CategorysController@show');
+    Route::get('categories', 'CategorysController@index');
 
-
-        $categorys = App\Category::orderBy('name')->get()->groupBy(function ($category) {
-            return substr($category->name, 0, 1);
-
-        });
-
-        //return $categorys;
-
-        return view('categorys.index', compact('categorys'));
-
-    });
-    */
 
     Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
 

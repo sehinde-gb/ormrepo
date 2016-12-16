@@ -4,15 +4,17 @@ namespace App\Listeners;
 
 use App\Events\BlogWasCreated;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\BlogPublished;
 
-class SendPublishedNotification
+class SendPublishedNotification implements ShouldQueue
 {
+    use SerializesModels, InteractsWithQueue;
+
     /**
      * Create the event listener.
      *
-     * @return void
      */
     public function __construct()
     {

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategorysTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCategorysTable extends Migration
      */
     public function up()
     {
-        Schema::create('categorys', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('slug')->unique()->nullable();
@@ -24,7 +24,7 @@ class CreateCategorysTable extends Migration
             $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade')->unsigned();
 
             $table->integer('category_id')->unsigned()->index();
-            $table->foreign('category_id')->references('id')->on('categorys')->onDelete('cascade')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->unsigned();
             $table->timestamps();
         });
     }
@@ -37,7 +37,7 @@ class CreateCategorysTable extends Migration
     public function down()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        Schema::drop('categorys');
+        Schema::drop('categories');
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

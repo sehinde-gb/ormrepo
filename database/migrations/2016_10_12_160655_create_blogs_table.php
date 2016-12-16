@@ -20,6 +20,8 @@
                 $table->string('excerpt');
                 $table->text('body');
                 $table->string('slug')->unique()->nullable();
+                $table->integer('reads')->default(0);
+                $table->integer('latest')->default(0);
                 $table->timestamp('published_at')->nullable();
                 $table->timestamps();
 

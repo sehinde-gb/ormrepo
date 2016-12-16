@@ -30,12 +30,7 @@ class BlogsController extends Controller
      */
     public function __construct(User $user)
     {
-
-        //$this->user = $user;
-
-        //parent::__construct();
-
-        $this->middleware('auth');
+         $this->middleware('auth');
     }
 
 
@@ -104,9 +99,9 @@ class BlogsController extends Controller
      *
      * @param BlogRequest|Request $request
      * @return Response
-     * @internal param  $blog
+     *
      */
-    public function store(BlogRequest $request, Blog $blog)
+    public function store(BlogRequest $request)
     {
         $this->createBlog($request);
 

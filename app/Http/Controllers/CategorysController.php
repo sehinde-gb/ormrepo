@@ -14,39 +14,39 @@ class CategorysController extends Controller
      */
     public function index()
     {
-        $categorys = Category::orderBy('name')->get()->groupBy(function ($category) {
+        $categories = Category::orderBy('name')->get()->groupBy(function ($category) {
             return substr($category->name, 0, 1);
 
         });
 
         //return $categorys;
 
-        return view('categorys.index', compact('categorys'));
+        return view('categories.index', compact('categories'));
 
     }
 
     /**
-     * Show the article form to fetch the tags.
+     * Show the article form to fetch the categorys.
      *
      * @param Category $category
      * @return \Illuminate\View\View
-     * @throws TagNotFoundException
+     * @throws CategoryNotFoundException
      */
     public function show($category)
     {
         try
-        {
-            //dd($category);
-            $blogs = $category->blogs;
-            //dd($blogs);
+            {
 
-            $index = 'Search Categorys';
+                $blogs = $category->blogs;
 
-        } catch (CategoryNotFoundException $e) {
 
-            throw new CategoryNotFoundException($e->getMessage());
-        }
-        return view('categorys.show', compact('blogs', 'index'));
+                $index = 'Search Categorys';
+
+            } catch (CategoryNotFoundException $e) {
+
+                throw new CategoryNotFoundException($e->getMessage());
+            }
+        return view('categories.show', compact('blogs', 'index'));
     }
 
 }

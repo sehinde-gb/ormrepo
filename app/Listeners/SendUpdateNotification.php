@@ -7,12 +7,13 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\BlogUpdated;
 
-class SendUpdateNotification
+class SendUpdateNotification implements ShouldQueue
 {
+    use SerializesModels, InteractsWithQueue;
+
     /**
      * Create the event listener.
      *
-     * @return void
      */
     public function __construct()
     {
