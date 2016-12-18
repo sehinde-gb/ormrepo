@@ -36,7 +36,6 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   color: $primary-color;
-  //text-align: center;
   padding-bottom: 20px;
 }
 
@@ -100,6 +99,11 @@ h6 a:hover {
   color: #003434 !important;
   text-decoration: none;
 }
+
+//a:hover {
+ // border-bottom: 4px solid #f9f1dc !important;
+ // text-decoration: none !important;
+//}
 
 p {
   font-family: $lato;
