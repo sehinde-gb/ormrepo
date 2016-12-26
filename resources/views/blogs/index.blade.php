@@ -14,31 +14,27 @@
                                  srcset="/images/slider@1,5x.png 980w,
                                         /images/slider@1x.png 480w"
                                  alt="The ormrepo thoughtful logo">
-                            <div class="button-blog">
-                                <button class="btn-primary" type="button">Full Blog</button>
-                            </div><!-- /.button-blog -->
+
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
 
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
-                        <div class="column is-one-quarter box-is-beige is-flex-bottom has-text-centered">
-                            <h6>Sehinde Raji</h6>
+                        <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
+                            <h6 class="column-name">Sehinde Raji</h6>
                         </div>
 
                         <div class="column is-one-quarter is-grey is-flex is-two has-text-centered">
                             <div class="arrow">
-
                                 <span><i class="fa fa-minus fa-1x" aria-hidden="true"></i>
-
                                 <a href="https://twitter.com/ormrepo" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-
                                 <i class="fa fa-minus fa-1x" aria-hidden="true"></i></span>
                                 <h6 class="social--text">Follow @ormrepo
                                     for more information</h6>
                             </div><!-- /.arrow -->
-                        </div><!-- /.column is-one-quarter is-grey is-flex is-two has-text-centered-->
+                        </div><!-- /.column -->
+
                         @foreach ($blogs as $blog)
                             @if($blog->id == 1)
                                 <div class="column is-one-quarter is-light-grey is-flex is-three">
@@ -47,6 +43,7 @@
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
+
                             @elseif($blog->id == 2)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
                                     <div class="arrow">
@@ -54,35 +51,45 @@
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
-                                <div class="column is-one-quarter is--beige is-five is-hidden-mobile">
+
+
+                            @elseif($blog->id == 3)
+                                <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile">
                                     <h6 class="box--line">Web Developer</h6>
                                 </div>
-                            @elseif($blog->id == 3)
+
                                 <div class="column is-one-quarter is-light-grey is-flex is-six">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
+
+
                             @elseif($blog->id == 4)
-                                <div class="column is-one-quarter is-grey is-flex is-seven">
+                                <div class="column is-one-quarter is-grey is-flex is-seven has-text-centered">
                                     <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <span><i class="fa fa-minus fa-1x" aria-hidden="true"></i>
+                                        <a href="https://twitter.com/ormrepo" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                                        <i class="fa fa-minus fa-1x" aria-hidden="true"></i></span>
+                                        <h6 class="social--text">Follow @ormrepo
+                                            for more information</h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
-                                <div class="column is-one-quarter is--beige is-flex-bottom is-eight">
+
+
+                                <div class="column is-one-quarter box-is-beige is-flex-bottom is-eight">
                                     <h6>Lorem Ipsum</h6>
                                 </div>
                             @elseif($blog->id == 5)
-                                <div class="column is-one-quarter is-grey is-flex">
+                                <div class="column is-one-quarter is-grey is-flex is-nine">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
                             @elseif($blog->id == 6)
-                                <div class="column is-one-quarter is-dark-grey is-flex">
+                                <div class="column is-one-quarter is-dark-grey is-flex is-ten">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -90,17 +97,19 @@
                                 </div><!-- /.column -->
 
                             @elseif($blog->id == 7)
-                                <div class="column is-one-quarter is-light-grey is-flex">
+                                <div class="column is-one-quarter is-light-grey is-flex is-eleven">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column -->
-                                <div class="column is-one-quarter is--beige is-hidden-mobile">
-                                    <h6 class="box-line">Sed ut perspiciatis unde omnis iste natus</h6>
+
+                                <div class="column is-one-quarter box-is-beige is-hidden-mobile">
+                                    <h6 class="box--underline">Sed ut perspiciatis unde omnis iste natus</h6>
                                 </div>
 
                             @endif
+
                         @endforeach
                     </div><!-- /.col-lg-12 -->
                 </div><!-- /.row -->

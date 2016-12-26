@@ -96,14 +96,27 @@ h6 a {
 }
 
 h6 a:hover {
-  color: #003434 !important;
+  color: beige !important;
   text-decoration: none;
 }
 
-//a:hover {
- // border-bottom: 4px solid #f9f1dc !important;
- // text-decoration: none !important;
-//}
+
+a:link {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #f9f1dc;
+  }
+
+a:active {
+  color: whitesmoke;
+}
+
+a:focus {
+  color: whitesmoke;
+}
+
 
 p {
   font-family: $lato;
@@ -199,6 +212,18 @@ label {
   color: $black-color;
 }
 
+.column-name {
+  font-family: $lato-bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-weight: 700;
+  line-height: 33px;
+  position: relative;
+  left: 40px;
+}
+
 
 
 .section--title {
@@ -249,7 +274,19 @@ label {
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
-  padding-left: 40px;
+  position: relative;
+  bottom: 140px;
+  right: 20px;
+}
+
+.box--underline {
+  font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin: 0;
 
 }
 

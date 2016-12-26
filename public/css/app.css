@@ -85,8 +85,24 @@ h6 a {
 }
 
 h6 a:hover {
-  color: #003434 !important;
+  color: beige !important;
   text-decoration: none;
+}
+
+a:link {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #f9f1dc;
+}
+
+a:active {
+  color: whitesmoke;
+}
+
+a:focus {
+  color: whitesmoke;
 }
 
 p {
@@ -182,6 +198,18 @@ label {
   color: black;
 }
 
+.column-name {
+  font-family: "Lato Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #003434;
+  font-weight: 700;
+  line-height: 33px;
+  position: relative;
+  left: 40px;
+}
+
 .section--title {
   font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
@@ -230,7 +258,19 @@ label {
   text-transform: uppercase;
   color: #003434;
   margin: 0;
-  padding-left: 40px;
+  position: relative;
+  bottom: 140px;
+  right: 20px;
+}
+
+.box--underline {
+  font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #003434;
+  margin: 0;
 }
 
 .tag--centre {
@@ -1224,7 +1264,7 @@ label {
 }
 
 .container {
-  width: 1000px;
+  width: 1200px;
   margin: auto;
   padding-bottom: 100px;
 }
@@ -1256,7 +1296,7 @@ label {
 }
 
 .columns {
-  height: 40%;
+  min-height: 900px;
 }
 
 /* for further column styling in the blog area see utility classes */
