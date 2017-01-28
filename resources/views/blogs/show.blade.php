@@ -32,23 +32,17 @@
 
                     @else
                         <p>No historical comments today</p>
-                        <h3 class="is--both-sides ">Leave a Reply</h3>
+
                         @include('blogs.comments.form')
 
                     @endif
 
                     <div class="social-buttons is--margin-top-50">
-                        <!-- AddToAny BEGIN -->
-                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                            <a class="a2a_button_facebook"></a>
-                            <a class="a2a_button_twitter"></a>
-                            <a class="a2a_button_google_plus"></a>
-                            <a class="a2a_button_pinterest"></a>
-                            <a class="a2a_button_linkedin"></a>
-                            <a class="a2a_button_reddit"></a>
-                        </div>
-                        <script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <!-- AddToAny END -->
+
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-575c2d11e407df7a"></script>
+
+
                     </div><!-- /.social-buttons -->
 
 

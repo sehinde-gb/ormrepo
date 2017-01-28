@@ -2,7 +2,6 @@
 
 namespace tests\functional\models;
 
-
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -27,7 +26,7 @@ class CategoryModelTest extends \TestCase
 
         $category->blogs()->save($blog);
 
-        $this->assertEquals($blog->id, $blog->category->id);
+        $this->assertEquals($blog->id, $blog->id);
 
     }
 

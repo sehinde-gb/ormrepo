@@ -43,6 +43,10 @@
                 <p class="copyright text-muted small"> &copy; Ormrepo <?php echo date("Y"); ?>.  All Rights Reserved. Hosted on Laravel Forge and Digital Ocean.</p>
             </div>
         </div>
+
+
+        </div>
+        <!-- /.row -->
     </div>
 </footer>
 

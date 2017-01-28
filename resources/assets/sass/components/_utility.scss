@@ -86,8 +86,17 @@
   color: black;
 }
 
-.is--padded-top10 {
+.is--padded-top-10 {
   padding-top: 10px;
+}
+
+.is--padded-top-50 {
+  padding-top: 50px;
+}
+
+.is--padded-left-40 {
+  padding-left: 40px;
+  padding-top: 5px;
 }
 
 .is--margin-top-25 {
@@ -98,6 +107,13 @@
   margin-top: 50px;
 }
 
+.is--padding-bottom-20 {
+  padding-bottom: 20px;
+}
+.is--lorem-padding {
+  padding-left: 22px;
+  padding-bottom: 20px;
+}
 
 @media(max-width:767px) {
 

@@ -17,7 +17,7 @@ class ExampleTest extends TestCase
 
 
 
-        $this->seePageIs('http:\\ormrepo.dev');
+        $this->seePageIs('http://localhost');
 
     }
 }

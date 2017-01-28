@@ -56,7 +56,7 @@ class AdminBlogsControllerTests extends \TestCase
 
 
     /** @test */
-    public function it_sends_a_get_request_to_the_index_method()
+    public function it_calls_the_index_method()
     {
         $blog = factory(Blog::class, 1)->create();
 
@@ -77,7 +77,7 @@ class AdminBlogsControllerTests extends \TestCase
 
 
     /** @test */
-    public function it_fails_to_send_get_request_to_the_index_method()
+    public function it_fails_to_call_the_index_method()
     {
         $blog = factory(Blog::class, 1)->create();
 
@@ -100,7 +100,7 @@ class AdminBlogsControllerTests extends \TestCase
 
 
     /** @test */
-    public function it_sends_a_get_request_to_the_show_method()
+    public function it_calls_the_show_method()
     {
 
         $user = factory(User::class, 1)->create();
@@ -131,6 +131,35 @@ class AdminBlogsControllerTests extends \TestCase
     }
 
 
+    /** @test */
+    public function it_calls_the_update_method()
+    {
+        $user = factory(User::class)->create();
+
+        $data = [
+            'title' => 'This is Lorem',
+            'excerpt' => 'This is Lorem Lepley',
+            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
+
+        ];
+
+        $response = $this->actingAs($user)
+            ->call('POST','admin/blogs', $data);
+
+        $this->assertEquals(302, $response->status());
+
+
+    }
+
+    /** @test */
+    public function it_calls_the_delete_method()
+    {
+        $user = factory(User::class)->create();
+
+        $response = $this->actingAs($user)
+            ->call('DELETE','admin/blogs', ['id' => 1]);
+        $this->assertEquals(405, $response->status());
+    }
 
 
 }

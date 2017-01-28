@@ -43,9 +43,9 @@ h2 {
 h3 {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 23px;
-  color: #f9f1dc;
+  font-size: 20px;
+  line-height: 34px;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +54,8 @@ h4 {
   font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  line-height: 44px;
+  text-transform: capitalize;
   color: black;
 }
 
@@ -141,6 +143,7 @@ p {
   font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  line-height: 41px;
   color: black;
 }
 
@@ -159,6 +162,7 @@ p {
   font-size: 2em;
   font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
+  line-height: 47px;
 }
 
 .paged-links {
@@ -232,7 +236,7 @@ label {
   text-transform: uppercase;
   color: #f9f1dc;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .lorem--text {
@@ -242,7 +246,6 @@ label {
   font-weight: 400;
   line-height: 30px;
   color: #606060;
-  padding-bottom: 70px;
   border: 0;
 }
 
@@ -267,6 +270,15 @@ label {
   position: relative;
   bottom: 140px;
   right: 20px;
+}
+
+.lower--box-text {
+  font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #003434;
 }
 
 .box--underline {
@@ -976,12 +988,30 @@ label {
   padding-top: 10px;
 }
 
+.is--padded-top-50 {
+  padding-top: 50px;
+}
+
+.is--padded-left-40 {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
 .is--margin-top-25 {
   margin-top: 25px;
 }
 
 .is--margin-top-50 {
   margin-top: 50px;
+}
+
+.is--padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.is--lorem-padding {
+  padding-left: 22px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1136,7 +1166,7 @@ p.copyright {
 .form-group {
   width: 100%;
   padding-left: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -1300,12 +1330,30 @@ label {
   padding-top: 10px;
 }
 
+.is--padded-top-50 {
+  padding-top: 50px;
+}
+
+.is--padded-left-40 {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
 .is--margin-top-25 {
   margin-top: 25px;
 }
 
 .is--margin-top-50 {
   margin-top: 50px;
+}
+
+.is--padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.is--lorem-padding {
+  padding-left: 22px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1377,7 +1425,7 @@ label {
 }
 
 .columns {
-  min-height: 900px;
+  height: 750px;
 }
 
 /* for further column styling in the blog area see utility classes */
@@ -1413,7 +1461,7 @@ label {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-left: 280px;
+  margin-left: 400px;
 }
 
 /* Portfolio Section */

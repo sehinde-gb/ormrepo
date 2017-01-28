@@ -14,6 +14,7 @@
                                  srcset="/images/slider@1,5x.png 980w,
                                         /images/slider@1x.png 480w"
                                  alt="The ormrepo thoughtful logo">
+
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
@@ -22,7 +23,7 @@
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
                             <h6 class="column-name">Sehinde Raji</h6>
-                        </div>
+                        </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-one-->
 
                         <div class="column is-one-quarter is-grey is-flex is-two has-text-centered">
                             <div class="arrow">
@@ -32,7 +33,7 @@
                                 <h6 class="social--text">Follow @ormrepo
                                     for more information</h6>
                             </div><!-- /.arrow -->
-                        </div><!-- /.column -->
+                        </div><!-- /.column is-one-quarter is-grey is-flex is-two has-text-centered-->
 
                         @foreach ($blogs as $blog)
                             @if($blog->id == 1)
@@ -41,7 +42,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-three-->
 
                             @elseif($blog->id == 2)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
@@ -49,71 +50,70 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
-
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
+                                <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile">
+                                    <h6 class="box--line is--padded-top-50">Web Developer</h6>
+                                </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
 
                             @elseif($blog->id == 3)
-                                <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile">
-                                    <h6 class="box--line">Web Developer</h6>
-                                </div>
 
                                 <div class="column is-one-quarter is-light-grey is-flex is-six">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-six-->
 
-
-                            @elseif($blog->id == 4)
                                 <div class="column is-one-quarter is-grey is-flex is-seven has-text-centered">
                                     <div class="arrow">
                                         <span><i class="fa fa-minus fa-1x" aria-hidden="true"></i>
                                         <a href="https://twitter.com/ormrepo" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
                                         <i class="fa fa-minus fa-1x" aria-hidden="true"></i></span>
-                                            <h6 class="social--text">Follow @ormrepo
-                                                for more information</h6>
+                                        <h6 class="social--text">Follow @ormrepo
+                                            for more information</h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
-
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-seven has-text-centered -->
 
                                 <div class="column is-one-quarter box-is-beige is-flex-bottom is-eight">
-                                    <h6>Lorem Ipsum</h6>
-                                </div>
-                            @elseif($blog->id == 5)
-                                <div class="column is-one-quarter is-grey is-flex is-nine">
+                                    <h6 class="column-name">Sehinde Raji</h6>
+                                </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-eight -->
+
+
+                            @elseif($blog->id == 4)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-nine">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
+
+                            @elseif($blog->id == 5)
+                                <div class="column is-one-quarter is-grey is-flex is-ten">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
+
                             @elseif($blog->id == 6)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-ten">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column -->
-
-                            @elseif($blog->id == 7)
-                                <div class="column is-one-quarter is-light-grey is-flex is-eleven">
-                                    <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-ten-->
 
                                 <div class="column is-one-quarter box-is-beige is-hidden-mobile">
-                                    <h6 class="box--underline">Sed ut perspiciatis unde omnis iste natus</h6>
-                                </div>
+                                    <h6 class="lower--box-text is--padded-left-40">Full Stack Developer</h6>
+                                </div><!-- /.column is-one-quarter box-is-beige is-hidden-mobile-->
 
                             @endif
 
                         @endforeach
-                    </div><!-- /.col-lg-12 -->
+                    </div><!-- /.columns is-gapless is-multiline animated rotateInDownLeft -->
                 </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.hero -->
+            </div><!-- /.container -->
+        </div><!-- /.hero -->
 
         <div class="newsletter-container animated zoomIn">
             <div class="subscribe">
@@ -128,6 +128,7 @@
         </div><!-- /.newsletter-container -->
 
 
+
         <!-- Header -->
         <a name="about"></a>
         <div class="intro-header">
@@ -136,7 +137,7 @@
                     <div class="col-lg-12">
                         <div class="intro-message">
                             <h1>Sehinde Raji</h1>
-                            <h3>PHP (Laravel) Web Developer.</h3>
+                            <h3 class="is--padded-top10">PHP (Laravel) Web Developer.</h3>
                             <hr class="intro-divider">
                             <ul class="list-inline intro-social-buttons">
                                 <li>
@@ -166,7 +167,7 @@
                         <p class="section--body is--padding-bottom">This is one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="../images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
+                        <img class="img-responsive" src="images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
                     </div><!-- /.col-lg-5 col-lg-offset-2 col-sm-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -182,7 +183,7 @@
                         <p class="section--body is--padding-bottom">This is a Home rental app that showcases uploaded home photos so that you can showcase your home to get the best quote for your lease! This has recently been updated with new screens using FlexBox.</p>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="../images/maccasa.jpg" alt="Ipad containing home rental screen.">
+                        <img class="img-responsive" src="images/maccasa.jpg" alt="Ipad containing home rental screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -199,8 +200,8 @@
                         <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This has been recently updated with new screens developed using FlexBox.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="../images/elcoche.png" alt="Ipad containing car blog app screen.">
-                    </div><!--col-lg-5 col-lg-offset-2 col-sm-6
+                        <img class="img-responsive" src="images/elcoche.png" alt="Ipad containing car blog app screen.">
+                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /.intro-header -->
@@ -215,11 +216,11 @@
                         <p class="section--body is--padding-bottom">This is an E-commerce gaming web app where you can test purchase video games, view activities and participate in the Station blog.</p>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="../images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
-                    </div>
+                        <img class="img-responsive" src="images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
+                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /.content-section-b -->
     </div><!-- /.content-section-c -->
-</div><!-- /.hero -->
+
 @stop

@@ -33,6 +33,7 @@
             'excerpt' => $faker->paragraph,
             'body' => $faker->sentence,
             'slug' => $faker->name,
+            'feat_image' => $faker->imageUrl($width = 640, $height = 480),
             'user_id' => factory('App\User')->create()->id
 
         ];

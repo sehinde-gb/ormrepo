@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\SubscriptionNotFoundException;
 use App\Http\Requests\EmailRequest;
 use Illuminate\Http\Request;
 use Newsletter;
@@ -17,14 +18,22 @@ class SubscriptionsController extends Controller
      *
      * @param EmailRequest $request
      * @return string
+     * @throws SubscriptionNotFoundException
      */
     public function store(EmailRequest $request)
     {
-        $email = $request->input('email');
+        try {
 
-        //dd($email);
+            $email = $request->input('email');
 
-        Newsletter::subscribe($email);
+            //dd($email);
+
+            Newsletter::subscribe($email);
+
+        } catch (SubscriptionNotFoundException $e) {
+
+            throw new SubscriptionNotFoundException($e->getMessage());
+        }
 
         return redirect()->route('blogs.index');
 

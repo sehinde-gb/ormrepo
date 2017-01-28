@@ -69,6 +69,12 @@ class Handler extends ExceptionHandler
 
             return parent::render($request, $e);
         }
+
+        if ($e instanceof SubscriptionNotFoundException) {
+            return response(view('errors.406'), 406);
+
+            return parent::render($request, $e);
+        }
     }
 
     /**
