@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('meta-title', 'Blog Listings')
+
 @section('content')
 
     <!-- Page Content -->
@@ -167,7 +169,7 @@
                         <p class="section--body is--padding-bottom">This is one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
+                        <img class="img-responsive" src="../images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
                     </div><!-- /.col-lg-5 col-lg-offset-2 col-sm-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -183,7 +185,7 @@
                         <p class="section--body is--padding-bottom">This is a Home rental app that showcases uploaded home photos so that you can showcase your home to get the best quote for your lease! This has recently been updated with new screens using FlexBox.</p>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/maccasa.jpg" alt="Ipad containing home rental screen.">
+                        <img class="img-responsive" src="../images/maccasa.jpg" alt="Ipad containing home rental screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -200,7 +202,7 @@
                         <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This has been recently updated with new screens developed using FlexBox.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/elcoche.png" alt="Ipad containing car blog app screen.">
+                        <img class="img-responsive" src="../images/elcoche.png" alt="Ipad containing car blog app screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -216,7 +218,7 @@
                         <p class="section--body is--padding-bottom">This is an E-commerce gaming web app where you can test purchase video games, view activities and participate in the Station blog.</p>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
+                        <img class="img-responsive" src="../images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->

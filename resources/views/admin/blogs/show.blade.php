@@ -5,8 +5,6 @@
 @section('content')
 
     <div class="main-container">
-        
-
         <div class="heading">
             <div id="featured-image">
                 <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="A mug of beer">

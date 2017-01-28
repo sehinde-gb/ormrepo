@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('meta-title', 'Blog Listings')
+
 @section('content')
 
     <!-- Page Content -->
