@@ -5,17 +5,14 @@
 @section('content')
 
     <div class="main-container">
-        <div class="middle-logo">
-            <img class="logo"
-                 srcset="/images/logo_medium.png 1080w,
-                        /images/logo_small.png 760w"
-                 alt="The ormrepo thoughtful logo">
-        </div><!-- /.middle-logo -->
 
         <div class="heading">
-            <h1 class="blog--title">{!! $blog->title !!}</h1>
+            <div id="featured-image">
+                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="A mug of beer">
+            </div><!-- /.featured-image -->
+            <h1 class="blog--title is--padded-top-10">{!! $blog->title !!}</h1>
             <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
-            <p class="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+            <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
             <p id="published--at">Written by <small>Sehinde Raji</small></p>
         </div><!-- /.heading -->
 
@@ -26,21 +23,21 @@
 
             <div class="right-container">
                 <div class="social-container">
-                    <h3 class="is--padded">Comments</h3>
+                    <h3>Comments</h3>
                     @if(isset($comments['root']))
-                        @include('admin.blogs.comments.list', ['collection' => $comments['root']])
+                        @include('blogs.comments.list', ['collection' => $comments['root']])
 
-                        <h3 class="is--both-sides ">Leave a Reply</h3>
-                        @include('admin.blogs.comments.form')
+
+                        @include('blogs.comments.form')
 
                     @else
-                        <p>No Historical Comments Today</p>
+                        <p>No historical comments today</p>
                         <h3 class="is--both-sides ">Leave a Reply</h3>
-                        @include('admin.blogs.comments.form')
+                        @include('blogs.comments.form')
 
                     @endif
 
-                    <div class="social-buttons">
+                    <div class="social-buttons is--margin-top-50">
                         <!-- AddToAny BEGIN -->
                         <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                             <a class="a2a_button_facebook"></a>
@@ -72,17 +69,31 @@
         <div class="button-blog">
             <div class="previous">
                 @if($previous)
-                    <a href="{{ URL::to( '/admin/blogs/' . $previous->id ) }}"><i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i></a>
+                    <ul>
+                        <li>
+                            <a href="{{ URL::to( '/blogs/' . $previous->id ) }}"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                 @endif
             </div><!-- /.left -->
 
             <div class="centre">
-                <li><a href="/contact"><button class="btn-primary" type="button">Contact Us</button></a></li>
+                <ul>
+                    <li><a href="/contact"><button class="btn-primary" type="button">Contact Us</button></a></li>
+                </ul>
+
             </div><!-- /.centre -->
 
             <div class="next">
                 @if($next)
-                    <a href="{{ URL::to( '/admin/blogs/' . $next->id ) }}"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></a>
+                    <ul>
+                        <li>
+                            <a href="{{ URL::to( '/blogs/' . $next->id ) }}"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+
                 @endif
             </div><!-- /.right -->
 

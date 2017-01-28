@@ -23,7 +23,8 @@
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="https://coches.ormrepo.co.uk" class="foot-links">El Coche</a>
+                        <span datahover="test" title="My Title"><a href="https://coches.ormrepo.co.uk" class="foot-links disabled-link">El Coche</a></span>
+
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
@@ -34,7 +35,8 @@
                         <a href="https://games.ormrepo.co.uk" class="foot-links">GamesStation</a>
                     </li>
                     <li>
-                        <a href="/rss" class="foot-links">Rss</a></i>
+                        <a href="/rss" class="foot-links"><i class="fa fa-rss" aria-hidden="true"></i>
+                            </a></i>
                         </a>
                     </li>
                 </ul>

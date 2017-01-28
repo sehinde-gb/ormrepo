@@ -48,8 +48,8 @@
 .btn-small:active,
 .btn-small:visited,
 .btn-small:focus {
-  background-color: #B8B8B8;
-  color: white;
+  background-color: #F9F1DC;
+  color: #003434;
   border: 0;
   outline: 0;
   font-family: $lato;
@@ -60,9 +60,22 @@
 }
 
 .btn-small:hover {
-  background-color: #107896;
+  background-color: #808080;
   color: #f8f8f8;
   text-decoration: none;
+}
+
+.btn-small.disabled {
+  background-color: #F9F1DC;
+  color: #003434;
+  border: 0;
+  outline: 0;
+  font-family: $lato;
+  font-size: 14px;
+  height: 25px;
+  width: 50px;
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .btn-danger,
@@ -164,6 +177,34 @@
 .fa-minus {
   padding-top: 15px;
   color: white;
+}
+
+.fa-4x {
+  font-size: 38px;
+  color: #f9f1dc;
+}
+
+
+.fa-long-arrow-left {
+  color: #f8f8f8;
+}
+
+.fa-long-arrow-right {
+  color: #f8f8f8;
+}
+
+.fa-calendar {
+  padding-top: 5px;
+}
+
+
+
+.fa-chevron-circle-left {
+  color: #f9f1dc;
+}
+
+.fa-chevron-circle-right {
+  color: #f9f1dc;
 }
 
 @media(max-width:1199px) {

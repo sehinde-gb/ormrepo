@@ -18,6 +18,7 @@
                 $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
                 $table->string('title');
                 $table->string('excerpt');
+                $table->binary('feat_image');
                 $table->text('body');
                 $table->string('slug')->unique()->nullable();
                 $table->integer('reads')->default(0);

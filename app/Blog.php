@@ -16,7 +16,7 @@ class Blog extends Model
     use  Sluggable, SluggableScopeHelpers, Searchable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
-    protected $fillable = ['title','excerpt' ,'body', 'slug', 'user_id', 'published_at' ];
+    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at' ];
 
 
     /**

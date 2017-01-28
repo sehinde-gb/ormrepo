@@ -86,8 +86,17 @@
   color: black;
 }
 
+.is--padded-top10 {
+  padding-top: 10px;
+}
 
+.is--margin-top-25 {
+  margin-top: 25px;
+}
 
+.is--margin-top-50 {
+  margin-top: 50px;
+}
 
 
 @media(max-width:767px) {
@@ -106,6 +115,9 @@
   }
 
 
+  .is--padded-top-10 {
+    padding-top: 10px;
+  }
 
 
 }

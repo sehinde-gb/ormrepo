@@ -33,6 +33,10 @@ p.copyright {
 
 }
 
+.disabled-link {
+  pointer-events: none;
+}
+
 
 @media(max-width:767px) {
   footer {
@@ -67,4 +71,7 @@ p.copyright {
 
   }
 
+  .disabled-link {
+    pointer-events: none;
+  }
 }

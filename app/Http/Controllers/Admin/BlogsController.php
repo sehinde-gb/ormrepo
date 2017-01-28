@@ -14,7 +14,6 @@ use App\Http\Controllers\Controller;
 use App\Exceptions\BlogNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
-use Illuminate\Support\Str;
 use App\Events\BlogWasCreated;
 
 class BlogsController extends Controller
@@ -49,6 +48,7 @@ class BlogsController extends Controller
 
 
            if ($query) {
+
                $blogs = Blog::search($query)->get();
 
                return view('pages.search', compact('blogs'));
@@ -127,9 +127,6 @@ class BlogsController extends Controller
             $previous = Blog::where('id', '<', $blog->id)->orderBy('id','desc')->first();
 
             $next = Blog::where('id', '>', $blog->id)->orderBy('id','asc')->first();
-
-            //$comments = $blog->getComments();
-
 
             $comments = Comment::forBlog($blog)->get()->threaded();
 
@@ -253,6 +250,14 @@ class BlogsController extends Controller
         event(new BlogWasCreated($user));
 
         $blog = $user->blogs()->create($request->all());
+
+        $imageName = $blog->id . '.' .
+            $request->file('feat_image')->getClientOriginalExtension();
+
+        $request->file('feat_image')->move(
+            base_path() . '/public/featured/images/', $imageName
+        );
+
 
         if ($request->input('category_list') == null) {
             $category_list = [];

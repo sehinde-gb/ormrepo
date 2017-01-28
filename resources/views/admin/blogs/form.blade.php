@@ -11,6 +11,11 @@
     {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
 </div><!-- /.form-group -->
 
+<div class="form-group form-group-lg">
+    {!! Form::label('Featured Image', 'Image:', ['class' => 'control-label'] ) !!}
+    {!! Form::file('feat_image', null, ['class' => 'form-control']) !!}
+</div><!-- /.form-group -->
+
 <!-- Body Form Input -->
 <div class="form-group form-group-lg">
     {!! Form::label('Body', 'Body:', ['class' => 'control-label']) !!}

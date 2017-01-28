@@ -11,11 +11,9 @@
                             <img class="nav_logo"
                                  src="/images/logo_medium.png"
                                  alt="The ormrepo thoughtful logo">
-                            <li><a href="/" class="nav-items">Home</a></li>
-                            <li><a href="/about" class="nav-items">About</a></li>
-                            <li><a href="/contact" class="nav-items">Contact</a></li>
                             <li><a href="https://casarentals.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
-                            <li><a href="https://coches.ormrepo.co.uk/" class="nav-items">El Coche</a></li>
+                           <li><span datahover="test"><a href="https://coches.ormrepo.co.uk" class="nav-items disabled-link">El Coche</a></span>
+                            </li>
                             <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
                         </ul>
                     </div><!-- /.menu -->
@@ -23,12 +21,17 @@
 
             <div class="nav-search">
                 <ul>
+                    <li ><a href="/blogs" class="nav-items"><i class="fa fa-home" aria-hidden="true"></i>
+                            Home</a></li>
+                    <li><a href="/about" class="nav-items">About</a></li>
+                    <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
+                                Contact</a></li>
                     <li><a href="/login" class="nav-items"><i class="fa fa-user" aria-hidden="true"></i>
                                 Login</a></li>
                     <li><a href="/register" class="nav-items"><i class="fa fa-user-plus" aria-hidden="true"></i>
                                 Register</a></li>
-                    <li><a href="/rss" class="nav-items"><i class="fa fa-rss-square" aria-hidden="true"></i>
-                                Rss</a></li>
+
+
 
                     <div class="form-search">
                         {!! Form::open(['method' => 'GET']) !!}
@@ -50,10 +53,9 @@
                         <img class="nav_logo"
                              src="/images/logo_medium.png"
                              alt="The ormrepo thoughtful logo">
-                        <li><a href="/" class="nav-items">Home</a></li>
-                        <li><a href="/contact" class="nav-items">Contact</a></li>
                         <li><a href="https://casarentals.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
-                        <li><a href="https://coches.ormrepo.co.uk/" class="nav-items">El Coche</a></li>
+                        <li><span datahover="test"><a href="https://coches.ormrepo.co.uk" class="nav-items disabled-link">El Coche</a></span>
+                        </li>
                         <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
                     </ul>
                 </div><!-- /.menu -->
@@ -63,8 +65,11 @@
 
             <div class="nav-search">
                 <ul>
-                    <li ><a href="/cart" class="nav-items"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                            Basket</a></li>
+                    <li ><a href="/admin/blogs" class="nav-items"><i class="fa fa-home" aria-hidden="true"></i>
+                            Home</a></li>
+                    <li><a href="/about" class="nav-items">About</a></li>
+                    <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
+                            Contact</a></li>
                     <li><a class="nav-items" href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
@@ -88,12 +93,10 @@
 
 
                 </ul>
-            </div>
-            <!-- /.nav-right -->
-
-
+            </div><!-- /.nav-right -->
+        @endif
     </nav><!-- /.navigation -->
-         @endif
+
 
 
 </header>
