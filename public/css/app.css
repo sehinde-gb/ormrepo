@@ -1425,7 +1425,7 @@ label {
 }
 
 .columns {
-  height: 750px;
+  height: 250px;
 }
 
 /* for further column styling in the blog area see utility classes */
