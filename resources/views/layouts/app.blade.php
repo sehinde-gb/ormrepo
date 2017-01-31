@@ -7,7 +7,7 @@
     <meta name="description" content="@yield('meta_description', 'The ormblog.')">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
