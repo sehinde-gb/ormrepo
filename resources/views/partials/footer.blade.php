@@ -1,6 +1,6 @@
 
 <!-- Footer -->
-<footer>
+<footer role="footer">
     <div class="container">
         <div class="middle-logo">
             <img class="logo"

@@ -22,5 +22,5 @@
             </div>
         </div>
 
-    </div>
-    <!-- /.container -->
+    </div><!-- /.container -->
+</div><!-- /.banner -->

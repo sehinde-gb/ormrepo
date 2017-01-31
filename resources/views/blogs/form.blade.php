@@ -1,10 +1,12 @@
 @include('partials.errors')
 
+<!-- Title -->
 <div class="form-group form-group-lg">
     {!! Form::label('title', 'Title:', ['class' => 'control-label']) !!}
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
 </div><!-- /.form-group -->
 
+<!-- Excerpt -->
 <div class="form-group form-group-lg">
     {!! Form::label('excerpt', 'Excerpt:', ['class' => 'control-label']) !!}
     {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
@@ -22,6 +24,7 @@
     {!! Form::input('date','published_at', $blog->published_at, ['class' => 'form-control']) !!}
 </div><!-- /.form-group -->
 
+<!-- Category -->
 <div class="form-group form-group-lg">
     {!! Form::label('category_list', 'Category:', ['class' => 'control-label']) !!}
     {!! Form::select('category_list[]', $categories, null, ['id' => 'category_list','class' => 'form-control', 'multiple']) !!}

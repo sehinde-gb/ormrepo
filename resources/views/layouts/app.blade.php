@@ -32,6 +32,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+{{--Summernote--}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
 <script>
     $(document).ready(function () {
@@ -75,8 +76,8 @@
 <script type="application/javascript" src="/js/bootstrap.js"></script>
 <script type="application/javascript" src="/js/app.js"></script>
 
+{{-- Show password--}}
 <script src="/js/password.js"></script>
-
 <script>
     $(function() {
         $('#password').password().on('show.bs.password', function(e) {
@@ -105,7 +106,7 @@
         });
     });
 </script>
-
+    {{--Mobile menu--}}
     <script>
         $(function() {
             $("a[href=#menuExpand]").click(function(e) {

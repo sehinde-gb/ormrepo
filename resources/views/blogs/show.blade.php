@@ -8,7 +8,7 @@
 
         <div class="heading">
             <div id="featured-image">
-                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="A mug of beer">
+                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
             </div><!-- /.featured-image -->
             <h1 class="blog--title is--padded-top-10">{!! $blog->title !!}</h1>
             <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
