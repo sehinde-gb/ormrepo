@@ -232,7 +232,7 @@ class BlogsController extends Controller
 
             throw new BlogNotFoundException($e->getMessage());
         }
-        return redirect()->route('blogs.index');
+        return redirect()->route('admin.blogs.index');
     }
 
 

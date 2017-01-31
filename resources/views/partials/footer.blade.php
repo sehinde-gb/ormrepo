@@ -28,7 +28,7 @@
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="https://casarentals.ormrepo.co.uk" class="foot-links">Casa Rental</a>
+                        <a href="https://casarental.ormrepo.co.uk" class="foot-links">Casa Rental</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
