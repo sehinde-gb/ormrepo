@@ -26,7 +26,7 @@
          *
          * @var string
          */
-        protected $redirectTo = '/admin/blogs';
+        protected $redirectTo = 'admin/blogs';
 
         /**
          * Create a new controller instance.

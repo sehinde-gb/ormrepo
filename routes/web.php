@@ -46,7 +46,7 @@
 
 
     # Admin Boundary
-    Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function () {
+    Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
         Route::resource('blogs', 'BlogsController');
 
