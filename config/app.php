@@ -172,8 +172,8 @@ return [
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
-        NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         \Artesaos\Defender\Providers\DefenderServiceProvider::class,
+        NotificationChannels\PusherPushNotifications\PusherPushNotificationsServiceProvider::class,
 
 
         /*

@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'libphonenumber' => array($vendorDir . '/giggsey/libphonenumber-for-php/src'),
     'SimplePie' => array($vendorDir . '/simplepie/simplepie/library'),
     'Roumen\\Feed' => array($vendorDir . '/roumen/feed/src'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
@@ -14,7 +13,6 @@ return array(
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
-    'Cron' => array($vendorDir . '/mtdowling/cron-expression/src'),
     'AlgoliaSearch\\Tests' => array($vendorDir . '/algolia/algoliasearch-client-php/tests'),
     'AlgoliaSearch' => array($vendorDir . '/algolia/algoliasearch-client-php/src'),
 );

@@ -412,7 +412,7 @@ class Index
      * Search inside the index.
      *
      * @param string $query the full text query
-     * @param mixed  $args  (optional) if set, contains an associative array with query parameters:
+     * @param mixed $args (optional) if set, contains an associative array with query parameters:
      *                      - page: (integer) Pagination parameter used to select the page to retrieve.
      *                      Page is zero-based and defaults to 0. Thus, to retrieve the 10th page you need to set page=9
      *                      - hitsPerPage: (integer) Pagination parameter used to select the number of hits per page.
@@ -488,8 +488,8 @@ class Index
      *                      duplicate value for the attributeForDistinct attribute are removed from results. For example,
      *                      if the chosen attribute is show_name and several hits have the same value for show_name, then
      *                      only the best one is kept and others are removed.
-     *
      * @return mixed
+     * @throws AlgoliaException
      */
     public function search($query, $args = null)
     {
@@ -497,6 +497,10 @@ class Index
             $args = array();
         }
         $args['query'] = $query;
+
+        if (isset($args['disjunctiveFacets'])) {
+            return $this->searchWithDisjunctiveFaceting($query, $args);
+        }
 
         return $this->client->request(
             $this->context,
@@ -511,14 +515,147 @@ class Index
     }
 
     /**
+     * @param $query
+     * @param $args
+     * @return mixed
+     * @throws AlgoliaException
+     */
+    private function searchWithDisjunctiveFaceting($query, $args)
+    {
+        if (! is_array($args['disjunctiveFacets']) || count($args['disjunctiveFacets']) <= 0) {
+            throw new \InvalidArgumentException('disjunctiveFacets needs to be an non empty array');
+        }
+
+        if (isset($args['filters'])) {
+            throw new \InvalidArgumentException('You can not use disjunctive faceting and the filters parameter');
+        }
+
+        /**
+         * Prepare queries
+         */
+        // Get the list of disjunctive queries to do: 1 per disjunctive facet
+        $disjunctiveQueries = $this->getDisjunctiveQueries($args);
+
+        // Format disjunctive queries for multipleQueries call
+        foreach ($disjunctiveQueries as &$disjunctiveQuery) {
+            $disjunctiveQuery['indexName'] = $this->indexName;
+            $disjunctiveQuery['query'] = $query;
+            unset($disjunctiveQuery['disjunctiveFacets']);
+        }
+
+        // Merge facets and disjunctiveFacets for the hits query
+        $facets = isset($args['facets']) ? $args['facets'] : array();
+        $facets = array_merge($facets, $args['disjunctiveFacets']);
+        unset($args['disjunctiveFacets']);
+
+        // format the hits query for multipleQueries call
+        $args['query'] = $query;
+        $args['indexName'] = $this->indexName;
+        $args['facets'] = $facets;
+
+        // Put the hit query first
+        array_unshift($disjunctiveQueries, $args);
+
+        /**
+         * Do all queries in one call
+         */
+        $results = $this->client->multipleQueries(array_values($disjunctiveQueries));
+        $results = $results['results'];
+
+        /**
+         * Merge facets from disjunctive queries with facets from the hits query
+         */
+
+        // The first query is the hits query that the one we'll return to the user
+        $queryResults = array_shift($results);
+
+        // To be able to add facets from disjunctive query we create 'facets' key in case we only have disjunctive facets
+        if (false === isset($queryResults['facets'])) {
+            $queryResults['facets'] = array();
+        }
+
+        foreach ($results as $disjunctiveResults) {
+            if (isset($disjunctiveResults['facets'])) {
+                foreach ($disjunctiveResults['facets'] as $facetName => $facetValues) {
+                    $queryResults['facets'][$facetName] = $facetValues;
+                }
+            }
+        }
+
+        return $queryResults;
+    }
+
+    /**
+     * @param $queryParams
+     * @return array
+     */
+    private function getDisjunctiveQueries($queryParams)
+    {
+        $queriesParams = array();
+
+        foreach ($queryParams['disjunctiveFacets'] as $facetName) {
+            $params = $queryParams;
+            $params['facets'] = array($facetName);
+            $facetFilters = isset($params['facetFilters']) ? $params['facetFilters']: array();
+            $numericFilters = isset($params['numericFilters']) ? $params['numericFilters']: array();
+
+            $additionalParams = array(
+                'hitsPerPage' => 1,
+                'page' => 0,
+                'attributesToRetrieve' => array(),
+                'attributesToHighlight' => array(),
+                'attributesToSnippet' => array()
+            );
+
+            $additionalParams['facetFilters'] = $this->getAlgoliaFiltersArrayWithoutCurrentRefinement($facetFilters, $facetName . ':');
+            $additionalParams['numericFilters'] = $this->getAlgoliaFiltersArrayWithoutCurrentRefinement($numericFilters, $facetName);
+
+            $queriesParams[$facetName] = array_merge($params, $additionalParams);
+        }
+
+        return $queriesParams;
+    }
+
+    /**
+     * @param $filters
+     * @param $needle
+     * @return array
+     */
+    private function getAlgoliaFiltersArrayWithoutCurrentRefinement($filters, $needle)
+    {
+        // iterate on each filters which can be string or array and filter out every refinement matching the needle
+        for ($i = 0; $i < count($filters); $i++) {
+            if (is_array($filters[$i])) {
+                foreach ($filters[$i] as $filter) {
+                    if (mb_substr($filter, 0, mb_strlen($needle)) === $needle) {
+                        unset($filters[$i]);
+                        $filters = array_values($filters);
+                        $i--;
+                        break;
+                    }
+                }
+            } else {
+                if (mb_substr($filters[$i], 0, mb_strlen($needle)) === $needle) {
+                    unset($filters[$i]);
+                    $filters = array_values($filters);
+                    $i--;
+                }
+            }
+        }
+
+        return $filters;
+    }
+
+    /**
      * Perform a search inside facets.
      *
      * @param $facetName
      * @param $facetQuery
      * @param array $query
+     *
      * @return mixed
      */
-    public function searchFacet($facetName, $facetQuery, $query = array())
+    public function searchForFacetValues($facetName, $facetQuery, $query = array())
     {
         $query['facetQuery'] = $facetQuery;
 
@@ -547,6 +684,7 @@ class Index
      *
      * @throws AlgoliaException
      * @throws \Exception
+     * @deprecated you should use $index->search($query, ['disjunctiveFacets' => $disjunctive_facets]]); instead
      */
     public function searchDisjunctiveFaceting($query, $disjunctive_facets, $params = array(), $refinements = array())
     {
@@ -752,69 +890,70 @@ class Index
     /**
      * Set settings for this index.
      *
-     * @param mixed $settings the settings object that can contains :
-     *                        - minWordSizefor1Typo: (integer) the minimum number of characters to accept one typo (default =
-     *                        3).
-     *                        - minWordSizefor2Typos: (integer) the minimum number of characters to accept two typos (default
-     *                        = 7).
-     *                        - hitsPerPage: (integer) the number of hits per page (default = 10).
-     *                        - attributesToRetrieve: (array of strings) default list of attributes to retrieve in objects.
-     *                        If set to null, all attributes are retrieved.
-     *                        - attributesToHighlight: (array of strings) default list of attributes to highlight.
-     *                        If set to null, all indexed attributes are highlighted.
-     *                        - attributesToSnippet**: (array of strings) default list of attributes to snippet alongside the
-     *                        number of words to return (syntax is attributeName:nbWords). By default no snippet is computed.
-     *                        If set to null, no snippet is computed.
-     *                        - searchableAttributes (formerly named attributesToIndex): (array of strings) the list of fields you want to index.
-     *                        If set to null, all textual and numerical attributes of your objects are indexed, but you
-     *                        should update it to get optimal results. This parameter has two important uses:
-     *                        - Limit the attributes to index: For example if you store a binary image in base64, you want to
-     *                        store it and be able to retrieve it but you don't want to search in the base64 string.
-     *                        - Control part of the ranking*: (see the ranking parameter for full explanation) Matches in
-     *                        attributes at the beginning of the list will be considered more important than matches in
-     *                        attributes further down the list. In one attribute, matching text at the beginning of the
-     *                        attribute will be considered more important than text after, you can disable this behavior if
-     *                        you add your attribute inside `unordered(AttributeName)`, for example searchableAttributes:
-     *                        ["title", "unordered(text)"].
-     *                        - attributesForFaceting: (array of strings) The list of fields you want to use for faceting.
-     *                        All strings in the attribute selected for faceting are extracted and added as a facet. If set
-     *                        to null, no attribute is used for faceting.
-     *                        - attributeForDistinct: (string) The attribute name used for the Distinct feature. This feature
-     *                        is similar to the SQL "distinct" keyword: when enabled in query with the distinct=1 parameter,
-     *                        all hits containing a duplicate value for this attribute are removed from results. For example,
-     *                        if the chosen attribute is show_name and several hits have the same value for show_name, then
-     *                        only the best one is kept and others are removed.
-     *                        - ranking: (array of strings) controls the way results are sorted.
-     *                        We have six available criteria:
-     *                        - typo: sort according to number of typos,
-     *                        - geo: sort according to decreassing distance when performing a geo-location based search,
-     *                        - proximity: sort according to the proximity of query words in hits,
-     *                        - attribute: sort according to the order of attributes defined by searchableAttributes,
-     *                        - exact:
-     *                        - if the user query contains one word: sort objects having an attribute that is exactly the
-     *                        query word before others. For example if you search for the "V" TV show, you want to find it
-     *                        with the "V" query and avoid to have all popular TV show starting by the v letter before it.
-     *                        - if the user query contains multiple words: sort according to the number of words that matched
-     *                        exactly (and not as a prefix).
-     *                        - custom: sort according to a user defined formula set in **customRanking** attribute.
-     *                        The standard order is ["typo", "geo", "proximity", "attribute", "exact", "custom"]
-     *                        - customRanking: (array of strings) lets you specify part of the ranking.
-     *                        The syntax of this condition is an array of strings containing attributes prefixed by asc
-     *                        (ascending order) or desc (descending order) operator. For example `"customRanking" =>
-     *                        ["desc(population)", "asc(name)"]`
-     *                        - queryType: Select how the query words are interpreted, it can be one of the following value:
-     *                        - prefixAll: all query words are interpreted as prefixes,
-     *                        - prefixLast: only the last word is interpreted as a prefix (default behavior),
-     *                        - prefixNone: no query word is interpreted as a prefix. This option is not recommended.
-     *                        - highlightPreTag: (string) Specify the string that is inserted before the highlighted parts in
-     *                        the query result (default to "<em>").
-     *                        - highlightPostTag: (string) Specify the string that is inserted after the highlighted parts in
-     *                        the query result (default to "</em>").
-     *                        - optionalWords: (array of strings) Specify a list of words that should be considered as
-     *                        optional when found in the query.
+     * @param mixed $settings          the settings object that can contains :
+     *                                 - minWordSizefor1Typo: (integer) the minimum number of characters to accept one typo (default =
+     *                                 3).
+     *                                 - minWordSizefor2Typos: (integer) the minimum number of characters to accept two typos (default
+     *                                 = 7).
+     *                                 - hitsPerPage: (integer) the number of hits per page (default = 10).
+     *                                 - attributesToRetrieve: (array of strings) default list of attributes to retrieve in objects.
+     *                                 If set to null, all attributes are retrieved.
+     *                                 - attributesToHighlight: (array of strings) default list of attributes to highlight.
+     *                                 If set to null, all indexed attributes are highlighted.
+     *                                 - attributesToSnippet**: (array of strings) default list of attributes to snippet alongside the
+     *                                 number of words to return (syntax is attributeName:nbWords). By default no snippet is computed.
+     *                                 If set to null, no snippet is computed.
+     *                                 - searchableAttributes (formerly named attributesToIndex): (array of strings) the list of fields you want to index.
+     *                                 If set to null, all textual and numerical attributes of your objects are indexed, but you
+     *                                 should update it to get optimal results. This parameter has two important uses:
+     *                                 - Limit the attributes to index: For example if you store a binary image in base64, you want to
+     *                                 store it and be able to retrieve it but you don't want to search in the base64 string.
+     *                                 - Control part of the ranking*: (see the ranking parameter for full explanation) Matches in
+     *                                 attributes at the beginning of the list will be considered more important than matches in
+     *                                 attributes further down the list. In one attribute, matching text at the beginning of the
+     *                                 attribute will be considered more important than text after, you can disable this behavior if
+     *                                 you add your attribute inside `unordered(AttributeName)`, for example searchableAttributes:
+     *                                 ["title", "unordered(text)"].
+     *                                 - attributesForFaceting: (array of strings) The list of fields you want to use for faceting.
+     *                                 All strings in the attribute selected for faceting are extracted and added as a facet. If set
+     *                                 to null, no attribute is used for faceting.
+     *                                 - attributeForDistinct: (string) The attribute name used for the Distinct feature. This feature
+     *                                 is similar to the SQL "distinct" keyword: when enabled in query with the distinct=1 parameter,
+     *                                 all hits containing a duplicate value for this attribute are removed from results. For example,
+     *                                 if the chosen attribute is show_name and several hits have the same value for show_name, then
+     *                                 only the best one is kept and others are removed.
+     *                                 - ranking: (array of strings) controls the way results are sorted.
+     *                                 We have six available criteria:
+     *                                 - typo: sort according to number of typos,
+     *                                 - geo: sort according to decreasing distance when performing a geo-location based search,
+     *                                 - proximity: sort according to the proximity of query words in hits,
+     *                                 - attribute: sort according to the order of attributes defined by searchableAttributes,
+     *                                 - exact:
+     *                                 - if the user query contains one word: sort objects having an attribute that is exactly the
+     *                                 query word before others. For example if you search for the "V" TV show, you want to find it
+     *                                 with the "V" query and avoid to have all popular TV show starting by the v letter before it.
+     *                                 - if the user query contains multiple words: sort according to the number of words that matched
+     *                                 exactly (and not as a prefix).
+     *                                 - custom: sort according to a user defined formula set in **customRanking** attribute.
+     *                                 The standard order is ["typo", "geo", "proximity", "attribute", "exact", "custom"]
+     *                                 - customRanking: (array of strings) lets you specify part of the ranking.
+     *                                 The syntax of this condition is an array of strings containing attributes prefixed by asc
+     *                                 (ascending order) or desc (descending order) operator. For example `"customRanking" =>
+     *                                 ["desc(population)", "asc(name)"]`
+     *                                 - queryType: Select how the query words are interpreted, it can be one of the following value:
+     *                                 - prefixAll: all query words are interpreted as prefixes,
+     *                                 - prefixLast: only the last word is interpreted as a prefix (default behavior),
+     *                                 - prefixNone: no query word is interpreted as a prefix. This option is not recommended.
+     *                                 - highlightPreTag: (string) Specify the string that is inserted before the highlighted parts in
+     *                                 the query result (default to "<em>").
+     *                                 - highlightPostTag: (string) Specify the string that is inserted after the highlighted parts in
+     *                                 the query result (default to "</em>").
+     *                                 - optionalWords: (array of strings) Specify a list of words that should be considered as
+     *                                 optional when found in the query.
+     * @param bool  $forwardToReplicas
      *
-     * @param  bool             $forwardToReplicas
      * @return mixed
+     *
      * @throws AlgoliaException
      */
     public function setSettings($settings, $forwardToReplicas = false)
@@ -1284,6 +1423,18 @@ class Index
     }
 
     /**
+     * @deprecated Please use searchForFacetValues instead
+     * @param $facetName
+     * @param $facetQuery
+     * @param array $query
+     * @return mixed
+     */
+    public function searchFacet($facetName, $facetQuery, $query = array())
+    {
+        return $this->searchForFacetValues($facetName, $facetQuery, $query);
+    }
+
+    /**
      * @param string $name
      * @param array  $arguments
      *
@@ -1291,14 +1442,14 @@ class Index
      */
     public function __call($name, $arguments)
     {
-        if ($name !== 'browse') {
-            return;
+        if ($name === 'browse') {
+            if (count($arguments) >= 1 && is_string($arguments[0])) {
+                return call_user_func_array(array($this, 'doBrowse'), $arguments);
+            }
+
+            return call_user_func_array(array($this, 'doBcBrowse'), $arguments);
         }
 
-        if (count($arguments) >= 1 && is_string($arguments[0])) {
-            return call_user_func_array(array($this, 'doBrowse'), $arguments);
-        }
-
-        return call_user_func_array(array($this, 'doBcBrowse'), $arguments);
+        return;
     }
 }

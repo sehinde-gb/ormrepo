@@ -5,8 +5,12 @@ namespace App\Notifications;
 use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
-use Illuminate\Contracts\Queue\ShouldQueue;
+//use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use NotificationChannels\PusherPushNotifications\PusherChannel;
+use NotificationChannels\PusherPushNotifications\PusherMessage;
+
+
 
 class UserRegistered extends Notification
 {
@@ -34,7 +38,17 @@ class UserRegistered extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        //return ['mail'];
+        return [PusherChannel::class];
+    }
+
+    public function toPushNotification($notifiable)
+    {
+        return PusherMessage::create()
+            ->iOS()
+            ->badge(1)
+            ->sound('success')
+            ->body("Your {$notifiable->service} account was approved!");
     }
 
     /**
@@ -42,7 +56,7 @@ class UserRegistered extends Notification
      *
      * @param  mixed  $notifiable
      * @return \Illuminate\Notifications\Messages\MailMessage
-     */
+
     public function toMail($notifiable)
     {
         return (new MailMessage)
@@ -50,17 +64,18 @@ class UserRegistered extends Notification
                     ->success()
                     ->line('Thanks for registering with us | Powerful minds');
     }
-
+     */
     /**
      * Get the array representation of the notification.
      *
      * @param  mixed  $notifiable
      * @return array
-     */
+
     public function toArray($notifiable)
     {
         return [
             //
         ];
     }
+     *   */
 }
