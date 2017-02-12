@@ -7,6 +7,18 @@
     <meta name="description" content="@yield('meta_description', 'The ormblog.')">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "2d683eac-04ee-47e9-b1f0-e4635f3be800",
+            autoRegister: false,
+            notifyButton: {
+                enable: true /* Set to false to hide */
+            }
+        }]);
+    </script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">

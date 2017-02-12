@@ -78,6 +78,7 @@ class BlogsController extends Controller
      */
     public function create()
     {
+        $user = Auth::user();
         try {
             $title = 'Create Blog';
 
@@ -87,6 +88,8 @@ class BlogsController extends Controller
 
             throw new BlogNotFoundException($e->getMessage());
         }
+
+        event(new BlogWasCreated($user));
 
         return view('admin.blogs.create', compact('blog', 'categories', 'title'));
     }

@@ -5,19 +5,21 @@ namespace App\Events;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
-use Illuminate\Broadcasting\PresenceChannel;
+//use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use App\User;
 
-class BlogWasCreated
+class BlogWasCreated implements ShouldBroadcast
 {
     use InteractsWithSockets, SerializesModels;
+
+    public $user;
 
     /**
      * Create a new event instance.
      *
-     * @return void
+     * @param User $user
      */
     public function __construct(User $user)
     {
@@ -31,6 +33,6 @@ class BlogWasCreated
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('App.User.'.$this->user->user_id);
     }
 }

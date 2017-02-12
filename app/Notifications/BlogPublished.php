@@ -3,8 +3,8 @@
 namespace App\Notifications;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Twitter\TwitterChannel;
-use NotificationChannels\Twitter\TwitterStatusUpdate;
+use NotificationChannels\PusherPushNotifications\PusherChannel;
+use NotificationChannels\PusherPushNotifications\PusherMessage;
 
 
 /**
@@ -20,17 +20,16 @@ class BlogPublished extends Notification
      */
     public function via($notifiable)
     {
-        //return [TwitterChannel::class];
+        return [PusherChannel::class];
     }
 
-    /**
-     * @param $notifiable
-     * @return TwitterStatusUpdate
-     */
-    public function toTwitter($notifiable) {
-
-        //return new TwitterStatusUpdate($blog->title .' https://ormrepo.co.uk/'. $blog->uri);
-
+    public function toPushNotification($notifiable)
+    {
+        return PusherMessage::create()
+            ->iOS()
+            ->badge(1)
+            ->sound('success')
+            ->body("Your {$notifiable->service} blog was published!");
     }
 }
 

@@ -173,7 +173,7 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
         \Artesaos\Defender\Providers\DefenderServiceProvider::class,
-        NotificationChannels\PusherPushNotifications\PusherPushNotificationsServiceProvider::class,
+        NotificationChannels\OneSignal\OneSignalServiceProvider::class,
 
 
         /*
@@ -181,7 +181,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
