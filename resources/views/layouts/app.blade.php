@@ -17,6 +17,7 @@
             notifyButton: {
                 enable: true /* Set to false to hide */
             }
+            safari_web_id: 'web.onesignal.auto.4715199e-f86d-44ca-99ff-a9854a17e932'
         }]);
     </script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
