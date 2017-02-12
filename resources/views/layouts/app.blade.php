@@ -12,7 +12,7 @@
     <script>
         var OneSignal = window.OneSignal || [];
         OneSignal.push(["init", {
-            appId: "2d683eac-04ee-47e9-b1f0-e4635f3be800",
+            appId: "aaffc0f0-16b1-4477-a2bc-e1632c17bfc0",
             autoRegister: false,
             notifyButton: {
                 enable: true /* Set to false to hide */
