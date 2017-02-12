@@ -16,7 +16,7 @@
             autoRegister: false,
             notifyButton: {
                 enable: true /* Set to false to hide */
-            }
+            },
             safari_web_id: 'web.onesignal.auto.4715199e-f86d-44ca-99ff-a9854a17e932'
         }]);
     </script>
