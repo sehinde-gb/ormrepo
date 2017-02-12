@@ -1,6 +1,6 @@
 {
-  "name": “ormrepo”,
-  "short_name": “ormrepo”,
+  "name": "ormrepo",
+  "short_name": "ormrepo",
   "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "482941778795",
