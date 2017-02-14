@@ -112,7 +112,7 @@ class User extends Authenticatable
      */
     public function routeNotificationForOneSignal()
     {
-        return 'ONE_SIGNAL_PLAYER_ID';
+        return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
     }
 
 
