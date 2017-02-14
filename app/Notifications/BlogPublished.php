@@ -3,8 +3,10 @@
 namespace App\Notifications;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\PusherPushNotifications\PusherChannel;
-use NotificationChannels\PusherPushNotifications\PusherMessage;
+use NotificationChannels\OneSignal\OneSignalChannel;
+use NotificationChannels\OneSignal\OneSignalMessage;
+use NotificationChannels\OneSignal\OneSignalWebButton;
+
 
 
 /**
@@ -20,16 +22,21 @@ class BlogPublished extends Notification
      */
     public function via($notifiable)
     {
-        return [PusherChannel::class];
+        return [OneSignalChannel::class];
     }
 
-    public function toPushNotification($notifiable)
+    public function toOneSignal($notifiable)
     {
-        return PusherMessage::create()
-            ->iOS()
-            ->badge(1)
-            ->sound('success')
-            ->body("Your {$notifiable->service} blog was published!");
+        return OneSignalMessage::create()
+            ->subject("Your {$notifiable->service} blog post was published!")
+            ->body("Click here to see details.")
+            ->url('http://onesignal.com')
+            ->webButton(
+                OneSignalWebButton::create('link-1')
+                    ->text('Click here')
+                    ->icon('https://ormrepo.co.uk/images/ormrepo-tiny.png')
+                    ->url('http://ormrepo.co.uk')
+            );
     }
 }
 

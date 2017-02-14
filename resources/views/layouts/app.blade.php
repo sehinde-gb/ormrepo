@@ -14,9 +14,6 @@
         OneSignal.push(["init", {
             appId: "aaffc0f0-16b1-4477-a2bc-e1632c17bfc0",
             autoRegister: false,
-            httpPermissionRequest: {
-                enable: true
-            },
             notifyButton: {
                 enable: true /* Set to false to hide */
             },

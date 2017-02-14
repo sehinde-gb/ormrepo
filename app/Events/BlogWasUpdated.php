@@ -10,7 +10,7 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use App\User;
 
-class BlogWasUpdated
+class BlogWasUpdated implements ShouldBroadcast
 {
     use InteractsWithSockets, SerializesModels;
 
@@ -23,7 +23,7 @@ class BlogWasUpdated
     /**
      * Create a new event instance.
      *
-     * @return void
+     * @param User $user
      */
     public function __construct(User $user)
     {
@@ -37,6 +37,6 @@ class BlogWasUpdated
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('App.User.'.$this->user->user_id);
     }
 }

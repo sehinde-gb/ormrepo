@@ -43,12 +43,17 @@ next();
 
 import Echo from "laravel-echo";
 
-
+/*
 window.Echo = new Echo({
     broadcaster: 'pusher',
     key: '559f1295f399eca1e5d1',
     cluster: 'eu',
     encrypted: true
 });
+*/
 
+Echo.private('user.${userId}')
+    .listen('BlogWasCreated', (e) => {
+    console.log(e.update);
+});
 

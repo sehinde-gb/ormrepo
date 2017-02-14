@@ -10,7 +10,7 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class UserWasRegistered
+class UserWasRegistered implements ShouldBroadcast
 {
     use InteractsWithSockets, SerializesModels;
     /**
@@ -36,6 +36,6 @@ class UserWasRegistered
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('App.User.'.$this->user->user_id);
     }
 }
