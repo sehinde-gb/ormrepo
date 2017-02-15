@@ -124,14 +124,15 @@
 }
 
 .btn-tag  {
-  background-color: blue;
+  background-color: #AE9C2C;
   outline: 0;
   border: 0;
   color: white;
   font-family: $lato;
   font-size: 10px;
   height: 30px;
-  width: 30px;
+  width: 40px;
+  text-transform: capitalize;
   border-radius: 5px;
   margin-left: 5px;
 }
