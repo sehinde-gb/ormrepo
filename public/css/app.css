@@ -1461,7 +1461,8 @@ label {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-left: 400px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Portfolio Section */
@@ -1674,7 +1675,7 @@ form {
     padding-bottom: 15%;
   }
   .intro-divider {
-    margin-top: 10px;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
