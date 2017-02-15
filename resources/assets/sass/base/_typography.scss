@@ -58,7 +58,8 @@ h3 {
   line-height: 34px;
   color: white;
   margin: 0;
-  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 h4 {
@@ -385,7 +386,7 @@ label {
     text-transform: uppercase;
     color: $beige;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
   }
 
   .section--heading {

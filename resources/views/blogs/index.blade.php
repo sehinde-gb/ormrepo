@@ -137,8 +137,8 @@
                     <div class="col-lg-12">
                         <div class="intro-message">
                             <h1>Sehinde Raji</h1>
-                            <h3 class="is--padded-top10">PHP (Laravel) Web Developer.</h3>
-                            <hr class="intro-divider">
+                            <h3>PHP (Laravel) Web Developer.</h3>
+
                             <ul class="list-inline intro-social-buttons">
                                 <li>
                                     <a href="https://twitter.com/ormrepo" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw is-aligned"></i> <span class="network-name">Twitter</span></a>

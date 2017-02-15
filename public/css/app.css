@@ -47,7 +47,8 @@ h3 {
   line-height: 34px;
   color: white;
   margin: 0;
-  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 h4 {
@@ -356,7 +357,7 @@ label {
     text-transform: uppercase;
     color: #f9f1dc;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
   }
   .section--heading {
     font-family: "Montserrat Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -860,7 +861,7 @@ label {
   .menuIcon {
     display: inline-block;
     background-color: #003434;
-    padding-left: 195px;
+    padding-left: 245px;
   }
   .fa-bars {
     color: #F9F1DC;
@@ -1457,14 +1458,6 @@ label {
   padding-bottom: 20%;
 }
 
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 0;
-  padding: 0;
-}
-
 /* Portfolio Section */
 .content-section-a {
   padding: 50px 0;
@@ -1641,9 +1634,10 @@ form {
   .columns.is-gapless {
     width: 100%;
     margin: 0;
+    height: 1000px;
   }
   .newsletter-container {
-    min-height: 800px;
+    min-height: 500px;
     width: 100%;
     display: -webkit-box;
     display: flex;
@@ -1673,11 +1667,6 @@ form {
   }
   .intro-message {
     padding-bottom: 15%;
-  }
-  .intro-divider {
-    margin: 0;
-    padding: 0;
-    width: 100%;
   }
   .list-inline {
     padding-top: 20px;
