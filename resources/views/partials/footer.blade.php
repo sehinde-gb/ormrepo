@@ -28,11 +28,11 @@
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="http://casarental.ormrepo.co.uk" class="foot-links">Casa Rental</a>
+                        <a href="https://casarental.ormrepo.co.uk" class="foot-links">Casa Rental</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="http://games.ormrepo.co.uk" class="foot-links">GamesStation</a>
+                        <a href="https://games.ormrepo.co.uk" class="foot-links">GamesStation</a>
                     </li>
                     <li>
                         <a href="/rss" class="foot-links"><i class="fa fa-rss" aria-hidden="true"></i>

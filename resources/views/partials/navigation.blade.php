@@ -11,10 +11,10 @@
                             <img class="nav_logo"
                                  src="/images/logo_medium.png"
                                  alt="The ormrepo thoughtful logo">
-                            <li><a href="http://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
+                            <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
                            <li><span datahover="test"><a href="http://coches.ormrepo.co.uk" class="nav-items disabled-link">El Coche</a></span>
                             </li>
-                            <li><a href="http://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
+                            <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
                         </ul>
                     </div><!-- /.menu -->
             </div><!-- /.nav-left -->
@@ -54,10 +54,10 @@
                         <img class="nav_logo"
                              src="/images/logo_medium.png"
                              alt="The ormrepo thoughtful logo">
-                        <li><a href="http://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
+                        <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
                         <li><span datahover="test"><a href="http://coches.ormrepo.co.uk" class="nav-items disabled-link">El Coche</a></span>
                         </li>
-                        <li><a href="http://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
+                        <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
                     </ul>
                 </div><!-- /.menu -->
             </div><!-- /.nav-left -->
