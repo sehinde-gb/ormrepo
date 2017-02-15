@@ -42,7 +42,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-three">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-three-->
 
@@ -50,7 +50,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
                                 <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile">
@@ -61,7 +61,7 @@
                             <div class="column is-one-quarter is-light-grey is-flex is-six">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                             </div><!-- /.column is-one-quarter is-light-grey is-flex is-six-->
 
@@ -84,7 +84,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-nine">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
 
@@ -92,7 +92,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-ten">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
 
@@ -100,7 +100,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-ten">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-ten-->
 
