@@ -15,7 +15,7 @@ use App\Http\Controllers\Controller;
 use App\Exceptions\BlogNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
-use App\Events\BlogWasCreated;
+
 
 class BlogsController extends Controller
 {
