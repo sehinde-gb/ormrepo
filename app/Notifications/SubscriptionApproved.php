@@ -2,6 +2,8 @@
 
 namespace App\Notifications;
 
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use NotificationChannels\OneSignal\OneSignalChannel;
 use NotificationChannels\OneSignal\OneSignalMessage;
 use NotificationChannels\OneSignal\OneSignalWebButton;
@@ -11,8 +13,10 @@ use Illuminate\Notifications\Notification;
  * Class SubscriptionApproved
  * @package App\Notifications
  */
-class SubscriptionApproved extends Notification
+class SubscriptionApproved extends Notification implements ShouldQueue
 {
+    use Queueable;
+
     /**
      * @param $notifiable
      * @return array
@@ -36,8 +40,8 @@ class SubscriptionApproved extends Notification
             ->webButton(
                 OneSignalWebButton::create('link-1')
                     ->text('Click here')
-                    ->icon('https://upload.wikimedia.org/wikipedia/commons/4/4f/Laravel_logo.png')
-                    ->url('http://laravel.com')
+                    ->icon('https://ormrepo.co.uk/images/ormrepo-tiny.png')
+                    ->url('http://ormrepo.co.uk')
             );
     }
 }

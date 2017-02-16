@@ -2,6 +2,8 @@
 
 namespace App\Notifications;
 
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use NotificationChannels\OneSignal\OneSignalChannel;
 use NotificationChannels\OneSignal\OneSignalMessage;
 use NotificationChannels\OneSignal\OneSignalWebButton;
@@ -11,9 +13,9 @@ use Illuminate\Notifications\Notification;
  * Class BlogUpdated
  * @package App\Notifications
  */
-class BlogUpdated extends Notification
+class BlogUpdated extends Notification implements ShouldQueue
 {
-
+    use Queueable;
 
     /**
      * @param $notifiable
