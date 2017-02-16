@@ -45,5 +45,22 @@ class AccountApproved extends Notification
                     ->url('http://ormrepo.co.uk')
             );
     }
+
+
+    /**
+     * Get the array representation of the notification.
+     *
+     * @param  mixed  $notifiable
+     * @return array
+     */
+    public function toArray($notifiable)
+    {
+        return [
+            'user_id' => $this->user->id,
+            'name' => $this->user->name,
+            'username' => $this->user->username,
+            'email' =>$this->user->email
+        ];
+    }
 }
 
