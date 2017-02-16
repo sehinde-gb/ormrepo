@@ -3,12 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Comment;
+use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
 use App\Exceptions\SlugNotFoundException;
 use App\Http\Requests\BlogRequest;
 use App\Blog;
 use App\Category;
-use App\Notifications\BlogPublished;
+//use App\Notifications\BlogPublished;
 use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
