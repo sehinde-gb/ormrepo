@@ -189,13 +189,13 @@ class BlogsController extends Controller
 
             $user = Auth::user();
 
-            event(new BlogWasUpdated($user));
-
             $blog = Blog::findOrFail($id);
 
             //dd($blog);
 
             $blog->update(request()->input());
+
+            event(new BlogWasUpdated($user));
 
             } catch (\Exception $e) {
 
@@ -253,9 +253,9 @@ class BlogsController extends Controller
 
         $blog = $user->blogs()->create($request->all());
 
-        //event(new BlogWasCreated($user));
+        event(new BlogWasCreated($user));
 
-        $user->notify(new BlogPublished($user));
+        //$user->notify(new BlogPublished($user));
 
         $imageName = $blog->id . '.' .
             $request->file('feat_image')->getClientOriginalExtension();
