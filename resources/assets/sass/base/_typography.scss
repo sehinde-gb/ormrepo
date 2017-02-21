@@ -437,6 +437,20 @@ label {
     text-decoration: none;
   }
 
+  .box--line {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+  }
+
+
 }
 
 
