@@ -269,7 +269,8 @@ label {
   color: #003434;
   margin: 0;
   position: relative;
-  bottom: 120px;
+  bottom: 60px;
+  right: 20px;
 }
 
 .lower--box-text {
