@@ -237,7 +237,9 @@ class BlogsController extends Controller
 
             throw new BlogNotFoundException($e->getMessage());
         }
-        return redirect()->route('admin.blogs.index');
+
+        return redirect('/admin/blogs');
+        //return redirect()->route('admin.blogs.index');
     }
 
 
