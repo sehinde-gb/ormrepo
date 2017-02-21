@@ -54,7 +54,7 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
                                 <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile">
-                                    <h6 class="box--line is--padded-top-50">Web Developer</h6>
+                                    <h6 class="box--line">Web Developer</h6>
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
 
                             @elseif($blog->id == 3)
