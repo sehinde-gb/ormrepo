@@ -8,4 +8,5 @@
 yarn.lock
 .idea/workspace.xml
 composer.lock
+/public/featured/images
 
