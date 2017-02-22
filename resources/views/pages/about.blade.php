@@ -37,9 +37,11 @@
                                     and has worked with a number of small businesses. He has produced a portfolio of containing previous work as part of efforts to further his career.
                                 </p>
                             <br>
-                            <p class="section--title">Sehinde has previously been a Teacher overseas and he has worked in Technical Support. Sehinde has the unique ability to breakdown complex subject matter
-                                    areas in to easily consumable byte sized chunks.
+                            <p class="section--title">Sehinde has worked as a 3rd Level Technical Support Engineer and he has been a class teacher at an International School overseas.
                                 </p>
+                                <br>
+                                <p class="section--title">Sehinde has the unique ability to breakdown complex subject areas in to easily consumable byte sized chunks.</p>
+                                <!-- /.section--title -->
                                 <br>
                                 <p class="section--title"> Sehinde lives in London (UK) and is immediately available.
                                 </p>
