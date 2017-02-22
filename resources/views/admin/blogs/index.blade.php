@@ -119,7 +119,7 @@
         <div class="newsletter-container animated zoomIn">
             <div class="subscribe">
                 <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
-                <h4 class="lorem--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h4 class="lorem--text">You consent to receiving bi-annual email updates we wont burden you with spam.</h4>
                 <div class="form-group">
                     {!! Form::open(array('action' => 'SubscribeUserController@store', 'class' => 'form-group', 'placeholder'=>'Your email'))  !!}
                     {!! Form::text('email', null, [ 'id' => 'box', 'class' => 'form-group', 'placeholder'=>' Your email']) !!}
