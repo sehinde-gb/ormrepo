@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
-    <link rel="stylesheet" href="{{ elixir('/css/app.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
 </head>

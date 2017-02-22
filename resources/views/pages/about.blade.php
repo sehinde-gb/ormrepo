@@ -29,7 +29,7 @@
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
                             <div class="clearfix"></div>
-                            <h4 class="section-heading">Sehinde Raji is a Web Developer specialising in PHP</h4>
+                            <h4>Sehinde Raji is a Web Developer specialising in PHP</h4>
                                 <p class="section--title">Sehinde is a self taught Web Developer and an established outsider who is always on the lookout for exciting Development opportunities.
                                 </p>
                                 <br>
