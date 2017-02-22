@@ -94,6 +94,10 @@ h6 a:hover {
   text-decoration: none;
 }
 
+a {
+  color: #AE9C2C;
+}
+
 a:hover {
   color: #f9f1dc;
 }
