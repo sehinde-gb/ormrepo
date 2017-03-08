@@ -9,7 +9,6 @@ use App\Exceptions\SlugNotFoundException;
 use App\Http\Requests\BlogRequest;
 use App\Blog;
 use App\Category;
-//use App\Notifications\BlogPublished;
 use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
@@ -239,7 +238,7 @@ class BlogsController extends Controller
         }
 
         return redirect('/admin/blogs');
-        //return redirect()->route('admin.blogs.index');
+
     }
 
 
@@ -257,8 +256,6 @@ class BlogsController extends Controller
         $blog = $user->blogs()->create($request->all());
 
         event(new BlogWasCreated($user));
-
-        //$user->notify(new BlogPublished($user));
 
         $imageName = $blog->id . '.' .
             $request->file('feat_image')->getClientOriginalExtension();

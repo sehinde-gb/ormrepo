@@ -1,8 +1,8 @@
 <?php
 
-    namespace App\Exceptions;
+namespace App\Exceptions;
 
-    class QueryNotFoundException extends \Exception
-    {
+class QueryNotFoundException extends \Exception
+{
 
-    }
+}

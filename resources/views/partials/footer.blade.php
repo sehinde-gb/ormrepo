@@ -35,6 +35,9 @@
                         <a href="https://games.ormrepo.co.uk" class="foot-links">GamesStation</a>
                     </li>
                     <li>
+                        <a href="https://greatgreengooseberry.club" class="foot-links">Great Green Gooseberry</a>
+                    </li>
+                    <li>
                         <a href="/rss" class="foot-links"><i class="fa fa-rss" aria-hidden="true"></i>
                             </a></i>
                         </a>

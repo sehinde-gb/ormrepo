@@ -1,8 +1,8 @@
 <?php
 
-    namespace App\Exceptions;
+namespace App\Exceptions;
 
-    class CategoryNotFoundException extends \Exception
-    {
+class CategoryNotFoundException extends \Exception
+{
 
-    }
+}
