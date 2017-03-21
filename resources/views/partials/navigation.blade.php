@@ -11,9 +11,16 @@
                             <img class="nav_logo"
                                  src="/images/logo_medium.png"
                                  alt="The ormrepo thoughtful logo">
+                            <li ><a href="/blogs" class="nav-items hide">Home</a></li>
+                            <li><a href="/about" class="nav-items hide">About</a></li>
+                            <li><a href="/contact" class="nav-items hide">Contact</a></li>
+                            <li><a href="/login" class="nav-items hide">Login</a></li>
+                            <li><a href="/register" class="nav-items hide">Register</a></li>
                             <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
                             <li><a href="https://games.ormrepo.co.uk" class="nav-items">Game Station</a></li>
                             <li><a href="https://greatgreengooseberry.club" class="nav-items">Great Green Gooseberry</a></li>
+
+
                         </ul>
                     </div><!-- /.menu -->
             </div><!-- /.nav-left -->
@@ -53,9 +60,23 @@
                         <img class="nav_logo"
                              src="/images/logo_medium.png"
                              alt="The ormrepo thoughtful logo">
+
+                        <li ><a href="/admin/blogs" class="nav-items hide">Home</a></li>
+                        <li><a href="/about" class="nav-items hide">About</a></li>
+                        <li><a href="/contact" class="nav-items hide">Contact</a></li>
                         <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
-                         <li><a href="https://games.ormrepo.co.uk" class="nav-items">Game Station</a></li>
+                        <li><a href="https://games.ormrepo.co.uk" class="nav-items">Game Station</a></li>
                         <li><a href="https://greatgreengooseberry.club" class="nav-items">Great Green Gooseberry</a></li>
+                        <li><a class="nav-items hide" href="{{ url('/logout') }}"
+
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
                     </ul>
                 </div><!-- /.menu -->
             </div><!-- /.nav-left -->

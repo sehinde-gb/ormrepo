@@ -35,8 +35,6 @@ h6 {
 h1 {
   font-family: $lato;
   font-weight: 700;
-  //font-size: 40px;
-  //line-height: 56px;
   text-transform: none !important;
   color: $primary-color;
   padding-top: 10px;
@@ -46,6 +44,7 @@ h2 {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 32px;
   text-transform: uppercase;
   color: $primary-color;
   margin: 0;
@@ -106,8 +105,6 @@ h6 a:hover {
   text-decoration: none;
 }
 
-
-
 a {
   color: #AE9C2C;
 }
@@ -129,7 +126,7 @@ p {
   font-family: $lato;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 30px;
   color: $beige;
 }
 
@@ -150,6 +147,7 @@ p {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   font-size: 5em;
+  line-height: 107px;
 }
 
 .column h1 {
@@ -160,13 +158,11 @@ p {
   text-align: center;
 }
 
-
-
 .section-heading h2 {
   font-family: $lato;
   font-weight: 700;
   font-size: 30px;
-  line-height: 41px;
+  line-height: 44px;
   color: black;
 }
 
@@ -174,7 +170,7 @@ p {
   font-family: $fira-sans;
   font-weight: 300;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 30px;
   color: black;
   padding-top: 20px;
 }
@@ -209,7 +205,7 @@ label {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 32px;
   text-transform: capitalize;
   color: $primary-color;
   margin: 0;
@@ -220,7 +216,7 @@ label {
   font-family: 'FiraSans Light', "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 28px;
   text-transform: capitalize;
   color: $beige;
 }
@@ -229,28 +225,26 @@ label {
   font-family: $lato;
   font-size: 18px;
   font-weight: 400;
+  line-height: 28px;
   color: $black-color;
 }
 
 .column-name {
   font-family: $lato-bold;
   font-size: 24px;
-  line-height: 33px;
   text-transform: uppercase;
   color: $secondary-color;
   font-weight: 700;
-  line-height: 33px;
+  line-height: 38px;
   position: relative;
   left: 40px;
 }
-
-
 
 .section--title {
   font-family: $lato;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 30px;
   color: $black-color;
 }
 
@@ -258,7 +252,7 @@ label {
   font-family: $lato-bold;
   font-weight: 700;
   font-size: 36px;
-  line-height: 50px;
+  line-height: 51px;
   text-transform: uppercase;
   color: $beige;
   margin: 0;
@@ -270,7 +264,7 @@ label {
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 32px;
   color: #606060;
   border: 0;
 }
@@ -279,6 +273,7 @@ label {
   font-family: "Georgia Italic", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  line-height: 30px;
   font-style: italic;
   color: white;
   text-transform: none;
@@ -289,20 +284,18 @@ label {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 32px;
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
-  position: relative;
-  bottom: 60px;
-  right: 20px;
+  padding: 0;
 }
 
 .lower--box-text {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 32px;
   text-transform: uppercase;
   color: $secondary-color;
 }
@@ -311,7 +304,7 @@ label {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 32px;
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
@@ -336,14 +329,420 @@ label {
   color:  #f8f8f8;
 }
 
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .comment-heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $beige;
+  }
+
+  .intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em;
+    line-height: 107px;
+  }
+
+  .column h1 {
+    padding-left: 30px;
+  }
+
+  .leader {
+    text-align: center;
+  }
+
+  .section-heading h2 {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: black;
+  }
+
+  .section--body {
+    font-family: $fira-sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    padding-top: 20px;
+  }
+
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 2em;
+    font-family: $lato;
+    font-weight: 700;
+    line-height: 47px;
+  }
+
+  .paged-links {
+    color: #f9f1dc;
+  }
+
+  label {
+    color: #f9f1dc;
+  }
+
+  .blog--title {
+    font-family: $fira-sans;
+    font-size: 35px;
+    line-height: 54px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $beige;
+  }
+
+  .blog--excerpt {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: $primary-color;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #published--at {
+    font-family: 'FiraSans Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: $beige;
+  }
+
+  .lead {
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $black-color;
+  }
+
+  .column-name {
+    font-family: $lato-bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+    line-height: 38px;
+    position: relative;
+    left: 40px;
+  }
+
+  .section--title {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $black-color;
+  }
+
+  .news--heading {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: $beige;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .lorem--text {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
+    color: #606060;
+    border: 0;
+  }
+
+  .social--text {
+    font-family: "Georgia Italic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    font-style: italic;
+    color: white;
+    text-transform: none;
+    padding-top: 10px;
+  }
+
+  .box--line {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lower--box-text {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+
+  .box--underline {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+
+  }
+
+  .tag--centre {
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  .twitter a {
+    text-decoration: none;
+  }
+
+  .fa-2x {
+    color: #fdfdfd;
+    padding-left: 20px;
+  }
+
+  .body {
+    color: #f8f8f8;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .comment-heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: $beige;
+  }
 
 
-@media(max-width:767px) {
+  .intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  }
+
+  .intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    line-height: 106px;
+      }
+
+  .column h1 {
+    padding-left: 30px;
+  }
+
+  .leader {
+    text-align: center;
+  }
+
+  .section-heading h2 {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: black;
+  }
+
+  .section--body {
+    font-family: $fira-sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+    padding-top: 20px;
+  }
+
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
+    font-family: $lato;
+    font-weight: 700;
+    line-height: 46px;
+  }
+
+  .paged-links {
+    color: #f9f1dc;
+  }
+
+  label {
+    color: #f9f1dc;
+  }
+
+  .blog--title {
+    font-family: $fira-sans;
+    font-size: 35px;
+    line-height: 49px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $beige;
+  }
+
+  .blog--excerpt {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $primary-color;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #published--at {
+    font-family: 'FiraSans Light', "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: $beige;
+  }
+
+  .lead {
+    font-family: $lato;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $black-color;
+  }
+
+  .column-name {
+    font-family: $lato-bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+    line-height: 33px;
+    position: relative;
+    left: 40px;
+  }
+
+
+
+  .section--title {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black-color;
+  }
+
+  .news--heading {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: $beige;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .lorem--text {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    color: #606060;
+    border: 0;
+  }
+
+  .social--text {
+    font-family: "Georgia Italic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 27px;
+    color: white;
+    text-transform: none;
+    padding-top: 10px;
+  }
+
+  .box--line {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lower--box-text {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+
+  .box--underline {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+
+  }
+
+  .tag--centre {
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  .twitter a {
+    text-decoration: none;
+  }
+
+  .fa-2x {
+    color: #fdfdfd;
+    padding-left: 20px;
+  }
+
+  .body {
+    color:  #f8f8f8;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
 
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
+    line-height: 64px;
   }
 
   .intro-message > h1 {
@@ -381,6 +780,7 @@ label {
     font-weight: 500;
     font-size: 15px;
     font-style: italic;
+    line-height: 23px;
     color: white;
     text-transform: none;
     padding-top: 10px;
@@ -390,7 +790,7 @@ label {
     font-family: $lato-bold;
     font-weight: 700;
     font-size: 26px;
-    //line-height: 50px;
+    line-height: 36px;
     text-transform: uppercase;
     color: $beige;
     margin: 0;
@@ -401,6 +801,7 @@ label {
     font-family: $montserrat-bold;
     font-weight: 500;
     font-size: 30px;
+    line-height: 41px;
     color: black;
     margin-bottom: 30px;
   }
@@ -410,13 +811,14 @@ label {
     font-family: $montserrat;
     font-weight: 300;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
     color: black;
   }
 
   .lead {
     font-family: $montserrat;
     font-size: 18px;
+    line-height: 27px;
     font-weight: 400;
     color: black;
   }
@@ -425,11 +827,13 @@ label {
     font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;
-    line-height: 30px;
+    line-height: 27px;
     color: #606060;
-    padding-bottom: 70px;
-    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 0;
+    width: 100%;
   }
 
   .twitter a {
@@ -442,7 +846,6 @@ label {
   }
 
   .tag--centre {
-    //padding-left: 30px;
     text-decoration: none;
   }
 
@@ -450,17 +853,39 @@ label {
     font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 27px;
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-    position: relative;
-    bottom: 60px;
-    right: 20px;
+
   }
 
 
+  .column-name {
+    font-family: $lato-bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+    line-height: 33px;
+    padding-left: 50px;
+
+  }
+
+  .blog--title {
+    font-family: $fira-sans;
+    font-size: 35px;
+    line-height: 47px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $beige;
+
+  }
+
 }
+
+
 
 
 

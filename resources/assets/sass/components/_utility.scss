@@ -1,3 +1,4 @@
+$lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
 
 .is--beige {
   color: #f9f1dc !important;
@@ -43,20 +44,6 @@
 }
 
 /* Utility Classes */
-.is-black {
-  font-family: $lato;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $black-color;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.is--centre {
-  text-align: center;
-}
-
-
 .is--centered {
   text-align: center;
 }
@@ -76,10 +63,6 @@
 .is--both-sides {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.is--beige {
-  color: $beige;
 }
 
 .is--black {
@@ -112,15 +95,146 @@
   margin-top: 50px;
 }
 
-.is--padding-bottom-20 {
-  padding-bottom: 20px;
-}
 .is--lorem-padding {
   padding-left: 22px;
   padding-bottom: 20px;
 }
 
-@media(max-width:767px) {
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .is-aligned {
+    vertical-align: baseline;
+    color: black;
+  }
+
+  /* Utility Classes */
+
+  .is--centered {
+    text-align: center;
+  }
+
+  .is--uppercase {
+    text-transform: uppercase;
+  }
+
+  .is--padded {
+    padding-bottom: 20px;
+  }
+
+  .is--mar-top {
+    margin-top: 20px;
+  }
+
+  .is--both-sides {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .is--black {
+    color: black;
+  }
+
+  .is--padded-top-10 {
+    padding-top: 10px;
+  }
+
+  .is--padded-top-40 {
+    padding-top: 40px;
+
+  }
+
+  .is--padded-top-50 {
+    padding-top: 50px;
+  }
+
+  .is--padded-left-40 {
+    padding-left: 40px;
+    padding-top: 5px;
+  }
+
+  .is--margin-top-25 {
+    margin-top: 25px;
+  }
+
+  .is--margin-top-50 {
+    margin-top: 50px;
+  }
+
+  .is--lorem-padding {
+    padding-left: 22px;
+    padding-bottom: 20px;
+  }
+ }
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .is-aligned {
+    vertical-align: baseline;
+    color: black;
+  }
+
+  /* Utility Classes */
+
+  .is--centered {
+    text-align: center;
+  }
+
+  .is--uppercase {
+    text-transform: uppercase;
+  }
+
+  .is--padded {
+    padding-bottom: 20px;
+  }
+
+  .is--mar-top {
+    margin-top: 20px;
+  }
+
+  .is--both-sides {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .is--black {
+    color: black;
+  }
+
+  .is--padded-top-10 {
+    padding-top: 10px;
+  }
+
+  .is--padded-top-40 {
+    padding-top: 40px;
+
+  }
+
+  .is--padded-top-50 {
+    padding-top: 50px;
+  }
+
+  .is--padded-left-40 {
+    padding-left: 40px;
+    padding-top: 5px;
+  }
+
+  .is--margin-top-25 {
+    margin-top: 25px;
+  }
+
+  .is--margin-top-50 {
+    margin-top: 50px;
+  }
+
+  .is--lorem-padding {
+    padding-left: 22px;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
 
   .is-typ-flex {
     display: flex;
@@ -137,5 +251,20 @@
     padding-top: 10px;
   }
 
+  .is--padded-left-40 {
+    padding-left: 20px;
+    padding-top: 5px;
+  }
 
+  .is--padded-top-40 {
+    padding-top: 20px;
+
+  }
+
+  .is--lorem-padding {
+    padding-left: 22px;
+    padding-bottom: 20px;
+  }
 }
+
+
