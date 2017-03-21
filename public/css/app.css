@@ -3230,10 +3230,7 @@ form {
   }
   /* end of show page */
   .heading {
-    min-height: 200px;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
+    display: none;
   }
 }
 

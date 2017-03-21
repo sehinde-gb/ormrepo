@@ -695,7 +695,6 @@ form {
   .article-container {
     width: 100%;
     min-height: 800px;
-    //display: flex;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -766,10 +765,7 @@ form {
 
 
   .heading {
-    min-height: 200px;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
+    display: none;
 
   }
 }
