@@ -4,21 +4,19 @@
 
 @section('content')
     <div class="form-page">
-        <div class="logo-container">
-            <div class="own-logo">
-                <img class="bordered-logo"
-                         src="/images/logo_small.png"
-                         alt="The ormrepo thoughtful logo">
-            </div><!-- /.own-logo -->
-        </div><!-- /.logo-container -->
-
-
-            <div class="login-fluid">
+        <div class="login-fluid">
+                <div class="logo-container">
+                    <div class="own-logo">
+                        <img class="bordered-logo"
+                             src="/images/logo_small.png"
+                             alt="The ormrepo thoughtful logo">
+                    </div><!-- /.own-logo -->
+                </div><!-- /.logo-container -->
                 <div class="header">
                     <h4 class="leader">Sign In</h4>
                 </div><!-- /.header -->
-
                 <div class="row">
+
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         @include ('partials.errors')
