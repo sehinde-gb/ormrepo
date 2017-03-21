@@ -3230,7 +3230,7 @@ form {
   }
   /* end of show page */
   .heading {
-    display: none;
+    background-color: #003434;
   }
 }
 
