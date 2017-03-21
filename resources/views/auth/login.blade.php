@@ -12,7 +12,7 @@
             </div><!-- /.own-logo -->
         </div><!-- /.logo-container -->
 
-        <div class="sign-container">
+
             <div class="login-fluid">
                 <div class="header">
                     <h4 class="leader">Sign In</h4>
@@ -50,6 +50,6 @@
                     </form>
                 </div><!-- /.row -->
             </div><!-- /.login-fluid -->
-        </div><!-- /.sign-container -->
+
     </div><!-- /.form-page -->
 @endsection

@@ -1394,7 +1394,7 @@ label {
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 350px;
+    width: 300px;
     cursor: pointer;
   }
   .btn-primary:hover {
@@ -2348,10 +2348,13 @@ label {
     width: 100%;
   }
   .form-group {
-    width: 100%;
+    width: 80%;
     padding-left: 15px;
     padding-bottom: 10px;
     margin: 0;
+  }
+  .input-append {
+    width: 100%;
   }
 }
 
