@@ -5,19 +5,19 @@
 @section('content')
 
     <div class="main-container">
-
+        <div class="heading">
+            <div id="featured-image">
+                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
+            </div><!-- /.featured-image -->
+            <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
+            <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
+            <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+            <p id="published--at">Written by <small>Sehinde Raji</small></p>
+        </div><!-- /.heading -->
 
 
         <div class="article-container">
-            <div class="heading">
-                <div id="featured-image">
-                    <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
-                </div><!-- /.featured-image -->
-                <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
-                <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
-                <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
-                <p id="published--at">Written by <small>Sehinde Raji</small></p>
-            </div><!-- /.heading -->
+
 
             <div class="left-container">
                 <p class="is--beige">{!! $blog->body !!}</p>
