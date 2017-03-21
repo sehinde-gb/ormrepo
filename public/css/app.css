@@ -2329,6 +2329,12 @@ label {
     background: none;
     width: 100%;
   }
+  .header {
+    width: 100%;
+  }
+  .logo-container {
+    width: 100%;
+  }
   .register-fluid {
     min-height: 900px;
     overflow: hidden;
