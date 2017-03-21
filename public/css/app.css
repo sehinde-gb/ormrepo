@@ -2222,6 +2222,11 @@ p.copyright {
   background-color: #003434;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: -webkit-box;
+  display: flex;
+  align-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .sign-container {
@@ -2238,7 +2243,6 @@ p.copyright {
   /* don't show content that exceeds my height */
   padding-top: 50px;
   padding-bottom: 20px;
-  width: 40%;
   background-color: white;
   box-shadow: 0 8px 6px -6px white;
   -webkit-box-flex: 0;
@@ -2250,7 +2254,6 @@ p.copyright {
   overflow-y: hidden;
   /* don't show content that exceeds my height */
   padding-top: 50px;
-  width: 40%;
   background-color: white;
   box-shadow: 0 8px 6px -6px white;
   -webkit-box-flex: 0;
@@ -2296,6 +2299,156 @@ p.copyright {
 
 label {
   color: black;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+  .form-page {
+    background-color: #003434;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .sign-container {
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .register-fluid {
+    min-height: 900px;
+    overflow-y: hidden;
+    /* don't show content that exceeds my height */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    -webkit-box-flex: 0;
+    flex: 0 1 60%;
+  }
+  .login-fluid {
+    min-height: 600px;
+    overflow-y: hidden;
+    /* don't show content that exceeds my height */
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    -webkit-box-flex: 0;
+    flex: 0 1 60%;
+  }
+  .logo-container {
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .bordered-logo {
+    border: 1px solid white;
+  }
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato Regular", sans-serif;
+    color: #606060;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .form-group {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .form-control {
+    background-color: #F8F8F8;
+  }
+  .input-append {
+    width: 500px;
+  }
+  label {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .form-page {
+    background-color: #003434;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .sign-container {
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .register-fluid {
+    min-height: 900px;
+    overflow-y: hidden;
+    /* don't show content that exceeds my height */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    -webkit-box-flex: 0;
+    flex: 0 1 60%;
+  }
+  .login-fluid {
+    min-height: 600px;
+    overflow-y: hidden;
+    /* don't show content that exceeds my height */
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+    -webkit-box-flex: 0;
+    flex: 0 1 60%;
+  }
+  .logo-container {
+    display: -webkit-box;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .bordered-logo {
+    border: 1px solid white;
+  }
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato Regular", sans-serif;
+    color: #606060;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .form-group {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .form-control {
+    background-color: #F8F8F8;
+  }
+  .input-append {
+    width: 500px;
+  }
+  label {
+    color: black;
+  }
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -3261,6 +3414,17 @@ form {
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .button-blog {
+    padding-top: 50px;
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
   }
 }
 
