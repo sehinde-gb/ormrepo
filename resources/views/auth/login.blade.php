@@ -10,7 +10,7 @@
                          src="/images/logo_small.png"
                          alt="The ormrepo thoughtful logo">
             </div><!-- /.own-logo -->
-        </div><!-- /.logo-container -->x
+        </div><!-- /.logo-container -->
 
         <div class="sign-container">
             <div class="login-fluid">

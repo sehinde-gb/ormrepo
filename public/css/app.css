@@ -1483,6 +1483,14 @@ label {
   .fa-twitter {
     color: white;
   }
+  .button-group {
+    display: -webkit-box;
+    display: flex;
+    align-content: flex-start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
 }
 
 .navigation {
@@ -2305,17 +2313,25 @@ label {
   .sign-container {
     display: -webkit-box;
     display: flex;
+    align-content: flex-start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
+    width: 100%;
   }
   .login-fluid {
-    padding-left: 20px;
+    min-height: 600px;
+    overflow: hidden;
+    padding: 0;
     margin: 0;
     background: none;
     width: 100%;
   }
   .register-fluid {
+    min-height: 900px;
+    overflow: hidden;
     padding-left: 20px;
     margin: 0;
     background: none;

@@ -77,6 +77,9 @@ label {
 @media screen and (min-width: 481px) and (max-width: 980px) { }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
+
+
+
   .form-page {
     display: flex;
     flex-direction: column;
@@ -88,17 +91,26 @@ label {
 
   .sign-container {
     display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-  }
-
-  .login-fluid {
-    padding-left: 20px;
-    margin: 0;
-    background: none;
     width: 100%;
   }
 
+  .login-fluid {
+    //padding-left: 20px;
+    min-height: 600px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: 100%;
+
+  }
+
   .register-fluid {
+    min-height: 900px;
+    overflow: hidden;
     padding-left: 20px;
     margin: 0;
     background: none;
