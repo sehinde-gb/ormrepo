@@ -2434,10 +2434,15 @@ label {
 
 @media all and (min-width: 100px) and (max-width: 480px) {
   .form-page {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
     background-color: #F8F8F8;
     padding: 0;
     margin: 0;
-    width: 100%;
+    max-width: 100%;
   }
   .login-fluid {
     min-height: 600px;
@@ -2445,7 +2450,8 @@ label {
     padding-top: 50px;
     margin: 0;
     background: none;
-    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
   }
   .header {
     width: 100%;
