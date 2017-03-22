@@ -9,11 +9,7 @@
   justify-content: center;
 }
 
-.sign-container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
+
 
 .register-fluid {
   min-height: 900px;
@@ -84,11 +80,6 @@ label {
     justify-content: center;
   }
 
-  .sign-container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
 
   .register-fluid {
     min-height: 900px;
@@ -161,11 +152,6 @@ label {
     justify-content: center;
   }
 
-  .sign-container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
 
   .register-fluid {
     min-height: 900px;
@@ -232,19 +218,14 @@ label {
   .form-page {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
     background-color: #F8F8F8;
     padding: 0;
     margin: 0;
     width: 100%;
   }
 
-  .sign-container {
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-  }
 
   .login-fluid {
     min-height: 600px;
@@ -281,8 +262,6 @@ label {
     padding-left: 20px;
     width: 100%;
   }
-
-
 
   .input-append {
     width: 100%;

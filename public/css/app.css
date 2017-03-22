@@ -2238,14 +2238,6 @@ p.copyright {
   justify-content: center;
 }
 
-.sign-container {
-  display: -webkit-box;
-  display: flex;
-  align-content: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
 .register-fluid {
   min-height: 900px;
   overflow: hidden;
@@ -2319,13 +2311,6 @@ label {
     -webkit-box-pack: center;
     justify-content: center;
   }
-  .sign-container {
-    display: -webkit-box;
-    display: flex;
-    align-content: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-  }
   .register-fluid {
     min-height: 900px;
     overflow: hidden;
@@ -2386,13 +2371,6 @@ label {
     background-color: #003434;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: -webkit-box;
-    display: flex;
-    align-content: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-  }
-  .sign-container {
     display: -webkit-box;
     display: flex;
     align-content: center;
@@ -2461,20 +2439,12 @@ label {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    background-color: #F8F8F8;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .sign-container {
-    display: -webkit-box;
-    display: flex;
     align-content: flex-start;
     -webkit-box-pack: start;
     justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
+    background-color: #F8F8F8;
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
   .login-fluid {
