@@ -563,7 +563,8 @@ form {
   input[type=text] {
     background-color: #f8f8f8;
     color: black;
-    width: 475px;
+    //width: 475px;
+    width: 100%;
     height: 40px;
   }
 
@@ -806,6 +807,10 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .img-responsive {
+    padding-top: 10px;
   }
 }
 

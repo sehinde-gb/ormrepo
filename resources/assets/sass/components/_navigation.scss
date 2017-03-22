@@ -7,10 +7,9 @@
 .navigation-left ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
 }
 
 .navigation-left a.home {
@@ -74,6 +73,7 @@
   display: flex;
   align-items: center;
   width: 250px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 
@@ -97,10 +97,10 @@
   .navigation-left ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+
   }
 
   .navigation-left a.home {
@@ -164,6 +164,7 @@
     display: flex;
     align-items: center;
     width: 250px;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
 
@@ -190,7 +191,7 @@
   .navigation-left ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -254,7 +255,8 @@
     display: flex;
     align-items: center;
     width: 250px;
-    padding-bottom: 15px;
+    padding: 0;
+    margin: 0;
   }
 
 

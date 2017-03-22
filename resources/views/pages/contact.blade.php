@@ -5,16 +5,16 @@
 @section('content')
 
 <div class="form-page">
-    <div class="logo-container">
-        <div class="own-logo">
-            <img class="bordered-logo"
-                 src="/images/logo_small.png"
-                 alt="The ormrepo thoughtful logo">
-        </div><!-- /.own-logo -->
-    </div><!-- /.logo-container -->
 
-    <div class="sign-container">
         <div class="register-fluid">
+            <div class="logo-container">
+                <div class="own-logo">
+                    <img class="bordered-logo"
+                         src="/images/logo_small.png"
+                         alt="The ormrepo thoughtful logo">
+                </div><!-- /.own-logo -->
+            </div><!-- /.logo-container -->
+
             <div class="header">
                 <h4 class="leader is--black">Contact Us</h4>
             </div><!-- /.header -->
@@ -45,6 +45,6 @@
                 {!! Form::close() !!}
             </div><!-- /.row -->
         </div><!-- /.register-fluid -->
-    </div><!-- /.sign-container -->
+
 </div><!-- /.form-page -->
 @endsection

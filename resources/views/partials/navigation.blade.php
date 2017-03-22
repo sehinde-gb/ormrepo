@@ -18,7 +18,7 @@
                             <li><a href="/register" class="nav-items hide">Register</a></li>
                             <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
                             <li><a href="https://games.ormrepo.co.uk" class="nav-items">Game Station</a></li>
-                            <li><a href="https://greatgreengooseberry.club" class="nav-items">Great Green Gooseberry</a></li>
+                            <li><a href="https://greatgreengooseberry.club" class="nav-items">Gt Green Gooseberry</a></li>
 
 
                         </ul>
@@ -66,7 +66,7 @@
                         <li><a href="/contact" class="nav-items hide">Contact</a></li>
                         <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">Casa Rental</a></li>
                         <li><a href="https://games.ormrepo.co.uk" class="nav-items">Game Station</a></li>
-                        <li><a href="https://greatgreengooseberry.club" class="nav-items">Great Green Gooseberry</a></li>
+                        <li><a href="https://greatgreengooseberry.club" class="nav-items">Gt Green Gooseberry</a></li>
                         <li><a class="nav-items hide" href="{{ url('/logout') }}"
 
                                onclick="event.preventDefault();
