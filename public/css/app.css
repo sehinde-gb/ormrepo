@@ -1388,6 +1388,7 @@ label {
     outline: 0;
     border: 0;
     padding: 10px 15px;
+    margin-left: 20px;
     color: black;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
@@ -1497,7 +1498,7 @@ label {
     -webkit-box-pack: start;
     justify-content: flex-start;
     margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 20px !important;
   }
 }
 
@@ -2197,6 +2198,11 @@ p.copyright {
   footer {
     padding: 50px 0;
     background-color: #003434;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
   }
   .middle-logo {
     display: -webkit-box;
@@ -2444,6 +2450,14 @@ label {
     margin: 0;
     max-width: 100%;
   }
+  .register-fluid {
+    min-height: 900px;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 50px;
+    background: none;
+    max-width: 100%;
+  }
   .login-fluid {
     min-height: 600px;
     overflow: hidden;
@@ -2451,19 +2465,11 @@ label {
     margin: 0;
     background: none;
     max-width: 100%;
-    border: 1px solid black;
   }
   .header {
     width: 100%;
   }
   .logo-container {
-    width: 100%;
-  }
-  .register-fluid {
-    min-height: 900px;
-    margin: 0;
-    padding-top: 50px;
-    background: none;
     width: 100%;
   }
   .row {
@@ -3281,8 +3287,10 @@ form {
     background-size: cover;
   }
   .container {
+    min-height: 200px;
     width: 100%;
     margin: auto;
+    padding: 0;
   }
   .row {
     display: -webkit-box;
@@ -3365,7 +3373,6 @@ form {
   .right-container {
     display: none;
   }
-  /* end of show page */
   .article-container {
     background-color: #003434;
     display: -webkit-box;
@@ -3373,7 +3380,7 @@ form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    min-height: 1500px;
+    min-height: 1000px;
     width: 100%;
     margin: 0;
     padding-left: 20px;
@@ -3396,6 +3403,7 @@ form {
     -webkit-box-pack: center;
     justify-content: center;
   }
+  /* end of show page */
   .img-responsive {
     padding-top: 10px;
   }
