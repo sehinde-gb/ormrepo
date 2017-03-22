@@ -2434,14 +2434,6 @@ label {
 
 @media all and (min-width: 100px) and (max-width: 480px) {
   .form-page {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    align-content: flex-start;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
     background-color: #F8F8F8;
     padding: 0;
     margin: 0;
