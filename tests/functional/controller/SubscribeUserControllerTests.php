@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class SubscribeUserControllerTests extends \TestCase {
+class SubscribeUserControllerTests extends \BrowserKitTestCase {
 
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 

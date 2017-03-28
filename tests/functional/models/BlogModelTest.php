@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\Blog;
 
-class BlogModelTest extends \TestCase {
+class BlogModelTest extends \BrowserKitTestCase {
 
 use   WithoutMiddleware,  DatabaseTransactions;
 

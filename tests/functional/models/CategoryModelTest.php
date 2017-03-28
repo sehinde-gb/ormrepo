@@ -9,7 +9,7 @@ use App\Blog;
 use App\Category;
 
 
-class CategoryModelTest extends \TestCase
+class CategoryModelTest extends \BrowserKitTestCase
 {
 
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;

@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 
 
-class NavigationLinkTests extends TestCase
+class NavigationLinkTests extends \BrowserKitTestCase
 {
 
     /** @test */

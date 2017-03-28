@@ -172,7 +172,7 @@ return [
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
-        \Artesaos\Defender\Providers\DefenderServiceProvider::class,
+        //\Artesaos\Defender\Providers\DefenderServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
 
 
@@ -184,6 +184,7 @@ return [
         App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //Laravel\Tinker\TinkerServiceProvider::class,
 
     ],
 

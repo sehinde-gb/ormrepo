@@ -5,11 +5,11 @@ namespace App;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
-use Artesaos\Defender\Traits\HasDefender;
+//use Artesaos\Defender\Traits\HasDefender;
 
 class User extends Authenticatable
 {
-    use Notifiable, HasDefender;
+    use Notifiable;
 
     /**
      * The database table used by the model.

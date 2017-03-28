@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/"<?php foreach($namespaces as $n) echo " ".$n; ?>>
     <channel>
         <title>{!! $channel['title'] !!}</title>
-        <link>{{ Request::url() }}</link>
+        <link>{{ $channel['rssLink'] }}</link>
         <description><![CDATA[{!! $channel['description'] !!}]]></description>
-        <atom:link href="{{ $channel['link'] }}" rel="self"></atom:link>
+        <atom:link href="{{ $channel['link'] }}" rel="{{ $channel['ref'] }}"></atom:link>
         @if (!empty($channel['copyright']))
         <copyright>{{ $channel['copyright'] }}</copyright>
         @endif
@@ -22,7 +22,7 @@
         <image>
             <url>{{ $channel['logo'] }}</url>
             <title>{{ $channel['title'] }}</title>
-            <link>{{ Request::url() }}</link>
+            <link>{{ $channel['rssLink'] }}</link>
         </image>
         @endif
         @if (!empty($channel['related']))
@@ -45,7 +45,7 @@
             @if (!empty($item['content']))
             <content:encoded><![CDATA[{!! $item['content'] !!}]]></content:encoded>
             @endif
-            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">{{ $item['author'] }}</dc:creator>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">{!! $item['author'] !!}</dc:creator>
             <pubDate>{{ $item['pubdate'] }}</pubDate>
             @if (!empty($item['enclosure']))
             <enclosure

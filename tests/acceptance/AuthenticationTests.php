@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 
 
-class AuthenticationTests extends TestCase
+class AuthenticationTests extends \BrowserKitTestCase
 {
 
     /** @test */

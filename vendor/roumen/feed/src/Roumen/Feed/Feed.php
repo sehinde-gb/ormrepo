@@ -3,19 +3,22 @@
 /**
  * Feed generator class for laravel-feed package.
  *
- * @author Roumen Damianoff <roumen@dawebs.com>
- * @version 2.10.4
+ * @author Roumen Damianoff <roumen@crimsson.com>
+ * @version 2.10.5
  * @link https://roumen.it/projects/laravel-feed
  * @license http://opensource.org/licenses/mit-license.php MIT License
  */
 
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Cache;
 
 class Feed
 {
+    const DEFAULT_REF = 'self';
+
     /**
      * @var array
      */
@@ -34,7 +37,17 @@ class Feed
     /**
      * @var string
      */
+    public $domain;
+
+    /**
+     * @var string
+     */
     public $link;
+
+    /**
+     * @var string
+     */
+    public $ref;
 
     /**
      * @var string
@@ -219,6 +232,7 @@ class Feed
 
         if (empty($this->lang)) $this->lang = Config::get('application.language');
         if (empty($this->link)) $this->link = Config::get('application.url');
+        if (empty($this->ref)) $this->ref = self::DEFAULT_REF;
         if (empty($this->pubdate)) $this->pubdate = date('D, d M Y H:i:s O');
 
         foreach($this->items as $k => $v)
@@ -236,7 +250,9 @@ class Feed
             'cover'         =>  $this->cover,
             'ga'            =>  $this->ga,
             'related'       =>  $this->related,
+            'rssLink'       =>  $this->getRssLink(),
             'link'          =>  $this->link,
+            'ref'           =>  $this->ref,
             'pubdate'       =>  $this->formatDate($this->pubdate, $format),
             'lang'          =>  $this->lang,
             'copyright'     =>  $this->copyright
@@ -486,4 +502,19 @@ class Feed
         $this->items[] = $item;
     }
 
+    /**
+     * Generate rss link
+     *
+     * @author Cara Wang <caraw@cnyes.com>
+     * @since  2016/09/09
+     */
+    private function getRssLink()
+    {
+        $rssLink = Request::url();
+        if (!empty($this->domain)) {
+            $rssLink = sprintf('%s/%s', rtrim($this->domain, '/'), ltrim(Request::path(), '/'));
+        }
+
+        return $rssLink;
+    }
 }

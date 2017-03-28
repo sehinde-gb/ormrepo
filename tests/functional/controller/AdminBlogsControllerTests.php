@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class AdminBlogsControllerTests extends \TestCase
+class AdminBlogsControllerTests extends \BrowserKitTestCase
 {
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 

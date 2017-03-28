@@ -1,9 +1,20 @@
 # Change Log
 
+## 4.2.2 - 23-Mar-2017
+
+- Better handling of numeric and boolean slug sources (#351, thanks @arturock)
+
+
+## 4.2.1 - 01-Feb-2017
+
+- Support Laravel 5.4 (#339, thanks @maddhatter)
+
+
 ## 4.1.2 - 09-Nov-2016
 
 - Fix in `getExistingSlugs` when using global scopes (#327)
 - Update `Cocur\Slugify` to `^2.3`.
+
 
 ## 4.1.1 - 12-Oct-2016
 

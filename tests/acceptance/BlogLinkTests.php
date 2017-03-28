@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 
 
-class BlogLinkTests extends TestCase
+class BlogLinkTests extends \BrowserKitTestCase
 {
 
     /** @test */
