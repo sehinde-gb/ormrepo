@@ -8,6 +8,7 @@ window._ = require('lodash');
  */
 
 window.$ = window.jQuery = require('jquery');
+window.Laravel = { csrfToken: $('meta[name=csrf-token]').attr("content") };
 
 require('bootstrap-sass');
 
@@ -41,17 +42,17 @@ window.axios.defaults.headers.common = {
 
 import Echo from "laravel-echo";
 
-/*
+
  window.Echo = new Echo({
  broadcaster: 'pusher',
  key: '559f1295f399eca1e5d1',
  cluster: 'eu',
  encrypted: true
  });
- */
-// window.Pusher = require('pusher-js');
 
-Echo.private('user.${userId}')
+window.Pusher = require('pusher-js');
+
+window.Echo('user.${userId}')
     .listen('BlogWasCreated', (e) => {
         console.log(e.update);
     });
