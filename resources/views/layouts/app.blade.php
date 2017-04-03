@@ -46,12 +46,52 @@
     @include('partials.analyticstracking')
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
 
 
+<script type="application/javascript" src="/js/jquery.js"></script>
 <script type="application/javascript" src="/js/bootstrap.js"></script>
 <script type="application/javascript" src="/js/app.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.summernote').summernote({
+                height: 300,                 // set editor height
+                minHeight: null,             // set minimum height of editor
+                maxHeight: null, // set maximum height of editor
+                width: 150,
+                focus: true,                  // set focus to editable area after initializing summernote
+                insertParagraph: true,
+                placeholder: 'Create your Article ...',
+                callbacks: {
+                    onKeydown: function (e) {
+                        var t = e.currentTarget.innerText;
+                        if (t.trim().length >= 10000) {
+                            //delete key
+                            if (e.keyCode != 8)
+                                e.preventDefault();
+                        }
+                    },
+                    onKeyup: function (e) {
+                        var t = e.currentTarget.innerText;
+                        $('#maxContentPost').text(10000 - t.trim().length);
+                    },
+                    onPaste: function (e) {
+                        var t = e.currentTarget.innerText;
+                        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+                        e.preventDefault();
+                        var all = t + bufferText;
+                        document.execCommand('insertText', false, all.trim().substring(0, 10000));
+                        $('#maxContentPost').text(10000 - t.length);
+                    }
+                }
+            });
+        });
+        $(document).ready(function(){
+            $("img").addClass("img-responsive");
+        });
+    </script>
 
 {{-- Show password--}}
 <script src="/js/password.js"></script>
@@ -84,17 +124,9 @@
     });
 </script>
 
-    <script src="/js/custom.js"></script>
 
-    {{--Mobile menu--}}
-    <script>
-        $(function() {
-            $("a[href=#menuExpand]").click(function(e) {
-                $(".menu").toggleClass("menuOpen");
-                e.preventDefault();
-            });
-        });
-    </script>
+
+
 <script>
     // Google Analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
