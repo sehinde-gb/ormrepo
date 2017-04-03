@@ -8,5 +8,6 @@
 yarn.lock
 .idea/workspace.xml
 composer.lock
+/vendor
 
 
