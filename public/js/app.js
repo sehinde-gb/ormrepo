@@ -12144,7 +12144,7 @@ window.axios.defaults.headers.common = {
 */
 //window.Pusher = require('pusher-js');
 
-__WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a.private('user.${userId}').listen('BlogWasCreated', function (e) {
+window.Echo.channel('user.${userId}').listen('BlogWasCreated', function (e) {
   console.log(e.update);
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))

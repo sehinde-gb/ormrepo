@@ -52,7 +52,7 @@ import Echo from "laravel-echo";
 */
 //window.Pusher = require('pusher-js');
 
-Echo.private('user.${userId}')
+window.Echo.channel('user.${userId}')
     .listen('BlogWasCreated', (e) => {
         console.log(e.update);
     });
