@@ -12134,17 +12134,7 @@ window.axios.defaults.headers.common = {
 
 
 
-/*
- window.Echo = new Echo({
- broadcaster: 'pusher',
- key: '559f1295f399eca1e5d1',
- cluster: 'eu',
- encrypted: true
- });
-*/
-//window.Pusher = require('pusher-js');
-
-window.Echo.channel('user.${userId}').listen('BlogWasCreated', function (e) {
+window.Echo('user.${userId}').listen('BlogWasCreated', function (e) {
   console.log(e.update);
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))

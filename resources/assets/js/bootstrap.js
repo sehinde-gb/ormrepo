@@ -42,7 +42,7 @@ window.axios.defaults.headers.common = {
 
 import Echo from "laravel-echo";
 
-window.Echo.channel('user.${userId}')
+window.Echo('user.${userId}')
     .listen('BlogWasCreated', (e) => {
         console.log(e.update);
     });
