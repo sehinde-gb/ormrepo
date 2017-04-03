@@ -42,17 +42,17 @@ window.axios.defaults.headers.common = {
 
 import Echo from "laravel-echo";
 
-
+/*
  window.Echo = new Echo({
  broadcaster: 'pusher',
  key: '559f1295f399eca1e5d1',
  cluster: 'eu',
  encrypted: true
  });
+*/
+//window.Pusher = require('pusher-js');
 
-window.Pusher = require('pusher-js');
-
-window.Echo('user.${userId}')
+Echo.private('user.${userId}')
     .listen('BlogWasCreated', (e) => {
         console.log(e.update);
     });
