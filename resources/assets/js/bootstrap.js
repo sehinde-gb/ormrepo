@@ -40,9 +40,9 @@ window.axios.defaults.headers.common = {
  */
 
 
-import Echo from "laravel-echo";
+//import Echo from "laravel-echo";
 
-window.Echo('user.${userId}')
-    .listen('BlogWasCreated', (e) => {
-        console.log(e.update);
-    });
+//Echo.channel('App.User.{userId}')
+  //  .listen('BlogWasCreated', (e) => {
+    //    console.log(e.update);
+    //});
