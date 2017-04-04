@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
+
 </head>
 <body>
 
@@ -49,9 +50,9 @@
 
 
 
-<script type="application/javascript" src="/js/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script type="application/javascript" src="/js/bootstrap.js"></script>
-<script type="application/javascript" src="/js/app.js"></script>
+
 
 
     <script>
@@ -124,7 +125,7 @@
     });
 </script>
 
-
+    <script type="application/javascript" src="/js/app.js"></script>
 
 
 <script>
