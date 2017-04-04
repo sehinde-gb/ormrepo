@@ -26,6 +26,7 @@
 
 
     Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
+    //Route::get('/', function () { return view('summer'); });
 
     Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
     Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
