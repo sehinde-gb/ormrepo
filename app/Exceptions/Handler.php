@@ -75,6 +75,12 @@ class Handler extends ExceptionHandler
 
             return parent::render($request, $e);
         }
+
+        if ($e instanceof TagNotFoundException) {
+            return response(view('errors.407'), 407);
+
+            return parent::render($request, $e);
+        }
     }
 
     /**

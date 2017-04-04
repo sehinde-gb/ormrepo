@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoriesTable extends Migration
+class CreateTagsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,21 +13,22 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->string('slug')->unique()->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
-        
-        Schema::create('blog_category', function (Blueprint $table) {
-            $table->integer('blog_id')->unsigned()->index();
-            $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade')->unsigned();
 
-            $table->integer('category_id')->unsigned()->index();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->unsigned();
+        Schema::create('blog_tag', function (Blueprint $table) {
+            $table->integer('blog_id')->unsigned()->index();
+            $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade');
+
+            $table->integer('tag_id')->unsigned()->index();
+            $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -37,7 +39,8 @@ class CreateCategoriesTable extends Migration
     public function down()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        Schema::drop('categories');
+        Schema::drop('tags');
+        Schema::drop('blog_tag');
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

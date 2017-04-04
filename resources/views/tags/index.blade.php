@@ -18,16 +18,16 @@
 <div class="section">
     <div class="container">
         <ul class="has-columns">
-            @foreach($categories as $letter => $categoryCollection)
+            @foreach($tags as $letter => $tagCollection)
                 <div class="letter-group">
                     <h3 class="title is-1 letter">
                         {{ $letter }}
                     </h3><!-- /.title is-1 letter -->
 
                     <ul>
-                        @foreach($categoryCollection as $category)
+                        @foreach($tagCollection as $tag)
                             <li class="title is-5">
-                                <a href="/categories/{{ $category->name }}">{{ $category->name }}</a>
+                                <a href="/tags/{{ $tag->name }}">{{ $tag->name }}</a>
                             </li><!-- /.title is-5 -->
                         @endforeach
                     </ul>

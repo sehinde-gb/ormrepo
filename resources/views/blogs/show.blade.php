@@ -4,41 +4,31 @@
 
 @section('content')
 
-    <div class="heading">
-        <div id="featured-image">
-            <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
-        </div><!-- /.featured-image -->
-        <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
-        <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
-        <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
-        <p id="published--at">Written by <small>Sehinde Raji</small></p>
-    </div><!-- /.heading -->
-    <div class="main-container">
-
-
-
-        <div class="article-container">
-
-
+<div class="main-container">
+     <div class="article-container">
             <div class="left-container">
-                <p class="is--beige">{!! $blog->body !!}</p>
+                <div class="heading">
+                    <div id="featured-image">
+                        <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
+                    </div><!-- /.featured-image -->
+                    <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
+                    <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
+                    <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+                    <p id="published--at">Written by <small>Sehinde Raji</small></p>
+                    <p class="is--beige">{!! $blog->body !!}</p>
+                </div><!-- /.heading -->
             </div><!-- /.left-container -->
 
             <div class="right-container">
                 <div class="social-container">
-                    <h3>Comments</h3>
-                    @if(isset($comments['root']))
-                        @include('blogs.comments.list', ['collection' => $comments['root']])
-
-
-                        @include('blogs.comments.form')
-
-                    @else
-                        <p>No historical comments today</p>
-
-                        @include('blogs.comments.form')
-
-                    @endif
+                    <h2 class="is--padded side-heading">Comments:</h2>
+                        @if(isset($comments['root']))
+                            @include('blogs.comments.list', ['collection' => $comments['root']])
+                            @include('blogs.comments.form')
+                        @else
+                            <p class="comment-heading">No historical comments today</p>
+                            @include('blogs.comments.form')
+                        @endif
 
                     <div class="social-buttons is--margin-top-50">
 
@@ -49,16 +39,16 @@
                     </div><!-- /.social-buttons -->
 
 
-                    <div class="category">
-                        @unless($blog->categories->isEmpty())
+                    <div class="tag-buttons">
+                        @unless($blog->tags->isEmpty())
                             <h2 class="side-heading">Tags:</h2>
                             <ul class="tag--centre">
-                                @foreach($blog->categories as $category)
-                                    <a href="{{ url('/blogs', $blog->id) }}"><button class="btn-tag">{{ $category->name }}</button></a>
+                                @foreach($blog->tags as $tag)
+                                    <a href="{{ url('/blogs', $blog->id) }}"><button class="btn-tag">{{ $tag->name }}</button></a>
                                 @endforeach
                             </ul>
                         @endunless
-                    </div><!-- /.category -->
+                    </div><!-- /.tag-buttons -->
                 </div><!-- /.social-container -->
             </div><!-- /.right-container -->
 

@@ -16,7 +16,7 @@ class Blog extends Model
     use  Sluggable, SluggableScopeHelpers, Searchable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
-    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at' ];
+    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
 
 
     /**
@@ -34,13 +34,13 @@ class Blog extends Model
     }
 
     /**
-     * Get the categories associated with a given blog
+     * Get the tags associated with a given blog
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function categories()
+    public function tags()
     {
-        return $this->belongsToMany('App\Category')->withTimestamps();
+        return $this->belongsToMany('App\Tag')->withTimestamps();
     }
 
     /**
@@ -78,7 +78,7 @@ class Blog extends Model
     /**
      * Load a threaded set of comments for the post.
      *
-     * @return App\CommentsCollection
+     * @return app\CommentsCollection
      */
     public function getComments()
     {
@@ -202,6 +202,19 @@ class Blog extends Model
     public function getUpdatedAtAttribute($date)
     {
         return Carbon::parse($date)->format('d-m-Y');
+    }
+
+
+    /**
+     * Accessor
+     *
+     * Get the taglist attribute id and return it to the form.
+     *
+     * @return mixed
+     */
+    public function getTagListAttribute()
+    {
+        return $this->tags()->pluck('id');
     }
 
 

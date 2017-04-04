@@ -16,10 +16,10 @@
         <div class="sign-container">
             <div class="register-fluid">
                 <div class="header">
-                    <h4 class="leader">SlugNotFoundException</h4>
+                    <h4 class="leader">TagNotFoundException</h4>
                 </div><!-- /.header -->
                 <div class="row">
-                    <h4>Oops Slug Not Found!</h4>
+                    <h4>Oops Tag Not Found!</h4>
                     <h4>Please contact your technical support team for further assistance.</h4>
                 </div><!-- /.row -->
             </div><!-- /.register-fluid -->
@@ -29,7 +29,5 @@
 
 
 @endsection
-
-
 
 

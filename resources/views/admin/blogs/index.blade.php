@@ -57,57 +57,6 @@
                                     <h6 class="box--line">Web Developer</h6>
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
 
-                            @elseif($blog->id == 3)
-                                <div class="column is-one-quarter is-light-grey is-flex is-six">
-                                    <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-six-->
-
-                                <div class="column is-one-quarter is-grey is-flex is-seven has-text-centered">
-                                    <div class="arrow">
-                                        <span><i class="fa fa-minus fa-1x" aria-hidden="true"></i>
-                                        <a href="https://twitter.com/ormrepo" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-                                        <i class="fa fa-minus fa-1x" aria-hidden="true"></i></span>
-                                        <h6 class="social--text">Follow @ormrepo
-                                            for more information</h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-seven has-text-centered -->
-
-                                <div class="column is-one-quarter box-is-beige is-flex-bottom is-eight">
-                                    <h6 class="column-name">Sehinde Raji</h6>
-                                </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-eight -->
-
-
-                            @elseif($blog->id == 4)
-                                <div class="column is-one-quarter is-dark-grey is-flex is-nine">
-                                    <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
-
-                            @elseif($blog->id == 5)
-                                <div class="column is-one-quarter is-grey is-flex is-ten">
-                                    <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
-
-                            @elseif($blog->id == 6)
-                                <div class="column is-one-quarter is-dark-grey is-flex is-ten">
-                                    <div class="arrow">
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-ten-->
-
-                                <div class="column is-one-quarter box-is-beige is-hidden-mobile">
-                                    <h6 class="lower--box-text is--padded-left-40">Full Stack Developer</h6>
-                                </div><!-- /.column is-one-quarter box-is-beige is-hidden-mobile-->
-
                             @endif
 
                         @endforeach

@@ -1,6 +1,6 @@
-import autosize from 'autosize';
+//import autosize from 'autosize';
 
-autosize(document.querySelectorAll('textarea'));
+//autosize(document.querySelectorAll('textarea'));
 
 /**
  * First we will load all of this project's JavaScript dependencies which

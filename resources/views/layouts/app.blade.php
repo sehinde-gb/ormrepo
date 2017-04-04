@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -128,6 +130,10 @@
                 e.preventDefault();
             });
         });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $('select').select2();
     </script>
 <script>
     // Google Analytics

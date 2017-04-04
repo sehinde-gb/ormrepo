@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 
 @section('meta-title', '403 Error')
 

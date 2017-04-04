@@ -29,8 +29,8 @@
 </div><!-- /.form-group -->
 
 <div class="form-group form-group-lg">
-    {!! Form::label('category_list', 'Category:', ['class' => 'control-label']) !!}
-    {!! Form::select('category_list[]', $categories, null, ['id' => 'category_list','class' => 'form-control', 'multiple']) !!}
+    {!! Form::label('tag_list', 'Tags:', ['class' => 'control-label']) !!}
+    {!! Form::select('tag_list[]', $tags, null, ['id' => 'tag_list','class' => 'form-control', 'multiple']) !!}
 </div><!-- /.form-group -->
 
 <div class="button-centre">

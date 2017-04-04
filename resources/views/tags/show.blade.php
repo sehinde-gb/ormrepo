@@ -8,7 +8,7 @@
             <div class="section hero">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">Category Results</h1>
+                        <h1 class="title">Tag Results</h1>
                         <p class="subtitle">
                             Every tag on the site
                         </p>

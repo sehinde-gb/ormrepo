@@ -54,8 +54,8 @@ class PagesController extends Controller
                 'user_message' => $request->get('user_message')
             ), function($message)
             {
-                $message->from('sehinde@ormrepo.net');
-                $message->to('sehinde@ormrepo.net', 'Admin')->subject('TODOParrot Feedback');
+                $message->from('adminstrator@ormrepo.co.uk');
+                $message->to('adminstrator@ormrepo.co.uk', 'Admin')->subject('TODOParrot Feedback');
             });
 
         return \Redirect::route('blogs.index')->with('message', 'Thanks for contacting us!');

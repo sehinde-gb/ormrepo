@@ -5,17 +5,15 @@
 @section('content')
 
     <div class="form-page">
-        <div class="logo-container">
-            <div class="own-logo">
-                <img class="logo"
-                     srcset="/images/logo_medium.png 1080w,
+        <div class="register-fluid">
+                <div class="logo-container">
+                    <div class="own-logo">
+                        <img class="logo"
+                             srcset="/images/logo_medium.png 1080w,
                         /images/logo_small.png 760w"
-                     alt="The ormrepo thoughtful logo">
-            </div><!-- /.own-logo -->
-        </div><!-- /.logo-container -->
-
-        <div class="sign-container">
-            <div class="register-fluid">
+                             alt="The ormrepo thoughtful logo">
+                    </div><!-- /.own-logo -->
+                </div><!-- /.logo-container -->
                 <div class="header">
                     <h4 class="leader is--black">Create a Post</h4>
                 </div><!-- /.header -->
@@ -32,7 +30,7 @@
                     <br>
                 @endis
             </div><!-- /.register-fluid -->
-        </div><!-- /.sign__container -->
+
     </div><!-- /.form-page -->
 @endsection
 

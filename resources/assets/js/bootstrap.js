@@ -41,7 +41,7 @@ next();
  * allows your team to easily build robust real-time web applications.
  */
 
-import Echo from "laravel-echo";
+//import Echo from "laravel-echo";
 
 /*
 window.Echo = new Echo({
@@ -51,9 +51,9 @@ window.Echo = new Echo({
     encrypted: true
 });
 */
-
+/*
 Echo.private('user.${userId}')
     .listen('BlogWasCreated', (e) => {
     console.log(e.update);
 });
-
+*/
