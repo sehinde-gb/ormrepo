@@ -68,8 +68,8 @@ class PhoneNumberOfflineGeocoder
      * @param PhoneNumber $number a valid phone number for which we want to get a text description
      * @param string $locale the language code for which the description should be written
      * @param string $userRegion the region code for a given user. This region will be omitted from the
-     *     description if the phone number comes from this region. It is a two-letter uppercase ISO
-     *     country code as defined by ISO 3166-1.
+     *     description if the phone number comes from this region. It is a two-letter uppercase CLDR region
+     *     code.
      * @return string a text description for the given language code for the given phone number, or empty
      *     string if the number passed in is invalid
      */
@@ -104,9 +104,9 @@ class PhoneNumberOfflineGeocoder
             $regionWhereNumberIsValid = 'ZZ';
             foreach ($regionCodes as $regionCode) {
                 if ($this->phoneUtil->isValidNumberForRegion($number, $regionCode)) {
+                    // If the number has already been found valid for one region, then we don't know which
+                    // region it belongs to so we return nothing.
                     if ($regionWhereNumberIsValid !== 'ZZ') {
-                        // If we can't assign the phone number as definitely belonging to only one territory,
-                        // then we return nothing.
                         return "";
                     }
                     $regionWhereNumberIsValid = $regionCode;
@@ -159,9 +159,11 @@ class PhoneNumberOfflineGeocoder
      * @param PhoneNumber $number a valid phone number for which we want to get a text description
      * @param string $locale the language code for which the description should be written
      * @param string $userRegion the region code for a given user. This region will be omitted from the
-     *     description if the phone number comes from this region. It is a two-letter uppercase ISO
-     *     country code as defined by ISO 3166-1.
-     * @return string a text description for the given language code for the given phone number
+     *     description if the phone number comes from this region. It is a two-letter upper-case CLDR
+     *     region code.
+     * @return string a text description for the given language code for the given phone number, or an
+     *     empty string if the number could come from multiple countries, or the country code is
+     *     in fact invalid
      */
     public function getDescriptionForValidNumber(PhoneNumber $number, $locale, $userRegion = null)
     {
