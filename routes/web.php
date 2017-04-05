@@ -27,20 +27,11 @@ Route::get('tags/{tags}', 'TagsController@show');
 Route::get('tags', 'TagsController@index');
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
-Route::post('contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
+Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
 
 # Subscribe
-
-//Route::get('newsletter',
-  //  ['as' => 'newsletter', 'uses' => 'SubscriptionsController@create']);
-Route::post('subscribe',
-    ['as' => 'subscription_store', 'uses' => 'SubscriptionsController@store']);
-
-
-//Route::get('news',
-  //  ['as' => 'news', 'uses' => 'SubscribeUserController@create']);
-Route::post('news',
-    ['as' => 'news_store', 'uses' => 'SubscribeUserController@store']);
+Route::post('subscribe', ['as' => 'subscription_store', 'uses' => 'SubscriptionsController@store']);
+Route::post('newsletter', ['as' => 'news_store', 'uses' => 'SubscribeUserController@store']);
 
 
 # Admin Boundary

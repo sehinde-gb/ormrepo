@@ -10,6 +10,9 @@ use App\Exceptions\TagNotFoundException;
 class TagsController extends Controller
 {
     /**
+     * Sort the tags and group them by name and then pass the tag to the tags
+     * index view.
+     *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
@@ -19,14 +22,12 @@ class TagsController extends Controller
 
         });
 
-        //return $categorys;
-
-        return view('tags.index', compact('tags'));
+      return view('tags.index', compact('tags'));
 
     }
 
     /**
-     * Show the article form to fetch the tags.
+     * Fetch the tags and pass it to the display tag resource.
      *
      * @param $tag
      * @return \Illuminate\View\View
@@ -39,8 +40,7 @@ class TagsController extends Controller
 
                 $blogs = $tag->blogs;
 
-
-                $index = 'Search Categorys';
+                $index = 'Search Tags';
 
             } catch (TagNotFoundException $e) {
 

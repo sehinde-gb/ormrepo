@@ -16,6 +16,7 @@ class BlogsController extends Controller
 {
     /**
      * Display a listing of the resource.
+     *
      * @param Request $request
      * @return \Illuminate\Http\Response
      * @throws BlogNotFoundException
@@ -36,7 +37,6 @@ class BlogsController extends Controller
             } else {
 
                 $blogs = Blog::latest('published_at')->get()->all();
-                //$blogs = DB::table('blogs')->simplePaginate(15);
 
                 $title = 'Blog Listings';
 
@@ -66,15 +66,11 @@ class BlogsController extends Controller
 
         try {
 
-            //$blog = Blog::findOrFail($id);
-
             $previous = Blog::where('id', '<=', $blog->id)->first();
-            //dd($previous);
+
             $next = Blog::where('id', '>', $blog->id)->first();
 
             $comments = Comment::forBlog($blog)->get()->threaded();
-
-            //return $comments;
 
             } catch (\Exception $e) {
 
@@ -92,7 +88,8 @@ class BlogsController extends Controller
 
 
     /**
-     * Show the slug within the show page
+     * Show the slug within the show page.
+     *
      * @param $slug
      * @return \Illuminate\Http\Response
      *
@@ -104,8 +101,6 @@ class BlogsController extends Controller
         try {
 
             $blog = Blog::findBySlug($slug);
-
-            //dd($blog);
 
         } catch (\Exception $e) {
 

@@ -29,6 +29,7 @@ class BlogPublished extends Notification implements ShouldQueue
     }
 
     /**
+     * 
      * @param $notifiable
      * @return $this
      */

@@ -29,6 +29,11 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\EmailUserRegistrationNotification',
         ],
 
+        'App\Events\ContactWasSent' => [
+            'App\Listeners\SendContactConfirmation'
+        ],
+
+
     ];
 
     /**

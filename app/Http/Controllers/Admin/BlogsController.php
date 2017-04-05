@@ -108,8 +108,6 @@ class BlogsController extends Controller
     public function store(BlogRequest $request)
     {
 
-
-
         $this->createBlog($request);
 
         return redirect('/admin/blogs');
@@ -137,10 +135,6 @@ class BlogsController extends Controller
 
             $comments = Comment::forBlog($blog)->get()->threaded();
 
-            //$tags = Tag::pluck('name', 'id');
-
-            //dd($tags);
-
             } catch (\Exception $e) {
 
             throw new BlogNotFoundException($e->getMessage());
@@ -151,7 +145,7 @@ class BlogsController extends Controller
             'previous' => $previous,
             'next' => $next,
             'comments' => $comments
-            //'tags' => $tags
+
         ]);
 
     }
@@ -199,8 +193,6 @@ class BlogsController extends Controller
 
             $blog = Blog::findOrFail($id);
 
-            //dd($blog);
-
             $blog->update(request()->input());
 
             event(new BlogWasUpdated($user));
@@ -227,7 +219,7 @@ class BlogsController extends Controller
 
 
     /**
-     *
+     * Deletes the blog post from storage.
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
      * @throws BlogNotFoundException

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\ContactWasSent;
 use App\Http\Requests\ContactFormRequest;
-use App\User;
+
 
 class PagesController extends Controller
 {
@@ -42,24 +43,17 @@ class PagesController extends Controller
      * Grab the data from the message form and send it to the
      * Web Administrator.
      *
+     * @param ContactFormRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(ContactFormRequest $request)
     {
 
-        \Mail::send('emails.contact',
-            array(
-                'name' => $request->get('name'),
-                'email' => $request->get('email'),
-                'user_message' => $request->get('user_message')
-            ), function($message)
-            {
-                $message->from('adminstrator@ormrepo.co.uk');
-                $message->to('adminstrator@ormrepo.co.uk', 'Admin')->subject('TODOParrot Feedback');
-            });
+        $data = $request->all();
 
-        return \Redirect::route('blogs.index')->with('message', 'Thanks for contacting us!');
+        event(new ContactWasSent());
 
+        return redirect('/');
 
     }
 
