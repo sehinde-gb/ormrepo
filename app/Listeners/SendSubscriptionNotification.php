@@ -8,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\AccountApproved;
 use Illuminate\Queue\SerializesModels;
 
-class SendSubscriptionNotification
+class SendSubscriptionNotification implements ShouldQueue
 {
     use SerializesModels, InteractsWithQueue;
 
