@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\BlogPublished;
 
-class SendPublishedNotification implements ShouldQueue
+class SendPublishedNotification
 {
     use SerializesModels, InteractsWithQueue;
 

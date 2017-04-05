@@ -10,7 +10,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notifiable;
 
 
-class UserRegistered extends Notification implements ShouldQueue
+class UserRegistered extends Notification 
 {
     use Queueable, Notifiable;
 

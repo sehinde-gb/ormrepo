@@ -10,7 +10,7 @@ use NotificationChannels\OneSignal\OneSignalMessage;
 use NotificationChannels\OneSignal\OneSignalWebButton;
 
 
-class BlogPublished extends Notification implements ShouldQueue
+class BlogPublished extends Notification
 {
     use Queueable;
 

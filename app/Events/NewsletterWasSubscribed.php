@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\InteractsWithSockets;
 
 
-class NewsletterWasSubscribed implements ShouldQueue
+class NewsletterWasSubscribed
 {
     use InteractsWithSockets, SerializesModels;
 

@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\InteractsWithSockets;
 
-class UserWasRegistered implements ShouldQueue
+class UserWasRegistered
 {
     use InteractsWithSockets, SerializesModels;
 

@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
 use App\User;
 
-class BlogWasUpdated implements ShouldQueue
+class BlogWasUpdated
 {
     use InteractsWithSockets, SerializesModels;
 

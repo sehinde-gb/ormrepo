@@ -8,7 +8,7 @@ use App\Mail\ContactSent;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 
-class SendContactConfirmation implements ShouldQueue
+class SendContactConfirmation
 {
     /**
      * Create the event listener.

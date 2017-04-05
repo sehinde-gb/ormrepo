@@ -11,7 +11,7 @@ use NotificationChannels\OneSignal\OneSignalWebButton;
 use Illuminate\Notifications\Notification;
 
 
-class SubscriptionApproved extends Notification implements ShouldQueue
+class SubscriptionApproved extends Notification
 {
     use Queueable, Notifiable;
 

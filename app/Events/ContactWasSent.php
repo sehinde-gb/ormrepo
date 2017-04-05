@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\InteractsWithSockets;
 
 
-class ContactWasSent implements ShouldQueue
+class ContactWasSent
 {
     use InteractsWithSockets, SerializesModels;
 

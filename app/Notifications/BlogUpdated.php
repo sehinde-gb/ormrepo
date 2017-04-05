@@ -13,7 +13,7 @@ use Illuminate\Notifications\Notification;
  * Class BlogUpdated
  * @package App\Notifications
  */
-class BlogUpdated extends Notification implements ShouldQueue
+class BlogUpdated extends Notification
 {
     use Queueable;
 

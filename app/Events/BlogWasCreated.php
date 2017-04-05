@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use App\User;
 
-class BlogWasCreated implements ShouldQueue
+class BlogWasCreated
 {
     use InteractsWithSockets, SerializesModels;
 

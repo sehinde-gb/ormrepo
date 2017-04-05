@@ -2,6 +2,7 @@
  /public/storage
 .env
 .idea
+/public/images
 .env.example
 .gitattributes
 .gitignore
