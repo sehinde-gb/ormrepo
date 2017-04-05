@@ -1,7 +1,3 @@
-//import autosize from 'autosize';
-
-//autosize(document.querySelectorAll('textarea'));
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
@@ -17,7 +13,7 @@
  */
 
 
-//Vue.component('Example', require('./components/Example.vue'));
+
 //Vue.component('modal', require('./components/Modal.vue'));
 //Vue.component('Example', require('./components/Example.vue'));
 

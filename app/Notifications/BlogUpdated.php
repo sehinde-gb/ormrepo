@@ -36,7 +36,7 @@ class BlogUpdated extends Notification implements ShouldQueue
         return OneSignalMessage::create()
             ->subject("Your {$notifiable->service} post was updated!")
             ->body("Click here to see details.")
-            ->url('http://onesignal.com')
+            ->url('https://ormrepo.co.uk')
             ->webButton(
                 OneSignalWebButton::create('link-1')
                     ->text('Click here')

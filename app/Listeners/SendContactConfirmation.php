@@ -3,7 +3,6 @@
 namespace App\Listeners;
 
 use App\Events\ContactWasSent;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Mail\ContactSent;
 use Carbon\Carbon;

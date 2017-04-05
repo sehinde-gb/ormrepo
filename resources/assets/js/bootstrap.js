@@ -50,8 +50,7 @@ window.Echo = new Echo({
     cluster: 'eu',
     encrypted: true
 });
-*/
-/*
+
 Echo.private('user.${userId}')
     .listen('BlogWasCreated', (e) => {
     console.log(e.update);

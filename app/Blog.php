@@ -7,13 +7,14 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
 use Laravel\Scout\Searchable;
+use Illuminate\Notifications\Notifiable;
 use App\Comment;
 
 
 class Blog extends Model
 {
 
-    use  Sluggable, SluggableScopeHelpers, Searchable;
+    use  Sluggable, SluggableScopeHelpers, Searchable, Notifiable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
     protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
@@ -78,7 +79,7 @@ class Blog extends Model
     /**
      * Load a threaded set of comments for the post.
      *
-     * @return app\CommentsCollection
+     *
      */
     public function getComments()
     {
@@ -163,7 +164,7 @@ class Blog extends Model
     public function setPublishedAtAttribute($date)
     {
         $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
-        //$this->attributes['published_at'] = Carbon::now()->toDateString();
+
     }
 
 
@@ -218,6 +219,15 @@ class Blog extends Model
     }
 
 
+    /**
+     * Return the onesignal player id.
+     *
+     * @return string
+     */
+    public function routeNotificationForOneSignal()
+    {
+        return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
+    }
 
 
 }

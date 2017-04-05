@@ -3,16 +3,14 @@
 namespace App\Events;
 
 use App\User;
-use Illuminate\Broadcasting\Channel;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Broadcasting\PrivateChannel;
-use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
-use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class UserWasRegistered implements ShouldBroadcast
+class UserWasRegistered implements ShouldQueue
 {
     use InteractsWithSockets, SerializesModels;
+
     /**
      * @var User
      */
@@ -36,6 +34,6 @@ class UserWasRegistered implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('App.User.'.$this->user->user_id);
+        //return new PrivateChannel('App.User.'.$this->user->user_id);
     }
 }

@@ -10,11 +10,6 @@ use NotificationChannels\OneSignal\OneSignalMessage;
 use NotificationChannels\OneSignal\OneSignalWebButton;
 
 
-
-/**
- * Class BlogPublished
- * @package App\Notifications
- */
 class BlogPublished extends Notification implements ShouldQueue
 {
     use Queueable;
@@ -29,7 +24,7 @@ class BlogPublished extends Notification implements ShouldQueue
     }
 
     /**
-     * 
+     *
      * @param $notifiable
      * @return $this
      */
@@ -38,12 +33,12 @@ class BlogPublished extends Notification implements ShouldQueue
         return OneSignalMessage::create()
             ->subject("Your {$notifiable->service} blog post was published!")
             ->body("Click here to see details.")
-            ->url('http://onesignal.com')
+            ->url('https://ormrepo.co.uk')
             ->webButton(
                 OneSignalWebButton::create('link-1')
                     ->text('Click here')
                     ->icon('https://ormrepo.co.uk/images/ormrepo-tiny.png')
-                    ->url('http://ormrepo.co.uk')
+                    ->url('https://ormrepo.co.uk')
             );
     }
 

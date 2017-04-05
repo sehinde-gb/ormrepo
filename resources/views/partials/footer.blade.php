@@ -23,12 +23,12 @@
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <span datahover="test" title="My Title"><a href="http://coches.ormrepo.co.uk" class="foot-links disabled-link">El Coche</a></span>
+                        <span datahover="test" title="My Title"><a href="http://coches.ormrepo.co.uk" class="foot-links disabled-link">ElCoche</a></span>
 
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="https://casarental.ormrepo.co.uk" class="foot-links">Casa Rental</a>
+                        <a href="https://casarental.ormrepo.co.uk" class="foot-links">CasaRental</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
