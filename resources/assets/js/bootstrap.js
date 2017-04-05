@@ -8,10 +8,10 @@ window._ = require('lodash');
  */
 
 //window.$ = window.jQuery = require('jquery');
-global.$ = global.jQuery = require('jquery');
+//global.$ = global.jQuery = require('jquery');
 window.Laravel = { csrfToken: $('meta[name=csrf-token]').attr("content") };
 
-require('bootstrap-sass');
+//require('bootstrap-sass');
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
