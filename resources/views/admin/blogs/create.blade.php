@@ -8,9 +8,8 @@
         <div class="register-fluid">
                 <div class="logo-container">
                     <div class="own-logo">
-                        <img class="logo"
-                             srcset="/images/logo_medium.png 1080w,
-                        /images/logo_small.png 760w"
+                        <img class="bordered-logo"
+                             src="/images/logo_small.png"
                              alt="The ormrepo thoughtful logo">
                     </div><!-- /.own-logo -->
                 </div><!-- /.logo-container -->
