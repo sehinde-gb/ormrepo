@@ -8,9 +8,9 @@
         <div class="register-fluid">
                 <div class="logo-container">
                     <div class="own-logo">
-                    <img class="logo"
-                             srcset="/images/logo_medium.png 1080w,
-                        /images/logo_small.png 760w" alt="The ormrepo thoughtful logo">
+                        <img class="bordered-logo"
+                             src="/images/logo_small.png"
+                             alt="The ormrepo thoughtful logo">
                     </div><!-- /.own-logo -->
                 </div><!-- /.logo-container -->
                 <div class="header">
@@ -19,9 +19,12 @@
 
 
                     <div class="row">
-                        {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}
-                            @include('admin.blogs.form', ['submitButtonText' => 'Publish Post'])
-                        {!! Form::close() !!}
+                        @role('admin')
+                            {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}
+                                @include('admin.blogs.form', ['submitButtonText' => 'Publish Post'])
+                            {!! Form::close() !!}
+                        @endrole
+
                     </div><!-- /.row -->
 
             </div><!-- /.register-fluid -->

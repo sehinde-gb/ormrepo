@@ -19,7 +19,8 @@
         "laravel-notification-channels/onesignal": "^1.0",
         "pda/pheanstalk": "~3.0",
         "laravel/browser-kit-testing": "^1.0",
-        "laravel/dusk": "^1.0"
+        "laravel/dusk": "^1.0",
+        "httpoz/roles": "^2.1"
 
 
     },

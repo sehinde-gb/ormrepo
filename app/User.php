@@ -5,11 +5,12 @@ namespace App;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
-//use Artesaos\Defender\Traits\HasDefender;
+use HttpOz\Roles\Traits\HasRole;
+use HttpOz\Roles\Contracts\HasRole as HasRoleContract;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasRoleContract
 {
-    use Notifiable;
+    use Notifiable, HasRole;
 
     /**
      * The database table used by the model.

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "90b082bba2fd1cc859937b7b37feb6f6",
-    "content-hash": "f8473291cac24635846827e5a0200d1e",
+    "hash": "bfa3c9047bc46d12376bda5804f0e7e2",
+    "content-hash": "19f62fe50d0420162c2e4c996d3a7c2d",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -726,6 +726,54 @@
                 "url"
             ],
             "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "httpoz/roles",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/httpoz/roles.git",
+                "reference": "138073d893051fa4ba1d3ce09e075dac39bf6964"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/httpoz/roles/zipball/138073d893051fa4ba1d3ce09e075dac39bf6964",
+                "reference": "138073d893051fa4ba1d3ce09e075dac39bf6964",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HttpOz\\Roles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Mwanandimai",
+                    "email": "oscar.mwana@gmail.com",
+                    "role": "Architect"
+                }
+            ],
+            "description": "Powerful package for handling roles and permissions in Laravel 5.3.",
+            "homepage": "https://github.com/httpoz/roles",
+            "keywords": [
+                "acl",
+                "httpoz",
+                "illuminate",
+                "laravel",
+                "permissions",
+                "roles"
+            ],
+            "time": "2017-04-05 15:25:18"
         },
         {
             "name": "julien-c/iso3166",

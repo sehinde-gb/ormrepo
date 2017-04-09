@@ -173,7 +173,7 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
-
+        HttpOz\Roles\RolesServiceProvider::class,
 
         /*
          * Application Service Providers...

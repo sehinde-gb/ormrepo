@@ -9,9 +9,8 @@
         <div class="register-fluid">
                <div class="logo-container">
                    <div class="own-logo">
-                       <img class="logo"
-                            srcset="/images/logo_medium.png 1080w,
-                        /images/logo_small.png 760w"
+                       <img class="bordered-logo"
+                            src="/images/logo_small.png"
                             alt="The ormrepo thoughtful logo">
                    </div><!-- /.own-logo -->
                </div><!-- /.logo-container -->
@@ -22,18 +21,27 @@
                </div><!-- /.header -->
 
                     <div class="row">
-                       {!! Form::model($blog, array('route' => array('blogs.update', $blog->id), 'method' => 'PUT')) !!}
-                            @include('admin.blogs.form', ['submitButtonText' => 'Update'])
-                        {!! Form::close() !!}
+                        @can('update', $blog)
+                           {!! Form::model($blog, array('route' => array('blogs.update', $blog->id), 'method' => 'PUT')) !!}
+                                @include('admin.blogs.form', ['submitButtonText' => 'Update'])
+                            {!! Form::close() !!}
+                        @endcan
+
+                        @cannot('update', $blog)
+                                <h3 class="is--black is--centre">'You do not have the required permissions to update this letting'</h3>
+                        @endcannot
+
                     </div><!-- /.row -->
 
                     <div class="row">
+                        @can('delete', $blog)
+                           {!! Form::open([ 'method' => 'DELETE', 'route' => ['blogs.destroy', $blog->id]]) !!}
 
-                       {!! Form::open([ 'method' => 'DELETE', 'route' => ['blogs.destroy', $blog->id]]) !!}
+                           {!! delete_form(['blogs.destroy', $blog->id]) !!}
 
-                       {!! delete_form(['blogs.destroy', $blog->id]) !!}
+                           {!! Form::close() !!}
+                       @endcan
 
-                       {!! Form::close() !!}
                     </div><!-- /.row -->
 
 
