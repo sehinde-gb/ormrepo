@@ -35,7 +35,7 @@ class SubscribeUserController extends Controller
             throw new SubscriptionNotFoundException($e->getMessage());
         }
 
-         return redirect()->route('blogs.index');
+         return redirect()->route('admin.blogs.index');
 
     }
 
