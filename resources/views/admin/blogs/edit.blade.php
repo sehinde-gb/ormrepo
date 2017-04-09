@@ -17,7 +17,7 @@
 
 
                <div class="header">
-                   <h4 class="leader is--black">Edit Post</h4>
+                   <h4 class="leader is--black">Edit Blog</h4>
                </div><!-- /.header -->
 
                     <div class="row">
@@ -28,7 +28,7 @@
                         @endcan
 
                         @cannot('update', $blog)
-                                <h3 class="is--black is--centre">'You do not have the required permissions to update this letting'</h3>
+                                <h3 class="is--black is--centre">You do not have the required permissions to update this blog post</h3>
                         @endcannot
 
                     </div><!-- /.row -->
