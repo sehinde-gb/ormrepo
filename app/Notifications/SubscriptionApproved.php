@@ -4,18 +4,16 @@ namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Notifiable;
 use NotificationChannels\OneSignal\OneSignalChannel;
 use NotificationChannels\OneSignal\OneSignalMessage;
 use NotificationChannels\OneSignal\OneSignalWebButton;
 use Illuminate\Notifications\Notification;
 
-/**
- * Class SubscriptionApproved
- * @package App\Notifications
- */
-class SubscriptionApproved extends Notification implements ShouldQueue
+
+class SubscriptionApproved extends Notification
 {
-    use Queueable;
+    use Queueable, Notifiable;
 
     /**
      * @param $notifiable
@@ -36,7 +34,7 @@ class SubscriptionApproved extends Notification implements ShouldQueue
         return OneSignalMessage::create()
             ->subject("Your {$notifiable->service} account was approved!")
             ->body("Click here to see details.")
-            ->url('http://onesignal.com')
+            ->url('https://ormrepo.co.uk')
             ->webButton(
                 OneSignalWebButton::create('link-1')
                     ->text('Click here')

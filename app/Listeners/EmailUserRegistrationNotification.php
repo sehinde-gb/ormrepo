@@ -3,12 +3,11 @@
 namespace App\Listeners;
 
 use App\Events\UserWasRegistered;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\UserRegistered;
 
 
-class EmailUserRegistrationNotification
+class EmailUserRegistrationNotification implements ShouldQueue
 {
     /**
      * Create the event listener.

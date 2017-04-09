@@ -172,7 +172,6 @@ return [
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
-        //\Artesaos\Defender\Providers\DefenderServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
 
 
@@ -181,10 +180,10 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        App\Providers\BroadcastServiceProvider::class,
+        //App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        //Laravel\Tinker\TinkerServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
     ],
 
@@ -213,7 +212,6 @@ return [
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
         'Event' => Illuminate\Support\Facades\Event::class,
-        //'Defender' => \Artesaos\Defender\Facades\Defender::class,
         'Feed' => Roumen\Feed\Feed::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Form' => Collective\Html\FormFacade::class,

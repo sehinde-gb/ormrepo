@@ -178,6 +178,16 @@ p {
   padding-top: 20px;
 }
 
+.side-heading {
+  font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
 .banner h2 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -1006,6 +1016,11 @@ label {
   margin-left: 5px;
 }
 
+.btn-tag:hover {
+  background-color: #808080 !important;
+  color: whitesmoke !important;
+}
+
 .btn-link {
   margin-left: 250px;
 }
@@ -1221,7 +1236,14 @@ label {
     border-radius: 5px;
     margin-left: 5px;
   }
+<<<<<<< HEAD
 
+=======
+  .btn-tag:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+>>>>>>> master
   .btn-link {
     margin-left: 250px;
   }
@@ -1438,7 +1460,14 @@ label {
     border-radius: 5px;
     margin-left: 5px;
   }
+<<<<<<< HEAD
 
+=======
+  .btn-tag:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+>>>>>>> master
   .btn-link {
     margin-left: 250px;
   }
@@ -1623,7 +1652,14 @@ label {
     border-radius: 5px;
     margin-left: 5px;
   }
+<<<<<<< HEAD
 
+=======
+  .btn-tag:hover {
+    background-color: #808080 !important;
+    color: whitesmoke !important;
+  }
+>>>>>>> master
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px;
@@ -1701,7 +1737,7 @@ label {
 }
 
 .nav-search {
-  padding-left: 50px;
+  padding-left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1712,7 +1748,7 @@ label {
 .nav-search ul {
   list-style: none;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1823,7 +1859,7 @@ label {
   }
 
   .nav-search {
-    padding-left: 50px;
+    padding-left: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2001,7 +2037,7 @@ label {
   }
 
   .menuOpen {
-    padding-left: 120px;
+    padding-left: 150px;
   }
 
   .fa-bars {
@@ -2781,6 +2817,7 @@ label {
 
 @media all and (min-width: 100px) and (max-width: 480px) {
   .form-page {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2788,6 +2825,8 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+=======
+>>>>>>> master
     background-color: #F8F8F8;
     padding: 0;
     margin: 0;
@@ -3228,10 +3267,11 @@ input[type=text] {
 
 .left-container {
   min-height: 800px;
-  min-width: 65%;
+  min-width: 75%;
 }
 
 .right-container {
+  padding-top: 350px;
   padding-left: 50px;
   min-height: 800px;
   min-width: 30%;
@@ -3245,7 +3285,7 @@ input[type=text] {
 
 textarea {
   min-height: 100px;
-  min-width: 50%;
+  min-width: 30%;
   margin-bottom: 5px;
   outline: none;
   border: 0.1em solid #ccc;
@@ -3253,7 +3293,7 @@ textarea {
   background-color: #f9f1dc;
 }
 
-.category {
+.tag-buttons {
   background-color: none;
   border-radius: none;
   color: none;
@@ -3471,6 +3511,7 @@ form {
   }
 
   .right-container {
+    padding-top: 350px;
     padding-left: 50px;
     min-height: 800px;
     min-width: 30%;
@@ -3484,15 +3525,19 @@ form {
 
   textarea {
     min-height: 100px;
-    min-width: 50%;
+    min-width: 30%;
     margin-bottom: 5px;
     outline: none;
     border: 0.1em solid #ccc;
     border-radius: 0.2em;
     background-color: #f9f1dc;
   }
+<<<<<<< HEAD
 
   .category {
+=======
+  .tag-buttons {
+>>>>>>> master
     background-color: none;
     border-radius: none;
     color: none;
@@ -3718,6 +3763,7 @@ form {
   }
 
   .right-container {
+    padding-top: 350px;
     padding-left: 20px;
     min-height: 800px;
     min-width: 30%;
@@ -3733,15 +3779,19 @@ form {
 
   textarea {
     min-height: 100px;
-    min-width: 50%;
+    min-width: 30%;
     margin-bottom: 5px;
     outline: none;
     border: 0.1em solid #ccc;
     border-radius: 0.2em;
     background-color: #f9f1dc;
   }
+<<<<<<< HEAD
 
   .category {
+=======
+  .tag-buttons {
+>>>>>>> master
     background-color: none;
     border-radius: none;
     color: none;

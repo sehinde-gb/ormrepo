@@ -6,6 +6,7 @@ use App\Events\NewsletterWasSubscribed;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Notifications\AccountApproved;
+use Illuminate\Queue\SerializesModels;
 
 class SendSubscriptionNotification implements ShouldQueue
 {

@@ -58,7 +58,6 @@
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
 
 
-
                             @endif
 
                         @endforeach

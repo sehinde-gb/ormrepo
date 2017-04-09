@@ -5,6 +5,7 @@
 @section('content')
 
     <div class="form-page">
+
         <div class="register-fluid">
                <div class="logo-container">
                    <div class="own-logo">
@@ -14,6 +15,7 @@
                             alt="The ormrepo thoughtful logo">
                    </div><!-- /.own-logo -->
                </div><!-- /.logo-container -->
+
 
                <div class="header">
                    <h4 class="leader is--black">Edit Post</h4>

@@ -7,16 +7,17 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
 use Laravel\Scout\Searchable;
+use Illuminate\Notifications\Notifiable;
 use App\Comment;
 
 
 class Blog extends Model
 {
 
-    use  Sluggable, SluggableScopeHelpers, Searchable;
+    use  Sluggable, SluggableScopeHelpers, Searchable, Notifiable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
-    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at' ];
+    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
 
 
     /**
@@ -34,13 +35,13 @@ class Blog extends Model
     }
 
     /**
-     * Get the categories associated with a given blog
+     * Get the tags associated with a given blog
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function categories()
+    public function tags()
     {
-        return $this->belongsToMany('App\Category')->withTimestamps();
+        return $this->belongsToMany('App\Tag')->withTimestamps();
     }
 
     /**
@@ -78,7 +79,7 @@ class Blog extends Model
     /**
      * Load a threaded set of comments for the post.
      *
-     * @return App\CommentsCollection
+     *
      */
     public function getComments()
     {
@@ -163,7 +164,7 @@ class Blog extends Model
     public function setPublishedAtAttribute($date)
     {
         $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
-        //$this->attributes['published_at'] = Carbon::now()->toDateString();
+
     }
 
 
@@ -205,6 +206,28 @@ class Blog extends Model
     }
 
 
+    /**
+     * Accessor
+     *
+     * Get the taglist attribute id and return it to the form.
+     *
+     * @return mixed
+     */
+    public function getTagListAttribute()
+    {
+        return $this->tags()->pluck('id');
+    }
+
+
+    /**
+     * Return the onesignal player id.
+     *
+     * @return string
+     */
+    public function routeNotificationForOneSignal()
+    {
+        return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
+    }
 
 
 }

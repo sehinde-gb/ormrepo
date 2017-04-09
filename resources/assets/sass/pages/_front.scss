@@ -162,10 +162,11 @@ input[type=text] {
 
 .left-container {
   min-height: 800px;
-  min-width: 65%;
+  min-width: 75%;
 }
 
 .right-container {
+  padding-top: 350px;
   padding-left: 50px;
   min-height: 800px;
   min-width: 30%;
@@ -175,7 +176,7 @@ input[type=text] {
 
 textarea {
   min-height: 100px;
-  min-width: 50%;
+  min-width: 30%;
   margin-bottom: 5px;
   outline: none;
   border: 0.1em solid #ccc;
@@ -183,7 +184,7 @@ textarea {
   background-color: #f9f1dc;
 }
 
-.category {
+.tag-buttons {
   background-color: none;
   border-radius: none;
   color: none;
@@ -391,6 +392,7 @@ form {
   }
 
   .right-container {
+    padding-top: 350px;
     padding-left: 50px;
     min-height: 800px;
     min-width: 30%;
@@ -400,7 +402,7 @@ form {
 
   textarea {
     min-height: 100px;
-    min-width: 50%;
+    min-width: 30%;
     margin-bottom: 5px;
     outline: none;
     border: 0.1em solid #ccc;
@@ -408,7 +410,7 @@ form {
     background-color: #f9f1dc;
   }
 
-  .category {
+  .tag-buttons {
     background-color: none;
     border-radius: none;
     color: none;
@@ -622,6 +624,7 @@ form {
   }
 
   .right-container {
+    padding-top: 350px;
     padding-left: 20px;
     min-height: 800px;
     min-width: 30%;
@@ -632,7 +635,7 @@ form {
 
   textarea {
     min-height: 100px;
-    min-width: 50%;
+    min-width: 30%;
     margin-bottom: 5px;
     outline: none;
     border: 0.1em solid #ccc;
@@ -640,7 +643,7 @@ form {
     background-color: #f9f1dc;
   }
 
-  .category {
+  .tag-buttons {
     background-color: none;
     border-radius: none;
     color: none;
@@ -689,6 +692,8 @@ form {
     margin: auto;
     padding: 0;
   }
+
+
 
   .row {
     display: flex;

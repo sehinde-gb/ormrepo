@@ -3,8 +3,13 @@
 namespace App\Exceptions;
 
 use Exception;
+use HttpException;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Session\TokenMismatchException;
+use Illuminate\Validation\ValidationException;
+
 
 class Handler extends ExceptionHandler
 {
@@ -75,7 +80,32 @@ class Handler extends ExceptionHandler
 
             return parent::render($request, $e);
         }
+
+        if ($e instanceof TagNotFoundException) {
+            return response(view('errors.407'), 407);
+
+            return parent::render($request, $e);
+        }
+
+
     }
+
+    protected function convertExceptionToResponse(Exception $e)
+    {
+        if (config('app.debug')) {
+            $whoops = new \Whoops\Run;
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+
+            return response()->make(
+                $whoops->handleException($e),
+                method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500,
+                method_exists($e, 'getHeaders') ? $e->getHeaders() : []
+            );
+        }
+
+        return parent::convertExceptionToResponse($e);
+    }
+
 
     /**
      * Convert an authentication exception into an unauthenticated response.

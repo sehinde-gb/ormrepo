@@ -4,12 +4,10 @@ namespace App\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Broadcasting\PrivateChannel;
-use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
-use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class NewsletterWasSubscribed implements ShouldBroadcast
+
+class NewsletterWasSubscribed
 {
     use InteractsWithSockets, SerializesModels;
 
@@ -29,6 +27,6 @@ class NewsletterWasSubscribed implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('App.User.'.$this->user->user_id);
+        [];
     }
 }

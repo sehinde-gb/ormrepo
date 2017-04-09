@@ -8,7 +8,7 @@ use App\Events\BlogWasUpdated;
 use App\Exceptions\SlugNotFoundException;
 use App\Http\Requests\BlogRequest;
 use App\Blog;
-use App\Category;
+use App\Tag;
 use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
@@ -25,7 +25,7 @@ class BlogsController extends Controller
     public $user;
 
     /**
-     * PostsController constructor.
+     * BlogsController constructor.
      * @param User $user
      */
     public function __construct(User $user)
@@ -83,7 +83,7 @@ class BlogsController extends Controller
         try {
             $title = 'Create Blog';
 
-            $categories = Category::pluck('name', 'id');
+            $tags = Tag::pluck('name', 'id');
 
         } catch (\Exception $e) {
 
@@ -92,7 +92,7 @@ class BlogsController extends Controller
 
 
 
-        return view('admin.blogs.create', compact('blog', 'categories', 'title'));
+        return view('admin.blogs.create', compact('blog', 'tags', 'title'));
     }
 
 
@@ -107,6 +107,7 @@ class BlogsController extends Controller
      */
     public function store(BlogRequest $request)
     {
+
         $this->createBlog($request);
 
         return redirect('/admin/blogs');
@@ -144,6 +145,7 @@ class BlogsController extends Controller
             'previous' => $previous,
             'next' => $next,
             'comments' => $comments
+
         ]);
 
     }
@@ -159,7 +161,7 @@ class BlogsController extends Controller
     public function edit($id)
     {
         try {
-            $categories = Category::pluck('name', 'id');
+            $tags = Tag::pluck('name', 'id');
 
             $blog = Blog::findOrFail($id);
 
@@ -170,7 +172,7 @@ class BlogsController extends Controller
             throw new BlogNotFoundException($e->getMessage());
         }
 
-        return view('admin.blogs.edit', compact('blog', 'categories',  'user'));
+        return view('admin.blogs.edit', compact('blog', 'tags',  'user'));
     }
 
     /**
@@ -191,8 +193,6 @@ class BlogsController extends Controller
 
             $blog = Blog::findOrFail($id);
 
-            //dd($blog);
-
             $blog->update(request()->input());
 
             event(new BlogWasUpdated($user));
@@ -202,16 +202,16 @@ class BlogsController extends Controller
               throw new BlogNotFoundException($e->getMessage());
             }
 
-            if ($request->input('category_list') == null) {
+            if ($request->input('tag_list') == null) {
 
-                $category_list = [];
+                $tag_list = [];
 
             } else {
 
-                $category_list = $request->input('category_list');
+                $tag_list = $request->input('tag_list');
             }
 
-            $this->syncCategories($blog, $category_list);
+            $this->syncTags($blog, $tag_list);
 
             return redirect('/admin/blogs');
 
@@ -219,7 +219,7 @@ class BlogsController extends Controller
 
 
     /**
-     *
+     * Deletes the blog post from storage.
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
      * @throws BlogNotFoundException
@@ -255,6 +255,16 @@ class BlogsController extends Controller
 
         $blog = $user->blogs()->create($request->all());
 
+        if ($request->input('tag_list') == null) {
+            $tag_list = [];
+        } else {
+            $tag_list = $request->input('tag_list');
+        }
+
+
+        $this->syncTags($blog, $tag_list);
+
+
         event(new BlogWasCreated($user));
 
         $imageName = $blog->id . '.' .
@@ -265,13 +275,6 @@ class BlogsController extends Controller
         );
 
 
-        if ($request->input('category_list') == null) {
-            $category_list = [];
-        } else {
-            $category_list = $request->input('category_list');
-        }
-
-        $this->syncCategories($blog, $category_list);
 
         return $blog;
 
@@ -282,12 +285,12 @@ class BlogsController extends Controller
      * Sync the categories by passing in the Blog object.
      *
      * @param $blog
-     * @param array $categories
-     *
+     * @param array $tags
+     * @internal param array $categories
      */
-    private function syncCategories($blog, array $categories)
+    private function syncTags($blog, array $tags)
     {
-        $blog->categories()->sync($categories);
+        $blog->tags()->sync($tags);
     }
 
 

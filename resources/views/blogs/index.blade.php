@@ -57,9 +57,6 @@
                                     <h6 class="box--line">Web Developer</h6>
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
 
-                            
-
-
 
                             @endif
 
@@ -78,6 +75,7 @@
                     {!! Form::text('email', null, [ 'id' => 'box', 'class' => 'form-group', 'placeholder'=>' Your email']) !!}
                     {!!  Form::submit('add', array('class' => 'btn-add')) !!}
                 </div><!-- /.form-group -->
+
             </div><!-- /.subscribe -->
         </div><!-- /.newsletter-container -->
 
