@@ -1,4 +1,3 @@
-
 <?php
 
 use Illuminate\Support\Facades\Schema;
@@ -36,5 +35,3 @@ class CreateCommentsTable extends Migration
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
-
-
