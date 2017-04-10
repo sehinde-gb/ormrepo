@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-
+# Blogs
 Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
 Route::resource('blogs', 'BlogsController', ['only' => ['index', 'show']]);
 Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
