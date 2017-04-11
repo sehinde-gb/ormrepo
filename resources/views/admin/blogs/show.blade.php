@@ -15,7 +15,7 @@
                     <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
                     <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                     <p id="published--at">Written by <small>Sehinde Raji</small></p>
-                    <p class="is--beige">{!! $blog->body !!}</p>
+                    <p class="is--beige is--lower">{!! $blog->body !!}</p>
                 </div><!-- /.heading -->
 
             </div><!-- /.left-container -->

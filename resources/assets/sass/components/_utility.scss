@@ -100,6 +100,10 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
   padding-bottom: 20px;
 }
 
+.is--lower {
+  text-transform: none !important;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   .is-aligned {
@@ -164,6 +168,11 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
     padding-left: 22px;
     padding-bottom: 20px;
   }
+
+  .is--lower {
+    text-transform: none !important;
+  }
+
  }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -231,7 +240,9 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
     padding-bottom: 20px;
   }
 
-
+  .is--lower {
+    text-transform: none !important;
+  }
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {

@@ -3,6 +3,7 @@
 namespace App\Events;
 
 use Illuminate\Broadcasting\Channel;
+use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Queue\SerializesModels;
 use App\User;
 
