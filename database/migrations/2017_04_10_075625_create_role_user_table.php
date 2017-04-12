@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -28,10 +29,10 @@ class CreateRoleUserTable extends Migration
      *
      * @return void
      */
-    public function down(Blueprint $table)
+    public function down()
     {
-        $table->dropForeign('role_user_role_id_foreign');
-        $table->dropForeign('role_user_user_id_foreign');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('role_user');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
