@@ -28,7 +28,7 @@ class BlogRequest extends FormRequest
             'excerpt' => 'required|min:3',
             'body' => 'required',
             'published_at' => 'required',
-            'feat_image' => 'dimensions:min_width=100,min_height=200'
+            'feat_image' => 'required'
 
         ];
     }
