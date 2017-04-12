@@ -174,6 +174,7 @@ return [
         Spatie\Newsletter\NewsletterServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
+        App\Providers\PapertrailServiceProvider::class,
 
         /*
          * Application Service Providers...
