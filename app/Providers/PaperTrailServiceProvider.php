@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Monolog\Logger;
+use Monolog\Formatter\LineFormatter;
+use Monolog\Handler\SyslogUdpHandler;
 
 class PaperTrailServiceProvider extends ServiceProvider
 {
@@ -23,13 +26,17 @@ class PaperTrailServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if (app('app')->environment() == 'local') return;
+        // Set the format
+        $output = "%channel%.%level_name%: %message%";
+        $formatter = new LineFormatter($output);
 
-        $monolog   = app(\Illuminate\Log\Writer::class)->getMonolog();
-        $syslog    = new \Monolog\Handler\SyslogHandler('laravel');
-        $formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
+        // Setup the logger
+        $logger = new Logger('my_logger');
+        $syslogHandler = new SyslogUdpHandler("logs4.papertrailapp.com", 15391);
+        $syslogHandler->setFormatter($formatter);
+        $logger->pushHandler($syslogHandler);
 
-        $syslog->setFormatter($formatter);
-        $monolog->pushHandler($syslog);
+        // Use the new logger
+        $logger->addInfo('Monolog test');
     }
 }
