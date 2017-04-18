@@ -1,7 +1,17 @@
 $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
+$primary-color: #f8f8f8;
 
 .is--beige {
   color: #f9f1dc !important;
+}
+
+.is--white {
+  color: $primary-color;
+}
+
+.is--white-bottom {
+  color: $primary-color;
+  padding-bottom: 20px;
 }
 
 .box-is-beige {
@@ -52,7 +62,7 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
   text-transform: uppercase;
 }
 
-.is--padded {
+.is--padded-bottom {
   padding-bottom: 20px;
 }
 
@@ -106,12 +116,21 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
+  .is--white {
+    color: $primary-color;
+  }
+
+
   .is-aligned {
     vertical-align: baseline;
     color: black;
   }
 
   /* Utility Classes */
+
+  .is--padded-bottom {
+    padding-bottom: 20px;
+  }
 
   .is--centered {
     text-align: center;
@@ -177,6 +196,10 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
+  .is--white {
+    color: $primary-color;
+  }
+
   .is-aligned {
     vertical-align: baseline;
     color: black;
@@ -203,6 +226,10 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
   .is--both-sides {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .is--padded-bottom {
+    padding-bottom: 20px;
   }
 
   .is--black {
@@ -243,9 +270,18 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
   .is--lower {
     text-transform: none !important;
   }
+
+  .is--white-bottom {
+    color: $primary-color;
+    padding-bottom: 20px;
+  }
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
+
+  .is--white {
+    color: $primary-color;
+  }
 
   .is-typ-flex {
     display: flex;
@@ -274,6 +310,15 @@ $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
 
   .is--lorem-padding {
     padding-left: 22px;
+    padding-bottom: 20px;
+  }
+
+  .is--padded-bottom {
+    padding-bottom: 20px;
+  }
+
+  .is--white-bottom {
+    color: $primary-color;
     padding-bottom: 20px;
   }
 }

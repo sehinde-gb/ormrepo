@@ -46,7 +46,7 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-three-->
 
-                            @elseif($blog->id == 2)
+                            @elseif($blog->id == 5)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
@@ -87,8 +87,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="intro-message">
-                            <h1>Sehinde Raji</h1>
-                            <h3>PHP (Laravel) Web Developer.</h3>
+                            <h1 class="is--white">Sehinde Raji</h1>
+                            <h2 class="is--white-bottom">PHP (Laravel) Web Developer.</h2>
 
                             <ul class="list-inline intro-social-buttons">
                                 <li>

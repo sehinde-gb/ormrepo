@@ -36,17 +36,19 @@ h1 {
   font-family: $lato;
   font-weight: 700;
   text-transform: none !important;
-  color: $primary-color;
+  color: black;
+  font-size: 2em;
+  line-height: 45px;
   padding-top: 10px;
   }
 
 h2 {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.5em;
+  line-height: 36px;
   text-transform: uppercase;
-  color: $primary-color;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -54,9 +56,9 @@ h2 {
 h3 {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 34px;
-  color: white;
+  font-size: 1.17em;
+  line-height: 29px;
+  color: black;
   margin: 0;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -74,8 +76,8 @@ h4 {
 h5 {
   color: #4d5656;
   font-family: $fira-sans;
-  font-size: 12px;
-  line-height: 19px;
+  font-size: 0.83em;
+  line-height: 25px;
   margin: 0;
   padding: 0;
 }
@@ -83,8 +85,8 @@ h5 {
 h6 {
   font-family: $lato-bold;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 0.67em;
+  line-height: 24px;
   text-transform: uppercase;
   color: $secondary-color;
   padding-left: 20px;
@@ -121,7 +123,6 @@ a:focus {
   color: whitesmoke;
 }
 
-
 p {
   font-family: $lato;
   font-weight: 400;
@@ -131,14 +132,9 @@ p {
   text-transform: none !important;
 }
 
-.comment-heading {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: $beige;
+.code {
+  color: #F4A460;
 }
-
 
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -149,10 +145,6 @@ p {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   font-size: 5em;
   line-height: 107px;
-}
-
-.column h1 {
-  padding-left: 30px;
 }
 
 .leader {
@@ -167,6 +159,14 @@ p {
   color: black;
 }
 
+.section--title {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $black-color;
+}
+
 .section--body {
   font-family: $fira-sans;
   font-weight: 300;
@@ -176,11 +176,41 @@ p {
   padding-top: 20px;
 }
 
+.column h1 {
+  padding-left: 30px;
+}
+
+.paged-links {
+  color: #f9f1dc;
+}
+
+label {
+  color: #f9f1dc;
+}
+
+.tag--centre {
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.twitter a {
+  text-decoration: none;
+}
+
+.fa-2x {
+  color: #fdfdfd;
+  padding-left: 20px;
+}
+
+.body {
+  color:  #f8f8f8;
+}
+
+
 .side-heading {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 14px;
-  //line-height: 32px;
   text-transform: capitalize;
   color: $primary-color;
   margin: 0;
@@ -196,12 +226,12 @@ p {
   line-height: 47px;
 }
 
-.paged-links {
-  color: #f9f1dc;
-}
-
-label {
-  color: #f9f1dc;
+.comment-heading {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $beige;
 }
 
 .blog--title {
@@ -250,14 +280,6 @@ label {
   line-height: 38px;
   position: relative;
   left: 40px;
-}
-
-.section--title {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: $black-color;
 }
 
 .news--heading {
@@ -323,32 +345,12 @@ label {
 
 }
 
-.tag--centre {
-  text-decoration: none;
-  padding-top: 10px;
-}
 
-.twitter a {
-  text-decoration: none;
-}
-
-.fa-2x {
-  color: #fdfdfd;
-  padding-left: 20px;
-}
-
-.body {
-  color:  #f8f8f8;
-}
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  .comment-heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    color: $beige;
+  .code {
+    color: #F4A460;
   }
 
   .intro-message > h3 {
@@ -360,10 +362,6 @@ label {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 5em;
     line-height: 107px;
-  }
-
-  .column h1 {
-    padding-left: 30px;
   }
 
   .leader {
@@ -378,6 +376,14 @@ label {
     color: black;
   }
 
+  .section--title {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $black-color;
+  }
+
   .section--body {
     font-family: $fira-sans;
     font-weight: 300;
@@ -387,13 +393,8 @@ label {
     padding-top: 20px;
   }
 
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 2em;
-    font-family: $lato;
-    font-weight: 700;
-    line-height: 47px;
+  .column h1 {
+    padding-left: 30px;
   }
 
   .paged-links {
@@ -402,6 +403,33 @@ label {
 
   label {
     color: #f9f1dc;
+  }
+
+  .tag--centre {
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  .twitter a {
+    text-decoration: none;
+  }
+
+  .fa-2x {
+    color: #fdfdfd;
+    padding-left: 20px;
+  }
+
+  .body {
+    color: #f8f8f8;
+  }
+
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 2em;
+    font-family: $lato;
+    font-weight: 700;
+    line-height: 47px;
   }
 
   .blog--title {
@@ -422,6 +450,14 @@ label {
     color: $primary-color;
     margin: 0;
     padding-bottom: 10px;
+  }
+
+  .comment-heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $beige;
   }
 
   #published--at {
@@ -450,14 +486,6 @@ label {
     line-height: 38px;
     position: relative;
     left: 40px;
-  }
-
-  .section--title {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: $black-color;
   }
 
   .news--heading {
@@ -523,33 +551,13 @@ label {
 
   }
 
-  .tag--centre {
-    text-decoration: none;
-    padding-top: 10px;
-  }
 
-  .twitter a {
-    text-decoration: none;
-  }
-
-  .fa-2x {
-    color: #fdfdfd;
-    padding-left: 20px;
-  }
-
-  .body {
-    color: #f8f8f8;
-  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-  .comment-heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 25px;
-    color: $beige;
+  .code {
+    color: #F4A460;
   }
 
 
@@ -562,10 +570,6 @@ label {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
     line-height: 106px;
-      }
-
-  .column h1 {
-    padding-left: 30px;
   }
 
   .leader {
@@ -580,6 +584,14 @@ label {
     color: black;
   }
 
+  .section--title {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black-color;
+  }
+
   .section--body {
     font-family: $fira-sans;
     font-weight: 300;
@@ -589,13 +601,8 @@ label {
     padding-top: 20px;
   }
 
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 2em;
-    font-family: $lato;
-    font-weight: 700;
-    line-height: 46px;
+  .column h1 {
+    padding-left: 30px;
   }
 
   .paged-links {
@@ -604,128 +611,6 @@ label {
 
   label {
     color: #f9f1dc;
-  }
-
-  .blog--title {
-    font-family: $fira-sans;
-    font-size: 35px;
-    line-height: 49px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: $beige;
-  }
-
-  .blog--excerpt {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: capitalize;
-    color: $primary-color;
-    margin: 0;
-    padding-bottom: 10px;
-  }
-
-  #published--at {
-    font-family: 'FiraSans Light', "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 25px;
-    text-transform: capitalize;
-    color: $beige;
-  }
-
-  .lead {
-    font-family: $lato;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $black-color;
-  }
-
-  .column-name {
-    font-family: $lato-bold;
-    font-size: 24px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    font-weight: 700;
-    line-height: 33px;
-    position: relative;
-    left: 40px;
-  }
-
-
-
-  .section--title {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: $black-color;
-  }
-
-  .news--heading {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 50px;
-    text-transform: uppercase;
-    color: $beige;
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .lorem--text {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 30px;
-    color: #606060;
-    border: 0;
-  }
-
-  .social--text {
-    font-family: "Georgia Italic", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 27px;
-    color: white;
-    text-transform: none;
-    padding-top: 10px;
-  }
-
-  .box--line {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    margin: 0;
-    padding: 0;
-  }
-
-  .lower--box-text {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $secondary-color;
-  }
-
-  .box--underline {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    margin: 0;
-
   }
 
   .tag--centre {
@@ -746,15 +631,140 @@ label {
     color:  #f8f8f8;
   }
 
+ .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
+    font-family: $lato;
+    font-weight: 700;
+    line-height: 46px;
+ }
+
+ .comment-heading {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: $beige;
+ }
+
+ .blog--title {
+    font-family: $fira-sans;
+    font-size: 35px;
+    line-height: 49px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $beige;
+ }
+
+ .blog--excerpt {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $primary-color;
+    margin: 0;
+    padding-bottom: 10px;
+ }
+
+ #published--at {
+    font-family: 'FiraSans Light', "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: $beige;
+ }
+
+ .lead {
+    font-family: $lato;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $black-color;
+ }
+
+ .column-name {
+    font-family: $lato-bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+    line-height: 33px;
+    position: relative;
+    left: 40px;
+ }
+
+ .news--heading {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: $beige;
+    margin: 0;
+    padding-left: 20px;
+ }
+
+ .lorem--text {
+    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    color: #606060;
+    border: 0;
+ }
+
+ .social--text {
+    font-family: "Georgia Italic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 27px;
+    color: white;
+    text-transform: none;
+    padding-top: 10px;
+ }
+
+ .box--line {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+ }
+
+ .lower--box-text {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+ }
+
+ .box--underline {
+    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+
+ }
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
-    line-height: 64px;
+  .code {
+    color: #F4A460;
   }
 
   .intro-message > h1 {
@@ -781,34 +791,6 @@ label {
     width: 100%;
   }
 
-  .head {
-    padding-left: 200px;
-    text-transform: uppercase;
-    color: #303030;
-  }
-
-  .social--text {
-    font-family: "Georgia Italic", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 23px;
-    color: white;
-    text-transform: none;
-    padding-top: 10px;
-  }
-
-  .news--heading {
-    font-family: $lato-bold;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: $beige;
-    margin: 0;
-    padding-left: 20px;
-  }
-
   .section--heading {
     font-family: $montserrat-bold;
     font-weight: 500;
@@ -818,6 +800,13 @@ label {
     margin-bottom: 30px;
   }
 
+  .section--title {
+    font-family: $montserrat-bold;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black-color;
+  }
 
   .section--body {
     font-family: $montserrat;
@@ -827,15 +816,62 @@ label {
     color: black;
   }
 
-  .lead {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+    line-height: 64px;
+  }
+
+ .head {
+    padding-left: 200px;
+    text-transform: uppercase;
+    color: #303030;
+ }
+
+  .twitter a {
+    text-decoration: none;
+  }
+
+  .left-container p {
+    color: $beige;
+  }
+
+  .tag--centre {
+    text-decoration: none;
+  }
+
+ .social--text {
+    font-family: "Georgia Italic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 23px;
+    color: white;
+    text-transform: none;
+    padding-top: 10px;
+ }
+
+ .news--heading {
+    font-family: $lato-bold;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $beige;
+    margin: 0;
+    padding-left: 20px;
+ }
+
+ .lead {
     font-family: $montserrat;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
     color: black;
-  }
+ }
 
-  .lorem--text {
+ .lorem--text {
     font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;
@@ -846,22 +882,9 @@ label {
     padding-right: 20px;
     border: 0;
     width: 100%;
-  }
+ }
 
-  .twitter a {
-    text-decoration: none;
-  }
-
-
-  .left-container p {
-    color: $beige;
-  }
-
-  .tag--centre {
-    text-decoration: none;
-  }
-
-  .box--line {
+ .box--line {
     font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -869,11 +892,9 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
+ }
 
-  }
-
-
-  .column-name {
+ .column-name {
     font-family: $lato-bold;
     font-size: 24px;
     line-height: 34px;
@@ -881,17 +902,16 @@ label {
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
-    }
+ }
 
-  .blog--title {
+ .blog--title {
     font-family: $fira-sans;
     font-size: 35px;
     line-height: 47px;
     font-weight: 600;
     text-transform: capitalize;
     color: $beige;
-
-  }
+ }
 
 }
 

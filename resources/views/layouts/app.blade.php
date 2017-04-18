@@ -40,8 +40,6 @@
 
     @yield('content')
 
-
-
     @include('partials.footer')
 
     @include('partials.analyticstracking')
@@ -49,7 +47,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     {{--Summernote--}}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+    <script src="/js/addclass.js"></script>
     <script>
         $(document).ready(function () {
             $('.summernote').summernote({
@@ -58,7 +58,8 @@
                 maxHeight: null, // set maximum height of editor
                 width: 150,
                 focus: true,                  // set focus to editable area after initializing summernote
-                insertParagraph: true,
+                insertParagraph: false,
+                fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48' , '64', '82', '150'],
                 placeholder: 'Create your Article ...',
                 callbacks: {
                     onKeydown: function (e) {
@@ -69,6 +70,7 @@
                                 e.preventDefault();
                         }
                     },
+
                     onKeyup: function (e) {
                         var t = e.currentTarget.innerText;
                         $('#maxContentPost').text(10000 - t.trim().length);
@@ -80,7 +82,24 @@
                         var all = t + bufferText;
                         document.execCommand('insertText', false, all.trim().substring(0, 10000));
                         $('#maxContentPost').text(10000 - t.length);
-                    }
+                    },
+                    addclass: {
+                        debug: false,
+                        classTags: [{title:"Button","value":"btn btn-success"},"jumbotron", "lead","img-rounded","img-circle", "img-responsive","btn", "btn btn-success","btn btn-danger","text-muted", "text-primary", "text-warning", "text-danger", "text-success", "table-bordered", "table-responsive", "alert", "alert alert-success", "alert alert-info", "alert alert-warning", "alert alert-danger", "visible-sm", "hidden-xs", "hidden-md", "hidden-lg", "hidden-print"]
+                    },
+                    height: 300,
+                    toolbar: [
+                        // [groupName, [list of button]]
+                        ['img', ['picture']],
+                        ['style', ['style', 'addclass', 'clear']],
+                        ['fontstyle', ['bold', 'italic', 'ul', 'ol', 'link', 'paragraph']],
+                        ['fontstyleextra', ['strikethrough', 'underline', 'hr', 'color', 'superscript', 'subscript']],
+                        ['extra', ['video', 'table', 'height']],
+                        ['misc', ['undo', 'redo', 'codeview', 'help']]
+
+
+                    ]
+
                 }
             });
         });
