@@ -53,7 +53,28 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
-                                
+
+                            @elseif($blog->id == 3)
+                                <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-tablet-only is-hidden-mobile">
+                                    <h6 class="box--line">Web Developer</h6>
+                                </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
+                                <div class="column is-one-quarter is-light-grey is-flex is-six">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-six-->
+                            @elseif($blog->id == 4)
+                                <div class="column is-one-quarter is-grey is-flex is-seven has-text-centered">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-seven has-text-centered -->
+                                <div class="column is-one-quarter box-is-beige is-flex-bottom is-eight">
+                                    <h6 class="column-name">Sehinde Raji</h6>
+                                </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-eight -->
+
 
 
                             @endif
@@ -85,8 +106,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="intro-message">
-                            <h1>Sehinde Raji</h1>
-                            <h3>PHP (Laravel) Web Developer.</h3>
+                            <h1 class="is--white">Sehinde Raji</h1>
+                            <h3 class="is--white-bottom">PHP (Laravel) Web Developer.</h3>
 
                             <ul class="list-inline intro-social-buttons">
                                 <li>

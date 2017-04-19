@@ -322,7 +322,9 @@ label {
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
-  padding: 0;
+  position: relative;
+  right: 10px;
+  bottom: 50px;
 }
 
 .lower--box-text {
@@ -528,7 +530,9 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-    padding: 0;
+    position: relative;
+    right: 10px;
+    bottom: 50px;
   }
 
   .lower--box-text {
@@ -694,7 +698,7 @@ label {
     font-weight: 700;
     line-height: 33px;
     position: relative;
-    left: 40px;
+    left: 130px;
  }
 
  .news--heading {
@@ -737,7 +741,9 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-    padding: 0;
+    position: relative;
+    right: 10px;
+    bottom: 50px;
  }
 
  .lower--box-text {
@@ -902,6 +908,9 @@ label {
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
+    position: relative;
+    left: 60px;
+
  }
 
  .blog--title {

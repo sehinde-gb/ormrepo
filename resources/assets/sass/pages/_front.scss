@@ -496,7 +496,7 @@ form {
 
   /* for further column styling in the blog area see utility classes */
   .newsletter-container {
-    min-height: 500px;
+    min-height: 2000px;
     width: 100%;
     padding-top: 100px;
     display: flex;
@@ -672,10 +672,13 @@ form {
     padding-right: 20px;
   }
 
+
   /* Edit */
   form {
     width: 520px;
   }
+
+
 
 }
 
@@ -725,7 +728,7 @@ form {
 
 
   .newsletter-container {
-    min-height: 1000px;
+    min-height: 2000px;
     width: 100%;
     display: flex;
     flex-direction: column;
