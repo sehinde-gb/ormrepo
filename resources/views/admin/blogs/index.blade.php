@@ -46,7 +46,7 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-three-->
 
-                            @elseif($blog->id == 5)
+                            @elseif($blog->id == 2)
                                 <div class="column is-one-quarter is-dark-grey is-flex is-four">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
