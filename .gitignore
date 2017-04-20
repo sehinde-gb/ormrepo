@@ -9,5 +9,5 @@ yarn.lock
 .idea/workspace.xml
 composer.lock
 /vendor
-/public/featured/images
+
 

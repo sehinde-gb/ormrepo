@@ -54,41 +54,7 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
 
-        if ($e instanceof BlogNotFoundException) {
-            return response(view('errors.402'), 402);
 
-            return parent::render($request, $e);
-        }
-
-        if ($e instanceof QueryNotFoundException) {
-            return response(view('errors.403'), 403);
-
-            return parent::render($request, $e);
-        }
-
-        if ($e instanceof RSSNotFoundException) {
-            return response(view('errors.404'), 404);
-
-            return parent::render($request, $e);
-        }
-
-        if ($e instanceof SlugNotFoundException) {
-            return response(view('errors.405'), 405);
-
-            return parent::render($request, $e);
-        }
-
-        if ($e instanceof SubscriptionNotFoundException) {
-            return response(view('errors.406'), 406);
-
-            return parent::render($request, $e);
-        }
-
-        if ($e instanceof TagNotFoundException) {
-            return response(view('errors.407'), 407);
-
-            return parent::render($request, $e);
-        }
 
 
     }

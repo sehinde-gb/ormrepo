@@ -101,6 +101,7 @@ class BlogsController extends Controller
         try {
 
             $blog = Blog::findBySlug($slug);
+            //dd($slug);
 
         } catch (\Exception $e) {
 
