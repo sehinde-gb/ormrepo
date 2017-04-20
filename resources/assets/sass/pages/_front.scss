@@ -1,6 +1,5 @@
 
-
-/* Main page */
+/* Front page */
 .hero {
   background-color: #003434;
   background-size: cover;
@@ -26,20 +25,10 @@
   padding-bottom: 50px;
 }
 
-.button-blog {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .columns {
   //min-height: 750px;
   height: 300px !important;
 }
-
-
 
 /* for further column styling in the blog area see utility classes */
 .newsletter-container {
@@ -66,9 +55,6 @@
   padding-bottom: 20%;
 }
 
-
-
-/* Portfolio Section */
 .content-section-a {
   padding: 50px 0;
   background-color: white;
@@ -130,8 +116,7 @@ input[type=text] {
   letter-spacing: 2px;
   color: black;
 }
-
-/* End of main page */
+/* End of front page */
 
 /* Show */
 .main-container {
@@ -196,7 +181,6 @@ textarea {
   line-height: 16px;
 }
 
-
 .previous {
   padding-right: 200px;
 }
@@ -208,7 +192,6 @@ textarea {
 .heading {
   background-color: #003434;
   min-height: 300px;
-  //border: 1px solid white;
   margin: 0;
   padding-left: 50px;
   padding-right: 20px;
@@ -222,7 +205,7 @@ form {
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  /* Main page */
+  /* Front page */
   .hero {
     background-color: #003434;
     background-size: cover;
@@ -248,21 +231,12 @@ form {
     padding-bottom: 50px;
   }
 
-  .button-blog {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .columns {
     //min-height: 750px;
     //min-height: 350px !important;
   }
 
   /* for further column styling in the blog area see utility classes */
-
   .newsletter-container {
     min-height: 500px;
     width: 100%;
@@ -287,10 +261,6 @@ form {
     padding-bottom: 20%;
   }
 
-
-
-  /* Portfolio Section */
-
   .content-section-a {
     padding: 50px 0;
     background-color: white;
@@ -313,12 +283,10 @@ form {
     border-top: 3px solid #e7e7e7;
   }
 
-
   .col-lg-6 {
     padding: 0;
     margin-bottom: 60px;
   }
-
 
   .content-section-c {
     padding: 50px 0;
@@ -354,11 +322,9 @@ form {
     letter-spacing: 2px;
     color: black;
   }
-
-  /* End of main page */
+  /* End of front page */
 
   /* Show */
-
   .main-container {
     min-height: 1000px;
     width: 100%;
@@ -421,8 +387,6 @@ form {
     height: 24px;
     line-height: 16px;
   }
-
-
   .previous {
     padding-right: 200px;
   }
@@ -434,12 +398,10 @@ form {
   .heading {
     background-color: #003434;
     min-height: 300px;
-    //border: 1px solid white;
     margin: 0;
     padding-left: 50px;
     padding-right: 20px;
   }
-
 
   /* Edit */
   form {
@@ -450,15 +412,15 @@ form {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-  /* Main page */
+
   .hero {
     background-color: #003434;
     background-size: cover;
   }
 
   .container {
-    min-height: 300px;
-    width: 1200px;
+    min-height: 2000px;
+    width: 980px;
     margin: auto;
     padding-bottom: 100px;
   }
@@ -476,14 +438,6 @@ form {
     padding-bottom: 50px;
   }
 
-  .button-blog {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .column {
     height: 150px;
     width: 40% !important;
@@ -496,7 +450,7 @@ form {
 
   /* for further column styling in the blog area see utility classes */
   .newsletter-container {
-    min-height: 2000px;
+    min-height: 500px;
     width: 100%;
     padding-top: 100px;
     display: flex;
@@ -519,9 +473,6 @@ form {
     padding-bottom: 20%;
   }
 
-
-
-  /* Portfolio Section */
   .content-section-a {
     padding: 50px 0;
     background-color: white;
@@ -544,141 +495,131 @@ form {
     border-top: 3px solid #e7e7e7;
   }
 
-
-  .col-lg-6 {
+ .col-lg-6 {
     padding: 0;
     margin-bottom: 60px;
   }
 
-
-  .content-section-c {
+ .content-section-c {
     padding: 50px 0;
     background-color: white;
-  }
+ }
 
-  .tile-wrapper {
+ .tile-wrapper {
     height: auto;
     width: auto;
     border: 1px solid blue;
-  }
+ }
 
-  input[type=text] {
+ input[type=text] {
     background-color: #f8f8f8;
     color: black;
-    //width: 475px;
     width: 100%;
     height: 40px;
-  }
+ }
 
-  #box {
+ #box {
     background-color: #003434;
     color: white;
     width: 475px;
     height: 40px;
     padding: 0;
     margin: 0;
-  }
+ }
 
-  .network-name {
+ .network-name {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
     color: black;
-  }
+ }
+/* End of front page */
 
-  /* End of main page */
+/* Show */
+.main-container {
+  min-height: 1000px;
+  width: 100%;
+  background-color: #003434;
+}
 
-  /* Show */
+.heading {
+  min-height: 200px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+}
 
-  .main-container {
-    min-height: 1000px;
-    width: 100%;
-    background-color: #003434;
-  }
+#featured-image {
+  border: 2px solid #F9F1DC;
+  width: 39%;
+}
 
-  .heading {
-    min-height: 200px;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 50px;
-  }
+.article-container {
+  min-height: 800px;
+  display: flex;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+}
 
-  #featured-image {
-    border: 2px solid #F9F1DC;
-    width: 39%;
-  }
+.left-container {
+  min-height: 800px;
+  min-width: 65%;
+}
 
-  .article-container {
-    min-height: 800px;
-    display: flex;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    flex: 0 0 100%;
-    flex-wrap: wrap;
-  }
+.right-container {
+  padding-top: 350px;
+  padding-left: 20px;
+  min-height: 800px;
+  min-width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 400px;
+}
 
-  .left-container {
-    min-height: 800px;
-    min-width: 65%;
-  }
+textarea {
+  min-height: 100px;
+  min-width: 30%;
+  margin-bottom: 5px;
+  outline: none;
+  border: 0.1em solid #ccc;
+  border-radius: 0.2em;
+  background-color: #f9f1dc;
+}
 
-  .right-container {
-    padding-top: 350px;
-    padding-left: 20px;
-    min-height: 800px;
-    min-width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 400px;
-  }
+.tag-buttons {
+  background-color: none;
+  border-radius: none;
+  color: none;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 12px;
+  height: 24px;
+  line-height: 16px;
+}
+.previous {
+  padding-right: 200px;
+}
 
-  textarea {
-    min-height: 100px;
-    min-width: 30%;
-    margin-bottom: 5px;
-    outline: none;
-    border: 0.1em solid #ccc;
-    border-radius: 0.2em;
-    background-color: #f9f1dc;
-  }
+.next {
+  padding-left: 200px;
+}
 
-  .tag-buttons {
-    background-color: none;
-    border-radius: none;
-    color: none;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin: 0;
-    font-size: 12px;
-    height: 24px;
-    line-height: 16px;
-  }
+.heading {
+  background-color: #003434;
+  min-height: 300px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-
-  .previous {
-    padding-right: 200px;
-  }
-
-  .next {
-    padding-left: 200px;
-  }
-
-  .heading {
-    background-color: #003434;
-    min-height: 300px;
-    margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-
-  /* Edit */
-  form {
-    width: 520px;
-  }
-
-
+/* Edit */
+form {
+  width: 520px;
+}
 
 }
 
@@ -690,13 +631,11 @@ form {
   }
 
   .container {
-    min-height: 200px;
+    min-height: 2000px;
     width: 100%;
     margin: auto;
     padding: 0;
   }
-
-
 
   .row {
     display: flex;
@@ -725,10 +664,8 @@ form {
     height: 1000px;
   }
 
-
-
   .newsletter-container {
-    min-height: 2000px;
+    min-height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -742,7 +679,6 @@ form {
     width: 50%;
     height: 40px;
   }
-
 
   input[type=text] {
     padding: 0 !important;
@@ -762,16 +698,12 @@ form {
     padding-bottom: 15%;
   }
 
-
-
   .list-inline {
     padding-top: 20px;
   }
-
-  /* End of main page */
+  /* End of front page */
 
   /* Show page */
-
   .main-container {
     background-color:  #003434;
     display: flex;
@@ -815,11 +747,10 @@ form {
     align-items: center;
     justify-content: center;
   }
-
   /* end of show page */
 
 
-
+  /* Edit page */
   .img-responsive {
     padding-top: 10px;
   }
