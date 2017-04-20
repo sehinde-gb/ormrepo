@@ -5,6 +5,13 @@
   background-size: cover;
 }
 
+.first-container {
+  min-height: 300px;
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
 .container {
   min-height: 300px;
   width: 1200px;
@@ -209,6 +216,13 @@ form {
   .hero {
     background-color: #003434;
     background-size: cover;
+  }
+
+  .first-container {
+    min-height: 300px;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
   }
 
   .container {
@@ -418,8 +432,15 @@ form {
     background-size: cover;
   }
 
+  .first-container {
+    min-height: 300px;
+    width: 980px;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+
   .container {
-    min-height: 2000px;
+    min-height: 300px;
     width: 980px;
     margin: auto;
     padding-bottom: 100px;
@@ -630,14 +651,21 @@ form {
     background-size: cover;
   }
 
-  .container {
+  .first-container {
     min-height: 2000px;
     width: 100%;
     margin: auto;
     padding: 0;
   }
 
-  .row {
+  .container {
+    min-height: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+ .row {
     display: flex;
     flex-direction: column;
     align-content: center;
