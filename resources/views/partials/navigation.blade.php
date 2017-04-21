@@ -3,7 +3,7 @@
         @if (Auth::guest())
             <div class="navigation-left">
                     <div class="menuIcon">
-                        <a href="#menuExpand"><i class="fa fa-bars" aria-hidden="true"></i>
+                        <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                         </a>
                     </div><!-- /.menuIcon -->
                     <div class="menu">
@@ -54,7 +54,7 @@
         @else
             <div class="navigation-left">
                 <div class="menuIcon">
-                    <a href="#menuExpand"><i class="fa fa-bars" aria-hidden="true"></i>
+                    <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                     </a>
                 </div><!-- /.menuIcon -->
                 <div class="menu">
