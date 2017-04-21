@@ -166,6 +166,13 @@ input[type=text] {
   flex: 0 0 400px;
 }
 
+.button-blog {
+  padding-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 textarea {
   min-height: 100px;
   min-width: 30%;
@@ -378,6 +385,13 @@ form {
     min-width: 30%;
     display: flex;
     flex: 0 0 400px;
+  }
+
+  .button-blog {
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 
   textarea {
@@ -599,6 +613,13 @@ form {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 400px;
+}
+
+.button-blog {
+  padding-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 textarea {
