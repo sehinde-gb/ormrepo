@@ -318,7 +318,7 @@ label {
   font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 21px;
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
@@ -525,8 +525,8 @@ label {
   .box--line {
     font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
@@ -736,8 +736,8 @@ label {
  .box--line {
     font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
@@ -852,7 +852,7 @@ label {
   }
 
  .social--text {
-    font-family: "Georgia Italic", sans-serif;
+    font-family: $montserrat;
     font-weight: 500;
     font-size: 15px;
     font-style: italic;
@@ -863,7 +863,7 @@ label {
  }
 
  .news--heading {
-    font-family: $lato-bold;
+    font-family: $montserrat-bold;
     font-weight: 700;
     font-size: 26px;
     line-height: 36px;
@@ -882,7 +882,7 @@ label {
  }
 
  .lorem--text {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $montserrat;
     font-size: 18px;
     font-style: italic;
     line-height: 27px;
@@ -895,26 +895,24 @@ label {
  }
 
  .box--line {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $montserrat-bold;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
  }
 
  .column-name {
-    font-family: $lato-bold;
+    font-family: $montserrat-bold;
     font-size: 24px;
     line-height: 34px;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
-    position: relative;
-    left: 20px;
-
+    text-align: center;
  }
 
  .blog--title {

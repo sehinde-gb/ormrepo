@@ -69,6 +69,7 @@
 
             <div class="centre">
                 <ul>
+                    <li><a href="/blogs"><button class="btn-primary" type="button">Back</button></a></li>
                     <li><a href="/contact"><button class="btn-primary" type="button">Contact Us</button></a></li>
                 </ul>
 

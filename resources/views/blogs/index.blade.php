@@ -107,7 +107,7 @@
                     <div class="col-lg-12">
                         <div class="intro-message">
                             <h1 class="is--white">Sehinde Raji</h1>
-                            <h3 class="is--white-bottom">PHP (Laravel) Web Developer.</h3>
+                            <h2 class="is--white-bottom">PHP (Laravel) Web Developer.</h2>
 
                             <ul class="list-inline intro-social-buttons">
                                 <li>

@@ -14,7 +14,7 @@
 
 .container {
   min-height: 300px;
-  width: 1200px;
+  width: 100%;
   margin: auto;
   padding-bottom: 100px;
 }
@@ -197,6 +197,10 @@ textarea {
   padding-right: 200px;
 }
 
+.centre li {
+  padding-top: 5px;
+}
+
 .next {
   padding-left: 200px;
 }
@@ -232,7 +236,7 @@ form {
 
   .container {
     min-height: 300px;
-    width: 1200px;
+    width: 100%;
     margin: auto;
     padding-bottom: 100px;
   }
@@ -416,6 +420,10 @@ form {
     padding-right: 200px;
   }
 
+  .centre li {
+    padding-top: 5px;
+  }
+
   .next {
     padding-left: 200px;
   }
@@ -444,7 +452,7 @@ form {
   }
 
   .first-container {
-    min-height: 600px;
+    min-height: 1600px;
     width: 980px;
     margin: auto;
     padding-bottom: 100px;
@@ -452,7 +460,7 @@ form {
 
   .container {
     min-height: 300px;
-    width: 980px;
+    width: 100%;
     margin: auto;
     padding-bottom: 100px;
   }
@@ -643,6 +651,10 @@ textarea {
   padding-right: 200px;
 }
 
+.centre li {
+  padding-top: 5px;
+}
+
 .next {
   padding-left: 200px;
 }
@@ -796,7 +808,12 @@ form {
     align-items: center;
     justify-content: center;
  }
- /* end of show page */
+
+.centre li {
+   padding-top: 5px;
+}
+
+  /* end of show page */
 
 
   /* Edit page */
