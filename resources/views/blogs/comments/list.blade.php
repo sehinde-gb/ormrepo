@@ -1,6 +1,6 @@
 <ul>
     @foreach ($collection as $comment)
-        @include('admin.comments.comment')
+        @include('admin.blogs.comment')
     @endforeach
 </ul>
 

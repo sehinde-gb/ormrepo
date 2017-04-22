@@ -130,6 +130,7 @@ input[type=text] {
   min-height: 1000px;
   width: 100%;
   background-color: #003434;
+  border: 2px solid red;
   }
 
 .heading {
@@ -150,6 +151,7 @@ input[type=text] {
   padding-bottom: 20px;
   padding-left: 50px;
   flex: 0 0 100%;
+  border: 2px solid blue;
 }
 
 .left-container {
@@ -582,6 +584,8 @@ form {
   min-height: 1000px;
   width: 100%;
   background-color: #003434;
+  border: 2px solid red;
+
 }
 
 .heading {
@@ -597,23 +601,24 @@ form {
 }
 
 .article-container {
-  min-height: 800px;
+  min-height: 700px;
   display: flex;
   padding-bottom: 20px;
   padding-left: 20px;
   flex: 0 0 100%;
   flex-wrap: wrap;
+  border: 2px solid blue;
 }
 
 .left-container {
-  min-height: 800px;
+  min-height: 500px;
   min-width: 65%;
 }
 
 .right-container {
-  padding-top: 350px;
+  padding-top: 50px;
   padding-left: 20px;
-  min-height: 800px;
+  min-height: 100px;
   min-width: 30%;
   display: flex;
   flex-wrap: wrap;
@@ -766,10 +771,11 @@ form {
     background-color:  #003434;
     display: flex;
     flex-direction: column;
-    min-height: 2000px;
+    min-height: 3000px;
     width: 100%;
     margin: 0;
     padding: 0;
+    border: 2px solid red;
   }
 
   .article-container {
@@ -780,6 +786,7 @@ form {
     width: 100%;
     margin: 0;
     padding-left: 20px;
+    border: 2px solid blue;
   }
 
   .left-container {
@@ -790,11 +797,11 @@ form {
   }
 
  .heading {
-  background-color: #003434;
-  min-height: 300px;
-  margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+    background-color: #003434;
+    min-height: 300px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
  }
 
  .right-container {
@@ -803,7 +810,7 @@ form {
 
  .button-blog {
     padding-top: 50px;
-    height: 100px;
+    height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
