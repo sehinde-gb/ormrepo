@@ -130,7 +130,7 @@ input[type=text] {
   min-height: 1000px;
   width: 100%;
   background-color: #003434;
-  border: 2px solid red;
+  display: flex;
   }
 
 .heading {
@@ -143,15 +143,6 @@ input[type=text] {
 #featured-image {
   border: 2px solid #F9F1DC;
   width: 39%;
-}
-
-.article-container {
-  min-height: 800px;
-  display: flex;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  flex: 0 0 100%;
-  border: 2px solid blue;
 }
 
 .left-container {
@@ -354,6 +345,7 @@ form {
     min-height: 1000px;
     width: 100%;
     background-color: #003434;
+    display: flex;
   }
 
   .heading {
@@ -361,20 +353,11 @@ form {
     width: 100%;
     padding-top: 50px;
     padding-left: 50px;
-
   }
 
   #featured-image {
     border: 2px solid #F9F1DC;
     width: 39%;
-  }
-
-  .article-container {
-    min-height: 800px;
-    display: flex;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    flex: 0 0 100%;
   }
 
   .left-container {
@@ -584,8 +567,7 @@ form {
   min-height: 1000px;
   width: 100%;
   background-color: #003434;
-  border: 2px solid red;
-
+  display: flex;
 }
 
 .heading {
@@ -598,16 +580,6 @@ form {
 #featured-image {
   border: 2px solid #F9F1DC;
   width: 39%;
-}
-
-.article-container {
-  min-height: 700px;
-  display: flex;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  flex: 0 0 100%;
-  flex-wrap: wrap;
-  border: 2px solid blue;
 }
 
 .left-container {
@@ -775,10 +747,7 @@ form {
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 2px solid red;
   }
-
-
 
   .left-container {
     min-height: 700px;
