@@ -281,6 +281,10 @@
     width: 100%;
   }
 
+  .navigation-left {
+    padding-left: 75px;
+  }
+
   .nav-search {
     display: none;
   }
@@ -304,7 +308,7 @@
   }
 
   .menuOpen {
-    padding-left: 150px;
+    padding-left: 60px;
   }
 
   .fa-bars {
@@ -314,7 +318,7 @@
   .menuIcon {
     display: inline-block;
     background-color: #003434;
-    padding-left: 220px;
+    padding-left: 120px;
   }
 
   .menu {

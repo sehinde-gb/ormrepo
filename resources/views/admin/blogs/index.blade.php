@@ -7,7 +7,7 @@
     <!-- Page Content -->
     <a name="introduction"></a>
     <div class="hero">
-        <div class="container">
+        <div class="first-container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-slider">

@@ -20,7 +20,7 @@
 
                             <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
 
-                            <li><a href="https://greatgreengooseberry.club" class="nav-items">Green Gooseberry</a></li>
+                            <li><a href="https://greatgreengooseberry.club" class="nav-items">GreenGooseberry</a></li>
 
 
                         </ul>
@@ -68,7 +68,7 @@
                         <li><a href="/contact" class="nav-items hide">Contact</a></li>
                         <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">CasaRental</a></li>
                         <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
-                        <li><a href="https://greatgreengooseberry.club" class="nav-items">Green Gooseberry</a></li>
+                        <li><a href="https://greatgreengooseberry.club" class="nav-items">GreenGooseberry</a></li>
                         <li><a class="nav-items hide" href="{{ url('/logout') }}"
 
                                onclick="event.preventDefault();
