@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="main-container">
-     <div class="article-container">
+
             <div class="left-container">
                 <div class="heading">
                     <div id="featured-image">
@@ -52,7 +52,7 @@
                 </div><!-- /.social-container -->
             </div><!-- /.right-container -->
 
-        </div><!-- /.article-container -->
+      
 
         <div class="button-blog">
             <div class="previous">
