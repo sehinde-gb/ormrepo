@@ -17,6 +17,39 @@
                     <p id="published--at">Written by <small>Sehinde Raji</small></p>
                     <p class="is--beige">{!! $blog->body !!}</p>
                 </div><!-- /.heading -->
+
+                <div class="button-blog">
+                    <div class="previous">
+                        @if($previous)
+                            <ul>
+                                <li>
+                                    <a href="{{ URL::to( '/blogs/' . $previous->id ) }}"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        @endif
+                    </div><!-- /.left -->
+
+                    <div class="centre">
+                        <ul>
+                            <li><a href="/blogs"><button class="btn-primary" type="button">Back</button></a></li>
+                        </ul>
+
+                    </div><!-- /.centre -->
+
+                    <div class="next">
+                        @if($next)
+                            <ul>
+                                <li>
+                                    <a href="{{ URL::to( '/blogs/' . $next->id ) }}"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+
+                        @endif
+                    </div><!-- /.right -->
+
+                </div><!-- /.button-blog -->
             </div><!-- /.left-container -->
 
             <div class="right-container">
@@ -54,39 +87,7 @@
 
 
 
-        <div class="button-blog">
-            <div class="previous">
-                @if($previous)
-                    <ul>
-                        <li>
-                            <a href="{{ URL::to( '/blogs/' . $previous->id ) }}"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
 
-                @endif
-            </div><!-- /.left -->
-
-            <div class="centre">
-                <ul>
-                    <li><a href="/admin/blogs"><button class="btn-primary" type="button">Back</button></a></li>
-                    <li><a href="/contact"><button class="btn-primary" type="button">Contact Us</button></a></li>
-                </ul>
-
-            </div><!-- /.centre -->
-
-            <div class="next">
-                @if($next)
-                    <ul>
-                        <li>
-                            <a href="{{ URL::to( '/blogs/' . $next->id ) }}"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-
-                @endif
-            </div><!-- /.right -->
-
-        </div><!-- /.button-blog -->
 
     </div><!-- /.main-container -->
 

@@ -64,7 +64,7 @@
                 callbacks: {
                     onKeydown: function (e) {
                         var t = e.currentTarget.innerText;
-                        if (t.trim().length >= 10000) {
+                        if (t.trim().length >= 70000) {
                             //delete key
                             if (e.keyCode != 8)
                                 e.preventDefault();
@@ -73,15 +73,15 @@
 
                     onKeyup: function (e) {
                         var t = e.currentTarget.innerText;
-                        $('#maxContentPost').text(10000 - t.trim().length);
+                        $('#maxContentPost').text(70000 - t.trim().length);
                     },
                     onPaste: function (e) {
                         var t = e.currentTarget.innerText;
                         var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
                         e.preventDefault();
                         var all = t + bufferText;
-                        document.execCommand('insertText', false, all.trim().substring(0, 10000));
-                        $('#maxContentPost').text(10000 - t.length);
+                        document.execCommand('insertText', false, all.trim().substring(0, 70000));
+                        $('#maxContentPost').text(70000 - t.length);
                     },
                     addclass: {
                         debug: false,
