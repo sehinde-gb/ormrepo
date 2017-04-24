@@ -75,13 +75,13 @@
                         var t = e.currentTarget.innerText;
                         $('#maxContentPost').text(70000 - t.trim().length);
                     },
+                    // Clear all formatting of the pasted text
                     onPaste: function (e) {
-                        var t = e.currentTarget.innerText;
                         var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
                         e.preventDefault();
-                        var all = t + bufferText;
-                        document.execCommand('insertText', false, all.trim().substring(0, 70000));
-                        $('#maxContentPost').text(70000 - t.length);
+                        setTimeout( function(){
+                            document.execCommand( 'insertText', false, bufferText );
+                        }, 10 );
                     },
                     addclass: {
                         debug: false,
