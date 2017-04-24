@@ -64,7 +64,7 @@
                 callbacks: {
                     onKeydown: function (e) {
                         var t = e.currentTarget.innerText;
-                        if (t.trim().length >= 0000) {
+                        if (t.trim().length >= 7000) {
                             //delete key
                             if (e.keyCode != 8)
                                 e.preventDefault();
