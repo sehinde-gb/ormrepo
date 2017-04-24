@@ -48,7 +48,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     {{--Summernote--}}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+    
     <script src="/js/addclass.js"></script>
     <script>
         $(document).ready(function () {
@@ -75,13 +75,13 @@
                         var t = e.currentTarget.innerText;
                         $('#maxContentPost').text(70000 - t.trim().length);
                     },
-                    // Clear all formatting of the pasted text
                     onPaste: function (e) {
                         var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
                         e.preventDefault();
-                        setTimeout( function(){
-                            document.execCommand( 'insertText', false, bufferText );
-                        }, 10 );
+                        setTimeout(function () {
+                            document.execCommand('insertText', false, bufferText);
+                            $(this).parent().siblings('.summernote').destroy();
+                        }, 10);
                     },
                     addclass: {
                         debug: false,
