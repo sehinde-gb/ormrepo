@@ -21,7 +21,13 @@
         "laravel/browser-kit-testing": "^1.0",
         "laravel/dusk": "^1.0",
         "httpoz/roles": "^2.1",
-        "squareboat/sneaker": "^2.0"
+        "squareboat/sneaker": "^2.0",
+        "andreasindal/laravel-markdown": "^1.1"
+
+
+
+
+
 
 
     },

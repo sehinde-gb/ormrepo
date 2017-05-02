@@ -48,9 +48,9 @@ h2 {
   font-size: 1.5em;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #f9f1dc;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
 
 h3 {
@@ -58,7 +58,7 @@ h3 {
   font-weight: 700;
   font-size: 1.17em;
   line-height: 29px;
-  color: black;
+  color: $beige;
   margin: 0;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -67,19 +67,22 @@ h3 {
 h4 {
   font-family: $lato;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 1.875em;
+  line-height: 49px;
   text-transform: none !important;
-  color:  black;
+  color:  $black-color;
+  padding-top: 10px;
 }
 
 h5 {
-  color: #4d5656;
+  color: #f9f1dc;
   font-family: $fira-sans;
-  font-size: 0.83em;
+  font-size: 1em;
   line-height: 25px;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: lowercase;
 }
 
 h6 {
@@ -89,7 +92,7 @@ h6 {
   line-height: 24px;
   text-transform: uppercase;
   color: $secondary-color;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 h6 a {
@@ -103,17 +106,18 @@ h6 a {
 }
 
 h6 a:hover {
-  color: beige !important;
+  color: #FF3B3F !important;
   text-decoration: none;
 }
 
 a {
-  color: #9370DB;
+  color: #CDA34F;
 }
 
 a:hover {
-  color: #f9f1dc;
-  }
+  color: #FF3B3F;
+  text-decoration: none;
+}
 
 a:active {
   color: whitesmoke;
@@ -132,9 +136,6 @@ p {
   text-transform: none !important;
 }
 
-.code {
-  color: #F4A460;
-}
 
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -199,7 +200,7 @@ label {
 
 .fa-2x {
   color: #fdfdfd;
-  //padding-left: 20px;
+  padding-left: 18px;
 }
 
 .body {
@@ -323,8 +324,8 @@ label {
   color: $secondary-color;
   margin: 0;
   position: relative;
-  right: 10px;
-  bottom: 50px;
+  right: 30px;
+  bottom: 110px;
 }
 
 .lower--box-text {
@@ -351,9 +352,7 @@ label {
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  .code {
-    color: #F4A460;
-  }
+
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -418,7 +417,7 @@ label {
 
   .fa-2x {
     color: #fdfdfd;
-    //padding-left: 20px;
+    padding-left: 18px;
   }
 
   .body {
@@ -532,7 +531,7 @@ label {
     margin: 0;
     position: relative;
     right: 10px;
-    bottom: 50px;
+    bottom: 90px;
   }
 
   .lower--box-text {
@@ -560,9 +559,6 @@ label {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-  .code {
-    color: #F4A460;
-  }
 
 
   .intro-message > h3 {
@@ -628,7 +624,7 @@ label {
 
   .fa-2x {
     color: #fdfdfd;
-    //padding-left: 20px;
+    padding-left: 18px;
   }
 
   .body {
@@ -742,8 +738,8 @@ label {
     color: $secondary-color;
     margin: 0;
     position: relative;
-    right: 10px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 110px;
  }
 
  .lower--box-text {
@@ -770,12 +766,10 @@ label {
 @media all and (min-width: 100px) and (max-width: 480px) {
 
   a:hover {
-    color: #f9f1dc;
+    color: #FF3B3F;
+    text-decoration: none;
   }
 
-  .code {
-    color: #F4A460 !important;
-  }
 
   .intro-message > h1 {
     font-size: 3em;

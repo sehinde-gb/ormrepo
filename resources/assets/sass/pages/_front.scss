@@ -34,7 +34,7 @@
 
 .columns {
   //min-height: 750px;
-  height: 300px !important;
+  height: 550px !important;
 }
 
 /* for further column styling in the blog area see utility classes */
@@ -248,6 +248,7 @@ form {
   }
 
   .columns {
+    height: 550px;
     //min-height: 750px;
     //min-height: 350px !important;
   }
@@ -471,7 +472,7 @@ form {
   .columns {
     padding-left: 80px;
     //min-height: 750px;
-   // height: 350px !important;
+    height: 550px !important;
   }
 
   /* for further column styling in the blog area see utility classes */

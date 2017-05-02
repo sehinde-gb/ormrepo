@@ -22,7 +22,6 @@
         }]);
     </script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
@@ -46,66 +45,10 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    {{--Summernote--}}
-
-    
-    <script src="/js/addclass.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.summernote').summernote({
-                height: 300,                 // set editor height
-                minHeight: null,             // set minimum height of editor
-                maxHeight: null, // set maximum height of editor
-                width: 150,
-                focus: true,                  // set focus to editable area after initializing summernote
-                insertParagraph: false,
-                fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48' , '64', '82', '150'],
-                placeholder: 'Create your Article ...',
-                callbacks: {
-                    onKeydown: function (e) {
-                        var t = e.currentTarget.innerText;
-                        if (t.trim().length >= 7000) {
-                            //delete key
-                            if (e.keyCode != 8)
-                                e.preventDefault();
-                        }
-                    },
-
-                    onKeyup: function (e) {
-                        var t = e.currentTarget.innerText;
-                        $('#maxContentPost').text(70000 - t.trim().length);
-                    },
-                    onPaste: function (e) {
-                        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
-                        e.preventDefault();
-                        setTimeout(function () {
-                            document.execCommand('insertText', false, bufferText);
-                            $(this).parent().siblings('.summernote').destroy();
-                        }, 10);
-                    },
-                    addclass: {
-                        debug: false,
-                        classTags: [{title:"Button","value":"btn btn-success"},"jumbotron", "lead","img-rounded","img-circle", "img-responsive","btn", "btn btn-success","btn btn-danger","text-muted", "text-primary", "text-warning", "text-danger", "text-success", "table-bordered", "table-responsive", "alert", "alert alert-success", "alert alert-info", "alert alert-warning", "alert alert-danger", "visible-sm", "hidden-xs", "hidden-md", "hidden-lg", "hidden-print"]
-                    },
-                    height: 300,
-                    toolbar: [
-                        // [groupName, [list of button]]
-                        ['img', ['picture']],
-                        ['style', ['style', 'addclass', 'clear']],
-                        ['fontstyle', ['bold', 'italic', 'ul', 'ol', 'link', 'paragraph']],
-                        ['fontstyleextra', ['strikethrough', 'underline', 'hr', 'color', 'superscript', 'subscript']],
-                        ['extra', ['video', 'table', 'height']],
-                        ['misc', ['undo', 'redo', 'codeview', 'help']]
-
-
-                    ]
-
-                }
-            });
-        });
-        $(document).ready(function(){
-            $("img").addClass("img-responsive");
-        });
+        var simplemde = new SimpleMDE({ element: document.getElementById("summernote") });
     </script>
 
     <script type="application/javascript" src="/js/bootstrap.js"></script>

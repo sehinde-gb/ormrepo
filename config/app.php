@@ -175,6 +175,7 @@ return [
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
         SquareBoat\Sneaker\SneakerServiceProvider::class,
+        Indal\Markdown\MarkdownServiceProvider::class,
         //App\Providers\PapertrailServiceProvider::class,
 
         /*
@@ -223,6 +224,7 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
+        'Markdown' => Indal\Markdown\Facade::class,
         'Newsletter' => Spatie\Newsletter\NewsletterFacade::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,

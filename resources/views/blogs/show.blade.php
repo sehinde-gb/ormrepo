@@ -12,10 +12,13 @@
                         <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
                     </div><!-- /.featured-image -->
                     <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
-                    <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
+                    <div id="app">
+
+                    </div>
                     <p id="published--at">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                     <p id="published--at">Written by <small>Sehinde Raji</small></p>
-                    <p class="is--beige">{!! $blog->body !!}</p>
+                    <p class="is--beige is--lower">@markdown($blog->body)</p>
+
                 </div><!-- /.heading -->
 
                 <div class="button-blog">
@@ -84,10 +87,6 @@
                     </div><!-- /.tag-buttons -->
                 </div><!-- /.social-container -->
             </div><!-- /.right-container -->
-
-
-
-
 
     </div><!-- /.main-container -->
 

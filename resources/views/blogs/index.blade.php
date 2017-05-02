@@ -71,9 +71,7 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-seven has-text-centered -->
-                                <div class="column is-one-quarter box-is-beige is-flex-bottom is-eight">
-                                    <h6 class="column-name">Sehinde Raji</h6>
-                                </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-eight -->
+
 
 
 

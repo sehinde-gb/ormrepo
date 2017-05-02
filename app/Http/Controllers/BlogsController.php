@@ -9,8 +9,8 @@ use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use Newsletter;
 use App\Comment;
-
-
+use Parsedown;
+use Haleks\Writedown\Compilers\MarkdownCompiler;
 
 class BlogsController extends Controller
 {
@@ -72,6 +72,8 @@ class BlogsController extends Controller
 
             $comments = Comment::forBlog($blog)->get()->threaded();
 
+
+
             } catch (\Exception $e) {
 
             throw new BlogNotFoundException($e->getMessage());
@@ -84,6 +86,7 @@ class BlogsController extends Controller
             'next' => $next,
             'comments' => $comments
         ]);
+
     }
 
 

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
@@ -218,6 +219,15 @@ class Blog extends Model
         return $this->tags()->pluck('id');
     }
 
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function getBodyHtmlAttribute($value)
+    {
+        return Markdown::convertToHtml(e($this->body));
+
+    }
 
     /**
      * Return the onesignal player id.
