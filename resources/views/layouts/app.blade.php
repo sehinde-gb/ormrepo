@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -58,7 +58,7 @@
     </script>
 
     <script type="application/javascript" src="/js/bootstrap.js"></script>
-    <script type="application/javascript" src="/js/app.js"></script>
+    <script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
 
     {{-- Show password--}}
     <script src="/js/password.js"></script>
