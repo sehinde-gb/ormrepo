@@ -7,7 +7,7 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
-window.$ = window.jQuery = require('jquery');
+//window.$ = window.jQuery = require('jquery');
 //global.$ = global.jQuery = require('jquery');
 window.Laravel = { csrfToken: $('meta[name=csrf-token]').attr("content") };
 
@@ -43,15 +43,16 @@ window.axios.defaults.headers.common = {
 
 //import Echo from "laravel-echo";
 
+
 /*
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: '559f1295f399eca1e5d1',
+    key: '47ff9dd33171da24750e',
     cluster: 'eu',
     encrypted: true
 });
 
-Echo.private('user.${userId}')
+window.Echo.private('user.${userId}')
     .listen('BlogWasCreated', (e) => {
     console.log(e.update);
 });

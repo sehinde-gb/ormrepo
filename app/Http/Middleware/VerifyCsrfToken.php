@@ -12,6 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'url' => 'https://srv.buysellads.com/ads/CVADC53U.json'
+        'api/user',
+        'broadcasting/auth'
     ];
 }

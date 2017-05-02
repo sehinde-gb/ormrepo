@@ -14,12 +14,12 @@ require('./bootstrap');
  */
 
 
-Vue.component('Ad', require('./components/Ad.vue'));
+//Vue.component('Ad', require('./components/Ad.vue'));
 
-const app = new Vue({
-    el: '#app'
+//const app = new Vue({
+  //  el: '#app'
 
-});
+//});
 
 import Turbolinks from 'turbolinks';
 
