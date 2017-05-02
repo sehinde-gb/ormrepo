@@ -17,5 +17,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
     //.autoload({
       //  jquery: ['$', 'jQuery', 'window.jQuery']
     //});
-   //.autoload({ 'jquery': ['window.$', 'window.jQuery'] });
+
 
