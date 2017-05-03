@@ -62,7 +62,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-six-->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-six-->
                             @elseif($blog->id == 4)
                                 <div class="column is-one-quarter is-grey is-flex is-seven has-text-centered">
                                     <div class="arrow">
@@ -77,7 +77,14 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-ten-->
+                            @elseif($blog->id == 6)
+                                <div class="column is-one-quarter is-light-grey is-flex is-ten">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-ten-->
 
 
 

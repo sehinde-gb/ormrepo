@@ -80,6 +80,13 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
 
+                            @elseif($blog->id == 6)
+                                <div class="column is-one-quarter is-light-grey is-flex is-ten">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-ten-->
 
                             @endif
 
