@@ -57,7 +57,7 @@
                                 <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-tablet-only is-hidden-mobile">
                                     <h6 class="box--line">Web Developer</h6>
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
-                                <div class="column is-one-quarter is-light-grey is-flex is-six">
+                                <div class="column is-one-quarter is-dark-grey is-flex is-six">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -71,6 +71,13 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-seven has-text-centered -->
 
+                            @elseif($blog->id == 5)
+                                <div class="column is-one-quarter is-light-grey is-flex is-ten">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-ten-->
 
 
 

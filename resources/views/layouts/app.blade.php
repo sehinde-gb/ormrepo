@@ -8,7 +8,7 @@
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
     <link rel="manifest" href="/manifest.json">
-    
+
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
         var OneSignal = window.OneSignal || [];
