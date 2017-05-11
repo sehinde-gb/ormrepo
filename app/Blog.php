@@ -2,7 +2,7 @@
 
 namespace App;
 
-use GrahamCampbell\Markdown\Facades\Markdown;
+
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;

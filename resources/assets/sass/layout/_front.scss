@@ -34,7 +34,7 @@
 
 .columns {
   //min-height: 750px;
-  height: 550px !important;
+  height: 750px !important;
 }
 
 /* for further column styling in the blog area see utility classes */
@@ -210,7 +210,7 @@ textarea {
 /* Edit */
 form {
   width: 520px;
-  }
+}
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
@@ -661,7 +661,7 @@ form {
   }
 
   .first-container {
-    min-height: 2000px;
+    min-height: 3000px;
     width: 100%;
     margin: auto;
     padding: 0;

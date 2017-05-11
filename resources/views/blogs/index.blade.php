@@ -87,6 +87,51 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-ten-->
+                            @elseif($blog->id == 7)
+                                <div class="column is-one-quarter is-grey is-flex is-eleven">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-eleven-->
+                            @elseif($blog->id == 8)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-twelve">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twelve-->
+
+                            @elseif($blog->id == 9)
+                                <div class="column is-one-quarter is-grey is-flex is-thirteen">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-thirteen-->
+
+                            @elseif($blog->id == 10)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-fourteen">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-fourteen-->
+                            @elseif($blog->id == 11)
+                                <div class="column is-one-quarter is-light-grey is-flex is-fifteen">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifteen-->
+                            @elseif($blog->id == 12)
+                                <div class="column is-one-quarter is-grey is-flex is-sixteen">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->id) }}">{{ $blog->slug }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-sixteen-->
+
 
                             @endif
 
@@ -144,7 +189,7 @@
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="section--heading">Great Green Gooseberry<br>Ecommerce Eco Friendly Products</h4>
+                        <h4 class="is--black">Great Green Gooseberry<br>Ecommerce Eco Friendly Products</h4>
                         <p class="section--body is--padding-bottom">This is one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -160,7 +205,7 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="section--heading">Casa Rental<br>Home Rentals Application</h4>
+                        <h4 class="is--black">Casa Rental<br>Home Rentals Application</h4>
                         <p class="section--body is--padding-bottom">This is a Home rental app that showcases uploaded home photos so that you can showcase your home to get the best quote for your lease! This has recently been updated with new screens using FlexBox.</p>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -177,7 +222,7 @@
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="section--heading">El Coche<br>Car Blog Application</h4>
+                        <h4 class="is--black">El Coche<br>Car Blog Application</h4>
                         <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This has been recently updated with new screens developed using FlexBox.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -193,7 +238,7 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="section--heading">The GamesStation<br>Ecommerce Application</h4>
+                        <h4 class="is--black">The GamesStation<br>Ecommerce Application</h4>
                         <p class="section--body is--padding-bottom">This is an E-commerce gaming web app where you can test purchase video games, view activities and participate in the Station blog.</p>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
