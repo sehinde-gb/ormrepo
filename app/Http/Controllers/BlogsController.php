@@ -9,8 +9,8 @@ use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use Newsletter;
 use App\Comment;
-use Parsedown;
-use Haleks\Writedown\Compilers\MarkdownCompiler;
+
+
 
 class BlogsController extends Controller
 {
