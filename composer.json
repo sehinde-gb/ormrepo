@@ -14,7 +14,6 @@
         "propaganistas/laravel-phone": "^2.8",
         "laravel/scout": "3.0.0",
         "algolia/algoliasearch-client-php": "^1.12",
-        "spatie/laravel-newsletter": "^3.3",
         "pusher/pusher-php-server": "^2.6",
         "laravel-notification-channels/onesignal": "^1.0",
         "pda/pheanstalk": "~3.0",

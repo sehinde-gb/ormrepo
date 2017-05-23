@@ -47,6 +47,15 @@
   justify-content: center;
 }
 
+#mc_embed_signup {
+  background: #003434 !important;
+}
+
+#mc_embed_signup input.email {
+  background-color: #003434 !important;
+  color: #f9f1dc !important;
+}
+
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
@@ -115,6 +124,7 @@ input[type=text] {
   padding: 0;
   margin: 0;
 }
+
 
 .network-name {
   text-transform: uppercase;
@@ -261,6 +271,15 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #mc_embed_signup {
+    background: #003434 !important;
+  }
+
+  #mc_embed_signup input.email {
+    background-color: #003434 !important;
+    color: #f9f1dc !important;
   }
 
   .intro-header {
@@ -483,6 +502,15 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #mc_embed_signup {
+    background: #003434 !important;
+  }
+
+  #mc_embed_signup input.email {
+    background-color: #003434 !important;
+    color: #f9f1dc !important;
   }
 
   .intro-header {
@@ -708,6 +736,15 @@ form {
     flex-direction: column;
     padding-left: 20px;
     margin: 0;
+  }
+
+  #mc_embed_signup {
+    background: #003434 !important;
+  }
+
+  #mc_embed_signup input.email {
+    background-color: #003434 !important;
+    color: #f9f1dc !important;
   }
 
   #box {
