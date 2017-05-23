@@ -1,26 +1,43 @@
-Synopsis
+# Synopsis
 
 This is a blog that enables users to blog about tech and non tech related issues in society.
 
-Motivation
+# Motivation
 
 The blog is to openly engage users to blog and comment about technical and non technical issues that occur within the tech world.
 
-Installation
+# Installation
 
-Create your own vm for example install Virtual Box Install Laravel Homestead http://laravel.com/docs/5.4/homestead git clone https://github.com/ormrepo/ormblog.git projectname cd projectname composer install php artisan key:generate Create a database Copy .env.example file and rename it to your own .env file php artisan migrate --seed to create and populate tables
+## Laravel Valet
 
-Features
+Clone the repository
+At the command prompt run git clone URL
+
+Rename the .env.example to .env.
+
+Go through the .env and change the vendors to your own for example DB_DATABASE=XXXXXX
+
+Run composer install
+
+Run php artisan key:generate
+
+Run php artisan migrate 
+
+Go to your command prompt and type ormblog54.dev
+
+
+# Features
 
 Home page, Login and Registration Pages and About Page.
 
-Packages included
+## Packages included
 
 algolia search,  eloquent sluggable, laravel dusk, adam wathan eloquent l5, laravel scout, laravel phone, pusher php server and roumen feed.
 
-Tests All included within the tests directory. Remember to use BrowserTestKit if you are running your tests with Laravel 5.3 and below
+## Tests 
+All included within the tests directory. Remember to use BrowserTestKit if you are running your tests with Laravel 5.3 and below
 
-Contributors
+# Contributors
 
 Any feature requests / pull requests should include details of what you are trying to achieve (use case) to explain why your request should be implemented.
 
