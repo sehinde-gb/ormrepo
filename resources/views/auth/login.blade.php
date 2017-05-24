@@ -13,7 +13,7 @@
                     </div><!-- /.own-logo -->
                 </div><!-- /.logo-container -->
                 <div class="header">
-                    <h4 class="leader">Sign In</h4>
+                    <h4 class="leader is--black">Sign In</h4>
                 </div><!-- /.header -->
                 <div class="row">
 

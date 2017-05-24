@@ -5,55 +5,62 @@
 
 @section('content')
 
-    <div class="main-container">
-        <!-- Page Content -->
-        <a name="introduction"></a>
-        <div class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-slider">
-                            <div class="collection">
-                                <img class="logo"
-                                     srcset="/images/slider@1,5x.png 980w,
-                                            /images/slider@1x.png 480w"
-                                     alt="The ormrepo thoughtful logo">
-                            </div><!-- /.collection -->
-                        </div><!-- .intro-slider -->
-                    </div>
-             </div>
-          </div>
-        <div class="content-section-a">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <hr class="section-heading-spacer">
-                            <div class="clearfix"></div>
-                            <h4>Sehinde Raji is a Web Developer specialising in PHP</h4>
-                                <p class="section--title">Sehinde is a self taught Web Developer and an established outsider who is always on the lookout for exciting Development opportunities.
-                                </p>
-                                <br>
-                                <p class="section--title">Sehinde has a particular focus on Laravel, Wordpress and Craft CMS
-                                    and has worked with a number of small businesses. He has produced a portfolio of containing previous work as part of efforts to further his career.
-                                </p>
-                            <br>
-                            <p class="section--title">Sehinde has worked as a 3rd Level Technical Support Engineer and he has been a class teacher at an International School overseas.
-                                </p>
-                                <br>
-                                <p class="section--title">Sehinde has the unique ability to breakdown complex subject areas in to easily consumable byte sized chunks.</p>
-                                <!-- /.section--title -->
-                                <br>
-                                <p class="section--title"> Sehinde lives in London (UK) and is immediately available.
-                                </p>
-                    </div><!-- col-lg-5 col-sm-6 -->
-                        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                            <img class="img-responsive" src="images/mypic.png" alt="">
-                        </div><!-- .col-lg-5 col-lg-offset-2 col-sm-6 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .content-section a -->
-    </div><!-- .hero -->
-</div><!-- /.main-container -->
+<div class="main-container">
+    <div class="side-container">
+
+        <div class="heading">
+            <div class="featured-image">
+                <img class="img-responsive" src="images/mypic.png" alt="">
+            </div>
+            <!-- /.featured-image -->
+            <h1 class="blog--title is--padded-top-40">About Us</h1>
+            <h2 class="blog--excerpt">Who we are ?</h2>
+            <p class="is--beige is--lower">A web building and digital innovation agency committed to diversity in tech, We create outstanding e-solutions for all devices. 
+            </p>
+            <p class="is--beige is--lower">
+            Sehinde (pronounce Shenday), experienced full stack developer, we will guide you through each and every step of the process. 
+            </p>
+            <p class="is--beige is--lower">
+            We will empower you with all the tools you need to provide for all of your customer’s needs including:
+            E-commerce websites that use payment gateways e.g. Stripe, Google, Android pay & Apple pay.
+            </p>
+            <p class="is--beige is--lower">
+            Online booking features that help manage your time more effectively, 
+            </p>
+            <p class="is--beige is--lower">
+            Online web notifications help businesses to differentiate target markets in real time.
+            </p>
+            <p class="is--beige is--lower">
+            Digital marketing campaigns inspired by social media.
+            </p>
+            <p class="is--beige is--lower">
+            Live chat features that help create constructive, engaging experiences, and this will increase growth by building stronger relationships with your customers.
+            </p>
+            <p class="is--beige is--lower">
+            Website content writing including editorial, comment moderation & proof-reading, search engine optimisation using keywords, Guaranteed ease of navigation and we promise that our services will offer you value for money.
+            </p>      
+
+
+
+        </div>
+        <!-- /.header -->
+
+    </div>
+    <!-- /.left-container -->
+
+    <div class="media-container">
+        <div class="social-container">
+            <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
+            <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+            <ul class="juicer-feed" data-feed-id="thediversecoder"><h1 class="referral"></h1></ul>
+        </div><!-- /.social-container -->
+    </div><!-- /.media-container -->
+
+
+
+
+
+</div><!-- /.about-container -->
 @endsection
 
 

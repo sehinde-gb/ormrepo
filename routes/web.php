@@ -10,9 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-use Illuminate\Support\Facades\Auth;
 
-$monolog = Log::getMonolog();
+
+    $monolog = Log::getMonolog();
 $syslog = new \Monolog\Handler\SyslogHandler('papertrail');
 $formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
 $syslog->setFormatter($formatter);
@@ -32,6 +32,7 @@ Route::get('/search/{query}', function($query) {
 });
 
 
+
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
 Route::post('contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
@@ -42,7 +43,7 @@ Route::get('tags', 'TagsController@index');
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
 Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
-
+Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 
 
 

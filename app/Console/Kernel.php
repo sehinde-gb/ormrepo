@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\GenerateSitemap::class
     ];
 
     /**
@@ -24,6 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('sitemap:generate')->hourly();
         // $schedule->command('inspire')
         //          ->hourly();
     }

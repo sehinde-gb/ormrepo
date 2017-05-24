@@ -14,7 +14,7 @@
                     </div><!-- /.own-logo -->
                 </div><!-- /.logo-container -->
                 <div class="header">
-                    <h4 class="leader">Sign Up</h4>
+                    <h4 class="leader is--black">Sign Up</h4>
                 </div><!-- /.header -->
 
 
