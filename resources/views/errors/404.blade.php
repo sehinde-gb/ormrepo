@@ -4,29 +4,49 @@
 
 @section('content')
 
+    <a name="introduction"></a>
 
-    <div class="exceptions">
+                <div class="hero">
+                    <div class="first-container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="intro-slider">
+                                    <div class="centered">
+                                        <h1 class="is--uppercase is--centered">Oops! Sometimes apps cannot find themeselves....</h1>
+                                    </div><!-- /.centered -->
 
+                                    <div class="collection">
+                                        <img class="logo"
+                                             srcset="/images/slider@1,5x.png 980w,
+                                        /images/slider@1x.png 480w"
+                                             alt="The ormrepo thoughtful logo">
 
+                                    </div><!-- /.collection -->
 
-    </div><!-- /exceptions -->
+                <div class="exceptions">
+                    <div class="links-container">
+                        <h2 class="is--padded-bottom">Try going back to our links to find what you were looking for:</h2>
+                            <ul class="list-inline">
+                                    <li><a href="/" class="foot-links">Home</a></li>
+                                    <li class="footer-menu-divider">&sdot;</li>
+                                    <li><a href="/about" class="foot-links">About</a></li>
+                                    <li class="footer-menu-divider">&sdot;</li>
+                                    <li><a href="https://ormrepo.co.uk/contact" class="foot-links">Contact Us</a>
+                                    </li>
+                                    <li class="footer-menu-divider">&sdot;</li>
+                                    <li><a href="https://ormrepo.co.uk/bookings" class="foot-links">Bookings</a>
+                                    </li>
 
+                            </ul>
+                    </div><!-- /.links-container -->
+                </div><!-- /exceptions -->
 
-    <div class="form-page">
-        <div class="sign-container">
-            <div class="register-fluid">
-                <div class="header">
-                    <h4 class="leader">RSSFeedNotFoundException</h4>
-                </div><!-- /.header -->
-                <div class="row">
-                    <h4>Oops RSS Feed Not Found!</h4>
-                    <h4>Please contact your technical support team for further assistance.</h4>
-                </div><!-- /.row -->
-            </div><!-- /.register-fluid -->
-        </div><!-- /sign-container -->
-    </div><!-- /.form-page -->
+                </div><!-- .intro-slider -->
 
-
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection
 

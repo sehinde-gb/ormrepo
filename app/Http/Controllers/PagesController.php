@@ -28,9 +28,25 @@ class PagesController extends Controller
         return view ('pages.about');
     }
 
+    /**
+     * Show the page for privacy
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function privacy()
     {
         return view ('pages.privacy');
+    }
+
+    /**
+     * Show the page to make a booking
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function book()
+    {
+        return view ('pages.book');
+
     }
 
 

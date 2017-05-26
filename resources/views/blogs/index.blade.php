@@ -189,6 +189,8 @@
                                 <li>
                                     <a href="https://github.com/ormrepo" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw is-aligned"></i> <span class="network-name">Github</span></a>
                                 </li>
+
+
                                 <li>
                                     <a href="https://uk.linkedin.com/in/sehinde-raji-319457b" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw is-aligned"></i> <span class="network-name">Linkedin</span></a>
                                 </li>
