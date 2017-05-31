@@ -144,9 +144,8 @@
                         }
                     </style>
 
-                    <button id="apple-pay-button" style="display:none"></button>
-                    <p style="display:none" id="notgot">ApplePay is not available with this browser</p>
-                    <p style="display:none" id="success">Test transaction completed, thanks. <a href="https://ormrepo.co.uk/admin/charges">reset</a></p>
+                    <button id="apple-pay-button"></button>
+
 
                     <div id="apple-link" style="display:none">
                         <li><a href="http://www.apple.com/uk/privacy/" class="terms-link">Apple Pay Terms and Conditions</a></li>
