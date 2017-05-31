@@ -130,6 +130,17 @@ class User extends Authenticatable implements HasRoleContract
         return $this->hasMany('App\Charge');
     }
 
+    /**
+     * Retrieves Sterling currency for Cashier.
+     *
+     * @return string
+     */
+    public function getCurrency()
+    {
+        return 'gbp';
+    }
+
+
 
 
 }

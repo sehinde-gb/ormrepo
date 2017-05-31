@@ -135,7 +135,7 @@ class CheckoutController extends Controller
 
         $raw_price = $request->get('price');
 
-        $price = $raw_price->priceToPennies();
+        $price = ($raw_price * 100);
 
 
 
