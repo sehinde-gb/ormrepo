@@ -15,6 +15,7 @@ class VerifyCsrfToken extends BaseVerifier
         'api/user',
         'broadcasting/auth',
         'admin/charges',
-        '/checkout'
+        '/checkout',
+        '/checkout/charges/*'
     ];
 }
