@@ -48,9 +48,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 });
 
 # Checkout
+Route::post('/checkout/charges/{id}', ['as' => 'checkout.charges','uses' => 'CheckoutController@charges']);
 Route::post('/checkout', ['uses' => 'CheckoutController@index']);
 Route::get('checkout/thankyou', ['as' => 'checkout.thankyou', 'uses' => 'CheckoutController@thankyou']);
-Route::post('/checkout/charges/{id}', ['as' => 'checkout.charges','uses' => 'CheckoutController@charges']);
+
 
 # Blogs
 Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');

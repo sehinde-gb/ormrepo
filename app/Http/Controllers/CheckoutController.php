@@ -129,7 +129,7 @@ class CheckoutController extends Controller
         // See your keys here: https://dashboard.stripe.com/account/apikeys
         Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
-
+        dd($request);
         //$charges = Charge::find($request->input('charge_id'));
         $id = $_POST['id'];
 
