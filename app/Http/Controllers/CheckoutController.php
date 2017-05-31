@@ -129,15 +129,22 @@ class CheckoutController extends Controller
         // See your keys here: https://dashboard.stripe.com/account/apikeys
         Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
-        $charges = Charge::find($request->input('charge_id'));
 
-        $user = new User();
+        //$charges = Charge::find($request->input('charge_id'));
+        $id = $_POST['id'];
 
         $raw_price = $request->get('price');
 
         $price = $raw_price->priceToPennies();
 
-        if($user->charges($charges->priceToCents(),
+
+
+        $user = new User();
+
+        $charge = Charge::findOrFail($id);
+
+
+        if($user->charges($charge->priceToCents(),
             [
                 'source' => $request->get('token'),
                 'amount' => $price,
