@@ -138,7 +138,7 @@
                             height: 64px;
                             display: inline-block;
                             box-sizing: border-box;
-                            background-image: url(/images/ApplePayBTN_32pt__white_logo_@2x.png);
+                            background-image: url(/images/apple/ApplePayBTN_32pt__white_logo_@2x.png);
                             background-size: 100%;
                             background-repeat: no-repeat;
                         }
