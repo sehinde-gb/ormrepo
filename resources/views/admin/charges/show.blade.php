@@ -210,14 +210,7 @@
 
     Stripe.applePay.checkAvailability(function(available) {
 
-        if (available) {
-            document.getElementById('apple-pay-button').style.display = 'block';
-            document.getElementById('apple-link').style.display = 'block';
-            console.log('hi, I can do ApplePay');
-        } else {
-            document.getElementById("notgot").style.display = "block";
-            console.log('ApplePay is possible on this browser, but not currently activated.');
-        }
+
 
     });
 
@@ -230,8 +223,6 @@
 
     function beginApplePay() {
         var paymentRequest = {
-            requiredBillingContactFields: ['postalAddress'],
-            requiredShippingContactFields: ['phone'],
             countryCode: 'GB',
             currencyCode: 'GBP',
             total: {
@@ -245,7 +236,7 @@
         var session = Stripe.applePay.buildSession(paymentRequest,
             function(result, completion) {
                 //console.log(result.token.card.address_line1);
-                $.post('/checkout/charges/{id}', { token: result.token.id, price: "{{ ($charge->price) }}", id: "{{$charge->id}}" }).done(function() {
+                $.post('/checkout/charges/{id}', { token: result.token.id, price: "{{ ($charge->price) }}", id: "{{($charge->id) }}" }).done(function() {
 
                     completion(ApplePaySession.STATUS_SUCCESS);
                     // Prevent the form from submitting with the default action

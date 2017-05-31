@@ -127,7 +127,8 @@ class CheckoutController extends Controller
     {
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here: https://dashboard.stripe.com/account/apikeys
-        Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
+        Stripe::setApiKey("sk_test_mSiEUvaxNzMphi4gPsOcs8ez");
+        //Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
 
 
         //$charges = Charge::find($request->input('charge_id'));
