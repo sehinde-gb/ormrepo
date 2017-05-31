@@ -162,7 +162,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Spatie\Sitemap\SitemapServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -174,8 +173,8 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
-        SquareBoat\Sneaker\SneakerServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
+        //Spatie\Sitemap\SitemapServiceProvider::class,
         //App\Providers\PapertrailServiceProvider::class,
 
         /*
@@ -186,6 +185,7 @@ return [
         //App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Laravel\Cashier\CashierServiceProvider::class,
         //Laravel\Tinker\TinkerServiceProvider::class,
 
     ],

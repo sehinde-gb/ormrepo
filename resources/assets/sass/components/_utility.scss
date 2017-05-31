@@ -6,8 +6,16 @@ $primary-color: #f8f8f8;
   color: #f9f1dc !important;
 }
 
+.is--snow {
+  color: #FFFAFA;
+}
+
 .is--black {
   color: black;
+}
+
+.is--dark-grey {
+  color: #191919;
 }
 
 .is--white {
@@ -89,8 +97,17 @@ $primary-color: #f8f8f8;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.is--padded-top-five {
+  padding-top: 5px;
+}
+
 .is--padded-top-10 {
   padding-top: 10px;
+}
+
+.is--padded-top-20 {
+  padding-top: 20px;
 }
 
 .is--padded-top-40 {

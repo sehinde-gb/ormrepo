@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
-use App\Exceptions\BlogNotFoundException;
-use App\Exceptions\SlugNotFoundException;
+use App\Exceptions\HttpNotFoundException;
+use App\Exceptions\MethodNotFoundException;
 use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use Newsletter;
@@ -19,7 +19,7 @@ class BlogsController extends Controller
      *
      * @param Request $request
      * @return \Illuminate\Http\Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      */
 
     public function index(Request $request)
@@ -44,7 +44,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
         return view('blogs.index', compact('blogs', 'title'));
@@ -56,7 +56,7 @@ class BlogsController extends Controller
      *
      * @param Blog $blog
      * @return Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      * @internal param $id
      * @internal param int $post
      */
@@ -76,7 +76,7 @@ class BlogsController extends Controller
 
             } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
 
         }
 
@@ -95,8 +95,7 @@ class BlogsController extends Controller
      *
      * @param $slug
      * @return \Illuminate\Http\Response
-     *
-     * @throws SlugNotFoundException
+     * @throws HttpNotFoundException
      */
 
     public function showSlug($slug)
@@ -108,7 +107,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new SlugNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
         return $this->show($blog);

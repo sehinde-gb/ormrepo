@@ -7,10 +7,12 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use HttpOz\Roles\Traits\HasRole;
 use HttpOz\Roles\Contracts\HasRole as HasRoleContract;
+use Laravel\Cashier\Billable;
+
 
 class User extends Authenticatable implements HasRoleContract
 {
-    use Notifiable, HasRole;
+    use Notifiable, HasRole, Billable;
 
     /**
      * The database table used by the model.
@@ -115,6 +117,19 @@ class User extends Authenticatable implements HasRoleContract
     {
         return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
     }
+
+    /**
+     * Relationship
+     *
+     * A user can have many charges.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function charges()
+    {
+        return $this->hasMany('App\Charge');
+    }
+
 
 
 }

@@ -22,6 +22,34 @@ $monolog->pushHandler($syslog);
 
 Auth::routes();
 
+# Admin Boundary
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+
+    Route::resource('blogs', 'BlogsController');
+
+    Route::resource('charges', 'ChargesController', [
+        'as' => 'admin'
+
+    ]);
+
+
+    Route::post('blogs/{blog}/comments', function (App\Blog $blog) {
+
+        $comment = new App\Comment(['body' => request('body')]);
+        $comment->user_id = Auth::id();
+        $comment->parent_id = request('parent_id', null);
+
+        $blog->comments()->save($comment);
+
+        return back();
+    });
+
+
+});
+
+Route::post('/checkout', ['uses' => 'CheckoutController@index']);
+Route::get('checkout/thankyou', ['as' => 'checkout.thankyou', 'uses' => 'CheckoutController@thankyou']);
+
 # Blogs
 Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
 Route::resource('blogs', 'BlogsController', ['only' => ['index', 'show']]);
@@ -30,7 +58,6 @@ Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
 Route::get('/search/{query}', function($query) {
    return App\Blog::search($query)->get();
 });
-
 
 
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
@@ -49,24 +76,6 @@ Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy'])
 
 
 
-# Admin Boundary
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-
-    Route::resource('blogs', 'BlogsController');
-
-    Route::post('blogs/{blog}/comments', function (App\Blog $blog) {
-
-        $comment = new App\Comment(['body' => request('body')]);
-        $comment->user_id = Auth::id();
-        $comment->parent_id = request('parent_id', null);
-
-        $blog->comments()->save($comment);
-
-        return back();
-    });
-
-
-});
 
 Route::get('/rss', 'RssController@generate');
 

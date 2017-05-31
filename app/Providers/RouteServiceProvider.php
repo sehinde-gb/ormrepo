@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Tag;
+use App\Charge;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -32,6 +33,9 @@ class RouteServiceProvider extends ServiceProvider
             return Tag::where('name', $name)->firstOrFail();
 
         });
+
+        Route::model('charge', Charge::class);
+
     }
 
     /**

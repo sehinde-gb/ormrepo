@@ -318,7 +318,11 @@
   .menuIcon {
     display: inline-block;
     background-color: #003434;
-    padding-left: 120px;
+    padding-left: 60px !important;
+  }
+
+  .menuOpen {
+    padding-left: 20px !important;
   }
 
   .menu {
@@ -348,6 +352,7 @@
       }
     }
   }
+
 
   .nav-items {
     background: #003434;

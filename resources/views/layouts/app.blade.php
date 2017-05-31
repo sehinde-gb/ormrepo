@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
+    <link href="css/demo.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -99,6 +100,43 @@
                 $(".menu").toggleClass("menuOpen");
                 e.preventDefault();
             });
+        });
+    </script>
+
+    <script>
+        var selectIds = $('#panel1,#panel2,#panel3');
+        $(function ($) {
+            selectIds.on('show.bs.collapse hidden.bs.collapse', function () {
+                $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            })
+        });
+    </script>
+    <script src="/dist/js/jquery.gridder.min.js"></script>
+    <script>
+        $(function() {
+
+            // Call Gridder
+            $('.gridder').gridderExpander({
+                scroll: true,
+                scrollOffset: 30,
+                scrollTo: "panel",                  // panel or listitem
+                animationSpeed: 400,
+                animationEasing: "easeInOutExpo",
+                showNav: true,                      // Show Navigation
+                nextText: "Next",                   // Next button text
+                prevText: "Previous",               // Previous button text
+                closeText: "Close",                 // Close button text
+                onStart: function(){
+                    //Gridder Inititialized
+                },
+                onContent: function(){
+                    //Gridder Content Loaded
+                },
+                onClosed: function(){
+                    //Gridder Closed
+                }
+            });
+
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>

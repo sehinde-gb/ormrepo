@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', '404 Error')
+@section('meta-title', 'Http Exception')
 
 @section('content')
 
@@ -12,7 +12,7 @@
                             <div class="col-lg-12">
                                 <div class="intro-slider">
                                     <div class="centered">
-                                        <h1 class="is--uppercase is--centered">Oops! Sometimes apps cannot find themeselves....</h1>
+                                        <h1 class="is--uppercase is--centered">Oops! We couldn't find your web page....</h1>
                                     </div><!-- /.centered -->
 
                                     <div class="collection">

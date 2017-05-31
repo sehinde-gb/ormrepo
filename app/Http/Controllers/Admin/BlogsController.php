@@ -5,14 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Comment;
 use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
-use App\Exceptions\SlugNotFoundException;
 use App\Http\Requests\BlogRequest;
 use App\Blog;
 use App\Tag;
 use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
-use App\Exceptions\BlogNotFoundException;
+use App\Exceptions\HttpNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
 
@@ -38,7 +37,7 @@ class BlogsController extends Controller
      * Display a listing of the resource.
      * @param Request $request
      * @return \Illuminate\Http\Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      */
     public function index(Request $request)
     {
@@ -65,7 +64,7 @@ class BlogsController extends Controller
 
        } catch (\Exception $e) {
 
-           throw new BlogNotFoundException($e->getMessage());
+           throw new HttpNotFoundException($e->getMessage());
        }
 
         return view('admin.blogs.index', compact('blogs', 'title'));
@@ -75,7 +74,7 @@ class BlogsController extends Controller
     /**
      * Show the form for creating a new resource.
      * @return Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      */
     public function create()
     {
@@ -87,7 +86,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
 
@@ -118,7 +117,7 @@ class BlogsController extends Controller
      *
      * @param $id
      * @return Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      * @internal param $blog
      *
      */
@@ -137,7 +136,7 @@ class BlogsController extends Controller
 
             } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
             }
 
         return view('admin.blogs.show')->with([
@@ -154,7 +153,7 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      * @return Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      * @internal param $id
      */
 
@@ -169,7 +168,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
         return view('admin.blogs.edit', compact('blog', 'tags',  'user'));
@@ -181,7 +180,7 @@ class BlogsController extends Controller
      * @param BlogRequest|Request $request
      * @param $id
      * @return Response
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      * @internal param Blog $blog
      * @internal param int $id
      */
@@ -199,7 +198,7 @@ class BlogsController extends Controller
 
             } catch (\Exception $e) {
 
-              throw new BlogNotFoundException($e->getMessage());
+              throw new HttpNotFoundException($e->getMessage());
             }
 
             if ($request->input('tag_list') == null) {
@@ -222,7 +221,7 @@ class BlogsController extends Controller
      * Deletes the blog post from storage.
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
-     * @throws BlogNotFoundException
+     * @throws HttpNotFoundException
      */
     public function destroy($id)
     {
@@ -234,7 +233,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new BlogNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
         return redirect('/admin/blogs');
@@ -299,7 +298,7 @@ class BlogsController extends Controller
      * @param $slug
      * @return \Illuminate\Http\Response
      *
-     * @throws SlugNotFoundException
+     * @throws MethodNotFoundException
      */
 
     public function showSlug($slug)
@@ -310,7 +309,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new SlugNotFoundException($e->getMessage());
+            throw new HttpNotFoundException($e->getMessage());
         }
 
         return $this->show($blog);

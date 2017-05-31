@@ -213,6 +213,27 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #f9f1dc;
 }
 
+.btn-buy,
+.btn-buy:active,
+.btn-buy:visited,
+.btn-buy:focus {
+  background-color: white;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  height: 50px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: #f9f1dc !important;
+  color: black !important;
+}
 
 
 
@@ -586,6 +607,28 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-left: 250px;
   }
 
+  .btn-buy,
+  .btn-buy:active,
+  .btn-buy:visited,
+  .btn-buy:focus {
+    background-color: white;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .btn-buy:hover {
+    background-color: #f9f1dc !important;
+    color: black !important;
+  }
+
   .button-group {
     display: flex;
     align-content: center;
@@ -744,6 +787,28 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-add:hover {
     background-color: #f9f1dc !important;
     color: #717171 !important;
+  }
+
+  .btn-buy,
+  .btn-buy:active,
+  .btn-buy:visited,
+  .btn-buy:focus {
+    background-color: white;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 50px;
+    width: 45%;
+    cursor: pointer;
+  }
+
+  .btn-buy:hover {
+    background-color: #f9f1dc !important;
+    color: black !important;
   }
 
   .btn-tag {

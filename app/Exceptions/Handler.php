@@ -25,6 +25,7 @@ class Handler extends ExceptionHandler
             ModelNotFoundException::class,
             TokenMismatchException::class,
             ValidationException::class,
+
     ];
 
     /**
@@ -37,10 +38,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        if ($this->shouldReport($exception)) {
-            app('sneaker')->captureException($exception);
-        }
-        parent::report($exception);
+
     }
 
     /**
@@ -54,6 +52,31 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
 
+        if ($e instanceof MethodNotFoundException) {
+            return response(view('errors.403'), 403);
+
+            return parent::render($request, $e);
+        }
+
+
+        if ($e instanceof HttpNotFoundException) {
+            return response(view('errors.404'), 404);
+
+            return parent::render($request, $e);
+        }
+
+        if ($e instanceof MethodNotAllowedException) {
+            return response(view('errors.405'), 405);
+
+            return parent::render($request, $e);
+        }
+
+
+        if ($e instanceof ChargeNotFoundException) {
+            return response(view('errors.422'), 422);
+
+            return parent::render($request, $e);
+        }
 
 
 
