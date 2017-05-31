@@ -1,6 +1,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
+@import 'layout/charge.scss';
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/buttons';
@@ -14,7 +15,7 @@
 @import 'components/utility';
 @import 'layout/about.scss';
 @import 'layout/errors.scss';
-@import 'layout/charge.scss';
+
 
 
 
