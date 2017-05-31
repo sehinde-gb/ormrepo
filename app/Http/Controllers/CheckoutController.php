@@ -127,8 +127,7 @@ class CheckoutController extends Controller
     {
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here: https://dashboard.stripe.com/account/apikeys
-        Stripe::setApiKey("sk_test_mSiEUvaxNzMphi4gPsOcs8ez");
-        //Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
+        Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
 
         //$charges = Charge::find($request->input('charge_id'));
@@ -137,8 +136,6 @@ class CheckoutController extends Controller
         $raw_price = $request->get('price');
 
         $price = ($raw_price * 100);
-
-
 
         $user = new User();
 
@@ -157,7 +154,7 @@ class CheckoutController extends Controller
             // Generate random orders number
             $orders->order_number = substr(md5(microtime()), rand(0, 20), 6) . time();
 
-            $orders->charge_id = $charges->id;
+            $orders->charge_id = $charge->id;
 
             $user = auth()->user();
 
