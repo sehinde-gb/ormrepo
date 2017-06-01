@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Charge;
 use App\Exceptions\ChargeNotFoundException;
+use App\Http\Requests\ChargeRequest;
 use App\User;
 use App\Order;
 use Mail;
@@ -19,11 +20,13 @@ class CheckoutController extends Controller
      * Initialise the this user instance.
      *
      * CheckoutController constructor.
+     * @param User $user
      */
-    public function __construct()
+    public function __construct(User $user)
     {
 
         parent::__construct();
+        $this->user = $user;
     }
 
 
@@ -121,9 +124,9 @@ class CheckoutController extends Controller
      * use the token to create a charge for the amount.
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
-     *
+     * @internal param User $user
      */
-    public function charges(Request $request)
+    public function charges(ChargeRequest $request)
     {
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here: https://dashboard.stripe.com/account/apikeys
@@ -131,18 +134,19 @@ class CheckoutController extends Controller
 
 
         //$charges = Charge::find($request->input('charge_id'));
-        $id = $_POST['id'];
-
-        dd($id);
+        //$id = $_POST['id'];
+        $id = $request->get('id');
+        //$id = '1';
+        //dd($id);
 
         $raw_price = $request->get('price');
         $price = ($raw_price * 100);
 
         $user = new User();
+
         $charge = Charge::findOrFail($id);
 
-
-        if($user->charges($charge->priceToCents(),
+        if($user->charges($charge->priceToPennies(),
             [
                 'source' => $request->get('token'),
                 'amount' => $price,
@@ -156,12 +160,13 @@ class CheckoutController extends Controller
 
             $orders->charge_id = $charge->id;
 
-            $user = auth()->user();
+            //$user = auth()->user();
 
             $orders->email = $user->email;
+            //$orders->email = 'ormrepo@gmail.com';
 
             $orders->save();
-
+            /*
             if ($orders->product->is_downloadable) {
 
                 $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
@@ -178,6 +183,8 @@ class CheckoutController extends Controller
 
 
             }
+
+            */
         }
 
 
