@@ -133,83 +133,24 @@ class CheckoutController extends Controller
         // See your keys here: https://dashboard.stripe.com/account/apikeys
         Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
-        $user = new User();
 
-        $charges = Charge::find($request->input('charge_id'));
-
-        $stripeEmail = $request->input('stripeEmail');
-
-        $stripeToken = $request->input('stripeToken');
-
-
-        try {
-
-            $user->charge($charges->priceToCents(),
-                [
-                    'source' => $stripeToken,
-                    'receipt_email' => $stripeEmail
-
-                ]);
-
-            $orders = new Order();
-
-            // Generate random orders number
-            $orders->order_number = substr(md5(microtime()), rand(0, 20), 6) . time();
-
-            $orders->charge_id = $charges->id;
-
-            $orders->email = $request->input('stripeEmail');
-
-            $orders->save();
-
-            if ($orders->charge->is_downloadable) {
-
-                $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
-
-                $orders->save();
-
-                $when = Carbon::now()->addMinutes(10);
-
-                Mail::to($orders->email)->later($when, new DigitalDownload($orders));
-
-                //return redirect()->route('checkout.thankyou');
-
-                //return view('checkout.thankyou', ['order' => 'James']);
-
-
-                return view('checkout.thankyou', compact('orders'));
-
-            } else {
-
-                return redirect()->route('checkout.thankyou');
-
-            }
-        } catch (\Exception $e) {
-
-            throw new ChargeNotFoundException($e->getMessage());
-
-            //return response()->json(['status' => $e->getMessage()], 422);
-
-        }
-
-
-        /*
         //$charges = Charge::find($request->input('charge_id'));
         //$id = $_POST['id'];
         $id = $request->get('id');
-        //$id = '1';
-        //dd($id);
 
         $raw_price = $request->get('price');
+
         $price = ($raw_price * 100);
 
         $user = new User();
 
         $charge = Charge::findOrFail($id);
-        */
+
+        return 'all good';
 
         /*
-        if($user->charges($charge->priceToPennies(),
+
+        if ($user->charges($charge->priceToCents(),
             [
                 'source' => $request->get('token'),
                 'amount' => $price,
@@ -223,34 +164,38 @@ class CheckoutController extends Controller
 
             $orders->charge_id = $charge->id;
 
-            //$user = auth()->user();
+            $user = auth()->user();
 
             $orders->email = $user->email;
             //$orders->email = 'ormrepo@gmail.com';
 
             $orders->save();
-            /*
-            if ($orders->product->is_downloadable) {
+        }
 
-                $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
+        return redirect()->route('checkout.thankyou');
+        */
+        /*
+        if ($orders->product->is_downloadable) {
 
-                $orders->save();
+            $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
 
-                $when = Carbon::now()->addMinutes(10);
+            $orders->save();
 
-                Mail::to($orders->email)->later($when, new DigitalDownload($orders));
+            $when = Carbon::now()->addMinutes(10);
 
-            } else {
+            Mail::to($orders->email)->later($when, new DigitalDownload($orders));
 
-                return redirect()->route('checkout.thankyou');
+        } else {
 
-
-            }
+            return redirect()->route('checkout.thankyou');
 
 
         }
-         */
+
 
     }
+     */
 
+
+    }
 }
