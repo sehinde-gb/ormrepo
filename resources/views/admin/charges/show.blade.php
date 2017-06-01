@@ -216,11 +216,10 @@
 
     document.getElementById('apple-pay-button').addEventListener('click', beginApplePay);
 
-
+    var id ="{{ ($charge->id) }}";
     var price ="{{ ($charge->price) }}";
-    var id ="{{($charge->id) }}";
-
-    var vat = "{{($charge->price * 0.2)}}";
+    var sub_price ="{{ $charge->price - $charge->price * 0.2 }}";
+    var vat = "{{ ($charge->price * 0.2) }}";
 
 
     function beginApplePay() {
@@ -234,6 +233,10 @@
                     amount: vat
                 }
             ],
+            subtotal: {
+                label: 'subtotal',
+                amount: sub_price
+            },
             total: {
                 label: 'Ormrepo',
                 amount: price
