@@ -167,7 +167,7 @@ class CheckoutController extends Controller
             $user = auth()->user();
 
             $orders->email = $user->email;
-            //$orders->email = 'ormrepo@gmail.com';
+            
 
             $orders->save();
         }
