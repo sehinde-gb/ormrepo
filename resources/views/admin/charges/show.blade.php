@@ -218,7 +218,7 @@
 
     var id ="{{ ($charge->id) }}";
     var price ="{{ ($charge->price) }}";
-    var sub_price ="{{ $charge->price - $charge->price * 0.2 }}";
+    var subtotal ="{{ $charge->price - $charge->price * 0.2 }}";
     var vat = "{{ ($charge->price * 0.2) }}";
 
 
