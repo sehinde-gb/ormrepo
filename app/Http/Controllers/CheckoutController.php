@@ -133,6 +133,8 @@ class CheckoutController extends Controller
         //$charges = Charge::find($request->input('charge_id'));
         $id = $_POST['id'];
 
+        dd($id);
+
         $raw_price = $request->get('price');
         $price = ($raw_price * 100);
 
