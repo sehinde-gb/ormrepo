@@ -231,13 +231,19 @@
                     type: 'final',
                     label: 'VAT',
                     amount: vat
+                },
+                {
+                    type: 'final',
+                    label: 'subtotal',
+                    amount: subtotal
                 }
-            ],
-            subtotal: {
-                label: 'subtotal',
-                amount: sub_price
-            }
 
+            ],
+
+            total: {
+                label: 'Ormrepo',
+                amount: price
+            }
         };
 
 
