@@ -122,8 +122,9 @@ class CheckoutController extends Controller
      * Get the latest Product and retrieve the price for the product
      * set the stripe key and retrieve the token from the stripe server
      * use the token to create a charge for the amount.
-     * @param Request $request
+     * @param ChargeRequest $request
      * @return \Illuminate\Http\RedirectResponse
+     * @throws ChargeNotFoundException
      * @internal param User $user
      */
     public function charges(ChargeRequest $request)
@@ -132,7 +133,67 @@ class CheckoutController extends Controller
         // See your keys here: https://dashboard.stripe.com/account/apikeys
         Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
+        $user = new User();
 
+        $charges = Charge::find($request->input('charge_id'));
+
+        $stripeEmail = $request->input('stripeEmail');
+
+        $stripeToken = $request->input('stripeToken');
+
+
+        try {
+
+            $user->charge($charges->priceToPennies(),
+                [
+                    'source' => $stripeToken,
+                    'receipt_email' => $stripeEmail
+
+                ]);
+
+            $orders = new Order();
+
+            // Generate random orders number
+            $orders->order_number = substr(md5(microtime()), rand(0, 20), 6) . time();
+
+            $orders->charge_id = $charges->id;
+
+            $orders->email = $request->input('stripeEmail');
+
+            $orders->save();
+
+            if ($orders->charge->is_downloadable) {
+
+                $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
+
+                $orders->save();
+
+                $when = Carbon::now()->addMinutes(10);
+
+                Mail::to($orders->email)->later($when, new DigitalDownload($orders));
+
+                //return redirect()->route('checkout.thankyou');
+
+                //return view('checkout.thankyou', ['order' => 'James']);
+
+
+                return view('checkout.thankyou', compact('orders'));
+
+            } else {
+
+                return redirect()->route('checkout.thankyou');
+
+            }
+        } catch (\Exception $e) {
+
+            throw new ChargeNotFoundException($e->getMessage());
+
+            //return response()->json(['status' => $e->getMessage()], 422);
+
+        }
+
+
+        /*
         //$charges = Charge::find($request->input('charge_id'));
         //$id = $_POST['id'];
         $id = $request->get('id');
@@ -145,7 +206,9 @@ class CheckoutController extends Controller
         $user = new User();
 
         $charge = Charge::findOrFail($id);
+        */
 
+        /*
         if($user->charges($charge->priceToPennies(),
             [
                 'source' => $request->get('token'),
@@ -184,9 +247,9 @@ class CheckoutController extends Controller
 
             }
 
-            */
-        }
 
+        }
+         */
 
     }
 
