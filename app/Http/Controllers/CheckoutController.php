@@ -127,7 +127,7 @@ class CheckoutController extends Controller
      * @throws ChargeNotFoundException
      * @internal param User $user
      */
-    public function charges(ChargeRequest $request)
+    public function charges(Request $request)
     {
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here: https://dashboard.stripe.com/account/apikeys
