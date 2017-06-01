@@ -134,11 +134,9 @@ class CheckoutController extends Controller
         $id = $_POST['id'];
 
         $raw_price = $request->get('price');
-
         $price = ($raw_price * 100);
 
         $user = new User();
-
         $charge = Charge::findOrFail($id);
 
 
