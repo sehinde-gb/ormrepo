@@ -146,9 +146,9 @@ class CheckoutController extends Controller
 
         $charge = Charge::findOrFail($id);
 
-        return 'all good';
 
-        /*
+
+
 
         if ($user->charges($charge->priceToCents(),
             [
@@ -172,8 +172,10 @@ class CheckoutController extends Controller
             $orders->save();
         }
 
-        return redirect()->route('checkout.thankyou');
-        */
+        return 'all good';
+
+        //return redirect()->route('checkout.thankyou');
+
         /*
         if ($orders->product->is_downloadable) {
 
