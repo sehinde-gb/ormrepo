@@ -30,16 +30,15 @@ class Charge extends Model
 
 
     /**
-     * Converts a charge price in to pennies for use
+     * Converts a products price in to pennies for use
      * by Stripe.
      *
      * @return mixed
      */
-    public function priceToPennies()
+    public function priceToCents()
     {
         return $this->price * 100;
     }
-
     /**
      * Rounding the float on the way out of the db (Cause Dylan's db has downs)
      */

@@ -51,7 +51,7 @@ class CheckoutController extends Controller
 
         try {
 
-           $user->charge($charges->priceToPennies(),
+           $user->charge($charges->priceToCents(),
                 [
                     'source' => $stripeToken,
                     'receipt_email' => $stripeEmail
@@ -122,7 +122,7 @@ class CheckoutController extends Controller
      * Get the latest Product and retrieve the price for the product
      * set the stripe key and retrieve the token from the stripe server
      * use the token to create a charge for the amount.
-     * @param ChargeRequest $request
+     * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
      * @throws ChargeNotFoundException
      * @internal param User $user
@@ -144,7 +144,7 @@ class CheckoutController extends Controller
 
         try {
 
-            $user->charge($charges->priceToPennies(),
+            $user->charge($charges->priceToCents(),
                 [
                     'source' => $stripeToken,
                     'receipt_email' => $stripeEmail
