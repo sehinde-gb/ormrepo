@@ -139,17 +139,11 @@ class CheckoutController extends Controller
 
         $raw_price = $request->get('price');
 
-        $price = $raw_price->priceToCents();
-        //$price = $request->get('price')->priceToCents();
-
-        //$price = ($raw_price * 100);
+        $price = ($raw_price * 100);
 
         $user = new User();
 
         $charge = Charge::findOrFail($id);
-
-
-
 
 
         if ($user->charges($charge->priceToCents(),
