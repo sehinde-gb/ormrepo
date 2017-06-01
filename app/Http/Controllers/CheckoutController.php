@@ -137,9 +137,10 @@ class CheckoutController extends Controller
         $id = $_POST['id'];
         //$id = $request->get('id');
 
-        //$raw_price = $request->get('price');
+        $raw_price = $request->get('price');
 
-        $price = $request->get('price')->priceToCents();
+        $price = $raw_price->priceToCents();
+        //$price = $request->get('price')->priceToCents();
 
         //$price = ($raw_price * 100);
 
