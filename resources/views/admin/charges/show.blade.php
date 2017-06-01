@@ -225,6 +225,13 @@
         var paymentRequest = {
             countryCode: 'GB',
             currencyCode: 'GBP',
+            lineItems: [
+                {
+                    type: 'final',
+                    label: 'Tax',
+                    amount: '0.99'
+                }
+            ],
             total: {
                 label: 'Ormrepo',
                 amount: price
