@@ -134,8 +134,7 @@ class CheckoutController extends Controller
         Stripe::setApiKey("<?php echo env('STRIPE_KEY') ?>");
 
 
-        $charge_id = Charge::find($request->input('charge_id'));
-        //$id = $_POST['id'];
+        $id = $_POST['id'];
         //$id = $request->get('id');
 
         $raw_price = $request->get('price');
@@ -144,7 +143,7 @@ class CheckoutController extends Controller
 
         $user = new User();
 
-        $charge = Charge::findOrFail($charge_id);
+        $charge = Charge::findOrFail($id);
 
 
 
