@@ -220,6 +220,8 @@
     var price ="{{ ($charge->price) }}";
     var id ="{{($charge->id) }}";
 
+    var vat = "{{($charge->price * 0.2)}}";
+
 
     function beginApplePay() {
         var paymentRequest = {
@@ -228,8 +230,8 @@
             lineItems: [
                 {
                     type: 'final',
-                    label: 'Tax',
-                    amount: '0.99'
+                    label: 'VAT',
+                    amount: vat
                 }
             ],
             total: {
