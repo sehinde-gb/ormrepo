@@ -236,11 +236,8 @@
             subtotal: {
                 label: 'subtotal',
                 amount: sub_price
-            },
-            total: {
-                label: 'Ormrepo',
-                amount: price
             }
+
         };
 
 
