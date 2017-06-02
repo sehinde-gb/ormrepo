@@ -435,6 +435,15 @@ hr {
     background-color: #e0e0e0;
   }
 
+  .notification {
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+  }
+
   .panel-group {
     width: 50%;
   }
@@ -544,7 +553,16 @@ hr {
 
   .apple-pay {
     height: 100px;
-    width: 80%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+  }
+
+  .notification {
+    height: 100px;
+    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
