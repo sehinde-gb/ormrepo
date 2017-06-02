@@ -119,9 +119,22 @@
 }
 
 .apple-pay {
-  height: 150px;
-  width: 70.7%;
-  border: 2px solid white;
+  height: 100px;
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e0e0e0;
+}
+
+
+.notification {
+  height: 100px;
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #e0e0e0;
 }
 
 .list {
@@ -278,10 +291,23 @@ hr {
   }
 
   .apple-pay {
-    height: 150px;
-    width: 70.7%;
-    border: 2px solid white;
+    height: 100px;
+    width: 90%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
   }
+
+  .notification {
+    height: 100px;
+    width: 90%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+  }
+
 
   .list {
     list-style-type: circle;
@@ -405,6 +431,7 @@ hr {
     height: 150px;
     width: 50%;
     border: 2px solid white;
+    background-color: #e0e0e0;
   }
 
   .panel-group {
@@ -520,6 +547,7 @@ hr {
     height: 150px;
     width: 90%;
     border: 2px solid white;
+    background-color: #e0e0e0;
   }
 
   .panel-group {

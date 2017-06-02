@@ -75,6 +75,10 @@
                     <li>
                         <a href="https://ormrepo.co.uk/privacy" class="foot-links">Privacy Policy</a>
                     </li>
+
+                    <li>
+                        <a href="http://www.apple.com/uk/privacy/" class="foot-links">Apple Privacy</a>
+                    </li>
                     <li>
                         <a href="/rss" class="foot-links"><i class="fa fa-rss" aria-hidden="true"></i>
                             </a></i>

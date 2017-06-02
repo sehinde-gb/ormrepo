@@ -138,7 +138,7 @@
                             height: 64px;
                             display: inline-block;
                             box-sizing: border-box;
-                            background-image: url(/images/apple/ApplePayBTN_32pt__white_logo_@2x.png);
+                            background-image: url(/images/apple/ApplePayBTN_32pt__black_logo_@2x.png);
                             background-size: 100%;
                             background-repeat: no-repeat;
                         }
@@ -147,10 +147,14 @@
                     <button id="apple-pay-button"></button>
 
 
-                    <div id="apple-link" style="display:none">
-                        <li><a href="http://www.apple.com/uk/privacy/" class="terms-link">Apple Pay Terms and Conditions</a></li>
-                    </div><!-- /.apple-link -->
+
+                    <p style="display:none" id="notgot">ApplePay is not available with this browser</p>
+                    <p style="display:none" id="success">Test transaction completed, thanks. <a href="https://games.ormrepo.co.uk/admin/products">reset</a></p>
                 </div><!-- /.apple-pay -->
+
+                <div class="notification">
+                    <p class="is--black-grey">Purchase with Apple Pay simply by using Touch ID on your iPhone.</p>
+                </div><!-- /.notification -->
 
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
@@ -209,8 +213,13 @@
     Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
 
     Stripe.applePay.checkAvailability(function(available) {
-
-
+        if (available) {
+            document.getElementById('apple-pay-button').style.display = 'block';
+            console.log('hi, I can do ApplePay');
+        } else {
+            document.getElementById("notgot").style.display = "block";
+            console.log('ApplePay is possible on this browser, but not currently activated.');
+        }
 
     });
 
