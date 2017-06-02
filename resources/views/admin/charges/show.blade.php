@@ -146,12 +146,13 @@
 
                     <button id="apple-pay-button"></button>
 
-                    <p style="display:none" id="notgot">ApplePay is not available with this browser</p>
+                    <p style="display:none" id="notgot" class="is--black-grey">ApplePay is not available with this browser</p>
                     <p style="display:none" id="success">Test transaction completed, thanks. <a href="https://games.ormrepo.co.uk/admin/products">reset</a></p>
                 </div><!-- /.apple-pay -->
 
-                <div class="notification">
-                    <p class="is--black-grey">Purchase with Apple Pay simply by using Touch ID on your iPhone.</p>
+                <div id="got" class="notification">
+                    <p id="got" class="is--black-grey">Purchase with Apple Pay simply by using Touch ID on your iPhone.</p>
+
                 </div><!-- /.notification -->
 
                 <div class="panel-group" id="accordion">
@@ -215,7 +216,10 @@
             document.getElementById('apple-pay-button').style.display = 'block';
             console.log('hi, I can do ApplePay');
         } else {
-            document.getElementById("notgot").style.display = "hidden";
+            document.getElementById("apple-pay-button").style.display = "none";
+            document.getElementById("notgot").style.display = "block";
+            document.getElementById("got").style.display= "none";
+
             console.log('ApplePay is possible on this browser, but not currently activated.');
         }
 
