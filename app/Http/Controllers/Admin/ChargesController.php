@@ -7,7 +7,7 @@ use App\Http\Requests\ChargeRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Str;
 
 
 class ChargesController extends Controller
@@ -134,22 +134,22 @@ class ChargesController extends Controller
     }
 
 
-
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param Charge $charge
      * @return Response
+     * @internal param int $id
      */
 
-    public function edit($id)
+    public function edit(Charge $charge)
     {
 
-        $charge = Charge::findOrFail($id);
+        //$charge = Charge::findOrFail($id);
 
-        $slug = Str::slug($charge->name);
+        //$slug = Str::slug($charge->name);
 
-        return view('admin.charges.edit', compact('charge', 'slug'));
+        return view('admin.charges.edit', compact('charge'));
 
     }
 

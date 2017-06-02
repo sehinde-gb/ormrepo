@@ -39,6 +39,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   height: 50px;
   width: 250px;
   cursor: pointer;
+  margin: 5px;
 }
 
 .btn-secondary:hover {
@@ -96,13 +97,15 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   height: 50px;
   width: 250px;
   cursor: pointer;
-  margin-left: 135px;
+  margin: 5px;
 }
 
 .btn-danger:hover {
   background-color: #d43f3a !important;
   color: white !important;
 }
+
+
 
 .btn-add,
 .btn-add:active,
@@ -276,6 +279,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     height: 50px;
     width: 250px;
     cursor: pointer;
+    margin: 5px;
   }
 
   .btn-secondary:hover {
@@ -334,7 +338,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     height: 50px;
     width: 250px;
     cursor: pointer;
-    margin-left: 135px;
+    margin: 5px;
   }
 
   .btn-danger:hover {
@@ -496,6 +500,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     height: 50px;
     width: 250px;
     cursor: pointer;
+    margin: 5px;
   }
 
   .btn-secondary:hover {
@@ -554,7 +559,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     height: 50px;
     width: 250px;
     cursor: pointer;
-    margin-left: 135px;
+    margin: 5px;
   }
 
   .btn-danger:hover {

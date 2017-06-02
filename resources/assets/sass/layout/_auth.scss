@@ -11,8 +11,9 @@
 .register-fluid {
   min-height: 900px;
   overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 20px;
+  margin: 0;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 8px 6px -6px white;
   flex: 0 0 60%;
@@ -31,7 +32,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
-
+  padding-bottom: 20px;
 }
 
 .header {
@@ -54,6 +55,12 @@
   font-size: 17px;
   text-transform: uppercase;
 }
+
+.form-horizontal {
+  //width: 100%;
+  //margin-left: 60px;
+}
+
 
 .form-group {
   width: 100%;
@@ -102,6 +109,8 @@ label {
     background-color: white;
     box-shadow: 0 8px 6px -6px white;
     flex: 0 0 60%;
+
+
   }
 
   .login-fluid {
@@ -117,7 +126,7 @@ label {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 
   .header {
@@ -139,6 +148,11 @@ label {
     color: #606060 !important;
     font-size: 17px;
     text-transform: uppercase;
+  }
+
+  .form-horizontal {
+    //width: 100%;
+    //margin-left: 60px;
   }
 
   .form-group {
@@ -206,7 +220,7 @@ label {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 
   .header {
@@ -228,6 +242,11 @@ label {
     color: #606060 !important;
     font-size: 17px;
     text-transform: uppercase;
+  }
+
+  .form-horizontal {
+    //width: 100%;
+    //margin-left: 60px;
   }
 
   .form-group {
@@ -268,16 +287,21 @@ label {
     margin: 0;
     padding-top: 50px;
     background: none;
-    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .login-fluid {
     min-height: 600px;
     overflow: hidden;
-    padding-top: 50px;
-    margin: 0;
+    padding: 0;
+    margin-top: 100px;
     background: none;
-    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
 
   }
 
@@ -302,7 +326,13 @@ label {
     flex-direction: column;
     padding-top: 20px;
     padding-left: 20px;
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .form-horizontal {
+    //margin: 0;
+    //padding: 0 !important;
+    //width: 100% !important;
   }
 
   .input-append {
