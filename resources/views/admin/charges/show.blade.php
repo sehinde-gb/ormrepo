@@ -9,7 +9,7 @@
 
     <div class="single-container">
 
-        <div class="left-container">
+        <div class="left-side">
 
             <div class="container">
                 <!-- FAKE AJAX CONTENT -->
@@ -57,7 +57,7 @@
         </div><!-- /.left-container -->
 
 
-        <div class="right-container">
+        <div class="right-side">
             <div class="detail">
                 <h1 class="is--black">{{ $charge->name }}</h1>
                 <hr class="is--black"/>
@@ -146,7 +146,7 @@
 
                     <button id="apple-pay-button"></button>
 
-                    <p style="display:none" id="notgot" class="is--black-grey">ApplePay is not available with this browser</p>
+                    <p style="display:none" id="notgot" class="is--black-grey">Sorry, ApplePay is not available with this browser</p>
                     <p style="display:none" id="success">Test transaction completed, thanks. <a href="https://games.ormrepo.co.uk/admin/products">reset</a></p>
                 </div><!-- /.apple-pay -->
 
