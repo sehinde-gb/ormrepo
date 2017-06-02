@@ -146,8 +146,6 @@
 
                     <button id="apple-pay-button"></button>
 
-
-
                     <p style="display:none" id="notgot">ApplePay is not available with this browser</p>
                     <p style="display:none" id="success">Test transaction completed, thanks. <a href="https://games.ormrepo.co.uk/admin/products">reset</a></p>
                 </div><!-- /.apple-pay -->
@@ -217,7 +215,7 @@
             document.getElementById('apple-pay-button').style.display = 'block';
             console.log('hi, I can do ApplePay');
         } else {
-            document.getElementById("notgot").style.display = "block";
+            document.getElementById("notgot").style.display = "hidden";
             console.log('ApplePay is possible on this browser, but not currently activated.');
         }
 
