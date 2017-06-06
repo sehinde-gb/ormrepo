@@ -39,6 +39,16 @@ class PagesController extends Controller
     }
 
     /**
+     * Show the page for the cookie policy
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function cookie()
+    {
+        return view ('pages.cookie');
+    }
+
+    /**
      * Show the page to make a booking
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

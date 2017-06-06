@@ -38,13 +38,13 @@
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="www.linkedin.com/in/sehinde-raji-319457b
+                        <a href="https://www.linkedin.com/in/sehinde-raji-319457b
 "> <img class="responsive" src="/images/footer/linkedin-color.png" alt="linked in icon"></a>
                     </li>
 
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="www.youtube.com
+                        <a href="https://www.youtube.com
 "> <img class="responsive" src="/images/footer/youtube-color.png" alt="youtube icon"></a>
                     </li>
 
@@ -80,6 +80,11 @@
                     <li>
                         <a href="https://ormrepo.co.uk/privacy" class="foot-links">Privacy Policy</a>
                     </li>
+
+                    <li>
+                        <a href="https://ormrepo.co.uk/cookie" class="foot-links">Cookie Policy</a>
+                    </li>
+
 
                     <li>
                         <a href="http://www.apple.com/uk/privacy/" class="foot-links">Apple Privacy</a>

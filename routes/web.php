@@ -63,18 +63,19 @@ Route::get('/search/{query}', function($query) {
 });
 
 
+#Static
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
-Route::post('contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
+Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
+Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
+Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/bookings', ['as' => 'book', 'uses' => 'PagesController@book']);
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');
 Route::get('tags', 'TagsController@index');
-Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
-Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
-Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
-Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
+
+
 
 
 
