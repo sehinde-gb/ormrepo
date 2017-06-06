@@ -5,14 +5,9 @@
 @section('content')
 
 <div class="charge-container">
-
-
-
             <div class="featured">
                 <div class="column-container">
-
                     @if(!$charges->isEmpty())
-
                         @foreach ($charges as $charge)
                             <div class="charge">
                                 <img class="product-img" src="/images/charges/{{ $charge->sku }}.png"/>
@@ -55,24 +50,13 @@
                         <p class="is--centered is--snow">Leverage your reputation</p>
                         <p class="is--centered is--snow">Build your profile</p>
 
-                    </div>
-                    <!-- /.deal -->
+                    </div><!-- /.deal -->
 
-                </div>
-                <!-- /.offers -->
+                </div><!-- /.offers -->
 
-            </div>
-            <!-- /.featured -->
-
-
-
-
-
-
+            </div><!-- /.featured -->
 
 </div><!-- /.main-container -->
-
-
 
 @endsection
 

@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
+    <link rel="stylesheet" href="/css/demo.css" type="text/css">
 
-    <link href="css/demo.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />

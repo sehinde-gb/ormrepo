@@ -20,10 +20,7 @@
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
-                    <div id="root" class="container">
-                        <message title="Welcome Back" body="You are now logged in."></message>
-
-                    </div><!-- /#root -->
+                    
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
