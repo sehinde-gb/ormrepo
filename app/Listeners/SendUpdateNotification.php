@@ -29,6 +29,7 @@ class SendUpdateNotification implements ShouldQueue
      */
     public function handle(BlogWasUpdated $event)
     {
+        flash()->success('Blog Updated', 'Your post has been updated');
         $event->user->notify(new BlogUpdated($event->user));
     }
 }

@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
     <link rel="stylesheet" href="/css/demo.css" type="text/css">
-
+    <link rel="stylesheet" href="/dist/css/sweetalert.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -37,6 +37,7 @@
     @include('partials.navigation')
 
     @include('partials.status')
+
 
 
     @yield('content')
@@ -63,7 +64,8 @@
 
     <script type="application/javascript" src="/js/bootstrap.js"></script>
     <script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
-
+    <script type="application/javascript" src="/dist/js/sweetalert.min.js"></script>
+    @include('flash')
     {{-- Show password--}}
     <script src="/js/password.js"></script>
     <script>

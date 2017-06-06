@@ -109,6 +109,8 @@ class BlogsController extends Controller
 
         $this->createBlog($request);
 
+
+
         return redirect('/admin/blogs');
     }
 

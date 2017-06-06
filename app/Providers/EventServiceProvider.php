@@ -23,10 +23,6 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\SendUpdateNotification',
         ],
 
-        'App\Events\UserWasRegistered' => [
-            'App\Listeners\UserRegistrationNotification',
-        ],
-
         'App\Events\ContactWasSent' => [
             'App\Listeners\SendContactConfirmation'
         ],

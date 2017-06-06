@@ -29,7 +29,7 @@ class SendPublishedNotification implements ShouldQueue
      */
     public function handle(BlogWasCreated $event)
     {
-
+        flash()->success('Blog Published', 'Your post has been published');
         $event->user->notify(new BlogPublished($event->user));
     }
 }
