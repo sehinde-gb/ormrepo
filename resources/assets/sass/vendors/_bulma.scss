@@ -18,3 +18,153 @@ code {
 .zem-footer__heading {
   display: none;
 }
+
+.button.is-primary {
+  background-color: #003434;
+}
+
+.button.is-primary:hover {
+  background-color: #bbbbbb;
+}
+
+.message-header {
+  background-color: #bbbbbb;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  padding: 7px 10px;
+}
+
+.message {
+  position: absolute;
+  left: 90%;
+  width: 220px;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  strong {
+    color: #E5E338;
+    font-weight: 700;
+  }
+
+  pre {
+    background-color: whitesmoke;
+    color: #4a4a4a;
+    white-space: pre;
+    word-wrap: normal;
+    margin-top: 5px;
+  }
+
+  code {
+    text-transform: none;
+  }
+
+  .zem-footer__heading {
+    display: none;
+  }
+
+  .button.is-primary {
+    background-color: #003434;
+  }
+
+  .message-header {
+    background-color: #bbbbbb;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    padding: 7px 10px;
+  }
+
+  .message {
+    left: 80%;
+    bottom: 5%;
+    width: 200px;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  strong {
+    color: #E5E338;
+    font-weight: 700;
+  }
+
+  pre {
+    background-color: whitesmoke;
+    color: #4a4a4a;
+    white-space: pre;
+    word-wrap: normal;
+    margin-top: 5px;
+  }
+
+  code {
+    text-transform: none;
+  }
+
+  .zem-footer__heading {
+    display: none;
+  }
+
+  .button.is-primary {
+    background-color: #003434;
+  }
+
+  .message-header {
+    background-color: #bbbbbb;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    padding: 7px 10px;
+  }
+
+  .message {
+    left: 80%;
+    bottom: 5%;
+    width: 200px;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  strong {
+    color: #E5E338;
+    font-weight: 700;
+  }
+
+  pre {
+    background-color: whitesmoke;
+    color: #4a4a4a;
+    white-space: pre;
+    word-wrap: normal;
+    margin-top: 5px;
+  }
+
+  code {
+    text-transform: none;
+  }
+
+  .zem-footer__heading {
+    display: none;
+  }
+
+  .button.is-primary {
+    background-color: #003434;
+  }
+
+  .message-header {
+    background-color: #bbbbbb;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    padding: 7px 10px;
+  }
+
+  .message {
+    left: 80%;
+    bottom: 5%;
+    width: 200px;
+  }
+
+
+}

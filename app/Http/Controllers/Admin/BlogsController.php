@@ -297,8 +297,7 @@ class BlogsController extends Controller
      * Show the slug within the show page
      * @param $slug
      * @return \Illuminate\Http\Response
-     *
-     * @throws MethodNotFoundException
+     * @throws HttpNotFoundException
      */
 
     public function showSlug($slug)

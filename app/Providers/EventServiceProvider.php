@@ -22,11 +22,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\BlogWasUpdated' => [
             'App\Listeners\SendUpdateNotification',
         ],
-        'App\Events\NewsletterWasSubscribed' => [
-            'App\Listeners\SendSubscriptionNotification',
-        ],
+
         'App\Events\UserWasRegistered' => [
-            'App\Listeners\EmailUserRegistrationNotification',
+            'App\Listeners\UserRegistrationNotification',
         ],
 
         'App\Events\ContactWasSent' => [

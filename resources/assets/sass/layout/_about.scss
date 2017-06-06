@@ -2,6 +2,10 @@
   border: 1px solid #f9f1dc;
 }
 
+.featured-image {
+  width: 90%;
+}
+
 .side-container {
   min-height: 800px;
   min-width: 50%;
@@ -13,10 +17,8 @@
   background-color: #003434;
   }
 
- .featured-image {
-  width: 90%;
- }
 
+/* Bookings Page */
 .booking-container {
   min-height: 1000px;
   width: 100%;
@@ -24,6 +26,7 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
 
 #TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317iframe123 {
   border-top: 2px solid beige;
@@ -33,6 +36,10 @@
 }
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .featured-image {
+    width: 90%;
+  }
 
   .side-container {
     min-height: 800px;
@@ -48,15 +55,18 @@
     flex: 0 0 400px;
   }
 
-
   .privacy-container {
     min-height: 1000px;
     width: 100%;
     background-color: #003434;
   }
 
-  .featured-image {
-    width: 90%;
+  /* Bookings  Container */
+  #TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317iframe123 {
+    border-top: 2px solid beige;
+    border-left: 2px solid beige;
+    border-right: 2px solid beige;
+    border-radius: 5px;
   }
 
   .booking-container {
@@ -68,17 +78,19 @@
   }
 
 
-
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .featured-image {
+    width: 90%;
+  }
+
 
   .side-container {
     min-height: 500px;
     min-width: 50%;
   }
-
 
   .media-container {
     padding-top: 20px;
@@ -96,13 +108,31 @@
     background-color: #003434;
   }
 
-  .featured-image {
-    width: 90%;
+
+  /* Bookings  Container */
+  #TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317iframe123 {
+    border-top: 2px solid beige;
+    border-left: 2px solid beige;
+    border-right: 2px solid beige;
+    border-radius: 5px;
   }
+
+  .booking-container {
+    min-height: 1000px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
+
+  .featured-image {
+    width: 90%;
+  }
 
   .privacy-container {
     min-height: 1000px;
@@ -112,10 +142,6 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-  }
-
-  .featured-image {
-    width: 90%;
   }
 
   .side-container {

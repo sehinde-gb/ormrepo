@@ -19,7 +19,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 $primary-color: #f8f8f8;
 $secondary-color: #003434;
 $beige: #f9f1dc;
-$black-color: black;
+$black: black;
 
 body,
 h1,
@@ -37,11 +37,11 @@ h1 {
   font-family: $lato;
   font-weight: 700;
   text-transform: none !important;
-  //color: black;
   color: $beige;
   font-size: 3em;
   line-height: 45px;
   padding-top: 10px;
+  margin: 0;
   }
 
 h2 {
@@ -74,6 +74,7 @@ h4 {
   text-transform: none !important;
   color:  $beige;
   padding-top: 10px;
+  margin: 0;
 }
 
 h5 a {
@@ -83,7 +84,6 @@ h5 a {
   line-height: 49px;
   text-transform: capitalize;
   color: #404040;
-
 }
 
 h5 {
@@ -177,7 +177,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: $black-color;
+  color: $black;
 }
 
 .section--body {
@@ -281,7 +281,7 @@ label {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: $black-color;
+  color: $black;
 }
 
 .column-name {
@@ -357,14 +357,11 @@ label {
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
-
 }
 
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
-
-
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -394,7 +391,7 @@ label {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: $black-color;
+    color: $black;
   }
 
   .section--body {
@@ -487,7 +484,7 @@ label {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
-    color: $black-color;
+    color: $black;
   }
 
   .column-name {
@@ -572,7 +569,6 @@ label {
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
 
-
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   }
@@ -601,7 +597,7 @@ label {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: $black-color;
+    color: $black;
   }
 
   .section--body {
@@ -694,7 +690,7 @@ label {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    color: $black-color;
+    color: $black;
  }
 
  .column-name {
@@ -821,7 +817,7 @@ label {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: $black-color;
+    color: $black;
   }
 
   .section--body {

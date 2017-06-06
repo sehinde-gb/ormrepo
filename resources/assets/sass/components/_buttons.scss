@@ -105,8 +105,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: white !important;
 }
 
-
-
 .btn-add,
 .btn-add:active,
 .btn-add:visited,
@@ -147,6 +145,29 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   background-color: #808080 !important;
   color: whitesmoke !important;
 }
+
+.btn-buy,
+.btn-buy:active,
+.btn-buy:visited,
+.btn-buy:focus {
+  background-color: white;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  height: 50px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: #f9f1dc !important;
+  color: black !important;
+}
+
 
 .btn-link {
   margin-left: 250px;
@@ -216,27 +237,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #f9f1dc;
 }
 
-.btn-buy,
-.btn-buy:active,
-.btn-buy:visited,
-.btn-buy:focus {
-  background-color: white;
-  outline: 0;
-  border: 0;
-  padding: 10px 15px;
-  color: black;
-  font-family: 'Lato Regular', sans-serif;
-  font-size: 14px;
-  text-transform: capitalize;
-  height: 50px;
-  width: 90%;
-  cursor: pointer;
-}
-
-.btn-buy:hover {
-  background-color: #f9f1dc !important;
-  color: black !important;
-}
 
 
 
@@ -385,6 +385,28 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-tag:hover {
     background-color: #808080 !important;
     color: whitesmoke !important;
+  }
+
+  .btn-buy,
+  .btn-buy:active,
+  .btn-buy:visited,
+  .btn-buy:focus {
+    background-color: white;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 50px;
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .btn-buy:hover {
+    background-color: #f9f1dc !important;
+    color: black !important;
   }
 
   .btn-link {
@@ -820,15 +842,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     display: none;
   }
 
-  ul.banner-social-buttons {
-    float: left;
-    margin-top: 15px;
-  }
-
-  .fa-twitter {
-    color: white;
-  }
-
   .button-group {
     display: flex;
     align-content: flex-start;
@@ -843,6 +856,17 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 20px;
     padding-left: 20px !important;
   }
+
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+
 
 
 }

@@ -1,6 +1,7 @@
 
 <!-- Footer -->
 <footer role="footer">
+
     <div class="container">
         <div class="middle-logo">
             <img class="logo"
@@ -9,6 +10,10 @@
                  alt="The ormrepo thoughtful logo">
         </div>
         <!-- /.middle-logo -->
+
+
+
+
 
         <div class="row">
 
@@ -85,7 +90,6 @@
                         </a>
                     </li>
                 </ul>
-
 
 
 

@@ -38,6 +38,7 @@
 }
 
 /* for further column styling in the blog area see utility classes */
+
 .newsletter-container {
   min-height: 500px;
   width: 100%;
@@ -121,7 +122,6 @@ input[type=text] {
   margin: 0;
 }
 
-
 .network-name {
   text-transform: uppercase;
   font-size: 14px;
@@ -137,7 +137,7 @@ input[type=text] {
   width: 100%;
   background-color: #003434;
   display: flex;
-  }
+}
 
 .heading {
   min-height: 200px;
@@ -256,10 +256,10 @@ form {
   .columns {
     height: 1000px;
     //min-height: 750px;
-    //min-height: 350px !important;
   }
 
   /* for further column styling in the blog area see utility classes */
+
   .newsletter-container {
     min-height: 500px;
     width: 100%;
@@ -269,12 +269,10 @@ form {
     justify-content: center;
   }
 
-
   #mc_embed_signup input.email {
     background-color: #003434 !important;
     color: #f9f1dc !important;
   }
-
 
   .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -444,7 +442,6 @@ form {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-
   .hero {
     background-color: #003434;
     background-size: cover;
@@ -498,13 +495,10 @@ form {
     justify-content: center;
   }
 
-
-
   #mc_embed_signup input.email {
     background-color: #003434 !important;
     color: #f9f1dc !important;
   }
-
 
   .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -731,13 +725,10 @@ form {
     margin: 0;
   }
 
-
-
   #mc_embed_signup input.email {
     background-color: #003434 !important;
     color: #f9f1dc !important;
   }
-
 
   #box {
     background-color: #003434;
@@ -810,11 +801,9 @@ form {
 .centre li {
    padding-top: 5px;
 }
+/* end of show page */
 
-  /* end of show page */
-
-
-  /* Edit page */
+/* Edit page */
  .img-responsive {
     padding-top: 10px;
  }

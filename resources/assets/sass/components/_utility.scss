@@ -6,12 +6,16 @@ $primary-color: #f8f8f8;
   color: #f9f1dc !important;
 }
 
-.is--snow {
-  color: #FFFAFA;
-}
-
 .is--black {
   color: black;
+}
+
+.is--black-grey {
+  color: #595959;
+}
+
+.is--snow {
+  color: #FFFAFA;
 }
 
 .is--dark-grey {
@@ -20,10 +24,6 @@ $primary-color: #f8f8f8;
 
 .is--white {
   color: $primary-color;
-}
-
-.is--black-grey {
-  color: #595959;
 }
 
 .is--white-bottom {
@@ -76,8 +76,6 @@ $primary-color: #f8f8f8;
   text-align: center;
 }
 
-
-
 /* typography */
 .is--uppercase {
   text-transform: uppercase;
@@ -90,11 +88,6 @@ $primary-color: #f8f8f8;
 /* padding margins */
 .is--padded-bottom {
   padding-bottom: 20px;
-}
-
-
-.is--mar-top {
-  margin-top: 20px;
 }
 
 .is--both-sides {
@@ -128,6 +121,10 @@ $primary-color: #f8f8f8;
   padding-top: 5px;
 }
 
+.is--mar-top {
+  margin-top: 20px;
+}
+
 .is--margin-top-25 {
   margin-top: 25px;
 }
@@ -144,8 +141,8 @@ $primary-color: #f8f8f8;
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
-  /* colour */
 
+  /* colour */
   .is--white {
     color: $primary-color;
   }
@@ -176,10 +173,6 @@ $primary-color: #f8f8f8;
 
   /* margins padding*/
   .is--padded-bottom {
-    padding-bottom: 20px;
-  }
-
-  .is--padded {
     padding-bottom: 20px;
   }
 
@@ -227,6 +220,7 @@ $primary-color: #f8f8f8;
  }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
+
   /* colour */
   .is--white {
     color: $primary-color;
@@ -261,14 +255,6 @@ $primary-color: #f8f8f8;
   }
 
   /* margins padding */
-  .is--padded {
-    padding-bottom: 20px;
-  }
-
-  .is--mar-top {
-    margin-top: 20px;
-  }
-
   .is--both-sides {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -294,6 +280,10 @@ $primary-color: #f8f8f8;
   .is--padded-left-40 {
     padding-left: 40px;
     padding-top: 5px;
+  }
+
+  .is--mar-top {
+    margin-top: 20px;
   }
 
   .is--margin-top-25 {

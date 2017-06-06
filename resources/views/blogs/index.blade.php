@@ -20,7 +20,10 @@
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
+                    <div id="root" class="container">
+                        <message title="Welcome Back" body="You are now logged in."></message>
 
+                    </div><!-- /#root -->
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
@@ -140,6 +143,7 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
     </div><!-- /.hero -->
+
 
         <div class="newsletter-container animated zoomIn">
             <div class="subscribe">
@@ -268,4 +272,9 @@
         </div><!-- /.content-section-b -->
     </div><!-- /.content-section-c -->
 
-@stop
+@endsection
+
+@section('scripts')
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+@endsection
