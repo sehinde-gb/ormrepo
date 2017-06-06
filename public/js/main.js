@@ -1,6 +1,6 @@
 Vue.component('modal', {
 template: `
-<div class="modal is-active">
+<div class="modal is-active" v-cloak>
             <div class="modal-background"></div>
                 <div class="modal-card">
                     <header class="modal-card-head">
