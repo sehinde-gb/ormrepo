@@ -174,6 +174,7 @@ return [
         NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
+        Spatie\Sitemap\SitemapServiceProvider::class,
         //App\Providers\PapertrailServiceProvider::class,
 
         /*

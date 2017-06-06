@@ -21,7 +21,8 @@
         "laravel/dusk": "^1.0",
         "httpoz/roles": "^2.1",
         "andreasindal/laravel-markdown": "^1.1",
-        "laravel/cashier": "~7.0"
+        "laravel/cashier": "~7.0",
+        "spatie/laravel-sitemap": "^2.2"
 
     },
     "require-dev": {
