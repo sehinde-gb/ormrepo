@@ -254,16 +254,15 @@ label {
 
   .form-page {
     background-color: #F8F8F8;
-    padding-left: 20px;
-    margin: 0;
+    padding: 0 !important;
+    margin-left: 50px !important;
     max-width: 100%;
-
   }
 
   .register-fluid {
     min-height: 900px;
-    margin: 0;
-    padding-left: 20px;
+    margin-left: 50px !important;
+    padding: 0 !important;
     overflow: visible;
     background: none;
     display: flex;
