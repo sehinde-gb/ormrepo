@@ -70,6 +70,8 @@ Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@sto
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/bookings', ['as' => 'book', 'uses' => 'PagesController@book']);
+Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
+
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');

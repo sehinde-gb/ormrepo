@@ -8,7 +8,7 @@
         <div class="privacy-container">
             <div class="heading">
                 <div class="featured-image">
-                    <img class="img-responsive" src="images/padlock-300.png" alt="padlock picture">
+                    <img class="img-responsive" src="images/cake-300.png" alt="cookie picture">
                 </div><!-- /.featured-image -->
 
                 <h1 class="blog--title is--padded-top-40">Cookie Policy</h1>

@@ -12,17 +12,21 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="courtesy-container">
-                            <div class="test">
-
-                                <h1 class="is--centered">Thank you for purchasing our web service</h1>
-                                <p>Your order has been sent to your email address</p>
-
-                                <p>Help us improve our checkout experience by completing a short survey</p>
+                            <div class="receipt-container">
+                                <h1 class="is--centered is--padded-bottom is--padded-top-20">Thank you for purchasing our web service</h1>
+                                <p class="is--padded-bottom">Your receipt has been sent to your email address</p>
+                                <p class="is--padded-bottom">Help us improve our checkout experience by completing a short survey</p>
                                 <script>(function(t,e,c,n){var o,s,i;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(c),s=o[o.length-1],i=e.createElement(c),i.type="text/javascript",i.async=!0,i.id=n,i.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/FXrulligfmAiBW3Pj9CbL9MDcGaHc0K7IfvG_2BWGBL30fC0CDOKAg7hY_2FmtHeGxkG.js"].join(""),s.parentNode.insertBefore(i,s))})(window,document,"script","smcx-sdk");</script>
-
-
                             </div>
-                            <!-- /.test -->
+                            <!-- /.receipt-container -->
+
+
+
+
+
+
+
+
 
 
                         </div><!-- /.courtesy-container -->
