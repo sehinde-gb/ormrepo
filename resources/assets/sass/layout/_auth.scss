@@ -261,7 +261,7 @@ label {
 
   .register-fluid {
     min-height: 900px;
-    margin-left: 40px !important;
+    margin: 0;
     padding: 0 !important;
     overflow: visible;
     background: none;
@@ -311,14 +311,14 @@ label {
   }
 
   .row {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-left: 100px !important;
+    //margin-right: 5px !important;
     display: flex;
     flex-direction: column;
     align-content: flex-start !important;
     justify-content: flex-start !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin-left: 50px !important;
-    margin-right: 5px !important;
   }
 
 
