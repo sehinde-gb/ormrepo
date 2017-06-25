@@ -29,12 +29,13 @@
                 {!! Form::text('description', null, ['class' => 'form-control']) !!}
             </div><!-- /.form-group -->
 
-
+            <!-- SKU -->
             <div class="form-group form-group-lg">
                 {!! Form::label('sku', 'SKU', ['class' => 'control-label']) !!}
                 {!! Form::text('sku', null, array('required', 'class'=>'form-control', 'placeholder'=>'PSN-1234')) !!}
             </div><!-- /.form-group -->
 
+            <!-- Price -->
             <div class="form-group form-group-lg">
                 {!! Form::label('price', 'Price in £', ['class' => 'control-label']) !!}
                 <div class="input-group">
@@ -42,6 +43,7 @@
                 </div>
             </div><!-- /.form-group -->
 
+            <!-- Image -->
             <div class="form-group form-group-lg">
                 {!! Form::label('image', 'Image (.png)', ['class' => 'control-label']) !!}
                 {!! Form::file('image', null, array('required', 'class'=>'form-control')) !!}

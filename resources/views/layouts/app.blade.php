@@ -8,7 +8,6 @@
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
     <link rel="manifest" href="/manifest.json">
-
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
         var OneSignal = window.OneSignal || [];
@@ -38,13 +37,10 @@
 
     @include('partials.status')
 
-
-
     @yield('content')
 
     @include('partials.footer')
 
-    @include('partials.analyticstracking')
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -149,9 +145,6 @@
     </script>
 
     @yield('scripts')
-
-
-
 
     <script>
         // Google Analytics

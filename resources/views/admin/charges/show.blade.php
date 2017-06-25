@@ -6,11 +6,8 @@
 
 
 <div class="product-container">
-
     <div class="single-container">
-
         <div class="left-side">
-
             <div class="container">
                 <!-- FAKE AJAX CONTENT -->
                 <div class="row">
