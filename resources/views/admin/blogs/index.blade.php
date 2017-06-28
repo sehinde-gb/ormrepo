@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Blog Listings')
+@section('meta-title', 'Welcome to our Blog')
 
 @section('content')
 
