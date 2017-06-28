@@ -40,6 +40,11 @@ code {
   width: 220px;
 }
 
+img {
+  max-width: 100%;
+  width: auto;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   strong {
@@ -80,6 +85,10 @@ code {
     width: 200px;
   }
 
+  img {
+    max-width: 100%;
+    width: auto;
+  }
 
 }
 
@@ -123,6 +132,10 @@ code {
     width: 200px;
   }
 
+  img {
+    max-width: 100%;
+    width: auto;
+  }
 
 }
 
