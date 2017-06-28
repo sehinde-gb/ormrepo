@@ -210,7 +210,10 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h4 class="is--black">Great Green Gooseberry<br>Ecommerce Eco Friendly Products</h4>
-                        <p class="section--body is--padding-bottom">This is one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
+                        <p class="section--body is--padding-bottom">This is a one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
+                        <ul class="project-links">
+                            <li><a href="https://greatgreengooseberry.club/" class="is--black">Link</a></li>
+                        </ul>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                         <img class="img-responsive" src="images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
@@ -226,7 +229,10 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h4 class="is--black">Casa Rental<br>Home Rentals Application</h4>
-                        <p class="section--body is--padding-bottom">This is a Home rental app that showcases uploaded home photos so that you can showcase your home to get the best quote for your lease! This has recently been updated with new screens using FlexBox.</p>
+                        <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
+                        <ul class="project-links">
+                            <li><a href="https://casarentals.ormrepo.co.uk/" class="is--black">Link</a></li>
+                        </ul>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                         <img class="img-responsive" src="images/maccasa.jpg" alt="Ipad containing home rental screen.">
@@ -243,7 +249,7 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h4 class="is--black">El Coche<br>Car Blog Application</h4>
-                        <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This has been recently updated with new screens developed using FlexBox.</p>
+                        <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This website is currently being updated</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                         <img class="img-responsive" src="images/elcoche.png" alt="Ipad containing car blog app screen.">
@@ -259,7 +265,10 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h4 class="is--black">The GamesStation<br>Ecommerce Application</h4>
-                        <p class="section--body is--padding-bottom">This is an E-commerce gaming web app where you can test purchase video games, view activities and participate in the Station blog.</p>
+                        <p class="section--body is--padding-bottom">This is a website that was built as a test ecommerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
+                        <ul class="project-links">
+                            <li><a href="https://games.ormrepo.co.uk/" class="is--black">Link</a></li>
+                        </ul>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                         <img class="img-responsive" src="images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">

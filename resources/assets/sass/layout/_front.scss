@@ -218,6 +218,8 @@ form {
   width: 520px;
 }
 
+
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   /* Front page */
@@ -438,6 +440,8 @@ form {
     width: 520px;
   }
 
+
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -458,6 +462,8 @@ form {
     min-height: 300px;
     width: 100%;
     margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 100px;
   }
 
@@ -490,6 +496,8 @@ form {
     min-height: 1600px;
     width: 100%;
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -665,6 +673,8 @@ form {
   width: 520px;
 }
 
+
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -807,6 +817,8 @@ form {
  .img-responsive {
     padding-top: 10px;
  }
+
+
 }
 
 

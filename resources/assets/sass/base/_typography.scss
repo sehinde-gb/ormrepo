@@ -21,6 +21,7 @@ $secondary-color: #003434;
 $beige: #f9f1dc;
 $black: black;
 
+
 body,
 h1,
 h2,
@@ -67,7 +68,7 @@ h3 {
 }
 
 h4 {
-  font-family: $lato;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.875em;
   line-height: 49px;
@@ -149,7 +150,6 @@ p {
 
 }
 
-
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
@@ -182,7 +182,7 @@ p {
 }
 
 .section--body {
-  font-family: $fira-sans;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
@@ -219,7 +219,6 @@ label {
 .body {
   color:  #f8f8f8;
 }
-
 
 .side-heading {
   font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -360,6 +359,16 @@ label {
   margin: 0;
 }
 
+.project-links {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -396,7 +405,7 @@ label {
   }
 
   .section--body {
-    font-family: $fira-sans;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
@@ -564,6 +573,18 @@ label {
 
   }
 
+  .project-links {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+
 
 }
 
@@ -602,7 +623,7 @@ label {
   }
 
   .section--body {
-    font-family: $fira-sans;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -725,6 +746,8 @@ label {
     line-height: 30px;
     color: #606060;
     border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
  }
 
  .social--text {
@@ -770,6 +793,18 @@ label {
     margin: 0;
 
  }
+
+  .project-links {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -778,7 +813,6 @@ label {
     color: #FF3B3F;
     text-decoration: none;
   }
-
 
   .intro-message > h1 {
     font-size: 3em;
@@ -926,6 +960,18 @@ label {
     text-transform: capitalize;
     color: $beige;
  }
+
+  .project-links {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
 
 }
 

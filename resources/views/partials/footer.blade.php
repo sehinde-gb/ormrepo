@@ -5,8 +5,8 @@
     <div class="container">
         <div class="middle-logo">
             <img class="logo"
-                 srcset="/images/logo_medium.png 1080w,
-                        /images/logo_small.png 760w"
+                 srcset="/images/logo/logo_large.png 1080w,
+                        /images/logo/logo_small.png 760w"
                  alt="The ormrepo thoughtful logo">
         </div>
         <!-- /.middle-logo -->
@@ -26,7 +26,7 @@
 
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="https://www.google.com/ormrepo/"> <img class="responsive" src="/images/footer/google-plus-color.png" alt="google plus icon"></a>
+                        <a href="https://plus.google.com/u/0/116233447976672799354"> <img class="responsive" src="/images/footer/google-plus-color.png" alt="google plus icon"></a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>

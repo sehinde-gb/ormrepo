@@ -9,7 +9,7 @@
                     <div class="menu">
                         <ul>
                             <img class="nav_logo"
-                                 src="/images/logo_medium.png"
+                                 src="/images/logo/logo_large.png"
                                  alt="The ormrepo thoughtful logo">
                             <li ><a href="/blogs" class="nav-items hide">Home</a></li>
                             <li><a href="/about" class="nav-items hide">About Us</a></li>
@@ -58,7 +58,7 @@
                 <div class="menu">
                     <ul>
                         <img class="nav_logo"
-                             src="/images/logo_medium.png"
+                             src="/images/logo/logo_large.png"
                              alt="The ormrepo thoughtful logo">
 
                         <li ><a href="/admin/blogs" class="nav-items hide">Home</a></li>

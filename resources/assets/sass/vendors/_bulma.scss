@@ -45,6 +45,11 @@ img {
   width: auto;
 }
 
+.img-responsive {
+  border: none !important;
+}
+
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   strong {
@@ -89,6 +94,11 @@ img {
     max-width: 100%;
     width: auto;
   }
+
+  .img-responsive {
+    border: none !important;
+  }
+
 
 }
 
@@ -137,6 +147,11 @@ img {
     width: auto;
   }
 
+  .img-responsive {
+    border: none !important;
+  }
+
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -178,6 +193,11 @@ img {
     bottom: 5%;
     width: 200px;
   }
+
+  .img-responsive {
+    border: none !important;
+  }
+
 
 
 }
