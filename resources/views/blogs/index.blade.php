@@ -209,8 +209,8 @@
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="is--black">Great Green Gooseberry<br>Ecommerce Eco Friendly Products</h4>
-                        <p class="section--body is--padding-bottom">This is a one stop shop Ecommerce site that is concerned with protecting our environment through Carbon offsets and LED Lessons. This application was developed using Wordpress and there was a successful implementation of E-commerce receipts using third party vendors.</p>
+                        <h4 class="is--black">Great Green Gooseberry<br>E-Commerce Eco Friendly Products</h4>
+                        <p class="section--body is--padding-bottom">This is a one stop shop e-commerce site that is concerned with protecting our environment through carbon offsets and LED lessons. This application was developed using Wordpress and there was a successful implementation of e-commerce receipts using third party vendors.</p>
                         <ul class="project-links">
                             <li><a href="https://greatgreengooseberry.club/" class="is--black">Link</a></li>
                         </ul>
@@ -228,7 +228,7 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="is--black">Casa Rental<br>Home Rentals Application</h4>
+                        <h4 class="is--black">Casa Rental<br>Property website</h4>
                         <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
                         <ul class="project-links">
                             <li><a href="https://casarentals.ormrepo.co.uk/" class="is--black">Link</a></li>
@@ -248,8 +248,8 @@
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="is--black">El Coche<br>Car Blog Application</h4>
-                        <p class="section--body is--padding-bottom">This is an Car enthusiast blog. This website is currently being updated</p>
+                        <h4 class="is--black">El Coche<br>Car Blog</h4>
+                        <p class="section--body is--padding-bottom">This is an car enthusiast blog. This website is currently being updated..</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                         <img class="img-responsive" src="images/elcoche.png" alt="Ipad containing car blog app screen.">
@@ -264,8 +264,8 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h4 class="is--black">The GamesStation<br>Ecommerce Application</h4>
-                        <p class="section--body is--padding-bottom">This is a website that was built as a test ecommerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
+                        <h4 class="is--black">The GamesStation<br>Purchase game keys</h4>
+                        <p class="section--body is--padding-bottom">This is a website that was built as a test e-commerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
                         <ul class="project-links">
                             <li><a href="https://games.ormrepo.co.uk/" class="is--black">Link</a></li>
                         </ul>
