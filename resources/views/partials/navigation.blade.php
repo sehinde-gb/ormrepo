@@ -16,11 +16,7 @@
                             <li><a href="/contact" class="nav-items hide">Contact Us</a></li>
                             <li><a href="/login" class="nav-items hide">Login</a></li>
                             <li><a href="/register" class="nav-items hide">Register</a></li>
-                            <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">CasaRental</a></li>
 
-                            <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
-
-                            <li><a href="https://greatgreengooseberry.club" class="nav-items">GreenGooseberry</a></li>
 
 
                         </ul>
@@ -68,9 +64,7 @@
                         <li ><a href="/admin/blogs" class="nav-items hide">Home</a></li>
                         <li><a href="/about" class="nav-items hide">About Us</a></li>
                         <li><a href="/contact" class="nav-items hide">Contact Us</a></li>
-                        <li><a href="https://casarental.ormrepo.co.uk" class="nav-items">CasaRental</a></li>
-                        <li><a href="https://games.ormrepo.co.uk" class="nav-items">GameStation</a></li>
-                        <li><a href="https://greatgreengooseberry.club" class="nav-items">GreenGooseberry</a></li>
+
                         <li><a class="nav-items hide" href="{{ url('/logout') }}"
 
                                onclick="event.preventDefault();

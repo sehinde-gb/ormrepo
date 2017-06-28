@@ -44,7 +44,7 @@
 
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="https://www.youtube.com
+                        <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ/featured
 "> <img class="responsive" src="/images/footer/youtube-color.png" alt="youtube icon"></a>
                     </li>
 
@@ -61,21 +61,7 @@
                         <a href="/about" class="foot-links">About</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <span datahover="test" title="My Title"><a href="http://coches.ormrepo.co.uk" class="foot-links disabled-link">ElCoche</a></span>
 
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="https://casarental.ormrepo.co.uk" class="foot-links">CasaRental</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="https://games.ormrepo.co.uk" class="foot-links">GamesStation</a>
-                    </li>
-                    <li>
-                        <a href="https://greatgreengooseberry.club" class="foot-links">Great Green Gooseberry</a>
-                    </li>
 
                     <li>
                         <a href="https://ormrepo.co.uk/privacy" class="foot-links">Privacy Policy</a>
