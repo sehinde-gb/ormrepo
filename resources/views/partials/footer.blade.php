@@ -61,8 +61,10 @@
                         <a href="/about" class="foot-links">About</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
-
-
+                    <li>
+                        <a href="/contact" class="foot-links">Contact Us</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
                     <li>
                         <a href="https://ormrepo.co.uk/privacy" class="foot-links">Privacy Policy</a>
                     </li>
