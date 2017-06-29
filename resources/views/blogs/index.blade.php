@@ -13,8 +13,8 @@
                     <div class="intro-slider">
                         <div class="collection">
                             <img class="logo"
-                                 srcset="/images/slider@1,5x.png 980w,
-                                        /images/slider@1x.png 480w"
+                                 srcset="/images/hero/slider@1,5x.png 980w,
+                                        /images/hero/slider@1x.png 480w"
                                  alt="The ormrepo thoughtful logo">
 
                         </div><!-- /.collection -->
@@ -216,7 +216,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
+                        <img class="img-responsive" src="images/showcase/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
                     </div><!-- /.col-lg-5 col-lg-offset-2 col-sm-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -235,7 +235,7 @@
                         </ul>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/maccasa.jpg" alt="Ipad containing home rental screen.">
+                        <img class="img-responsive" src="images/showcase/maccasa.jpg" alt="Ipad containing home rental screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -252,7 +252,7 @@
                         <p class="section--body is--padding-bottom">This is an car enthusiast blog. This website is currently being updated..</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/elcoche.png" alt="Ipad containing car blog app screen.">
+                        <img class="img-responsive" src="images/showcase/elcoche.png" alt="Ipad containing car blog app screen.">
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -271,7 +271,34 @@
                         </ul>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
+                        <img class="img-responsive" src="images/showcase/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
+                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.content-section-b -->
+
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+
+                        <h4 class="is--black">Book Now<br>Initial Consultation</h4>
+                        <p class="section--body is--padding-bottom">You may not have to pay a fee if an agreement has been arranged in advance.</p>
+                        <div id="TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG" ></div>
+                        <script src="//d3saea0ftg7bjt.cloudfront.net/bn/js/bn.min.js" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            TTEBOOKNOW.init({
+                                "targetDivId": "TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG",
+                                "cpgn": "BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG"
+                            });
+                        </script>
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="images/showcase/geek.jpg" alt="Mac screen containing gamesstation home screen.">
+
                     </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
                 </div><!-- /.row -->
             </div><!-- /.container -->

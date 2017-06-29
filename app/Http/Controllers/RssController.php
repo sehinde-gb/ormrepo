@@ -28,7 +28,7 @@ class RssController extends Controller
                 $feed = \App::make('feed');
                 $feed->title = 'Ormrepo';
                 $feed->description = 'Powerful Minds';
-                $feed->logo = asset('images/logo_medium.png'); //optional
+                $feed->logo = asset('images/logo/logo_large.png'); //optional
                 $feed->link = url('feed');
                 $feed->setDateFormat('datetime'); // 'datetime', 'timestamp' or 'carbon'
                 $feed->pubdate = $blogs[0]->created_at;

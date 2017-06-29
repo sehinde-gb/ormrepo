@@ -10,7 +10,7 @@
 
         <div class="heading">
             <div class="featured-image">
-                <img class="img-responsive" src="images/mypic.png" alt="">
+                <img class="img-responsive" src="images/stock/mypic.png" alt="">
             </div>
             <!-- /.featured-image -->
             <h1 class="blog--title is--padded-top-40">About Us</h1>

@@ -10,7 +10,7 @@
             <div class="logo-container">
                 <div class="own-logo">
                     <img class="bordered-logo"
-                         src="/images/logo_small.png"
+                         src="/images/logo/logo_small.png"
                          alt="The ormrepo thoughtful logo">
                 </div><!-- /.own-logo -->
             </div><!-- /.logo-container -->
