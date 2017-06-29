@@ -69,7 +69,6 @@ Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
 Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
-Route::get('/bookings', ['as' => 'book', 'uses' => 'PagesController@book']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
 
 

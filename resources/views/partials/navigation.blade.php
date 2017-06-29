@@ -16,9 +16,6 @@
                             <li><a href="/contact" class="nav-items hide">Contact Us</a></li>
                             <li><a href="/login" class="nav-items hide">Login</a></li>
                             <li><a href="/register" class="nav-items hide">Register</a></li>
-
-
-
                         </ul>
                     </div><!-- /.menu -->
             </div><!-- /.nav-left -->
@@ -29,8 +26,6 @@
                             Home</a></li>
                     <li><a href="/about" class="nav-items"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
                             About Us</a></li>
-                    <li><a href="/bookings" class="nav-items"><i class="fa fa-book" aria-hidden="true"></i>
-                        Bookings</a></li>
                     <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
                                 Contact Us</a></li>
                     <li><a href="/login" class="nav-items"><i class="fa fa-user" aria-hidden="true"></i>
@@ -87,8 +82,7 @@
                             Home</a></li>
                     <li><a href="/about" class="nav-items"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
                     About Us</a></li>
-                    <li><a href="/bookings" class="nav-items"><i class="fa fa-book" aria-hidden="true"></i>
-                            Bookings</a></li>
+
                     <li><a href="/admin/charges" class="nav-items"><i class="fa fa-cart-plus" aria-hidden="true"></i>
                             Store</a></li>
                     <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
