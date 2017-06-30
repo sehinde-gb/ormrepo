@@ -8,8 +8,7 @@
                  srcset="/images/logo/logo_large.png 1080w,
                         /images/logo/logo_small.png 760w"
                  alt="The ormrepo thoughtful logo">
-        </div>
-        <!-- /.middle-logo -->
+        </div><!-- /.middle-logo -->
 
 
 
@@ -36,11 +35,7 @@
                     <li>
                         <a href="https://www.medium.com/@ormrepo"> <img class="responsive" src="/images/footer/medium-color.png" alt="medium icon"></a>
                     </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/sehinde-raji-319457b
-"> <img class="responsive" src="/images/footer/linkedin-color.png" alt="linked in icon"></a>
-                    </li>
+
 
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>

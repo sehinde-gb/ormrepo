@@ -226,7 +226,7 @@
                         <h4 class="is--black">Casa Rental<br>Property website</h4>
                         <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
                         <ul class="project-links">
-                            <li><a href="https://casarentals.ormrepo.co.uk/" class="is--black">Link</a></li>
+                            <li><a href="https://casarental.ormrepo.co.uk/" class="is--black">Link</a></li>
                         </ul>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
