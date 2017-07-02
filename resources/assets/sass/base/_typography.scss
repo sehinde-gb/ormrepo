@@ -71,7 +71,7 @@ h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.875em;
-  line-height: 49px;
+  line-height: 42px;
   text-transform: none !important;
   color:  $beige;
   padding-top: 10px;
@@ -82,7 +82,7 @@ h5 a {
   font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
   font-size: 1.4em;
-  line-height: 49px;
+  line-height: 32px;
   text-transform: capitalize;
   color: #404040;
 }
@@ -145,8 +145,8 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 29px;
-  //color: $beige;
-  color: $black;
+  color: $beige;
+  //color: $black;
   text-transform: none !important;
 
 }
