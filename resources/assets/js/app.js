@@ -17,6 +17,7 @@ require('./bootstrap');
 
 Vue.component('message', require('./components/Message.vue'));
 //Vue.component('Ad', require('./components/Ad.vue'));
+Vue.component('alert', require('./components/Alert.vue'));
 
 const root = new Vue({
     el: '#root'

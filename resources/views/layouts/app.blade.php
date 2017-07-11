@@ -151,6 +151,7 @@
 
     @yield('scripts')
 
+
     <script id="dsq-count-scr" src="//games-ormrepo-co-uk.disqus.com/count.js" async></script>
     <script>
         // Google Analytics

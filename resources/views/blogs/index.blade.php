@@ -23,8 +23,8 @@
                     <div class="alert-container">
                         <div id="root">
                             <!-- Using the Alert component -->
-                            <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
-
+                            <message title="Hello World" body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
+                            <alert class="Alert--Info" message="Hi, you are signed in!"></alert>
                         </div><!-- /#app -->
                     </div><!-- /.alert-container -->
 

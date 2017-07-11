@@ -1,24 +1,29 @@
 <!-- UI-Button Component definition -->
 <template>
     
-   <article class="orm-message" v-show="isVisible">
-       <div class="orm-body">
-           <h4 class="alert-notify">{{ body }}
-           <a href="https://ormrepo.co.uk/cookie" class="cook-link">Click here to find out more</a>
-           <button type="button"  @click="hideModal">X</button></h4>
-           
-       </div><!-- /.orm-body -->
+   <article class="message" v-show="isVisible">
        
-    </article><!-- /.orm-message -->
+           <div class="message-header">
+               {{ title }}
+    
+               <button type="button" @click="hideModal">X</button>
+           </div><!-- /.message-header -->
+           
+           <div class="message-body">
+               {{ body }}
+           </div>
+           <!-- /.message-body -->
+      
+       
+    </article><!-- /.message -->
     
 </template>
 
 <script>
     export default {
 
-        props: ['body'],
-        
-            
+        props: ['title','body'],
+
         data() {
             return {
                 isVisible: true
@@ -29,13 +34,16 @@
         mounted() {
             console.log('Component ready.')
         },
-
+        
         methods: {
             hideModal() {
                 this.isVisible = false;
-                
             }
         }
+
+        
+
+
 
     }
 </script>

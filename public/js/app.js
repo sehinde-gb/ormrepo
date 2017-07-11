@@ -976,6 +976,7 @@ __webpack_require__(30);
 
 Vue.component('message', __webpack_require__(36));
 //Vue.component('Ad', require('./components/Ad.vue'));
+Vue.component('alert', __webpack_require__(57));
 
 var root = new Vue({
   el: '#root'
@@ -1853,10 +1854,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-    props: ['body'],
+    props: ['title', 'body'],
 
     data: function data() {
         return {
@@ -29473,24 +29480,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.isVisible),
       expression: "isVisible"
     }],
-    staticClass: "orm-message"
+    staticClass: "message"
   }, [_c('div', {
-    staticClass: "orm-body"
-  }, [_c('h4', {
-    staticClass: "alert-notify"
-  }, [_vm._v(_vm._s(_vm.body) + "\n        "), _c('a', {
-    staticClass: "cook-link",
-    attrs: {
-      "href": "https://ormrepo.co.uk/cookie"
-    }
-  }, [_vm._v("Click here to find out more")]), _vm._v(" "), _c('button', {
+    staticClass: "message-header"
+  }, [_vm._v("\n            " + _vm._s(_vm.title) + "\n \n            "), _c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.hideModal
     }
-  }, [_vm._v("X")])])])])
+  }, [_vm._v("X")])]), _vm._v(" "), _c('div', {
+    staticClass: "message-body"
+  }, [_vm._v("\n            " + _vm._s(_vm.body) + "\n        ")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -39152,6 +39154,161 @@ module.exports = function(module) {
 __webpack_require__(9);
 module.exports = __webpack_require__(10);
 
+
+/***/ }),
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+    props: ['type', 'message'],
+
+    data: function data() {
+        return {
+            isVisible: true,
+            classes: true
+
+        };
+    },
+    mounted: function mounted() {
+        console.log('Component ready.');
+    },
+
+
+    methods: {
+        hideModal: function hideModal() {
+            this.isVisible = false;
+        }
+    }
+
+});
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(32)();
+exports.push([module.i, "\n.Alert {\n    padding: 10px;\n    position: relative;\n    min-width: 100%;\n    min-height: 50px;\n}\n.Alert--Info {\n    position: fixed;\n    right: 10px;\n    bottom: 10px;\n    background: #3f50a5;\n    padding-top: 12px;\n    padding-left: 20px;\n    color: white;\n    height: 50px;\n    width: 200px;\n}\n.Alert--Success {\n    background: green;\n    color: white;\n}\n.Alert--Error {\n    position: fixed;\n    right: 10px;\n    bottom: 10px;\n    background: #3f50a5;\n    padding-top: 12px;\n    padding-left: 20px;\n    color: white;\n    height: 80px;\n    width: 200px;\n    border: 1px solid #363636;\n    border-radius: 10px;\n}\n\n\n\n", ""]);
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(59)
+
+var Component = __webpack_require__(37)(
+  /* script */
+  __webpack_require__(55),
+  /* template */
+  __webpack_require__(58),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/yameste/Sites/ormrepo/resources/assets/js/components/Alert.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Alert.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-fa8275f0", Component.options)
+  } else {
+    hotAPI.reload("data-v-fa8275f0", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.isVisible),
+      expression: "isVisible"
+    }],
+    class: _vm.classes
+  }, [_vm._v("\n    " + _vm._s(_vm.message) + "\n    \n    "), _c('button', {
+    staticClass: "terminate",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.hideModal
+    }
+  }, [_vm._v("X")])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-fa8275f0", module.exports)
+  }
+}
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(56);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(40)("20002fb2", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-fa8275f0!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-fa8275f0!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
