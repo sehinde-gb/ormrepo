@@ -18,7 +18,7 @@
                                     <div class="collection">
                                         <img class="logo"
                                              srcset="/images/hero/slider@1,5x.png 980w,
-                                        /images/slider@1x.png 480w"
+                                        /images/hero/slider@1x.png 480w"
                                              alt="The ormrepo thoughtful logo">
 
                                     </div><!-- /.collection -->

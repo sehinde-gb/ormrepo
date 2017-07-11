@@ -1,7 +1,8 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-@import 'layout/charge.scss';
+@import 'layout/charges-list.scss';
+@import 'layout/each-charge.scss';
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/buttons';
@@ -10,12 +11,14 @@
 @import 'layout/footer';
 @import 'layout/auth';
 @import 'layout/search';
-@import 'layout/front';
+@import 'layout/_post-list';
 @import 'vendors/bulma';
+@import 'base/_fontawesome';
 @import 'components/utility';
-@import 'layout/about.scss';
+@import 'layout/page.scss';
 @import 'layout/errors.scss';
 @import 'base/bootstrap.scss';
-
+@import 'layout/each-post.scss';
+@import 'base/slipr.scss';
 
 

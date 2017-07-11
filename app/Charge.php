@@ -24,7 +24,10 @@ class Charge extends Model
         'description',
         'sku',
         'price',
-        'is_downloadable'
+        'is_downloadable',
+        'type',
+        'seo',
+        'features'
 
     ];
 

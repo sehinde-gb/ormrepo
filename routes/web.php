@@ -19,32 +19,16 @@ $syslog->setFormatter($formatter);
 
 $monolog->pushHandler($syslog);
 
-
 Auth::routes();
 
 # Admin Boundary
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], function () {
 
     Route::resource('blogs', 'BlogsController');
 
-    Route::resource('charges', 'ChargesController', [
-        'as' => 'admin'
+    Route::resource('charges', 'ChargesController');
 
-    ]);
-
-
-    Route::post('blogs/{blog}/comments', function (App\Blog $blog) {
-
-        $comment = new App\Comment(['body' => request('body')]);
-        $comment->user_id = Auth::id();
-        $comment->parent_id = request('parent_id', null);
-
-        $blog->comments()->save($comment);
-
-        return back();
-    });
-
-
+    Route::get('/home', ['as' => 'home', 'uses' => 'BlogsController@index']);
 });
 
 # Checkout
@@ -65,23 +49,18 @@ Route::get('/search/{query}', function($query) {
 
 #Static
 Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
-Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@create']);
+Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@contact']);
 Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
-
+Route::get('/videos', ['as' => 'videos', 'uses' => 'PagesController@videos']);
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');
 Route::get('tags', 'TagsController@index');
 
-
-
-
-
-
-
+# RSS
 Route::get('/rss', 'RssController@generate');
 
 

@@ -1,0 +1,268 @@
+
+
+.product-container {
+  min-height: 1400px;
+  width: 100%;
+  padding-top: 50px;
+  background-color: #bbbbbb;
+  display: flex;
+}
+
+.carousel-container {
+  background-color: #bbbbbb;
+  min-height: 900px;
+  min-width: 50%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.charge-container {
+  min-height: 800px;
+  min-width: 50%;
+  padding-left: 50px;
+  background-color: #bbbbbb;
+ }
+
+.detail {
+  padding-top: 30px;
+}
+
+.featured-list {
+  height: 200px;
+  width: 70.7%;
+  padding-left: 2px;
+  padding-top: 20px;
+}
+
+.apple-pay {
+  height: 100px;
+  width: 70%;
+  padding-top: 15px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.notification {
+  height: 100px;
+  width: 70%;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #e0e0e0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.panel-default {
+  background-color: #bbbbbb;
+  border: none;
+}
+
+.panel-default > .panel-heading {
+  background-color: #bbbbbb !important;
+  border: none !important;
+}
+
+hr {
+  border-top: black !important;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .product-container {
+    min-height: 1400px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #bbbbbb;
+    display: flex;
+  }
+
+  .carousel-container {
+    background-color: #bbbbbb;
+    min-height: 900px;
+    min-width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .charge-container {
+    min-height: 800px;
+    min-width: 50%;
+    padding-left: 50px;
+    background-color: #bbbbbb;
+  }
+
+  .detail {
+    padding-top: 30px;
+  }
+
+  .featured-list {
+    height: 200px;
+    width: 70.7%;
+    padding-left: 2px;
+    padding-top: 20px;
+  }
+
+  .apple-pay {
+    height: 100px;
+    width: 70%;
+    padding-top: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .notification {
+    height: 100px;
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+  }
+
+  .list {
+    list-style-type: none;
+  }
+
+  .panel-default {
+    background-color: #bbbbbb;
+    border: none;
+  }
+
+  .panel-default > .panel-heading {
+    background-color: #bbbbbb !important;
+    border: none !important;
+  }
+
+  hr {
+    border-top: black !important;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .product-container {
+    min-height: 1400px;
+    width: 100%;
+    background-color: #bbbbbb;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel-container {
+    background-color: #bbbbbb;
+    min-height: 900px;
+    min-width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .charge-container {
+    min-height: 800px;
+    min-width: 50%;
+    padding-left: 50px;
+    background-color: #bbbbbb;
+  }
+
+  .detail {
+    padding-top: 30px;
+  }
+
+  .featured-list {
+    height: 200px;
+    width: 70.7%;
+    padding-left: 2px;
+    padding-top: 20px;
+  }
+
+  .apple-pay {
+    height: 100px;
+    width: 70%;
+    padding-top: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .notification {
+    height: 100px;
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+  }
+
+  .list {
+    list-style-type: none;
+  }
+
+  .panel-default {
+    background-color: #bbbbbb;
+    border: none;
+  }
+
+  .panel-default > .panel-heading {
+    background-color: #bbbbbb !important;
+    border: none !important;
+  }
+
+  hr {
+    border-top: black !important;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .product-container {
+    height: 2026px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    background-color: #bbbbbb;
+    min-height: 900px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .charge-container {
+    min-height: 500px;
+    background-color: #bbbbbb;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .apple-pay {
+    height: 100px;
+    width: 90%;
+    padding-top: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+
+
+
+}

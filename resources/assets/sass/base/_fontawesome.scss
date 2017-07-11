@@ -1,0 +1,179 @@
+.comment-container {
+  height: 60px;
+  width: 5%;
+}
+
+.fa-2x {
+  color: #fdfdfd;
+  padding-left: 18px;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-minus {
+  padding-top: 15px;
+  color: white;
+}
+
+.fa-4x {
+  font-size: 38px;
+  color: #f9f1dc;
+}
+
+.fa-long-arrow-left {
+  color: #f8f8f8;
+}
+
+.fa-long-arrow-right {
+  color: #f8f8f8;
+}
+
+.fa-calendar {
+  padding-top: 5px;
+}
+
+.fa-chevron-circle-left {
+  color: #f9f1dc;
+}
+
+.fa-chevron-circle-right {
+  color: #f9f1dc;
+}
+
+.fa-search {
+  color: #F9F1DC;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .fa-2x {
+    color: #fdfdfd;
+    padding-left: 18px;
+  }
+
+  .comment-container {
+    height: 60px;
+    width: 5%;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+  .fa-minus {
+    padding-top: 15px;
+    color: white;
+  }
+
+  .fa-4x {
+    font-size: 38px;
+    color: #f9f1dc;
+  }
+
+  .fa-long-arrow-left {
+    color: #f8f8f8;
+  }
+
+  .fa-long-arrow-right {
+    color: #f8f8f8;
+  }
+
+  .fa-calendar {
+    padding-top: 5px;
+  }
+
+  .fa-chevron-circle-left {
+    color: #f9f1dc;
+  }
+
+  .fa-chevron-circle-right {
+    color: #f9f1dc;
+  }
+
+  .fa-search {
+    color: #F9F1DC;
+    padding-right: 2px;
+    padding-top: 4px;
+    padding-left: 5px;
+
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .fa-2x {
+    color: #fdfdfd;
+    padding-left: 18px;
+  }
+
+  .comment-container {
+    height: 60px;
+    width: 5%;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+  .fa-minus {
+    padding-top: 15px;
+    color: white;
+  }
+
+  .fa-4x {
+    font-size: 38px;
+    color: #f9f1dc;
+  }
+
+  .fa-long-arrow-left {
+    color: #f8f8f8;
+  }
+
+  .fa-long-arrow-right {
+    color: #f8f8f8;
+  }
+
+  .fa-calendar {
+    padding-top: 5px;
+  }
+
+  .fa-chevron-circle-left {
+    color: #f9f1dc;
+  }
+
+  .fa-chevron-circle-right {
+    color: #f9f1dc;
+  }
+
+  .fa-search {
+    color: #F9F1DC;
+    padding-right: 2px;
+    padding-top: 4px;
+    padding-left: 5px;
+
+  }
+
+}
+
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .fa-2x {
+    color: #fdfdfd;
+  }
+
+  .comment-container {
+    height: 60px;
+    width: 5%;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+}

@@ -6,11 +6,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-  background-color: #F9F1DC;
+  background-color: #F8F8F8;
   outline: 0;
   border: 0;
   padding: 10px 15px;
-  color: black;
+  color: #003434;
   font-family: 'Lato Regular', sans-serif;
   font-size: 14px;
   text-transform: capitalize;
@@ -20,8 +20,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 }
 
 .btn-primary:hover {
-  background-color: #808080 !important;
-  color: whitesmoke !important;
+  background-color: #636F57 !important;
+  color: #F8F8F8 !important;
 }
 
 .btn-secondary,
@@ -150,27 +150,32 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 .btn-buy:active,
 .btn-buy:visited,
 .btn-buy:focus {
-  background-color: white;
+  background-color: #F8F8F8;
   outline: 0;
   border: 0;
   padding: 10px 15px;
-  color: black;
+  color: #595959;
   font-family: 'Lato Regular', sans-serif;
   font-size: 14px;
   text-transform: capitalize;
   height: 50px;
-  width: 90%;
+  width: 50%;
   cursor: pointer;
 }
 
 .btn-buy:hover {
-  background-color: #f9f1dc !important;
-  color: black !important;
+  background-color: #636F57 !important;
+  color: #F8F8F8 !important;
 }
 
 
 .btn-link {
   margin-left: 250px;
+  color: #003434;
+}
+
+.btn-link:hover {
+  color: #FF3B3F !important;
 }
 
 .button-group {
@@ -203,38 +208,19 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   margin-top: 0;
 }
 
-.fa-twitter {
-  color: white;
+.alert-container {
+  min-height: 20px;
+  flex: 0 1 100%;
 }
 
-.fa-minus {
-  padding-top: 15px;
-  color: white;
-}
+.alert-button {
+  color: #F8F8F8;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  background-color: #FF3B3F;
+  border: none;
 
-.fa-4x {
-  font-size: 38px;
-  color: #f9f1dc;
-}
-
-.fa-long-arrow-left {
-  color: #f8f8f8;
-}
-
-.fa-long-arrow-right {
-  color: #f8f8f8;
-}
-
-.fa-calendar {
-  padding-top: 5px;
-}
-
-.fa-chevron-circle-left {
-  color: #f9f1dc;
-}
-
-.fa-chevron-circle-right {
-  color: #f9f1dc;
 }
 
 
@@ -246,11 +232,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-primary:active,
   .btn-primary:visited,
   .btn-primary:focus {
-    background-color: #F9F1DC;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: black;
+    color: #003434;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
@@ -260,8 +246,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
-    color: whitesmoke !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .btn-secondary,
@@ -391,27 +377,35 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-buy:active,
   .btn-buy:visited,
   .btn-buy:focus {
-    background-color: white;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: black;
+    color: #595959;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
-    width: 90%;
+    width: 50%;
     cursor: pointer;
   }
 
   .btn-buy:hover {
-    background-color: #f9f1dc !important;
-    color: black !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .btn-link {
     margin-left: 250px;
+    color: #003434;
   }
+
+  .btn-link:hover {
+    color: #FF3B3F !important;
+  }
+
+
+
 
   .button-group {
     display: flex;
@@ -443,40 +437,19 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 0;
   }
 
-  .fa-twitter {
-    color: white;
+  .alert-container {
+    min-height: 20px;
+    flex: 0 1 100%;
   }
 
-  .fa-minus {
-    padding-top: 15px;
-    color: white;
+  .alert-button {
+    color: #F8F8F8;
+    background-color: #FF3B3F;
+    border: none;
+    height: 32px;
+    position: absolute;
+    right: 20px;
   }
-
-  .fa-4x {
-    font-size: 38px;
-    color: #f9f1dc;
-  }
-
-  .fa-long-arrow-left {
-    color: #f8f8f8;
-  }
-
-  .fa-long-arrow-right {
-    color: #f8f8f8;
-  }
-
-  .fa-calendar {
-    padding-top: 5px;
-  }
-
-  .fa-chevron-circle-left {
-    color: #f9f1dc;
-  }
-
-  .fa-chevron-circle-right {
-    color: #f9f1dc;
-  }
-
 
 }
 
@@ -489,11 +462,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-primary:active,
   .btn-primary:visited,
   .btn-primary:focus {
-    background-color: #F9F1DC;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: black;
+    color: #003434;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
@@ -503,8 +476,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
-    color: whitesmoke !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .btn-secondary,
@@ -632,17 +605,25 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 
   .btn-link {
     margin-left: 250px;
+    color: #003434;
   }
+
+  .btn-link:hover {
+    color: #FF3B3F !important;
+  }
+
+
+
 
   .btn-buy,
   .btn-buy:active,
   .btn-buy:visited,
   .btn-buy:focus {
-    background-color: white;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: black;
+    color: #595959;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
@@ -652,8 +633,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
   .btn-buy:hover {
-    background-color: #f9f1dc !important;
-    color: black !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .button-group {
@@ -686,38 +667,18 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 0;
   }
 
-  .fa-twitter {
-    color: white;
+  .alert-container {
+    min-height: 20px;
+    flex: 0 1 100%;
   }
 
-  .fa-minus {
-    padding-top: 15px;
-    color: white;
-  }
-
-  .fa-4x {
-    font-size: 38px;
-    color: #f9f1dc;
-  }
-
-  .fa-long-arrow-left {
-    color: #f8f8f8;
-  }
-
-  .fa-long-arrow-right {
-    color: #f8f8f8;
-  }
-
-  .fa-calendar {
-    padding-top: 5px;
-  }
-
-  .fa-chevron-circle-left {
-    color: #f9f1dc;
-  }
-
-  .fa-chevron-circle-right {
-    color: #f9f1dc;
+  .alert-button {
+    color: #F8F8F8;
+    background-color: #FF3B3F;
+    border: none;
+    height: 2px;
+    position: absolute;
+    right: 20px;
   }
 
 }
@@ -729,12 +690,12 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-primary:active,
   .btn-primary:visited,
   .btn-primary:focus {
-    background-color: #F9F1DC;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
     margin-left: 20px;
-    color: black;
+    color: #003434;
     font-family: $montserrat;
     font-size: 14px;
     text-transform: capitalize;
@@ -744,8 +705,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
   .btn-primary:hover {
-    background-color: #808080 !important;
-    color: whitesmoke !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .btn-secondary,
@@ -820,11 +781,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-buy:active,
   .btn-buy:visited,
   .btn-buy:focus {
-    background-color: white;
+    background-color: #F8F8F8;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: black;
+    color: #595959;
     font-family: 'Lato Regular', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
@@ -834,8 +795,8 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
   .btn-buy:hover {
-    background-color: #f9f1dc !important;
-    color: black !important;
+    background-color: #636F57 !important;
+    color: #F8F8F8 !important;
   }
 
   .btn-tag {
@@ -863,11 +824,20 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 15px;
   }
 
-  .fa-twitter {
-    color: white;
+  .alert-container {
+    height: 500px;
+    width: 100%;
   }
 
-
+  .alert-button {
+    color: #F8F8F8;
+    background-color: #FF3B3F;
+    border: none;
+    height: 2px;
+    position: absolute;
+    top: 488px;
+    right: 20px;
+  }
 
 
 }

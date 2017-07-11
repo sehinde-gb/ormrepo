@@ -31,6 +31,8 @@
     <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slip.css">
+    <link rel="stylesheet" href="/dist/css/slippry.css">
 </head>
 <body>
 
@@ -145,8 +147,11 @@
         $('select').select2();
     </script>
 
+    @yield('slip')
+
     @yield('scripts')
 
+    <script id="dsq-count-scr" src="//games-ormrepo-co-uk.disqus.com/count.js" async></script>
     <script>
         // Google Analytics
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

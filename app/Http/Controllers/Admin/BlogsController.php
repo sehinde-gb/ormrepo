@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Comment;
+
 use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
 use App\Http\Requests\BlogRequest;
@@ -134,7 +134,6 @@ class BlogsController extends Controller
 
             $next = Blog::where('id', '>', $blog->id)->orderBy('id','asc')->first();
 
-            $comments = Comment::forBlog($blog)->get()->threaded();
 
             } catch (\Exception $e) {
 
@@ -144,8 +143,8 @@ class BlogsController extends Controller
         return view('admin.blogs.show')->with([
             'blog' => $blog,
             'previous' => $previous,
-            'next' => $next,
-            'comments' => $comments
+            'next' => $next
+
 
         ]);
 

@@ -19,7 +19,14 @@
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
+                    <div class="alert-container">
+                        <div id="root">
+                            <!-- Using the Alert component -->
+                            <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
 
+                        </div><!-- /#app -->
+                    </div>
+                    <!-- /.alert-container -->
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
@@ -29,7 +36,7 @@
                         <div class="column is-one-quarter is-grey is-flex is-two has-text-centered">
                             <div class="arrow">
                                 <span><i class="fa fa-minus fa-1x" aria-hidden="true"></i>
-                                <a href="https://twitter.com/ormrepo" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/ormrepo"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
                                 <i class="fa fa-minus fa-1x" aria-hidden="true"></i></span>
                                 <h6 class="social--text">Follow @ormrepo
                                     for more information</h6>
@@ -207,7 +214,7 @@
                         <h4 class="is--black">Great Green Gooseberry<br>E-Commerce Eco Friendly Products</h4>
                         <p class="section--body is--padding-bottom">This is a one stop shop e-commerce site that is concerned with protecting our environment through carbon offsets and LED lessons. This application was developed using Wordpress and there was a successful implementation of e-commerce receipts using third party vendors.</p>
                         <ul class="project-links">
-                            <li><a href="https://greatgreengooseberry.club/" class="is--black">Link</a></li>
+                            <li><a href="https://greatgreengooseberry.club/" class="is--black is--underlined">Link</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -226,7 +233,7 @@
                         <h4 class="is--black">Casa Rental<br>Property website</h4>
                         <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
                         <ul class="project-links">
-                            <li><a href="https://casarental.ormrepo.co.uk/" class="is--black">Link</a></li>
+                            <li><a href="https://casarental.ormrepo.co.uk/" class="is--black is--underlined">Link</a></li>
                         </ul>
                     </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -262,7 +269,7 @@
                         <h4 class="is--black">The GamesStation<br>Purchase game keys</h4>
                         <p class="section--body is--padding-bottom">This is a website that was built as a test e-commerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
                         <ul class="project-links">
-                            <li><a href="https://games.ormrepo.co.uk/" class="is--black">Link</a></li>
+                            <li><a href="https://games.ormrepo.co.uk/" class="is--black is--underlined">Link</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -279,8 +286,9 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
 
-                        <h4 class="is--black">Book Now<br>Initial Consultation</h4>
+                        <h4 class="is--black">Book Now For<br>Initial Consultation</h4>
                         <p class="section--body is--padding-bottom">You may not have to pay a fee if an agreement has been arranged in advance.</p>
+
                         <div id="TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG" ></div>
                         <script src="//d3saea0ftg7bjt.cloudfront.net/bn/js/bn.min.js" type="text/javascript"></script>
                         <script type="text/javascript">
@@ -298,8 +306,8 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /.content-section-b -->
+    </div><!-- .hero -->
 
 
-    </div><!-- /.content-section-c -->
 
 @stop

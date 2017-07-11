@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
@@ -175,6 +176,7 @@ return [
         HttpOz\Roles\RolesServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         //App\Providers\PapertrailServiceProvider::class,
 
         /*
@@ -214,6 +216,7 @@ return [
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
+        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
         'Event' => Illuminate\Support\Facades\Event::class,
         'Feed' => Roumen\Feed\Feed::class,
         'File' => Illuminate\Support\Facades\File::class,

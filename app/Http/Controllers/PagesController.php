@@ -59,15 +59,16 @@ class PagesController extends Controller
     }
 
     /**
-     * Show the page to make a booking
+     * Show the page for the youtube videos
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function book()
+    public function videos()
     {
-        return view ('pages.book');
+        return view('pages.videos');
 
     }
+
 
 
     /**
@@ -75,7 +76,7 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function contact()
     {
         return view('pages.contact');
 

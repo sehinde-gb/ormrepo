@@ -3,11 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Charge;
+use app\Exceptions\ChargeNotFoundException;
 use App\Http\Requests\ChargeRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Str;
+
 
 
 class ChargesController extends Controller
@@ -27,15 +28,15 @@ class ChargesController extends Controller
 
         $this->middleware('auth');
 
-        //$this->user = $user;
     }
 
     /**
      * Display a listing of the resource.
      *
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
-     *
+     * @throws ChargeNotFoundException
      */
 
     public function index(Request $request)
@@ -89,7 +90,6 @@ class ChargesController extends Controller
     public function store(ChargeRequest $request)
     {
 
-
             $user = auth()->user();
 
             $charge = $user->charges()->create($request->all());
@@ -110,7 +110,6 @@ class ChargesController extends Controller
                 $charge->save();
             }
 
-
             return redirect()->route('admin.charges.index');
 
     }
@@ -126,9 +125,6 @@ class ChargesController extends Controller
 
     public function show(Charge $charge)
     {
-        //$charge = Charge::findOrFail($id);
-
-        //dd($charge);
 
         return view('admin.charges.show', compact('charge'));
     }
@@ -145,10 +141,6 @@ class ChargesController extends Controller
     public function edit(Charge $charge)
     {
 
-        //$charge = Charge::findOrFail($id);
-
-        //$slug = Str::slug($charge->name);
-
         return view('admin.charges.edit', compact('charge'));
 
     }
@@ -158,17 +150,17 @@ class ChargesController extends Controller
      * Update the specified resource in storage.
      *
      * @param ChargeRequest $request
-     * @param  int $id
+     * @param Charge $charge
      * @return Response
+     *
      */
 
-    public function update(ChargeRequest $request, $id)
+    public function update(ChargeRequest $request, Charge $charge)
     {
-        $charge = Charge::findOrFail($id);
 
         $charge->update($request->all());
 
-        $user = auth()->user();
+        //$user = auth()->user();
 
         return redirect()->route('admin.charges.index');
 
@@ -177,17 +169,17 @@ class ChargesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param Charge $charge
      * @return Response
+     *
      */
 
-    public function destroy($id)
+    public function destroy(Charge $charge)
     {
-        $charge = Charge::findOrFail($id);
 
         $charge->delete();
 
-        File::delete(base_path() . '/public/imgs/products/', $id . ".png");
+        File::delete(base_path() . '/public/imgs/products/', $charge . ".png");
 
         return redirect()->route('admin.charges.index');
 

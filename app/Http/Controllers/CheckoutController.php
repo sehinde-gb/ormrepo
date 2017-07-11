@@ -79,10 +79,6 @@ class CheckoutController extends Controller
 
                     Mail::to($orders->email)->later($when, new DigitalDownload($orders));
 
-                    //return redirect()->route('checkout.thankyou');
-
-                    //return view('checkout.thankyou', ['order' => 'James']);
-
 
                     return view('checkout.thankyou', compact('orders'));
 
@@ -93,13 +89,11 @@ class CheckoutController extends Controller
                 }
         } catch (\Exception $e) {
 
-            throw new ChargeNotFoundException($e->getMessage());
 
-            //return response()->json(['status' => $e->getMessage()], 422);
+            return response()->json(['status' => $e->getMessage()], 422);
 
         }
 
-        //return redirect()->route('checkout.thankyou');
 
         return redirect()->route('checkout.thankyou');
 
@@ -166,31 +160,9 @@ class CheckoutController extends Controller
             $orders->save();
         }
 
-        return 'all good';
 
-        //return redirect()->route('checkout.thankyou');
+        return redirect()->route('checkout.thankyou');
 
-        /*
-        if ($orders->product->is_downloadable) {
-
-            $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
-
-            $orders->save();
-
-            $when = Carbon::now()->addMinutes(10);
-
-            Mail::to($orders->email)->later($when, new DigitalDownload($orders));
-
-        } else {
-
-            return redirect()->route('checkout.thankyou');
-
-
-        }
-
-
-    }
-     */
 
 
     }

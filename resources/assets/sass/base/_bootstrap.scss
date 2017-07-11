@@ -1,4 +1,71 @@
-button {
-  //position: relative;
-  //left: 90px;
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #003434;
+  border-radius: 4px;
+}
+
+.breadcrumb-container {
+  height: 40px;
+  width: 100%;
+  padding-left: 25px;
+  background-color: #003434;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #003434;
+    border-radius: 4px;
+  }
+
+  .breadcrumb-container {
+    height: 40px;
+    width: 100%;
+    padding-left: 25px;
+    background-color: #003434;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+  .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #003434;
+    border-radius: 4px;
+  }
+
+  .breadcrumb-container {
+    height: 40px;
+    width: 100%;
+    padding-left: 25px;
+    background-color: #003434;
+  }
+
+}
+
+@media all and (min-width: 100px) and (max-width: 480px) {
+
+  .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #003434;
+    border-radius: 4px;
+  }
+
+  .breadcrumb-container {
+    height: 40px;
+    width: 100%;
+    padding-left: 25px;
+    background-color: #003434;
+  }
+
 }

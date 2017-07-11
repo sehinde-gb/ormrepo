@@ -1,26 +1,55 @@
-
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,300italic,400italic,700italic");
-
 @font-face {
   font-family: 'FiraSans';
-  src: url('fonts/FiraSans-LightItalic.otf');
-  src: url('fonts/FiraSans-Regular.otf');
-  src: url('fonts/FiraSans-SemiBold.otf');
+  src: url('/fonts/FiraSans-LightItalic.otf');
+  src: url('/fonts/FiraSans-Regular.otf');
+  src: url('/fonts/FiraSans-SemiBold.otf');
   font-weight: normal;
   font-style: normal;
 }
 
-$fira-sans: 'FiraSansSemiBold','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$lato-bold: "Lato Bold", 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$montserrat: 'Montserrat Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  src: url('/fonts/Montserrat-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Bold.ttf');
+  src: url('/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('/fonts/arial.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia Italic';
+  src: url('/fonts/georgia-italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$fira-sans: 'FiraSansSemiBold', 'Helvetica Normal', 'Arial', sans-serif;
+$lato: 'Lato Regular', 'Helvetica Normal', 'Arial', sans-serif;
+$lato-bold: "Lato Bold",  'Helvetica Normal', 'Arial', sans-serif;
+$montserrat: 'Montserrat Regular',  'Helvetica Normal', 'Arial', sans-serif;
+$montserrat-bold: 'Montserrat Bold',  'Helvetica Normal', 'Arial', sans-serif;
+$georgia: "Georgia Italic",  'Helvetica Normal', 'Arial', sans-serif;
+$roberto: 'Roboto',  'Helvetica Normal', 'Arial', sans-serif;
 $primary-color: #f8f8f8;
 $secondary-color: #003434;
 $beige: #f9f1dc;
 $black: black;
-
+$white: #F8F8F8;
 
 body,
 h1,
@@ -31,7 +60,6 @@ h5,
 h6 {
   font-family: $lato;
   font-weight: 700;
-
 }
 
 h1 {
@@ -46,7 +74,7 @@ h1 {
   }
 
 h2 {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $roberto;
   font-weight: 700;
   font-size: 1.5em;
   line-height: 36px;
@@ -57,7 +85,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $roberto;
   font-weight: 700;
   font-size: 1.17em;
   line-height: 29px;
@@ -68,7 +96,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: $roberto;
   font-weight: 700;
   font-size: 1.875em;
   line-height: 42px;
@@ -78,18 +106,9 @@ h4 {
   margin: 0;
 }
 
-h5 a {
-  font-family: "Lato Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 1.4em;
-  line-height: 32px;
-  text-transform: capitalize;
-  color: #404040;
-}
-
 h5 {
   color: #f9f1dc;
-  font-family: $fira-sans;
+  font-family: $roberto;
   font-size: 1em;
   line-height: 25px;
   margin: 0;
@@ -108,9 +127,18 @@ h6 {
   padding-left: 10px;
 }
 
+h5 a {
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #404040;
+}
+
 h6 a {
   font-family: $lato-bold;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 33px;
   text-transform: uppercase;
   color: #ffffff;
@@ -123,13 +151,22 @@ h6 a:hover {
   text-decoration: none;
 }
 
-a {
-  color: #CDA34F;
+h7 a {
+  font-family: $lato-bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 700;
+
 }
+
+a {
+  color: #F8F8F8;
+  }
 
 a:hover {
   color: #FF3B3F;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
@@ -141,15 +178,18 @@ a:focus {
 }
 
 p {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 29px;
-  color: $beige;
-  //color: $black;
+  font-family: $roberto;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 23px;
+  color: #F8F8F8;
   text-transform: none !important;
-
 }
+
+.body {
+  color:  #f8f8f8;
+}
+
 
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -166,71 +206,53 @@ p {
   text-align: center;
 }
 
-.section-heading h2 {
-  font-family: $lato;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
-  color: black;
-}
-
-.section--title {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 16px;
+.alert-notify {
+  font-family: $roberto;
+  font-weight: 900;
+  font-size: 1em;
   line-height: 30px;
-  color: $black;
+  color: #F8F8F8;
+  text-transform: uppercase !important;
+  padding: 0;
+  margin: 0;
 }
 
-.section--body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+.cook-link {
+  font-family: $roberto;
+  font-weight: 900;
+  font-size: 1em;
   line-height: 30px;
-  color: black;
-  padding-top: 20px;
+  color: #F8F8F8;
+  text-transform: uppercase !important;
+  padding: 0;
+  margin: 0;
 }
 
-.column h1 {
-  padding-left: 30px;
-}
-
-.paged-links {
-  color: #f9f1dc;
+.cook-link:hover {
+  color: #606060;
 }
 
 label {
   color: #f9f1dc !important;
 }
 
+/* Tags show blade */
 .tag--centre {
   text-decoration: none;
   padding-top: 10px;
 }
 
-.twitter a {
-  text-decoration: none;
-}
-
-.fa-2x {
-  color: #fdfdfd;
-  padding-left: 18px;
-}
-
-.body {
-  color:  #f8f8f8;
-}
-
 .side-heading {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $georgia;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   text-transform: capitalize;
   color: $primary-color;
   margin: 0;
   padding: 0;
 }
 
+/*
 .banner h2 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -239,28 +261,28 @@ label {
   font-weight: 700;
   line-height: 47px;
 }
+*/
 
-.comment-heading {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: $beige;
+
+/* Column Container & Newsletter Container Typography */
+
+.column h1 {
+  padding-left: 30px;
 }
 
 .blog--title {
-  font-family: $fira-sans;
-  font-size: 35px;
+  font-family: $roberto;
+  font-size: 2.188em;
   line-height: 54px;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: capitalize;
-  color: $beige;
+  color: #F8F8F8;
 }
 
 .blog--excerpt {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: $roberto;
+  font-weight: 700;
+  font-size: 1.125em;
   line-height: 32px;
   text-transform: none;
   color: $primary-color;
@@ -268,26 +290,9 @@ label {
   padding-bottom: 10px;
 }
 
-#published--at {
-  font-family: 'FiraSans Light', "Helvetica Neue", Helvetica, Arial,sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: $beige;
-}
-
-.lead {
-  font-family: $lato;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  color: $black;
-}
-
 .column-name {
   font-family: $lato-bold;
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   color: $secondary-color;
   font-weight: 700;
@@ -299,7 +304,7 @@ label {
 .news--heading {
   font-family: $lato-bold;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 51px;
   text-transform: uppercase;
   color: $beige;
@@ -308,8 +313,8 @@ label {
   }
 
 .lorem--text {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: $georgia;
+  font-size: 1.25em;
   font-style: italic;
   font-weight: 400;
   line-height: 32px;
@@ -318,9 +323,9 @@ label {
 }
 
 .social--text {
-  font-family: "Georgia Italic", sans-serif;
+  font-family: $georgia;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.938em;
   line-height: 30px;
   font-style: italic;
   color: white;
@@ -329,9 +334,9 @@ label {
 }
 
 .box--line {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $georgia;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 21px;
   text-transform: uppercase;
   color: $secondary-color;
@@ -342,18 +347,18 @@ label {
 }
 
 .lower--box-text {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $georgia;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 32px;
   text-transform: uppercase;
   color: $secondary-color;
 }
 
 .box--underline {
-  font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $georgia;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 32px;
   text-transform: uppercase;
   color: $secondary-color;
@@ -361,14 +366,46 @@ label {
 }
 
 .project-links {
-  font-family: 'Roboto', sans-serif;
+  font-family: $roberto;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 30px;
   list-style: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.twitter a {
+  text-decoration: none;
+}
+
+/* Portfolio section showcase */
+.section--title {
+  font-family: $roberto;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 30px;
+  color: $black;
+}
+
+.section--body {
+  font-family: $roberto;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 30px;
+  color: black;
+  padding-top: 20px;
+}
+
+.section-heading h2 {
+  font-family: $roberto;
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 44px;
+  color: black;
+}
+
+
 
 
 
@@ -389,61 +426,60 @@ label {
     text-align: center;
   }
 
-  .section-heading h2 {
-    font-family: $lato;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
-    color: black;
+  .body {
+    color: #f8f8f8;
   }
 
-  .section--title {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 16px;
+
+  .alert-notify {
+    font-family: $roberto;
+    font-weight: 900;
+    font-size: 1em;
     line-height: 30px;
-    color: $black;
+    color: #F8F8F8;
+    text-transform: uppercase !important;
+    padding: 0;
+    margin: 0;
   }
 
-  .section--body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+  .cook-link {
+    font-family: $roberto;
+    font-weight: 900;
+    font-size: 1em;
     line-height: 30px;
-    color: black;
-    padding-top: 20px;
+    color: #F8F8F8;
+    text-transform: uppercase !important;
+    padding: 0;
+    margin: 0;
   }
 
-  .column h1 {
-    padding-left: 30px;
+  .cook-link:hover {
+    color: #606060;
   }
 
-  .paged-links {
-    color: #f9f1dc;
-  }
 
   label {
     color: #f9f1dc !important;
   }
 
+  /* Tags show blade */
   .tag--centre {
     text-decoration: none;
     padding-top: 10px;
   }
 
-  .twitter a {
-    text-decoration: none;
+  .side-heading {
+    font-family: $georgia;
+    font-weight: 700;
+    font-size: 0.875em;
+    text-transform: capitalize;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
   }
 
-  .fa-2x {
-    color: #fdfdfd;
-    padding-left: 18px;
-  }
 
-  .body {
-    color: #f8f8f8;
-  }
-
+  /*
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -452,55 +488,17 @@ label {
     font-weight: 700;
     line-height: 47px;
   }
+  */
 
-  .blog--title {
-    font-family: $fira-sans;
-    font-size: 35px;
-    line-height: 54px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: $beige;
-  }
 
-  .blog--excerpt {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    text-transform: none;
-    color: $primary-color;
-    margin: 0;
-    padding-bottom: 10px;
-  }
-
-  .comment-heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    color: $beige;
-  }
-
-  #published--at {
-    font-family: 'FiraSans Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 28px;
-    text-transform: capitalize;
-    color: $beige;
-  }
-
-  .lead {
-    font-family: $lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    color: $black;
+  /* Column Container & Newsletter Container Typography */
+  .column h1 {
+    padding-left: 30px;
   }
 
   .column-name {
     font-family: $lato-bold;
-    font-size: 24px;
+    font-size: 1.5em;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
@@ -509,10 +507,30 @@ label {
     left: 40px;
   }
 
+  .blog--title {
+    font-family: $roberto;
+    font-size: 2.188em;
+    line-height: 54px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #F8F8F8;
+  }
+
+  .blog--excerpt {
+    font-family: $roberto;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 32px;
+    text-transform: none;
+    color: $primary-color;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
   .news--heading {
     font-family: $lato-bold;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.250em;
     line-height: 51px;
     text-transform: uppercase;
     color: $beige;
@@ -521,8 +539,8 @@ label {
   }
 
   .lorem--text {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: $georgia;
+    font-size: 1.125em;
     font-style: italic;
     font-weight: 400;
     line-height: 32px;
@@ -531,9 +549,9 @@ label {
   }
 
   .social--text {
-    font-family: "Georgia Italic", sans-serif;
+    font-family: $georgia;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     line-height: 30px;
     font-style: italic;
     color: white;
@@ -542,9 +560,9 @@ label {
   }
 
   .box--line {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -555,18 +573,18 @@ label {
   }
 
   .lower--box-text {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 32px;
     text-transform: uppercase;
     color: $secondary-color;
   }
 
   .box--underline {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 32px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -575,9 +593,9 @@ label {
   }
 
   .project-links {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roberto;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 30px;
     list-style: none;
     padding-top: 10px;
@@ -586,6 +604,37 @@ label {
   }
 
 
+
+
+  /* Portfolio section showcase */
+  .twitter a {
+    text-decoration: none;
+  }
+
+  .section-heading h2 {
+    font-family: $roberto;
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 44px;
+    color: black;
+  }
+
+  .section--title {
+    font-family: $roberto;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    color: $black;
+  }
+
+  .section--body {
+    font-family: $roberto;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 30px;
+    color: black;
+    padding-top: 20px;
+  }
 
 }
 
@@ -607,34 +656,10 @@ label {
     text-align: center;
   }
 
-  .section-heading h2 {
-    font-family: $lato;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 43px;
-    color: black;
+  .body {
+    color:  #f8f8f8;
   }
 
-  .section--title {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: $black;
-  }
-
-  .section--body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    color: black;
-    padding-top: 20px;
-  }
-
-  .column h1 {
-    padding-left: 30px;
-  }
 
   .paged-links {
     color: #f9f1dc;
@@ -644,54 +669,71 @@ label {
     color: #f9f1dc !important;
   }
 
+  /* Tags show blade */
   .tag--centre {
     text-decoration: none;
     padding-top: 10px;
   }
 
-  .twitter a {
-    text-decoration: none;
-  }
 
-  .fa-2x {
-    color: #fdfdfd;
-    padding-left: 18px;
-  }
-
-  .body {
-    color:  #f8f8f8;
-  }
-
- .banner h2 {
+  .alert-notify {
+    font-family: $roberto;
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 30px;
+    color: #F8F8F8;
+    text-transform: uppercase !important;
+    padding: 0;
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 2em;
-    font-family: $lato;
-    font-weight: 700;
-    line-height: 46px;
- }
+  }
 
- .comment-heading {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 25px;
-    color: $beige;
- }
+  .cook-link {
+    font-family: $roberto;
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 30px;
+    color: #F8F8F8;
+    text-transform: uppercase !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cook-link:hover {
+    color: #606060;
+  }
+
+
+
+  /*
+  .banner h2 {
+     margin: 0;
+     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+     font-size: 2em;
+     font-family: $lato;
+     font-weight: 700;
+     line-height: 46px;
+  }
+ */
+
+
+  /* Column Container & Newsletter Container Typography */
+  .column h1 {
+    padding-left: 30px;
+  }
 
  .blog--title {
-    font-family: $fira-sans;
-    font-size: 35px;
+    font-family: $roberto;
+    font-size: 2.188em;
     line-height: 49px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: capitalize;
-    color: $beige;
+    color: #F8F8F8;
  }
 
  .blog--excerpt {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-family: $fira-sans;
+    font-weight: 700;
+    font-size: 1.125em;
     line-height: 30px;
     text-transform: none;
     color: $primary-color;
@@ -699,26 +741,9 @@ label {
     padding-bottom: 10px;
  }
 
- #published--at {
-    font-family: 'FiraSans Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 25px;
-    text-transform: capitalize;
-    color: $beige;
- }
-
- .lead {
-    font-family: $lato;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $black;
- }
-
  .column-name {
     font-family: $lato-bold;
-    font-size: 24px;
+    font-size: 1.500em;
     line-height: 36px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -731,7 +756,7 @@ label {
  .news--heading {
     font-family: $lato-bold;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.250em;
     line-height: 50px;
     text-transform: uppercase;
     color: $beige;
@@ -740,8 +765,8 @@ label {
  }
 
  .lorem--text {
-    font-family: "Georgia Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: $georgia;
+    font-size: 1.125em;
     font-style: italic;
     font-weight: 400;
     line-height: 30px;
@@ -752,9 +777,9 @@ label {
  }
 
  .social--text {
-    font-family: "Georgia Italic", sans-serif;
+    font-family: $georgia;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     font-style: italic;
     line-height: 27px;
     color: white;
@@ -763,9 +788,9 @@ label {
  }
 
  .box--line {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -776,18 +801,18 @@ label {
  }
 
  .lower--box-text {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 30px;
     text-transform: uppercase;
     color: $secondary-color;
  }
 
  .box--underline {
-    font-family: "Georgia Italic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 30px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -795,30 +820,55 @@ label {
 
  }
 
-  .project-links {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+ .project-links {
+  font-family: $roberto;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 30px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
 
+  .twitter a {
+    text-decoration: none;
+  }
+
+
+  /* Portfolio section showcase */
+  .section-heading h2 {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 43px;
+    color: black;
+  }
+
+  .section--title {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 28px;
+    color: $black;
+  }
+
+  .section--body {
+    font-family: $roberto;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 28px;
+    color: black;
+    padding-top: 20px;
   }
 
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
-  a:hover {
-    color: #FF3B3F;
-    text-decoration: none;
-  }
 
   .intro-message > h1 {
     font-size: 3em;
     font-family: $montserrat;
-
   }
 
   ul.intro-social-buttons > li {
@@ -831,68 +881,49 @@ label {
     margin-bottom: 0;
   }
 
-  .leader {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    color: #303030;
-    width: 100%;
-  }
-
-  .section--heading {
-    font-family: $montserrat-bold;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 41px;
-    color: black;
-    margin-bottom: 30px;
-  }
-
-  .section--title {
-    font-family: $montserrat-bold;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: $black;
-  }
-
-  .section--body {
+  h6 a {
     font-family: $montserrat;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
+    font-size: 1.5em;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 33px;
   }
 
+
+
+  /*
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
     line-height: 64px;
   }
+  */
 
- .head {
-    padding-left: 200px;
-    text-transform: uppercase;
-    color: #303030;
- }
 
-  .twitter a {
-    text-decoration: none;
-  }
-
-  .left-container p {
-    color: $beige;
-  }
-
+   /* Tags show blade */
   .tag--centre {
     text-decoration: none;
   }
 
- .social--text {
+  .alert-notify {
+    font-family: $montserrat;
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 30px;
+    color: #F8F8F8;
+    text-transform: uppercase !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Column Container & Newsletter Container Typography */
+  .social--text {
     font-family: $montserrat;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     font-style: italic;
     line-height: 23px;
     color: white;
@@ -903,7 +934,7 @@ label {
  .news--heading {
     font-family: $montserrat-bold;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 1.625em;
     line-height: 36px;
     text-transform: uppercase;
     color: $beige;
@@ -911,17 +942,10 @@ label {
     padding-left: 20px;
  }
 
- .lead {
-    font-family: $montserrat;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    color: black;
- }
 
  .lorem--text {
     font-family: $montserrat;
-    font-size: 18px;
+    font-size: 1.125em;
     font-style: italic;
     line-height: 27px;
     color: #606060;
@@ -935,7 +959,7 @@ label {
  .box--line {
     font-family: $montserrat-bold;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -944,34 +968,69 @@ label {
 
  .column-name {
     font-family: $montserrat-bold;
-    font-size: 24px;
+    font-size: 1.500em;
     line-height: 34px;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
     text-align: center;
+    position: relative;
+    left: 70px;
  }
 
  .blog--title {
-    font-family: $fira-sans;
-    font-size: 35px;
+    font-family: $montserrat;
+    font-size: 2.188em;
     line-height: 47px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: capitalize;
-    color: $beige;
+    color: #F8F8F8;
  }
 
   .project-links {
-    font-family: 'Roboto', sans-serif;
+    font-family: $montserrat;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 30px;
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
 
   }
+
+  .twitter a {
+    text-decoration: none;
+  }
+
+
+  /* Portfolio section showcase */
+  .section--heading {
+    font-family: $montserrat-bold;
+    font-weight: 500;
+    font-size: 1.875em;
+    line-height: 41px;
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  .section--title {
+    font-family: $montserrat-bold;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 28px;
+    color: $black;
+  }
+
+  .section--body {
+    font-family: $montserrat;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 24px;
+    color: black;
+  }
+
+
 
 
 }

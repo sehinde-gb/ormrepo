@@ -57,15 +57,7 @@ class User extends Authenticatable implements HasRoleContract
     }
 
 
-    /**
-     * Relationship A user has many comments.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function comments()
-    {
-        return $this->hasMany('App\Comment');
-    }
+
 
     /**
      * Determines the username for the User Model.

@@ -15,13 +15,12 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-
+Vue.component('message', require('./components/Message.vue'));
 //Vue.component('Ad', require('./components/Ad.vue'));
 
-//const app = new Vue({
-  //  el: '#app'
-
-//});
+const root = new Vue({
+    el: '#root'
+});
 
 import Turbolinks from 'turbolinks';
 

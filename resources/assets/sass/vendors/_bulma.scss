@@ -1,3 +1,9 @@
+.message {
+  left: 0;
+  bottom: 0;
+  width: 0;
+}
+
 strong {
   color: #E5E338;
   font-weight: 700;
@@ -49,6 +55,12 @@ img {
   border: none !important;
 }
 
+footer {
+  padding: 60px 0;
+  background-color: #003434;
+}
+
+
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
@@ -98,6 +110,12 @@ img {
   .img-responsive {
     border: none !important;
   }
+
+  footer {
+    padding: 60px 0;
+    background-color: #003434;
+  }
+
 
 
 }
@@ -151,6 +169,13 @@ img {
     border: none !important;
   }
 
+  footer {
+    padding: 60px 0;
+    background-color: #003434;
+  }
+
+
+
 
 }
 
@@ -198,6 +223,10 @@ img {
     border: none !important;
   }
 
+  footer {
+    padding: 60px 0;
+    background-color: #003434;
+  }
 
 
 }

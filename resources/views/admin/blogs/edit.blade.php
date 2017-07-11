@@ -3,7 +3,7 @@
 @section('meta-title', $blog->title)
 
 @section('content')
-
+    {!! Breadcrumbs::render('admin.blogs.edit', $blog) !!}
     <div class="form-page">
 
         <div class="register-fluid">
@@ -21,15 +21,11 @@
                </div><!-- /.header -->
 
                     <div class="row">
-                        @can('update', $blog)
-                           {!! Form::model($blog, array('route' => array('blogs.update', $blog->id), 'method' => 'PUT')) !!}
+
+                           {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                 @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
-                        @endcan
 
-                        @cannot('update', $blog)
-                                <h3 class="is--black is--centre">You do not have the required permissions to update this blog post</h3>
-                        @endcannot
 
                     </div><!-- /.row -->
 

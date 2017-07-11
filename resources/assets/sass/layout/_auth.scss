@@ -2,7 +2,8 @@
 
 .form-page {
   background-color: #003434;
-  padding-top: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 .register-fluid {
@@ -10,7 +11,6 @@
   overflow: hidden;
   padding: 20px;
   margin: 0;
-  border-radius: 5px;
   background-color: white;
   box-shadow: 0 8px 6px -6px white;
   flex: 0 0 60%;
@@ -86,7 +86,8 @@ label {
 
   .form-page {
     background-color: #003434;
-    padding-top: 100px;
+    margin: 0;
+    padding: 0;
   }
 
   .register-fluid {
@@ -170,8 +171,8 @@ label {
 
   .form-page {
     background-color: #003434;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin: 0;
+    padding: 0;
   }
 
   .register-fluid {
@@ -245,8 +246,8 @@ label {
 
   .form-page {
     background-color: #F8F8F8;
-    padding: 0 !important;
     margin: 0;
+    padding: 0;
     max-width: 100%;
   }
 

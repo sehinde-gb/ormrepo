@@ -18,6 +18,9 @@ class CreateChargesTable extends Migration
             $table->integer('user_id')->unsigned()->index();
             $table->string('name');
             $table->text('description');
+            $table->string('type');
+            $table->string('seo');
+            $table->string('features');
             $table->string('sku')->unique();
             $table->decimal('price', 6, 2);
             $table->boolean('is_downloadable');

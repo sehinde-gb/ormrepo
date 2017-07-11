@@ -132,6 +132,10 @@
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
+  .left-container p {
+    color: $beige;
+  }
+
   .section {
     display: flex;
     flex-direction: column;

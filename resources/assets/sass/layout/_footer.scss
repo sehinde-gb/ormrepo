@@ -2,9 +2,10 @@
 $fira-sans: 'FiraSansSemiBold',"Helvetica Neue",Helvetica,Arial,sans-serif;
 
 footer {
-  padding: 50px 0;
+  padding: 20px 0 !important;
   background-color: #003434;
 }
+
 
 .middle-logo {
   display: flex;
@@ -42,9 +43,12 @@ p.copyright {
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   footer {
-    padding: 50px 0;
+    padding: 20px 0 !important;
     background-color: #003434;
   }
+
+
+
 
   .middle-logo {
     display: flex;
@@ -83,9 +87,11 @@ p.copyright {
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
   footer {
-    padding: 50px 0;
+    padding: 20px 0 !important;
     background-color: #003434;
   }
+
+
 
   .middle-logo {
     display: flex;
@@ -125,10 +131,15 @@ p.copyright {
 
 
   footer {
-    padding: 50px 0;
+    padding: 20px 0 !important;
     background-color: #003434;
     display: flex;
     flex-direction: column;
+  }
+
+  .alert-container {
+    min-height: 20px;
+    width: 100%;
   }
 
   .middle-logo {

@@ -43,6 +43,14 @@ $primary-color: #f8f8f8;
   background-color: #606060;
 }
 
+.is--underlined {
+  text-decoration: underline;
+}
+
+.is--without {
+  padding-top: 15px;
+}
+
 .box-is-beige {
   background-color: #f9f1dc !important;
 }
@@ -138,6 +146,10 @@ $primary-color: #f8f8f8;
   padding-bottom: 20px;
 }
 
+.is--capitals {
+  text-transform: capitalize;
+}
+
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -151,6 +163,10 @@ $primary-color: #f8f8f8;
     color: black;
   }
 
+  .is--underlined {
+    text-decoration: underline;
+  }
+
   /* alignment */
   .is-aligned {
     vertical-align: baseline;
@@ -159,6 +175,10 @@ $primary-color: #f8f8f8;
 
   .is--centered {
     text-align: center;
+  }
+
+  .is--without {
+    padding-top: 15px;
   }
 
 
@@ -235,6 +255,10 @@ $primary-color: #f8f8f8;
     padding-bottom: 20px;
   }
 
+  .is--underlined {
+    text-decoration: underline;
+  }
+
   /* alignment */
   .is-aligned {
     vertical-align: baseline;
@@ -252,6 +276,10 @@ $primary-color: #f8f8f8;
 
   .is--lower {
     text-transform: none !important;
+  }
+
+  .is--without {
+    padding-top: 22px;
   }
 
   /* margins padding */
@@ -313,6 +341,10 @@ $primary-color: #f8f8f8;
   .is--white-bottom {
     color: $primary-color;
     padding-bottom: 20px;
+  }
+
+  .is--underlined {
+    text-decoration: underline;
   }
 
   .is-typ-flex {

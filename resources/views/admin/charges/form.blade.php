@@ -1,3 +1,5 @@
+@include('partials.errors')
+
 <!-- Name -->
 <div class="form-group form-group-lg">
     {!! Form::label('name', 'Name:', ['class' => 'control-label']) !!}
@@ -10,6 +12,23 @@
     {!! Form::text('description', null, ['class' => 'form-control']) !!}
 </div><!-- /.form-group -->
 
+<!-- Type -->
+<div class="form-group form-group-lg">
+    {!! Form::label('type', 'Type:', ['class' => 'control-label']) !!}
+    {!! Form::text('type', null, ['class' => 'form-control']) !!}
+</div><!-- /.form-group -->
+
+<!-- SEO -->
+<div class="form-group form-group-lg">
+    {!! Form::label('seo', 'SEO:', ['class' => 'control-label']) !!}
+    {!! Form::text('seo', null, ['class' => 'form-control']) !!}
+</div><!-- /.form-group -->
+
+<!-- Features -->
+<div class="form-group form-group-lg">
+    {!! Form::label('features', 'Features:', ['class' => 'control-label']) !!}
+    {!! Form::text('features', null, ['class' => 'form-control']) !!}
+</div><!-- /.form-group -->
 
 <div class="form-group form-group-lg">
     {!! Form::label('sku', 'SKU', ['class' => 'control-label']) !!}
@@ -30,7 +49,5 @@
 
 
 
+    {!! Form::submit($submitButtonText, ['class' => 'btn btn-secondary', 'data-confirm' => 'Are you sure about that?']) !!}
 
-<div class="button-centre">
-    {!! Form::submit('Create Charge', array('class'=>'btn btn-primary')) !!}
-</div><!-- /.button-centre -->

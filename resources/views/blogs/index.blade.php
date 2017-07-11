@@ -20,6 +20,13 @@
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
+                    <div class="alert-container">
+                        <div id="root">
+                            <!-- Using the Alert component -->
+                            <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
+
+                        </div><!-- /#app -->
+                    </div><!-- /.alert-container -->
 
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
@@ -284,8 +291,9 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
 
-                        <h4 class="is--black">Book Now<br>Initial Consultation</h4>
-                        <p class="section--body is--padding-bottom">You may not have to pay a fee if an agreement has been arranged in advance.</p>
+                        <h4 class="is--black">Book Now For<br>Initial Consultation</h4>
+                        <p class="section--body ">You may not have to pay a fee if an agreement has been arranged in advance.</p>
+
                         <div id="TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG" ></div>
                         <script src="//d3saea0ftg7bjt.cloudfront.net/bn/js/bn.min.js" type="text/javascript"></script>
                         <script type="text/javascript">

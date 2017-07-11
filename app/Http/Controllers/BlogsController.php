@@ -8,7 +8,7 @@ use App\Exceptions\MethodNotFoundException;
 use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use Newsletter;
-use App\Comment;
+
 
 
 
@@ -70,10 +70,6 @@ class BlogsController extends Controller
 
             $next = Blog::where('id', '>', $blog->id)->first();
 
-            $comments = Comment::forBlog($blog)->get()->threaded();
-
-
-
             } catch (\Exception $e) {
 
             throw new HttpNotFoundException($e->getMessage());
@@ -83,8 +79,8 @@ class BlogsController extends Controller
         return view('blogs.show')->with([
             'blog' => $blog,
             'previous' => $previous,
-            'next' => $next,
-            'comments' => $comments
+            'next' => $next
+
         ]);
 
     }
@@ -103,7 +99,7 @@ class BlogsController extends Controller
         try {
 
             $blog = Blog::findBySlug($slug);
-            //dd($slug);
+
 
         } catch (\Exception $e) {
 
