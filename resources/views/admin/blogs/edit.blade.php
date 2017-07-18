@@ -3,7 +3,10 @@
 @section('meta-title', $blog->title)
 
 @section('content')
-    {!! Breadcrumbs::render('admin.blogs.edit', $blog) !!}
+    <div class="breadcrumb-container">
+        {!! Breadcrumbs::render('admin.blogs.edit', $blog) !!}
+    </div><!-- /.breadcrumb-container -->
+
     <div class="form-page">
 
         <div class="register-fluid">

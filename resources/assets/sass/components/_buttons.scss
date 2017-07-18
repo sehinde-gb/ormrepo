@@ -215,8 +215,9 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 
 .alert-button {
   color: #F8F8F8;
-  height: 30px;
+  height: 22px;
   position: absolute;
+  top: 770px;
   right: 20px;
   background-color: #FF3B3F;
   border: none;
@@ -404,9 +405,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #FF3B3F !important;
   }
 
-
-
-
   .button-group {
     display: flex;
     align-content: center;
@@ -446,8 +444,9 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #F8F8F8;
     background-color: #FF3B3F;
     border: none;
-    height: 32px;
+    height: 22px;
     position: absolute;
+    top: 770px;
     right: 20px;
   }
 

@@ -34,6 +34,7 @@
                         <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ/featured
 "> <img class="responsive" src="/images/footer/youtube-color.png" alt="youtube icon"></a>
                     </li>
+
                 </ul>
 
                 <ul class="list-inline">

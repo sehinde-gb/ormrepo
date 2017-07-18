@@ -13,3 +13,8 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}

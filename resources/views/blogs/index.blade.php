@@ -23,8 +23,8 @@
                     <div class="alert-container">
                         <div id="root">
                             <!-- Using the Alert component -->
-                            <message title="Hello World" body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
-                            <alert class="Alert--Info" message="Hi, you are signed in!"></alert>
+                            <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
+
                         </div><!-- /#app -->
                     </div><!-- /.alert-container -->
 
@@ -315,7 +315,3 @@
 
 @endsection
 
-@section('scripts')
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/main.js"></script>
-@endsection

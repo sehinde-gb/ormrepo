@@ -92,7 +92,7 @@ Breadcrumbs::register('admin.blogs.show', function($breadcrumbs, $blog)
     $breadcrumbs->push($blog->title, route('admin.blogs.show', $blog->id));
 });
 
-// Blogs > Publish Post
+// Blogs > Publish Blog
 Breadcrumbs::register('admin.blogs.create', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin.blogs.index');
