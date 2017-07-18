@@ -1855,6 +1855,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -1947,7 +1948,7 @@ window.Echo.private('user.${userId}')
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(32)();
-exports.push([module.i, "\n.orm-message {\n    background-color: #FF3B3F;\n    color: #F8F8F8;\n    min-height: 60px;\n    border-radius: 2px;\n    width: 100%;\n}\n.orm-body {\n    padding-top: 12px;\n    padding-left: 200px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        min-height: 60px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-top: 12px;\n        padding-left: 200px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        min-height: 60px;\n        border-radius: 2px;\n        width: 74%;\n        margin-left: 70px;\n}\n.orm-body {\n        padding-top: 12px;\n        padding-left: 200px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        height: 120px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        min-height: 100px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-top: 12px;\n        padding-left: 200px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        min-height: 100px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-top: 12px;\n        padding-left: 200px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        min-height: 120px;\n        border-radius: 2px;\n        width: 74%;\n        margin-left: 70px;\n}\n.orm-body {\n        padding-top: 12px;\n        padding-left: 200px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background-color: #FF3B3F;\n        color: #F8F8F8;\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
 
 /***/ }),
 /* 32 */
@@ -29476,16 +29477,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "isVisible"
     }],
     staticClass: "orm-message"
-  }, [_c('div', {
-    staticClass: "orm-body"
-  }, [_c('h4', {
-    staticClass: "alert-notify"
-  }, [_vm._v(_vm._s(_vm.body) + "\n            "), _c('a', {
-    staticClass: "cook-link",
-    attrs: {
-      "href": "https://ormrepo.co.uk/cookie"
-    }
-  }, [_vm._v("Click here to find out more")]), _vm._v(" "), _c('button', {
+  }, [_c('button', {
     staticClass: "alert-button",
     attrs: {
       "type": "button"
@@ -29498,7 +29490,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "aria-hidden": "true"
     }
-  })])])])])
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "orm-body"
+  }, [_c('h4', {
+    staticClass: "alert-notify"
+  }, [_vm._v(_vm._s(_vm.body) + "\n            "), _c('a', {
+    staticClass: "cook-link",
+    attrs: {
+      "href": "https://ormrepo.co.uk/cookie"
+    }
+  }, [_vm._v("Click here to find out more")])])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

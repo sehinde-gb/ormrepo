@@ -29,6 +29,8 @@
                     </div><!-- /.alert-container -->
 
 
+
+
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
                             <h6 class="column-name">Sehinde Raji</h6>

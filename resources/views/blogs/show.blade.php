@@ -79,29 +79,32 @@
                     </div><!-- /.bottom-container -->
 
                     <div class="button-container">
-                        <div class="previous">
-                            @if($previous)
-                                <ul>
-                                    <li>
-                                        <a href="{{ URL::to( 'blogs/' . $previous->id ) }}"><i class="fa fa-arrow-circle-left fa-lg" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
 
-                            @endif
-                        </div><!-- /.previous -->
+                            <div class="previous">
+                                @if($previous)
+                                    <ul>
+                                        <li>
+                                            <a href="{{ URL::to( 'blogs/' . $previous->id ) }}"><i class="fa fa-arrow-circle-left fa-lg" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                        <div class="next">
-                            @if($next)
-                                <ul>
-                                    <li>
-                                        <a href="{{ URL::to( 'blogs/' . $next->id ) }}"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                @endif
+                            </div><!-- /.previous -->
 
-                            @endif
-                        </div><!-- /.next -->
+                            <div class="next">
+                                @if($next)
+                                    <ul>
+                                        <li>
+                                            <a href="{{ URL::to( 'blogs/' . $next->id ) }}"><i class="fa fa-arrow-circle-right fa-lg" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                @endif
+                            </div><!-- /.next -->
+
+
                     </div><!-- /.button-container -->
                     <div class="back-to-top">
                         <a href="#top">Jump to top</a>

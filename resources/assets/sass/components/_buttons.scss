@@ -208,21 +208,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   margin-top: 0;
 }
 
-.alert-container {
-  min-height: 20px;
-  flex: 0 1 100%;
-}
 
-.alert-button {
-  color: #F8F8F8;
-  height: 22px;
-  position: absolute;
-  top: 770px;
-  right: 20px;
-  background-color: #FF3B3F;
-  border: none;
-
-}
 
 
 
@@ -435,20 +421,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 0;
   }
 
-  .alert-container {
-    min-height: 20px;
-    flex: 0 1 100%;
-  }
 
-  .alert-button {
-    color: #F8F8F8;
-    background-color: #FF3B3F;
-    border: none;
-    height: 22px;
-    position: absolute;
-    top: 770px;
-    right: 20px;
-  }
 
 }
 
@@ -612,8 +585,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   }
 
 
-
-
   .btn-buy,
   .btn-buy:active,
   .btn-buy:visited,
@@ -666,19 +637,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 0;
   }
 
-  .alert-container {
-    min-height: 20px;
-    flex: 0 1 100%;
-  }
 
-  .alert-button {
-    color: #F8F8F8;
-    background-color: #FF3B3F;
-    border: none;
-    height: 2px;
-    position: absolute;
-    right: 20px;
-  }
 
 }
 
@@ -823,20 +782,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 15px;
   }
 
-  .alert-container {
-    height: 500px;
-    width: 100%;
-  }
 
-  .alert-button {
-    color: #F8F8F8;
-    background-color: #FF3B3F;
-    border: none;
-    height: 2px;
-    position: absolute;
-    top: 488px;
-    right: 20px;
-  }
 
 
 }
