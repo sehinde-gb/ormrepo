@@ -24,11 +24,13 @@
                </div><!-- /.header -->
 
                     <div class="row">
+                        @can('update', $blog)
 
-                           {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
-                                @include('admin.blogs.form', ['submitButtonText' => 'Update'])
+                            {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
+                                    @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
 
+                        @endcan
 
                     </div><!-- /.row -->
 
