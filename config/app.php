@@ -162,6 +162,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
 
 
         /*
@@ -177,6 +178,7 @@ return [
         Indal\Markdown\MarkdownServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
         //App\Providers\PapertrailServiceProvider::class,
 
         /*

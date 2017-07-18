@@ -32,6 +32,11 @@
 
                         @endcan
 
+                            @cannot('update', $blog)
+                                <h3 class="is--black is--centre">You do not have the required permissions to update this blog post</h3>
+                            @endcannot
+
+
                     </div><!-- /.row -->
 
                     <div class="row">
