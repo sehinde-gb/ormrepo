@@ -342,7 +342,7 @@ label {
   color: $secondary-color;
   margin: 0;
   position: relative;
-  right: 30px;
+  right: 30px !important;
   bottom: 120px;
 }
 
@@ -568,7 +568,7 @@ label {
     color: $secondary-color;
     margin: 0;
     position: relative;
-    right: 30px;
+    right: 30px !important;
     bottom: 120px;
   }
 
