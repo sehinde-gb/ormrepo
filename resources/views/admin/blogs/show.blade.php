@@ -16,10 +16,8 @@
                             <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The featured picture">
                         </div><!-- /.featured-image -->
 
-
                         <div class="tag-container">
                             @unless($blog->tags->isEmpty())
-                                <h2 class="side-heading">Tags:</h2>
                                 <ul class="tag--centre">
                                     @foreach($blog->tags as $tag)
                                         <a href="{{ url('/blogs', $blog->id) }}"><button class="btn-tag">{{ $tag->name }}</button></a>
