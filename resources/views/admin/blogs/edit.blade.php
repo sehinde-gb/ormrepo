@@ -24,29 +24,27 @@
                </div><!-- /.header -->
 
                     <div class="row">
-                        @can('update', $blog)
+
+                       @role('admin')
 
                             {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                     @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
 
-                        @endcan
+                        @endrole
 
-                            @cannot('update', $blog)
-                                <h3 class="is--black is--centre">You do not have the required permissions to update this blog post</h3>
-                            @endcannot
 
 
                     </div><!-- /.row -->
 
                     <div class="row">
-                        @can('delete', $blog)
-                           {!! Form::open([ 'method' => 'DELETE', 'route' => ['blogs.destroy', $blog->id]]) !!}
+                        @role('admin')
+                           {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.blogs.destroy', $blog->id]]) !!}
 
-                           {!! delete_form(['blogs.destroy', $blog->id]) !!}
+                           {!! delete_form(['admin.blogs.destroy', $blog->id]) !!}
 
                            {!! Form::close() !!}
-                       @endcan
+                       @endrole
 
                     </div><!-- /.row -->
 
