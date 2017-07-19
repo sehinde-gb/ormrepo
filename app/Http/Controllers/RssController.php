@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Exceptions\RSSNotFoundException;
+use App\Exceptions\MethodNotFoundException;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Blog;
@@ -45,7 +45,7 @@ class RssController extends Controller
 
         } catch (\Exception $e) {
 
-                throw new RSSNotFoundException($e->getMessage());
+                throw new MethodNotFoundException($e->getMessage());
         }
 
                 return $feed->render('rss'); // or atom
