@@ -17,13 +17,13 @@
                    @elseif (count($blogs) >= 1)
                         @foreach($blogs as $blog)
                            <article>
-                               <h2><a class="is--beige" href="{{ url('blogs', $blog->id) }}">{!!  $blog->title !!}</a></h2>
-                               <h3 class="is--mar-top">{!! str_limit($blog->body, $limit = 300, $end = '')!!}</h3>
+                               <h3><a class="is--white is--reset" href="{{ url('blogs', $blog->id) }}">{!!  $blog->title !!}</a></h3>
+                               <p>{!! str_limit($blog->body, $limit = 300, $end = '')!!}</p>
 
                            </article>
                        @endforeach
                    @endif
-               </div><!-- /.left-container -->
+               </div><!-- /.search-container -->
 
                <div class="right-container">
 

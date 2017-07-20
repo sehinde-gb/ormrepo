@@ -55,6 +55,11 @@ $primary-color: #f8f8f8;
   background-color: #f9f1dc !important;
 }
 
+.is--reset {
+  padding: 0;
+  margin: 0;
+}
+
 /* alignment */
 
 .is-flex {
@@ -179,6 +184,11 @@ $primary-color: #f8f8f8;
 
   .is--without {
     padding-top: 15px;
+  }
+
+  .is--reset {
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -327,6 +337,11 @@ $primary-color: #f8f8f8;
     padding-bottom: 20px;
   }
 
+  .is--reset {
+    padding: 0;
+    margin: 0;
+  }
+
 
 
 }
@@ -379,6 +394,11 @@ $primary-color: #f8f8f8;
 
   .is--padded-bottom {
     padding-bottom: 20px;
+  }
+
+  .is--reset {
+    padding: 0;
+    margin: 0;
   }
 
 
