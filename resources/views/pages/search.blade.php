@@ -5,20 +5,15 @@
 @section ('content')
 
     <div class="main-container">
-        <div class="middle-logo">
-            <img class="logo"
-                 src="/images/logo_medium.png"
-                 alt="The ormrepo thoughtful logo">
-        </div><!-- /.middle-logo -->
 
-        <div class="heading">
-            <h4 class="is--beige">Search Results</h4>
-        </div><!-- /.heading -->
+            <div class="search-container">
+                <div class="top-heading">
+                    <h4 class="is--beige">Search Results</h4>
+                </div><!-- /.heading -->
 
-            <div class="article-container">
-               <div class="left-container">
+                <div class="left-container">
                    @if (count($blogs) === 0)
-                       <p>No articles returned.</p>
+                       <p>Sorry your search didn't return any articles.</p>
                    @elseif (count($blogs) >= 1)
                         @foreach($blogs as $blog)
                            <article>

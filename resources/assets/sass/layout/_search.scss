@@ -1,3 +1,9 @@
+.search-container {
+  min-height: 1300px;
+  padding: 50px;
+  flex: 0 0 100%;
+}
+
 .section {
   background: #003434;
   padding: 0;
@@ -41,6 +47,12 @@
 }
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .search-container {
+    min-height: 1300px;
+    padding: 50px;
+    flex: 0 0 100%;
+  }
 
   .section {
     background: #003434;
@@ -87,6 +99,12 @@
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
+  .search-container {
+    min-height: 1300px;
+    padding: 30px;
+    flex: 0 1 100%;
+  }
+
   .section {
     background: #003434;
     padding: 0;
@@ -131,6 +149,18 @@
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
+
+  .search-container {
+    min-height: 1300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-container p {
+    color: $beige;
+  }
 
   .left-container p {
     color: $beige;
