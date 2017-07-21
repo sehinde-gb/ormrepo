@@ -16,7 +16,7 @@ require('./bootstrap');
  */
 
 Vue.component('message', require('./components/Message.vue'));
-//Vue.component('Ad', require('./components/Ad.vue'));
+
 
 
 const root = new Vue({
