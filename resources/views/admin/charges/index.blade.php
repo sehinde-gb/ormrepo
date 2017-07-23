@@ -58,13 +58,12 @@
                     @else
                         <div class="minus-container">
                             <p class="offline">Sorry no charges are available today</p>
-                        </div>
-                        <!-- /.minus-container -->
+                        </div><!-- /.minus-container -->
 
                     @endif
                 </div><!-- /.column-container -->
             </div><!-- /.featured -->
-        </div>
+        </div><!-- /.news-demo -->
 </div><!-- /.main-container -->
 
 @endsection

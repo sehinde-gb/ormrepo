@@ -15,16 +15,20 @@
             </div><!-- /.header -->
 
             <div class="row">
-                {!! Form::model($charge, ['route' => ['admin.charges.update', $charge->id], 'method' => 'PUT', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true]) !!}
-                {!! Form::hidden('id') !!}
-                @include('partials.errors')
-                @include('admin.charges.form', ['submitButtonText' => 'Update'])
-                {!! Form::close() !!}
+                @role('admin')
+                    {!! Form::model($charge, ['route' => ['admin.charges.update', $charge->id], 'method' => 'PUT', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true]) !!}
+                    {!! Form::hidden('id') !!}
+                    @include('partials.errors')
+                    @include('admin.charges.form', ['submitButtonText' => 'Update'])
+                    {!! Form::close() !!}
+                @endrole
             </div>
                 <div class="row">
-                    {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.charges.destroy', $charge->id]]) !!}
-                    {!! delete_form(['admin.charges.destroy', $charge->id]) !!}
-                    {!! Form::close() !!}
+                    @role('admin')
+                        {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.charges.destroy', $charge->id]]) !!}
+                        {!! delete_form(['admin.charges.destroy', $charge->id]) !!}
+                        {!! Form::close() !!}
+                    @endrole
                 </div><!-- /.form-group form-group-lg -->
             </div><!-- /.row -->
         </div><!-- /.register-fluid -->
