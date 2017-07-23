@@ -25,7 +25,7 @@ class BlogRequest extends FormRequest
     {
         return [
             'title' => 'required|min:3',
-            'excerpt' => 'required|min:3',
+            'series' => 'required|min:3',
             'body' => 'required',
             'published_at' => 'required',
             'feat_image' => 'required'

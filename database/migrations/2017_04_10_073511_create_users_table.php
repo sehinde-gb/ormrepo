@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->default(false);
             $table->string('email')->unique();
             $table->string('password', 60);
+            $table->string('slack_url')->nullable();
             $table->rememberToken();
             $table->string('stripe_id')->nullable();
             $table->string('card_brand')->nullable();

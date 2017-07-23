@@ -167,7 +167,7 @@ class ChargesController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the charge from storage.
      *
      * @param Charge $charge
      * @return Response

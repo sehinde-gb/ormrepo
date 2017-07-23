@@ -31,7 +31,7 @@
 
                         </div><!-- /.comment-container -->
                         <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
-                        <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
+                        <h2 class="blog--excerpt">{!! $blog->series !!}</h2>
                         <p>Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                         <p>Written by <small>Sehinde Raji</small></p>
                         <p class="is--beige is--lower">@markdown($blog->body)</p>

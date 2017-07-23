@@ -2,62 +2,72 @@
 
 namespace App\Notifications;
 
+use App\Blog;
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
-use NotificationChannels\OneSignal\OneSignalChannel;
-use NotificationChannels\OneSignal\OneSignalMessage;
-use NotificationChannels\OneSignal\OneSignalWebButton;
+use Illuminate\Notifications\Messages\SlackMessage;
 
 
-class BlogPublished extends Notification
+
+
+class BlogPublished extends Notification implements ShouldQueue
 {
     use Queueable;
 
     /**
+     * @var User
+     */
+    public $user;
+    /**
+     * @var Blog
+     */
+    public $blog;
+
+    /**
+     * BlogPublished constructor.
+     * @param User $user
+     * @param Blog $blog
+     */
+    public function __construct(User $user, Blog $blog)
+    {
+
+        $this->user = $user;
+        $this->blog = $blog;
+    }
+
+    /**
+     * Get the notification's delivery channels.
+     *
      * @param $notifiable
      * @return array
      */
     public function via($notifiable)
     {
-        return [OneSignalChannel::class];
+        return ['slack'];
     }
 
     /**
+     * Get the Slack representation of the notification.
      *
      * @param $notifiable
      * @return $this
      */
-    public function toOneSignal($notifiable)
+    public function toSlack($notifiable)
     {
-        return OneSignalMessage::create()
-            ->subject("Your {$notifiable->service} blog post was published!")
-            ->body("Click here to see details.")
-            ->url('https://ormrepo.co.uk')
-            ->webButton(
-                OneSignalWebButton::create('link-1')
-                    ->text('Click here')
-                    ->icon('https://ormrepo.co.uk/images/ormrepo-tiny.png')
-                    ->url('https://ormrepo.co.uk')
-            );
+        $blog = $this->blog;
+
+        return (new SlackMessage)
+            ->content('A new blog post was published ', $this->user->name)
+            ->attachment(function ($attachment) use ($blog) {
+                $attachment->title($blog->title, route('admin.blogs.show', $blog->id));
+            });
+
     }
 
 
-    /**
-     * Get the array representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return array
-     */
-    public function toArray($notifiable)
-    {
-        return [
-            'user_id' => $this->user->id,
-            'name' => $this->user->name,
-            'username' => $this->user->username,
-            'email' =>$this->user->email
-        ];
-    }
+
 }
 
 

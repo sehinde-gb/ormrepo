@@ -18,7 +18,7 @@ class Blog extends Model
     use  Sluggable, SluggableScopeHelpers, Searchable, Notifiable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
-    protected $fillable = ['title','excerpt', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
+    protected $fillable = ['title','series', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
 
 
     /**
@@ -65,27 +65,7 @@ class Blog extends Model
         return $this->hasMany(Comment::class);
     }
 
-    /**
-     * Search for the latest comments.
-     *
-     * @return mixed
-     */
-    public  function latestComment()
-    {
-        return $this->hasOne(Comment::class)->latest();
 
-    }
-
-
-    /**
-     * Load a threaded set of comments for the post.
-     *
-     *
-     */
-    public function getComments()
-    {
-        return $this->comments()->with('owner')->get()->threaded();
-    }
 
 
     /**
@@ -100,18 +80,7 @@ class Blog extends Model
     }
 
 
-    /**
-     * Add a comment to the blog.
-     *
-     * @param array $attributes
-     * @return Model
-     */
-    public function addComment($attributes)
-    {
-        $comment = (new Comment)->forceFill($attributes);
-        $comment->user_id = auth()->id();
-        return $this->comments()->save($comment);
-    }
+
 
     /**
      * Find the published articles in a query scope.
@@ -230,14 +199,14 @@ class Blog extends Model
     }
 
     /**
-     * Return the onesignal player id.
-     *
-     * @return string
+     * Specify a Slack webhook to send notifications to
+     * @return mixed
+     * @internal param $value
      */
-    public function routeNotificationForOneSignal()
-    {
-        return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
+    public function routeNotificationForSlack() {
+        //return env('SLACK_WEBHOOK_URL');
+        //return 'https://hooks.slack.com/services/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';
+        return $this->slack_url;
     }
-
 
 }

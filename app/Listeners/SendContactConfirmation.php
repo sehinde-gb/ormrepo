@@ -31,7 +31,7 @@ class SendContactConfirmation implements ShouldQueue
 
         $when = Carbon::now()->addMinutes(5);
 
-        Mail::to('ormrepo@gmail.com')
+        Mail::to('sehinde@ormrepo.co.uk')
             ->later($when, new ContactSent($event));
 
     }

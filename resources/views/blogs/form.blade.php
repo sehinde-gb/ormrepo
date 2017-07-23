@@ -8,8 +8,8 @@
 
 <!-- Excerpt -->
 <div class="form-group form-group-lg">
-    {!! Form::label('excerpt', 'Excerpt:', ['class' => 'control-label']) !!}
-    {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
+    {!! Form::label('series', 'Series:', ['class' => 'control-label']) !!}
+    {!! Form::text('series', null, ['class' => 'form-control']) !!}
 </div><!-- /.form-group -->
 
 <!-- Body Form Input -->

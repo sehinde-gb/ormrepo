@@ -33,7 +33,7 @@
                             </div><!-- /.comment-container -->
 
                             <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
-                            <h2 class="blog--excerpt">{!! $blog->excerpt !!}</h2>
+                            <h2 class="blog--excerpt">{!! $blog->series !!}</h2>
                             <div id="app">
 
                             </div>

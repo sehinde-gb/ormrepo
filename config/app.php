@@ -179,7 +179,7 @@ return [
         Spatie\Sitemap\SitemapServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
-        //App\Providers\PapertrailServiceProvider::class,
+
 
         /*
          * Application Service Providers...

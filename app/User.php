@@ -26,7 +26,7 @@ class User extends Authenticatable implements HasRoleContract
      *
      * @var array
      */
-    protected $fillable = ['username','name', 'email', 'password', 'password_confirmation'];
+    protected $fillable = ['username','name', 'email', 'password', 'password_confirmation', 'slack_url'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -101,13 +101,14 @@ class User extends Authenticatable implements HasRoleContract
 
 
     /**
-     * Return the onesignal player id.
+     * Route notifications for the Slack channel.
      *
      * @return string
      */
-    public function routeNotificationForOneSignal()
+    public function routeNotificationForSlack()
     {
-        return 'aaffc0f0-16b1-4477-a2bc-e1632c17bfc0';
+        //return 'https://hooks.slack.com/services/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';
+        return $this->slack_url;
     }
 
     /**

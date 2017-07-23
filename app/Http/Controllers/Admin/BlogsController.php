@@ -7,6 +7,8 @@ use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
 use App\Http\Requests\BlogRequest;
 use App\Blog;
+use App\Notifications\BlogPublished;
+use App\Notifications\BlogUpdated;
 use App\Tag;
 use Illuminate\Http\Request;
 use App\User;
@@ -14,6 +16,7 @@ use App\Http\Controllers\Controller;
 use App\Exceptions\HttpNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
+
 
 
 class BlogsController extends Controller
@@ -110,7 +113,6 @@ class BlogsController extends Controller
         $this->createBlog($request);
 
 
-
         return redirect('/admin/blogs');
     }
 
@@ -195,7 +197,9 @@ class BlogsController extends Controller
 
             $blog->update(request()->input());
 
-            event(new BlogWasUpdated($user));
+            event(new BlogWasUpdated($user, $blog));
+
+            $user->notify(new BlogUpdated($user, $blog));
 
             } catch (\Exception $e) {
 
@@ -261,11 +265,11 @@ class BlogsController extends Controller
             $tag_list = $request->input('tag_list');
         }
 
-
         $this->syncTags($blog, $tag_list);
 
-
         event(new BlogWasCreated($user));
+
+        $user->notify(new BlogPublished($user, $blog));
 
         $imageName = $blog->id . '.' .
             $request->file('feat_image')->getClientOriginalExtension();
