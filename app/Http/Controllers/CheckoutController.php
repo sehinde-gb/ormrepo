@@ -156,7 +156,6 @@ class CheckoutController extends Controller
 
             $orders->email = $user->email;
 
-
             $orders->save();
         }
 

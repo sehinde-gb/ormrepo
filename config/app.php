@@ -173,7 +173,6 @@ return [
         Roumen\Feed\FeedServiceProvider::class,
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
-        NotificationChannels\OneSignal\OneSignalServiceProvider::class,
         HttpOz\Roles\RolesServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,

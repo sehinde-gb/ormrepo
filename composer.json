@@ -15,7 +15,6 @@
         "laravel/scout": "3.0.0",
         "algolia/algoliasearch-client-php": "^1.12",
         "pusher/pusher-php-server": "^2.6",
-        "laravel-notification-channels/onesignal": "^1.0",
         "pda/pheanstalk": "~3.0",
         "laravel/browser-kit-testing": "^1.0",
         "laravel/dusk": "^1.0",
