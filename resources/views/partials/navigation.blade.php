@@ -28,7 +28,7 @@
                     <li><a href="/about" class="nav-items"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
                             About Us</a></li>
                     <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>Contact Us</a></li>
-                    <li><a href="/videos" class="nav-items not-active"><i class="fa fa-youtube" aria-hidden="true"></i>
+                    <li><a href="/videos" class="nav-items"><i class="fa fa-youtube" aria-hidden="true"></i>
                             Videos</a></li>
                     <li><a href="/login" class="nav-items"><i class="fa fa-user" aria-hidden="true"></i>
                             Login</a></li>
@@ -87,7 +87,7 @@
                             Store</a></li>
                     <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
                             Contact Us</a></li>
-                    <li><a href="/videos" class="nav-items not-active"><i class="fa fa-youtube" aria-hidden="true"></i>
+                    <li><a href="/videos" class="nav-items"><i class="fa fa-youtube" aria-hidden="true"></i>
                             Videos</a></li>
                     <li><a class="nav-items" href="{{ url('/logout') }}"
 

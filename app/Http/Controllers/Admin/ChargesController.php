@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Charge;
 use app\Exceptions\ChargeNotFoundException;
 use App\Http\Requests\ChargeRequest;
+use App\Notifications\ChargeCreated;
+use App\Notifications\ChargeUpdated;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -110,6 +112,8 @@ class ChargesController extends Controller
                 $charge->save();
             }
 
+            $user->notify(new ChargeCreated($user, $charge));
+
             return redirect()->route('admin.charges.index');
 
     }
@@ -160,7 +164,9 @@ class ChargesController extends Controller
 
         $charge->update($request->all());
 
-        //$user = auth()->user();
+        $user = auth()->user();
+
+        $user->notify(new ChargeUpdated($user, $charge));
 
         return redirect()->route('admin.charges.index');
 

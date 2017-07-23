@@ -20,11 +20,13 @@
 
 
         <div class="row">
-            @include('partials.errors')
-            {!! Form::open(array('route' => 'admin.charges.store', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true)) !!}
+            @role('admin')
+                {!! Form::open(array('route' => 'admin.charges.store', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true)) !!}
+                @include('partials.errors')
 
-            @include('admin.charges.form', ['submitButtonText' => 'Publish Charge'])
-            {!! Form::close() !!}
+                @include('admin.charges.form', ['submitButtonText' => 'Publish Charge'])
+                {!! Form::close() !!}
+            @endrole
         </div><!-- /.row -->
     </div><!-- /.register-fluid -->
 

@@ -19,7 +19,7 @@ class BlogsController extends Controller
      *
      * @param Request $request
      * @return \Illuminate\Http\Response
-     * @throws HttpNotFoundException
+     * @throws MethodNotFoundException
      */
 
     public function index(Request $request)
@@ -44,7 +44,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new HttpNotFoundException($e->getMessage());
+            throw new MethodNotFoundException($e->getMessage());
         }
 
         return view('blogs.index', compact('blogs', 'title'));
@@ -56,7 +56,7 @@ class BlogsController extends Controller
      *
      * @param Blog $blog
      * @return Response
-     * @throws HttpNotFoundException
+     * @throws MethodNotFoundException
      * @internal param $id
      * @internal param int $post
      */
@@ -72,7 +72,7 @@ class BlogsController extends Controller
 
             } catch (\Exception $e) {
 
-            throw new HttpNotFoundException($e->getMessage());
+            throw new MethodNotFoundException($e->getMessage());
 
         }
 
@@ -91,7 +91,7 @@ class BlogsController extends Controller
      *
      * @param $slug
      * @return \Illuminate\Http\Response
-     * @throws HttpNotFoundException
+     * @throws MethodNotFoundException
      */
 
     public function showSlug($slug)
@@ -103,7 +103,7 @@ class BlogsController extends Controller
 
         } catch (\Exception $e) {
 
-            throw new HttpNotFoundException($e->getMessage());
+            throw new MethodNotFoundException($e->getMessage());
         }
 
         return $this->show($blog);
