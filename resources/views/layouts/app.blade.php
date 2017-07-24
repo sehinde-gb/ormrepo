@@ -7,19 +7,6 @@
     <meta name="description" content="@yield('meta_description', 'The ormblog.')">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
-    <link rel="manifest" href="/manifest.json">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <script>
-        var OneSignal = window.OneSignal || [];
-        OneSignal.push(["init", {
-            appId: "aaffc0f0-16b1-4477-a2bc-e1632c17bfc0",
-            autoRegister: false,
-            notifyButton: {
-                enable: true /* Set to false to hide */
-            },
-            safari_web_id: 'web.onesignal.auto.4715199e-f86d-44ca-99ff-a9854a17e932'
-        }]);
-    </script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
