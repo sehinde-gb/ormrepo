@@ -2,7 +2,6 @@
 @include('partials.errors')
 
 
-
 <div class="form-group form-group-lg">
     {!! Form::label('title', 'Title:', ['class' => 'control-label']) !!}
     {!! Form::text('title', null, ['class' => 'form-control']) !!}

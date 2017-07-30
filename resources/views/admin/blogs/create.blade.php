@@ -21,11 +21,11 @@
                     <h4 class="leader is--black">Publish Blog</h4>
                 </div><!-- /.header -->
                 <div class="row">
+                    {!! Form::open(array('route' => 'admin.blogs.store', 'class' => 'form', 'novalidate' => 'novalidate', 'files' => true)) !!}
 
-                        {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}
                             @include('admin.blogs.form', ['submitButtonText' => 'Publish Blog'])
                         {!! Form::close() !!}
-                  
+
 
                 </div><!-- /.row -->
 
