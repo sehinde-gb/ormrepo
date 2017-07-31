@@ -33,16 +33,17 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param Exception $e
+     * @param Exception $exception
      * @return void
-     * @internal param Exception $exception
+     *
+     *
      */
-    public function report(Exception $e)
+    public function report(Exception $exception)
     {
-        if ($this->shouldReport($e)) {
+        if ($this->shouldReport($exception)) {
 
         }
-        return parent::report($e);
+        return parent::report($exception);
     }
 
     /**
@@ -56,30 +57,30 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
 
-        if ($e instanceof MethodNotFoundException) {
+        if ($exception instanceof MethodNotFoundException) {
             return response(view('errors.403'), 403);
 
-            return parent::render($request, $e);
+            return parent::render($request, $exception);
         }
 
 
-        if ($e instanceof HttpNotFoundException) {
+        if ($exception instanceof HttpNotFoundException) {
             return response(view('errors.404'), 404);
 
-            return parent::render($request, $e);
+            return parent::render($request, $exception);
         }
 
-        if ($e instanceof MethodNotAllowedException) {
+        if ($exception instanceof MethodNotAllowedException) {
             return response(view('errors.405'), 405);
 
-            return parent::render($request, $e);
+            return parent::render($request, $exception);
         }
 
 
         if ($e instanceof ChargeNotFoundException) {
             return response(view('errors.422'), 422);
 
-            return parent::render($request, $e);
+            return parent::render($request, $exception);
         }
 
 
