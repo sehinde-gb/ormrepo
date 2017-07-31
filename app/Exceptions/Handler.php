@@ -33,13 +33,14 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $exception
+     * @param Exception $e
      * @return void
+     * @internal param Exception $exception
      */
-    public function report(Exception $exception)
+    public function report(Exception $e)
     {
         if ($this->shouldReport($e)) {
-           
+
         }
         return parent::report($e);
     }
