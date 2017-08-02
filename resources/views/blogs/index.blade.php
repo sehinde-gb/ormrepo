@@ -32,8 +32,11 @@
 
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
-                        <div class="column is-one-quarter box-is-beige is-flex-bottom is-one">
-                            <h6 class="column-name">Sehinde Raji</h6>
+                        <div class="column is-one-quarter box-is-beige is-flex is-one">
+                            <div class="name-column">
+                                <h6 class="column-name">Sehinde Raji</h6>
+                                <h6 class="box--line">Web Developer</h6>
+                            </div><!-- /.name-column -->
                         </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-one-->
 
                         <div class="column is-one-quarter is-grey is-flex is-two has-text-centered">
@@ -65,7 +68,11 @@
 
                             @elseif($blog->id == 3)
                                 <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-tablet-only is-hidden-mobile">
-                                    <h6 class="box--line">Web Developer</h6>
+                                    <div class="name-column">
+                                        <h6 class="column-name">Karan Kanuga</h6>
+                                        <h6 class="box--line">Project Management & SEO</h6>
+                                    </div><!-- /.name-column -->
+
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
                                 <div class="column is-one-quarter is-dark-grey is-flex is-six">
                                     <div class="arrow">

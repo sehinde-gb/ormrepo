@@ -288,9 +288,11 @@ label {
   color: $secondary-color;
   font-weight: 700;
   line-height: 38px;
-  position: relative;
-  left: 60px;
-}
+  width: 100%;
+  //position: relative;
+  //bottom: 200px;
+  //left: 50px;
+ }
 
 .news--heading {
   font-family: $lato-bold;
@@ -332,9 +334,6 @@ label {
   text-transform: uppercase;
   color: $secondary-color;
   margin: 0;
-  position: relative;
-  right: 30px !important;
-  bottom: 120px;
 }
 
 .lower--box-text {
@@ -481,9 +480,11 @@ label {
     color: $secondary-color;
     font-weight: 700;
     line-height: 38px;
-    position: relative;
-    left: 60px;
-  }
+    width: 100%;
+    //position: relative;
+    //bottom: 200px;
+    //left: 50px;
+   }
 
   .blog--title {
     font-family: $roberto;
@@ -545,9 +546,7 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-    position: relative;
-    right: 30px !important;
-    bottom: 120px;
+
   }
 
   .lower--box-text {
@@ -715,8 +714,10 @@ label {
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
-    position: relative;
-    left: 80px;
+    width: 100%;
+    //position: relative;
+    //bottom: 200px;
+    //left: 50px;
  }
 
  .news--heading {
@@ -761,9 +762,7 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-    position: relative;
-    right: 30px;
-    bottom: 110px;
+
  }
 
  .lower--box-text {
@@ -930,8 +929,6 @@ label {
     font-weight: 700;
     line-height: 33px;
     text-align: center;
-    position: relative;
-    left: 70px;
  }
 
  .blog--title {
