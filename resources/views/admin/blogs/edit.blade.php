@@ -25,13 +25,13 @@
 
                     <div class="row">
 
-                       @role('admin')
+
 
                             {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                     @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
 
-                        @endrole
+                       
 
                     </div><!-- /.row -->
 
