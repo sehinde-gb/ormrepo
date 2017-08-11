@@ -27,7 +27,19 @@
                     <h5 class="is--beige is--capitals">Episode 2: How can we use mindfulness in our quest for creativity</h5>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/gczfKRNHCOs" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
+
+
             </div><!-- /.composite-container -->
+
+            <div class="composite-container">
+                <div class="single-container">
+                    <h4>Scaffolding the Front End Series</h4>
+                    <p>A series that showcases web development techniques using front end languages such as Javascript and Javascript frameworks such as Vuejs.</p>
+                    <h5 class="is--beige is--capitals">Episode 3: How can we use fonts responsively in mobile design</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0jvz6l-xb-c" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+            </div>
+            <!-- /.composite-container -->
         </div><!-- /.privacy-container -->
     </div><!-- /.main-container -->
 
