@@ -16,6 +16,10 @@ use App\Notifications\BlogPublished;
 
 Auth::routes();
 
+Route::get('/test', ['as' => 'test', 'uses' => 'HomesController@index']);
+
+Route::post('/test', ['as' => 'home_store', 'uses' => 'HomesController@store']);
+
 # Admin Boundary
 Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], function () {
 

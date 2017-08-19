@@ -16,12 +16,25 @@
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato-Bold.ttf');
+  font-family: 'Myriad Pro Regular';
+  src: url('/fonts/MyriadPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Regular';
   src: url('/fonts/Lato-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('/fonts/Lato-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Arial';
@@ -37,12 +50,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Vacer Serif Thin';
+  src: url('/fonts/VacerSerifThinPersonal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vacer Serif Bold';
+  src: url('/fonts/VacerSerifBoldPersonal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 $fira-sans: 'FiraSansSemiBold', 'Helvetica Normal', 'Arial', sans-serif;
 $lato: 'Lato Regular', 'Helvetica Normal', 'Arial', sans-serif;
+$lato-light: 'Lato Light';
 $lato-bold: "Lato Bold",  'Helvetica Normal', 'Arial', sans-serif;
 $montserrat: 'Montserrat Regular',  'Helvetica Normal', 'Arial', sans-serif;
 $montserrat-bold: 'Montserrat Bold',  'Helvetica Normal', 'Arial', sans-serif;
+$myriad-pro: 'Myriad Pro';
 $georgia: "Georgia Italic",  'Helvetica Normal', 'Arial', sans-serif;
 $roberto: 'Roboto',  'Helvetica Normal', 'Arial', sans-serif;
 $primary-color: #f8f8f8;
@@ -50,6 +79,7 @@ $secondary-color: #003434;
 $beige: #f9f1dc;
 $black: black;
 $white: #F8F8F8;
+$brown: #a4a4a4;
 
 body,
 h1,
@@ -178,19 +208,25 @@ a:focus {
 }
 
 p {
-  font-family: $roberto;
+  font-family: $lato-light;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 14px;
   line-height: 23px;
-  color: #F8F8F8;
+  color: $brown;
   text-transform: none !important;
+  text-align: center;
 }
 
 .body {
   color:  #f8f8f8;
 }
 
-
+.myriad {
+  font-family: $myriad-pro;
+  font-weight: 300;
+  font-size: 18px;
+  color: $white;
+}
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
@@ -216,6 +252,8 @@ p {
   padding: 0;
   margin: 0;
 }
+
+
 
 .cook-link {
   font-family: $roberto;

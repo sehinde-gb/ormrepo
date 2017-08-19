@@ -2,6 +2,68 @@ $montserrat: 'Montserrat Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-
 $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 
+.btn-tertiary,
+.btn-tertiary:active,
+.btn-tertiary:visited,
+.btn-tertiary:focus
+{
+  background-color: #003434;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  //box-shadow: 0 8px 6px -6px white;
+}
+
+.btn-white,
+.btn-white:active,
+.btn-white:visited,
+.btn-white:focus
+{
+  background-color: white;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+
+}
+
+
+.btn-off-white,
+.btn-off-white:active,
+.btn-off-white:visited,
+.btn-off-white:focus
+{
+  background-color: #f3f3f3;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+
+}
+
+
 .btn-primary,
 .btn-primary:active,
 .btn-primary:visited,
