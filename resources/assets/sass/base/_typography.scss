@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'FiraSans';
-  src: url('/fonts/FiraSans-LightItalic.otf');
-  src: url('/fonts/FiraSans-Regular.otf');
-  src: url('/fonts/FiraSans-SemiBold.otf');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: 'Montserrat';
@@ -21,31 +14,10 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Lato Regular';
-  src: url('/fonts/Lato-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Lato Light';
   src: url('/fonts/Lato-Light.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Arial';
-  src: url('/fonts/arial.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Georgia Italic';
-  src: url('/fonts/georgia-italic.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,6 +36,57 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('/fonts/Lato-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('/fonts/SourceSansPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('/fonts/SourceSansPro-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vacer Serif Thin';
+  src: url('/fonts/VacerSerifThinPersonal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vacer Serif Bold';
+  src: url('/fonts/VacerSerifBoldPersonal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$vacer-thin: 'Vacer Serif Thin';
+$vacer-bold: 'Vacer Serif Bold';
+$lato-bold: 'Lato Bold';
+$lato-regular: 'Lato Regular';
+$source-pro: 'Source Sans Pro';
+$source-light: 'Source Sans Pro Light';
+$beige: #f9f1dc;
+$black: #000000;
 
 $fira-sans: 'FiraSansSemiBold', 'Helvetica Normal', 'Arial', sans-serif;
 $lato: 'Lato Regular', 'Helvetica Normal', 'Arial', sans-serif;
@@ -224,9 +247,10 @@ p {
 .myriad {
   font-family: $myriad-pro;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125em;
   color: $white;
 }
+
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
@@ -438,6 +462,13 @@ label {
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .myriad {
+    font-family: $myriad-pro;
+    font-weight: 300;
+    font-size: 1.125em;
+    color: $white;
+  }
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -655,6 +686,12 @@ label {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
+  .myriad {
+    font-family: $myriad-pro;
+    font-weight: 300;
+    font-size: 1.250em;
+    color: $white;
+  }
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -868,6 +905,12 @@ label {
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
+  .myriad {
+    font-family: $myriad-pro;
+    font-weight: 300;
+    font-size: 1.250em;
+    color: $white;
+  }
 
   .intro-message > h1 {
     font-size: 3em;

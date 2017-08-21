@@ -1,85 +1,98 @@
 
-$fira-sans: 'FiraSansSemiBold',"Helvetica Neue",Helvetica,Arial,sans-serif;
-
 footer {
-  padding: 20px 0 !important;
-  background-color: #003434;
+  height: 270px;
+  background-color: #3c3c3c;
+  width: 100%;
+  padding: 20px 0;
 }
 
-
-.middle-logo {
+.footer-container {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
+.footer-border {
+  border: 1px solid #f9f1dc;
+}
+
+.footer-navigation ul {
+  display: flex;
+}
+
+.footer-navigation {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .foot-links {
-  color: #F9F1DC;
-  font-family: $fira-sans;
+  font-family: "Source Sans Pro Regular";
   font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 400;
+  color: #949494;
+  padding: 20px 15px;
 }
 
 .foot-links:hover {
-  color: #F9F1DC;
+  color: #ada074;
   text-decoration: none;
-  border-bottom: 2px solid #F9F1DC;
 }
 
-p.copyright {
-  color: #F9F1DC;
-  font-family: $fira-sans;
-  font-size: 12px;
-  margin: 15px 0 0;
-
+.img-responsive {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
-
-.disabled-link {
-  pointer-events: none;
-}
-
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   footer {
-    padding: 20px 0 !important;
-    background-color: #003434;
+    height: 270px;
+    background-color: #3c3c3c;
+    width: 100%;
+    padding: 20px 0;
   }
 
-
-
-
-  .middle-logo {
+  .footer-container {
     display: flex;
     align-content: center;
     justify-content: center;
   }
 
+  .footer-border {
+    border: 1px solid #f9f1dc;
+  }
+
+  .footer-navigation ul {
+    display: flex;
+  }
+
+  .footer-navigation {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .foot-links {
-    color: #F9F1DC;
-    font-family: $fira-sans;
+    font-family: "Source Sans Pro Regular";
     font-size: 14px;
-    text-transform: capitalize;
-    font-weight: 400;
+    color: #949494;
+    padding: 20px 15px;
   }
 
   .foot-links:hover {
-    color: #F9F1DC;
+    color: #ada074;
     text-decoration: none;
-    border-bottom: 2px solid #F9F1DC;
   }
 
-  p.copyright {
-    color: #F9F1DC;
-    font-family: $fira-sans;
-    font-size: 12px;
-    margin: 15px 0 0;
-
-  }
-
-  .disabled-link {
-    pointer-events: none;
+  .img-responsive {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
   }
 
  }
@@ -90,7 +103,6 @@ p.copyright {
     padding: 20px 0 !important;
     background-color: #003434;
   }
-
 
 
   .middle-logo {

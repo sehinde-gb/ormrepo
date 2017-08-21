@@ -19,7 +19,10 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   height: 50px;
   width: 150px;
   cursor: pointer;
-  //box-shadow: 0 8px 6px -6px white;
+}
+
+.btn-tertiary:hover {
+  color: #ada074;
 }
 
 .btn-white,
@@ -42,6 +45,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 
 }
 
+.btn-white:hover {
+  color: #ada074;
+}
+
+
 
 .btn-off-white,
 .btn-off-white:active,
@@ -61,6 +69,10 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   width: 150px;
   cursor: pointer;
 
+}
+
+.btn-off-white:hover {
+  color: #ada074;
 }
 
 

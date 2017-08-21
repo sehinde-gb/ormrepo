@@ -12,7 +12,7 @@
 */
 
 
-use App\Notifications\BlogPublished;
+
 
 Auth::routes();
 

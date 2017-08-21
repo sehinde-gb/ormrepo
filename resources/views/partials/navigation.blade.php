@@ -1,95 +1,47 @@
-<h7 id="top"></h7>
 <header role="banner">
-    <nav role="navigation" class="navigation">
+    <nav role="navigation" class="logo-left">
         @if (Auth::guest())
-            <div class="navigation-icon">
-                    <div class="menuIcon">
-                        <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </div><!-- /.menuIcon -->
-                    <div class="menu">
-                        <ul>
-                            <img class="nav_logo"
-                                 src="/images/logo/logo_large.png"
-                                 alt="The ormrepo thoughtful logo">
-                            <li ><a href="/blogs" class="nav-items hide">Home</a></li>
-                            <li><a href="/about" class="nav-items hide">About Us</a></li>
-                            <li><a href="/contact" class="nav-items hide">Contact Us</a></li>
-                            <li><a href="/login" class="nav-items hide">Login</a></li>
-                            <li><a href="/register" class="nav-items hide">Register</a></li>
-                        </ul>
-                    </div><!-- /.menu -->
-            </div><!-- /.nav-icon -->
+            <div class="logo-heading">
+                <h10>ORM</h10><h11>REPO</h11>
+            </div><!-- /.logo-heading -->
 
-            <div class="main-navigation">
+            <div class="menuIcon">
+                <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
+            </div><!-- /.menuIcon -->
+            <div class="menu">
                 <ul>
-                    <li ><a href="/blogs" class="nav-items"><i class="fa fa-home" aria-hidden="true"></i>
-                            Home</a></li>
-                    <li><a href="/about" class="nav-items"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                            About Us</a></li>
-                    <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>Contact Us</a></li>
-                    <li><a href="/videos" class="nav-items"><i class="fa fa-youtube" aria-hidden="true"></i>
-                            Videos</a></li>
-                    <li><a href="/login" class="nav-items"><i class="fa fa-user" aria-hidden="true"></i>
-                            Login</a></li>
-                    <li><a href="/register" class="nav-items"><i class="fa fa-user-plus" aria-hidden="true"></i>
-                            Register</a></li>
-
-                    <div class="form-search">
-                        {!! Form::open(['method' => 'GET']) !!}
-                        <span><i class="fa fa-search" name="search" aria-hidden="true">
-                        </i> </span>
-                        {!! Form::input('search', 'q', null, ['placeholder' => 'Search...', 'class' => 'search-box']) !!}
-                        {!! Form::close() !!}
-                    </div><!-- /.form-search -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
                 </ul>
-            </div><!-- /.main-navigation -->
+            </div><!-- /.right-menu -->
         @else
-            <div class="navigation-icon">
-                <div class="menuIcon">
-                    <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    </a>
-                </div><!-- /.menuIcon -->
-                <div class="menu">
-                    <ul>
-                        <img class="nav_logo"
-                             src="/images/logo/logo_large.png"
-                             alt="The ormrepo thoughtful logo">
 
-                        <li ><a href="/admin/blogs" class="nav-items hide">Home</a></li>
-                        <li><a href="/about" class="nav-items hide">About Us</a></li>
-                        <li><a href="/contact" class="nav-items hide">Contact Us</a></li>
+            <div class="logo-heading">
+                <h8>ORM</h8><h9>REPO</h9>
+            </div><!-- /.logo-heading -->
 
-                        <li><a class="nav-items hide" href="{{ url('/logout') }}"
-
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                Logout
-                            </a>
-                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                        </li>
-                    </ul>
-                </div><!-- /.menu -->
-            </div><!-- /.navigation-icon -->
+            <div class="menuIcon">
+                <a href="#menuExpand"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
+            </div><!-- /.menuIcon -->
 
 
-
-            <div class="main-navigation">
+            <div class="menu">
                 <ul>
-                    <li ><a href="/admin/blogs" class="nav-items"><i class="fa fa-home" aria-hidden="true"></i>
-                            Home</a></li>
-                    <li><a href="/about" class="nav-items"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-                    About Us</a></li>
-
-                    <li><a href="/admin/charges" class="nav-items not-active"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-                            Store</a></li>
-                    <li><a href="/contact" class="nav-items"><i class="fa fa-universal-access" aria-hidden="true"></i>
-                            Contact Us</a></li>
-                    <li><a href="/videos" class="nav-items"><i class="fa fa-youtube" aria-hidden="true"></i>
-                            Videos</a></li>
-                    <li><a class="nav-items" href="{{ url('/logout') }}"
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-user" aria-hidden="true"></i>
@@ -99,20 +51,13 @@
                             {{ csrf_field() }}
                         </form>
                     </li>
-                    <div class="form-search">
-                        {!! Form::open(['method' => 'GET']) !!}
-                        <span><i class="fa fa-search" name="search" aria-hidden="true">
-                        </i> </span>
-                        {!! Form::input('search', 'q', null, ['placeholder' => 'Search...', 'class' => 'search-box']) !!}
-                        {!! Form::close() !!}
-                    </div><!-- /.form-search -->
                 </ul>
-            </div><!-- /.main-navigation -->
+            </div><!-- /.right-menu -->
+
+
         @endif
-    </nav><!-- /.navigation -->
 
-
-
+    </nav>
 </header>
 
 

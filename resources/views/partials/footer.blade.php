@@ -1,13 +1,13 @@
 
 <!-- Footer -->
 <footer role="footer">
-    <div class="footer-container">
+    <div class="footer-logo">
         <div class="footer-border">
             <img
                     src="/images/assets/footer_logo.png"
                     alt="Mind logo">
         </div>
-        <!-- /.footer-border -->
+        <!-- /.footer-logo -->
 
 
 
@@ -24,10 +24,13 @@
                 <li><a href="/register" class="foot-links">Behance</a></li>
             </ul>
 
-        </div>
-        <!-- /.footer-navigation -->
+        </div><!-- /.footer-navigation -->
 
-    <p class="copyright text-muted small"> &copy; <?php echo date("Y"); ?>.  All Rights Reserved. Ormrepo.co.uk.</p>
+<div class="copyright">
+    <p class="copyright  small"> &copy; <?php echo date("Y"); ?>.  All Rights Reserved. Ormrepo.co.uk.</p>
+    <p class="copyright  small">Artwork designed by Riz Designs</p>
+</div>
+<!-- /.copyright -->
 
 
 
