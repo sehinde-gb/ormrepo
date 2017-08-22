@@ -34,7 +34,8 @@
             </div><!-- /.about-heading -->
 
                 <div class="read-container">
-                    <button type="submit" class="btn btn-white">Book Now</button>
+                    <a href="/bookings"><button type="submit" class="btn btn-white">Book Now</button></a>
+
                 </div><!-- /.read-container -->
 
                     <div class="who-container">
@@ -127,7 +128,13 @@
     </div><!-- /.portfolio-container -->
 
     <div class="grey-container">
+        <div class="alert-container">
+            <div id="root">
+                <!-- Using the Alert component -->
+                <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
 
+            </div><!-- /#app -->
+        </div><!-- /.alert-container -->
     </div><!-- /.grey-container -->
 
         <div class="contact-container">
@@ -166,7 +173,7 @@
                         </div><!-- /.mail-container -->
                     </div><!-- /.complete-container -->
 
-                    <div class="read-container">
+                    <div class="send-container">
                         {!! Form::submit('Send', array('class'=>'btn btn-tertiary')) !!}
                     </div><!-- /.read-container -->
 

@@ -16,9 +16,9 @@
 
 Auth::routes();
 
-Route::get('/test', ['as' => 'test', 'uses' => 'HomesController@index']);
+Route::get('/', ['as' => 'home', 'uses' => 'HomesController@index']);
 
-Route::post('/test', ['as' => 'home_store', 'uses' => 'HomesController@store']);
+Route::post('/', ['as' => 'home_store', 'uses' => 'HomesController@store']);
 
 # Admin Boundary
 Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], function () {
@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
     Route::resource('charges', 'ChargesController');
 
-    Route::get('/home', ['as' => 'home', 'uses' => 'BlogsController@index']);
+    //Route::get('/home', ['as' => 'home', 'uses' => 'BlogsController@index']);
 });
 
 # Checkout
@@ -39,7 +39,7 @@ Route::get('checkout/thankyou', ['as' => 'checkout.thankyou', 'uses' => 'Checkou
 # Blogs
 Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
 Route::resource('blogs', 'BlogsController', ['only' => ['index', 'show']]);
-Route::get('/', ['as' => 'home', 'uses' => 'BlogsController@index']);
+Route::get('/blogs', ['as' => 'blogs.index', 'uses' => 'BlogsController@index']);
 
 Route::get('/search/{query}', function($query) {
    return App\Blog::search($query)->get();
@@ -51,9 +51,11 @@ Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@contact']);
 Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
-Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
+Route::get('/cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
 Route::get('/videos', ['as' => 'videos', 'uses' => 'PagesController@videos']);
+Route::get('/bookings', ['as' => 'bookings', 'uses' => 'PagesController@bookings']);
+Route::get('/portfolio', ['as' => 'portfolio', 'uses' => 'PagesController@portfolio']);
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');

@@ -23,7 +23,7 @@
 </head>
 <body>
 
-    @include('partials.navigation')
+    @include('partials.navbar')
 
     @include('partials.status')
 

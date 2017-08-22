@@ -4,6 +4,9 @@
 
 @section('content')
 
+    <div class="breadcrumb-container">
+        {!! Breadcrumbs::render('blogs.index') !!}
+    </div><!-- /.breadcrumb-container -->
     <!-- Page Content -->
     <a name="introduction"></a>
     <div class="hero">
@@ -12,21 +15,19 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="collection">
-                            <img class="logo"
-                                 srcset="/images/hero/slider@1,5x.png 980w,
-                                        /images/hero/slider@1x.png 480w"
-                                 alt="The ormrepo thoughtful logo">
+                            <div class="logo-heading">
+                                <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
+                                <div class="statement">
+                                    <p class="myriad">We will empower you for all your customers needs</p>
+                                </div><!-- /.statement -->
+                            </div><!-- /.logo-heading -->
+
+
 
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
 
-                    <div class="alert-container">
-                        <div id="root">
-                            <!-- Using the Alert component -->
-                            <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
 
-                        </div><!-- /#app -->
-                    </div><!-- /.alert-container -->
 
 
 
@@ -34,8 +35,8 @@
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex is-one">
                             <div class="name-column">
-                                <h6 class="column-name">Sehinde Raji</h6>
-                                <h6 class="box--line">Web Developer</h6>
+                                <h6 class="box--name">Sehinde Raji</h6>
+                                <h6 class="box--title">Web Developer</h6>
                             </div><!-- /.name-column -->
                         </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-one-->
 
@@ -69,8 +70,8 @@
                             @elseif($blog->id == 3)
                                 <div class="column is-one-quarter box-is-beige is-flex is-five is-hidden-tablet-only is-hidden-mobile">
                                     <div class="name-column">
-                                        <h6 class="column-name">Karan Kanuga</h6>
-                                        <h6 class="box--line">Project Management & SEO</h6>
+                                        <h6 class="box--name">Karan Kanuga</h6>
+                                        <h6 class="box--title">Project Management & SEO</h6>
                                     </div><!-- /.name-column -->
 
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
@@ -180,146 +181,17 @@
                                 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                             </div>
                         </form>
-                    </div>
-
-                    <!--End mc_embed_signup-->
+                    </div><!--End mc_embed_signup-->
                 </div><!-- /.form-group -->
 
             </div><!-- /.subscribe -->
         </div><!-- /.newsletter-container -->
 
 
-        <!-- Header -->
-        <a name="about"></a>
-        <div class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-message">
-                            <h1 class="is--white">Sehinde Raji</h1>
-                            <h2 class="is--white-bottom">PHP (Laravel) Web Developer.</h2>
-
-                            <ul class="list-inline intro-social-buttons">
-                                <li>
-                                    <a href="https://twitter.com/ormrepo" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw is-aligned"></i> <span class="network-name">Twitter</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/ormrepo" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw is-aligned"></i> <span class="network-name">Github</span></a>
-                                </li>
 
 
-                                <li>
-                                    <a href="https://uk.linkedin.com/in/sehinde-raji-319457b" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw is-aligned"></i> <span class="network-name">Linkedin</span></a>
-                                </li>
-                            </ul>
-                        </div><!-- /.intro-message -->
-                    </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.intro-header -->
-
-        <a  name="services"></a>
-        <div class="content-section-b">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h4 class="is--black">Great Green Gooseberry<br>E-Commerce Eco Friendly Products</h4>
-                        <p class="section--body is--padding-bottom">This is a one stop shop e-commerce site that is concerned with protecting our environment through carbon offsets and LED lessons. This application was developed using Wordpress and there was a successful implementation of e-commerce receipts using third party vendors.</p>
-                        <ul class="project-links">
-                            <li><a href="https://greatgreengooseberry.club/" class="is--black">Link</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/showcase/macgoose.png" alt="Ipad containing Great Green Gooseberry artefacts.">
-                    </div><!-- /.col-lg-5 col-lg-offset-2 col-sm-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.intro-header -->
-
-        <div class="content-section-c">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h4 class="is--black">Casa Rental<br>Property website</h4>
-                        <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
-                        <ul class="project-links">
-                            <li><a href="https://casarental.ormrepo.co.uk/" class="is--black">Link</a></li>
-                        </ul>
-                    </div><!-- col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 -->
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/showcase/maccasa.jpg" alt="Ipad containing home rental screen.">
-                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.content-section-c -->
 
 
-        <div class="content-section-b">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h4 class="is--black">El Coche<br>Car Blog</h4>
-                        <p class="section--body is--padding-bottom">This is an car enthusiast blog. This website is currently being updated..</p>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="images/showcase/elcoche.png" alt="Ipad containing car blog app screen.">
-                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.intro-header -->
-
-        <div class="content-section-b">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h4 class="is--black">The GamesStation<br>Purchase game keys</h4>
-                        <p class="section--body is--padding-bottom">This is a website that was built as a test e-commerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
-                        <ul class="project-links">
-                            <li><a href="https://games.ormrepo.co.uk/" class="is--black">Link</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/showcase/macgame.jpg" alt="Mac screen containing gamesstation home screen.">
-                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.content-section-b -->
-
-        <div class="content-section-b">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-
-                        <h4 class="is--black">Book Now For<br>Initial Consultation</h4>
-                        <p class="section--body ">You may not have to pay a fee if an agreement has been arranged in advance.</p>
-
-                        <div id="TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG" ></div>
-                        <script src="//d3saea0ftg7bjt.cloudfront.net/bn/js/bn.min.js" type="text/javascript"></script>
-                        <script type="text/javascript">
-                            TTEBOOKNOW.init({
-                                "targetDivId": "TTE-booknow-BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG",
-                                "cpgn": "BT4WHhtNGM8JE-_RxI4zJQBQO21C2yOukJweeuVG"
-                            });
-                        </script>
-
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="images/showcase/geek.jpg" alt="Mac screen containing gamesstation home screen.">
-
-                    </div><!-- /.col-lg-5 col-sm-pull-6  col-sm- -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.content-section-b -->
     </div><!-- /.content-section-c -->
 
 @endsection

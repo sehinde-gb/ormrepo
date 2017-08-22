@@ -2,7 +2,7 @@
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #003434;
+  background-color: #f2f2f2;
   border-radius: 4px;
 }
 
@@ -10,7 +10,11 @@
   height: 40px;
   width: 100%;
   padding-left: 25px;
-  background-color: #003434;
+  background-color: #f2f2f2;
+}
+
+span {
+  text-indent: 0 !important;
 }
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -19,7 +23,7 @@
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #003434;
+    background-color: #f2f2f2;
     border-radius: 4px;
   }
 
@@ -27,8 +31,14 @@
     height: 40px;
     width: 100%;
     padding-left: 25px;
-    background-color: #003434;
+    background-color: #f2f2f2;
   }
+
+  span {
+    text-indent: 0 !important;
+  }
+
+
 
 }
 
@@ -38,7 +48,7 @@
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #003434;
+    background-color: #f2f2f2;
     border-radius: 4px;
   }
 
@@ -46,8 +56,13 @@
     height: 40px;
     width: 100%;
     padding-left: 25px;
-    background-color: #003434;
+    background-color: #f2f2f2;
   }
+
+  span {
+    text-indent: 0 !important;
+  }
+
 
 }
 
@@ -57,7 +72,7 @@
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #003434;
+    background-color: #f2f2f2;
     border-radius: 4px;
   }
 
@@ -65,7 +80,12 @@
     height: 40px;
     width: 100%;
     padding-left: 25px;
-    background-color: #003434;
+    background-color: #f2f2f2;
   }
+
+  span {
+    text-indent: 0 !important;
+  }
+
 
 }

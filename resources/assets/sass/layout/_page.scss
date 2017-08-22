@@ -15,18 +15,19 @@
 .privacy-container {
   min-height: 1000px;
   width: 100%;
-  background-color: #003434;
-  padding-left: 30px;
+  background-color: #F8F8F8;
+  padding: 40px;
   }
 
 
 .composite-container {
-  min-height: 800px;
+  min-height: 500px;
   padding-left: 8px;
   padding-top: 20px;
   display: flex;
   align-items: flex-start;
   justify-items: flex-start;
+  flex-wrap: wrap;
   flex: 0 0 100%;
 }
 
@@ -66,16 +67,17 @@
   .privacy-container {
     min-height: 1000px;
     width: 100%;
-    background-color: #003434;
-    padding-left: 30px;
+    background-color: #F8F8F8;
+    padding: 40px;
   }
 
   .composite-container {
-    min-height: 800px;
+    min-height: 500px;
     max-width: 100%;
     padding-left: 8px;
     padding-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-items: flex-start;
     flex: 0 1 100%;
@@ -119,8 +121,8 @@
   .privacy-container {
     min-height: 1000px;
     width: 100%;
-    background-color: #003434;
-    padding-left: 30px;
+    background-color: #F8F8F8;
+    padding: 40px;
   }
 
   .composite-container {
@@ -129,8 +131,9 @@
     padding-left: 8px;
     padding-top: 20px;
     display: flex;
-    align-items: flex-start;
-    justify-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+
   }
 
   .single-container {
@@ -155,7 +158,8 @@
   .privacy-container {
     min-height: 1000px;
     width: 100%;
-    background-color: #003434;
+    background-color: #F8F8F8;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +187,7 @@
   }
 
   .composite-container {
-    min-height: 800px;
+    min-height: 500px;
     width: 100%;
     padding-left: 8px;
     padding-top: 20px;
@@ -197,7 +201,6 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    border: 2px solid white;
   }
 
 }

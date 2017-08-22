@@ -13,6 +13,13 @@ Breadcrumbs::register('about', function($breadcrumbs)
     $breadcrumbs->push('About', route('about'));
 });
 
+// Home > Portfolio
+Breadcrumbs::register('portfolio', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('Portfolio', route('portfolio'));
+});
+
 // Home > Videos
 Breadcrumbs::register('videos', function($breadcrumbs)
 {

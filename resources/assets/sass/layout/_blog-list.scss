@@ -1,7 +1,7 @@
 
 /* Front page */
 .hero {
-  background-color: #003434;
+  background-color: #003434 !important;
   background-size: cover;
 }
 
@@ -30,6 +30,9 @@
 
 .collection {
   padding-bottom: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .columns {

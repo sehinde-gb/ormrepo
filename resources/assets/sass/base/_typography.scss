@@ -23,6 +23,13 @@
 }
 
 @font-face {
+  font-family: 'Georgia Italic';
+  src: url('/fonts/georgia-italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Vacer Serif Thin';
   src: url('/fonts/VacerSerifThinPersonal.ttf');
   font-weight: normal;
@@ -91,7 +98,7 @@ $black: #000000;
 $fira-sans: 'FiraSansSemiBold', 'Helvetica Normal', 'Arial', sans-serif;
 $lato: 'Lato Regular', 'Helvetica Normal', 'Arial', sans-serif;
 $lato-light: 'Lato Light';
-$lato-bold: "Lato Bold",  'Helvetica Normal', 'Arial', sans-serif;
+$lato-bold: "Lato Bold", sans-serif;
 $montserrat: 'Montserrat Regular',  'Helvetica Normal', 'Arial', sans-serif;
 $montserrat-bold: 'Montserrat Bold',  'Helvetica Normal', 'Arial', sans-serif;
 $myriad-pro: 'Myriad Pro';
@@ -111,15 +118,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $lato;
+  font-family: $lato-regular;
   font-weight: 700;
 }
 
 h1 {
-  font-family: $lato;
+  font-family: $lato-regular;
   font-weight: 700;
   text-transform: none !important;
-  color: $beige;
+  color: $black;
   font-size: 3em;
   line-height: 45px;
   padding-top: 10px;
@@ -129,7 +136,7 @@ h1 {
 h2 {
   font-family: $roberto;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 36px;
   text-transform: uppercase;
   color: #f9f1dc;
@@ -138,30 +145,32 @@ h2 {
 }
 
 h3 {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 700;
-  font-size: 1.17em;
-  line-height: 29px;
-  color: $beige;
-  margin: 0;
-  padding-bottom: 10px;
+  font-size: 1.5em;
+  //line-height: 42px;
+  text-transform: capitalize;
+  color:  #282828;
   padding-top: 10px;
+  margin: 0;
 }
 
 h4 {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 700;
-  font-size: 1.875em;
-  line-height: 42px;
-  text-transform: none !important;
-  color:  $beige;
-  padding-top: 10px;
+  font-size: 1.17em;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #282828;
   margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
 }
 
 h5 {
-  color: #f9f1dc;
-  font-family: $roberto;
+  color: #282828;
+  font-family: $lato-regular;
   font-size: 1em;
   line-height: 25px;
   margin: 0;
@@ -181,7 +190,7 @@ h6 {
 }
 
 h5 a {
-  font-family: $lato;
+  font-family: $lato-regular;
   font-weight: 700;
   font-size: 1em;
   line-height: 23px;
@@ -200,8 +209,9 @@ h6 a {
 }
 
 h6 a:hover {
-  color: #FF3B3F !important;
+  color: #ada074;
   text-decoration: none;
+  border: none;
 }
 
 h7 a {
@@ -214,11 +224,11 @@ h7 a {
 }
 
 a {
-  color: #F8F8F8;
+  color: black;
   }
 
 a:hover {
-  color: #FF3B3F;
+  color: #ada074;
   text-decoration: underline;
 }
 
@@ -232,13 +242,23 @@ a:focus {
 
 p {
   font-family: $lato-light;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 23px;
-  color: $brown;
+  color: #606060;
   text-transform: none !important;
-  text-align: center;
+  //text-align: center;
 }
+
+.date {
+  font-family: $lato-light;
+  font-weight: 600;
+  font-size: 10px;
+  //line-height: 23px;
+  color: $black;
+}
+
+
 
 .body {
   color:  #f8f8f8;
@@ -276,8 +296,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
-
 
 .cook-link {
   font-family: $roberto;
@@ -324,26 +342,15 @@ label {
 }
 
 .blog--title {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-size: 2.188em;
   line-height: 54px;
   font-weight: 900;
   text-transform: capitalize;
-  color: #F8F8F8;
+  color: $black;
 }
 
-.blog--excerpt {
-  font-family: $roberto;
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 32px;
-  text-transform: none;
-  color: $primary-color;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.column-name {
+.box--name {
   font-family: $lato-bold;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -351,10 +358,31 @@ label {
   font-weight: 700;
   line-height: 38px;
   width: 100%;
-  //position: relative;
-  //bottom: 200px;
-  //left: 50px;
- }
+
+}
+
+.box--title {
+  font-family: $georgia;
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin: 0;
+}
+
+.blog--excerpt {
+  font-family: $lato-bold;
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 32px;
+  text-transform: none;
+  color: $black;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+
 
 .news--heading {
   font-family: $lato-bold;
@@ -388,15 +416,7 @@ label {
   padding-top: 10px;
 }
 
-.box--line {
-  font-family: $roberto;
-  font-weight: 300;
-  font-size: 1.125em;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $secondary-color;
-  margin: 0;
-}
+
 
 .lower--box-text {
   font-family: $georgia;
@@ -542,7 +562,7 @@ label {
     padding-left: 30px;
   }
 
-  .column-name {
+  .box--name {
     font-family: $lato-bold;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -550,27 +570,25 @@ label {
     font-weight: 700;
     line-height: 38px;
     width: 100%;
-    //position: relative;
-    //bottom: 200px;
-    //left: 50px;
+
    }
 
   .blog--title {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-size: 2.188em;
     line-height: 54px;
     font-weight: 900;
     text-transform: capitalize;
-    color: #F8F8F8;
+    color: $black;
   }
 
   .blog--excerpt {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 700;
     font-size: 1.125em;
     line-height: 32px;
     text-transform: none;
-    color: $primary-color;
+    color: $black;
     margin: 0;
     padding-bottom: 10px;
   }
@@ -607,10 +625,10 @@ label {
     padding-top: 10px;
   }
 
-  .box--line {
-    font-family: $roberto;
+  .box--title {
+    font-family: $georgia;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.125em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -762,26 +780,26 @@ label {
   }
 
  .blog--title {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-size: 2.188em;
     line-height: 49px;
     font-weight: 900;
     text-transform: capitalize;
-    color: #F8F8F8;
+    color: $black;
  }
 
  .blog--excerpt {
-    font-family: $fira-sans;
+    font-family: $lato-bold;
     font-weight: 700;
     font-size: 1.125em;
     line-height: 30px;
     text-transform: none;
-    color: $primary-color;
+    color: $black;
     margin: 0;
     padding-bottom: 10px;
  }
 
- .column-name {
+ .box--name {
     font-family: $lato-bold;
     font-size: 1.500em;
     line-height: 36px;
@@ -790,10 +808,19 @@ label {
     font-weight: 700;
     line-height: 33px;
     width: 100%;
-    //position: relative;
-    //bottom: 200px;
-    //left: 50px;
+
  }
+
+  .box--title {
+    font-family: $georgia;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+
+  }
 
  .news--heading {
     font-family: $lato-bold;
@@ -829,16 +856,7 @@ label {
     padding-top: 10px;
  }
 
- .box--line {
-    font-family: $roberto;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    margin: 0;
 
- }
 
  .lower--box-text {
     font-family: $georgia;
@@ -885,7 +903,7 @@ label {
   }
 
   .section--title {
-    font-family: $lato;
+    font-family: $lato-regular;
     font-weight: 400;
     font-size: 1em;
     line-height: 28px;
@@ -991,19 +1009,19 @@ label {
     width: 100%;
  }
 
- .box--line {
+ .box--name {
     font-family: $montserrat-bold;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
  }
 
- .column-name {
-    font-family: $montserrat-bold;
-    font-size: 1.500em;
+ .box--title{
+    font-family: $georgia;
+    font-size: 1.125em;
     line-height: 34px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -1018,7 +1036,7 @@ label {
     line-height: 47px;
     font-weight: 900;
     text-transform: capitalize;
-    color: #F8F8F8;
+    color: $black;
  }
 
   .project-links {
