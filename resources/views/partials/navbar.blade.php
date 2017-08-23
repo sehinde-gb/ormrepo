@@ -22,7 +22,7 @@
         @else
 
             <div class="logo-heading">
-                <h8>ORM</h8><h9>REPO</h9>
+                <h10>ORM</h10><h11>REPO</h11>
             </div><!-- /.logo-heading -->
 
             <div class="menuIcon">
@@ -40,7 +40,7 @@
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><i class="fa fa-user" aria-hidden="true"></i>
+                                                     document.getElementById('logout-form').submit();">
                             Logout
                         </a>
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">

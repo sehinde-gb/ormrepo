@@ -35,6 +35,14 @@
                     <h5 class="is--black is--capitals">Episode 3: How can we use fonts responsively in mobile design</h5>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/0jvz6l-xb-c" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
+
+                <div class="single-container">
+                    <h4>Social Diversity Series</h4>
+                    <p>A series that focuses on how some organisations have been slow to evolve around the cultural, racial and social strategies within the tech sector.</p>
+                    <h5 class="is--black is--capitals">Episode 4: How Tech firms can use social mobility can enable opportunities for everyone instead of the privileged few</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A2x8wM0vNHo" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+
             </div>
             <!-- /.composite-container -->
         </div>

@@ -47,9 +47,7 @@ Route::get('/search/{query}', function($query) {
 
 
 #Static
-Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
-Route::get('/contact', ['as' => 'contact','uses' => 'PagesController@contact']);
-Route::post('/contact', ['as' => 'contact_store', 'uses' => 'PagesController@store']);
+
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('/cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);

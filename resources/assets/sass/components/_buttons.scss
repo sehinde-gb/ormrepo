@@ -1,11 +1,65 @@
-$montserrat: 'Montserrat Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('/fonts/Lato-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('/fonts/Montserrat-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$lato-bold: "Lato Bold", sans-serif;
+$lato-regular: "Lato Regular", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$montserrat-bold: "Montserrat Bold", sans-serif;
 
 
-.btn-tertiary,
-.btn-tertiary:active,
-.btn-tertiary:visited,
-.btn-tertiary:focus
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #F8F8F8;
+  outline: 0;
+  border: 0;
+  padding: 10px 15px;
+  color: #003434;
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: capitalize;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #636F57 !important;
+  color: #F8F8F8 !important;
+}
+
+
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus
 {
   background-color: #003434;
   outline: 0;
@@ -13,7 +67,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   border-radius: unset;
   padding: 10px 15px;
   color: white;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   text-transform: uppercase;
   height: 50px;
@@ -21,7 +75,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   cursor: pointer;
 }
 
-.btn-tertiary:hover {
+.btn-secondary:hover {
   color: #ada074;
 }
 
@@ -36,7 +90,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   border-radius: unset;
   padding: 10px 15px;
   color: black;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   text-transform: uppercase;
   height: 50px;
@@ -49,8 +103,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #ada074;
 }
 
-
-
 .btn-off-white,
 .btn-off-white:active,
 .btn-off-white:visited,
@@ -62,7 +114,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   border-radius: unset;
   padding: 10px 15px;
   color: black;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   text-transform: uppercase;
   height: 50px;
@@ -76,51 +128,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 }
 
 
-.btn-primary,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-  background-color: #F8F8F8;
-  outline: 0;
-  border: 0;
-  padding: 10px 15px;
-  color: #003434;
-  font-family: 'Lato Regular', sans-serif;
-  font-size: 14px;
-  text-transform: capitalize;
-  height: 50px;
-  width: 200px;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #636F57 !important;
-  color: #F8F8F8 !important;
-}
-
-.btn-secondary,
-.btn-secondary:active,
-.btn-secondary:visited,
-.btn-secondary:focus  {
-  background-color: #003434;
-  outline: 0;
-  border: 0;
-  padding: 10px 15px;
-  color: white;
-  font-family: 'Lato Regular', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 50px;
-  width: 250px;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.btn-secondary:hover {
-  background-color: #bbbbbb !important;
-  color: white !important;
-}
-
 .btn-small,
 .btn-small:active,
 .btn-small:visited,
@@ -129,7 +136,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #003434;
   border: 0;
   outline: 0;
-  font-family: $lato;
+  font-family: $lato-bold;
   font-size: 14px;
   height: 25px;
   width: 50px;
@@ -147,7 +154,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #003434;
   border: 0;
   outline: 0;
-  font-family: $lato;
+  font-family: $lato-bold;
   font-size: 14px;
   height: 25px;
   width: 50px;
@@ -165,7 +172,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   outline: 0;
   padding: 10px 15px;
   color: white;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   text-transform: uppercase;
   height: 50px;
@@ -185,7 +192,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 .btn-add:focus {
   background-color: #717171;
   color: #ffffff;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   height: 40px;
   width: 80px;
@@ -205,7 +212,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   outline: 0;
   border: 0;
   color: white;
-  font-family: $lato;
+  font-family: $lato-bold;
   font-size: 10px;
   height: 30px;
   width: 75px;
@@ -228,7 +235,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   border: 0;
   padding: 10px 15px;
   color: #595959;
-  font-family: 'Lato Regular', sans-serif;
+  font-family: $lato-bold;
   font-size: 14px;
   text-transform: capitalize;
   height: 50px;
@@ -241,14 +248,13 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   color: #F8F8F8 !important;
 }
 
-
 .btn-link {
   margin-left: 250px;
-  color: #003434;
+  color: black;
 }
 
 .btn-link:hover {
-  color: #FF3B3F !important;
+  color: #ada074 !important;
 }
 
 .button-group {
@@ -263,13 +269,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   align-content: center;
   justify-content: center;
   margin-top: 20px;
-}
-
-.banner {
-  padding: 100px 0;
-  color: #f8f8f8;
-  background: url(../images/banner-bg.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 .banner ul {
@@ -297,7 +296,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     border: 0;
     padding: 10px 15px;
     color: #003434;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
@@ -310,29 +309,78 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #F8F8F8 !important;
   }
 
+
+
   .btn-secondary,
   .btn-secondary:active,
   .btn-secondary:visited,
-  .btn-secondary:focus  {
+  .btn-secondary:focus
+  {
     background-color: #003434;
     outline: 0;
-    border: 0;
+    border: 1px solid white;
+    border-radius: unset;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 250px;
+    width: 150px;
     cursor: pointer;
-    margin: 5px;
   }
 
   .btn-secondary:hover {
-    background-color: #bbbbbb !important;
-    color: white !important;
+    color: #ada074;
   }
 
+  .btn-white,
+  .btn-white:active,
+  .btn-white:visited,
+  .btn-white:focus
+  {
+    background-color: white;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+
+  }
+
+  .btn-white:hover {
+    color: #ada074;
+  }
+
+  .btn-off-white,
+  .btn-off-white:active,
+  .btn-off-white:visited,
+  .btn-off-white:focus
+  {
+    background-color: #f3f3f3;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+
+  }
+
+  .btn-off-white:hover {
+    color: #ada074;
+  }
 
   .btn-small,
   .btn-small:active,
@@ -342,7 +390,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #003434;
     border: 0;
     outline: 0;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 25px;
     width: 50px;
@@ -360,7 +408,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #003434;
     border: 0;
     outline: 0;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 25px;
     width: 50px;
@@ -378,7 +426,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     outline: 0;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
@@ -398,7 +446,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-add:focus {
     background-color: #717171;
     color: #ffffff;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 40px;
     width: 80px;
@@ -418,7 +466,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     outline: 0;
     border: 0;
     color: white;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 10px;
     height: 30px;
     width: 75px;
@@ -441,7 +489,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     border: 0;
     padding: 10px 15px;
     color: #595959;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
@@ -456,11 +504,11 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
 
   .btn-link {
     margin-left: 250px;
-    color: #003434;
+    color: black;
   }
 
   .btn-link:hover {
-    color: #FF3B3F !important;
+    color: #ada074 !important;
   }
 
   .button-group {
@@ -477,12 +525,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     margin-top: 20px;
   }
 
-  .banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../images/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
-  }
 
   .banner ul {
     margin-bottom: 0;
@@ -511,7 +553,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     border: 0;
     padding: 10px 15px;
     color: #003434;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
@@ -524,27 +566,77 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #F8F8F8 !important;
   }
 
+
+
   .btn-secondary,
   .btn-secondary:active,
   .btn-secondary:visited,
-  .btn-secondary:focus  {
+  .btn-secondary:focus
+  {
     background-color: #003434;
     outline: 0;
-    border: 0;
+    border: 1px solid white;
+    border-radius: unset;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 250px;
+    width: 150px;
     cursor: pointer;
-    margin: 5px;
   }
 
   .btn-secondary:hover {
-    background-color: #bbbbbb !important;
-    color: white !important;
+    color: #ada074;
+  }
+
+  .btn-white,
+  .btn-white:active,
+  .btn-white:visited,
+  .btn-white:focus
+  {
+    background-color: white;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+
+  }
+
+  .btn-white:hover {
+    color: #ada074;
+  }
+
+  .btn-off-white,
+  .btn-off-white:active,
+  .btn-off-white:visited,
+  .btn-off-white:focus
+  {
+    background-color: #f3f3f3;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+
+  }
+
+  .btn-off-white:hover {
+    color: #ada074;
   }
 
 
@@ -556,7 +648,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #003434;
     border: 0;
     outline: 0;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 25px;
     width: 50px;
@@ -574,7 +666,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: #003434;
     border: 0;
     outline: 0;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 25px;
     width: 50px;
@@ -592,7 +684,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     outline: 0;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
@@ -612,7 +704,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-add:focus {
     background-color: #717171;
     color: #ffffff;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     height: 40px;
     width: 80px;
@@ -632,7 +724,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     outline: 0;
     border: 0;
     color: white;
-    font-family: $lato;
+    font-family: $lato-bold;
     font-size: 10px;
     height: 30px;
     width: 75px;
@@ -646,16 +738,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     color: whitesmoke !important;
   }
 
-  .btn-link {
-    margin-left: 250px;
-    color: #003434;
-  }
-
-  .btn-link:hover {
-    color: #FF3B3F !important;
-  }
-
-
   .btn-buy,
   .btn-buy:active,
   .btn-buy:visited,
@@ -665,7 +747,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     border: 0;
     padding: 10px 15px;
     color: #595959;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
@@ -677,6 +759,16 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     background-color: #636F57 !important;
     color: #F8F8F8 !important;
   }
+
+  .btn-link {
+    margin-left: 250px;
+    color: black;
+  }
+
+  .btn-link:hover {
+    color: #ada074 !important;
+  }
+
 
   .button-group {
     display: flex;
@@ -690,13 +782,6 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     align-content: center;
     justify-content: center;
     margin-top: 20px;
-  }
-
-  .banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../images/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
   }
 
   .banner ul {
@@ -725,7 +810,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     padding: 10px 15px;
     margin-left: 20px;
     color: #003434;
-    font-family: $montserrat;
+    font-family: $montserrat-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
@@ -741,24 +826,26 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-secondary,
   .btn-secondary:active,
   .btn-secondary:visited,
-  .btn-secondary:focus {
+  .btn-secondary:focus
+  {
     background-color: #003434;
     outline: 0;
-    border: 0;
+    border: 1px solid white;
+    border-radius: unset;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $lato-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 350px;
+    width: 150px;
     cursor: pointer;
   }
 
   .btn-secondary:hover {
-    background-color: #bbbbbb !important;
-    color: white !important;
+    color: #ada074;
   }
+
 
   .btn-danger,
   .btn-danger:active,
@@ -770,7 +857,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     outline: 0;
     padding: 10px 15px;
     color: white;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $montserrat-bold;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
@@ -790,7 +877,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
   .btn-add:focus {
     background-color: #717171;
     color: #ffffff;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $montserrat-bold;
     font-size: 14px;
     height: 40px;
     width: 80px;
@@ -815,7 +902,7 @@ $montserrat-bold: 'Montserrat Bold', 'Helvetica Neue', 'Helvetica', 'Arial', san
     border: 0;
     padding: 10px 15px;
     color: #595959;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: $montserrat-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;

@@ -5,7 +5,7 @@
         <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
         <div class="orm-body">
             <h4 class="alert-notify">{{ body }}
-                <a href="https://ormrepo.co.uk/cookie" class="cook-link">Click here to find out more</a>
+                <a href="https://ormrepo.co.uk/cookie" class="find-link">Click here to find out more</a>
                 
                 </h4>
         

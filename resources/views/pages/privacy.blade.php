@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'Privacy Policy')
+@section('meta-title', 'Our Privacy Policy')
 
 @section('content')
 
@@ -12,10 +12,10 @@
             <div class="privacy-container">
                 <div class="heading">
                     <div class="featured-image">
-                        <img class="img-responsive" src="images/conditions/padlock-300.png" alt="padlock picture">
+                        <img class="standard" src="images/conditions/padlock-300.png" alt="padlock picture">
                     </div><!-- /.featured-image -->
 
-                    <h1 class="blog--title is--padded-top-40 is--beige">Privacy Policy</h1>
+                    <h1 class="blog--title is--padded-top-40 is--black-grey">Privacy Policy</h1>
                     <h2 class="blog--excerpt">What is this privacy policy for?</h2>
                     <p class="is--lower">This privacy policy is for this website www.ormrepo.co.uk and served by Ormrepo and governs the privacy of its users who choose to use it.</p>
 

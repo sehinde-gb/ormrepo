@@ -11,11 +11,11 @@
                 </div><!-- /.logo-heading -->
 
             <div class="statement">
-                <p class="myriad">We will empower you for all your customers needs</p>
+                <p class="tagline">We will empower you for all your customers needs</p>
             </div><!-- /.statement -->
 
             <div class="read-container">
-                <a href="#about"><button type="submit" class="btn btn-tertiary">Read More</button></a>
+                <a href="#about"><button type="submit" class="btn btn-secondary">Read More</button></a>
             </div><!-- /.read-container -->
 
             <div class="jump-to-about">
@@ -150,12 +150,12 @@
 
                     <div class="named-container">
                         <div class="description">
-                            {!! Form::label('Your Name', 'Your Name:', ['class' => 'control']) !!}
+                            {!! Form::label('Your Name', 'Your Name:', ['class' => 'is--beige control']) !!}
                             {!! Form::text('name', null, ['class' => 'form', 'placeholder' => 'Name']) !!}
                         </div><!-- /.test -->
 
                         <div class="description">
-                            {!! Form::label('Your Email Address', 'Email Address:', ['class' => 'control']) !!}
+                            {!! Form::label('Your Email Address', 'Email Address:', ['class' => 'is--beige control']) !!}
                             {!! Form::text('email', null, ['class' => 'form', 'placeholder' => 'Email Address']) !!}
                         </div><!-- /.test -->
 
@@ -163,7 +163,7 @@
 
                     <div class="complete-container">
                         <div class="description-container">
-                            {!! Form::label('user_message', 'Message:', ['class' => 'control']) !!}
+                            {!! Form::label('user_message', 'Message:', ['class' => 'is--beige control']) !!}
                             {!! Form::textarea('user_message', null, ['class' => 'form-control', 'placeholder' => 'Your Message']) !!}
                         </div><!-- /.description-container -->
                         <div class="mail-container">
@@ -174,7 +174,7 @@
                     </div><!-- /.complete-container -->
 
                     <div class="send-container">
-                        {!! Form::submit('Send', array('class'=>'btn btn-tertiary')) !!}
+                        {!! Form::submit('Send', array('class'=>'btn btn-secondary')) !!}
                     </div><!-- /.read-container -->
 
                 {!! Form::close() !!}

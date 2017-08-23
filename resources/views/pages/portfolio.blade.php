@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'Cookie Policy')
+@section('meta-title', 'Our Portfolio')
 
 @section('content')
 

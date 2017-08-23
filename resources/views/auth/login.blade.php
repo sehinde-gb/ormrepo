@@ -5,15 +5,9 @@
 @section('content')
     <div class="form-page">
         <div class="login-fluid">
-                <div class="logo-container">
-                    <div class="own-logo">
-                        <img class="bordered-logo"
-                             src="/images/logo/logo_small.png"
-                             alt="The ormrepo thoughtful logo">
-                    </div><!-- /.own-logo -->
-                </div><!-- /.logo-container -->
+
                 <div class="header">
-                    <h4 class="leader is--black">Sign In</h4>
+                    <h2 class="leader is--black">Sign In</h2>
                 </div><!-- /.header -->
                 <div class="row">
 
@@ -22,7 +16,7 @@
                         @include ('partials.errors')
                         <div class="form-group form-group-lg">
                             <label for="input1" class="control-label">E-Mail Address</label>
-                            <input autofocus id="email" type="email" name="email" class="form-control" value="{{ old('email') }}">
+                            <input autofocus id="email" type="email" name="email" class="form-auth" value="{{ old('email') }}">
                         </div><!-- /.form-group form-group-lg -->
                         <div class="form-group form-group-lg">
                             <ul>

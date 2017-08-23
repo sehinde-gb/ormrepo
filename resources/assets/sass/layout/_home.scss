@@ -1,125 +1,6 @@
 
-
-@font-face {
-  font-family: 'Lato Bold';
-  src: url('/fonts/Lato-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato Regular';
-  src: url('/fonts/Lato-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro Regular';
-  src: url('/fonts/SourceSansPro-Regular.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro Light';
-  src: url('/fonts/SourceSansPro-Light.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vacer Serif Thin';
-  src: url('/fonts/VacerSerifThinPersonal.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vacer Serif Bold';
-  src: url('/fonts/VacerSerifBoldPersonal.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-$vacer-thin: 'Vacer Serif Thin';
-$vacer-bold: 'Vacer Serif Bold';
-$lato-bold: 'Lato Bold';
-$lato-regular: 'Lato Regular';
-$source-pro: 'Source Sans Pro';
-$source-light: 'Source Sans Pro Light';
 $beige: #f9f1dc;
 $black: #000000;
-
-
-
-h8 {
-  font-family: $vacer-thin;
-  font-weight: 200;
-  font-size: 18vw;
-  color: $beige;
-}
-
-h9 {
-  font-family: $vacer-bold;
-  font-weight: 200;
-  font-size: 18vw;
-  color: $beige;
-}
-
-h10 {
-  font-family: $vacer-thin;
-  font-weight: 200;
-  font-size: 1.8750em;
-  color: $black;
-}
-
-h11 {
-  font-family: $vacer-bold;
-  font-weight: 200;
-  font-size: 1.8750em;
-  color: $black;
-}
-
-h12 {
-  font-family: $lato-bold;
-  font-weight: 200;
-  font-size: 3vw;
-  text-transform: uppercase;
-  color: $black;
-}
-
-h13 {
-  font-family: $lato-bold;
-  font-weight: 200;
-  font-size: 3vw;
-  //font-size: 34px;
-  text-transform: uppercase;
-  color: $black;
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
-}
-
-h14 {
-  font-family: $lato-regular;
-  font-weight: 200;
-  font-size: 26px;
-  text-transform: uppercase;
-  color: $black;
-  padding-bottom: 15px;
-}
-
-h15 {
-  font-family: $lato-bold;
-  font-weight: 200;
-  font-size: 3vw;
-  text-transform: uppercase;
-  color: $beige;
-  border-bottom: 1px solid $beige;
-  padding-bottom: 20px;
-}
 
 
 .hero-container {
@@ -155,7 +36,6 @@ span.underlined {
   align-items: center;
   justify-items: center;
 }
-
 
 
 .about-heading {
@@ -306,12 +186,6 @@ span {
   margin-right: 20px;
 }
 
-label {
-  font-family: $lato-bold;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .control {
   display: flex;
   width: 200px;
@@ -336,9 +210,6 @@ textarea.form-control {
 .mail-container {
   padding-left: 50px;
 }
-
-
-
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -377,8 +248,6 @@ textarea.form-control {
     align-items: center;
     justify-items: center;
   }
-
-
 
   .about-heading {
     padding-top: 70px;
@@ -495,7 +364,6 @@ textarea.form-control {
     margin-left: 15px;
   }
 
-
   .grey-container {
     padding-top: 150px;
     height: 390px;
@@ -528,12 +396,6 @@ textarea.form-control {
     margin-right: 20px;
   }
 
-  label {
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
   .control {
     display: flex;
     width: 200px;
@@ -558,8 +420,6 @@ textarea.form-control {
   .mail-container {
     padding-left: 50px;
   }
-
-
 
   .send-container {
     padding-top: 150px;
@@ -603,8 +463,6 @@ textarea.form-control {
     justify-items: center;
   }
 
-
-
   .about-heading {
     padding-top: 70px;
   }
@@ -719,7 +577,6 @@ textarea.form-control {
     background-color: #ececec;
     margin-left: 15px;
   }
-
 
   .grey-container {
     padding-top: 150px;
@@ -772,12 +629,6 @@ textarea.form-control {
     margin-right: 20px;
   }
 
-  label {
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
   .control {
     display: flex;
     width: 200px;
@@ -787,15 +638,9 @@ textarea.form-control {
     width: 45%;
   }
 
-
-
   textarea.form-control {
     width: 420px;
   }
-
-
-
-
 
   .send-container {
     margin: 0;
@@ -805,25 +650,9 @@ textarea.form-control {
     justify-content: center;
   }
 
-
-
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
-
-  h8 {
-    font-family: $vacer-thin;
-    font-weight: 200;
-    font-size: 26vw;
-    color: $beige;
-  }
-
-  h9 {
-    font-family: $vacer-bold;
-    font-weight: 200;
-    font-size: 26vw;
-    color: $beige;
-  }
 
   .hero-container {
     width: 100vw;
@@ -857,8 +686,6 @@ textarea.form-control {
     align-items: center;
     justify-items: center;
   }
-
-
 
   .about-heading {
     padding-top: 70px;
@@ -1032,12 +859,6 @@ textarea.form-control {
     padding: 0;
   }
 
-  label {
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
   .control {
     display: flex;
     width: 300px;
@@ -1061,49 +882,11 @@ textarea.form-control {
     padding-left: 0;
   }
 
-
-  p.copyright {
-    font-family: $source-light;
-    font-size: 14px;
-    color: #949494;
-  }
-
   .send-container {
     padding-top: 150px;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-
-
-  h12 {
-    font-family: $lato-bold;
-    font-weight: 200;
-    font-size: 7vw;
-    text-transform: uppercase;
-    color: $black;
-  }
-
-  h13 {
-    font-family: $lato-bold;
-    font-weight: 200;
-    font-size: 7vw;
-    //font-size: 34px;
-    text-transform: uppercase;
-    color: $black;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-  }
-
-  h15 {
-    font-family: $lato-bold;
-    font-weight: 200;
-    font-size: 7vw;
-    text-transform: uppercase;
-    color: $beige;
-    border-bottom: 1px solid $beige;
-    padding-bottom: 20px;
-  }
-
 
 }

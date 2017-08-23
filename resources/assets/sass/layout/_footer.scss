@@ -60,6 +60,13 @@ footer {
   text-decoration: none;
 }
 
+.footer-centre {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .img-responsive {
   min-width: 100%;
   min-height: 100%;
@@ -114,6 +121,13 @@ footer {
     min-height: 100%;
     width: auto;
     height: auto;
+  }
+
+  .footer-centre {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
  }
@@ -174,6 +188,13 @@ footer {
     font-family: $source-light;
     font-size: 14px;
     color: #949494;
+  }
+
+  .footer-centre {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -236,6 +257,13 @@ footer {
     min-height: 100%;
     width: auto;
     height: auto;
+  }
+
+  .footer-centre {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }

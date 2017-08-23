@@ -1,28 +1,6 @@
 
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Regular.ttf');
-  src: url('/fonts/Montserrat-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Myriad Pro Regular';
-  src: url('/fonts/MyriadPro-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato Light';
-  src: url('/fonts/Lato-Light.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Georgia Italic';
   src: url('/fonts/georgia-italic.ttf');
   font-weight: normal;
@@ -30,15 +8,8 @@
 }
 
 @font-face {
-  font-family: 'Vacer Serif Thin';
-  src: url('/fonts/VacerSerifThinPersonal.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vacer Serif Bold';
-  src: url('/fonts/VacerSerifBoldPersonal.ttf');
+  font-family: 'Lato Light';
+  src: url('/fonts/Lato-Light.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,6 +24,27 @@
 @font-face {
   font-family: 'Lato Regular';
   src: url('/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('/fonts/Montserrat-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('/fonts/MyriadPro-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -86,28 +78,21 @@
 }
 
 
-$vacer-thin: 'Vacer Serif Thin';
-$vacer-bold: 'Vacer Serif Bold';
-$lato-bold: 'Lato Bold';
-$lato-regular: 'Lato Regular';
-$source-pro: 'Source Sans Pro';
-$source-light: 'Source Sans Pro Light';
+$georgia: "Georgia Italic", sans-serif;
+$lato-bold: 'Lato Bold', sans-serif;
+$lato-regular: 'Lato Regular', sans-serif;
+$lato-light: 'Lato Light', sans-serif;
+$montserrat: 'Montserrat Regular', sans-serif;
+$montserrat-bold: 'Montserrat Bold', sans-serif;
+$myriad-pro: 'Myriad Pro', sans-serif;
+$source-pro: 'Source Sans Pro', sans-serif;
+$source-light: 'Source Sans Pro Light', sans-serif;
+$vacer-thin: 'Vacer Serif Thin', sans-serif;
+$vacer-bold: 'Vacer Serif Bold', sans-serif;
 $beige: #f9f1dc;
 $black: #000000;
-
-$fira-sans: 'FiraSansSemiBold', 'Helvetica Normal', 'Arial', sans-serif;
-$lato: 'Lato Regular', 'Helvetica Normal', 'Arial', sans-serif;
-$lato-light: 'Lato Light';
-$lato-bold: "Lato Bold", sans-serif;
-$montserrat: 'Montserrat Regular',  'Helvetica Normal', 'Arial', sans-serif;
-$montserrat-bold: 'Montserrat Bold',  'Helvetica Normal', 'Arial', sans-serif;
-$myriad-pro: 'Myriad Pro';
-$georgia: "Georgia Italic",  'Helvetica Normal', 'Arial', sans-serif;
-$roberto: 'Roboto',  'Helvetica Normal', 'Arial', sans-serif;
 $primary-color: #f8f8f8;
 $secondary-color: #003434;
-$beige: #f9f1dc;
-$black: black;
 $white: #F8F8F8;
 $brown: #a4a4a4;
 
@@ -118,12 +103,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $lato-regular;
+  font-family: $lato-bold;
   font-weight: 700;
 }
 
 h1 {
-  font-family: $lato-regular;
+  font-family: $lato-bold;
   font-weight: 700;
   text-transform: none !important;
   color: $black;
@@ -131,10 +116,10 @@ h1 {
   line-height: 45px;
   padding-top: 10px;
   margin: 0;
-  }
+}
 
 h2 {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 700;
   font-size: 2em;
   line-height: 36px;
@@ -144,11 +129,12 @@ h2 {
   padding-top: 10px;
 }
 
+
 h3 {
   font-family: $lato-bold;
   font-weight: 700;
   font-size: 1.5em;
-  //line-height: 42px;
+  line-height: 38px;
   text-transform: capitalize;
   color:  #282828;
   padding-top: 10px;
@@ -170,7 +156,7 @@ h4 {
 
 h5 {
   color: #282828;
-  font-family: $lato-regular;
+  font-family: $lato-bold;
   font-size: 1em;
   line-height: 25px;
   margin: 0;
@@ -190,7 +176,7 @@ h6 {
 }
 
 h5 a {
-  font-family: $lato-regular;
+  font-family: $lato-bold;
   font-weight: 700;
   font-size: 1em;
   line-height: 23px;
@@ -223,6 +209,77 @@ h7 a {
 
 }
 
+h8 {
+  font-family: $vacer-thin;
+  font-weight: 200;
+  font-size: 18vw;
+  line-height: 49px;
+  color: $beige;
+}
+
+h9 {
+  font-family: $vacer-bold;
+  font-weight: 200;
+  font-size: 18vw;
+  line-height: 49px;
+  color: $beige;
+}
+
+h10 {
+  font-family: $vacer-thin;
+  font-weight: 200;
+  font-size: 1.8750em;
+  line-height: 44px;
+  color: $black;
+}
+
+h11 {
+  font-family: $vacer-bold;
+  font-weight: 200;
+  font-size: 1.8750em;
+  line-height: 44px;
+  color: $black;
+}
+
+h12 {
+  font-family: $lato-bold;
+  font-weight: 200;
+  font-size: 3vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+h13 {
+  font-family: $lato-bold;
+  font-weight: 200;
+  font-size: 3vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $black;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+h14 {
+  font-family: $lato-regular;
+  font-weight: 200;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: $black;
+  padding-bottom: 15px;
+}
+
+h15 {
+  font-family: $lato-bold;
+  font-weight: 200;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: $beige;
+  border-bottom: 1px solid $beige;
+  padding-bottom: 20px;
+}
+
 a {
   color: black;
   }
@@ -233,11 +290,11 @@ a:hover {
 }
 
 a:active {
-  color: whitesmoke;
+  color: #ada074;
 }
 
 a:focus {
-  color: whitesmoke;
+  color: #ada074;
 }
 
 p {
@@ -247,24 +304,21 @@ p {
   line-height: 23px;
   color: #606060;
   text-transform: none !important;
-  //text-align: center;
-}
+  }
 
 .date {
   font-family: $lato-light;
   font-weight: 600;
   font-size: 10px;
-  //line-height: 23px;
+  line-height: 28px;
   color: $black;
 }
 
-
-
 .body {
-  color:  #f8f8f8;
+  color:  white;
 }
 
-.myriad {
+.tagline {
   font-family: $myriad-pro;
   font-weight: 300;
   font-size: 1.125em;
@@ -287,7 +341,7 @@ p {
 }
 
 .alert-notify {
-  font-family: $roberto;
+  font-family: $lato-regular;
   font-weight: 900;
   font-size: 1em;
   line-height: 30px;
@@ -297,8 +351,8 @@ p {
   margin: 0;
 }
 
-.cook-link {
-  font-family: $roberto;
+.find-link {
+  font-family: $lato-bold;
   font-weight: 900;
   font-size: 1em;
   line-height: 30px;
@@ -308,7 +362,7 @@ p {
   margin: 0;
 }
 
-.cook-link:hover {
+.find-link:hover {
   color: #606060;
 }
 
@@ -331,8 +385,6 @@ label {
   margin: 0;
   padding: 0;
 }
-
-
 
 
 /* Column Container & Newsletter Container Typography */
@@ -382,8 +434,6 @@ label {
   padding-bottom: 10px;
 }
 
-
-
 .news--heading {
   font-family: $lato-bold;
   font-weight: 700;
@@ -417,28 +467,8 @@ label {
 }
 
 
-
-.lower--box-text {
-  font-family: $georgia;
-  font-weight: 300;
-  font-size: 1.125em;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: $secondary-color;
-}
-
-.box--underline {
-  font-family: $georgia;
-  font-weight: 300;
-  font-size: 1.125em;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: $secondary-color;
-  margin: 0;
-}
-
 .project-links {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 300;
   font-size: 1em;
   line-height: 30px;
@@ -453,7 +483,7 @@ label {
 
 /* Portfolio section showcase */
 .section--title {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 400;
   font-size: 1em;
   line-height: 30px;
@@ -461,7 +491,7 @@ label {
 }
 
 .section--body {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 300;
   font-size: 1em;
   line-height: 30px;
@@ -470,20 +500,39 @@ label {
 }
 
 .section-heading h2 {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 700;
   font-size: 1.875em;
   line-height: 44px;
   color: black;
 }
 
+.control-label {
+  padding: 0;
+  margin: 0;
+  font-family: $lato-bold;
+  color: #606060 !important;
+  font-size: 15px !important;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
+label {
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.riz {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  .myriad {
+  .tagline {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.125em;
@@ -506,12 +555,12 @@ label {
   }
 
   .body {
-    color: #f8f8f8;
+    color: white;
   }
 
 
   .alert-notify {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
@@ -521,8 +570,8 @@ label {
     margin: 0;
   }
 
-  .cook-link {
-    font-family: $roberto;
+  .find-link {
+    font-family: $lato-bold;
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
@@ -532,7 +581,7 @@ label {
     margin: 0;
   }
 
-  .cook-link:hover {
+  .find-link:hover {
     color: #606060;
   }
 
@@ -636,14 +685,6 @@ label {
 
   }
 
-  .lower--box-text {
-    font-family: $georgia;
-    font-weight: 300;
-    font-size: 1.125em;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: $secondary-color;
-  }
 
   .box--underline {
     font-family: $georgia;
@@ -657,7 +698,7 @@ label {
   }
 
   .project-links {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 300;
     font-size: 1em;
     line-height: 30px;
@@ -669,14 +710,13 @@ label {
 
 
 
-
   /* Portfolio section showcase */
   .twitter a {
     text-decoration: none;
   }
 
   .section-heading h2 {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 700;
     font-size: 1.875em;
     line-height: 44px;
@@ -684,7 +724,7 @@ label {
   }
 
   .section--title {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 400;
     font-size: 1em;
     line-height: 30px;
@@ -692,7 +732,7 @@ label {
   }
 
   .section--body {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 300;
     font-size: 1em;
     line-height: 30px;
@@ -700,11 +740,27 @@ label {
     padding-top: 20px;
   }
 
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $lato-bold;
+    color: #606060 !important;
+    font-size: 15px !important;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-  .myriad {
+  .tagline {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.250em;
@@ -727,7 +783,7 @@ label {
   }
 
   .body {
-    color:  #f8f8f8;
+    color:  white;
   }
 
 
@@ -747,7 +803,7 @@ label {
 
 
   .alert-notify {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
@@ -757,8 +813,8 @@ label {
     margin: 0;
   }
 
-  .cook-link {
-    font-family: $roberto;
+  .find-link {
+    font-family: $lato-bold;
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
@@ -768,7 +824,7 @@ label {
     margin: 0;
   }
 
-  .cook-link:hover {
+  .find-link:hover {
     color: #606060;
   }
 
@@ -857,29 +913,8 @@ label {
  }
 
 
-
- .lower--box-text {
-    font-family: $georgia;
-    font-weight: 300;
-    font-size: 1.125em;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $secondary-color;
- }
-
- .box--underline {
-    font-family: $georgia;
-    font-weight: 300;
-    font-size: 1.125em;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    margin: 0;
-
- }
-
  .project-links {
-  font-family: $roberto;
+  font-family: $lato-bold;
   font-weight: 300;
   font-size: 1em;
   line-height: 30px;
@@ -895,7 +930,7 @@ label {
 
   /* Portfolio section showcase */
   .section-heading h2 {
-    font-family: $lato;
+    font-family: $lato-bold;
     font-weight: 700;
     font-size: 1.875em;
     line-height: 43px;
@@ -911,7 +946,7 @@ label {
   }
 
   .section--body {
-    font-family: $roberto;
+    font-family: $lato-bold;
     font-weight: 300;
     font-size: 1em;
     line-height: 28px;
@@ -919,11 +954,88 @@ label {
     padding-top: 20px;
   }
 
+
+
+  .control-label {
+    padding: 0;
+    margin: 0;
+    font-family: $lato-bold;
+    color: #606060 !important;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .riz {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
-  .myriad {
+  h6 a {
+    font-family: $montserrat;
+    font-size: 1.5em;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  h8 {
+    font-family: $vacer-thin;
+    font-weight: 200;
+    font-size: 26vw;
+    color: $beige;
+  }
+
+  h9 {
+    font-family: $vacer-bold;
+    font-weight: 200;
+    font-size: 26vw;
+    color: $beige;
+  }
+
+  h12 {
+    font-family: $lato-bold;
+    font-weight: 200;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  h13 {
+    font-family: $lato-bold;
+    font-weight: 200;
+    font-size: 7vw;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: $black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+
+  h15 {
+    font-family: $lato-bold;
+    font-weight: 200;
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: $beige;
+    border-bottom: 1px solid $beige;
+    padding-bottom: 20px;
+  }
+
+  .tagline {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.250em;
@@ -945,18 +1057,8 @@ label {
     margin-bottom: 0;
   }
 
-  h6 a {
-    font-family: $montserrat;
-    font-size: 1.5em;
-    line-height: 33px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 700;
-    line-height: 33px;
-  }
 
-
-   /* Tags show blade */
+  /* Tags show blade */
   .tag--centre {
     text-decoration: none;
   }
@@ -1019,7 +1121,7 @@ label {
     margin: 0;
  }
 
- .box--title{
+ .box--title {
     font-family: $georgia;
     font-size: 1.125em;
     line-height: 34px;
@@ -1079,6 +1181,25 @@ label {
     font-size: 1em;
     line-height: 24px;
     color: black;
+  }
+
+
+  p.copyright {
+    font-family: $source-light;
+    font-size: 14px;
+    color: #949494;
+  }
+
+  label {
+    font-family: $montserrat-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+
+  .riz {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
 

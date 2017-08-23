@@ -15,20 +15,15 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="collection">
-                            <div class="logo-heading">
+                            <div class="logo-header">
                                 <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
                                 <div class="statement">
-                                    <p class="myriad">We will empower you for all your customers needs</p>
+                                    <p class="tagline">We will empower you for all your customers needs</p>
                                 </div><!-- /.statement -->
                             </div><!-- /.logo-heading -->
 
-
-
                         </div><!-- /.collection -->
                     </div><!-- .intro-slider -->
-
-
-
 
 
 

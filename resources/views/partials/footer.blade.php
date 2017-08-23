@@ -6,13 +6,8 @@
             <img
                     src="/images/assets/footer_logo.png"
                     alt="Mind logo">
-        </div>
-        <!-- /.footer-logo -->
-
-
-
-    </div><!-- /.footer-container -->
-
+        </div><!-- /.footer-border -->
+    </div><!-- /.footer-logo -->
 
         <div class="footer-navigation">
             <ul>
@@ -23,26 +18,13 @@
                 <li><a href="/register" class="foot-links">Facebook</a></li>
                 <li><a href="/register" class="foot-links">Behance</a></li>
             </ul>
-
         </div><!-- /.footer-navigation -->
 
-<div class="copyright">
-    <p class="copyright  small"> &copy; <?php echo date("Y"); ?>.  All Rights Reserved. Ormrepo.co.uk.</p>
-    <p class="copyright  small">Artwork designed by Riz Designs</p>
-</div>
-<!-- /.copyright -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="footer-centre">
+        <div class="copyright">
+            <p class="copyright  small"> &copy; <?php echo date("Y"); ?>.  All Rights Reserved. Ormrepo.co.uk.</p>
+            <p class="riz  small">Artwork designed by Riz Designs</p>
+        </div><!-- /.copyright -->
+    </div><!-- /.footer-centre-->
 </footer>
 

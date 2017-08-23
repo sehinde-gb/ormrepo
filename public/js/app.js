@@ -29493,7 +29493,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('h4', {
     staticClass: "alert-notify"
   }, [_vm._v(_vm._s(_vm.body) + "\n            "), _c('a', {
-    staticClass: "cook-link",
+    staticClass: "find-link",
     attrs: {
       "href": "https://ormrepo.co.uk/cookie"
     }

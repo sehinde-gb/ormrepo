@@ -18,15 +18,7 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function about()
-    {
-        return view ('pages.about');
-    }
+
 
     /**
      * Show the page for the portfolio
@@ -92,16 +84,7 @@ class PagesController extends Controller
 
 
 
-    /**
-     * Show the form contacting us.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function contact()
-    {
-        return view('pages.contact');
 
-    }
 
     /**
      * Grab the data from the message form and send it to the
