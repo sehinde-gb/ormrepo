@@ -10,15 +10,9 @@
 
     <div class="form-page">
         <div class="register-fluid">
-                <div class="logo-container">
-                    <div class="own-logo">
-                        <img class="bordered-logo"
-                             src="/images/logo/logo_small.png"
-                             alt="The ormrepo thoughtful logo">
-                    </div><!-- /.own-logo -->
-                </div><!-- /.logo-container -->
+
                 <div class="header">
-                    <h4 class="leader is--black">Publish Blog</h4>
+                    <h2 class="leader is--black">Publish Blog</h2>
                 </div><!-- /.header -->
                 <div class="row">
                     {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}

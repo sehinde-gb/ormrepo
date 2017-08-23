@@ -55,21 +55,14 @@ Breadcrumbs::register('contact', function($breadcrumbs)
     $breadcrumbs->push('Contact', route('contact'));
 });
 
-// Home > Checkout
-Breadcrumbs::register('checkout', function($breadcrumbs)
-{
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push('Checkout', route('checkout.thankyou'));
-});
-
-// Blogs
+// Home > Blogs Index
 Breadcrumbs::register('blogs.index', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
     $breadcrumbs->push('Blogs', route('blogs.index'));
 });
 
-// Home > [Blog]
+// Home > Blog Show
 Breadcrumbs::register('blogs.show', function($breadcrumbs, $blog)
 {
 
@@ -77,42 +70,39 @@ Breadcrumbs::register('blogs.show', function($breadcrumbs, $blog)
     $breadcrumbs->push($blog->title, route('blogs.show', $blog->id));
 });
 
-
-// Home
+// Home > Admin Blog
 Breadcrumbs::register('admin', function($breadcrumbs)
 {
-    $breadcrumbs->push('Home', route('admin.home'));
+    $breadcrumbs->push('Home', route('home'));
 });
 
-// Blogs
+// Home > Admin Blogs Index
 Breadcrumbs::register('admin.blogs.index', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
     $breadcrumbs->push('Blogs', route('admin.blogs.index'));
 });
 
-// Home > [Blog]
+// Home > Admin Blog Show
 Breadcrumbs::register('admin.blogs.show', function($breadcrumbs, $blog)
 {
-
     $breadcrumbs->parent('admin.blogs.index');
     $breadcrumbs->push($blog->title, route('admin.blogs.show', $blog->id));
 });
 
-// Blogs > Publish Blog
+// Blogs > Admin Blog Create
 Breadcrumbs::register('admin.blogs.create', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin.blogs.index');
     $breadcrumbs->push('Publish Blog', route('admin.blogs.create'));
 });
 
-// Home > [Blog]
+// Home > Admin Blog Edit
 Breadcrumbs::register('admin.blogs.edit', function($breadcrumbs, $blog)
 {
     $breadcrumbs->parent('admin.blogs.show', $blog);
     $breadcrumbs->push('Edit Blog', route('admin.blogs.edit', $blog->id));
 });
-
 
 // Charges Index
 Breadcrumbs::register('admin.charges.index', function($breadcrumbs)
@@ -121,14 +111,14 @@ Breadcrumbs::register('admin.charges.index', function($breadcrumbs)
     $breadcrumbs->push('Charges', route('admin.charges.index'));
 });
 
-// Home > [Charge] Show
+// Home > Charge Show
 Breadcrumbs::register('admin.charges.show', function($breadcrumbs, $charge)
 {
     $breadcrumbs->parent('admin.charges.index');
     $breadcrumbs->push($charge->name, route('admin.charges.show', $charge->id));
 });
 
-// Home > [Charge] Edit
+// Home > Charge Edit
 Breadcrumbs::register('admin.charges.edit', function($breadcrumbs, $charge)
 {
     $breadcrumbs->parent('admin.charges.show', $charge);
@@ -140,5 +130,13 @@ Breadcrumbs::register('admin.charges.create', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin.charges.index');
     $breadcrumbs->push('Publish Charge', route('admin.charges.create'));
+});
+
+// Home > Checkout
+Breadcrumbs::register('checkout', function($breadcrumbs)
+{
+    $breadcrumbs->parent('admin');
+    $breadcrumbs->push('Charges', route('admin.charges.index'));
+    $breadcrumbs->push('Checkout', route('checkout.thankyou'));
 });
 

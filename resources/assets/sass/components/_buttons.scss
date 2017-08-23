@@ -40,12 +40,12 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   outline: 0;
   border: 0;
   padding: 10px 15px;
-  color: #003434;
+  color: #595959;
   font-family: $lato-bold;
   font-size: 14px;
   text-transform: capitalize;
   height: 50px;
-  width: 200px;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -53,8 +53,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   background-color: #636F57 !important;
   color: #F8F8F8 !important;
 }
-
-
 
 .btn-secondary,
 .btn-secondary:active,
@@ -76,7 +74,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 .btn-secondary:hover {
-  color: #ada074;
+  color: white;
+  background-color: #003034;
 }
 
 .btn-white,
@@ -100,7 +99,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 .btn-white:hover {
-  color: #ada074;
+  color: black;
+  background-color: #f3f3f3;
 }
 
 .btn-off-white,
@@ -124,7 +124,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 .btn-off-white:hover {
-  color: #ada074;
+  color: black;
+  background-color: #ebebeb;
 }
 
 
@@ -176,7 +177,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   height: 50px;
-  width: 250px;
+  width: 150px;
   cursor: pointer;
   margin-left: 135px;
 }
@@ -226,28 +227,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   color: whitesmoke !important;
 }
 
-.btn-buy,
-.btn-buy:active,
-.btn-buy:visited,
-.btn-buy:focus {
-  background-color: #F8F8F8;
-  outline: 0;
-  border: 0;
-  padding: 10px 15px;
-  color: #595959;
-  font-family: $lato-bold;
-  font-size: 14px;
-  text-transform: capitalize;
-  height: 50px;
-  width: 50%;
-  cursor: pointer;
-}
-
-.btn-buy:hover {
-  background-color: #636F57 !important;
-  color: #F8F8F8 !important;
-}
-
 .btn-link {
   margin-left: 250px;
   color: black;
@@ -295,12 +274,12 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: #003434;
+    color: #595959;
     font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
-    width: 200px;
+    width: 50%;
     cursor: pointer;
   }
 
@@ -308,7 +287,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     background-color: #636F57 !important;
     color: #F8F8F8 !important;
   }
-
 
 
   .btn-secondary,
@@ -331,7 +309,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-secondary:hover {
-    color: #ada074;
+    color: white;
+    background-color: #003034;
   }
 
   .btn-white,
@@ -355,7 +334,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-white:hover {
-    color: #ada074;
+    color: black;
+    background-color: #f3f3f3;
   }
 
   .btn-off-white,
@@ -379,7 +359,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-off-white:hover {
-    color: #ada074;
+    color: black;
+    background-color: #ebebeb;
   }
 
   .btn-small,
@@ -430,7 +411,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 250px;
+    width: 150px;
     cursor: pointer;
     margin-left: 135px;
   }
@@ -480,27 +461,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: whitesmoke !important;
   }
 
-  .btn-buy,
-  .btn-buy:active,
-  .btn-buy:visited,
-  .btn-buy:focus {
-    background-color: #F8F8F8;
-    outline: 0;
-    border: 0;
-    padding: 10px 15px;
-    color: #595959;
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: capitalize;
-    height: 50px;
-    width: 50%;
-    cursor: pointer;
-  }
-
-  .btn-buy:hover {
-    background-color: #636F57 !important;
-    color: #F8F8F8 !important;
-  }
 
   .btn-link {
     margin-left: 250px;
@@ -552,18 +512,18 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    color: #003434;
+    color: #595959;
     font-family: $lato-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
-    width: 250px;
+    width: 50%;
     cursor: pointer;
   }
 
   .btn-primary:hover {
-    background-color: #636F57 !important;
-    color: #F8F8F8 !important;
+    background-color: #f9f1dc !important;
+    color: #717171 !important;
   }
 
 
@@ -588,7 +548,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-secondary:hover {
-    color: #ada074;
+    color: white;
+    background-color: #003034;
   }
 
   .btn-white,
@@ -612,7 +573,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-white:hover {
-    color: #ada074;
+    background-color: #f3f3f3;
+    color: black;
   }
 
   .btn-off-white,
@@ -636,7 +598,8 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-off-white:hover {
-    color: #ada074;
+    color: black;
+    background-color: #ebebeb;
   }
 
 
@@ -688,7 +651,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 250px;
+    width: 150px;
     cursor: pointer;
     margin-left: 135px;
   }
@@ -738,27 +701,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: whitesmoke !important;
   }
 
-  .btn-buy,
-  .btn-buy:active,
-  .btn-buy:visited,
-  .btn-buy:focus {
-    background-color: #F8F8F8;
-    outline: 0;
-    border: 0;
-    padding: 10px 15px;
-    color: #595959;
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: capitalize;
-    height: 50px;
-    width: 50%;
-    cursor: pointer;
-  }
 
-  .btn-buy:hover {
-    background-color: #636F57 !important;
-    color: #F8F8F8 !important;
-  }
 
   .btn-link {
     margin-left: 250px;
@@ -808,13 +751,12 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     outline: 0;
     border: 0;
     padding: 10px 15px;
-    margin-left: 20px;
-    color: #003434;
+    color: #595959;
     font-family: $montserrat-bold;
     font-size: 14px;
     text-transform: capitalize;
     height: 50px;
-    width: 300px;
+    width: 60%;
     cursor: pointer;
   }
 
@@ -838,12 +780,13 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 150px;
+    width: 350px;
     cursor: pointer;
   }
 
   .btn-secondary:hover {
-    color: #ada074;
+    color: white;
+    background-color: #003034;
   }
 
 
@@ -863,7 +806,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     height: 50px;
     width: 350px;
     cursor: pointer;
-    margin-left: 85px;
+    margin-left: 20px;
   }
 
   .btn-danger:hover {
@@ -893,27 +836,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: #717171 !important;
   }
 
-  .btn-buy,
-  .btn-buy:active,
-  .btn-buy:visited,
-  .btn-buy:focus {
-    background-color: #F8F8F8;
-    outline: 0;
-    border: 0;
-    padding: 10px 15px;
-    color: #595959;
-    font-family: $montserrat-bold;
-    font-size: 14px;
-    text-transform: capitalize;
-    height: 50px;
-    width: 60%;
-    cursor: pointer;
-  }
 
-  .btn-buy:hover {
-    background-color: #636F57 !important;
-    color: #F8F8F8 !important;
-  }
 
   .btn-tag {
     display: none;

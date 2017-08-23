@@ -5,9 +5,9 @@
 @section('content')
 
 <div class="payment-container">
-    <div class="top-heading">
-        <h4 class="is--centered is--beige">Our Services</h4>
-    </div><!-- /.top-heading -->
+    <div class="breadcrumb-container">
+        {!! Breadcrumbs::render('admin.charges.index') !!}
+    </div><!-- /.breadcrumb-container -->
 
         <div class="news-container is--padded-top-20">
             <section id="news-demo">
@@ -46,7 +46,7 @@
                     @if(!$charges->isEmpty())
                         @foreach ($charges as $charge)
                             <div class="charge">
-                                <img class="product-img" src="/images/charges/{{ $charge->sku }}.png"/>
+                                <img class="standard" src="/images/charges/{{ $charge->sku }}.png"/>
                                 <div class="description">
                                    <h5 class="is--centered is--black"><a href="{{ url('admin/charges', $charge->id) }}">
                                         {{ $charge->name }}

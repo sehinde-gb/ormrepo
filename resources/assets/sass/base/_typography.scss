@@ -151,7 +151,6 @@ h4 {
   margin: 0;
   padding-bottom: 10px;
   padding-top: 10px;
-
 }
 
 h5 {
@@ -300,9 +299,9 @@ a:focus {
 p {
   font-family: $lato-light;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 23px;
-  color: #606060;
+  font-size: 12px;
+  line-height: 28px;
+  color: #303030;
   text-transform: none !important;
   }
 
@@ -451,8 +450,9 @@ label {
   font-style: italic;
   font-weight: 400;
   line-height: 32px;
-  color: #606060;
+  color: #808080;
   border: 0;
+  text-transform: none;
 }
 
 .social--text {
@@ -465,7 +465,6 @@ label {
   text-transform: none;
   padding-top: 10px;
 }
-
 
 .project-links {
   font-family: $lato-bold;
@@ -524,8 +523,20 @@ label {
 }
 
 .riz {
+  font-family: $source-pro;
+  font-size: 12px;
+  line-height: 28px;
+  color: #949494;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.art {
+  font-family: $source-pro;
+  font-size: 12px;
+  line-height: 28px;
+  color: #949494;
+  padding-left: 60px;
 }
 
 
@@ -557,7 +568,6 @@ label {
   .body {
     color: white;
   }
-
 
   .alert-notify {
     font-family: $lato-bold;
@@ -659,8 +669,9 @@ label {
     font-style: italic;
     font-weight: 400;
     line-height: 32px;
-    color: #606060;
+    color: #808080;
     border: 0;
+    text-transform: none;
   }
 
   .social--text {
@@ -685,7 +696,6 @@ label {
 
   }
 
-
   .box--underline {
     font-family: $georgia;
     font-weight: 300;
@@ -707,8 +717,6 @@ label {
     padding-bottom: 10px;
 
   }
-
-
 
   /* Portfolio section showcase */
   .twitter a {
@@ -756,6 +764,23 @@ label {
     text-transform: uppercase;
   }
 
+  .riz {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .art {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
+    padding-left: 60px;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -785,7 +810,6 @@ label {
   .body {
     color:  white;
   }
-
 
   .paged-links {
     color: #f9f1dc;
@@ -828,23 +852,21 @@ label {
     color: #606060;
   }
 
-
-
   /* Column Container & Newsletter Container Typography */
   .column h1 {
     padding-left: 30px;
   }
 
- .blog--title {
+  .blog--title {
     font-family: $lato-bold;
     font-size: 2.188em;
     line-height: 49px;
     font-weight: 900;
     text-transform: capitalize;
     color: $black;
- }
+  }
 
- .blog--excerpt {
+  .blog--excerpt {
     font-family: $lato-bold;
     font-weight: 700;
     font-size: 1.125em;
@@ -853,19 +875,19 @@ label {
     color: $black;
     margin: 0;
     padding-bottom: 10px;
- }
+  }
 
- .box--name {
-    font-family: $lato-bold;
-    font-size: 1.500em;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    font-weight: 700;
-    line-height: 33px;
-    width: 100%;
+   .box--name {
+      font-family: $lato-bold;
+      font-size: 1.500em;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: $secondary-color;
+      font-weight: 700;
+      line-height: 33px;
+      width: 100%;
 
- }
+   }
 
   .box--title {
     font-family: $georgia;
@@ -895,10 +917,11 @@ label {
     font-style: italic;
     font-weight: 400;
     line-height: 30px;
-    color: #606060;
+    color: #808080;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
+   text-transform: none;
  }
 
  .social--text {
@@ -973,9 +996,22 @@ label {
   }
 
   .riz {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .art {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
+    padding-left: 60px;
+  }
+
 
 
 }
@@ -1018,7 +1054,6 @@ label {
     font-family: $lato-bold;
     font-weight: 200;
     font-size: 7vw;
-    font-size: 34px;
     text-transform: uppercase;
     color: $black;
     border-bottom: 1px solid black;
@@ -1103,12 +1138,13 @@ label {
     font-size: 1.125em;
     font-style: italic;
     line-height: 27px;
-    color: #606060;
+    color: #808080;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
     border: 0;
     width: 100%;
+    text-transform: none;
  }
 
  .box--name {
@@ -1198,9 +1234,22 @@ label {
 
 
   .riz {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .art {
+    font-family: $source-pro;
+    font-size: 12px;
+    line-height: 28px;
+    color: #949494;
+    padding-left: 60px;
+  }
+
 
 
 

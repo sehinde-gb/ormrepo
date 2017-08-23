@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
     Route::resource('charges', 'ChargesController');
 
-    //Route::get('/home', ['as' => 'home', 'uses' => 'BlogsController@index']);
+    Route::get('/home', ['as' => 'home', 'uses' => 'HomesController@index']);
 });
 
 # Checkout
@@ -47,7 +47,6 @@ Route::get('/search/{query}', function($query) {
 
 
 #Static
-
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('/cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);

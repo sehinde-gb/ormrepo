@@ -4,9 +4,10 @@
 
 @section('content')
 
-    <div class="breadcrumb-container">
-        {!! Breadcrumbs::render('blogs.index') !!}
-    </div><!-- /.breadcrumb-container -->
+<div class="breadcrumb-container">
+    {!! Breadcrumbs::render('admin.blogs.index') !!}
+</div><!-- /.breadcrumb-container -->
+
     <!-- Page Content -->
     <a name="introduction"></a>
     <div class="hero">

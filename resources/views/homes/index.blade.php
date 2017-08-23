@@ -1,12 +1,12 @@
-@extends ('layouts.test')
+@extends ('layouts.master')
 
-@section('meta-title', 'Home')
+@section('meta-title', 'Welcome to our Home Page')
 
 @section('content')
 
 <div class="homepage-container">
         <div class="hero-container">
-                <div class="logo-heading">
+                <div class="logo-header">
                     <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
                 </div><!-- /.logo-heading -->
 
@@ -167,7 +167,7 @@
                             {!! Form::textarea('user_message', null, ['class' => 'form-control', 'placeholder' => 'Your Message']) !!}
                         </div><!-- /.description-container -->
                         <div class="mail-container">
-                            <p class="is--beige">Please use the adjacent form to contact us</p>
+                            <p class="is--beige">You can use the form or chat with us</p>
                             <p class="is--beige">Email: info@ormrepo.co.uk</p>
                             <p class="is--beige">Telephone: 07512305773</p>
                         </div><!-- /.mail-container -->

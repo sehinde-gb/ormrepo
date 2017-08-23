@@ -3,51 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>@yield('meta-title', "Ormrepo's Home Page")</title>
-    <!-- Bootstrap Core CSS -->
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-
-    <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="css/app.css">
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="@yield('meta_description', 'The ormblog.')">
+    <meta id="token" name="token" value="{{ csrf_token() }}">
+    <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/css/bulma.css" type="text/css">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
+    <link rel="stylesheet" href="/css/demo.css" type="text/css">
+    <link rel="stylesheet" href="/dist/css/sweetalert.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ormblog" href="{{ url('feed') }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slip.css">
+    <link rel="stylesheet" href="/dist/css/slippry.css">
+    <!-- Start of Async Drift Code -->
+    <script>
+        !function() {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+                t.factory = function(e) {
+                    return function() {
+                        var n;
+                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                    };
+                }, t.methods.forEach(function(e) {
+                t[e] = t.factory(e);
+            }), t.load = function(t) {
+                var e, n, o, i;
+                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+            });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('9ixv4g8khya3');
+    </script>
+    <!-- End of Async Drift Code -->
 </head>
 <body>
 
-@include('partials.navigation')
 
-    @yield('content')
+@include('partials.status')
 
-        @include('partials.connect')
-
-@include('partials.footer')
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<script text="text/javascript" src="js/custom.js"></script>
-<script src="js/modernizr-custom.js"></script>
+@yield('content')
 
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/password.js"></script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=230976277311028";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script>
+    var simplemde = new SimpleMDE({ element: document.getElementById("summernote") });
+</script>
+
+<script type="application/javascript" src="/js/bootstrap.js"></script>
+<script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
+<script type="application/javascript" src="/dist/js/sweetalert.min.js"></script>
+@include('flash')
+{{-- Show password--}}
+<script src="/js/password.js"></script>
 <script>
     $(function() {
         $('#password').password().on('show.bs.password', function(e) {
@@ -76,21 +105,80 @@
         });
     });
 </script>
-
-<!-- Analytics script -->
+{{--Mobile menu--}}
 <script>
+    $(function() {
+        $("a[href=#menuExpand]").click(function(e) {
+            $(".menu").toggleClass("menuOpen");
+            e.preventDefault();
+        });
+    });
+</script>
+
+<script>
+    var selectIds = $('#panel1,#panel2,#panel3');
+    $(function ($) {
+        selectIds.on('show.bs.collapse hidden.bs.collapse', function () {
+            $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+        })
+    });
+</script>
+<script src="/dist/js/jquery.gridder.min.js"></script>
+<script>
+    $(function() {
+
+        // Call Gridder
+        $('.gridder').gridderExpander({
+            scroll: true,
+            scrollOffset: 30,
+            scrollTo: "panel",                  // panel or listitem
+            animationSpeed: 400,
+            animationEasing: "easeInOutExpo",
+            showNav: true,                      // Show Navigation
+            nextText: "Next",                   // Next button text
+            prevText: "Previous",               // Previous button text
+            closeText: "Close",                 // Close button text
+            onStart: function(){
+                //Gridder Inititialized
+            },
+            onContent: function(){
+                //Gridder Content Loaded
+            },
+            onClosed: function(){
+                //Gridder Closed
+            }
+        });
+
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script type="text/javascript">
+    $('select').select2();
+</script>
+
+@yield('slip')
+
+@yield('scripts')
+
+
+<script id="dsq-count-scr" src="//games-ormrepo-co-uk.disqus.com/count.js" async></script>
+<script>
+    // Google Analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-77927666-1', 'auto');
+    ga('create', 'UA-93137682-1', 'auto');
     ga('send', 'pageview');
 
-
-
 </script>
+
+
 
 </body>
 
 </html>
+
+

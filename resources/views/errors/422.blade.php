@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', '404 Error')
+@section('meta-title', '422 Unprocessable Entity')
 
 @section('content')
 
@@ -12,16 +12,21 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="centered">
-                            <h1 class="is--uppercase is--centered">Oops! Your payment was declined</h1>
+                            <h1 class="is--uppercase is--centered is--beige">Oops! Unprocessable Entity....</h1>
                         </div><!-- /.centered -->
 
-                        <div class="collection">
-                            <img class="logo"
-                                 srcset="/images/hero/slider@1,5x.png 980w,
-                                        /images/hero/slider@1x.png 480w"
-                                 alt="The ormrepo thoughtful logo">
+                        <div class="hero-container">
+                            <div class="logo-header">
+                                <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
+                            </div><!-- /.logo-heading -->
 
-                        </div><!-- /.collection -->
+                            <div class="statement">
+                                <p class="tagline">We will empower you for all your customers needs</p>
+                            </div><!-- /.statement -->
+
+
+
+                        </div><!-- /.hero-container -->
 
                         <div class="exceptions">
                             <div class="links-container">

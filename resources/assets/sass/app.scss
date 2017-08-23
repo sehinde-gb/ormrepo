@@ -1,8 +1,8 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-//@import 'layout/charges-list.scss';
-//@import 'layout/each-charge.scss';
+@import 'layout/charges-list.scss';
+@import 'layout/each-charge.scss';
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/buttons';
@@ -15,7 +15,7 @@
 @import 'layout/_blog-list';
 @import 'vendors/bulma';
 @import 'base/_fontawesome';
-//@import 'components/utility';
+@import 'components/utility';
 @import 'layout/page.scss';
 @import 'layout/errors.scss';
 @import 'base/bootstrap.scss';

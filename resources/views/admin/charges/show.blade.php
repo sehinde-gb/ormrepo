@@ -66,7 +66,7 @@
 
                         <script src="https://checkout.stripe.com/checkout.js"></script>
 
-                        <button id="customButton" class="btn-buy">Buy</button>
+                        <button id="customButton" class="btn-primary">Buy</button>
 
 
 
