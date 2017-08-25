@@ -202,6 +202,7 @@ h6 a:hover {
 h7 a {
   font-family: $lato-bold;
   font-size: 1em;
+  line-height: 30px;
   text-transform: uppercase;
   color: $black;
   font-weight: 700;
@@ -321,6 +322,7 @@ p {
   font-family: $myriad-pro;
   font-weight: 300;
   font-size: 1.125em;
+  line-height: 32px;
   color: $white;
 }
 
@@ -379,6 +381,7 @@ label {
   font-family: $georgia;
   font-weight: 700;
   font-size: 0.875em;
+  line-height: 29px;
   text-transform: capitalize;
   color: $primary-color;
   margin: 0;
@@ -442,7 +445,7 @@ label {
   color: $beige;
   margin: 0;
   padding-left: 20px;
-  }
+}
 
 .lorem--text {
   font-family: $georgia;
@@ -519,6 +522,7 @@ label {
 label {
   font-family: $lato-bold;
   font-size: 14px;
+  line-height: 29px;
   text-transform: uppercase;
 }
 
@@ -547,6 +551,7 @@ label {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.125em;
+    line-height: 32px;
     color: $white;
   }
 
@@ -610,6 +615,7 @@ label {
     font-family: $georgia;
     font-weight: 700;
     font-size: 0.875em;
+    line-height: 29px;
     text-transform: capitalize;
     color: $primary-color;
     margin: 0;
@@ -693,7 +699,6 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-
   }
 
   .box--underline {
@@ -704,7 +709,6 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
-
   }
 
   .project-links {
@@ -715,7 +719,6 @@ label {
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
-
   }
 
   /* Portfolio section showcase */
@@ -761,6 +764,7 @@ label {
   label {
     font-family: $lato-bold;
     font-size: 14px;
+    line-height: 29px;
     text-transform: uppercase;
   }
 
@@ -789,6 +793,7 @@ label {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.250em;
+    line-height: 34px;
     color: $white;
   }
 
@@ -877,17 +882,16 @@ label {
     padding-bottom: 10px;
   }
 
-   .box--name {
-      font-family: $lato-bold;
-      font-size: 1.500em;
-      line-height: 36px;
-      text-transform: uppercase;
-      color: $secondary-color;
-      font-weight: 700;
-      line-height: 33px;
-      width: 100%;
-
-   }
+  .box--name {
+    font-family: $lato-bold;
+    font-size: 1.500em;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+    line-height: 33px;
+    width: 100%;
+  }
 
   .box--title {
     font-family: $georgia;
@@ -900,7 +904,7 @@ label {
 
   }
 
- .news--heading {
+  .news--heading {
     font-family: $lato-bold;
     font-weight: 700;
     font-size: 2.250em;
@@ -909,9 +913,9 @@ label {
     color: $beige;
     margin: 0;
     padding-left: 20px;
- }
+  }
 
- .lorem--text {
+  .lorem--text {
     font-family: $georgia;
     font-size: 1.125em;
     font-style: italic;
@@ -922,9 +926,9 @@ label {
     padding-left: 20px;
     padding-right: 20px;
    text-transform: none;
- }
+  }
 
- .social--text {
+  .social--text {
     font-family: $georgia;
     font-weight: 500;
     font-size: 0.938em;
@@ -933,8 +937,7 @@ label {
     color: white;
     text-transform: none;
     padding-top: 10px;
- }
-
+  }
 
  .project-links {
   font-family: $lato-bold;
@@ -977,8 +980,6 @@ label {
     padding-top: 20px;
   }
 
-
-
   .control-label {
     padding: 0;
     margin: 0;
@@ -992,6 +993,7 @@ label {
   label {
     font-family: $lato-bold;
     font-size: 14px;
+    line-height: 29px;
     text-transform: uppercase;
   }
 
@@ -1012,8 +1014,6 @@ label {
     padding-left: 60px;
   }
 
-
-
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -1032,6 +1032,7 @@ label {
     font-family: $vacer-thin;
     font-weight: 200;
     font-size: 26vw;
+    line-height: 30px;
     color: $beige;
   }
 
@@ -1039,6 +1040,7 @@ label {
     font-family: $vacer-bold;
     font-weight: 200;
     font-size: 26vw;
+    line-height: 30px;
     color: $beige;
   }
 
@@ -1046,6 +1048,7 @@ label {
     font-family: $lato-bold;
     font-weight: 200;
     font-size: 7vw;
+    line-height: 30px;
     text-transform: uppercase;
     color: $black;
   }
@@ -1054,6 +1057,7 @@ label {
     font-family: $lato-bold;
     font-weight: 200;
     font-size: 7vw;
+    line-height: 30px;
     text-transform: uppercase;
     color: $black;
     border-bottom: 1px solid black;
@@ -1064,6 +1068,7 @@ label {
     font-family: $lato-bold;
     font-weight: 200;
     font-size: 7vw;
+    line-height: 30px;
     text-transform: uppercase;
     color: $beige;
     border-bottom: 1px solid $beige;
@@ -1074,6 +1079,7 @@ label {
     font-family: $myriad-pro;
     font-weight: 300;
     font-size: 1.250em;
+    line-height: 34px;
     color: $white;
   }
 
@@ -1121,7 +1127,7 @@ label {
     padding-top: 10px;
  }
 
- .news--heading {
+  .news--heading {
     font-family: $montserrat-bold;
     font-weight: 700;
     font-size: 1.625em;
@@ -1130,10 +1136,10 @@ label {
     color: $beige;
     margin: 0;
     padding-left: 20px;
- }
+  }
 
 
- .lorem--text {
+  .lorem--text {
     font-family: $montserrat;
     font-size: 1.125em;
     font-style: italic;
@@ -1145,9 +1151,9 @@ label {
     border: 0;
     width: 100%;
     text-transform: none;
- }
+  }
 
- .box--name {
+  .box--name {
     font-family: $montserrat-bold;
     font-weight: 300;
     font-size: 1.5em;
@@ -1155,9 +1161,9 @@ label {
     text-transform: uppercase;
     color: $secondary-color;
     margin: 0;
- }
+  }
 
- .box--title {
+  .box--title {
     font-family: $georgia;
     font-size: 1.125em;
     line-height: 34px;
@@ -1166,16 +1172,16 @@ label {
     font-weight: 700;
     line-height: 33px;
     text-align: center;
- }
+  }
 
- .blog--title {
+  .blog--title {
     font-family: $montserrat;
     font-size: 2.188em;
     line-height: 47px;
     font-weight: 900;
     text-transform: capitalize;
     color: $black;
- }
+  }
 
   .project-links {
     font-family: $montserrat;
@@ -1223,12 +1229,14 @@ label {
   p.copyright {
     font-family: $source-light;
     font-size: 14px;
+    line-height: 29px;
     color: #949494;
   }
 
   label {
     font-family: $montserrat-bold;
     font-size: 14px;
+    line-height: 29px;
     text-transform: uppercase;
   }
 
@@ -1249,9 +1257,6 @@ label {
     color: #949494;
     padding-left: 60px;
   }
-
-
-
 
 
 }
