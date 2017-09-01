@@ -82,6 +82,18 @@ class PagesController extends Controller
 
     }
 
+
+    /**
+     * Show the form contacting us.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function bookings()
+    {
+        return view('pages.bookings');
+
+    }
+
     /**
      * Grab the data from the message form and send it to the
      * Web Administrator.

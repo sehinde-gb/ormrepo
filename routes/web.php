@@ -50,6 +50,7 @@ Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy'])
 Route::get('cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
 Route::get('/videos', ['as' => 'videos', 'uses' => 'PagesController@videos']);
+Route::get('/bookings', ['as' => 'bookings', 'uses' => 'PagesController@bookings']);
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');
