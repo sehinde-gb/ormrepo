@@ -57,7 +57,7 @@ class ChargeCreated extends Notification implements ShouldQueue
         $charge = $this->charge;
 
         return (new SlackMessage)
-            ->content('A new charge has been created ', $this->user->name)
+            ->content('A new ormrepo charge has been created ', $this->user->name)
             ->attachment(function ($attachment) use ($charge) {
                 $attachment->title($charge->name, route('admin.charges.show', $charge->id));
             });

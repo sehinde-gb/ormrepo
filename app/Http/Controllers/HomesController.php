@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\ContactWasSent;
 use App\Http\Requests\HomeFormRequest;
 use Illuminate\Http\Request;
 
@@ -29,7 +30,8 @@ class HomesController extends Controller
 
         $data = $request->all();
 
-        //event(new ContactWasSent());
+
+        event(new ContactWasSent($data));
 
         return redirect('/');
 

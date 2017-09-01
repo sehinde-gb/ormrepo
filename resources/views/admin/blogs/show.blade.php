@@ -16,16 +16,7 @@
                             <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The featured picture">
                         </div><!-- /.featured-image -->
 
-                        <div class="tag-container">
-                            @unless($blog->tags->isEmpty())
-                                <ul class="tag--centre">
-                                    @foreach($blog->tags as $tag)
-                                        <a href="{{ url('/blogs', $blog->id) }}"><button class="btn-tag">{{ $tag->name }}</button></a>
-                                    @endforeach
-                                </ul>
-                            @endunless
 
-                        </div><!-- /.tag-container -->
                         <div class="comment-container">
                             <a href="#comments"><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i></a>
 
@@ -65,7 +56,7 @@
                     </div><!-- /.discus-box -->
 
                     <div class="social-container">
-                        <div class="social-buttons is--margin-top-25">
+                        <div class="social-buttons is--margin-t25">
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
                             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-575c2d11e407df7a"></script>
                         </div><!-- /.social-buttons -->

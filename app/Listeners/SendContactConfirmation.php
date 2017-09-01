@@ -27,11 +27,11 @@ class SendContactConfirmation implements ShouldQueue
      */
     public function handle(ContactWasSent $event)
     {
-        flash()->success('Feedback', 'Your feedback has been published !');
+        flash()->success('Feedback', 'We will provide a response within 24 hours');
 
-        $when = Carbon::now()->addMinutes(5);
+        $when = Carbon::now()->addMinutes(1);
 
-        Mail::to('sehinde@ormrepo.co.uk')
+        Mail::to('info@ormrepo.co.uk')
             ->later($when, new ContactSent($event));
 
     }

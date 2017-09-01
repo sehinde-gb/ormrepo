@@ -53,7 +53,7 @@
                                     </a></h5>
                                 </div><!-- /.description -->
                                 <div class="price-container">
-                                    <p class="price is--centered is--padded-top-five is--black">£{{ $charge->price }}</p>
+                                    <p class="price is--centered is--padded-t5 is--black">£{{ $charge->price }}</p>
                                 </div><!-- /.desc-container -->
 
                             </div><!-- /.charge -->

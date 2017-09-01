@@ -15,6 +15,7 @@
                 <li><a href="/cookie" class="foot-links">Cookie Policy</a></li>
                 <li><a href="https://www.facebook.com/ormrepo" class="foot-links">Facebook</a></li>
                 <li><a href="https://www.instagram.com/thediversecoder/" class="foot-links">Instagram</a></li>
+                <li><a href="https://medium.com/@ormrepo/" class="foot-links">Medium</a></li>
                 <li ><a href="/privacy" class="foot-links">Privacy Policy</a></li>
                 <li><a href="/rss" class="foot-links">Rss</a></li>
                 <li><a href="/terms" class="foot-links">Terms & Conditions</a></li>

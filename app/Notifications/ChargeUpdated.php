@@ -56,7 +56,7 @@ class ChargeUpdated extends Notification implements ShouldQueue
         $charge = $this->charge;
 
         return (new SlackMessage)
-            ->content('Your charge was updated: ', $this->user->name)
+            ->content('Your ormrepo charge was updated: ', $this->user->name)
             ->attachment(function ($attachment) use ($charge) {
                 $attachment->title($charge->name, route('admin.charges.show', $charge->id));
             });

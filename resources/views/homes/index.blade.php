@@ -82,7 +82,7 @@
 
     <div class="portfolio-container">
         <h7 id="portfolio"></h7>
-        <div class="about-heading is--padded-bt50">
+        <div class="about-heading is--padded-b50">
             <h12>Po</h12><h13>rtfo</h13><h12>lio</h12>
         </div><!-- /.about-heading -->
 
@@ -139,45 +139,45 @@
 
         <div class="contact-container">
             <h7 id="contact"></h7>
-            <div class="about-heading is--padded-bt50">
+            <div class="about-heading is--padded-b50">
                 <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct</h12>
 
             </div><!-- /.about-heading -->
 
             <div class="message-container">
                 {!! Form::open(array('route' => 'home_store')) !!}
+
                 @include('partials.errors')
 
                     <div class="named-container">
-                        <div class="description">
-                            {!! Form::label('Your Name', 'Your Name:', ['class' => 'is--beige control']) !!}
-                            {!! Form::text('name', null, ['class' => 'form', 'placeholder' => 'Name']) !!}
-                        </div><!-- /.test -->
+                        <div class="email-container">
 
-                        <div class="description">
-                            {!! Form::label('Your Email Address', 'Email Address:', ['class' => 'is--beige control']) !!}
-                            {!! Form::text('email', null, ['class' => 'form', 'placeholder' => 'Email Address']) !!}
-                        </div><!-- /.test -->
+                                {!! Form::label('Name', 'Name:', ['class' => 'is--beige is--padded-r10']) !!}
+                                {!! Form::text('name', null, ['class' => 'form']) !!}
+
+                                {!! Form::label('Email Address', 'Email:', ['class' => 'is--beige is--padded-r10']) !!}
+                                {!! Form::text('email', null, ['class' => 'form']) !!}
+
+                        </div><!-- /.who-container -->
+
+                        {!! Form::label('user_message', 'Message:', ['class' => 'is--beige control']) !!}
+                        {!! Form::textarea('user_message', null, ['class' => 'form-control is--padded-l']) !!}
+                        <div class="send-container">
+                            {!! Form::submit('Send', array('class'=>'btn btn-secondary')) !!}
+                        </div><!-- /.read-container -->
+                        {!! Form::close() !!}
 
                     </div><!-- /.named-container -->
 
-                    <div class="complete-container">
-                        <div class="description-container">
-                            {!! Form::label('user_message', 'Message:', ['class' => 'is--beige control']) !!}
-                            {!! Form::textarea('user_message', null, ['class' => 'form-control', 'placeholder' => 'Your Message']) !!}
-                        </div><!-- /.description-container -->
-                        <div class="mail-container">
-                            <p class="is--beige">You can use the form or chat with us</p>
-                            <p class="is--beige">Email: info@ormrepo.co.uk</p>
-                            <p class="is--beige">Telephone: 07512305773</p>
-                        </div><!-- /.mail-container -->
-                    </div><!-- /.complete-container -->
 
-                    <div class="send-container">
-                        {!! Form::submit('Send', array('class'=>'btn btn-secondary')) !!}
-                    </div><!-- /.read-container -->
+                <div class="mail-container">
+                    <h5 class="is--beige text-transform">You can use the form or chat with us</h5>
+                    <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
+                    <h5 class="is--beige text-transform">Telephone: 07512305773</h5>
+                </div><!-- /.mail container -->
 
-                {!! Form::close() !!}
+
+
 
             </div><!-- /.message-container -->
         </div><!-- /.contact-container -->

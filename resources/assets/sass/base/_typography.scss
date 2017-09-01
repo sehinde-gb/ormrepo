@@ -123,7 +123,7 @@ h2 {
   font-weight: 700;
   font-size: 2em;
   line-height: 36px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: #f9f1dc;
   margin: 0;
   padding-top: 10px;
@@ -185,7 +185,7 @@ h5 a {
 
 h6 a {
   font-family: $lato-bold;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   line-height: 33px;
   text-transform: uppercase;
   color: #ffffff;
@@ -298,9 +298,9 @@ a:focus {
 }
 
 p {
-  font-family: $lato-light;
+  font-family: $lato-regular;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1vw;
   line-height: 28px;
   color: #303030;
   text-transform: none !important;
@@ -309,7 +309,7 @@ p {
 .date {
   font-family: $lato-light;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.95em;
   line-height: 28px;
   color: $black;
 }
@@ -346,8 +346,8 @@ p {
   font-weight: 900;
   font-size: 1em;
   line-height: 30px;
-  color: #F8F8F8;
-  text-transform: uppercase !important;
+  color: $black;
+  text-transform: capitalize !important;
   padding: 0;
   margin: 0;
 }
@@ -357,14 +357,14 @@ p {
   font-weight: 900;
   font-size: 1em;
   line-height: 30px;
-  color: #F8F8F8;
-  text-transform: uppercase !important;
+  color: $black;
+  text-transform: capitalize !important;
   padding: 0;
   margin: 0;
 }
 
 .find-link:hover {
-  color: #606060;
+  color: #ada074;
 }
 
 label {
@@ -397,7 +397,7 @@ label {
 
 .blog--title {
   font-family: $lato-bold;
-  font-size: 2.188em;
+  font-size: 2vw;
   line-height: 54px;
   font-weight: 900;
   text-transform: capitalize;
@@ -406,7 +406,7 @@ label {
 
 .box--name {
   font-family: $lato-bold;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   text-transform: uppercase;
   color: $secondary-color;
   font-weight: 700;
@@ -418,7 +418,7 @@ label {
 .box--title {
   font-family: $georgia;
   font-weight: 300;
-  font-size: 1.125em;
+  font-size: 1.3vw;
   line-height: 21px;
   text-transform: uppercase;
   color: $secondary-color;
@@ -428,7 +428,7 @@ label {
 .blog--excerpt {
   font-family: $lato-bold;
   font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1vw;
   line-height: 32px;
   text-transform: none;
   color: $black;
@@ -579,8 +579,8 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: #F8F8F8;
-    text-transform: uppercase !important;
+    color: $black;
+    text-transform: capitalize !important;
     padding: 0;
     margin: 0;
   }
@@ -590,14 +590,14 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: #F8F8F8;
-    text-transform: uppercase !important;
+    color: $black;
+    text-transform: capitalize !important;
     padding: 0;
     margin: 0;
   }
 
   .find-link:hover {
-    color: #606060;
+    color: #ada074;
   }
 
 
@@ -629,7 +629,7 @@ label {
 
   .box--name {
     font-family: $lato-bold;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
@@ -640,7 +640,7 @@ label {
 
   .blog--title {
     font-family: $lato-bold;
-    font-size: 2.188em;
+    font-size: 2vw;
     line-height: 54px;
     font-weight: 900;
     text-transform: capitalize;
@@ -650,7 +650,7 @@ label {
   .blog--excerpt {
     font-family: $lato-bold;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1vw;
     line-height: 32px;
     text-transform: none;
     color: $black;
@@ -694,7 +694,7 @@ label {
   .box--title {
     font-family: $georgia;
     font-weight: 300;
-    font-size: 1.125em;
+    font-size: 1.3vw;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -785,6 +785,25 @@ label {
     padding-left: 60px;
   }
 
+  h6 a {
+    font-family: $lato-bold;
+    font-size: 1.5vw;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  h6 a:hover {
+    color: #ada074;
+    text-decoration: none;
+    border: none;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -836,8 +855,8 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: #F8F8F8;
-    text-transform: uppercase !important;
+    color: $black;
+    text-transform: capitalize !important;
     padding: 0;
     margin: 0;
   }
@@ -847,14 +866,14 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: #F8F8F8;
-    text-transform: uppercase !important;
+    color: $black;
+    text-transform: capitalize !important;
     padding: 0;
     margin: 0;
   }
 
   .find-link:hover {
-    color: #606060;
+    color: #ada074;
   }
 
   /* Column Container & Newsletter Container Typography */
@@ -864,7 +883,7 @@ label {
 
   .blog--title {
     font-family: $lato-bold;
-    font-size: 2.188em;
+    font-size: 3vw;
     line-height: 49px;
     font-weight: 900;
     text-transform: capitalize;
@@ -884,7 +903,8 @@ label {
 
   .box--name {
     font-family: $lato-bold;
-    font-size: 1.500em;
+    //font-size: 1.500em;
+    font-size: 2vw;
     line-height: 36px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -896,7 +916,7 @@ label {
   .box--title {
     font-family: $georgia;
     font-weight: 300;
-    font-size: 1.125em;
+    font-size: 2vw;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -1014,18 +1034,40 @@ label {
     padding-left: 60px;
   }
 
+  h6 a {
+    font-family: $lato-bold;
+    font-size: 2vw;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  h6 a:hover {
+    color: #ada074;
+    text-decoration: none;
+    border: none;
+  }
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
   h6 a {
     font-family: $montserrat;
-    font-size: 1.5em;
+    font-size: 4vw;
     line-height: 33px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
     line-height: 33px;
+  }
+
+  h6 a:hover {
+    color: #ada074;
+    text-decoration: none;
+    border: none;
   }
 
   h8 {
@@ -1109,8 +1151,8 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: #F8F8F8;
-    text-transform: uppercase !important;
+    color: $black;
+    text-transform: capitalize !important;
     padding: 0;
     margin: 0;
   }
@@ -1156,7 +1198,7 @@ label {
   .box--name {
     font-family: $montserrat-bold;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 4.5vw;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -1165,7 +1207,7 @@ label {
 
   .box--title {
     font-family: $georgia;
-    font-size: 1.125em;
+    font-size: 4vw;
     line-height: 34px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -1176,7 +1218,7 @@ label {
 
   .blog--title {
     font-family: $montserrat;
-    font-size: 2.188em;
+    font-size: 5vw;
     line-height: 47px;
     font-weight: 900;
     text-transform: capitalize;
@@ -1258,6 +1300,16 @@ label {
     padding-left: 60px;
   }
 
+  .blog--excerpt {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 32px;
+    text-transform: none;
+    color: $black;
+    margin: 0;
+    padding-bottom: 10px;
+  }
 
 }
 

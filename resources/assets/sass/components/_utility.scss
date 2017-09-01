@@ -61,7 +61,6 @@ $primary-color: #f8f8f8;
 }
 
 /* alignment */
-
 .is-flex {
   display: flex;
   align-items: center;
@@ -98,56 +97,41 @@ $primary-color: #f8f8f8;
   text-transform: none !important;
 }
 
-/* padding margins */
-.is--padded-bottom {
+/* Margins Padding */
+.is--padded-b20 {
   padding-bottom: 20px;
 }
 
-.is--padded-bt50 {
+.is--padded-b50 {
   padding-bottom: 50px;
 }
 
-.is--both-sides {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-.is--padded-top-five {
+.is--padded-t5 {
   padding-top: 5px;
 }
 
-.is--padded-top-10 {
-  padding-top: 10px;
-}
-
-.is--padded-top-20 {
+.is--padded-t20 {
   padding-top: 20px;
 }
 
-.is--padded-top-40 {
+.is--padded-t40 {
   padding-top: 40px;
 
 }
 
-.is--padded-top-50 {
-  padding-top: 50px;
+.is--padded-r10 {
+  padding-right: 10px;
 }
 
-.is--padded-left-40 {
-  padding-left: 40px;
-  padding-top: 5px;
+.is--padded-lr {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.is--mar-top {
-  margin-top: 20px;
-}
 
-.is--margin-top-25 {
+.is--margin-t25 {
   margin-top: 25px;
-}
-
-.is--margin-top-50 {
-  margin-top: 50px;
 }
 
 .is--lorem-padding {
@@ -159,6 +143,10 @@ $primary-color: #f8f8f8;
   text-transform: capitalize;
 }
 
+.text-transform {
+  text-transform: inherit;
+}
+
 
 
 
@@ -166,19 +154,84 @@ $primary-color: #f8f8f8;
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   /* colour */
-  .is--white {
-    color: $primary-color;
+  .is--beige {
+    color: #f9f1dc !important;
   }
 
   .is--black {
     color: black;
   }
 
+  .is--black-grey {
+    color: #595959;
+  }
+
+  .is--snow {
+    color: #FFFAFA;
+  }
+
+  .is--dark-grey {
+    color: #191919;
+  }
+
+  .is--white {
+    color: $primary-color;
+  }
+
+  .is--white-bottom {
+    color: $primary-color;
+    padding-bottom: 20px;
+  }
+
+  .is-grey {
+    background-color: #bbbbbb;
+  }
+
+  .is-light-grey {
+    background-color: #dbdbdb;
+  }
+
+  .is-dark-grey {
+    background-color: #606060;
+  }
+
   .is--underlined {
     text-decoration: underline;
   }
 
+  .is--without {
+    padding-top: 15px;
+  }
+
+  .box-is-beige {
+    background-color: #f9f1dc !important;
+  }
+
+  .is--reset {
+    padding: 0;
+    margin: 0;
+  }
+
   /* alignment */
+
+  .is-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-flex-bottom {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .is-typ-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+  }
+
   .is-aligned {
     vertical-align: baseline;
     color: black;
@@ -188,17 +241,7 @@ $primary-color: #f8f8f8;
     text-align: center;
   }
 
-  .is--without {
-    padding-top: 15px;
-  }
-
-  .is--reset {
-    padding: 0;
-    margin: 0;
-  }
-
-
-  /* tyopography */
+  /* typography */
   .is--uppercase {
     text-transform: uppercase;
   }
@@ -207,44 +250,41 @@ $primary-color: #f8f8f8;
     text-transform: none !important;
   }
 
-  /* margins padding*/
-  .is--padded-bottom {
+  /* Margins Padding */
+  .is--padded-b20 {
     padding-bottom: 20px;
   }
 
-  .is--mar-top {
-    margin-top: 20px;
+  .is--padded-b50 {
+    padding-bottom: 50px;
   }
 
-  .is--both-sides {
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+  .is--padded-t5 {
+    padding-top: 5px;
   }
 
-  .is--padded-top-10 {
-    padding-top: 10px;
+  .is--padded-t20 {
+    padding-top: 20px;
   }
 
-  .is--padded-top-40 {
+  .is--padded-t40 {
     padding-top: 40px;
 
   }
 
-  .is--padded-top-50 {
-    padding-top: 50px;
+  .is--padded-r10 {
+    padding-right: 10px;
   }
 
-  .is--padded-left-40 {
-    padding-left: 40px;
-    padding-top: 5px;
+  .is--padded-lr {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  .is--margin-top-25 {
+
+  .is--margin-t25 {
     margin-top: 25px;
-  }
-
-  .is--margin-top-50 {
-    margin-top: 50px;
   }
 
   .is--lorem-padding {
@@ -252,8 +292,16 @@ $primary-color: #f8f8f8;
     padding-bottom: 20px;
   }
 
+  .is--capitals {
+    text-transform: capitalize;
+  }
 
- }
+  .text-transform {
+    text-transform: inherit;
+  }
+
+
+}
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
@@ -299,43 +347,40 @@ $primary-color: #f8f8f8;
   }
 
   /* margins padding */
-  .is--both-sides {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .is--padded-bottom {
+  .is--padded-b20 {
     padding-bottom: 20px;
   }
 
-  .is--padded-top-10 {
-    padding-top: 10px;
+  .is--padded-b50 {
+    padding-bottom: 50px;
   }
 
-  .is--padded-top-40 {
+
+  .is--padded-t5 {
+    padding-top: 5px;
+  }
+
+  .is--padded-t20 {
+    padding-top: 20px;
+  }
+
+  .is--padded-t40 {
     padding-top: 40px;
 
   }
 
-  .is--padded-top-50 {
-    padding-top: 50px;
+  .is--padded-r10 {
+    padding-right: 10px;
   }
 
-  .is--padded-left-40 {
-    padding-left: 40px;
-    padding-top: 5px;
+  .is--padded-lr {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  .is--mar-top {
-    margin-top: 20px;
-  }
 
-  .is--margin-top-25 {
+  .is--margin-t25 {
     margin-top: 25px;
-  }
-
-  .is--margin-top-50 {
-    margin-top: 50px;
   }
 
   .is--lorem-padding {
@@ -343,10 +388,18 @@ $primary-color: #f8f8f8;
     padding-bottom: 20px;
   }
 
-  .is--reset {
-    padding: 0;
-    margin: 0;
+  .is--capitals {
+    text-transform: capitalize;
   }
+
+  .text-transform {
+    text-transform: inherit;
+  }
+
+
+
+
+
 
 
 
@@ -375,21 +428,41 @@ $primary-color: #f8f8f8;
     margin: 0;
   }
 
-  .is--padding-bottom {
+  /* Margin Paddings */
+  .is--padded-b20 {
     padding-bottom: 20px;
   }
 
-  .is--padded-top-10 {
-    padding-top: 10px;
+  .is--padded-b50 {
+    padding-bottom: 50px;
   }
 
-  .is--padded-left-40 {
-    padding-left: 20px;
+
+  .is--padded-t5 {
     padding-top: 5px;
   }
 
-  .is--padded-top-40 {
+  .is--padded-t20 {
     padding-top: 20px;
+  }
+
+  .is--padded-t40 {
+    padding-top: 40px;
+
+  }
+
+  .is--padded-r10 {
+    padding-right: 10px;
+  }
+
+  .is--padded-lr {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+
+  .is--margin-t25 {
+    margin-top: 25px;
   }
 
   .is--lorem-padding {
@@ -397,13 +470,12 @@ $primary-color: #f8f8f8;
     padding-bottom: 20px;
   }
 
-  .is--padded-bottom {
-    padding-bottom: 20px;
+  .is--capitals {
+    text-transform: capitalize;
   }
 
-  .is--reset {
-    padding: 0;
-    margin: 0;
+  .text-transform {
+    text-transform: inherit;
   }
 
 

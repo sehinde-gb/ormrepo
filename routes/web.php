@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
     Route::resource('charges', 'ChargesController');
 
-    Route::get('/home', ['as' => 'home', 'uses' => 'HomesController@index']);
+    //Route::get('/home', ['as' => 'home', 'uses' => 'HomesController@index']);
 });
 
 # Checkout

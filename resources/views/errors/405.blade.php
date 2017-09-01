@@ -30,7 +30,7 @@
 
                         <div class="exceptions">
                             <div class="links-container">
-                                <h2 class="is--padded-bottom">Try going back to our links to find what you were looking for:</h2>
+                                <h2 class="is--padded-b20">Try going back to our links to find what you were looking for:</h2>
                                 <ul class="list-inline">
                                     <li><a href="/" class="foot-links">Home</a></li>
                                     <li class="footer-menu-divider">&sdot;</li>

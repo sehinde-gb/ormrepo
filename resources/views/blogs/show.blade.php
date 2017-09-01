@@ -72,7 +72,7 @@
                             </div><!-- /.discus-box -->
 
                         <div class="social-container">
-                            <div class="social-buttons is--margin-top-25">
+                            <div class="social-buttons is--margin-t25">
                                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-575c2d11e407df7a"></script>
                             </div><!-- /.social-buttons -->

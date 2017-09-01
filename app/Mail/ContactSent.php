@@ -5,7 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use App\Http\Requests\ContactFormRequest;
+use App\Http\Requests\HomeFormRequest;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ContactSent extends Mailable
@@ -24,17 +24,17 @@ class ContactSent extends Mailable
     /**
      * Build the message.
      *
-     * @param ContactFormRequest $request
+     * @param HomeFormRequest $request
      * @return $this
      */
-    public function build(ContactFormRequest $request)
+    public function build(HomeFormRequest $request)
     {
-        return $this->view('emails.contact.contact')
+        return $this->view('emails.contact')
 
             ->with([
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
-                'body_message' => $request->get('message')
+                'user_message' => $request->get('user_message')
             ])
             ->from(['email' => $request->get('email')]);
     }

@@ -57,7 +57,7 @@ class BlogUpdated extends Notification implements ShouldQueue
         $blog = $this->blog;
 
         return (new SlackMessage)
-            ->content('Your blog post has been updated ', $this->user->name)
+            ->content('Your ormrepo post has been updated ', $this->user->name)
             ->attachment(function ($attachment) use ($blog) {
                 $attachment->title($blog->title, route('admin.blogs.show', $blog->id));
             });

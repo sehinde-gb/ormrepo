@@ -82,26 +82,4 @@ class PagesController extends Controller
 
     }
 
-
-
-
-
-    /**
-     * Grab the data from the message form and send it to the
-     * Web Administrator.
-     *
-     * @param ContactFormRequest $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(ContactFormRequest $request)
-    {
-
-        $data = $request->all();
-
-        event(new ContactWasSent());
-
-        return redirect('/');
-
-    }
-
 }

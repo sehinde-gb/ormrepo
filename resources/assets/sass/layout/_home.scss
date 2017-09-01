@@ -15,10 +15,6 @@ $black: #000000;
   justify-items: center;
 }
 
-
-
-
-
 span.underlined {
   border-bottom: 1px solid $beige;
 }
@@ -41,7 +37,6 @@ span.underlined {
   align-items: center;
   justify-items: center;
 }
-
 
 .about-heading {
   padding-top: 70px;
@@ -177,18 +172,40 @@ span {
 }
 
 .message-container {
-  height: 600px;
+  height: 700px;
   width: 70%;
-  margin-top: 40px;
+  display: flex;
 }
 
 .named-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.email-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.mail-container {
+  padding-left: 80px;
+  padding-top: 120px;
 }
 
 .form {
   width: 200px;
   margin-right: 20px;
+}
+
+.home-label {
+  width: 120px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
 }
 
 .control {
@@ -200,23 +217,12 @@ span {
   width: 45%;
 }
 
-.description-container {
-  padding-top: 100px;
-}
-
-.complete-container {
-  display: flex;
-}
-
 textarea.form-control {
   width: 420px;
 
 }
 
-.mail-container {
-  padding-left: 80px;
-  padding-top: 120px;
-}
+
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -233,10 +239,6 @@ textarea.form-control {
     align-items: center;
     justify-items: center;
   }
-
-
-
-
 
   span.underlined {
     border-bottom: 1px solid $beige;
@@ -394,13 +396,32 @@ textarea.form-control {
   }
 
   .message-container {
-    height: 600px;
+    height: 700px;
     width: 70%;
-    margin-top: 40px;
+    display: flex;
   }
 
   .named-container {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .email-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+  }
+
+  .mail-container {
+    padding-left: 80px;
+    padding-top: 120px;
+  }
+
+  .send-container {
+    padding-top: 150px;
   }
 
   .form {
@@ -417,26 +438,10 @@ textarea.form-control {
     width: 45%;
   }
 
-  .description-container {
-    padding-top: 100px;
-  }
-
-  .complete-container {
-    display: flex;
-  }
-
   textarea.form-control {
     width: 420px;
   }
 
-  .mail-container {
-    padding-left: 80px;
-    padding-top: 120px;
-  }
-
-  .send-container {
-    padding-top: 150px;
-  }
 
 }
 
@@ -454,8 +459,6 @@ textarea.form-control {
     align-items: center;
     justify-items: center;
   }
-
-
 
   span.underlined {
     border-bottom: 1px solid $beige;
@@ -612,28 +615,28 @@ textarea.form-control {
   }
 
   .message-container {
-    min-height: 600px;
+    height: 700px;
     width: 70%;
-    margin-top: 40px;
+    display: flex;
   }
 
   .named-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
   }
 
-  .complete-container {
+  .email-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
     display: flex;
-    flex-wrap: wrap;
   }
 
   .mail-container {
-    margin: 0;
-    padding-top: 20px;
-  }
-
-  .description-container {
-    padding-top: 50px;
+    padding-left: 80px;
+    padding-top: 120px;
   }
 
   .read-container {
@@ -656,6 +659,10 @@ textarea.form-control {
 
   textarea.form-control {
     width: 420px;
+  }
+
+  label {
+    width: 50%;
   }
 
   .send-container {
@@ -857,17 +864,28 @@ textarea.form-control {
     justify-items: center;
   }
 
-  .complete-container {
+  .email-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
   }
 
-  .description {
-    margin: 0;
-    padding-top: 20px;
+  .mail-container {
+    display: none;
   }
+
+  .send-container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
 
   .form {
     width: 300px;
@@ -877,7 +895,7 @@ textarea.form-control {
 
   .control {
     display: flex;
-    width: 300px;
+    width: 400px;
   }
 
   .form-control {
@@ -885,24 +903,10 @@ textarea.form-control {
   }
 
   textarea.form-control {
-    width: 300px;
+    width: 400px;
   }
 
-  .description-container {
-    padding-top: 20px;
-  }
 
-  .mail-container {
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 0;
-  }
 
-  .send-container {
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
 
 }
