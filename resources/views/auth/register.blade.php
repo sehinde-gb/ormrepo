@@ -55,7 +55,7 @@
                                        name="password_confirmation"
                                        placeholder="Confirm password">
                             </p>
-                            <p><label><input id="methods" type="checkbox"> Show password</label></p>
+
                         </div><!-- /.form-group form-group-lg -->
 
                         <div class="button-group">

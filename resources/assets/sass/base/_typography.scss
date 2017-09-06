@@ -123,7 +123,6 @@ h2 {
   font-weight: 700;
   font-size: 2em;
   line-height: 36px;
-  //text-transform: uppercase;
   color: #f9f1dc;
   margin: 0;
   padding-top: 10px;
@@ -1054,6 +1053,72 @@ label {
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
+  p {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 28px;
+    color: #303030;
+    text-transform: none !important;
+  }
+
+  h1 {
+    font-family: $montserrat-bold;
+    font-weight: 700;
+    text-transform: none !important;
+    color: $black;
+    font-size: 3em;
+    line-height: 45px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $montserrat-bold;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 36px;
+    color: #f9f1dc;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+
+  h3 {
+    font-family: $montserrat-bold;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 38px;
+    text-transform: capitalize;
+    color:  #282828;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: $montserrat-bold;
+    font-weight: 700;
+    font-size: 1.17em;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #282828;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  h5 {
+    color: #282828;
+    font-family: $montserrat-bold;
+    font-size: 1em;
+    line-height: 25px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
+  }
+
+
   h6 a {
     font-family: $montserrat;
     font-size: 4vw;
@@ -1087,7 +1152,7 @@ label {
   }
 
   h12 {
-    font-family: $lato-bold;
+    font-family: $montserrat-bold;
     font-weight: 200;
     font-size: 7vw;
     line-height: 30px;
@@ -1096,7 +1161,7 @@ label {
   }
 
   h13 {
-    font-family: $lato-bold;
+    font-family: $montserrat-bold;
     font-weight: 200;
     font-size: 7vw;
     line-height: 30px;
@@ -1107,7 +1172,7 @@ label {
   }
 
   h15 {
-    font-family: $lato-bold;
+    font-family: $montserrat-bold;
     font-weight: 200;
     font-size: 7vw;
     line-height: 30px;
@@ -1206,7 +1271,7 @@ label {
   }
 
   .box--title {
-    font-family: $georgia;
+    font-family: $montserrat;
     font-size: 4vw;
     line-height: 34px;
     text-transform: uppercase;
@@ -1218,7 +1283,7 @@ label {
 
   .blog--title {
     font-family: $montserrat;
-    font-size: 5vw;
+    font-size: 2em;
     line-height: 47px;
     font-weight: 900;
     text-transform: capitalize;
@@ -1303,7 +1368,7 @@ label {
   .blog--excerpt {
     font-family: $montserrat;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 1em;
     line-height: 32px;
     text-transform: none;
     color: $black;

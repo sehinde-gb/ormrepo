@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
+@section('meta-title', 'Password Reset')
+
+
 @section('content')
 <div class="container">
+    <div class="header">
+        <h2 class="leader is--white">Set Password</h2>
+    </div><!-- /.header -->
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

@@ -32,16 +32,15 @@
                             <div class="links-container">
                                 <h2 class="is--padded-b20">Try going back to our links to find what you were looking for:</h2>
                                 <ul class="list-inline">
+                                    <li class="footer-menu-divider">&sdot;</li>
                                     <li><a href="/" class="foot-links">Home</a></li>
-                                    <li class="footer-menu-divider">&sdot;</li>
-                                    <li><a href="/about" class="foot-links">About</a></li>
-                                    <li class="footer-menu-divider">&sdot;</li>
-                                    <li><a href="https://ormrepo.co.uk/contact" class="foot-links">Contact Us</a>
+                                    <li class="footer-menu-divider"></li>
+                                    <li><a href="/login" class="foot-links">Login</a>
                                     </li>
                                     <li class="footer-menu-divider">&sdot;</li>
-                                    <li><a href="https://ormrepo.co.uk/bookings" class="foot-links">Bookings</a>
+                                    <li><a href="/register" class="foot-links">Register</a>
                                     </li>
-
+                                    <li class="footer-menu-divider">&sdot;</li>
                                 </ul>
                             </div><!-- /.links-container -->
                         </div><!-- /exceptions -->
