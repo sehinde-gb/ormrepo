@@ -34,7 +34,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="is--black">Casa Rental<br>Property website</h2>
-                    <p class="section--body is--padding-bottom">This is a property website that was built as a test so that users from Ruislip can search for properties in their local area to buy or sell.</p>
+                    <p class="section--body is--padding-bottom">This is a property website that was built as a test so that people from Ruislip can search for properties in their local area to buy or sell.</p>
                     <ul class="project-links">
                         <li><a href="https://casarental.ormrepo.co.uk/" class="is--black">Link</a></li>
                     </ul>
@@ -53,8 +53,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">El Coche<br>Car Blog</h2>
-                    <p class="section--body is--padding-bottom">This is an car enthusiast blog. This website is currently being updated..</p>
+                    <h2 class="is--black">El Coche<br>Car Technology Blog</h2>
+                    <p class="section--body is--padding-bottom">We are a car enthusiast blog and we will cover the latest technological news in the motor industry</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="images/showcase/elcoche.png" alt="Ipad containing car blog app screen.">
@@ -69,7 +69,7 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">The GamesStation<br>Purchase game keys</h2>
+                    <h2 class="is--black">The GamesStation<br>Electronic Commerce</h2>
                     <p class="section--body is--padding-bottom">This is a website that was built as a test e-commerce site in which you can buy video game keys, amend your profile and create inspiring blog posts.</p>
                     <ul class="project-links">
                         <li><a href="https://games.ormrepo.co.uk/" class="is--black">Link</a></li>
