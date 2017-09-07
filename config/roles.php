@@ -39,7 +39,7 @@ return [
     */
 
     'models' => [
-        'role' => HttpOz\Roles\Models\Role::class
+        //'role' => HttpOz\Roles\Models\Role::class
     ],
 
     /*

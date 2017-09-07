@@ -14,23 +14,25 @@
                    <h2 class="leader is--black">Edit Blog</h2>
                </div><!-- /.header -->
                     <div class="row">
-
+                        @can('update', $blog)
 
                             {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                     @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
+                        @endcan
 
 
                     </div><!-- /.row -->
 
                     <div class="row">
+                        @can('delete', $blog)
 
-                           {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.blogs.destroy', $blog->id]]) !!}
+                            {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.blogs.destroy', $blog->id]]) !!}
 
                            {!! delete_form(['admin.blogs.destroy', $blog->id]) !!}
 
                            {!! Form::close() !!}
-
+                        @endcan
 
                     </div><!-- /.row -->
 

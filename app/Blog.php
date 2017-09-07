@@ -9,7 +9,7 @@ use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
 use Laravel\Scout\Searchable;
 use Illuminate\Notifications\Notifiable;
-use App\Comment;
+
 
 
 class Blog extends Model
@@ -54,17 +54,6 @@ class Blog extends Model
     {
         return $this->belongsTo('App\User');
     }
-
-    /**
-     * A blog can have many comments.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
-    }
-
 
 
 

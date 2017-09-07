@@ -5,14 +5,12 @@ namespace App;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
-use HttpOz\Roles\Traits\HasRole;
-use HttpOz\Roles\Contracts\HasRole as HasRoleContract;
 use Laravel\Cashier\Billable;
 
 
-class User extends Authenticatable implements HasRoleContract
+class User extends Authenticatable
 {
-    use Notifiable, HasRole, Billable;
+    use Notifiable,  Billable;
 
     /**
      * The database table used by the model.
