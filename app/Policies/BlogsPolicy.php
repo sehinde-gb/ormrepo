@@ -58,4 +58,17 @@ class BlogsPolicy
         return $user->id === $blog->user_id;
     }
 
+    /**
+     * Determine if the given blog can be deleted by the user.
+     *
+     * @param  \App\User $user
+     * @param Blog $blog
+     * @return bool
+     *
+     */
+    public function create(User $user, Blog $blog)
+    {
+        return $user->id === $blog->user_id;
+    }
+
 }

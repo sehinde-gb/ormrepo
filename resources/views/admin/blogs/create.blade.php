@@ -15,9 +15,15 @@
                     <h2 class="leader is--black">Publish Blog</h2>
                 </div><!-- /.header -->
                 <div class="row">
-                    {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}
-                        @include('admin.blogs.form', ['submitButtonText' => 'Publish Blog'])
-                    {!! Form::close() !!}
+                    @can('create')
+                        {!! Form::model($blog = new \App\Blog,  ['files'=>true, 'url' => 'admin/blogs']) !!}
+                            @include('admin.blogs.form', ['submitButtonText' => 'Publish Blog'])
+                        {!! Form::close() !!}
+                    @endcan
+
+                        @cannot('create')
+                            <p class="is--white">Sorry you are not permitted to create a post</p>
+                        @endcannot
                 </div><!-- /.row -->
 
             </div><!-- /.register-fluid -->

@@ -21,6 +21,10 @@
                             {!! Form::close() !!}
                         @endcan
 
+                            @cannot('update', $blog)
+                                <p class="is--white">Sorry you are not permitted to update a post</p>
+                            @endcannot
+
 
                     </div><!-- /.row -->
 
@@ -33,6 +37,10 @@
 
                            {!! Form::close() !!}
                         @endcan
+
+                            @cannot('delete', $blog)
+                                <p class="is--white">Sorry you are not permitted to delete a post</p>
+                            @endcannot
 
                     </div><!-- /.row -->
 
