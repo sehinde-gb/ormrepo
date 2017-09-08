@@ -10,39 +10,37 @@
     <div class="form-page">
 
         <div class="register-fluid">
-               <div class="logo-container">
-                   <div class="own-logo">
-                       <img class="bordered-logo"
-                            src="/images/logo/logo_small.png"
-                            alt="The ormrepo thoughtful logo">
-                   </div><!-- /.own-logo -->
-               </div><!-- /.logo-container -->
-
-
                <div class="header">
-                   <h4 class="leader is--black">Edit Blog</h4>
+                   <h2 class="leader is--black">Edit Blog</h2>
                </div><!-- /.header -->
-
                     <div class="row">
 
-                       @role('admin')
 
                             {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                     @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
 
-                        @endrole
+
+                            @cannot('update', $blog)
+                                <p class="is--white">Sorry you are not permitted to update a post</p>
+                            @endcannot
+
 
                     </div><!-- /.row -->
 
                     <div class="row">
-                        @role('admin')
-                           {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.blogs.destroy', $blog->id]]) !!}
+                        @can('delete', $blog)
+
+                            {!! Form::open([ 'method' => 'DELETE', 'route' => ['admin.blogs.destroy', $blog->id]]) !!}
 
                            {!! delete_form(['admin.blogs.destroy', $blog->id]) !!}
 
                            {!! Form::close() !!}
-                       @endrole
+                        @endcan
+
+                            @cannot('delete', $blog)
+                                <p class="is--white">Sorry you are not permitted to delete a post</p>
+                            @endcannot
 
                     </div><!-- /.row -->
 
