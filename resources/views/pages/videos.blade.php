@@ -43,10 +43,33 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/A2x8wM0vNHo" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
-            </div>
-            <!-- /.composite-container -->
-        </div>
-        <!-- /.privacy-container -->
+            </div><!-- /.composite-container -->
+
+            <div class="composite-container">
+                <div class="single-container">
+                    <h4>Social Diversity Series</h4>
+                    <h5 class="is--black is--capitals">Episode 5: How Can We Derive Value From Developer Inspired Meetup Groups?</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rTVHSNLnhzY" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+
+                <div class="single-container">
+                    <h4>Social Diversity Series</h4>
+                    <h5 class="is--black is--capitals">Episode 6: How does implicit bias influence the cultural fit within tech firms? </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VbsivYheqgY" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+            </div><!-- /.composite-container -->
+
+            <div class="composite-container">
+                <div class="single-container">
+
+                </div><!-- /.single-container -->
+
+                <div class="single-container">
+
+                </div><!-- /.single-container -->
+            </div><!-- /.composite-container -->
+
+        </div><!-- /.privacy-container -->
     </div><!-- /.main-container -->
 
 @endsection
