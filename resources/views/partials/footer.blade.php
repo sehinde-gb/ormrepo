@@ -11,7 +11,6 @@
 
         <div class="footer-navigation">
             <ul>
-                <li><a href="https://www.behance.net/" class="foot-links">Behance</a></li>
                 <li><a href="/cookie" class="foot-links">Cookie Policy</a></li>
                 <li><a href="https://www.facebook.com/ormrepo" class="foot-links">Facebook</a></li>
                 <li><a href="https://www.instagram.com/thediversecoder/" class="foot-links">Instagram</a></li>
