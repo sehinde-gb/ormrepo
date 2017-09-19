@@ -61,12 +61,17 @@
 
             <div class="composite-container">
                 <div class="single-container">
-
+                    <h5 class="is--beige is--capitals">Episode 7: How does implicit bias affect your relationships? </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N1mSmFNuJXQ" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
-                <div class="single-container">
 
-                </div><!-- /.single-container -->
+                    <div class="single-container">
+                        <h5 class="is--beige is--capitals">Episode 8: How we use markdown in mailables for Laravel 5.5 </h5>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDmukVX8QG_N4MkKfkSlyejikzjw2O5jD" frameborder="0" allowfullscreen></iframe>
+                    </div><!-- /.single-container -->
+
+
             </div><!-- /.composite-container -->
 
         </div><!-- /.privacy-container -->
