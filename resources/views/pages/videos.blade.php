@@ -63,7 +63,8 @@
 
             <div class="composite-container">
                 <div class="single-container">
-
+                    <h5 class="is--beige is--capitals">Episode 7: How does implicit bias affect your relationships? </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N1mSmFNuJXQ" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
                 <div class="single-container">
