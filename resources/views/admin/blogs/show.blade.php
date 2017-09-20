@@ -13,7 +13,7 @@
                 <div class="top-container">
                     <div class="heading">
                         <div id="featured-image">
-                            <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The featured picture">
+                            <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="web development service company">
                         </div><!-- /.featured-image -->
 
 
