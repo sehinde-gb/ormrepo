@@ -22,7 +22,7 @@
                     @endcan
 
                         @cannot('create')
-                            <p class="is--white">Sorry you are not permitted to create a post</p>
+                            <p class="is--black">Sorry you are not permitted to create a post</p>
                         @endcannot
                 </div><!-- /.row -->
 
