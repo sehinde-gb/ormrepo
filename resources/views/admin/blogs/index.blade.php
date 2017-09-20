@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Welcome to our Blog Listings')
+@section('meta-title', 'Welcome to our Blog')
 
 @section('content')
 
@@ -19,7 +19,7 @@
                             <div class="logo-header">
                                 <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
                                 <div class="statement">
-                                    <p class="tagline">We will empower you for all your customers needs</p>
+
                                 </div><!-- /.statement -->
                             </div><!-- /.logo-heading -->
 

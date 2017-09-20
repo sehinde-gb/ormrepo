@@ -1,6 +1,6 @@
 @extends ('layouts.master')
 
-@section('meta-title', 'Welcome to our Home Page')
+@section('meta-title', 'Web Development Services')
 
 @section('content')
 
@@ -11,7 +11,8 @@
                 </div><!-- /.logo-heading -->
 
             <div class="statement">
-                <p class="tagline">We will empower you for all your customers needs</p>
+                <p class="tagline">We provide full circle, web development services & tailored virtual craftsmanship, to empower you with the right tools and systems that help cater for your customer needs.</p>
+
             </div><!-- /.statement -->
 
             <div class="read-container">
@@ -43,11 +44,12 @@
                            <img src="/images/assets/monitor.png"
                                    alt="The monitor">
                            <div class="title-container">
-                                <h14>Responsive</h14>
+                                <h14>Custom Fitted</h14>
                            </div><!-- /.title-container -->
 
                            <div class="text-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                            <p>We use open end back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
+                            </p>
                            </div><!-- /.text-container -->
 
                        </div><!-- /.monitor-container -->
@@ -55,10 +57,11 @@
                                 <img src="/images/assets/gear.png"
                                      alt="The gear">
                                 <div class="title-container">
-                                    <h14>Minimalist</h14>
+                                    <h14> Autopilot</h14>
                                 </div><!-- /.title-container -->
                                 <div class="text-container">
-                                    <p>Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit,</span> sed do eiusmod tempor incididunt </p>
+                                    <p>If you don’t feel like liaising with many heads to culminate the project, we do provide a full <span>360*</span> project management service, taking your project from stages of conception through to delivery, setting milestones along the way.
+                                    </p>
                                 </div><!-- /.text-container -->
 
                             </div><!-- /.gear-container -->
@@ -67,10 +70,10 @@
                                     <img src="/images/assets/download.png"
                                          alt="The download">
                                     <div class="title-container">
-                                        <h14>Freebies</h14>
+                                        <h14>Online Presence</h14>
                                     </div><!-- /.title-container -->
                                     <div class="text-container">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+                                        <p>You don’t have to pay big money to be visible on the biggest search engines. It’s called Search Engine Optimisation. It’s legit and we’ll be happy to tell you more, just ask.</p>
                                     </div><!-- /.text-container -->
                                 </div><!-- /.free-container -->
                     </div><!-- /.who-container -->

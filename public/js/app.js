@@ -29484,7 +29484,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.hideModal
     }
   }, [_c('i', {
-    staticClass: "fa fa-times-circle-o fa-2x",
+    staticClass: "fa fa-times-circle-o",
     attrs: {
       "aria-hidden": "true"
     }
