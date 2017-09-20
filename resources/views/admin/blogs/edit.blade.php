@@ -14,12 +14,12 @@
                    <h2 class="leader is--black">Edit Blog</h2>
                </div><!-- /.header -->
                     <div class="row">
-                        @can('update', $blog)
+
 
                             {!! Form::model($blog, array('route' => array('admin.blogs.update', $blog->id), 'method' => 'PUT')) !!}
                                     @include('admin.blogs.form', ['submitButtonText' => 'Update'])
                             {!! Form::close() !!}
-                        @endcan
+
 
                             @cannot('update', $blog)
                                 <p class="is--white">Sorry you are not permitted to update a post</p>
