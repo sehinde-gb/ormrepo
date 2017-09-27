@@ -405,19 +405,18 @@ label {
 
 .box--name {
   font-family: $lato-bold;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   text-transform: uppercase;
   color: $secondary-color;
   font-weight: 700;
   line-height: 38px;
   width: 100%;
-
 }
 
 .box--title {
   font-family: $georgia;
   font-weight: 300;
-  font-size: 1.3vw;
+  font-size: 1em;
   line-height: 21px;
   text-transform: uppercase;
   color: $secondary-color;
@@ -628,14 +627,24 @@ label {
 
   .box--name {
     font-family: $lato-bold;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
     line-height: 38px;
     width: 100%;
-
    }
+
+  .box--title {
+    font-family: $georgia;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin: 0;
+  }
+
 
   .blog--title {
     font-family: $lato-bold;
@@ -690,15 +699,6 @@ label {
     padding-top: 10px;
   }
 
-  .box--title {
-    font-family: $georgia;
-    font-weight: 300;
-    font-size: 1.3vw;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    margin: 0;
-  }
 
   .box--underline {
     font-family: $georgia;
@@ -902,8 +902,7 @@ label {
 
   .box--name {
     font-family: $lato-bold;
-    //font-size: 1.500em;
-    font-size: 2vw;
+    font-size: 1.5em;
     line-height: 36px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -915,7 +914,7 @@ label {
   .box--title {
     font-family: $georgia;
     font-weight: 300;
-    font-size: 2vw;
+    font-size: 1em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
@@ -1263,16 +1262,17 @@ label {
   .box--name {
     font-family: $montserrat-bold;
     font-weight: 300;
-    font-size: 4.5vw;
+    font-size: 2em;
     line-height: 21px;
     text-transform: uppercase;
     color: $secondary-color;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .box--title {
     font-family: $montserrat;
-    font-size: 4vw;
+    font-size: 1.5em;
     line-height: 34px;
     text-transform: uppercase;
     color: $secondary-color;
