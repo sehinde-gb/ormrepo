@@ -152,6 +152,13 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-seventeen-->
+                            @elseif($blog->id == 14)
+                                <div class="column is-one-quarter is-light-grey is-flex is-eighteen">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-eighteen-->
 
                             @endif
 
