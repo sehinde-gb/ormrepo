@@ -69,8 +69,7 @@
                             @elseif($blog->id == 3)
                                 <div class="column is-one-quarter box-is-beige is-flex is-five">
                                     <div class="name-column">
-                                        <h6 class="box--name">Karan</h6>
-                                        <h6 class="box--name">Kanuga</h6>
+                                        <h6 class="box--name">Karan Kanuga</h6>
                                         <h6 class="box--title">Project Management & SEO</h6>
                                     </div><!-- /.name-column -->
 
