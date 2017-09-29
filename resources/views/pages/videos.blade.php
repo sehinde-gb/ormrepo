@@ -69,6 +69,20 @@
 
             </div><!-- /.composite-container -->
 
+            <div class="composite-container">
+                <div class="single-container">
+                    <h5 class="is--black is--capitals">Episode 9: How can we reduce implicit bias in tech? </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d2QFE2Wf0ME" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+
+
+                <div class="single-container">
+
+                </div><!-- /.single-container -->
+
+
+            </div><!-- /.composite-container -->
+
         </div><!-- /.privacy-container -->
     </div><!-- /.main-container -->
 
