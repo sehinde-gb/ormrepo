@@ -64,6 +64,11 @@ footer {
 }
 
 
+li {
+  color: black;
+}
+
+
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
@@ -121,7 +126,9 @@ footer {
     background-color: #003434;
   }
 
-
+  li {
+    color: black;
+  }
 
 }
 
@@ -182,7 +189,9 @@ footer {
     background-color: #003434;
   }
 
-
+  li {
+    color: black;
+  }
 
 
 }
@@ -239,5 +248,8 @@ footer {
     background-color: #003434;
   }
 
+  li {
+    color: black;
+  }
 
 }
