@@ -33,21 +33,6 @@ code {
   background-color: #bbbbbb;
 }
 
-/*
-.message-header {
-  background-color: #bbbbbb;
-  border-radius: 3px 3px 0 0;
-  color: white;
-  padding: 7px 10px;
-}
-
-.message {
-  position: absolute;
-  left: 90%;
-  width: 220px;
-}
-
-*/
 
 img {
   max-width: 100%;
@@ -65,7 +50,7 @@ footer {
 
 
 li {
-  color: black;
+  color: black !important;
 }
 
 
@@ -97,21 +82,7 @@ li {
     background-color: #003434;
   }
 
-  /*
-  .message-header {
-    background-color: #bbbbbb;
-    border-radius: 3px 3px 0 0;
-    color: white;
-    padding: 7px 10px;
-  }
 
-  .message {
-    left: 80%;
-    bottom: 5%;
-    width: 200px;
-  }
-
-*/
   img {
     max-width: 100%;
     width: auto;
@@ -127,7 +98,7 @@ li {
   }
 
   li {
-    color: black;
+    color: black !important;
   }
 
 }
@@ -159,21 +130,7 @@ li {
     background-color: #003434;
   }
 
-  /*
-  .message-header {
-    background-color: #bbbbbb;
-    border-radius: 3px 3px 0 0;
-    color: white;
-    padding: 7px 10px;
-  }
 
-  .message {
-    left: 80%;
-    bottom: 5%;
-    width: 200px;
-  }
-
-  */
 
   img {
     max-width: 100%;
@@ -190,7 +147,7 @@ li {
   }
 
   li {
-    color: black;
+    color: black !important;
   }
 
 
@@ -223,21 +180,7 @@ li {
     background-color: #003434;
   }
 
-  /*
-  .message-header {
-    background-color: #bbbbbb;
-    border-radius: 3px 3px 0 0;
-    color: white;
-    padding: 7px 10px;
-  }
 
-  .message {
-    left: 80%;
-    bottom: 5%;
-    width: 200px;
-  }
-
-  */
 
   .img-responsive {
     border: none !important;
@@ -249,7 +192,7 @@ li {
   }
 
   li {
-    color: black;
+    color: black !important;
   }
 
 }
