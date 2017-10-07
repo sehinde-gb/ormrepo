@@ -77,7 +77,8 @@
 
 
                 <div class="single-container">
-
+                    <h5 class="is--black is--capitals">Episode 10: Stripe Apple Pay In Depth Part 1 </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EEL13qVaXFM" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
 
