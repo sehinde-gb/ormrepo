@@ -84,6 +84,18 @@
 
             </div><!-- /.composite-container -->
 
+            <div class="composite-container">
+                <div class="single-container">
+                    <h5 class="is--black is--capitals">Episode 11: Stripe Apple Pay In Depth Part 2 </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfymH-sJzBQ" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
+
+
+
+
+
+            </div><!-- /.composite-container -->
+
         </div><!-- /.privacy-container -->
     </div><!-- /.main-container -->
 

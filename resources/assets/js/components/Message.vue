@@ -6,11 +6,8 @@
         <div class="orm-body">
             <h4 class="alert-notify">{{ body }}
                 <a href="https://ormrepo.co.uk/cookie" class="find-link">Click here to find out more</a>
-                
                 </h4>
-        
         </div><!-- /.orm-body -->
-    
     </article><!-- /.orm-message -->
 
 </template>
@@ -19,7 +16,6 @@
     export default {
 
         props: ['body'],
-
 
         data() {
             return {
