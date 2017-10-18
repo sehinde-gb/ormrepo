@@ -1,5 +1,4 @@
 /node_modules
- /public/storage
 .env
 .idea
 .env.example
