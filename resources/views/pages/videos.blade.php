@@ -90,6 +90,10 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jfymH-sJzBQ" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
+                <div class="single-container">
+                    <h5 class="is--black is--capitals">Episode 12: Stripe Apple Pay In Depth Part 3 </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w6rLznbgDic" frameborder="0" allowfullscreen></iframe>
+                </div><!-- /.single-container -->
 
 
 
