@@ -179,6 +179,14 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-->
 
+                            @elseif($blog->id == 17)
+                                <div class="column is-one-quarter is-light-grey is-flex is-twentyone">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-->
+
                             @endif
 
                         @endforeach
