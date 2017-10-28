@@ -176,12 +176,35 @@
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-->
 
                             @elseif($blog->id == 17)
-                                <div class="column is-one-quarter is-light-grey is-flex is-twentyone">
+                                <div class="column is-one-quarter is-light-grey is-flex is-twenty-one">
                                     <div class="arrow">
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-one-->
+
+                            @elseif($blog->id == 18)
+                                <div class="column is-one-quarter is-grey is-flex is-twenty-two">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-twenty-two-->
+                            @elseif($blog->id == 19)
+                                <div class="column is-one-quarter is-light-grey is-flex is-twenty-three">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-three-->
+
+                            @elseif($blog->id == 20)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-twenty-four">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-four-->
                             @endif
 
                         @endforeach
