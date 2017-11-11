@@ -204,7 +204,28 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twentyfour-->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-four-->
+                            @elseif($blog->id == 21)
+                                <div class="column is-one-quarter is-grey is-flex is-twenty-five">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-twenty-five-->
+                            @elseif($blog->id == 22)
+                                <div class="column is-one-quarter is-light-grey is-flex is-twenty-six">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-six-->
+                            @elseif($blog->id == 23)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-twenty-seven">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-seven-->
 
                             @endif
 
