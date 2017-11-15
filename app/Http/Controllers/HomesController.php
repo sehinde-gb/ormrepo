@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Events\ContactWasSent;
-use App\Http\Requests\HomeFormRequest;
 use Illuminate\Http\Request;
 
 class HomesController extends Controller
@@ -18,22 +17,5 @@ class HomesController extends Controller
         return view('homes.index');
     }
 
-    /**
-     * Grab the data from the message form and send it to the
-     * Web Administrator.
-     *
-     * @param HomeFormRequest $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(HomeFormRequest $request)
-    {
 
-        $data = $request->all();
-
-
-        event(new ContactWasSent($data));
-
-        return redirect('/');
-
-    }
 }

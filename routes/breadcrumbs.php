@@ -55,6 +55,13 @@ Breadcrumbs::register('contact', function($breadcrumbs)
     $breadcrumbs->push('Contact', route('contact'));
 });
 
+// Home > Quotes Index
+    Breadcrumbs::register('quotes.index', function($breadcrumbs)
+    {
+        $breadcrumbs->parent('home');
+        $breadcrumbs->push('Quotes', route('quotes'));
+    });
+
 // Home > Blogs Index
 Breadcrumbs::register('blogs.index', function($breadcrumbs)
 {

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class HomeFormRequest extends FormRequest
+class QuoteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,7 +26,15 @@ class HomeFormRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'user_message' => 'required',
+            'phone' => 'required|phone:UK,US',
+            'what_project' => 'required|alpha',
+            'website' => 'required|alpha',
+            'pages' => 'required|integer',
+            'your_budget' => 'required|integer',
+            'description' => 'required|alphanumeric',
+            'functionality' => 'required|alphanumeric',
+            'website_list' => 'required|alpha'
+
         ];
     }
 }

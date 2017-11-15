@@ -17,6 +17,12 @@ span {
   text-indent: 0 !important;
 }
 
+.control {
+  display: flex;
+  width: 380px !important;
+  margin: 0;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   .breadcrumb {
@@ -38,7 +44,11 @@ span {
     text-indent: 0 !important;
   }
 
-
+  .control {
+    display: flex;
+    width: 380px !important;
+    margin: 0;
+  }
 
 }
 
@@ -63,6 +73,11 @@ span {
     text-indent: 0 !important;
   }
 
+  .control {
+    display: flex;
+    width: 380px !important;
+  }
+
 
 }
 
@@ -85,6 +100,11 @@ span {
 
   span {
     text-indent: 0 !important;
+  }
+
+  .control {
+    display: flex;
+    width: 380px !important;
   }
 
 

@@ -18,7 +18,9 @@ Auth::routes();
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomesController@index']);
 
-Route::post('/', ['as' => 'home_store', 'uses' => 'HomesController@store']);
+Route::get('/quotes', ['as' => 'quotes', 'uses' => 'QuotesController@index']);
+
+Route::post('/quotes', ['as' => 'quotes_store', 'uses' => 'QuotesController@store']);
 
 # Admin Boundary
 Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], function () {
@@ -27,7 +29,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
     Route::resource('charges', 'ChargesController');
 
-    //Route::get('/home', ['as' => 'home', 'uses' => 'HomesController@index']);
 });
 
 # Checkout

@@ -23,10 +23,9 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\SendUpdateNotification',
         ],
 
-        'App\Events\ContactWasSent' => [
-            'App\Listeners\SendContactConfirmation'
+        'App\Events\QuoteWasSent' => [
+            'App\Listeners\SendQuoteConfirmation'
         ],
-
 
     ];
 

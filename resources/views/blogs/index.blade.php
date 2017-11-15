@@ -228,6 +228,29 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-seven-->
+
+                            @elseif($blog->id == 24)
+                                <div class="column is-one-quarter is-grey is-flex is-twenty-eight">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-twenty-eight-->
+                            @elseif($blog->id == 25)
+                                <div class="column is-one-quarter is-light-grey is-flex is-twenty-nine">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-twenty-nine -->
+
+                            @elseif($blog->id == 26)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-thirty">
+                                    <div class="arrow">
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-thirty-->
                             @endif
 
                         @endforeach

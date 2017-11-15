@@ -2,13 +2,13 @@
 
 namespace App\Listeners;
 
-use App\Events\ContactWasSent;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use App\Mail\ContactSent;
+use App\Events\QuoteWasSent;
+use App\Mail\QuoteSent;
 use Carbon\Carbon;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Mail;
 
-class SendContactConfirmation implements ShouldQueue
+class SendQuoteConfirmation implements ShouldQueue
 {
     /**
      * Create the event listener.
@@ -22,17 +22,16 @@ class SendContactConfirmation implements ShouldQueue
     /**
      * Handle the event.
      *
-     * @param  ContactWasSent  $event
+     * @param  QuoteWasSent  $event
      * @return void
      */
-    public function handle(ContactWasSent $event)
+    public function handle(QuoteWasSent $event)
     {
         flash()->success('Feedback', 'We will provide a response within 24 hours');
 
         $when = Carbon::now()->addMinutes(1);
 
         Mail::to('info@ormrepo.co.uk')
-            ->later($when, new ContactSent($event));
-
+            ->later($when, new QuoteSent($event));
     }
 }

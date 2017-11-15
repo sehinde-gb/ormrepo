@@ -522,7 +522,7 @@ label {
   font-family: $lato-bold;
   font-size: 14px;
   line-height: 29px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .riz {
@@ -540,6 +540,18 @@ label {
   line-height: 28px;
   color: #949494;
   padding-left: 60px;
+}
+
+.aligned {
+  text-align: justify;
+}
+
+.tips {
+  font-family: $myriad-pro;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 32px;
+  color: $beige;
 }
 
 
@@ -765,7 +777,7 @@ label {
     font-family: $lato-bold;
     font-size: 14px;
     line-height: 29px;
-    text-transform: uppercase;
+    text-transform: none;
   }
 
   .riz {
@@ -799,6 +811,18 @@ label {
     color: #ada074;
     text-decoration: none;
     border: none;
+  }
+
+  .aligned {
+    text-align: justify;
+  }
+
+  .tips {
+    font-family: $myriad-pro;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 32px;
+    color: $beige;
   }
 
 
@@ -1013,7 +1037,7 @@ label {
     font-family: $lato-bold;
     font-size: 14px;
     line-height: 29px;
-    text-transform: uppercase;
+    text-transform: none;
   }
 
   .riz {
@@ -1048,6 +1072,11 @@ label {
     text-decoration: none;
     border: none;
   }
+
+  .aligned {
+    text-align: justify;
+  }
+
 
 }
 
@@ -1345,7 +1374,7 @@ label {
     font-family: $montserrat-bold;
     font-size: 14px;
     line-height: 29px;
-    text-transform: uppercase;
+    text-transform: none;
   }
 
 
@@ -1376,6 +1405,11 @@ label {
     margin: 0;
     padding-bottom: 10px;
   }
+
+  .aligned {
+    text-align: justify;
+  }
+
 
 }
 

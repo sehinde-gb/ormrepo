@@ -23,8 +23,12 @@ span.underlined {
   padding-top: 100px;
 }
 
-.read-container {
+.book-container {
   padding-top: 100px;
+}
+
+.quote-container {
+  padding-top: 50px;
 }
 
 .about-container {
@@ -81,14 +85,14 @@ span.underlined {
 }
 
 .title-container {
-  width: 150px;
+  width: 240px;
   padding-top: 50px;
 }
 
 .text-container {
   width: 250px;
   padding-top: 10px;
-  padding-left: 50px;
+  padding-left: 3px;
   padding-right: 10px;
 }
 
@@ -113,7 +117,7 @@ span {
 }
 
 .projects-container {
-  height: 700px;
+  min-height: 900px;
   width: 80%;
   padding-left: 50px;
   padding-top: 20px;
@@ -140,7 +144,7 @@ span {
 }
 
 .column-4 {
-  height: 450px;
+  height: 50px;
   width: 30%;
   margin-right: 15px;
 }
@@ -152,10 +156,32 @@ span {
 }
 
 .column-6 {
-  height: 450px;
+  height: 250px;
   width: 30%;
   background-color: #ececec;
   margin-left: 15px;
+}
+
+.column-7 {
+  height: 200px;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.column-8 {
+  height: 200px;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.column-9 {
+  height: 200px;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.read-container {
+  padding-top: 100px;
 }
 
 
@@ -167,7 +193,7 @@ span {
 }
 
 .contact-container {
-  height: 900px;
+  height: 500px;
   width: 100%;
   background-color: #003434;
   display: flex;
@@ -196,10 +222,7 @@ span {
   display: flex;
 }
 
-.mail-container {
-  padding-left: 80px;
-  padding-top: 120px;
-}
+
 
 .form {
   width: 200px;
@@ -253,9 +276,14 @@ textarea.form-control {
     padding-top: 100px;
   }
 
-  .read-container {
+  .book-container {
     padding-top: 100px;
   }
+
+  .quote-container {
+    padding-top: 50px;
+  }
+
 
   .about-container {
     width: 100%;
@@ -311,14 +339,14 @@ textarea.form-control {
   }
 
   .title-container {
-    width: 150px;
+    width: 240px;
     padding-top: 50px;
   }
 
   .text-container {
     width: 250px;
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 3px;
     padding-right: 10px;
   }
 
@@ -343,7 +371,7 @@ textarea.form-control {
   }
 
   .projects-container {
-    height: 700px;
+    min-height: 900px;
     width: 80%;
     padding-left: 50px;
     padding-top: 20px;
@@ -370,7 +398,7 @@ textarea.form-control {
   }
 
   .column-4 {
-    height: 450px;
+    height: 250px;
     width: 30%;
     margin-right: 15px;
   }
@@ -382,11 +410,35 @@ textarea.form-control {
   }
 
   .column-6 {
-    height: 450px;
+    height: 250px;
     width: 30%;
     background-color: #ececec;
     margin-left: 15px;
   }
+
+  .column-7 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+  .column-8 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+  .column-9 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+
+  .read-container {
+    padding-top: 100px;
+  }
+
 
   .grey-container {
     padding-top: 150px;
@@ -396,7 +448,7 @@ textarea.form-control {
   }
 
   .contact-container {
-    height: 900px;
+    height: 500px;
     width: 100%;
     background-color: #003434;
     display: flex;
@@ -425,13 +477,11 @@ textarea.form-control {
     display: flex;
   }
 
-  .mail-container {
-    padding-left: 80px;
-    padding-top: 120px;
-  }
+
 
   .send-container {
-    padding-top: 150px;
+    padding-top: 100px;
+    margin-bottom: 40px;
   }
 
   .form {
@@ -458,6 +508,10 @@ textarea.form-control {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
+  .homepage-container {
+    overflow: hidden;
+  }
+
   .hero-container {
     width: 100vw;
     min-height: 750px;
@@ -478,9 +532,14 @@ textarea.form-control {
     padding-top: 100px;
   }
 
-  .read-container {
+  .book-container {
     padding-top: 150px;
   }
+
+  .quote-container {
+    padding-top: 50px;
+  }
+
 
   .about-container {
     min-height: 1000px;
@@ -535,14 +594,14 @@ textarea.form-control {
   }
 
   .title-container {
-    width: 150px;
+    width: 240px;
     padding-top: 50px;
   }
 
   .text-container {
     width: 250px;
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 3px;
     padding-right: 10px;
   }
 
@@ -567,7 +626,7 @@ textarea.form-control {
   }
 
   .projects-container {
-    height: 700px;
+    min-height: 900px;
     width: 80%;
     padding-left: 50px;
     padding-top: 20px;
@@ -594,7 +653,7 @@ textarea.form-control {
   }
 
   .column-4 {
-    height: 450px;
+    height: 250px;
     width: 30%;
     margin-right: 15px;
   }
@@ -606,10 +665,33 @@ textarea.form-control {
   }
 
   .column-6 {
-    height: 450px;
+    height: 250px;
     width: 30%;
     background-color: #ececec;
     margin-left: 15px;
+  }
+
+  .column-7 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+  .column-8 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+  .column-9 {
+    height: 200px;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+
+  .read-container {
+    padding-top: 100px;
   }
 
   .grey-container {
@@ -620,7 +702,7 @@ textarea.form-control {
   }
 
   .contact-container {
-    height: 900px;
+    height: 500px;
     width: 100%;
     background-color: #003434;
     display: flex;
@@ -649,14 +731,15 @@ textarea.form-control {
     display: flex;
   }
 
-  .mail-container {
-    padding-left: 80px;
-    padding-top: 120px;
-  }
 
-  .read-container {
+  .book-container {
     padding-top: 100px;
   }
+
+  .quote-container {
+    padding-top: 50px;
+  }
+
 
   .form {
     width: 200px;
@@ -681,8 +764,8 @@ textarea.form-control {
   }
 
   .send-container {
-    margin: 0;
     padding-top: 100px;
+    margin-bottom: 40px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -693,7 +776,9 @@ textarea.form-control {
 @media all and (min-width: 100px) and (max-width: 480px) {
 
 
-
+  .homepage-container {
+    overflow: hidden;
+  }
 
   .hero-container {
     width: 100vw;
@@ -714,9 +799,14 @@ textarea.form-control {
     padding-top: 100px;
   }
 
-  .read-container {
+  .book-container {
     padding-top: 150px;
   }
+
+  .quote-container {
+    padding-top: 50px;
+  }
+
 
   .about-container {
     min-height: 1800px;
@@ -768,14 +858,14 @@ textarea.form-control {
   }
 
   .title-container {
-    width: 150px;
+    width: 240px;
     padding-top: 50px;
   }
 
   .text-container {
     width: 250px;
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 3px;
     padding-right: 10px;
   }
 
@@ -790,7 +880,7 @@ textarea.form-control {
   }
 
   .portfolio-container {
-    min-height: 2000px;
+    min-height: 4000px;
     background-color: #f3f3f3;
     width: 100%;
     display: flex;
@@ -800,7 +890,7 @@ textarea.form-control {
   }
 
   .projects-container {
-    min-height: 1600px;
+    height: 3500px !important;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -809,51 +899,89 @@ textarea.form-control {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    flex-wrap: nowrap;
   }
 
   .column-1 {
-    min-height: 200px;
+    min-height: 300px;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .column-2 {
-    min-height: 200px;
+    min-height: 300px;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .column-3 {
-    min-height: 200px;
+    min-height: 300px;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .column-4 {
-    height: 450px;
+    height: 300px;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .column-5 {
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: #eaeaea;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0;
   }
 
   .column-6 {
-    height: 450px;
-    width: 30%;
+    height: 300px;
+    width: 100%;
     background-color: #ececec;
-    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
   }
 
+  .column-7 {
+    height: 300px;
+    width: 100%;
+    background-color: #ececec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .column-8 {
+    height: 300px;
+    width: 100%;
+    background-color: #ececec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .column-9 {
+    height: 300px;
+    width: 100%;
+    background-color: #ececec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .read-container {
+    padding-top: 100px;
+  }
 
   .grey-container {
     height: 390px;
@@ -862,7 +990,7 @@ textarea.form-control {
   }
 
   .contact-container {
-    height: 1200px;
+    height: 500px;
     width: 100%;
     background-color: #003434;
     display: flex;
@@ -895,12 +1023,10 @@ textarea.form-control {
     flex-direction: column;
   }
 
-  .mail-container {
-    display: none;
-  }
 
   .send-container {
-    padding-top: 150px;
+    padding-top: 100px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-content: center;
