@@ -29,7 +29,7 @@ class SendQuoteConfirmation implements ShouldQueue
     {
         flash()->success('Feedback', 'We will provide a response within 24 hours');
 
-        $when = Carbon::now()->addMinutes(1);
+        $when = Carbon::now()->addMinutes(0);
 
         Mail::to('info@ormrepo.co.uk')
             ->later($when, new QuoteSent($event));
