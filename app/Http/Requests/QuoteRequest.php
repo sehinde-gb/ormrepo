@@ -33,7 +33,7 @@ class QuoteRequest extends FormRequest
             'your_budget' => 'required|integer',
             'description' => 'required',
             'functionality' => 'required',
-            'website_list' => 'require'
+            'website_list' => 'required'
 
         ];
     }
