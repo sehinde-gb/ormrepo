@@ -5,10 +5,10 @@ namespace App\Listeners;
 use App\Events\QuoteWasSent;
 use App\Mail\QuoteSent;
 use Carbon\Carbon;
-use Illuminate\Contracts\Queue\ShouldQueue;
+//use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Mail;
 
-class SendQuoteConfirmation implements ShouldQueue
+class SendQuoteConfirmation
 {
     /**
      * Create the event listener.
