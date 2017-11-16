@@ -2,7 +2,7 @@
 
 @component('mail::message')
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://ormrepo.co.uk/images/logo/logo_large.png "Ormrepo Logo")
 
 We are pleased to inform you that we have received a quotation from a potential customer. See below:
 
