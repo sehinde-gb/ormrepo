@@ -95,9 +95,11 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/w6rLznbgDic" frameborder="0" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
 
+            </div><!-- /.composite-container -->
 
-
-
+            <div class="composite-container">
+                <h5 class="is--black is--capitals">Episode 13: How to Build a JobBoard using Laravel 5.5 Part 1 </h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A_B5SG6-VJI" frameborder="0" allowfullscreen></iframe>
             </div><!-- /.composite-container -->
 
         </div><!-- /.privacy-container -->
