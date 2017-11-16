@@ -27,13 +27,13 @@ class QuoteRequest extends FormRequest
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
-            'what_project' => 'required|alpha',
-            'website' => 'required|alpha',
+            'what_project' => 'required',
+            'website' => 'required',
             'pages' => 'required|integer',
             'your_budget' => 'required|integer',
-            'description' => 'required|alphanumeric',
-            'functionality' => 'required|alphanumeric',
-            'website_list' => 'required|alpha'
+            'description' => 'required',
+            'functionality' => 'required',
+            'website_list' => 'require'
 
         ];
     }
