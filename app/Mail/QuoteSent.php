@@ -15,7 +15,6 @@ class QuoteSent extends Mailable
     /**
      * Create a new message instance.
      *
-     * @return void
      */
     public function __construct()
     {
@@ -33,6 +32,7 @@ class QuoteSent extends Mailable
         return $this->markdown('emails.quote')
 
             ->with([
+
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
                 'phone' => $request->get('phone'),

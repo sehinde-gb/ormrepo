@@ -26,7 +26,7 @@ class QuoteRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|phone:UK,US',
+            'phone' => 'required',
             'what_project' => 'required|alpha',
             'website' => 'required|alpha',
             'pages' => 'required|integer',
