@@ -30,7 +30,7 @@ class QuoteRequest extends FormRequest
             'what_project' => 'required',
             'website' => 'required',
             'pages' => 'required|integer',
-            'your_budget' => 'required|integer',
+            'your_budget' => 'required',
             'description' => 'required',
             'functionality' => 'required',
             'website_list' => 'required'
