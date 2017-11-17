@@ -19,7 +19,6 @@
         "algolia/algoliasearch-client-php": "^1.12",
         "pusher/pusher-php-server": "^3.0",
         "laravel/browser-kit-testing": "^1.0",
-        "laravel/dusk": "^2.0",
         "andreasindal/laravel-markdown": "^1.1",
         "laravel/cashier": "~7.0",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
