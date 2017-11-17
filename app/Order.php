@@ -23,6 +23,6 @@ class Order extends Model
      */
     public function charge()
     {
-        return $this->belongsTo('App\Charge');
+        return $this->belongsTo(\App\Charge::class);
     }
 }

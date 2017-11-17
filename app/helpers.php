@@ -50,7 +50,7 @@ function delete_form($routeParams, $label = 'Delete')
      */
 function flash($title = null, $message = null)
 {
-    $flash = app('App\Http\Flash');
+    $flash = app(\App\Http\Flash::class);
 
     if (func_num_args() == 0) {
         return $flash;

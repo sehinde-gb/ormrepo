@@ -13,18 +13,18 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        \App\Events\SomeEvent::class => [
+            \App\Listeners\EventListener::class,
         ],
-        'App\Events\BlogWasCreated' => [
-            'App\Listeners\SendPublishedNotification',
+        \App\Events\BlogWasCreated::class => [
+            \App\Listeners\SendPublishedNotification::class,
         ],
-        'App\Events\BlogWasUpdated' => [
-            'App\Listeners\SendUpdateNotification',
+        \App\Events\BlogWasUpdated::class => [
+            \App\Listeners\SendUpdateNotification::class,
         ],
 
-        'App\Events\QuoteWasSent' => [
-            'App\Listeners\SendQuoteConfirmation'
+        \App\Events\QuoteWasSent::class => [
+            \App\Listeners\SendQuoteConfirmation::class
         ],
 
     ];

@@ -61,7 +61,7 @@ class Charge extends Model
      */
     public function orders()
     {
-        return $this->hasMany('App\Order');
+        return $this->hasMany(\App\Order::class);
     }
 
 
@@ -74,7 +74,7 @@ class Charge extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(\App\User::class);
     }
 
 

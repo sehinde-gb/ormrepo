@@ -40,7 +40,7 @@ class User extends Authenticatable
      */
     public function blogs()
     {
-        return $this->hasMany('App\Blog');
+        return $this->hasMany(\App\Blog::class);
     }
 
     /**
@@ -117,7 +117,7 @@ class User extends Authenticatable
      */
     public function charges()
     {
-        return $this->hasMany('App\Charge');
+        return $this->hasMany(\App\Charge::class);
     }
 
     /**
