@@ -1,8 +1,8 @@
 <?php
 
-return array(
+return [
 
-    'routes' => array(
+    'routes' => [
         // 'login' => ['middleware' => ['web']],
         // 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
         // 'extadm' => ['prefix' => 'admin/{site}/extadm', 'middleware' => ['web', 'auth']],
@@ -12,9 +12,9 @@ return array(
         // 'default' => ['middleware' => ['web']],
         // 'confirm' => ['middleware' => ['web']],
         // 'update' => [],
-    ),
+    ],
 
-    'page' => array(
+    'page' => [
         // 'account-index' => array( 'account/profile','account/history','account/favorite','account/watch','basket/mini','catalog/session' ),
         // 'basket-index' => array( 'basket/standard','basket/related' ),
         // 'catalog-count' => array( 'catalog/count' ),
@@ -25,7 +25,7 @@ return array(
         // 'checkout-confirm' => array( 'checkout/confirm' ),
         // 'checkout-index' => array( 'checkout/standard' ),
         // 'checkout-update' => array( 'checkout/update'),
-    ),
+    ],
 
     /*
 	'resource' => array(
@@ -42,40 +42,40 @@ return array(
 	),
 	*/
 
-    'admin' => array(),
+    'admin' => [],
 
-    'client' => array(
-        'html' => array(
-            'common' => array(
-                'content' => array(
+    'client' => [
+        'html' => [
+            'common' => [
+                'content' => [
                     // 'baseurl' => '/',
-                ),
-                'template' => array(
+                ],
+                'template' => [
                     // 'baseurl' => 'packages/aimeos/shop/themes/elegance',
-                ),
-            ),
-        ),
-    ),
+                ],
+            ],
+        ],
+    ],
 
-    'controller' => array(
-    ),
+    'controller' => [
+    ],
 
-    'i18n' => array(
-    ),
+    'i18n' => [
+    ],
 
-    'madmin' => array(
-    ),
+    'madmin' => [
+    ],
 
-    'mshop' => array(
-    ),
+    'mshop' => [
+    ],
 
 
-    'command' => array(
-    ),
+    'command' => [
+    ],
 
-    'frontend' => array(
-    ),
+    'frontend' => [
+    ],
 
-    'backend' => array(
-    ),
-);
+    'backend' => [
+    ],
+];
