@@ -130,7 +130,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">Gillian Mckeith<br>Wellness and Weight Loss Club website</h2>
+                    <h2 class="is--black">Gillian Mckeith<br>Wellness and Weight Loss Club Website</h2>
                     <p class="section--body is--padding-bottom">A pioneering dietician from the United States, she wanted to make an entry into the UK market with a new and revamped website. I took the project from inception through till delivery. As well, I instilled all the copy for the home page banners, the “About” section and the proof-reading of the entire website.
                     </p>
                     <ul class="project-links">
