@@ -15,7 +15,7 @@
         "laravel/scout": "3.0.0",
         "algolia/algoliasearch-client-php": "^1.12",
         "pusher/pusher-php-server": "^2.6",
-        "pda/pheanstalk": "~3.0",
+        "pda/pheanstalk": "^3.1",
         "laravel/browser-kit-testing": "^1.0",
         "laravel/dusk": "^1.0",
         "andreasindal/laravel-markdown": "^1.1",
