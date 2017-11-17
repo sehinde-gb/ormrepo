@@ -52,8 +52,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">Nina Naustdal<br>Coutier fashion website</h2>
-                    <p class="section--body is--padding-bottom">A couture fashion website catering to high end design buyers. My work includes managing the project and creative copy provided for the website home/landing page, as well as the “About Nina” section and proof reading the entire website.
+                    <h2 class="is--black">Nina Naustdal<br>Coutier Fashion Website</h2>
+                    <p class="section--body is--padding-bottom">A coutier fashion website catering to high end design buyers. My work includes managing the project and creative copy provided for the website home/landing page, as well as the “About Nina” section and proof reading the entire website.
                     </p>
                     <ul class="project-links">
                         <li><a href="http://www.nina-naustdal.com" class="is--black">Link</a></li>
@@ -72,7 +72,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">Oliver Goldsmith<br>Fashionable sunglasses website</h2>
+                    <h2 class="is--black">Oliver Goldsmith<br>Fashionable Sunglasses Website</h2>
                     <p class="section--body is--padding-bottom">Originators of fashion eye-wear in the 50’s, Oliver Goldsmith via DB gave me the opportunity to pen down creative copy for their “About” section and the entire website proof-reading.</p>
                     <ul class="project-links">
                         <li><a href="http://www.olivergoldsmith.com/" class="is--black">Link</a></li>
@@ -91,7 +91,7 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">Led Zeppelin<br>Tribute concert website</h2>
+                    <h2 class="is--black">Led Zeppelin<br>Tribute Concert Website</h2>
                     <p class="section--body is--padding-bottom">A couple of members from Led Zeppelin performed as the lead act at a tribute to late Atlantic Records co-founder Ahmet Ertegun at the O2 Arena in London; who gave them their big break. I was awarded the task of managing the entire project and writing the entire copy for the website, which sold concert tickets for charity and this was time limited.</p>
                     <ul class="project-links">
 
@@ -110,7 +110,7 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="is--black">Seven Digital<br>Official download music website</h2>
+                    <h2 class="is--black">Seven Digital<br>Official Music Download Website</h2>
                     <p class="section--body is--padding-bottom">One of the top official music download sites in the UK, my role was project manager and arranging the FAQ’s copy in the “Help” section of the website.
                     </p>
                     <ul class="project-links">

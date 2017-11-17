@@ -4,11 +4,12 @@ namespace App\Mail;
 
 use App\Http\Requests\QuoteRequest;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 //use Illuminate\Contracts\Queue\ShouldQueue;
 
-class QuoteSent extends Mailable
+class QuoteSent extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

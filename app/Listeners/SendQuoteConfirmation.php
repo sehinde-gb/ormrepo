@@ -5,10 +5,10 @@ namespace App\Listeners;
 use App\Events\QuoteWasSent;
 use App\Mail\QuoteSent;
 use Carbon\Carbon;
-//use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Mail;
 
-class SendQuoteConfirmation
+class SendQuoteConfirmation implements ShouldQueue
 {
     /**
      * Create the event listener.
@@ -29,10 +29,10 @@ class SendQuoteConfirmation
     {
         flash()->success('Feedback', 'We will provide a response within 24 hours');
 
-        //$when = Carbon::now()->addMinutes(0);
-        Mail::to('info@ormrepo.co.uk')->queue(new QuoteSent($event));
-        //Mail::to('info@ormrepo.co.uk')
-          //  ->later($when, new QuoteSent($event));
+        $when = Carbon::now()->addMinutes(0);
+        //Mail::to('info@ormrepo.co.uk')->queue(new QuoteSent($event));
+        Mail::to('info@ormrepo.co.uk')
+            ->later($when, new QuoteSent($event));
 
 
     }
