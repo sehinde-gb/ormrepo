@@ -8,17 +8,17 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\Blog;
 
-class BlogModelTest extends \BrowserKitTestCase {
+class BlogModelTest extends \BrowserKitTestCase
+{
 
-use   WithoutMiddleware,  DatabaseTransactions;
+    use   WithoutMiddleware,  DatabaseTransactions;
 
      /** @test */
     function it_tests_user_relationship()
     {
         $blog = factory(Blog::class)->create();
 
-        $this->assertEquals( $blog->user_id, $blog->user->id );
-
+        $this->assertEquals($blog->user_id, $blog->user->id);
     }
 
     /** @test */
@@ -34,8 +34,6 @@ use   WithoutMiddleware,  DatabaseTransactions;
         $blog->categories()->save($category);
 
         $this->assertEquals($category->id, $category->id);
-
-
     }
 
 
@@ -49,7 +47,6 @@ use   WithoutMiddleware,  DatabaseTransactions;
         $blog->comments()->save($comment);
 
         $this->assertEquals($blog->id, $blog->id);
-
     }
 
 
@@ -67,5 +64,4 @@ use   WithoutMiddleware,  DatabaseTransactions;
         // Then
         $this->assertEquals($mostPopular->id, $articles->first()->id);
     }
-
 }

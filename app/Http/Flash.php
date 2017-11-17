@@ -2,7 +2,8 @@
 
 namespace App\Http;
 
-class Flash {
+class Flash
+{
 
     /**
      * Flash API create flash method assigns the title, message and levels dynamically
@@ -21,7 +22,6 @@ class Flash {
             'level' => $level
 
         ]);
-
     }
 
     /**
@@ -34,7 +34,6 @@ class Flash {
     public function info($title, $message)
     {
         return $this->create($title, $message, 'info');
-
     }
 
     /**
@@ -75,7 +74,4 @@ class Flash {
     {
         return $this->create($title, $message, $level, 'flash_message_overlay');
     }
-
-
 }
-

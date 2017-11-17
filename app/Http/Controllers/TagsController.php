@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Tag;
 use App\Exceptions\TagNotFoundException;
 
-
 class TagsController extends Controller
 {
     /**
@@ -19,11 +18,9 @@ class TagsController extends Controller
     {
         $tags = Tag::orderBy('name')->get()->groupBy(function ($tag) {
             return substr($tag->name, 0, 1);
-
         });
 
-      return view('tags.index', compact('tags'));
-
+        return view('tags.index', compact('tags'));
     }
 
     /**
@@ -35,18 +32,13 @@ class TagsController extends Controller
      */
     public function show($tag)
     {
-        try
-            {
-
+        try {
                 $blogs = $tag->blogs;
 
                 $index = 'Search Tags';
-
-            } catch (TagNotFoundException $e) {
-
-                throw new TagNotFoundException($e->getMessage());
-            }
+        } catch (TagNotFoundException $e) {
+            throw new TagNotFoundException($e->getMessage());
+        }
         return view('tags.show', compact('blogs', 'index'));
     }
-
 }

@@ -18,8 +18,4 @@ class RssControllerTests extends \BrowserKitTestCase
 
         $this->assertTrue(true);
     }
-
 }
-
-
-

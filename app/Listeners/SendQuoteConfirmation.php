@@ -36,7 +36,5 @@ class SendQuoteConfirmation implements ShouldQueue
 
         //Mail::to('info@ormrepo.co.uk')
           //  ->later($when, new QuoteSent($event));
-
-
     }
 }

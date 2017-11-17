@@ -16,15 +16,11 @@ class RssController extends Controller
     public function generate()
     {
         try {
-
             $blogs = Blog::latest()->published()->take(10)->get();
 
             if ($blogs->isEmpty()) {
-
                 return 'no RSS feeds today';
-
             } else {
-
                 $feed = \App::make('feed');
                 $feed->title = 'Ormrepo';
                 $feed->description = 'Powerful Minds';
@@ -42,13 +38,10 @@ class RssController extends Controller
                     $feed->add($blog->title, 'Author', url('blogs/' . $blog->id), $blog->created_at, $blog->content, $blog->content);
                 }
             }
-
         } catch (\Exception $e) {
-
                 throw new MethodNotFoundException($e->getMessage());
         }
 
                 return $feed->render('rss'); // or atom
-        }
-
     }
+}

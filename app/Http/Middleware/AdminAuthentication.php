@@ -30,10 +30,8 @@ class AdminAuthentication
      */
     public function handle($request, Closure $next)
     {
-        if($this->auth->check())
-        {
-            if($this->auth->user()->is_admin == true)
-            {
+        if ($this->auth->check()) {
+            if ($this->auth->user()->is_admin == true) {
                 return $next($request);
             }
         }
@@ -41,5 +39,3 @@ class AdminAuthentication
         return new RedirectResponse(url('/'));
     }
 }
-
-

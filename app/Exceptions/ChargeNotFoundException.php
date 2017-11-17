@@ -2,6 +2,7 @@
 
 namespace app\Exceptions;
 
-class ChargeNotFoundException extends \Exception {
+class ChargeNotFoundException extends \Exception
+{
 
 }

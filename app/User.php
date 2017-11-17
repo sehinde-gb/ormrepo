@@ -7,7 +7,6 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Cashier\Billable;
 
-
 class User extends Authenticatable
 {
     use Notifiable,  Billable;
@@ -41,7 +40,7 @@ class User extends Authenticatable
      */
     public function blogs()
     {
-        return $this->hasMany('App\Blog');
+        return $this->hasMany(\App\Blog::class);
     }
 
     /**
@@ -118,7 +117,7 @@ class User extends Authenticatable
      */
     public function charges()
     {
-        return $this->hasMany('App\Charge');
+        return $this->hasMany(\App\Charge::class);
     }
 
     /**
@@ -130,8 +129,4 @@ class User extends Authenticatable
     {
         return 'gbp';
     }
-
-
-
-
 }

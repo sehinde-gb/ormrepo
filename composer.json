@@ -1,13 +1,16 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
+        "php": ">=7.0.0",
         "laravel/framework": "5.5.*",
-        "laravelcollective/html": "^5.3.0",
+        "laravelcollective/html": "5.5.*",
         "cviebrock/eloquent-sluggable": "^4.1",
         "simplepie/simplepie": "^1.4",
         "roumen/feed": "^2.10",
@@ -19,11 +22,11 @@
         "laravel/dusk": "^2.0",
         "andreasindal/laravel-markdown": "^1.1",
         "laravel/cashier": "~7.0",
-        "spatie/laravel-sitemap": "^2.2",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "laravel/tinker": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "predis/predis": "^1.1"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -33,28 +36,26 @@
         "symfony/dom-crawler": "3.1.*",
         "filp/whoops": "~2.0"
     },
-  "autoload": {
-    "classmap": [
-      "database"
-    ],
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "files": [
+            "app/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
 
-
-
-    "files": ["app/helpers.php"],
-
-
-    "psr-4": {
-      "App\\": "app/"
-    }
-  },
+    },
     "autoload-dev": {
         "classmap": [
             "tests/TestCase.php",
             "tests/BrowserKitTestCase.php"
         ],
-      "psr-4": {
-        "Tests\\": "tests/"
-      }
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "scripts": {
         "post-root-package-install": [
@@ -63,6 +64,11 @@
         "post-create-project-cmd": [
             "php artisan key:generate"
         ],
+
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
@@ -70,14 +76,15 @@
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
+        ]
 
-        ],
-      "post-autoload-dump": [
-        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-        "@php artisan package:discover"
-      ]
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
     }
 }

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Events\ContactWasSent;
 use App\Http\Requests\ContactFormRequest;
 
-
 class PagesController extends Controller
 {
     /**
@@ -48,7 +47,7 @@ class PagesController extends Controller
      */
     public function privacy()
     {
-        return view ('pages.privacy');
+        return view('pages.privacy');
     }
 
     /**
@@ -58,7 +57,7 @@ class PagesController extends Controller
      */
     public function cookie()
     {
-        return view ('pages.cookie');
+        return view('pages.cookie');
     }
 
     /**
@@ -68,7 +67,7 @@ class PagesController extends Controller
      */
     public function terms()
     {
-        return view ('pages.terms');
+        return view('pages.terms');
     }
 
     /**
@@ -79,7 +78,5 @@ class PagesController extends Controller
     public function videos()
     {
         return view('pages.videos');
-
     }
-
 }

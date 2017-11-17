@@ -48,8 +48,6 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('POST', '/admin/blog');
 
         $this->assertEquals(500, $response->status());
-
-
     }
 
 
@@ -71,7 +69,6 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', '/admin/blogs');
 
         $this->assertEquals(200, $response->status());
-
     }
 
 
@@ -92,7 +89,6 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', '/admin/blog');
 
         $this->assertEquals(500, $response->status());
-
     }
 
 
@@ -111,7 +107,6 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'admin/blogs', ['id' => 2]);
 
         $this->assertEquals(200, $response->status());
-
     }
 
 
@@ -127,7 +122,6 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'admin/blog', ['id' => 2]);
 
         $this->assertEquals(500, $response->status());
-
     }
 
 
@@ -144,11 +138,9 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         ];
 
         $response = $this->actingAs($user)
-            ->call('POST','admin/blogs', $data);
+            ->call('POST', 'admin/blogs', $data);
 
         $this->assertEquals(302, $response->status());
-
-
     }
 
     /** @test */
@@ -157,9 +149,7 @@ class AdminBlogsControllerTests extends \BrowserKitTestCase
         $user = factory(User::class)->create();
 
         $response = $this->actingAs($user)
-            ->call('DELETE','admin/blogs', ['id' => 1]);
+            ->call('DELETE', 'admin/blogs', ['id' => 1]);
         $this->assertEquals(405, $response->status());
     }
-
-
 }

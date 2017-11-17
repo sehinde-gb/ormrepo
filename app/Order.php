@@ -11,7 +11,7 @@ class Order extends Model
      *
      * @var array
      */
-        protected $fillable = ['product_id','order_number', 'email', 'updated_at', 'created_at'];
+    protected $fillable = ['product_id','order_number', 'email', 'updated_at', 'created_at'];
 
 
     /**
@@ -23,6 +23,6 @@ class Order extends Model
      */
     public function charge()
     {
-        return $this->belongsTo('App\Charge');
+        return $this->belongsTo(\App\Charge::class);
     }
 }

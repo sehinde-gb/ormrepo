@@ -28,7 +28,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
     Route::resource('blogs', 'BlogsController');
 
     Route::resource('charges', 'ChargesController');
-
 });
 
 # Checkout
@@ -42,8 +41,8 @@ Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-
 Route::resource('blogs', 'BlogsController', ['only' => ['index', 'show']]);
 Route::get('/blogs', ['as' => 'blogs.index', 'uses' => 'BlogsController@index']);
 
-Route::get('/search/{query}', function($query) {
-   return App\Blog::search($query)->get();
+Route::get('/search/{query}', function ($query) {
+    return App\Blog::search($query)->get();
 });
 
 
@@ -61,7 +60,3 @@ Route::get('tags', 'TagsController@index');
 
 # RSS
 Route::get('/rss', 'RssController@generate');
-
-
-
-

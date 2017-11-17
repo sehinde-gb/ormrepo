@@ -45,7 +45,8 @@ class Charge extends Model
     /**
      * Rounding the float on the way out of the db (Cause Dylan's db has downs)
      */
-    public function setPriceFromCurrencyAttribute($value) {
+    public function setPriceFromCurrencyAttribute($value)
+    {
 
         $this->attributes['price'] = $value*100;
     }
@@ -60,7 +61,7 @@ class Charge extends Model
      */
     public function orders()
     {
-        return $this->hasMany('App\Order');
+        return $this->hasMany(\App\Order::class);
     }
 
 
@@ -73,7 +74,7 @@ class Charge extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(\App\User::class);
     }
 
 
@@ -97,5 +98,4 @@ class Charge extends Model
     {
         return $query->where('created_at', '<=', Carbon::now());
     }
-
 }

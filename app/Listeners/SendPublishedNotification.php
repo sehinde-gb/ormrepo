@@ -2,12 +2,10 @@
 
 namespace App\Listeners;
 
-
 use App\Events\BlogWasCreated;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
 
 class SendPublishedNotification implements ShouldQueue
 {
@@ -20,8 +18,6 @@ class SendPublishedNotification implements ShouldQueue
      */
     public function __construct()
     {
-
-
     }
 
     /**
@@ -34,6 +30,5 @@ class SendPublishedNotification implements ShouldQueue
     public function handle(BlogWasCreated $event)
     {
         flash()->success('Blog Published', 'Your post has been published');
-
     }
 }

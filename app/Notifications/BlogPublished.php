@@ -9,9 +9,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\SlackMessage;
 
-
-
-
 class BlogPublished extends Notification implements ShouldQueue
 {
     use Queueable;
@@ -63,11 +60,5 @@ class BlogPublished extends Notification implements ShouldQueue
             ->attachment(function ($attachment) use ($blog) {
                 $attachment->title($blog->title, route('admin.blogs.show', $blog->id));
             });
-
     }
-
-
-
 }
-
-

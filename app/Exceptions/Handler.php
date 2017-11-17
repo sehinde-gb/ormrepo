@@ -10,7 +10,6 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Validation\ValidationException;
 
-
 class Handler extends ExceptionHandler
 {
     /**
@@ -41,7 +40,6 @@ class Handler extends ExceptionHandler
     public function report(Exception $exception)
     {
         if ($this->shouldReport($exception)) {
-
         }
         return parent::report($exception);
     }
@@ -82,9 +80,6 @@ class Handler extends ExceptionHandler
 
             return parent::render($request, $exception);
         }
-
-
-
     }
 
 

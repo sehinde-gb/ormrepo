@@ -8,7 +8,6 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\Blog;
 use App\Category;
 
-
 class CategoryModelTest extends \BrowserKitTestCase
 {
 
@@ -27,8 +26,5 @@ class CategoryModelTest extends \BrowserKitTestCase
         $category->blogs()->save($blog);
 
         $this->assertEquals($blog->id, $blog->id);
-
     }
-
-
 }

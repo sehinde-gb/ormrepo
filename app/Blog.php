@@ -2,15 +2,12 @@
 
 namespace App;
 
-
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
 use Laravel\Scout\Searchable;
 use Illuminate\Notifications\Notifiable;
-
-
 
 class Blog extends Model
 {
@@ -42,7 +39,7 @@ class Blog extends Model
      */
     public function tags()
     {
-        return $this->belongsToMany('App\Tag')->withTimestamps();
+        return $this->belongsToMany(\App\Tag::class)->withTimestamps();
     }
 
     /**
@@ -52,7 +49,7 @@ class Blog extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(\App\User::class);
     }
 
 
@@ -123,7 +120,6 @@ class Blog extends Model
     public function setPublishedAtAttribute($date)
     {
         $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
-
     }
 
 
@@ -184,7 +180,6 @@ class Blog extends Model
     public function getBodyHtmlAttribute($value)
     {
         return Markdown::convertToHtml(e($this->body));
-
     }
 
     /**
@@ -192,10 +187,10 @@ class Blog extends Model
      * @return mixed
      * @internal param $value
      */
-    public function routeNotificationForSlack() {
+    public function routeNotificationForSlack()
+    {
         //return env('SLACK_WEBHOOK_URL');
         //return 'https://hooks.slack.com/services/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';
         return $this->slack_url;
     }
-
 }

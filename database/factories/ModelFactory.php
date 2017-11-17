@@ -15,16 +15,16 @@
     use Carbon\Carbon;
 
     $factory->define(App\User::class, function (Faker\Generator $faker) {
-    static $password;
+        static $password;
 
-    return [
+        return [
         'name' => $faker->name,
         'username' => $faker->userName,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
-    ];
-});
+        ];
+    });
 
     $factory->define(App\Blog::class, function (Faker\Generator $faker) {
 
@@ -34,7 +34,7 @@
             'body' => $faker->sentence,
             'slug' => $faker->name,
             'feat_image' => $faker->imageUrl($width = 640, $height = 480),
-            'user_id' => factory('App\User')->create()->id
+            'user_id' => factory(\App\User::class)->create()->id
 
         ];
     });
@@ -51,8 +51,8 @@
     $factory->define(App\Comment::class, function (Faker\Generator $faker) {
 
         return [
-            'user_id' => factory('App\User')->create()->id,
-            'blog_id' => factory('App\Blog')->create()->id,
+            'user_id' => factory(\App\User::class)->create()->id,
+            'blog_id' => factory(\App\Blog::class)->create()->id,
             'parent_id' => '2',
             'body' => $faker->paragraph,
 
