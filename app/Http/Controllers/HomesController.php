@@ -16,6 +16,4 @@ class HomesController extends Controller
     {
         return view('homes.index');
     }
-
-
 }

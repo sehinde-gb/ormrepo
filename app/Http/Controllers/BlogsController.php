@@ -9,9 +9,6 @@ use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use Newsletter;
 
-
-
-
 class BlogsController extends Controller
 {
     /**
@@ -26,24 +23,18 @@ class BlogsController extends Controller
     {
 
         try {
-
             $query = $request->input('q');
 
             if ($query) {
                 $blogs = Blog::search($query)->get();
 
                 return view('pages.search', compact('blogs'));
-
             } else {
-
                 $blogs = Blog::latest('published_at')->get()->all();
 
                 $title = 'Blog Listings';
-
             }
-
         } catch (\Exception $e) {
-
             throw new MethodNotFoundException($e->getMessage());
         }
 
@@ -65,15 +56,11 @@ class BlogsController extends Controller
     {
 
         try {
-
             $previous = Blog::where('id', '<=', $blog->id)->first();
 
             $next = Blog::where('id', '>', $blog->id)->first();
-
-            } catch (\Exception $e) {
-
+        } catch (\Exception $e) {
             throw new MethodNotFoundException($e->getMessage());
-
         }
 
         return view('blogs.show')->with([
@@ -82,7 +69,6 @@ class BlogsController extends Controller
             'next' => $next
 
         ]);
-
     }
 
 
@@ -97,17 +83,11 @@ class BlogsController extends Controller
     public function showSlug($slug)
     {
         try {
-
             $blog = Blog::findBySlug($slug);
-
-
         } catch (\Exception $e) {
-
             throw new MethodNotFoundException($e->getMessage());
         }
 
         return $this->show($blog);
     }
-
-
 }

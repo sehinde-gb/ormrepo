@@ -60,8 +60,5 @@ class ChargeUpdated extends Notification implements ShouldQueue
             ->attachment(function ($attachment) use ($charge) {
                 $attachment->title($charge->name, route('admin.charges.show', $charge->id));
             });
-
     }
-
-
 }

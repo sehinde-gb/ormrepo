@@ -15,7 +15,7 @@ class ProcessQuote implements ShouldQueue
     /**
      * @var QuoteSent
      */
-   protected $quoteSent;
+    protected $quoteSent;
 
     /**
      * Create a new job instance.

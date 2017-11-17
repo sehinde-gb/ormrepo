@@ -6,9 +6,10 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class PagesControllerTests extends \BrowserKitTestCase {
+class PagesControllerTests extends \BrowserKitTestCase
+{
 
-use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
+    use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
     /** @test */
     public function it_calls_the_contact_method()
@@ -26,8 +27,4 @@ use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
         $this->assertTrue(true);
     }
-
-
-
 }
-

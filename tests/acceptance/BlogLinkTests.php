@@ -6,9 +6,6 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-
-
-
 class BlogLinkTests extends \BrowserKitTestCase
 {
 
@@ -20,7 +17,6 @@ class BlogLinkTests extends \BrowserKitTestCase
         $this->click('LOREM IPSUM TEXTURE');
 
         $this->seePageIs('http://ormblog/blogs/1');
-
     }
 
 
@@ -32,7 +28,5 @@ class BlogLinkTests extends \BrowserKitTestCase
         $this->click('HELLO');
 
         $this->seePageIs('http://ormblog/blogs/2');
-
     }
-
 }

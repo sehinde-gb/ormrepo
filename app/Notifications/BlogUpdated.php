@@ -61,8 +61,5 @@ class BlogUpdated extends Notification implements ShouldQueue
             ->attachment(function ($attachment) use ($blog) {
                 $attachment->title($blog->title, route('admin.blogs.show', $blog->id));
             });
-
     }
-
-
 }

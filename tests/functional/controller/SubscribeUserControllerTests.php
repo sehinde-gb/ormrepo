@@ -6,7 +6,8 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class SubscribeUserControllerTests extends \BrowserKitTestCase {
+class SubscribeUserControllerTests extends \BrowserKitTestCase
+{
 
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
@@ -17,6 +18,4 @@ class SubscribeUserControllerTests extends \BrowserKitTestCase {
 
         $this->assertTrue(true);
     }
-
-    }
-
+}

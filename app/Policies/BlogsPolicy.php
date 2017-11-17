@@ -70,5 +70,4 @@ class BlogsPolicy
     {
         return $user->id === $blog->user_id;
     }
-
 }

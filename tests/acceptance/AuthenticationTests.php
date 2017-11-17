@@ -6,8 +6,6 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-
-
 class AuthenticationTests extends \BrowserKitTestCase
 {
 
@@ -19,7 +17,6 @@ class AuthenticationTests extends \BrowserKitTestCase
              ->type('password', 'password')
              ->press('Log In')
              ->seePageIs('/admin/blogs');
-
     }
 
     /** @test */
@@ -30,7 +27,6 @@ class AuthenticationTests extends \BrowserKitTestCase
         ->type('password', 'password')
         ->press('Log In')
         ->seePageIs('/login');
-
     }
 
     /** @test */
@@ -44,7 +40,6 @@ class AuthenticationTests extends \BrowserKitTestCase
         ->type('password', 'password_confirmation')
         ->press('Register')
         ->seePageIs('/admin/blogs');
-
     }
 
     /** @test */
@@ -58,10 +53,5 @@ class AuthenticationTests extends \BrowserKitTestCase
             ->type('password', 'password_confirmation')
             ->press('Register')
             ->seePageIs('/admin/blogs');
-
     }
-
-
-
-
 }

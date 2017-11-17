@@ -16,8 +16,6 @@ class SendUpdateNotification implements ShouldQueue
      */
     public function __construct()
     {
-
-
     }
 
     /**
@@ -31,6 +29,5 @@ class SendUpdateNotification implements ShouldQueue
     public function handle(BlogWasUpdated $event)
     {
         flash()->success('Blog Updated', 'Your post has been updated');
-
     }
 }

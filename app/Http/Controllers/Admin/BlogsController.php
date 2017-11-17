@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Admin;
 
-
 use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
 use App\Http\Requests\BlogRequest;
@@ -16,8 +15,6 @@ use App\Http\Controllers\Controller;
 use App\Exceptions\HttpNotFoundException;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
-
-
 
 class BlogsController extends Controller
 {
@@ -45,30 +42,23 @@ class BlogsController extends Controller
     public function index(Request $request)
     {
 
-       try {
-
-           $query = $request->input('q');
-
-
-           if ($query) {
-
-               $blogs = Blog::search($query)->get();
-
-               return view('pages.search', compact('blogs'));
-
-           } else {
-
-               $blogs = Blog::latest('published_at')->get()->all();
+        try {
+            $query = $request->input('q');
 
 
-               $title = 'Blog Listings';
+            if ($query) {
+                $blogs = Blog::search($query)->get();
 
-           }
+                return view('pages.search', compact('blogs'));
+            } else {
+                $blogs = Blog::latest('published_at')->get()->all();
 
-       } catch (\Exception $e) {
 
-           throw new HttpNotFoundException($e->getMessage());
-       }
+                $title = 'Blog Listings';
+            }
+        } catch (\Exception $e) {
+            throw new HttpNotFoundException($e->getMessage());
+        }
 
         return view('admin.blogs.index', compact('blogs', 'title'));
     }
@@ -86,9 +76,7 @@ class BlogsController extends Controller
             $title = 'Create Blog';
 
             $tags = Tag::pluck('name', 'id');
-
         } catch (\Exception $e) {
-
             throw new HttpNotFoundException($e->getMessage());
         }
 
@@ -129,18 +117,14 @@ class BlogsController extends Controller
     {
 
         try {
-
             $blog = Blog::findOrFail($id);
 
-            $previous = Blog::where('id', '<', $blog->id)->orderBy('id','desc')->first();
+            $previous = Blog::where('id', '<', $blog->id)->orderBy('id', 'desc')->first();
 
-            $next = Blog::where('id', '>', $blog->id)->orderBy('id','asc')->first();
-
-
-            } catch (\Exception $e) {
-
+            $next = Blog::where('id', '>', $blog->id)->orderBy('id', 'asc')->first();
+        } catch (\Exception $e) {
             throw new HttpNotFoundException($e->getMessage());
-            }
+        }
 
         return view('admin.blogs.show')->with([
             'blog' => $blog,
@@ -149,7 +133,6 @@ class BlogsController extends Controller
 
 
         ]);
-
     }
 
 
@@ -168,13 +151,11 @@ class BlogsController extends Controller
             $blog = Blog::findOrFail($id);
 
             $user = Auth::user();
-
         } catch (\Exception $e) {
-
             throw new HttpNotFoundException($e->getMessage());
         }
 
-        return view('admin.blogs.edit', compact('blog', 'tags',  'user'));
+        return view('admin.blogs.edit', compact('blog', 'tags', 'user'));
     }
 
     /**
@@ -190,7 +171,6 @@ class BlogsController extends Controller
     public function update(BlogRequest $request, $id)
     {
         try {
-
             $user = Auth::user();
 
             $blog = Blog::findOrFail($id);
@@ -200,25 +180,19 @@ class BlogsController extends Controller
             event(new BlogWasUpdated($user, $blog));
 
             $user->notify(new BlogUpdated($user, $blog));
+        } catch (\Exception $e) {
+            throw new HttpNotFoundException($e->getMessage());
+        }
 
-            } catch (\Exception $e) {
-
-              throw new HttpNotFoundException($e->getMessage());
-            }
-
-            if ($request->input('tag_list') == null) {
-
-                $tag_list = [];
-
-            } else {
-
-                $tag_list = $request->input('tag_list');
-            }
+        if ($request->input('tag_list') == null) {
+            $tag_list = [];
+        } else {
+            $tag_list = $request->input('tag_list');
+        }
 
             $this->syncTags($blog, $tag_list);
 
             return redirect('/admin/blogs');
-
     }
 
 
@@ -230,19 +204,15 @@ class BlogsController extends Controller
      */
     public function destroy($id)
     {
-        try
-        {
+        try {
             $blog = Blog::findOrFail($id);
 
             $blog->delete();
-
         } catch (\Exception $e) {
-
             throw new HttpNotFoundException($e->getMessage());
         }
 
         return redirect('/admin/blogs');
-
     }
 
 
@@ -275,14 +245,13 @@ class BlogsController extends Controller
             $request->file('feat_image')->getClientOriginalExtension();
 
         $request->file('feat_image')->move(
-            base_path() . '/public/featured/images/', $imageName
+            base_path() . '/public/featured/images/',
+            $imageName
         );
 
 
 
         return $blog;
-
-
     }
 
     /**
@@ -308,16 +277,11 @@ class BlogsController extends Controller
     public function showSlug($slug)
     {
         try {
-
             $blog = Blog::findBySlug($slug);
-
         } catch (\Exception $e) {
-
             throw new HttpNotFoundException($e->getMessage());
         }
 
         return $this->show($blog);
     }
-
-
 }

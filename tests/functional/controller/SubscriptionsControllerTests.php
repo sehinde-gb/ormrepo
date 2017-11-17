@@ -6,9 +6,10 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class SubscriptionsControllerTests extends \BrowserKitTestCase {
+class SubscriptionsControllerTests extends \BrowserKitTestCase
+{
 
-use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
+    use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
     /** @test */
     public function it_calls_the_subscription_store_method()
@@ -17,6 +18,4 @@ use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
         $this->assertTrue(true);
     }
-
 }
-

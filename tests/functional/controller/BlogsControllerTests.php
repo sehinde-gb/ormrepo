@@ -19,7 +19,6 @@ class BlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'blogs');
 
         $this->assertEquals(200, $response->status());
-
     }
 
     /** @test */
@@ -29,7 +28,6 @@ class BlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'blame');
 
         $this->assertEquals(500, $response->status());
-
     }
 
 
@@ -41,7 +39,6 @@ class BlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'blogs', ['id' => 1]);
 
         $this->assertEquals(200, $response->status());
-
     }
 
     /** @test */
@@ -51,7 +48,6 @@ class BlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('GET', 'blogs', ['id' => -2]);
 
         $this->assertEquals(200, $response->status());
-
     }
 
 
@@ -64,10 +60,5 @@ class BlogsControllerTests extends \BrowserKitTestCase
         $response = $this->call('POST', '/blogs');
 
         $this->assertEquals(500, $response->status());
-
     }
-
-
 }
-
-

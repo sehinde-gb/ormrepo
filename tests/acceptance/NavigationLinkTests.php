@@ -1,12 +1,9 @@
 <?php
 namespace tests\acceptance;
 
-
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-
-
 
 class NavigationLinkTests extends \BrowserKitTestCase
 {
@@ -19,7 +16,6 @@ class NavigationLinkTests extends \BrowserKitTestCase
         $this->click('El Coche');
 
         $this->seePageIs('https://coches.ormrepo.co.uk');
-
     }
 
     /** @test */
@@ -79,6 +75,4 @@ class NavigationLinkTests extends \BrowserKitTestCase
             ->click('Rss')
             ->seePageIs('/rss');
     }
-
-
 }

@@ -50,13 +50,14 @@ class CheckoutController extends Controller
 
 
         try {
-
-           $user->charge($charges->priceToCents(),
+            $user->charge(
+                $charges->priceToCents(),
                 [
                     'source' => $stripeToken,
                     'receipt_email' => $stripeEmail
 
-                ]);
+                ]
+            );
 
                 $orders = new Order();
 
@@ -69,35 +70,26 @@ class CheckoutController extends Controller
 
                 $orders->save();
 
-                if ($orders->charge->is_downloadable) {
+            if ($orders->charge->is_downloadable) {
+                $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
 
-                    $orders->onetimeurl = md5(time() . $orders->email . $orders->order_number);
+                $orders->save();
 
-                    $orders->save();
+                $when = Carbon::now()->addMinutes(10);
 
-                    $when = Carbon::now()->addMinutes(10);
-
-                    Mail::to($orders->email)->later($when, new DigitalDownload($orders));
+                Mail::to($orders->email)->later($when, new DigitalDownload($orders));
 
 
-                    return view('checkout.thankyou', compact('orders'));
-
-                } else {
-
-                    return redirect()->route('checkout.thankyou');
-
-                }
+                return view('checkout.thankyou', compact('orders'));
+            } else {
+                return redirect()->route('checkout.thankyou');
+            }
         } catch (\Exception $e) {
-
-
             return response()->json(['status' => $e->getMessage()], 422);
-
         }
 
 
         return redirect()->route('checkout.thankyou');
-
-
     }
 
     /**
@@ -138,14 +130,15 @@ class CheckoutController extends Controller
         $charge = Charge::findOrFail($id);
 
 
-        if ($user->charges($charge->priceToCents(),
+        if ($user->charges(
+            $charge->priceToCents(),
             [
                 'source' => $request->get('token'),
                 'amount' => $price,
                 'receipt_email' => $user->email
-            ])
+            ]
+        )
         ) {
-
             $orders = new Order();
             // Generate random orders number
             $orders->order_number = substr(md5(microtime()), rand(0, 20), 6) . time();
@@ -161,8 +154,5 @@ class CheckoutController extends Controller
 
 
         return redirect()->route('checkout.thankyou');
-
-
-
     }
 }

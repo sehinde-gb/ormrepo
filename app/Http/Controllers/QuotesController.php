@@ -34,6 +34,5 @@ class QuotesController extends Controller
         event(new QuoteWasSent($data));
 
         return redirect('/');
-
     }
 }
