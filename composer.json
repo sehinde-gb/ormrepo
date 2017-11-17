@@ -1,12 +1,15 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
-        "laravel/framework": "5.4.*",
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
         "laravelcollective/html": "^5.3.0",
         "cviebrock/eloquent-sluggable": "^4.1",
         "simplepie/simplepie": "^1.4",
@@ -14,7 +17,7 @@
         "propaganistas/laravel-phone": "^2.8",
         "laravel/scout": "3.0.0",
         "algolia/algoliasearch-client-php": "^1.12",
-        "pusher/pusher-php-server": "^2.6",
+        "pusher/pusher-php-server": "^3.0",
         "pda/pheanstalk": "^3.1",
         "laravel/browser-kit-testing": "^1.0",
         "laravel/dusk": "^1.0",
@@ -23,37 +26,36 @@
         "spatie/laravel-sitemap": "^2.2",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "laravel/tinker": "^1.0",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "fideloper/proxy": "~3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7",
+        "phpunit/phpunit": "~6.0",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "symfony/dom-crawler": "3.1.*",
+        "filp/whoops": "~2.0"
     },
-  "autoload": {
-    "classmap": [
-      "database"
-    ],
-
-
-
-    "files": ["app/helpers.php"],
-
-
-    "psr-4": {
-      "App\\": "app/"
-    }
-  },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "files": [
+            "app/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
     "autoload-dev": {
         "classmap": [
             "tests/TestCase.php",
             "tests/BrowserKitTestCase.php"
         ],
-      "psr-4": {
-        "Tests\\": "tests/"
-      }
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "scripts": {
         "post-root-package-install": [
@@ -62,17 +64,17 @@
         "post-create-project-cmd": [
             "php artisan key:generate"
         ],
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
-
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
         ]
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
     }
 }
