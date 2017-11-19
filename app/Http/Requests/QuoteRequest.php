@@ -24,11 +24,11 @@ class QuoteRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|min:3',
             'email' => 'required|email',
-            'phone' => 'required',
-            'what_project' => 'required',
-            'website' => 'required',
+            'phone' => 'required|digits_between:8,15|nullable',
+            'what_project' => 'required|alpha',
+            'website' => 'required|url',
             'pages' => 'required|integer',
             'your_budget' => 'required',
             'description' => 'required',

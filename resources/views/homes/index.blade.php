@@ -171,7 +171,7 @@
         <div class="alert-container">
             <div id="root">
                 <!-- Using the Alert component -->
-                <message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message>
+                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
 
             </div><!-- /#app -->
         </div><!-- /.alert-container -->
@@ -182,8 +182,12 @@
                 <div class="about-heading is--padded-b50">
                     <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
                 </div><!-- /.about-heading -->
-            <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
-            <h5 class="is--beige text-transform">Telephone: 07512305773</h5>
+
+            <div class="contact-text">
+                <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
+                <h5 class="is--beige text-transform">Telephone: 07512305773</h5>
+            </div><!-- /.text-container -->
+
 
         </div><!-- /.contact-container -->
 

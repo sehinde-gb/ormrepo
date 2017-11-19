@@ -222,8 +222,6 @@ span {
   display: flex;
 }
 
-
-
 .form {
   width: 200px;
   margin-right: 20px;
@@ -250,6 +248,10 @@ textarea.form-control {
 
 }
 
+.contact-text {
+  padding-top: 40px;
+  padding-left: 5px;
+}
 
 
 
@@ -476,8 +478,6 @@ textarea.form-control {
     display: flex;
   }
 
-
-
   .send-container {
     padding-top: 100px;
     margin-bottom: 40px;
@@ -500,6 +500,12 @@ textarea.form-control {
   textarea.form-control {
     width: 420px;
   }
+
+  .contact-text {
+    padding-top: 40px;
+    padding-left: 5px;
+  }
+
 
 
 }
@@ -769,6 +775,12 @@ textarea.form-control {
     align-content: center;
     justify-content: center;
   }
+
+  .contact-text {
+    padding-top: 40px;
+    padding-left: 5px;
+  }
+
 
 }
 
