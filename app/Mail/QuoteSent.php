@@ -8,7 +8,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-//use Illuminate\Contracts\Queue\ShouldQueue;
 
 class QuoteSent extends Mailable implements ShouldQueue
 {

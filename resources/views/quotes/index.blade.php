@@ -60,7 +60,7 @@
                 {!! Form::textarea('website_list', null, ['class' => 'form-control is--padded-l is--margin-top10 is--margin-bottom20']) !!}
 
                 <div class="button-centre">
-                    {!! Form::submit('Get Quote', array('class'=>'btn btn-secondary')) !!}
+                    {!! Form::submit('Get A Quote', array('class'=>'btn btn-secondary')) !!}
                 </div><!-- /.button-centre -->
                 {!! Form::close() !!}
 
