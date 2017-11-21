@@ -130,10 +130,14 @@
         });
     </script>
 
+    <script src="https://d3saea0ftg7bjt.cloudfront.net/embed/js/embed.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="text/javascript">
         $('select').select2();
     </script>
+
+
 
     @yield('slip')
 

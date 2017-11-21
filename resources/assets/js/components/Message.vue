@@ -45,7 +45,7 @@
     .orm-message {
         background-color: #f3f3f3;
         color: #F8F8F8;
-        min-height: 70px;
+        min-height: 80px;
         border-radius: 2px;
         width: 100%;
     }
@@ -60,7 +60,7 @@
     .orm-message {
         background-color: #f3f3f3;
         color: #F8F8F8;
-        min-height: 70px;
+        min-height: 80px;
         border-radius: 2px;
         width: 100%;
     }
