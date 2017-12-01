@@ -26,6 +26,7 @@ class BlogsController extends Controller
             $query = $request->input('q');
 
             if ($query) {
+
                 $blogs = Blog::search($query)->get();
 
                 return view('pages.search', compact('blogs'));
