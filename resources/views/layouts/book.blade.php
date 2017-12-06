@@ -20,12 +20,7 @@
     <!-- Start of 10 to 8 code -->
     <script src="https://d3saea0ftg7bjt.cloudfront.net/embed/js/embed.min.js"></script>
     <div id="TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317"></div>
-    <script>
-        window.TTE.init({
-            targetDivId: "TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317",
-            uuid: "f977d4d2-4d78-4d20-8d7c-b275ba441317"
-        });
-    </script>
+
 
 
 
