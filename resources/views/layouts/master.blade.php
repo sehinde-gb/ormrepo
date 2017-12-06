@@ -20,6 +20,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
+    <!-- Start of 10 to 8 code -->
+    <script>
+        window.TTE.init({
+            targetDivId: "TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317",
+            uuid: "f977d4d2-4d78-4d20-8d7c-b275ba441317"
+        });
+    </script>
+    <div id="TTE-f977d4d2-4d78-4d20-8d7c-b275ba441317"></div>
+
     <!-- Start of Async Drift Code -->
     <script>
         !function() {
