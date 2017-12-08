@@ -54,7 +54,7 @@
                            </div><!-- /.title-container -->
 
                            <div class="text-container">
-                            <p class="aligned">We use open end back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
+                            <p class="aligned">We use open source back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
                             </p>
                            </div><!-- /.text-container -->
 
