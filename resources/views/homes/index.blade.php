@@ -36,6 +36,7 @@
 
                 <div class="book-container">
 
+
                    {{-- <a href="/bookings"><button type="submit" class="btn btn-white">Book Now</button></a>--}}
 
 
