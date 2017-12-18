@@ -16,6 +16,8 @@ class VerifyCsrfToken extends BaseVerifier
         'broadcasting/auth',
         'admin/charges',
         '/checkout',
-        '/checkout/charges/*'
+        '/checkout/charges/*',
+        '/webhooks/mailgun_info/*',
+        '/webhooks/mailgun_subscribe/*'
     ];
 }
