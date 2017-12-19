@@ -19,7 +19,7 @@
                 <li><a href="/rss" class="foot-links">Rss</a></li>
                 <li><a href="/terms" class="foot-links">Terms & Conditions</a></li>
                 <li><a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ/featured
-" class="foot-links">Youtube</a></li>
+" class="foot-links">DiverseCoderTV</a></li>
             </ul>
         </div><!-- /.footer-navigation -->
 
