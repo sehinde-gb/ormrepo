@@ -24,6 +24,7 @@ Route::post('/quotes', ['as' => 'quotes_store', 'uses' => 'QuotesController@stor
 
 Route::post('/webhooks/mailgun_unsubscribe', 'MailgunController@unsubscribe');
 Route::post('/webhooks/mailgun_info', 'MailgunController@info');
+Route::post('/webhooks/mailgun_complaints', 'MailgunController@complaints');
 
 # Admin Boundary
 Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], function () {

@@ -18,6 +18,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/checkout',
         '/checkout/charges/*',
         '/webhooks/mailgun_info/*',
-        '/webhooks/mailgun_subscribe/*'
+        '/webhooks/mailgun_subscribe/*',
+        '/webhooks/mailgun_complaints/*'
     ];
 }
