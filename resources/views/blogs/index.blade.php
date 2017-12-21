@@ -67,7 +67,7 @@
                                 <div class="column is-one-quarter box-is-beige is-flex is-five">
                                     <div class="name-column">
                                         <h6 class="box--name">Karan Kanuga</h6>
-                                        <h6 class="box--title">(Business Collaborator) </h6>
+                                        <h6 class="box--title">(Business Collaborator), </h6>
                                         <h6 class="box--title">Project</h6>
                                         <h6 class="box--title">Management & SEO</h6>
                                     </div><!-- /.name-column -->
