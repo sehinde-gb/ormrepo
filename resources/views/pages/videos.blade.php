@@ -127,7 +127,7 @@
             <div class="composite-container">
                 <div class="single-container">
                     <h5 class="is--black is--capitals">Episode 17: Part 2 | Why emotional intelligence is important in the world of tech ? </h5>
-                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6AZizVkQBu0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div><!-- /.single-container -->
             </div><!-- /.composite-container -->
 
