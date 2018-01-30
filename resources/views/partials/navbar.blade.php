@@ -14,7 +14,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/blogs">Blogs</a></li>
                     <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Register</a></li>
                 </ul>
@@ -36,7 +36,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/admin/blogs">Blogs</a></li>
                     <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();

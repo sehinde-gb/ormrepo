@@ -54,9 +54,9 @@ Route::get('/search/{query}', function ($query) {
 Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy']);
 Route::get('/cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
-Route::get('/videos', ['as' => 'videos', 'uses' => 'PagesController@videos']);
+Route::get('/diversecodertv', ['as' => 'diversecodertv', 'uses' => 'PagesController@diversecodertv']);
 Route::get('/bookings', ['as' => 'bookings', 'uses' => 'PagesController@bookings']);
-Route::get('/portfolio', ['as' => 'portfolio', 'uses' => 'PagesController@portfolio']);
+
 
 # Tags
 Route::get('tags/{tags}', 'TagsController@show');

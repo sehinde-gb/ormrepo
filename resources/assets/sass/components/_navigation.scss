@@ -30,7 +30,10 @@ $montserrat: 'Montserrat Regular', sans-serif;
 header {
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
+
 }
+
+
 
 .logo-left {
   display: flex;
@@ -74,8 +77,8 @@ header {
 }
 
 .menu a:hover {
-  color: #ada074;
-  text-decoration: none;
+  color: #CA3422;
+  //text-decoration: none;
   border: none;
 }
 
@@ -86,6 +89,7 @@ header {
     width: 100%;
     border-bottom: 1px solid #f2f2f2;
   }
+
 
   .logo-left {
     display: flex;
@@ -127,8 +131,8 @@ header {
   }
 
   .menu a:hover {
-    color: #ada074;
-    text-decoration: none;
+    color: #CA3422;
+    //text-decoration: none;
     border: none;
   }
 
@@ -183,7 +187,7 @@ header {
   }
 
   .menu a:hover {
-    color: #ada074;
+    color: #CA3422;
     text-decoration: none;
     border: none;
   }
@@ -265,7 +269,7 @@ header {
   }
 
   .menu a:hover {
-    color: #ada074;
+    color: #CA3422;
     text-decoration: none;
     border: none;
   }

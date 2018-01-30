@@ -18,9 +18,9 @@ Breadcrumbs::register('portfolio', function ($breadcrumbs) {
 });
 
 // Home > Videos
-Breadcrumbs::register('videos', function ($breadcrumbs) {
+Breadcrumbs::register('diversecodertv', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Videos', route('videos'));
+    $breadcrumbs->push('Diversecodertv', route('diversecodertv'));
 });
 
 // Home > Terms

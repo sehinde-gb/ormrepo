@@ -75,8 +75,8 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function videos()
+    public function diversecodertv()
     {
-        return view('pages.videos');
+        return view('pages.diversecodertv');
     }
 }

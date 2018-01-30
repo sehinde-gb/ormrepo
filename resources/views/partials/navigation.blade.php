@@ -16,11 +16,11 @@
                     <li><a href="/blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Register</a></li>
                 </ul>
-            </div><!-- /.right-menu -->
+            </div><!-- /.menu -->
         @else
 
             <div class="logo-heading">
@@ -40,7 +40,7 @@
                     <li><a href="admin/blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
@@ -52,7 +52,7 @@
                         </form>
                     </li>
                 </ul>
-            </div><!-- /.right-menu -->
+            </div><!-- /.menu -->
 
 
         @endif

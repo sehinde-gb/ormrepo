@@ -77,6 +77,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Travelling';
+  src: url('/fonts/Travelling.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'January Handwriting';
+  src: url('/fonts/January-Handwriting.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 $georgia: "Georgia Italic", sans-serif;
 $lato-bold: 'Lato Bold', sans-serif;
@@ -89,6 +103,8 @@ $source-pro: 'Source Sans Pro', sans-serif;
 $source-light: 'Source Sans Pro Light', sans-serif;
 $vacer-thin: 'Vacer Serif Thin', sans-serif;
 $vacer-bold: 'Vacer Serif Bold', sans-serif;
+$travelling: 'Travelling', sans-serif;
+$january: 'January Handwriting', sans-serif;
 $beige: #f9f1dc;
 $black: #000000;
 $primary-color: #f8f8f8;
@@ -155,7 +171,7 @@ h4 {
 h5 {
   color: #282828;
   font-family: $lato-bold;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 25px;
   margin: 0;
   padding-top: 5px;
@@ -278,6 +294,21 @@ h15 {
   color: $beige;
   border-bottom: 1px solid $beige;
   padding-bottom: 20px;
+}
+
+h16 {
+  font-family: $travelling;
+  font-weight: 500;
+  font-size: 2em;
+  color: $black;
+  padding-bottom: 10px;
+}
+
+h17 {
+  font-family: $january;
+  font-weight: 500;
+  font-size: 3em;
+  color: white;
 }
 
 a {
@@ -543,7 +574,7 @@ label {
 }
 
 .aligned {
-  text-align: justify;
+  text-align: left;
 }
 
 .tips {
@@ -814,7 +845,7 @@ label {
   }
 
   .aligned {
-    text-align: justify;
+    text-align: left;
   }
 
   .tips {
@@ -1074,7 +1105,7 @@ label {
   }
 
   .aligned {
-    text-align: justify;
+    text-align: left;
   }
 
 
@@ -1211,6 +1242,14 @@ label {
     padding-bottom: 20px;
   }
 
+  h16 {
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: $black;
+    padding-bottom: 10px;
+  }
+
   .tagline {
     font-family: $myriad-pro;
     font-weight: 300;
@@ -1243,7 +1282,7 @@ label {
   .alert-notify {
     font-family: $montserrat;
     font-weight: 900;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 30px;
     color: $black;
     text-transform: capitalize !important;
@@ -1407,7 +1446,7 @@ label {
   }
 
   .aligned {
-    text-align: justify;
+    text-align: left;
   }
 
 
