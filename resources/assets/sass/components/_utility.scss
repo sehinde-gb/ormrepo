@@ -90,7 +90,7 @@ $primary-color: #f8f8f8;
 
 /* typography */
 .is--uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .is--lower {
@@ -148,7 +148,7 @@ $primary-color: #f8f8f8;
 
 .is--lorem-padding {
   padding-left: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .is--capitals {
@@ -161,6 +161,10 @@ $primary-color: #f8f8f8;
 
 .is--margin-top10 {
   margin-top: 10px;
+}
+
+.is--padded-l20 {
+  padding-left: 20px;
 }
 
 
@@ -258,12 +262,13 @@ $primary-color: #f8f8f8;
 
   /* typography */
   .is--uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
 
   .is--lower {
     text-transform: none !important;
   }
+
 
   /* Margins Padding */
   .is--padded-b10 {
@@ -314,9 +319,14 @@ $primary-color: #f8f8f8;
     margin-top: 25px;
   }
 
+  .is--padded-l20 {
+    padding-left: 20px;
+  }
+
+
   .is--lorem-padding {
     padding-left: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 
   .is--capitals {
@@ -473,9 +483,14 @@ $primary-color: #f8f8f8;
     margin-top: 25px;
   }
 
+  .is--padded-l20 {
+    padding-left: 20px;
+  }
+
+
   .is--lorem-padding {
     padding-left: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 
   .is--capitals {
@@ -617,9 +632,14 @@ $primary-color: #f8f8f8;
     margin-top: 25px;
   }
 
+  .is--padded-l20 {
+    padding-left: 20px;
+  }
+
+
   .is--lorem-padding {
     padding-left: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 
   .is--capitals {

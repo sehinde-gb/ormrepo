@@ -60,6 +60,11 @@
   color: black;
 }
 
+.fa-circle {
+  text-align: left !important;
+  vertical-align: 0 !important;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
 
@@ -121,6 +126,12 @@
   .fa-angle-double-up {
     color: black;
   }
+
+  .fa-circle {
+    text-align: left !important;
+    vertical-align: 0 !important;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {

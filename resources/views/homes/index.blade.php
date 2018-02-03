@@ -7,28 +7,28 @@
 <div class="homepage-container">
     @include('partials.navigation')
         <div class="hero-container">
-
             <h7 id="up"></h7>
-
-
                 <div class="logo-header">
                     <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
                 </div><!-- /.logo-header -->
 
-            <div class="read-container">
-                <a href="#slogan"><button type="submit" class="btn btn-secondary">Read More</button></a>
-            </div><!-- /.read-container -->
+                <div class="slogan-container">
+                    <h14 class="is--beige is--capitals">Integrity of purpose</h14>
+                </div><!-- /.slogan-container -->
+                <div class="read-container">
+                    <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
+                </div><!-- /.read-container -->
 
-            <div class="jump-to-about">
-                <a href="#slogan"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            </div><!-- /.back-to-top -->
+                <div class="jump-to-about">
+                    <a href="#services"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div><!-- /.back-to-top -->
 
         </div><!-- /.hero-container -->
 
 
-        <div class="slogan-container">
-            <h7 id="slogan"></h7>
-            <div class="slogan-image">
+        <div class="services-container">
+            <h7 id="services"></h7>
+            <div class="services-image">
                 <picture>
                     <img srcset="/images/hero/desktop-big.jpg 601w,
                           /images/hero/desktop-tall.jpg 600w"
@@ -49,11 +49,11 @@
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
-                        <h16><span style="color:#F0955F">"</span> We take pride in our candid<span style="color:#F0955F"> replies "</span></h16>
+                        <h16><span style="color:#F0955F">"</span> We take pride in our candid<span style="color:#CA3422;"> replies "</span></h16>
                     </div><!-- /.opinion -->
 
                     <div class="opinion">
-                        <h16><span style="color:#F0955F">"</span> We have a no nonsense approach to getting things <span style="color:#F0955F"> done "</span></h16>
+                        <h16><span style="color:#F0955F">"</span> We have a no nonsense approach to getting things <span style="color:#CA3422;"> done "</span></h16>
                     </div><!-- /.opinion -->
                 </div><!-- /.memes-container -->
 
@@ -64,11 +64,11 @@
 
                     <div class="opinion">
 
-                        <h16><span style="color:#F0955F">"</span> We take diversity very seriously, that’s why it is hardwired in to our <span style="color:#F0955F"> DNA "</span></h16>
+                        <h16><span style="color:#F0955F">"</span> We take diversity very seriously, that’s why it is hardwired in to our <span style="color:#CA3422;"> DNA "</span></h16>
                     </div><!-- /.opinion -->
 
                     <div class="opinion">
-                        <h16><span style="color:#F0955F">"</span> We offer one on one compassionate and helpful advice that is <span style="color:#F0955F"> dependable "</span></h16>
+                        <h16><span style="color:#CA3422;">"</span> We offer one on one compassionate and helpful advice that is <span style="color:#CA3422;"> dependable "</span></h16>
                     </div><!-- /.opinion -->
                 </div><!-- /.memes-container -->
 
@@ -81,12 +81,12 @@
                           </div><!-- /.icon-container -->
 
                            <div class="title-container">
-                                <h14>Tailor Made</h14>
+                                <h14>Custom Fitted</h14>
                            </div><!-- /.title-container -->
 
                            <div class="text-container">
-                            <p class="aligned">If you want tailor made features and options for your website. We use open source back-end systems and we can tweak our services to your taste and specifics.
-                            </p>
+                            <h18 class="aligned">We use open source back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
+                            </h18>
                            </div><!-- /.text-container -->
 
                        </div><!-- /.monitor-container -->
@@ -100,8 +100,8 @@
                                     <h14> Autopilot</h14>
                                 </div><!-- /.title-container -->
                                 <div class="text-container">
-                                    <p class="aligned">If you don’t feel like liaising with many heads to culminate the project, we do provide a full <span>360*</span> project management service, taking your project from stages of conception through to delivery, setting milestones along the way.
-                                    </p>
+                                    <h18 class="aligned">If you don’t feel like liaising with many heads to culminate the project, we do provide a full 360 project management service, taking your project from stages of conception through to delivery, setting milestones along the way.
+                                    </h18>
                                 </div><!-- /.text-container -->
 
                             </div><!-- /.gear-container -->
@@ -116,7 +116,7 @@
                                         <h14>Higher Search Results</h14>
                                     </div><!-- /.title-container -->
                                     <div class="text-container">
-                                        <p class="aligned">You don’t have to pay big money to be visible on the biggest search engines. It’s called Search Engine Optimisation. It’s legit and we’ll be happy to tell you more, just ask.</p>
+                                        <h18 class="aligned">You don’t have to pay big money to be visible on the biggest search engines. It’s called Search Engine Optimisation. It’s legit and we’ll be happy to tell you more, just ask.</h18>
                                     </div><!-- /.text-container -->
                                 </div><!-- /.free-container -->
                     </div><!-- /.who-container -->
@@ -127,7 +127,7 @@
                                  alt="Our understanding icon">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#F0955F">"</span> Our advice is broken down in to easily digestible chunks to improve <span style="color:#F0955F">understanding "</span></h16>
+                            <h16><span style="color:#F0955F">"</span> Our advice is broken down in to easily digestible chunks to improve <span style="color:#CA3422;">understanding "</span></h16>
                         </div><!-- /.opinion -->
 
 
@@ -139,10 +139,10 @@
                                  alt="Our accessibility icon">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#F0955F">"</span> Our websites are tailored to be inclusive and accessible from <span style="color:#F0955F">inception "</span></h16>
+                            <h16><span style="color:#CA3422;">"</span> Our websites are tailored to be inclusive and accessible from <span style="color:#CA3422;">inception "</span></h16>
                         </div><!-- /.opinion -->
                         <div class="opinion">
-                            <h16><span style="color:#F0955F">"</span> We pride ourselves on offering localised customer  <span style="color:#F0955F">support "</span></h16>
+                            <h16><span style="color:#CA3422;">"</span> We pride ourselves on offering localised customer  <span style="color:#CA3422;">support "</span></h16>
                         </div><!-- /.opinion -->
                     </div><!-- /.memes-container -->
 
@@ -190,7 +190,7 @@
                         /images/showcase/games-medium.png 420w">
 
                         <figcaption>
-                            <h3>The Gamesstation E-Commerce Purchase Game Keys</h3>
+                            <h3>Game Station E-Commerce (purchase game keys) </h3>
                             <p>This is a website that was built by Sehinde as a test e-commerce site in which you can buy video game keys, amend your profile and create inspiring gaming blog posts.</p>
                             <p><a href="https://games.ormrepo.co.uk">View Website</a></p>
                         </figcaption>
@@ -263,7 +263,7 @@
                         /images/showcase/gillian-medium.png 420w">
 
                         <figcaption>
-                            <h3>Gillian Mckeith Wellness and Weight Loss Club Website</h3>
+                            <h3>Gillian McKeith Wellness and Weight Loss Club Website</h3>
                             <p>A pioneering dietician from the United States, she wanted to make an entry into the UK market with a new and revamped website.</p>
                             <p><a href="http://gillianmckeith.com/">View Website</a></p>
                         </figcaption>

@@ -59,8 +59,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 .btn-secondary:visited,
 .btn-secondary:focus
 {
-  //background-color: #003434;
-  animation: pulse 5s infinite;
+  animation: pulse 20s infinite;
   outline: 0;
   border: 1px solid white;
   border-radius: unset;
@@ -81,18 +80,18 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
 @keyframes pulse {
   0% {
-    background-color:
-            #654EA3;
+    background-color: #F0955F;
   }
 
   50%  {
-    background: #50c878;
+    background: #CA3422;
   }
 
   100% {
     background-color: #003434;
   }
 }
+
 
 .btn-white,
 .btn-white:active,
@@ -280,7 +279,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
 
 
-
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   .btn-primary,
@@ -311,8 +309,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-secondary:visited,
   .btn-secondary:focus
   {
-    //background-color: #003434;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -333,18 +330,18 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
-      background-color:
-              #654EA3;
+      background-color: #F0955F;
     }
 
     50%  {
-      background: #50c878;
+      background: #CA3422;
     }
 
     100% {
       background-color: #003434;
     }
   }
+
 
   .btn-white,
   .btn-white:active,
@@ -537,7 +534,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-
   .btn-primary,
   .btn-primary:active,
   .btn-primary:visited,
@@ -560,14 +556,11 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: #717171 !important;
   }
 
-
-
   .btn-secondary,
   .btn-secondary:active,
   .btn-secondary:visited,
-  .btn-secondary:focus
-  {
-    background-color: #003434;
+  .btn-secondary:focus {
+    animation: pulse 20s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -586,11 +579,24 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     background-color: #003034;
   }
 
+  @keyframes pulse {
+    0% {
+      background-color: #F0955F;
+    }
+
+    50% {
+      background: #CA3422;
+    }
+
+    100% {
+      background-color: #003434;
+    }
+  }
+
   .btn-white,
   .btn-white:active,
   .btn-white:visited,
-  .btn-white:focus
-  {
+  .btn-white:focus {
     background-color: white;
     outline: 0;
     border: 1px solid black;
@@ -614,8 +620,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-off-white,
   .btn-off-white:active,
   .btn-off-white:visited,
-  .btn-off-white:focus
-  {
+  .btn-off-white:focus {
     background-color: #f3f3f3;
     outline: 0;
     border: 1px solid black;
@@ -635,7 +640,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: black;
     background-color: #ebebeb;
   }
-
 
   .btn-small,
   .btn-small:active,
@@ -716,7 +720,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: #717171 !important;
   }
 
-  .btn-tag  {
+  .btn-tag {
     background-color: #AE9C2C;
     outline: 0;
     border: 0;
@@ -735,8 +739,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: whitesmoke !important;
   }
 
-
-
   .btn-link {
     margin-left: 250px;
     color: black;
@@ -745,7 +747,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-link:hover {
     color: #ada074 !important;
   }
-
 
   .button-group {
     display: flex;
@@ -771,10 +772,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     margin-top: 0;
   }
 
-
-
 }
-
 
 @media all and (min-width: 100px) and (max-width: 480px) {
 
@@ -805,7 +803,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-secondary:visited,
   .btn-secondary:focus
   {
-    background-color: #003434;
+    animation: pulse 20s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -824,6 +822,19 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     background-color: #003034;
   }
 
+  @keyframes pulse {
+    0% {
+      background-color: #F0955F;
+    }
+
+    50% {
+      background: #CA3422;
+    }
+
+    100% {
+      background-color: #003434;
+    }
+  }
 
   .btn-danger,
   .btn-danger:active,
@@ -870,7 +881,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     background-color: #f9f1dc !important;
     color: #717171 !important;
   }
-
 
 
   .btn-tag {

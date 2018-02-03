@@ -9,7 +9,7 @@
   min-height: 600px;
   width: 1200px;
   margin: auto;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .container {
@@ -37,33 +37,28 @@
 }
 
 .columns {
-  //min-height: 750px;
+  min-height: 750px;
   margin-top: 20px !important;
-  height: 2300px !important;
+  //height: 2300px !important;
+  //height: 600px !important;
+}
+
+.indexed-image {
+  padding-left: 10px;
+}
+
+.reduction {
+  width: 20%;
 }
 
 /* for further column styling in the blog area see utility classes */
-
-.newsletter-container {
-  min-height: 500px;
-  width: 100%;
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#mc_embed_signup input.email {
-  background-color: #003434 !important;
-  color: #f9f1dc !important;
-}
 
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../images/intro-bg.jpg) no-repeat center center;
+  background: url(../images/assets/intro-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -100,7 +95,7 @@
     min-height: 600px;
     width: 1200px;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
 
   .container {
@@ -126,32 +121,28 @@
 
   .columns {
     margin-top: 20px !important;
-    height: 2300px;
-    //min-height: 750px;
+    //height: 2300px;
+    min-height: 750px;
   }
+
+  .indexed-image {
+    padding-left: 10px;
+  }
+
+  .reduction {
+    width: 20%;
+  }
+
+
 
   /* for further column styling in the blog area see utility classes */
-
-  .newsletter-container {
-    min-height: 500px;
-    width: 100%;
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #mc_embed_signup input.email {
-    background-color: #003434 !important;
-    color: #f9f1dc !important;
-  }
 
   .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
+    background: url(../images/assets/intro-bg.jpg) no-repeat center center;
     background-size: cover;
   }
 
@@ -191,7 +182,7 @@
     min-height: 6000px;
     width: 980px;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   .container {
@@ -226,31 +217,26 @@
     padding-left: 80px;
     //min-height: 750px;
     height: 750px !important;
+    //height: 600px !important;
   }
+
+  .indexed-image {
+    padding-left: 10px;
+  }
+
+  .reduction {
+    width: 20%;
+  }
+
 
   /* for further column styling in the blog area see utility classes */
-  .newsletter-container {
-    min-height: 1600px;
-    width: 100%;
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #mc_embed_signup input.email {
-    background-color: #003434 !important;
-    color: #f9f1dc !important;
-  }
 
   .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
+    background: url(../images/assets/intro-bg.jpg) no-repeat center center;
     background-size: cover;
   }
 
@@ -329,27 +315,14 @@
     height: 1000px;
   }
 
-  .newsletter-container {
-    min-height: 500px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  .indexed-image {
+    padding-left: 10px;
   }
 
-  .subscribe {
-    width: 100%;
+  .reduction {
+    width: 20%;
   }
 
-  #mc_embed_signup input.email {
-    background-color: #003434 !important;
-    color: #f9f1dc !important;
-  }
-
-  #mc_embed_signup_scroll {
-    width: 350px;
-  }
 
   #box {
     background-color: #003434;

@@ -5,7 +5,7 @@
         <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
         <div class="orm-body">
             <h4 class="alert-notify">{{ body }}
-                <a href="https://ormrepo.co.uk/cookie" class="find-link">Click here to find out more</a>
+                <a href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
                 </h4>
         </div><!-- /.orm-body -->
     </article><!-- /.orm-message -->
@@ -78,12 +78,10 @@
         color: #F8F8F8;
         min-height: 120px;
         border-radius: 2px;
-        width: 74%;
-        margin-left: 70px;
+        width: 100%;
     }
     
     .orm-body {
-        padding-top: 12px;
         padding-left: 20px;
     }
     

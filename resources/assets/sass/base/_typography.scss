@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: 'Myriad Pro';
   src: url('/fonts/MyriadPro-Regular.ttf');
   font-weight: normal;
   font-style: normal;
@@ -298,8 +298,9 @@ h15 {
 
 h16 {
   font-family: $travelling;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2em;
+  line-height: 32px;
   color: $black;
   padding-bottom: 10px;
 }
@@ -307,25 +308,35 @@ h16 {
 h17 {
   font-family: $january;
   font-weight: 500;
+  line-height: 78px;
   font-size: 3em;
   color: white;
 }
 
+h18 {
+  font-family: $travelling;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 39px;
+  color: $black;
+  padding-bottom: 10px;
+}
+
 a {
-  color: black;
+  color: #CA3422;
   }
 
 a:hover {
-  color: #ada074;
+  color: #F0955F;
   text-decoration: underline;
 }
 
 a:active {
-  color: #ada074;
+  color: #CA3422;
 }
 
 a:focus {
-  color: #ada074;
+  color: #CA3422;
 }
 
 p {
@@ -349,13 +360,6 @@ p {
   color:  white;
 }
 
-.tagline {
-  font-family: $myriad-pro;
-  font-weight: 300;
-  font-size: 1.3em;
-  line-height: 32px;
-  color: $white;
-}
 
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -384,18 +388,16 @@ p {
 }
 
 .find-link {
-  font-family: $lato-bold;
-  font-weight: 900;
+  font-family: "Lato Regular", sans-serif;
+  font-weight: 700;
   font-size: 1em;
-  line-height: 30px;
-  color: $black;
-  text-transform: capitalize !important;
-  padding: 0;
-  margin: 0;
+  line-height: 28px;
+  color: white;
+  text-transform: none !important;
 }
 
 .find-link:hover {
-  color: #ada074;
+  color: #CA3422;
 }
 
 label {
@@ -469,21 +471,20 @@ label {
 .news--heading {
   font-family: $lato-bold;
   font-weight: 700;
-  font-size: 2.25em;
-  line-height: 51px;
+  font-size: 0.9em;
+  line-height: 23px;
   text-transform: uppercase;
-  color: $beige;
+  color: $white;
   margin: 0;
   padding-left: 20px;
 }
 
 .lorem--text {
   font-family: $georgia;
-  font-size: 1.25em;
-  font-style: italic;
+  font-size: 0.8em;
+  line-height: 19px;
   font-weight: 400;
-  line-height: 32px;
-  color: #808080;
+  color: $white;
   border: 0;
   text-transform: none;
 }
@@ -561,8 +562,7 @@ label {
   font-size: 12px;
   line-height: 28px;
   color: #949494;
-  padding-left: 25px;
-  padding-right: 25px;
+  text-align: center;
 }
 
 .art {
@@ -589,13 +589,6 @@ label {
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
-  .tagline {
-    font-family: $myriad-pro;
-    font-weight: 300;
-    font-size: 1.3em;
-    line-height: 32px;
-    color: $white;
-  }
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -628,18 +621,16 @@ label {
   }
 
   .find-link {
-    font-family: $lato-bold;
-    font-weight: 900;
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 700;
     font-size: 1em;
-    line-height: 30px;
-    color: $black;
-    text-transform: capitalize !important;
-    padding: 0;
-    margin: 0;
+    line-height: 28px;
+    color: white;
+    text-transform: none !important;
   }
 
   .find-link:hover {
-    color: #ada074;
+    color: #CA3422;
   }
 
 
@@ -713,21 +704,20 @@ label {
   .news--heading {
     font-family: $lato-bold;
     font-weight: 700;
-    font-size: 2.250em;
-    line-height: 51px;
+    font-size: 0.9em;
+    line-height: 23px;
     text-transform: uppercase;
-    color: $beige;
+    color: $white;
     margin: 0;
     padding-left: 20px;
   }
 
   .lorem--text {
-    font-family: $georgia;
-    font-size: 1.125em;
-    font-style: italic;
+    font-family: $lato-bold;
+    font-size: 0.8em;
+    line-height: 19px;
     font-weight: 400;
-    line-height: 32px;
-    color: #808080;
+    color: $white;
     border: 0;
     text-transform: none;
   }
@@ -816,8 +806,7 @@ label {
     font-size: 12px;
     line-height: 28px;
     color: #949494;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: center;
   }
 
   .art {
@@ -863,13 +852,7 @@ label {
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
-  .tagline {
-    font-family: $myriad-pro;
-    font-weight: 300;
-    font-size: 1.3em;
-    line-height: 34px;
-    color: $white;
-  }
+
 
   .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -917,18 +900,16 @@ label {
   }
 
   .find-link {
-    font-family: $lato-bold;
-    font-weight: 900;
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 700;
     font-size: 1em;
-    line-height: 30px;
-    color: $black;
-    text-transform: capitalize !important;
-    padding: 0;
-    margin: 0;
+    line-height: 28px;
+    color: white;
+    text-transform: none !important;
   }
 
   .find-link:hover {
-    color: #ada074;
+    color: #CA3422;
   }
 
   /* Column Container & Newsletter Container Typography */
@@ -981,21 +962,20 @@ label {
   .news--heading {
     font-family: $lato-bold;
     font-weight: 700;
-    font-size: 2.250em;
-    line-height: 50px;
+    font-size: 0.9em;
+    line-height: 23px;
     text-transform: uppercase;
-    color: $beige;
+    color: $white;
     margin: 0;
     padding-left: 20px;
   }
 
   .lorem--text {
-    font-family: $georgia;
-    font-size: 1.125em;
-    font-style: italic;
+    font-family: $lato-bold;
+    font-size: 0.8em;
+    line-height: 19px;
     font-weight: 400;
-    line-height: 30px;
-    color: #808080;
+    color: $white;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -1076,8 +1056,7 @@ label {
     font-size: 12px;
     line-height: 28px;
     color: #949494;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: center;
   }
 
   .art {
@@ -1250,13 +1229,6 @@ label {
     padding-bottom: 10px;
   }
 
-  .tagline {
-    font-family: $myriad-pro;
-    font-weight: 300;
-    font-size: 1.3em;
-    line-height: 34px;
-    color: $white;
-  }
 
   .intro-message > h1 {
     font-size: 3em;
@@ -1305,10 +1277,10 @@ label {
   .news--heading {
     font-family: $montserrat-bold;
     font-weight: 700;
-    font-size: 1.625em;
-    line-height: 36px;
+    font-size: 0.9em;
+    line-height: 23px;
     text-transform: uppercase;
-    color: $beige;
+    color: $white;
     margin: 0;
     padding-left: 20px;
   }
@@ -1316,10 +1288,9 @@ label {
 
   .lorem--text {
     font-family: $montserrat;
-    font-size: 1.125em;
-    font-style: italic;
-    line-height: 27px;
-    color: #808080;
+    font-size: 0.85em;
+    line-height: 21px;
+    color: $white;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1422,8 +1393,7 @@ label {
     font-size: 12px;
     line-height: 28px;
     color: #949494;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: center;
   }
 
   .art {

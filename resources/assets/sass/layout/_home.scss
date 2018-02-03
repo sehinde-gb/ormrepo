@@ -9,7 +9,7 @@ $montserrat-bold: 'Montserrat Bold', sans-serif;
   width: 100vw;
   min-height: 750px;
   overflow: hidden;
-  animation: pulse 5s infinite;
+  animation: pulse 20s infinite;
   padding-top: 200px;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,18 @@ $montserrat-bold: 'Montserrat Bold', sans-serif;
   }
 }
 
+.logo-header {
+  height: 150px;
+}
+
+.slogan-container {
+  padding-top: 20px;
+  height: 100px;
+}
+
+.read-container {
+  padding-top: 50px;
+}
 
 span.underlined {
   border-bottom: 1px solid $beige;
@@ -42,6 +54,11 @@ span.underlined {
 
 .jump-to-top {
   padding-top: 100px;
+}
+
+.services-container {
+  width: 100%;
+  min-height: 100%;
 }
 
 .book-container {
@@ -126,11 +143,10 @@ span.underlined {
 .title-container {
   width: 240px;
   padding-top: 50px;
-  padding-left: 20px;
 }
 
 .text-container {
-  width: 250px;
+  width: 260px;
   padding-top: 10px;
   padding-left: 3px;
   padding-right: 10px;
@@ -285,15 +301,9 @@ figcaption a:hover {
 }
 
 
-
-.read-container {
-  padding-top: 100px;
-}
-
-
 .grey-container {
-  padding-top: 150px;
-  height: 390px;
+  padding-top: 40px;
+  height: 150px;
   width: 100%;
   background-color: #444444;
 }
@@ -301,7 +311,7 @@ figcaption a:hover {
 .contact-container {
   height: 500px;
   width: 100%;
-  animation: pulse 5s infinite;
+  animation: pulse 20s infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,7 +391,7 @@ textarea.form-control {
   .hero-container {
     width: 100vw;
     min-height: 750px;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     overflow: hidden;
     padding-top: 200px;
     display: flex;
@@ -405,6 +415,19 @@ textarea.form-control {
   }
 
 
+  .logo-header {
+    height: 150px;
+  }
+
+  .slogan-container {
+    padding-top: 20px;
+    height: 100px;
+  }
+
+  .read-container {
+    padding-top: 50px;
+  }
+
   span.underlined {
     border-bottom: 1px solid $beige;
   }
@@ -415,6 +438,11 @@ textarea.form-control {
 
   .jump-to-top {
     padding-top: 100px;
+  }
+
+  .services-container {
+    width: 100%;
+    min-height: 100%;
   }
 
   .book-container {
@@ -500,11 +528,10 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
-    padding-left: 20px;
   }
 
   .text-container {
-    width: 250px;
+    width: 260px;
     padding-top: 10px;
     padding-left: 3px;
     padding-right: 10px;
@@ -659,16 +686,9 @@ textarea.form-control {
     padding: 10px 4px;
   }
 
-
-
-  .read-container {
-    padding-top: 100px;
-  }
-
-
   .grey-container {
-    padding-top: 150px;
-    height: 390px;
+    padding-top: 40px;
+    height: 150px;
     width: 100%;
     background-color: #444444;
   }
@@ -676,7 +696,7 @@ textarea.form-control {
   .contact-container {
     height: 500px;
     width: 100%;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -760,7 +780,7 @@ textarea.form-control {
   .hero-container {
     width: 100vw;
     min-height: 750px;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     overflow: hidden;
     padding-top: 200px;
     display: flex;
@@ -783,6 +803,21 @@ textarea.form-control {
     }
   }
 
+
+  .logo-header {
+    height: 150px;
+  }
+
+  .slogan-container {
+    padding-top: 20px;
+    height: 100px;
+  }
+
+  .read-container {
+    padding-top: 50px;
+  }
+
+
   span.underlined {
     border-bottom: 1px solid $beige;
   }
@@ -793,6 +828,11 @@ textarea.form-control {
 
   .jump-to-top {
     padding-top: 100px;
+  }
+
+  .services-container {
+    width: 100%;
+    min-height: 100%;
   }
 
   .book-container {
@@ -873,11 +913,10 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
-    padding-left: 20px;
   }
 
   .text-container {
-    width: 250px;
+    width: 260px;
     padding-top: 10px;
     padding-left: 3px;
     padding-right: 10px;
@@ -1032,15 +1071,9 @@ textarea.form-control {
     padding: 10px 4px;
   }
 
-
-
-  .read-container {
-    padding-top: 100px;
-  }
-
   .grey-container {
-    padding-top: 150px;
-    height: 390px;
+    padding-top: 50px;
+    height: 200px;
     width: 100%;
     background-color: #444444;
   }
@@ -1048,7 +1081,7 @@ textarea.form-control {
   .contact-container {
     height: 500px;
     width: 100%;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1147,8 +1180,8 @@ textarea.form-control {
 
   .hero-container {
     width: 100vw;
-    height: 100vh;
-    animation: pulse 5s infinite;
+    height: 80vh;
+    animation: pulse 20s infinite;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1170,6 +1203,19 @@ textarea.form-control {
     }
   }
 
+  .logo-header {
+    height: 150px;
+  }
+
+  .slogan-container {
+    padding-top: 20px;
+    height: 100px;
+  }
+
+  .read-container {
+    padding-top: 50px;
+  }
+
   span.underlined {
     border-bottom: 1px solid $beige;
   }
@@ -1180,6 +1226,11 @@ textarea.form-control {
 
   .jump-to-top {
     padding-top: 100px;
+  }
+
+  .services-container {
+    width: 100%;
+    min-height: 100%;
   }
 
   .book-container {
@@ -1257,11 +1308,10 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
-    padding-left: 20px;
   }
 
   .text-container {
-    width: 250px;
+    width: 260px;
     padding-top: 10px;
     padding-left: 3px;
     padding-right: 10px;
@@ -1278,7 +1328,7 @@ textarea.form-control {
   }
 
   .portfolio-container {
-    min-height: 4000px;
+    min-height: 3500px;
     background-color: #f3f3f3;
     width: 100%;
     display: flex;
@@ -1288,7 +1338,7 @@ textarea.form-control {
   }
 
   .projects-container {
-    height: 3500px !important;
+    height: 2900px !important;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -1411,8 +1461,8 @@ textarea.form-control {
 
   .top-portfolio {
     width: 100%;
-    padding: 0;
     border: 0;
+    padding: 10px 4px;
   }
 
   .lower-portfolio {
@@ -1421,12 +1471,9 @@ textarea.form-control {
   }
 
 
-  .read-container {
-    padding-top: 100px;
-  }
 
   .grey-container {
-    height: 390px;
+    height: 220px;
     width: 100%;
     background-color: #444444;
   }
@@ -1434,7 +1481,7 @@ textarea.form-control {
   .contact-container {
     height: 500px;
     width: 100%;
-    animation: pulse 5s infinite;
+    animation: pulse 20s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;

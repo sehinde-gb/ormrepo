@@ -11,7 +11,6 @@
     <div class="main-container">
         <h7 id="up"></h7>
         <div class="video-container">
-
             <div class="diverse-container">
                 <img srcset="/images/assets/coderlogo-desktop.png 601w,
                         /images/assets/coderlogo-tall.png 600w"
