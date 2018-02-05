@@ -64,7 +64,7 @@
             <div class="footer-diversity">
                 <div class="footer-header">
                     <p class="is--white is--uppercase is--padded-l20 is--uppercase">Committed to diversity</p>
-                    <p class="is--white is--padded-l20">"Join us, as we break down the barriers of cultural differences and showcase a sense of harmony between tech and diversity; a journey that we hope, can instil a sense of belonging for the culturally diverse within the tech community."</p>
+                    <p class="is--white is--padded-l20">Join us, as we break down the barriers of cultural differences and showcase a sense of harmony between tech and diversity; a journey that we hope, can instil a sense of belonging for the culturally diverse within the tech community.</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
 

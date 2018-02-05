@@ -80,15 +80,15 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
 @keyframes pulse {
   0% {
-    background-color: #F0955F;
+    background-color:  #003434;
   }
 
   50%  {
-    background: #CA3422;
+    background-color: #F0955F;
   }
 
   100% {
-    background-color: #003434;
+    background-color: #CA3422;
   }
 }
 
@@ -330,15 +330,15 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
-      background-color: #F0955F;
+      background-color:  #003434;
     }
 
     50%  {
-      background: #CA3422;
+      background-color: #F0955F;
     }
 
     100% {
-      background-color: #003434;
+      background-color: #CA3422;
     }
   }
 
@@ -581,15 +581,15 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
+      background-color:  #003434;
+    }
+
+    50%  {
       background-color: #F0955F;
     }
 
-    50% {
-      background: #CA3422;
-    }
-
     100% {
-      background-color: #003434;
+      background-color: #CA3422;
     }
   }
 
@@ -824,15 +824,15 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
+      background-color:  #003434;
+    }
+
+    50%  {
       background-color: #F0955F;
     }
 
-    50% {
-      background: #CA3422;
-    }
-
     100% {
-      background-color: #003434;
+      background-color: #CA3422;
     }
   }
 
@@ -907,9 +907,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     float: left;
     margin-top: 15px;
   }
-
-
-
 
 }
 
