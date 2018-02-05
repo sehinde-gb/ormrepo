@@ -81,7 +81,9 @@
                                 </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
                                 <div class="column is-one-quarter is-dark-grey is-flex is-six">
                                     <div class="arrow">
-
+                                        <div class="indexed-image">
+                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div><!-- /.indexed-image -->
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
