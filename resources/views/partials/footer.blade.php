@@ -12,11 +12,12 @@
 
         <div class="footer-showcase">
             <div class="footer-connected">
-                <p class="is--white is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
-                    <div class="footer-header">
+                <div class="footer-header">
+                    <p class="is--white is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
+                </div><!-- /.footer-header -->
                         <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
                         <h4 class="lorem--text is--lorem-padding">You consent to receiving quarterly email updates only, so you won't see anything from us in your junk mail.</h4>
-                    </div><!-- /.footer-header -->
+
 
                     <!-- Begin MailChimp Signup Form -->
                     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -61,15 +62,17 @@
             </div><!-- /.footer-connected -->
 
             <div class="footer-diversity">
-
                 <div class="footer-header">
                     <p class="is--white is--uppercase is--padded-l20 is--uppercase">Committed to diversity</p>
-                    <p class="is--white is--padded-l20">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <p class="is--white is--padded-l20">"Join us, as we break down the barriers of cultural differences and showcase a sense of harmony between tech and diversity; a journey that we hope, can instil a sense of belonging for the culturally diverse within the tech community."</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
 
             <div class="footer-map">
-                <p class="is--white is--uppercase is--padded-l20 is--uppercase">Navigate</p>
+                <div class="footer-header">
+                    <p class="is--white is--uppercase is--padded-l20 is--uppercase">Navigate</p>
+                </div><!-- /.footer-header -->
+
                 <div class="foot-nav">
                     <ul>
                         <li class="even-spacing"><a href="#about" class="foot-links">About</a></li>

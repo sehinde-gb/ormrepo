@@ -49,11 +49,11 @@
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
-                        <h16><span style="color:#F0955F">"</span> We take pride in our candid<span style="color:#CA3422;"> replies "</span></h16>
+                        <h16><span style="color:#CA3422">"</span> We take pride in our candid<span style="color:#CA3422;"> replies "</span></h16>
                     </div><!-- /.opinion -->
 
                     <div class="opinion">
-                        <h16><span style="color:#F0955F">"</span> We have a no nonsense approach to getting things <span style="color:#CA3422;"> done "</span></h16>
+                        <h16><span style="color:#CA3422">"</span> We have a no nonsense approach to getting things <span style="color:#CA3422;"> done "</span></h16>
                     </div><!-- /.opinion -->
                 </div><!-- /.memes-container -->
 
@@ -64,7 +64,7 @@
 
                     <div class="opinion">
 
-                        <h16><span style="color:#F0955F">"</span> We take diversity very seriously, that’s why it is hardwired in to our <span style="color:#CA3422;"> DNA "</span></h16>
+                        <h16><span style="color:#CA3422">"</span> We take diversity very seriously, that’s why it is hardwired in to our <span style="color:#CA3422;"> DNA "</span></h16>
                     </div><!-- /.opinion -->
 
                     <div class="opinion">
@@ -127,7 +127,7 @@
                                  alt="Our understanding icon">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#F0955F">"</span> Our advice is broken down in to easily digestible chunks to improve <span style="color:#CA3422;">understanding "</span></h16>
+                            <h16><span style="color:#CA3422">"</span> Our advice is broken down in to easily digestible chunks to improve <span style="color:#CA3422;">understanding "</span></h16>
                         </div><!-- /.opinion -->
 
 

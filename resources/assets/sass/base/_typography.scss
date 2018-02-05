@@ -44,7 +44,7 @@
 
 @font-face {
   font-family: 'Myriad Pro';
-  src: url('/fonts/MyriadPro-Regular.ttf');
+  src: url('/fonts/MyriadPro-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -210,7 +210,7 @@ h6 a {
 }
 
 h6 a:hover {
-  color: #ada074;
+  color: #CA3422;
   text-decoration: none;
   border: none;
 }
@@ -281,6 +281,7 @@ h14 {
   font-family: $lato-regular;
   font-weight: 200;
   font-size: 26px;
+  line-height: 42px;
   text-transform: uppercase;
   color: $black;
   padding-bottom: 15px;
@@ -314,10 +315,10 @@ h17 {
 }
 
 h18 {
-  font-family: $travelling;
+  font-family: $myriad-pro;
   font-weight: 400;
-  font-size: 1.5em;
-  line-height: 39px;
+  font-size: 1.1em;
+  line-height: 28px;
   color: $black;
   padding-bottom: 10px;
 }
@@ -828,7 +829,7 @@ label {
   }
 
   h6 a:hover {
-    color: #ada074;
+    color: #CA3422;
     text-decoration: none;
     border: none;
   }
@@ -1078,7 +1079,7 @@ label {
   }
 
   h6 a:hover {
-    color: #ada074;
+    color: #CA3422;
     text-decoration: none;
     border: none;
   }
@@ -1169,7 +1170,7 @@ label {
   }
 
   h6 a:hover {
-    color: #ada074;
+    color: #CA3422;
     text-decoration: none;
     border: none;
   }
@@ -1225,6 +1226,23 @@ label {
     font-family: $montserrat;
     font-weight: 500;
     font-size: 1.2em;
+    color: $black;
+    padding-bottom: 10px;
+  }
+
+  h17 {
+    font-family: $montserrat;
+    font-weight: 500;
+    line-height: 31px;
+    font-size: 1.2em;
+    color: white;
+  }
+
+  h18 {
+    font-family: $montserrat-bold;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 28px;
     color: $black;
     padding-bottom: 10px;
   }
@@ -1312,13 +1330,12 @@ label {
 
   .box--title {
     font-family: $montserrat;
-    font-size: 1.5em;
-    line-height: 34px;
+    font-size: 1.1em;
+    line-height: 28px !important;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 700;
     line-height: 33px;
-    //text-align: center;
   }
 
   .blog--title {

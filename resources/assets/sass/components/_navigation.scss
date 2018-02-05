@@ -22,18 +22,15 @@
 }
 
 
-$lato-bold: 'Lato Bold';
-$lato-regular: 'Lato Regular';
+$lato-bold: 'Lato Bold', sans-serif;
+$lato-regular: 'Lato Regular', sans-serif;
 $montserrat: 'Montserrat Regular', sans-serif;
 
 
 header {
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
-
 }
-
-
 
 .logo-left {
   display: flex;
@@ -73,13 +70,12 @@ header {
   display: inline-block;
   text-align: center;
   width: 100%;
-  border: none;
+  border-bottom: transparent solid 1px;
 }
 
 .menu a:hover {
   color: #CA3422;
-  //text-decoration: none;
-  border: none;
+  border-bottom: #CA3422 solid 1px;
 }
 
 
@@ -127,13 +123,12 @@ header {
     display: inline-block;
     text-align: center;
     width: 100%;
-    border: none;
+    border-bottom: transparent solid 1px;
   }
 
   .menu a:hover {
     color: #CA3422;
-    //text-decoration: none;
-    border: none;
+    border-bottom: #CA3422 solid 1px;
   }
 
 }
@@ -183,13 +178,12 @@ header {
     display: inline-block;
     text-align: center;
     width: 100%;
-    border: none;
+    border-bottom: transparent solid 1px;
   }
 
   .menu a:hover {
     color: #CA3422;
-    text-decoration: none;
-    border: none;
+    border-bottom: #CA3422 solid 1px;
   }
 
 }
@@ -262,7 +256,7 @@ header {
           display: inline-block;
           text-align: center;
           width: 100%;
-          border: none;
+          border-bottom: transparent solid 1px;
         }
       }
     }
@@ -270,7 +264,6 @@ header {
 
   .menu a:hover {
     color: #CA3422;
-    text-decoration: none;
-    border: none;
+    border-bottom: #CA3422 solid 1px;
   }
 }
