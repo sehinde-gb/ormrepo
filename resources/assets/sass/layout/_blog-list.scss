@@ -37,9 +37,9 @@
 }
 
 .columns {
-  min-height: 750px;
+  //min-height: 750px;
   margin-top: 20px !important;
-  //height: 2300px !important;
+  height: 2300px !important;
   //height: 600px !important;
 }
 
@@ -121,8 +121,8 @@
 
   .columns {
     margin-top: 20px !important;
-    //height: 2300px;
-    min-height: 750px;
+    height: 2300px;
+    //min-height: 750px;
   }
 
   .indexed-image {
@@ -274,7 +274,7 @@
   }
 
   .first-container {
-    min-height: 7000px;
+    min-height: 8000px;
     width: 100%;
     margin: auto;
     padding: 0;
