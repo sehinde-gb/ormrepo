@@ -393,7 +393,7 @@ p {
   font-weight: 700;
   font-size: 1em;
   line-height: 28px;
-  color: white;
+  color: white !important;
   text-transform: none !important;
 }
 
@@ -1434,6 +1434,19 @@ label {
 
   .aligned {
     text-align: left;
+  }
+
+  .find-link {
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 28px;
+    color: white !important;
+    text-transform: none !important;
+  }
+
+  .find-link:hover {
+    color: #CA3422;
   }
 
 
