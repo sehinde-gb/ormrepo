@@ -230,6 +230,15 @@
                         </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
+
+                    <div class="composite-container">
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 19: Part 2 | Why do some organisations have an empathy deficit when it comes to building working relationships ? </h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/e_rJpw1rKYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
+                    </div><!-- /.composite-container -->
+
+
             <div class="jump-to-top">
                 <a href="#top" style= "color: white;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: white;" aria-hidden="true"></i></a>
             </div><!-- /.jump-to-top -->
