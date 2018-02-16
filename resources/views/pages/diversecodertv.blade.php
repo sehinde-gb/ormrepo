@@ -223,7 +223,7 @@
                             <h5 class="is--white is--capitals is--padded-b10">Episode 17: Part 2 | Why emotional intelligence is important in the world of tech ? </h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/6AZizVkQBu0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
-                        <h7 id="latest"></h7>
+
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 18: Part 1 | Why do some organisations have an empathy deficit when it comes to building working relationships ? </h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/lgY9Q3leX54" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -232,6 +232,7 @@
 
 
                     <div class="composite-container">
+                        <h7 id="latest"></h7>
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 19: Part 2 | Why do some organisations have an empathy deficit when it comes to building working relationships ? </h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/e_rJpw1rKYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
