@@ -27,6 +27,8 @@
 
     @include('partials.status')
 
+
+
     @yield('content')
 
     @include('partials.footer')
