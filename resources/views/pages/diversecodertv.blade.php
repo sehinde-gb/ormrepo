@@ -238,14 +238,14 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/e_rJpw1rKYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
 
-                        <h7 id="latest"></h7>
+
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 20:  How can you build resilience in tech ? </h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/cKqmx5PhCx4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
                         </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
-
+                    <h7 id="latest"></h7>
                     <div class="composite-container">
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 21: How to convert photoshop images in to vector images ? </h5>
