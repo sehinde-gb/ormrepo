@@ -42,6 +42,7 @@
                                        name="password"
                                        placeholder="password">
 
+
                             <p><label><input id="methods" type="checkbox"> Show password</label></p>
                         </div><!-- /.form-group form-group-lg -->
 
