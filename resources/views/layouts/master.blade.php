@@ -8,7 +8,7 @@
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" type="text/css">
