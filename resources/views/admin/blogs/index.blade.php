@@ -369,6 +369,16 @@
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-thirty-four-->
+                            @elseif($blog->id == 31)
+                                <div class="column is-one-quarter is-light-grey is-flex is-thirty-five">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-thirty-five-->
                             @endif
 
                         @endforeach
