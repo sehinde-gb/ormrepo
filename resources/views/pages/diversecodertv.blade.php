@@ -245,7 +245,7 @@
 
                         </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
-                    <h7 id="latest"></h7>
+
                     <div class="composite-container">
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 21: How to convert photoshop images in to vector images ? </h5>
@@ -257,13 +257,20 @@
                             </h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/jjcW7eBoQa0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
-
-                        <div class="single-container"><h5 class="is--white is--capitals is--padded-b10">Episode 23: Part 1: What is body language ?
-                        </h5>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cvUCruuDmvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
+                    <h7 id="latest"></h7>
+                    <div class="composite-container">
+                        <div class="single-container"><h5 class="is--white is--capitals is--padded-b10">Episode 23: Part 1: What is body language ?</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cvUCruuDmvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
+
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 24: Part 2: What is body language ?</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WahiPia7btw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
+
+                    </div><!-- /.composite-container -->
 
             <div class="jump-to-top">
                 <a href="#top" style= "color: white;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: white;" aria-hidden="true"></i></a>

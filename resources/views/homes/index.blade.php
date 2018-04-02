@@ -286,9 +286,9 @@
         <div class="alert-container">
             <div id="root">
                 <!-- Using the Alert component -->
-                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
+                <p class="fourthtext"><message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
+            </div>
 
-            </div><!-- /#app -->
         </div><!-- /.alert-container -->
     </div><!-- /.grey-container -->
 
