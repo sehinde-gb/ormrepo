@@ -399,6 +399,46 @@
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-thirty-seven-->
+                            @elseif($blog->id == 33)
+                                <div class="column is-one-quarter is-light-grey is-flex is-thirty-eight">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-thirty-eight-->
+                            @elseif($blog->id == 34)
+                                <div class="column is-one-quarter is-grey is-flex is-thirty-nine">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-thirty-nine-->
+                            @elseif($blog->id == 35)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-forty">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-->
+                            @elseif($blog->id == 36)
+                                <div class="column is-one-quarter is-light-grey is-flex is-forty-one">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-forty-one-->
                             @endif
 
                         @endforeach
