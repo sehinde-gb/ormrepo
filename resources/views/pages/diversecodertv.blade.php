@@ -259,7 +259,7 @@
                         </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
-                    <h7 id="latest"></h7>
+
                     <div class="composite-container">
                         <div class="single-container"><h5 class="is--white is--capitals is--padded-b10">Episode 23: Part 1: What is body language ?</h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/cvUCruuDmvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -270,6 +270,14 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/WahiPia7btw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
 
+                    </div><!-- /.composite-container -->
+
+                    <h7 id="latest"></h7>
+                    <div class="composite-container">
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 25: Part 1: How to use Stripe on my website ?</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yBkxZJKF1Bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
             <div class="jump-to-top">
