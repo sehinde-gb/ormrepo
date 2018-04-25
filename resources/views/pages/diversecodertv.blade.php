@@ -278,6 +278,11 @@
                             <h5 class="is--white is--capitals is--padded-b10">Episode 25: Part 1: How to use Stripe on my website ?</h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/yBkxZJKF1Bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
+
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 26: Part 2: How to use Stripe on my website ?</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2OISFE8Gp80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
             <div class="jump-to-top">
