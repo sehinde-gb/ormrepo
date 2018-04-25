@@ -25,7 +25,7 @@
                         <h2 class="blog--excerpt">{!! $blog->series !!}</h2>
                         <p>Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                         <p>Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
-                        <p>Written by <small>Sehinde Raji</small></p>
+                        
                         <p class="is--beige is--lower">@markdown($blog->body)</p>
                     </div><!-- /.heading -->
                 </div><!-- /.top-container -->
