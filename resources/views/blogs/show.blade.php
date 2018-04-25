@@ -39,7 +39,6 @@
                             </div>
                             <p class="date">Created on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                             <p class="date">Updated on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
-                            <p class="date">Written by <small>Sehinde Raji</small></p>
                             <p class="is--beige is--lower">@markdown($blog->body)</p>
                         </div><!-- /.heading -->
                     </div><!-- /.top-container -->
