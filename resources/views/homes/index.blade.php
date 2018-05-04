@@ -283,13 +283,14 @@
     </div><!-- /.portfolio-container -->
 
     <div class="grey-container">
-        <div class="alert-container">
-            <div id="app">
-                <!-- Using the Alert component -->
-                <p class="fourthtext"><message body="Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
-            </div>
 
-        </div><!-- /.alert-container -->
+                <example-component></example-component>
+
+
+
+
+
+
     </div><!-- /.grey-container -->
 
         <div class="contact-container">

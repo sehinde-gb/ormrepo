@@ -1,7 +1,8 @@
 <!-- UI-Button Component definition -->
 <template>
-    <div>
-        <div id="app">
+       
+   
+       
             <article class="orm-message" v-show="isVisible">
                 <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
                 <div class="orm-body">
@@ -10,10 +11,7 @@
                         </h4>
                 </div><!-- /.orm-body -->
             </article><!-- /.orm-message -->
-        </div><!-- /#app -->
-
-    </div>
-
+     
 </template>
 
 <script>
