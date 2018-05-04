@@ -974,6 +974,10 @@ module.exports = function bind(fn, thisArg) {
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
 
@@ -1022,8 +1026,8 @@ __webpack_require__(30);
 
 Vue.component('message', __webpack_require__(38));
 
-var root = new Vue({
-  el: '#root'
+var app = new Vue({
+  el: '#app'
 });
 
 
@@ -29934,46 +29938,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "root" } }, [
-    _c(
-      "article",
-      {
-        directives: [
-          {
-            name: "show",
-            rawName: "v-show",
-            value: _vm.isVisible,
-            expression: "isVisible"
-          }
-        ],
-        staticClass: "orm-message"
-      },
-      [
-        _c(
-          "button",
-          {
-            staticClass: "alert-button",
-            attrs: { type: "button" },
-            on: { click: _vm.hideModal }
-          },
-          [
-            _c("i", {
-              staticClass: "fa fa-times-circle-o",
-              attrs: { "aria-hidden": "true" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "orm-body" }, [
-          _c("h4", { staticClass: "alert-notify" }, [
-            _vm._v(_vm._s(_vm.body) + "\n                "),
-            _c("a", { attrs: { href: "https://ormrepo.co.uk/cookie" } }, [
-              _vm._v("Click here to find out more")
+  return _c("div", [
+    _c("div", { attrs: { id: "app" } }, [
+      _c(
+        "article",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.isVisible,
+              expression: "isVisible"
+            }
+          ],
+          staticClass: "orm-message"
+        },
+        [
+          _c(
+            "button",
+            {
+              staticClass: "alert-button",
+              attrs: { type: "button" },
+              on: { click: _vm.hideModal }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-times-circle-o",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "orm-body" }, [
+            _c("h4", { staticClass: "alert-notify" }, [
+              _vm._v(_vm._s(_vm.body) + "\n                    "),
+              _c("a", { attrs: { href: "https://ormrepo.co.uk/cookie" } }, [
+                _vm._v("Click here to find out more")
+              ])
             ])
           ])
-        ])
-      ]
-    )
+        ]
+      )
+    ])
   ])
 }
 var staticRenderFns = []

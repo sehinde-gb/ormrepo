@@ -19,8 +19,8 @@ Vue.component('message', require('./components/Message.vue'));
 
 
 
-const root = new Vue({
-    el: '#root'
+const app = new Vue({
+    el: '#app'
 });
 
 import Turbolinks from 'turbolinks';

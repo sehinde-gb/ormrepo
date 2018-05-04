@@ -74,7 +74,7 @@
 </script>
 
 <script type="application/javascript" src="/js/bootstrap.js"></script>
-<script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
+
 <script type="application/javascript" src="/dist/js/sweetalert.min.js"></script>
 @include('flash')
 {{-- Show password--}}
@@ -176,7 +176,7 @@
     ga('send', 'pageview');
 
 </script>
-
+<script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
 
 </body>
 

@@ -1,15 +1,19 @@
 <!-- UI-Button Component definition -->
 <template>
-    <div id="root">
-        <article class="orm-message" v-show="isVisible">
-            <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
-            <div class="orm-body">
-                <h4 class="alert-notify">{{ body }}
-                    <a href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
-                    </h4>
-            </div><!-- /.orm-body -->
-        </article><!-- /.orm-message -->
-    </div><!-- /#root -->
+    <div>
+        <div id="app">
+            <article class="orm-message" v-show="isVisible">
+                <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                <div class="orm-body">
+                    <h4 class="alert-notify">{{ body }}
+                        <a href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
+                        </h4>
+                </div><!-- /.orm-body -->
+            </article><!-- /.orm-message -->
+        </div><!-- /#app -->
+
+    </div>
+
 </template>
 
 <script>
