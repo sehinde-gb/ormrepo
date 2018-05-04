@@ -15,13 +15,16 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('Message', require('./components/Message.vue'));
+Vue.component('message', require('./components/Message.vue'));
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+import message from './components/Message.vue'
 
-const app = new Vue({
-    el: '#app'
+const root = new Vue({
+    el: '#root',
+    components: { message }
 });
+
 
 
 

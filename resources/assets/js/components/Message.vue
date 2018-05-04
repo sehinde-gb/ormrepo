@@ -1,6 +1,8 @@
 <!-- UI-Button Component definition -->
 <template>
-       
+       <div>
+           
+      
    
        
             <article class="orm-message" v-show="isVisible">
@@ -11,12 +13,12 @@
                         </h4>
                 </div><!-- /.orm-body -->
             </article><!-- /.orm-message -->
-     
+       </div>
 </template>
 
 <script>
     export default {
-
+       
         props: ['body'],
 
         data() {

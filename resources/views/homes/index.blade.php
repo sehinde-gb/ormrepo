@@ -283,17 +283,17 @@
     </div><!-- /.portfolio-container -->
 
     <div class="grey-container">
+        <div class="alert-container">
+            <div id="root">
+                <!-- Using the Alert component -->
+                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
 
-                <example-component></example-component>
-
-
-
-
-
-
+            </div><!-- /#app -->
+        </div><!-- /.alert-container -->
     </div><!-- /.grey-container -->
 
-        <div class="contact-container">
+
+    <div class="contact-container">
             <h7 id="contact"></h7>
                 <div class="about-heading is--padded-b50">
                     <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
