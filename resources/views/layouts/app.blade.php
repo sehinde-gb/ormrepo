@@ -20,6 +20,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
+
 </head>
 <body>
 
@@ -53,7 +54,7 @@
     </script>
 
     <script type="application/javascript" src="/js/bootstrap.js"></script>
-    <script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
+
     <script type="application/javascript" src="/dist/js/sweetalert.min.js"></script>
     @include('flash')
     {{-- Show password--}}
@@ -160,6 +161,7 @@
 
     </script>
 
+<script type="application/javascript" src="{{ mix('/js/app.js') }}" data-turbolinks-suppress-warning></script>
 
 
 

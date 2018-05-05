@@ -46,6 +46,8 @@
         drift.load('nkuwzpnu23tp');
     </script>
     <!-- End of Async Drift Code -->
+
+
 </head>
 <body>
 
@@ -154,6 +156,7 @@
     });
 </script>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script type="text/javascript">
     $('select').select2();
@@ -177,9 +180,9 @@
 
 </script>
 
+<script type="application/javascript" src="{{ mix('/js/app.js') }}" data-turbolinks-suppress-warning></script>
 
 
-<script type="application/javascript" src="{{ mix('/js/app.js') }}"></script>
 
 </body>
 

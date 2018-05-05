@@ -2,9 +2,6 @@
 <template>
        <div>
            
-      
-   
-       
             <article class="orm-message" v-show="isVisible">
                 <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
                 <div class="orm-body">

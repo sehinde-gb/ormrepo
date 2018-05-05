@@ -12,7 +12,7 @@
             <div class="privacy-container">
                 <div class="heading">
                     <div class="featured-image">
-                        <img class="standard" src="images/conditions/padlock-300.png" alt="padlock picture">
+                        <img class="static" src="images/conditions/padlock-300.png" alt="padlock picture">
                     </div><!-- /.featured-image -->
 
                     <h1 class="blog--title is--padded-t40 is--black-grey">Privacy Policy</h1>

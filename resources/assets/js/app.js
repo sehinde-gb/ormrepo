@@ -9,6 +9,12 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import Turbolinks from 'turbolinks';
+
+Turbolinks.start();
+
+//import TurbolinksAdapter from 'vue-turbolinks';
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,21 +22,27 @@ window.Vue = require('vue');
  */
 
 Vue.component('message', require('./components/Message.vue'));
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
 
 import message from './components/Message.vue'
 
-const root = new Vue({
-    el: '#root',
-    components: { message }
+
+document.addEventListener('turbolinks:load', () => {
+
+    const root = new Vue({
+        el: '#root',
+
+        components: { message }
+
+    });
+
+
 });
 
 
 
 
-//import Turbolinks from 'turbolinks';
 
-//Turbolinks.start()
 
 
 
