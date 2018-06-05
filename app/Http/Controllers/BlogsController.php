@@ -11,6 +11,8 @@ use Newsletter;
 
 class BlogsController extends Controller
 {
+
+    
     /**
      * Display a listing of the resource.
      *
