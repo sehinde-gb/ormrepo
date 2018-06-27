@@ -475,7 +475,7 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-forty-four-->
                             @elseif($blog->id == 41)
-                                <div class="column is-one-quarter is-grey is-flex is-forty-five">
+                                <div class="column is-one-quarter is-dark-grey is-flex is-forty-five">
                                     <div class="arrow">
                                         <div class="indexed-image">
                                             <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
@@ -483,9 +483,9 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-forty-four-->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-four-->
                             @elseif($blog->id == 42)
-                                <div class="column is-one-quarter is-dark-grey is-flex is-forty-six">
+                                <div class="column is-one-quarter is-grey is-flex is-forty-six">
                                     <div class="arrow">
                                         <div class="indexed-image">
                                             <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="The uploaded featured image"></a>
@@ -493,7 +493,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-six-->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-forty-six-->
                             @elseif($blog->id == 43)
                                 <div class="column is-one-quarter is-light-grey is-flex is-forty-seven">
                                     <div class="arrow">
