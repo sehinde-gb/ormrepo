@@ -15,7 +15,7 @@
                     <img class="static" src="images/conditions/conditions-300.png" alt="padlock picture">
                 </div><!-- /.featured-image -->
 
-                <h1 class="blog--title is--padded-t40 is--black-grey">Terms & Conditions</h1>
+                <h1 class="blog--title is--padded-t40 is--white">Terms & Conditions</h1>
                 <h2 class="blog--excerpt">1. Definition</h2>
                 <p class="is--lower">
                     The following Terms and Conditions document is a legal agreement between Ormrepo, hereafter “the Developer”, and “the Client” for the purposes of website design or development. These Terms and Conditions set forth the provisions under which the Client may use the services supplied.

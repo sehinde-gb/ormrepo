@@ -15,7 +15,7 @@
                     <img class="static" src="images/conditions/cake-300.png" alt="cookie picture">
                 </div><!-- /.featured-image -->
 
-                <h1 class="blog--title is--padded-t40 is--black-grey">Cookie Policy</h1>
+                <h1 class="blog--title is--padded-t40 is--white">Cookie Policy</h1>
                 <h2 class="blog--excerpt">Use of Cookies</h2>
                 <p class="is--lower">
                     This website uses cookies to better the users experience while visiting the website. Where applicable this website uses a cookie control system allowing the user on their first visit to the website to allow or disallow the use of cookies on their computer / device.

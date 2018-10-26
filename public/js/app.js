@@ -12968,7 +12968,7 @@ window.Echo.private('user.${userId}')
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)();
-exports.push([module.i, "\n.orm-message {\n        background-color: #f3f3f3;\n        color: #F8F8F8;\n        min-height: 80px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 200px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n        background-color: #f3f3f3;\n        color: #F8F8F8;\n        min-height: 80px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 200px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n        background-color: #f3f3f3;\n        color: #F8F8F8;\n        min-height: 120px;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 20px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background-color: #f3f3f3;\n        color: #F8F8F8;\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 20px;\n        padding-top: 50px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background: #f0955f;\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
 
 /***/ }),
 /* 34 */
@@ -40863,7 +40863,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.hideModal
     }
   }, [_c('i', {
-    staticClass: "fa fa-times-circle-o",
+    staticClass: "fa fa-times fa-4x",
     attrs: {
       "aria-hidden": "true"
     }

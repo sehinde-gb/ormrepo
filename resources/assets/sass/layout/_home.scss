@@ -9,7 +9,7 @@ $montserrat-bold: 'Montserrat Bold', sans-serif;
   width: 100vw;
   min-height: 750px;
   overflow: hidden;
-  animation: pulse 20s infinite;
+  animation: pulse 100s infinite;
   padding-top: 200px;
   display: flex;
   flex-direction: column;
@@ -19,15 +19,11 @@ $montserrat-bold: 'Montserrat Bold', sans-serif;
 
 @keyframes pulse {
   0% {
-    background-color:  #003434;
-  }
-
-  50%  {
-    background-color: #F0955F;
+    background-color:  #f0955f;
   }
 
   100% {
-    background-color: #CA3422;
+    background-color: #8f5c3a;
   }
 }
 
@@ -69,6 +65,23 @@ span.underlined {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.our-container {
+  min-height: 750px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #8f5c3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.our-heading {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
 
 .about-container {
   min-height: 750px;
@@ -143,12 +156,13 @@ span.underlined {
 .title-container {
   width: 240px;
   padding-top: 50px;
+  padding-left: 20px;
 }
 
 .text-container {
   width: 260px;
   padding-top: 10px;
-  padding-left: 3px;
+  padding-left: 33px;
   padding-right: 10px;
 }
 
@@ -163,7 +177,7 @@ span {
 }
 
 .portfolio-container {
-  height: 2500px;
+  height: 1800px;
   background-color: #f3f3f3;
   width: 100%;
   display: flex;
@@ -311,7 +325,7 @@ figcaption a:hover {
 .contact-container {
   height: 500px;
   width: 100%;
-  animation: pulse 20s infinite;
+  animation: pulse 100s infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,15 +334,11 @@ figcaption a:hover {
 
 @keyframes pulse {
   0% {
-    background-color:  #003434;
-  }
-
-  50%  {
-    background-color: #F0955F;
+    background-color:  #f0955f;
   }
 
   100% {
-    background-color: #CA3422;
+    background-color: #8f5c3a;
   }
 }
 
@@ -391,7 +401,7 @@ textarea.form-control {
   .hero-container {
     width: 100vw;
     min-height: 750px;
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     overflow: hidden;
     padding-top: 200px;
     display: flex;
@@ -402,15 +412,11 @@ textarea.form-control {
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -454,6 +460,22 @@ textarea.form-control {
     padding-bottom: 50px;
   }
 
+
+  .our-container {
+    min-height: 750px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #8f5c3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .our-heading {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
 
   .about-container {
     width: 100%;
@@ -528,12 +550,13 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
+    padding-left: 20px;
   }
 
   .text-container {
     width: 260px;
     padding-top: 10px;
-    padding-left: 3px;
+    padding-left: 33px;
     padding-right: 10px;
   }
 
@@ -548,7 +571,7 @@ textarea.form-control {
   }
 
   .portfolio-container {
-    height: 2500px;
+    height: 1800px;
     background-color: #f3f3f3;
     width: 100%;
     display: flex;
@@ -696,7 +719,7 @@ textarea.form-control {
   .contact-container {
     height: 500px;
     width: 100%;
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -706,15 +729,11 @@ textarea.form-control {
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -780,7 +799,7 @@ textarea.form-control {
   .hero-container {
     width: 100vw;
     min-height: 750px;
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     overflow: hidden;
     padding-top: 200px;
     display: flex;
@@ -791,15 +810,11 @@ textarea.form-control {
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -841,6 +856,21 @@ textarea.form-control {
 
   .quote-container {
     padding-top: 50px;
+  }
+
+  .our-container {
+    min-height: 1000px;
+    background-color: #8f5c3a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .our-heading {
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 
 
@@ -913,12 +943,13 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
+    padding-left: 20px;
   }
 
   .text-container {
     width: 260px;
     padding-top: 10px;
-    padding-left: 3px;
+    padding-left: 33px;
     padding-right: 10px;
   }
 
@@ -1081,7 +1112,7 @@ textarea.form-control {
   .contact-container {
     height: 500px;
     width: 100%;
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1090,15 +1121,11 @@ textarea.form-control {
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -1181,7 +1208,7 @@ textarea.form-control {
   .hero-container {
     width: 100vw;
     height: 80vh;
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1191,15 +1218,11 @@ textarea.form-control {
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -1243,6 +1266,22 @@ textarea.form-control {
   }
 
 
+  .our-container {
+    min-height: 1500px;
+    background-color: #8f5c3a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .our-heading {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+
   .about-container {
     min-height: 1800px;
     background-color: #FFFFFF;
@@ -1257,6 +1296,7 @@ textarea.form-control {
     padding-top: 70px;
     padding-bottom: 50px;
   }
+
 
   .memes-container {
     padding: 30px;
@@ -1308,12 +1348,13 @@ textarea.form-control {
   .title-container {
     width: 240px;
     padding-top: 50px;
+    padding-left: 20px;
   }
 
   .text-container {
     width: 260px;
     padding-top: 10px;
-    padding-left: 3px;
+    padding-left: 33px;
     padding-right: 10px;
   }
 

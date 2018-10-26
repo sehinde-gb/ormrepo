@@ -59,7 +59,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 .btn-secondary:visited,
 .btn-secondary:focus
 {
-  animation: pulse 20s infinite;
+  animation: pulse 100s infinite;
   outline: 0;
   border: 1px solid white;
   border-radius: unset;
@@ -80,15 +80,11 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
 @keyframes pulse {
   0% {
-    background-color:  #003434;
-  }
-
-  50%  {
-    background-color: #F0955F;
+    background-color:  #f0955f;
   }
 
   100% {
-    background-color: #CA3422;
+    background-color: #8f5c3a;
   }
 }
 
@@ -309,7 +305,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-secondary:visited,
   .btn-secondary:focus
   {
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -330,15 +326,11 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -560,7 +552,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-secondary:active,
   .btn-secondary:visited,
   .btn-secondary:focus {
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -581,15 +573,11 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 
@@ -803,7 +791,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-secondary:visited,
   .btn-secondary:focus
   {
-    animation: pulse 20s infinite;
+    animation: pulse 100s infinite;
     outline: 0;
     border: 1px solid white;
     border-radius: unset;
@@ -824,15 +812,11 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 
   @keyframes pulse {
     0% {
-      background-color:  #003434;
+      background-color:  #f0955f;
     }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
+  
     100% {
-      background-color: #CA3422;
+      background-color: #8f5c3a;
     }
   }
 

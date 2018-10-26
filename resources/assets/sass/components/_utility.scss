@@ -1,5 +1,5 @@
 $lato: 'Lato Regular','Helvetica Neue', 'Helvetica', 'Arial',sans-serif;
-$primary-color: #f8f8f8;
+$primary-color: #FFFFFF;
 
 /* colour */
 .is--beige {
@@ -8,6 +8,10 @@ $primary-color: #f8f8f8;
 
 .is--black {
   color: black;
+}
+
+.is--pastel {
+  color: #f0955f;
 }
 
 .is--black-grey {
@@ -185,6 +189,10 @@ $primary-color: #f8f8f8;
     color: #595959;
   }
 
+  .is--pastel {
+    color: #f0955f;
+  }
+
   .is--snow {
     color: #FFFAFA;
   }
@@ -360,6 +368,10 @@ $primary-color: #f8f8f8;
     color: #595959;
   }
 
+  .is--pastel {
+    color: #f0955f;
+  }
+
   .is--snow {
     color: #FFFAFA;
   }
@@ -526,6 +538,10 @@ $primary-color: #f8f8f8;
 
   .is--black-grey {
     color: #595959;
+  }
+
+  .is--pastel {
+    color: #f0955f;
   }
 
   .is--snow {

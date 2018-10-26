@@ -13,7 +13,7 @@
         <div class="footer-showcase">
             <div class="footer-connected">
                 <div class="footer-header">
-                    <p class="is--white is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
+                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
                 </div><!-- /.footer-header -->
                         <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
                         <h4 class="lorem--text is--lorem-padding">You consent to receiving quarterly email updates only, so you won't see anything from us in your junk mail.</h4>
@@ -63,20 +63,21 @@
 
             <div class="footer-diversity">
                 <div class="footer-header">
-                    <p class="is--white is--uppercase is--padded-l20 is--uppercase">Committed to diversity</p>
-                    <p class="is--white is--padded-l20">Join us, as we break down the barriers of cultural differences and showcase a sense of harmony between tech and diversity; a journey that we hope, can instil a sense of belonging for the culturally diverse within the tech community.</p>
+                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">We Are A Digital Innovation And Training Company</p>
+                    <p class="is--white is--padded-l20">We build the next generation of applications using blockchain infrastructure and traditional web applications with a focus on transport. </p>
+                    <p class="is--white is--padded-l20">We train the next generation of developers to build distributed applications with a focus on transport.</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
 
             <div class="footer-map">
                 <div class="footer-header">
-                    <p class="is--white is--uppercase is--padded-l20 is--uppercase">Navigate</p>
+                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Navigate</p>
                 </div><!-- /.footer-header -->
 
                 <div class="foot-nav">
                     <ul>
-                        <li class="even-spacing"><a href="#about" class="foot-links">About</a></li>
-                        <li class="even-spacing"><a href="/blogs" class="foot-links">Blogs</a></li>
+                        <li class="even-spacing"><a href="/" class="foot-links">About</a></li>
+                        <li class="even-spacing"><a href="/blogs" class="foot-links">Blog</a></li>
                         <li class="even-spacing"><a href="/cookie" class="foot-links">Cookie Policy</a></li>
                         <li class="even-spacing"><a href="/diversecodertv" class="foot-links">DiverseCoderTV</a></li>
                         <li class="even-spacing"><a href="#portfolio" class="foot-links">Portfolio</a></li>
@@ -94,7 +95,7 @@
             <p class="is--white">Ormrepo <span><i class="fa fa-circle" aria-hidden="true"></i>
             </span>Our Opening Hours: 9am - 5pm <span><i class="fa fa-circle" aria-hidden="true"></i>
             </span>Email: <a href="mailto:info@ormrepo.co.uk" class="find-link">info@ormrepo.co.uk</a>   <span><i class="fa fa-circle" aria-hidden="true"></i>
-            </span>Telephone: 07379 829189</p>
+            </span>Telephone: 07512 305773</p>
             <p class="riz small">Our work is licensed under a Creative Commons Attribution 4.0 International License.</p>
             <p class="riz small">Our Artwork was created by Riz Designs</p>
             <p class="riz  small"> &copy; <?php echo date("Y"); ?>.  All Rights Reserved. Ormrepo.co.uk.</p>

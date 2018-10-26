@@ -12,7 +12,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="/blogs">Blog</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Register</a></li>
@@ -33,7 +33,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/admin/blogs">Blogs</a></li>
+                    <li><a href="/admin/blogs">Blog</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="{{ url('/logout') }}"
 

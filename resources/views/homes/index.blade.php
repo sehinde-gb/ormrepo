@@ -13,7 +13,7 @@
                 </div><!-- /.logo-header -->
 
                 <div class="slogan-container">
-                    <h14 class="is--beige is--capitals">Integrity of purpose</h14>
+                    <h14 class="is--beige is--capitals">Training | Digital Innovation | Digital Transport</h14>
                 </div><!-- /.slogan-container -->
                 <div class="read-container">
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
@@ -35,7 +35,28 @@
                          alt="We provide full circle, web development services & tailored virtual craftsmanship, to empower you with the right tools and systems that help cater for your customer needs.">
                 </picture>
             </div><!-- /.slogan-image -->
-        </div><!-- /.slogan-container -->
+        </div><!-- /.services-container -->
+
+
+        <div class="our-container">
+            <h7 id="about"></h7>
+                <div class="our-heading">
+                     <h20>Who</h20>   
+                </div><!-- /.our-heading -->
+
+        </div>
+
+        <div class="services-container">
+            <h7 id="services"></h7>
+            <div class="services-image">
+                <picture>
+                    <img srcset="/images/hero/what-we-do-big.jpg 601w,
+                          /images/hero/what-we-do-tall.jpg 600w"
+                         alt="A picture collage containing someone with a thought bubble, a blockchain and a train at Watford Junction Station">
+                </picture>
+            </div><!-- /.slogan-image -->
+        </div><!-- /.services-container -->
+
 
         <div class="about-container">
             <h7 id="about"></h7>
@@ -43,33 +64,36 @@
                     <h12>Ab</h12><h13>out</h13><h12> Us</h12>
                 </div><!-- /.about-heading -->
 
+<div class="alert-container">
+            <div id="root">
+                <!-- Using the Alert component -->
+                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
+
+            </div><!-- /#app -->
+        </div><!-- /.alert-container -->
                 <div class="memes-container">
                     <div class="opinion-picture">
-                        <img src="/images/assets/task.png" class="reduce" alt="Task accomplished picture">
+                        <img src="/images/assets/chain.png" class="reduce" alt="A picture of a chain">
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
-                        <h16><span style="color:#CA3422">"</span> We take pride in our candid<span style="color:#CA3422;"> replies "</span></h16>
+                        <h16><span style="color:#f0955f">"</span> We build the next generation of blockchain & traditional<span style="color:#f0955f"> apps "</span></h16>
                     </div><!-- /.opinion -->
 
-                    <div class="opinion">
-                        <h16><span style="color:#CA3422">"</span> We have a no nonsense approach to getting things <span style="color:#CA3422;"> done "</span></h16>
-                    </div><!-- /.opinion -->
+                   
                 </div><!-- /.memes-container -->
 
                 <div class="memes-container">
                     <div class="opinion-picture">
-                        <img src="/images/assets/diversity.png" class="reduce" alt="Diversity is in our DNA">
+                        <img src="/images/assets/training.png" class="reduce" alt="A picture of students in a classroom">
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
 
-                        <h16><span style="color:#CA3422">"</span> We take diversity very seriously, that’s why it is hardwired in to our <span style="color:#CA3422;"> DNA "</span></h16>
+                        <h16><span style="color:#f0955f">"</span> We train people to learn web technology and the  <span style="color:#f0955f;"> blockchain "</span></h16>
                     </div><!-- /.opinion -->
 
-                    <div class="opinion">
-                        <h16><span style="color:#CA3422;">"</span> We offer one on one compassionate and helpful advice that is <span style="color:#CA3422;"> dependable "</span></h16>
-                    </div><!-- /.opinion -->
+                    
                 </div><!-- /.memes-container -->
 
                     <div class="who-container">
@@ -113,7 +137,7 @@
                                     </div><!-- /.icon-container -->
 
                                     <div class="title-container">
-                                        <h14>Higher Search Results</h14>
+                                        <h14>Search Results</h14>
                                     </div><!-- /.title-container -->
                                     <div class="text-container">
                                         <h18 class="aligned">You don’t have to pay big money to be visible on the biggest search engines. It’s called Search Engine Optimisation. It’s legit and we’ll be happy to tell you more, just ask.</h18>
@@ -123,11 +147,11 @@
 
                     <div class="memes-container">
                         <div class="opinion-picture">
-                            <img src="/images/assets/understanding.png"
-                                 alt="Our understanding icon">
+                            <img src="/images/assets/train.png"
+                                 alt="A picture of an underground train">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#CA3422">"</span> Our advice is broken down in to easily digestible chunks to improve <span style="color:#CA3422;">understanding "</span></h16>
+                            <h16><span style="color:#f0955f">"</span> Our applications have a focus on <span style="color:#f0955f;">transport "</span></h16>
                         </div><!-- /.opinion -->
 
 
@@ -135,15 +159,13 @@
 
                     <div class="memes-container">
                         <div class="opinion-picture">
-                            <img src="/images/assets/accessibility.png"
-                                 alt="Our accessibility icon">
+                            <img src="/images/assets/plane.png"
+                                 alt="A picture of a passenger plane">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#CA3422;">"</span> Our websites are tailored to be inclusive and accessible from <span style="color:#CA3422;">inception "</span></h16>
+                            <h16><span style="color:#f0955f;">"</span> Our courses have a transport <span style="color:#f0955f;">focus "</span></h16>
                         </div><!-- /.opinion -->
-                        <div class="opinion">
-                            <h16><span style="color:#CA3422;">"</span> We pride ourselves on offering localised customer  <span style="color:#CA3422;">support "</span></h16>
-                        </div><!-- /.opinion -->
+                        
                     </div><!-- /.memes-container -->
 
                     <div class="quote-container">
@@ -283,13 +305,7 @@
     </div><!-- /.portfolio-container -->
 
     <div class="grey-container">
-        <div class="alert-container">
-            <div id="root">
-                <!-- Using the Alert component -->
-                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
-
-            </div><!-- /#app -->
-        </div><!-- /.alert-container -->
+        
     </div><!-- /.grey-container -->
 
 
@@ -302,7 +318,7 @@
             <div class="contact-text">
                 <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
                 <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
-                <h5 class="is--beige text-transform">Telephone: 07379 829189</h5>
+                <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
             </div><!-- /.text-container -->
 
             <div class="jump-to-top">

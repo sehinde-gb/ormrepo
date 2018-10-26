@@ -3,7 +3,7 @@
        <div>
            
             <article class="orm-message" v-show="isVisible">
-                <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times fa-4x" aria-hidden="true"></i></button>
                 <div class="orm-body">
                     <h4 class="alert-notify">{{ body }}
                         <a href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
@@ -44,30 +44,35 @@
     
     
     .orm-message {
-        background-color: #f3f3f3;
-        color: #F8F8F8;
-        min-height: 80px;
-        border-radius: 2px;
-        width: 100%;
+      width: 100%; 
+      height: 200px; 
+      background: #f0955f;
+      position: relative;  
+      border-radius: 10px;  
     }
+
+    
     
     .orm-body {
         padding-left: 200px;
+        padding-top: 50px;
     }
     
 @media screen and (min-width: 981px) and (max-width: 1381px) {
     
     
+     
     .orm-message {
-        background-color: #f3f3f3;
-        color: #F8F8F8;
-        min-height: 80px;
-        border-radius: 2px;
-        width: 100%;
+      width: 100%; 
+      height: 200px; 
+      background: #f0955f;
+      position: relative;  
+      border-radius: 10px;  
     }
-    
-    .orm-body {
+
+     .orm-body {
         padding-left: 200px;
+        padding-top: 50px;
     }
     
 }
@@ -75,15 +80,16 @@
 @media screen and (min-width: 481px) and (max-width: 980px) {
         
     .orm-message {
-        background-color: #f3f3f3;
-        color: #F8F8F8;
-        min-height: 120px;
-        border-radius: 2px;
-        width: 100%;
+      width: 100%; 
+      height: 200px; 
+      background: #f0955f;
+      position: relative;  
+      border-radius: 10px; 
     }
     
     .orm-body {
         padding-left: 20px;
+        padding-top: 50px;
     }
     
     
@@ -93,8 +99,7 @@
 @media all and (min-width: 100px) and (max-width: 480px) {
         
     .orm-message {
-        background-color: #f3f3f3;
-        color: #F8F8F8;
+        background: #f0955f;
         height: 150px;
         padding-top: 10px;
         padding-left: 10px;
