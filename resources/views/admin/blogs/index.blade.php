@@ -532,6 +532,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
+
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-nine-->   
                                 @elseif($blog->id == 46)
                                 <div class="column is-one-quarter is-light-grey is-flex is-fifty">
@@ -543,6 +544,8 @@
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-->               
+
+                                
 
                             @endif
 

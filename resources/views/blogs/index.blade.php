@@ -524,6 +524,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
+
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-forty-nine--> 
 
                                 @elseif($blog->id == 46)
@@ -536,6 +537,8 @@
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-->                
+
+                               
                             @endif
 
                         @endforeach
