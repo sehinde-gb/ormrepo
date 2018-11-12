@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'Our Cookie Policy')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | This is Our Cookie Policy ')
 
 @section('content')
 

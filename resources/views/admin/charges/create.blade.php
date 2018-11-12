@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Create a new charge')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | Create a New Charge ')
 
 @section('content')
 

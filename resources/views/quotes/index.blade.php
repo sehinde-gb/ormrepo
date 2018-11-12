@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Get a quote')
+@section('meta-title', 'Web Development Services, Transport | Ormrepo | Get A Quote From Us ')
 
 @section('content')
 

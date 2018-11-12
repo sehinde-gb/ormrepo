@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Register')
+@section('meta-title', 'Transport, Web Development Services | Ormrepo | Register ')
 
 @section('content')
 

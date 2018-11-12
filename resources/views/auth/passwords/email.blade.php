@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Password Reset')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | Email Reset')
 
 <!-- Main Content -->
 @section('content')

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="@yield('meta_description', 'The ormblog.')">
+    <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport.')">
     <meta id="token" name="token" value="{{ csrf_token() }}">
-    <title>Ormrepo | @yield('meta-title', 'The Ormblog')</title>
+    <title>Web Development Service Company,Transport,Blockchain Infrastructure | Ormrepo | How to book? | @yield('meta-title', 'Ormrepo - Blockchain Infrastructure & Training Company')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="/css/bulma.css" type="text/css">
