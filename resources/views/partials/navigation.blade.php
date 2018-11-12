@@ -16,6 +16,7 @@
                     <li><a href="/blogs">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
+                    <li><a href="https://ormrepo-training.thinkific.com/">Training</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Register</a></li>
                 </ul>
@@ -39,6 +40,7 @@
                     <li><a href="admin/blogs">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
+                    <li><a href="https://ormrepo-training.thinkific.com/">Training</a></li>
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
