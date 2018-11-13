@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | Email Reset')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | London UK | Email Reset Page')
 
 <!-- Main Content -->
 @section('content')

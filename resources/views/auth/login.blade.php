@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | Sign In ')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | London UK | Sign In ')
 
 @section('content')
     <div class="form-page">

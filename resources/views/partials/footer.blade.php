@@ -83,6 +83,7 @@
                         <li class="even-spacing"><a href="#portfolio" class="foot-links">Portfolio</a></li>
                         <li class="even-spacing"><a href="/privacy" class="foot-links">Privacy Policy</a></li>
                         <li class="even-spacing"><a href="/terms" class="foot-links">Terms & Conditions</a></li>
+                        <li class="even-spacing"><a href="https://ormrepo-training.thinkific.com/" class="foot-links">Training</a></li>
 
                     </ul>
                 </div><!-- /.foot-nav -->

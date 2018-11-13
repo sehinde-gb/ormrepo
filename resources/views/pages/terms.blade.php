@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | This is Our Terms and Conditions ')
+@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | London UK |  This is Our Terms and Conditions ')
 
 @section('content')
 

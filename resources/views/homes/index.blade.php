@@ -1,6 +1,6 @@
 @extends ('layouts.master')
 
-@section('meta-title', 'Blockchain Infrastructure, Web Development Services | HomePage | Ormrepo ')
+@section('meta-title', 'Blockchain Infrastructure, Web Development Services | HomePage | London UK | Ormrepo ')
 
 @section('content')
 
@@ -32,7 +32,7 @@
                 <picture>
                     <img srcset="/images/hero/desktop-big.jpg 601w,
                           /images/hero/desktop-tall.jpg 600w"
-                         alt="We provide full circle, web development services & tailored virtual craftsmanship, to empower you with the right tools and systems that help cater for your customer needs.">
+                         alt="We build the next generation of applications using blockchain infrastructure and traditional web applications with a focus on transport">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
