@@ -7,6 +7,7 @@
     <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport.')">
     <meta name="keywords" content="Web Development Service Company,Transport,Blockchain Infrastructure,Web Development For Small Business,Web Design and Development Services,Web Service Development">
     <meta id="token" name="token" value="{{ csrf_token() }}">
+    <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
     <title>Blockchain Infrastructure | Web Development Services | @yield('meta-title', 'Blockchain Infrastructure | Web Development Services | London UK | Ormrepo')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
