@@ -1530,18 +1530,14 @@ textarea.form-control {
   }
 
   @keyframes pulse {
-    0% {
-      background-color:  #003434;
-    }
-
-    50%  {
-      background-color: #F0955F;
-    }
-
-    100% {
-      background-color: #CA3422;
-    }
+  0% {
+    background-color:  #f0955f;
   }
+
+  100% {
+    background-color: #8f5c3a;
+  }
+}
 
   .message-container {
     height: 600px;
