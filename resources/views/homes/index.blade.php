@@ -54,7 +54,7 @@
                 <picture>
                     <img srcset="/images/hero/what-we-do-big.jpg 601w,
                           /images/hero/what-we-do-tall.jpg 600w"
-                         alt="A picture collage containing someone with a thought bubble, a blockchain and a train at Watford Junction Station">
+                         alt="Transport A picture collage containing someone with a thought bubble, a blockchain and a train at Watford Junction Station">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -75,11 +75,11 @@
         </div><!-- /.alert-container -->
                 <div class="memes-container">
                     <div class="opinion-picture">
-                        <img src="/images/assets/chain.png" class="reduce" alt="A picture of a chain">
+                        <img src="/images/assets/track.png" class="reduce" alt="Transport A picture of a bent track">
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
-                        <h16><span style="color:#f0955f">"</span> We build the next generation of blockchain & traditional<span style="color:#f0955f"> apps "</span></h16>
+                        <h16>"My model Hornby 125 train set didn't stay on the track because it had power supply issues!"</span></h16>
                     </div><!-- /.opinion -->
 
                    
@@ -87,12 +87,19 @@
 
                 <div class="memes-container">
                     <div class="opinion-picture">
-                        <img src="/images/assets/training.png" class="reduce" alt="A picture of students in a classroom">
+                        <img src="/images/assets/siri.png" class="reduce" alt="Blockchain Infrastructure and a picture of an iphone">
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
 
-                        <h16><span style="color:#f0955f">"</span> We train people to learn web technology and the  <span style="color:#f0955f;"> blockchain "</span></h16>
+                        <h16> "Question: Hey Siri who is your girlfriend ? "</h16>
+                    
+                    </div><!-- /.opinion -->
+
+                    <div class="opinion">
+
+                        <h16> "Answer: I will leave the relations to the databases"</h16>
+                    
                     </div><!-- /.opinion -->
 
                     
@@ -103,7 +110,7 @@
                        <div class="monitor-container">
                           <div class="icon-container">
                               <img src="/images/assets/tailor.png"
-                                   class="reduce" alt="The tailor's pin">
+                                   class="reduce" alt="Web Development Services and the tailor's pin">
                           </div><!-- /.icon-container -->
 
                            <div class="title-container">
@@ -118,15 +125,15 @@
                        </div><!-- /.monitor-container -->
                             <div class="gear-container">
                                 <div class="icon-container">
-                                    <img src="/images/assets/steering.png"
-                                         alt="The steering wheel">
+                                    <img src="/images/assets/blockchain.png"
+                                         alt="Blockchain Infrastructure and a picture of the blockchain">
                                 </div><!-- /.icon-container -->
 
                                 <div class="title-container">
-                                    <h14> Autopilot</h14>
+                                    <h14> New Tech</h14>
                                 </div><!-- /.title-container -->
                                 <div class="text-container">
-                                    <h18 class="aligned">If you don’t feel like liaising with many heads to culminate the project, we do provide a full 360 project management service, taking your project from stages of conception through to delivery, setting milestones along the way.
+                                    <h18 class="aligned">We build the next generation of applications using blockchain infrastructure so that your apps have enhanced security, improved traceability & greater transparency resulting in reduced costs to you and your business.
                                     </h18>
                                 </div><!-- /.text-container -->
 
@@ -134,27 +141,34 @@
 
                                 <div class="free-container">
                                     <div class="icon-container">
-                                        <img src="/images/assets/search.png"
-                                             alt="The search icon">
+                                        <img src="/images/assets/online.png"
+                                             alt="Training and a laptop that has a press play button this is an online training course">
                                     </div><!-- /.icon-container -->
 
                                     <div class="title-container">
-                                        <h14>Search Results</h14>
+                                        <h14>Online Courses</h14>
                                     </div><!-- /.title-container -->
                                     <div class="text-container">
-                                        <h18 class="aligned">You don’t have to pay big money to be visible on the biggest search engines. It’s called Search Engine Optimisation. It’s legit and we’ll be happy to tell you more, just ask.</h18>
+                                        <h18 class="aligned">We deliver a suite of online and offline courses where we will cultivate your passion for understanding new technology. Within a holistic and humanistic way so that your light can shine brightly throughout your career.  </h18>
                                     </div><!-- /.text-container -->
                                 </div><!-- /.free-container -->
                     </div><!-- /.who-container -->
 
                     <div class="memes-container">
                         <div class="opinion-picture">
-                            <img src="/images/assets/train.png"
-                                 alt="A picture of an underground train">
+                            <img src="/images/assets/training.png"
+                                 alt="Blockchain Infrastructure and a picture of a classroom that is full of students">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#f0955f">"</span> Our applications have a focus on <span style="color:#f0955f;">transport "</span></h16>
+                            <h16>"TechNation report states that there is a 50% shortage of technical skills"</h16>
+                            
                         </div><!-- /.opinion -->
+
+                        <div class="opinion">
+                            <h16>"Our courses will help tackle this growing inequity"</h16>
+                            
+                        </div><!-- /.opinion -->
+
 
 
                     </div><!-- /.memes-container -->
@@ -162,10 +176,14 @@
                     <div class="memes-container">
                         <div class="opinion-picture">
                             <img src="/images/assets/plane.png"
-                                 alt="A picture of a passenger plane">
+                                 alt="Transport and a picture of a passenger plane">
                         </div><!-- /.opinion-picture -->
                         <div class="opinion">
-                            <h16><span style="color:#f0955f;">"</span> Our courses have a transport <span style="color:#f0955f;">focus "</span></h16>
+                            <h16>"Question: How do you convert a closed centralised baggage system in to an open decentralised baggage system?"</h16>
+                        </div><!-- /.opinion -->
+
+                        <div class="opinion">
+                            <h16>"Answer: A blockchain based baggage system with waypoints can help improve passenger trust in baggage systems."</h16>
                         </div><!-- /.opinion -->
                         
                     </div><!-- /.memes-container -->
@@ -194,7 +212,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
+                        <img alt="Web Development Services and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
                         /images/showcase/goose-medium.png 640w,
                         /images/showcase/goose-medium.png 420w">
 
@@ -209,7 +227,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Gamestation website" srcset="/images/showcase/games-large.png 900w,
+                        <img alt="Web Development Services and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
                         /images/showcase/games-medium.png 640w,
                         /images/showcase/games-medium.png 420w">
 
@@ -224,7 +242,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
+                        <img alt="Web Development Services and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
                         /images/showcase/couture-medium.png 640w,
                         /images/showcase/couture-medium.png 420w">
 
@@ -238,7 +256,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
+                        <img alt="Web Development Services and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
                         /images/showcase/goldsmith-medium.png 640w,
                         /images/showcase/goldsmith-medium.png 420w">
 
@@ -254,7 +272,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
+                        <img alt="Web Development Services and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
                         /images/showcase/zep-medium.png 640w,
                         /images/showcase/zep-medium.png 420w">
 
@@ -268,7 +286,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
+                        <img alt="Web Development Services and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
                         /images/showcase/digital-medium.jpg 640w,
                         /images/showcase/digital-medium.jpg 420w">
 
@@ -282,7 +300,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
+                        <img alt="Web Development Services and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
                         /images/showcase/gillian-medium.png 640w,
                         /images/showcase/gillian-medium.png 420w">
 
