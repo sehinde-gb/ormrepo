@@ -104,6 +104,11 @@ img[alt="minipic"] {
   width: 50%;
 }
 
+img[src*="#thumbnail"] {
+  width:150px;
+  height:100px;
+}
+
 
 
   @media screen and (min-width: 981px) and (max-width: 1381px) {
@@ -212,6 +217,11 @@ img[alt="minipic"] {
     width: 50%;
   }
 
+  img[src*="#thumbnail"] {
+    width:150px;
+    height:100px;
+ }
+
 
 
   }
@@ -319,6 +329,11 @@ img[alt="minipic"] {
     width: 50%;
   }
 
+  img[src*="#thumbnail"] {
+    width:150px;
+    height:100px;
+ }
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -388,5 +403,10 @@ img[alt="minipic"] {
     margin-right: auto;
     width: 50%;
   }
+
+  img[src*="#thumbnail"] {
+    width:150px;
+    height:100px;
+ }
 
 }
