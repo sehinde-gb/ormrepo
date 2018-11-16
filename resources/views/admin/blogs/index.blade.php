@@ -69,15 +69,7 @@
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-four-->
 
                             @elseif($blog->id == 3)
-                                <div class="column is-one-quarter box-is-beige is-flex is-five">
-                                    <div class="name-column">
-                                        <h6 class="box--name">Karan Kanuga</h6>
-                                        <h6 class="box--title">Project</h6>
-                                        <h6 class="box--title">Management & SEO</h6>
-                                        <h6 class="box--title">(Business Collaborator) </h6>
-                                    </div><!-- /.name-column -->
-
-                                </div><!-- /.column is-one-quarter box-is-beige is-flex is-five is-hidden-mobile-->
+                                
                                 <div class="column is-one-quarter is-dark-grey is-flex is-six">
                                     <div class="arrow">
                                         <div class="indexed-image">
@@ -521,7 +513,27 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-eight-->               
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-forty-eight-->     
+                            @elseif($blog->id == 45)
+                                <div class="column is-one-quarter is-grey is-flex is-forty-nine">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-forty-nine--> 
+                                @elseif($blog->id == 46)
+                                <div class="column is-one-quarter is-light-grey is-flex is-fifty">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-->                             
                             @endif
 
                         @endforeach
