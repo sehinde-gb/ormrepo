@@ -336,6 +336,7 @@
 
             <div class="contact-text">
                 <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
+                <h5 class="is--beige text-transform">Monday through to Friday</h5>
                 <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
                 <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
             </div><!-- /.text-container -->
