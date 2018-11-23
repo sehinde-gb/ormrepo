@@ -1,6 +1,6 @@
 @extends ('layouts.master')
 
-@section('meta-title', 'Blockchain Infrastructure, Web Development Services | HomePage | London UK | Ormrepo ')
+@section('meta-title', 'HomePage | London UK | Blockchain Infrastructure, Transport | Ormrepo ')
 
 @section('content')
 
