@@ -8,7 +8,7 @@
     <meta name="keywords" content="Web Development Service Company,Transport,Blockchain Infrastructure,Web Development For Small Business,Web Design and Development Services,Web Service Development">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
-    <title>Transport | Blockchain Infrastructure | @yield('meta-title', 'Transport, Blockchain Infrastructure | London UK | Ormrepo')</title>
+    <title>Blockchain Infrastructure | Transport | @yield('meta-title', 'London UK | Ormrepo | Blockchain Infrastructure, Transport')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
