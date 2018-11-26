@@ -32,13 +32,13 @@
 
                             </div><!-- /.comment-container -->
 
-                            <h1 class="blog--title is--padded-top-40 is--white">{!! $blog->title !!}</h1>
+                            <h1 class="blog--title is--padded-top-40 is--plum">{!! $blog->title !!}</h1>
                             <h2 class="blog--excerpt is--white">{!! $blog->series !!}</h2>
                             <div id="app">
 
                             </div>
-                            <p class="date is--white">Created on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
-                            <p class="date is--white">Updated on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
+                            <p class="date is--plum">Created on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+                            <p class="date is--plum">Updated on:  <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
                             <p class="is--white is--lower">@markdown($blog->body)</p>
                         </div><!-- /.heading -->
                     </div><!-- /.top-container -->

@@ -193,7 +193,7 @@
 
 
                     <div class="jump-to-top">
-                        <a href="#top">Back to top<i class="fa fa-angle-double-up fa-4x" aria-hidden="true"></i></a>
+                        <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
                     </div><!-- /.jump-to-top -->
         </div><!-- /.about-container -->
 
@@ -319,7 +319,7 @@
 
 
         <div class="jump-to-top">
-            <a href="#top">Back to top<i class="fa fa-angle-double-up fa-4x" aria-hidden="true"></i></a>
+            <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
         </div><!-- /.back-to-top -->
     </div><!-- /.portfolio-container -->
 
@@ -342,7 +342,7 @@
             </div><!-- /.text-container -->
 
             <div class="jump-to-top">
-                <a href="#top" style= "color: #f9f1dc;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #f9f1dc ;" aria-hidden="true"></i></a>
+                <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
             </div><!-- /.jump-to-top -->
         </div><!-- /.contact-container -->
 

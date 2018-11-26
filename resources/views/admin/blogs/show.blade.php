@@ -21,10 +21,10 @@
                             <a href="#comments"><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i></a>
 
                         </div><!-- /.comment-container -->
-                        <h1 class="blog--title is--padded-top-40">{!! $blog->title !!}</h1>
+                        <h1 class="blog--title is--padded-top-40 is--plum">{!! $blog->title !!}</h1>
                         <h2 class="blog--excerpt">{!! $blog->series !!}</h2>
-                        <p>Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
-                        <p>Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
+                        <p class="date is--plum">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+                        <p class="date is--plum">Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
 
                         <p class="is--beige is--lower">@markdown($blog->body)</p>
                     </div><!-- /.heading -->

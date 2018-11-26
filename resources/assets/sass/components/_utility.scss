@@ -30,6 +30,10 @@ $primary-color: #FFFFFF;
   color: $primary-color;
 }
 
+.is--plum {
+  color: #4D2C3D;
+}
+
 .is--white-bottom {
   color: $primary-color;
   padding-bottom: 20px;
@@ -199,6 +203,10 @@ $primary-color: #FFFFFF;
 
   .is--dark-grey {
     color: #191919;
+  }
+
+  .is--plum {
+    color: #4D2C3D;
   }
 
   .is--white {
@@ -380,6 +388,10 @@ $primary-color: #FFFFFF;
     color: #191919;
   }
 
+  .is--plum {
+    color: #4D2C3D;
+  }
+
   .is--white {
     color: $primary-color;
   }
@@ -542,6 +554,10 @@ $primary-color: #FFFFFF;
 
   .is--pastel {
     color: #f0955f;
+  }
+
+  .is--plum {
+    color: #4D2C3D;
   }
 
   .is--snow {
