@@ -14,7 +14,7 @@
                     <div class="top-container">
                         <div class="heading">
                             <div id="featured-image">
-                                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="The uploaded featured image">
+                                <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="Blockchain Explained | Public Transport | Inclusion and Diversity">
                             </div><!-- /.featured-image -->
 
                             <div class="tag-container">
