@@ -22,9 +22,9 @@
 
                         </div><!-- /.comment-container -->
                         <h1 class="blog--title is--padded-top-40 is--plum">{!! $blog->title !!}</h1>
-                        <h2 class="blog--excerpt">{!! $blog->series !!}</h2>
-                        <p class="date is--plum">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
-                        <p class="date is--plum">Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
+                        <h2 class="blog--excerpt is--black">{!! $blog->series !!}</h2>
+                        <p class="date is--black">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
+                        <p class="date is--black">Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
 
                         <p class="is--beige is--lower">@markdown($blog->body)</p>
                     </div><!-- /.heading -->
