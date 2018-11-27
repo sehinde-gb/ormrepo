@@ -16,7 +16,7 @@
                     <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
                 </div><!-- /.footer-header -->
                         <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
-                        <h4 class="lorem--text is--lorem-padding">You consent to receiving quarterly email updates only, so you won't see anything from us in your junk mail.</h4>
+                        <h4 class="lorem--text is--lorem-padding">You consent to receiving monthly email updates only, so you won't see anything from us in your junk mail.</h4>
 
 
                     <!-- Begin MailChimp Signup Form -->
