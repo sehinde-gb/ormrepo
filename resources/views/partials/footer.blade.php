@@ -16,7 +16,7 @@
                     <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
                 </div><!-- /.footer-header -->
                         <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
-                        <h4 class="lorem--text">You consent to receiving monthly email updates only, so you won't see anything from us in your junk mail.</h4>
+                        <h4 class="lorem--text is--padded-l20">You consent to receiving monthly email updates only, so you won't see anything from us in your junk mail.</h4>
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
 <style type="text/css">
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
     #mc_embed_signup label {color: white !important; font-size: 0.9em !important;}
-
+    #mc_embed_signup_scroll {padding-left: 10px !important;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
