@@ -291,6 +291,11 @@
                             <h5 class="is--white is--capitals is--padded-b10">Episode 27: Part 3: How to use Stripe on my website ?</h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Yfbl9OgaVQY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div><!-- /.single-container -->
+
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 28: Part 1: Why Use Open Source Software ?</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/70afrnKl7CM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div><!-- /.composite-container -->
 
             <div class="jump-to-top">
