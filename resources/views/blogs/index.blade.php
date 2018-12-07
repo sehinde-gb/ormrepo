@@ -599,7 +599,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-fifty-seven">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Photo by Quintin Gellar from Pexels "></a>
+                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained: Photo by  Pexels "></a>
                                         </div><!-- /.indexed-image -->
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
