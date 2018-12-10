@@ -285,7 +285,7 @@
                         </div><!-- /.single-container -->
                     </div><!-- /.composite-container -->
 
-                    <h7 id="latest"></h7>
+                 
                     <div class="composite-container">
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 27: Part 3: How to use Stripe on my website ?</h5>
@@ -295,6 +295,18 @@
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 28: Part 1: Why Use Open Source Software ?</h5>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/70afrnKl7CM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- /.composite-container -->
+
+                    <h7 id="latest"></h7>
+                    <div class="composite-container">
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 29: Inclusion and Diversity | Where is the BAME in Tech ? </h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XwW47oxZ69Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
+
+                        <div class="single-container">
+                            
                         </div>
                     </div><!-- /.composite-container -->
 
