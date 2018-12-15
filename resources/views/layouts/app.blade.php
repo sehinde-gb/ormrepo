@@ -21,7 +21,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
-  
+    <!-- MailMunch Code -->
+<!-- Paste this code right before the </head> tag on every page of your site. -->
+<script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="568931" async="async"></script>
 </head>
 <body>
 
