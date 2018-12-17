@@ -298,7 +298,7 @@
                         </div>
                     </div><!-- /.composite-container -->
 
-                    <h7 id="latest"></h7>
+                 
                     <div class="composite-container">
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 29: Inclusion and Diversity | Where is the BAME in Tech ? </h5>
@@ -308,6 +308,17 @@
                         <div class="single-container">
                             <h5 class="is--white is--capitals is--padded-b10">Episode 30: Part 2 :Open Source Accelerator Programme | Open Source Software </h5
                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7UwTZELPcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- /.composite-container -->
+                       <h7 id="latest"></h7>
+                    <div class="composite-container">
+                        <div class="single-container">
+                            <h5 class="is--white is--capitals is--padded-b10">Episode 31: What Is A PHP Trait?  | Web Development </h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O0l5SIxnRlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- /.single-container -->
+
+                        <div class="single-container">
+                            
                         </div>
                     </div><!-- /.composite-container -->
 
