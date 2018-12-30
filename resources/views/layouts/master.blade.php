@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport.')">
-    <meta name="keywords" content="Blockchain Explained, Public Transport, Inclusion and Diversity, Web Development Services">
+    <meta name="keywords" content="Learn Blockchain, Public Transport, Inclusion and Diversity, Web Development Services">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
-    <title>Blockchain Explained | Public Transport | Inclusion and Diversity | @yield('meta-title', 'London UK | Blockchain Explained | Public Transport | Inclusion and Diversity')</title>
+    <title>Learn Blockchain | Public Transport | Inclusion and Diversity | @yield('meta-title', ' Learn Blockchain | Public Transport | Inclusion and Diversity')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -22,34 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
-
-
-    <!-- Start of Async Drift Code -->
-    <script>
-        !function() {
-            var t;
-            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-                t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-                t.factory = function(e) {
-                    return function() {
-                        var n;
-                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-                    };
-                }, t.methods.forEach(function(e) {
-                t[e] = t.factory(e);
-            }), t.load = function(t) {
-                var e, n, o, i;
-                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-                    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-                    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-            });
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('nkuwzpnu23tp');
-    </script>
-    <!-- End of Async Drift Code -->
-
-
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/sehinde', text: 'Schedule time with me', color: '#8f5c3a', branding: true});</script>
+<!-- Calendly badge widget end -->
 </head>
 <body>
 

@@ -1,6 +1,6 @@
 @extends ('layouts.master')
 
-@section('meta-title', 'HomePage | London UK | Blockchain Explained | Public Transport | Inclusion and Diversity ')
+@section('meta-title', 'London UK | Learn Blockchain | Public Transport | Inclusion and Diversity ')
 
 @section('content')
 
@@ -30,9 +30,9 @@
             <h7 id="services"></h7>
             <div class="services-image">
                 <picture>
-                    <img srcset="/images/hero/desktop-big.jpg 601w,
-                          /images/hero/desktop-tall.jpg 600w"
-                         alt="We build the next generation of applications using blockchain infrastructure and traditional web applications with a focus on transport">
+                    <img srcset="/images/hero/desktop-big.png 601w,
+                          /images/hero/desktop-tall.png 600w"
+                         alt="Want to learn the latest blockchain technology ? We build these apps with a focus on transport">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -51,9 +51,9 @@
             <h7 id="services"></h7>
             <div class="services-image">
                 <picture>
-                    <img srcset="/images/hero/what-we-do-big.jpg 601w,
-                          /images/hero/what-we-do-tall.jpg 600w"
-                         alt="Transport A picture collage containing someone with a thought bubble, a blockchain and a train at Watford Junction Station">
+                    <img srcset="/images/hero/what-we-do-big.png 601w,
+                          /images/hero/what-we-do-tall.png 600w"
+                         alt="A picture collage containing someone with a thought bubble, a blockchain and a train at Watford Junction Station">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -74,7 +74,7 @@
         </div><!-- /.alert-container -->
                 <div class="memes-container">
                     <div class="opinion-picture">
-                        <img src="/images/assets/track.png" class="reduce" alt="Transport A picture of a bent track">
+                        <img src="/images/assets/track.png" class="reduce" alt="Transport a picture of a bent track">
                     </div><!-- /.opinion-container -->
 
                     <div class="opinion">
@@ -189,6 +189,8 @@
 
                     <div class="quote-container">
                         <a href="/quotes"><button type="submit" class="btn btn-white">Get a Quote</button></a>
+
+                       
                     </div><!-- /.quote-container -->
 
 
@@ -286,8 +288,8 @@
                 <div class="lower-portfolio">
                     <figure>
                         <img alt="Web Development Services and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
-                        /images/showcase/digital-medium.jpg 640w,
-                        /images/showcase/digital-medium.jpg 420w">
+                        /images/showcase/digital-medium.png 640w,
+                        /images/showcase/digital-medium.png 420w">
 
                         <figcaption>
                             <h3>7 Digital Official Music Download Website</h3>

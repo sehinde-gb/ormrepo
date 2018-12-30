@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Tech Transport Blog | London UK | Blockchain Explained | Public Transport | Inclusion and Diversity')
+@section('meta-title', 'Tech & Transport Blog | London UK | Learn Blockchain | Public Transport | Inclusion and Diversity')
 
 @section('content')
 
@@ -12,21 +12,18 @@
             <div class="article-container">
                 <div class="top-container">
                     <div class="heading">
-                        <div id="featured-image">
-                            <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="Blockchain Explained | Public Transport | Inclusion and Diversity">
-                        </div><!-- /.featured-image -->
-
-
-                        <div class="comment-container">
-                            <a href="#comments"><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i></a>
-
-                        </div><!-- /.comment-container -->
                         <h1 class="blog--title is--padded-top-40 is--plum">{!! $blog->title !!}</h1>
                         <h2 class="blog--excerpt is--black">{!! $blog->series !!}</h2>
                         <p class="date is--black">Created on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->created_at)) !!} </p>
                         <p class="date is--black">Updated on: <span><i class="fa fa-calendar" aria-hidden="true"></i></span> {!! date('F d, Y', strtotime($blog->updated_at)) !!} </p>
+                        <div id="featured-image">
+                            <img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="featured" alt="Learn Blockchain | Public Transport | Inclusion and Diversity">
+                        </div><!-- /.featured-image -->
 
                         <p class="is--beige is--lower">@markdown($blog->body)</p>
+                        <div class="comment-container">
+                            <a href="#comments"><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i></a>
+                        </div><!-- /.comment-container -->
                     </div><!-- /.heading -->
                 </div><!-- /.top-container -->
 
