@@ -647,7 +647,16 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-dark-grey is-flex is-sixty-one-->     
 
-                                
+                            @elseif($blog->id == 58)
+                                <div class="column is-one-quarter is-light-grey is-flex is-sixty-two">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Legacy Airline Photo by Pexels "></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-sixty-two-->       
                             @endif
 
                         @endforeach
