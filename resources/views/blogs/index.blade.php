@@ -685,7 +685,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-sixty-five">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: Northern Line Train Courtesy Of TFL @ Edgware Station"></a>
+                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a man with his luggage courtesy of Plexels "></a>
                                         </div><!-- /.indexed-image -->
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
