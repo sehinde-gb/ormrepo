@@ -679,7 +679,18 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-sixty-four-->                                                                                                                                                  
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-sixty-four-->
+                                
+                            @elseif($blog->id == 61)
+                                <div class="column is-one-quarter is-light-grey is-flex is-sixty-five">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: Northern Line Train Courtesy Of TFL @ Edgware Station"></a>
+                                        </div><!-- /.indexed-image -->
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-sixty-five-->        
                             @endif
 
                         @endforeach
