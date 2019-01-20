@@ -690,7 +690,18 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-sixty-five-->        
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-sixty-five-->  
+
+                            @elseif($blog->id == 62)
+                                <div class="column is-one-quarter is-grey is-flex is-sixty-six">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Northern Line Train Courtesy Of TFL @ Edgware Station"></a>
+                                        </div><!-- /.indexed-image -->
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-sixty-six-->           
                             @endif
 
                         @endforeach

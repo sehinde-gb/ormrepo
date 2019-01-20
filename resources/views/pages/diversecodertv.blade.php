@@ -40,12 +40,13 @@
 
                                 <div class="composite-container">
                                         <div class="single-container">
-                                            <h5 class="is--white is--capitals is--padded-b10">What Is My Manifesto ?</h5>
+                                            <h5 class="is--white is--capitals is--padded-b10">What Is My Manifesto ? Part One</h5>
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/rt1lxcYoWxE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div><!-- /.single-container -->
     
                                         <div class="single-container">
-                                           
+                                             <h5 class="is--white is--capitals is--padded-b10">What Is My Manifesto ? Part Two</h5>
+                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/zpQQWgRD98A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div><!-- /.single-container -->
                                 </div><!-- /.composite-container -->    
 
