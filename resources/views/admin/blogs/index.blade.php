@@ -700,7 +700,38 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-sixty-six-->            
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-sixty-six-->
+
+                            @elseif($blog->id == 63)
+                                <div class="column is-one-quarter is-dark-grey is-flex is-sixty-seven">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a jet engine Courtesy of Plexels"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-sixty-seven-->   
+                            @elseif($blog->id == 64)
+                                <div class="column is-one-quarter is-light-grey is-flex is-sixty-eight">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Northern Line Train Photo Courtesy of TFL @ Edgware Station"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-sixty-eight-->   
+                            @elseif($blog->id == 65)
+                                <div class="column is-one-quarter is-grey is-flex is-sixty-nine">
+                                    <div class="arrow">
+                                        <div class="indexed-image">
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: Photo Courtesy of Plexels"></a>
+                                        </div>
+                                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
+                                    </div><!-- /.arrow -->
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-sixty-nine-->                           
                             @endif
 
                         @endforeach
