@@ -352,9 +352,14 @@
 
                                 <div class="composite-container">
                                         <div class="single-container">
-                                            <h5 class="is--white is--capitals is--padded-b10">Inclusion and Diversity | Where is the BAME in Tech ? </h5>
+                                            <h5 class="is--white is--capitals is--padded-b10">How To Start Your Own Business ?  | How To Break Free From The Matrix ? </h5>
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/XwW47oxZ69Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div><!-- /.single-container --> 
+                                        <div class="single-container">
+                                             <h5 class="is--white is--capitals is--padded-b10">Inclusion and Diversity | Where is the BAME in Tech ? </h5>
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lskJJF8BQfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                         </div><!-- /.single-container --> 
+
                                 </div><!-- /.composite-container --> 
                        
                     
