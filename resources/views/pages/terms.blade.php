@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'London UK | Learn Blockchain | Public Transport | Inclusion and Diversity | This is Our Terms and Conditions ')
+@section('meta-title', 'London UK | Learn Blockchain | Transports  | This is Our Terms and Conditions ')
 
 @section('content')
 

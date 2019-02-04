@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'DiverseCoderTV |  Learn Blockchain | Public Transport | Inclusion and Diversity')
+@section('meta-title', 'DiverseCoderTV |  Learn Blockchain | Transports ')
 
 @section('content')
 
