@@ -234,6 +234,14 @@
                                     </div><!-- /.single-container -->
                                 </div><!-- /.composite-container -->
 
+                                <div class="composite-container">
+                                    <div class="single-container">
+                                            <h5 class="is--white is--capitals is--padded-b10">2 Brilliant Ways To Use FLAWED HIRING PRACTICES To Hire A Developer</h5>
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9nrE4f_3E78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
+                                    </div><!-- /.single-container -->
+
+                                    
+                                </div><!-- /.composite-container -->
 
                                
 
