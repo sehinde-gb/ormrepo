@@ -15,7 +15,7 @@
                 <div class="footer-header">
                     <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Keep in touch</p>
                 </div><!-- /.footer-header -->
-                        <h3 class="news--heading">Sign Up To Receive Our Updates</h3>
+                        <h3 class="news--heading">Get Your Free Blockchain Guide For Small Businesses Here:</h3>
                         <h4 class="lorem--text is--padded-l20">You consent to receiving monthly email updates only, so you won't see anything from us in your junk mail.</h4>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -40,7 +40,7 @@
 <div id="mc_embed_signup">
 <form action="https://ormrepo.us19.list-manage.com/subscribe/post?u=3c9ca0fce5f540adb6eefe51a&amp;id=883f50667f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+	
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
     <div class="content__gdpr">
