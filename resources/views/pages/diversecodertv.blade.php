@@ -371,9 +371,7 @@
                                 </div><!-- /.composite-container --> 
                        
                                 <div class="composite-container">
-                                        <div class="single-container">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lskJJF8BQfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
+                                        
                                 <div class="single-container">
                                      <h5 class="is--white is--capitals is--padded-b10">Make Or Change ?  | How To Break Free From The Matrix Part Two?  </h5>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ScLwEal8YmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
