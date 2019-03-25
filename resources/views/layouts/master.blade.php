@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport.')">
-    <meta name="keywords" content="Learn Blockchain & Transports">
+    <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport & logistics.')">
+    <meta name="keywords" content="Learn Blockchain & Logistics">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
-    <title>Learn Blockchain | Transports | @yield('meta-title', ' Learn Blockchain | Transports ')</title>
+    <title>Learn Blockchain | Logistics | @yield('meta-title', ' Learn Blockchain | Logistics ')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -145,6 +145,7 @@
 
 @yield('scripts')
 
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3c9ca0fce5f540adb6eefe51a","lid":"883f50667f","uniqueMethods":true}) })</script>
 
 <script id="dsq-count-scr" src="//www-ormrepo-co-uk.disqus.com/count.js" async></script>
 <script>

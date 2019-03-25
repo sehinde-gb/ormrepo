@@ -1,6 +1,6 @@
 @extends ('layouts.app')
 
-@section('meta-title', 'DiverseCoderTV |  Learn Blockchain | Transports ')
+@section('meta-title', 'DiverseCoderTV |  Learn Blockchain | Logistics ')
 
 @section('content')
 
@@ -236,11 +236,14 @@
 
                                 <div class="composite-container">
                                     <div class="single-container">
-                                            <h5 class="is--white is--capitals is--padded-b10">2 Brilliant Ways To Use FLAWED HIRING PRACTICES To Hire A Developer</h5>
+                                            <h5 class="is--white is--capitals is--padded-b10">2 Brilliant Ways To Use FLAWED HIRING PRACTICES To Hire A Developer Part 1</h5>
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/9nrE4f_3E78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
                                     </div><!-- /.single-container -->
 
-                                    
+                                    <div class="single-container">
+                                            <h5 class="is--white is--capitals is--padded-b10">2 Brilliant Ways To Use FLAWED HIRING PRACTICES To Hire A Developer Part 2</h5>
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KMptGI1tQB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div><!-- /.single-container -->   
                                 </div><!-- /.composite-container -->
 
                                
