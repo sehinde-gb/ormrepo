@@ -14,10 +14,12 @@
                     <li><a href="/">Home</a></li>
                    
                     <li><a href="/blogs">Blogs</a></li>
+
+                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
              
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
 
-                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
+                    
                    
                 </ul>
             </div><!-- /.right-menu -->
@@ -38,10 +40,12 @@
                     <li><a href="/">Home</a></li>
                    
                     <li><a href="/admin/blogs">Blogs</a></li>
+
+                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
                   
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
 
-                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
+                    
                     
                     <li><a href="{{ url('/logout') }}"
 
