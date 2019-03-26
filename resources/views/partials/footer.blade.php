@@ -103,7 +103,7 @@
                 <div class="foot-nav">
                     <ul>
                         <li class="even-spacing"><a href="/" class="foot-links">About</a></li>
-                        <li class="even-spacing"><a href="/blogs" class="foot-links">Blog</a></li>
+                        <li class="even-spacing"><a href="/blogs" class="foot-links">Posts</a></li>
                         <li class="even-spacing"><a href="/cookie" class="foot-links">Cookie Policy</a></li>
                         <li class="even-spacing"><a href="/diversecodertv" class="foot-links">DiverseCoderTV</a></li>
                         <li class="even-spacing"><a href="#portfolio" class="foot-links">Portfolio</a></li>

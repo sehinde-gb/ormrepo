@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="/blogs">Posts</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>            
@@ -36,7 +36,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="admin/blogs">Blogs</a></li>
+                    <li><a href="admin/blogs">Posts</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
