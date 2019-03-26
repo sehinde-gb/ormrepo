@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport & logistics.')">
+    <meta name="description" content="@yield('meta_description', 'Learn and Commission new technology in every day transportation and logistics.')">
     <meta name="keywords" content="Learn Blockchain & Logistics">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
@@ -22,8 +22,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="preload (or prerender)" href="//disqus.com">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/sehinde', text: 'Schedule time with me', color: '#8f5c3a', branding: true});</script>
 <!-- Calendly badge widget end -->

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="@yield('meta_description', 'We build the next generation of applications and human web developers using blockchain infrastructure and traditional web service development with a focus on transport.')">
+    <meta name="description" content="@yield('meta_description', 'Learn and Commission new technology in every day transportation and logistics')">
     <meta name="keywords" content="Learn Blockchain & Logistics">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
@@ -22,7 +22,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/slip.css">
     <link rel="stylesheet" href="/dist/css/slippry.css">
-    
+    <link rel="preload (or prerender)" href="//disqus.com">
 </head>
        <body>
        
