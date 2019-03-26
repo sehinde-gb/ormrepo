@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="@yield('meta_description', 'Learn and Commission new technology in every day transportation and logistics.')">
+    <meta name="description" content="@yield('meta_description', 'Learn and Commission new Technology in every day Transportation and Logistics.')">
     <meta name="keywords" content="Learn Blockchain & Logistics">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
