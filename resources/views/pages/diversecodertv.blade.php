@@ -136,49 +136,52 @@
                         </div><!-- /.composite-container -->
 
                         <div class="composite-container">
-                            <div class="single-container">
-                                <h5 class="is--white is--capitals is--padded-b10">How To Convert Photoshop Images In To Vector Images ? </h5>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xsrpDXqAVs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div><!-- /.single-container -->
+                            
 
                             <div class="single-container">
                                 <h5 class="is--white is--capitals is--padded-b10">Part 1: How to use Stripe On My Website ?</h5>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yBkxZJKF1Bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div><!-- /.single-container -->
-                        </div><!-- /.composite-container -->
-                                
-                                
-                        <div class="composite-container">
+
                             <div class="single-container">
                                 <h5 class="is--white is--capitals is--padded-b10">Part 2: How To Use Stripe On My Website ?</h5>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/2OISFE8Gp80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div><!-- /.single-container -->
+                        </div><!-- /.composite-container -->
+                                
+                                
+                        <div class="composite-container">
+                            
 
                             <div class="single-container">
                                 <h5 class="is--white is--capitals is--padded-b10">How To Use Stripe On My Website ?</h5>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yfbl9OgaVQY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div><!-- /.single-container -->
+
+                            <div class="single-container">       
+                                <h5 class="is--white is--capitals is--padded-b10">What Are PHP Traits? | Web Development </h5>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/O0l5SIxnRlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div><!-- /.single-container -->
                         </div><!-- /.composite-container -->
 
                             
                 
                         <div class="composite-container">
-                            <div class="single-container">       
-                                <h5 class="is--white is--capitals is--padded-b10">What Are PHP Traits? | Web Development </h5>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/O0l5SIxnRlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div><!-- /.single-container -->
+                           
 
                             <div class="single-container"> 
                                 <h5 class="is--white is--capitals is--padded-b10">Part 1: Why Use Open Source Software ? | Open Source Software </h5>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/70afrnKl7CM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
                             </div><!-- /.single-container -->
-                        </div><!-- /.composite-container -->
-                                
-                        <div class="composite-container">
+
                             <div class="single-container">
                                 <h5 class="is--white is--capitals is--padded-b10">Part 2: Open Source Accelerator Programme | Open Source Software </h5>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7UwTZELPcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
                             </div><!-- /.single-container -->
+                        </div><!-- /.composite-container -->
+                                
+                        <div class="composite-container">
+                           
 
                             <div class="single-container">
                                 <h5 class="is--white is--capitals is--padded-b10">What Is Web Development ? | Web Developer How To Become </h5>

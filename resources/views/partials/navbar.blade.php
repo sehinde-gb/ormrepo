@@ -13,11 +13,11 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                    
-                    <li><a href="/blogs">Blog</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
              
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
 
-                    <li><a href="https://ormrepo-training.thinkific.com/">Training</a></li>
+                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
                    
                 </ul>
             </div><!-- /.right-menu -->
@@ -37,11 +37,11 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                    
-                    <li><a href="/admin/blogs">Blog</a></li>
+                    <li><a href="/admin/blogs">Blogs</a></li>
                   
                     <li><a href="/diversecodertv">DiverseCoderTV</a></li>
 
-                    <li><a href="https://ormrepo-training.thinkific.com/">Training</a></li>
+                    <li><a href="https://ormrepo-training.thinkific.com/">Courses</a></li>
                     
                     <li><a href="{{ url('/logout') }}"
 
