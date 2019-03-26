@@ -145,7 +145,7 @@
 
 @yield('scripts')
 
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3c9ca0fce5f540adb6eefe51a","lid":"883f50667f","uniqueMethods":true}) })</script>
+
 
 <script id="dsq-count-scr" src="//www-ormrepo-co-uk.disqus.com/count.js" async></script>
 <script>
