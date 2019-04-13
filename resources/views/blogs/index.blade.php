@@ -21,9 +21,7 @@
                             <div class="logo-header">
                                 <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
                                 
-                                <div class="statement">
-                                    
-                                </div><!-- /.statement -->
+                                
                             </div><!-- /.logo-heading -->
 
                         </div><!-- /.collection -->
