@@ -12,17 +12,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-slider">
+                        <div class="logo-header">
+                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
+                                
+                                
+                            </div><!-- /.logo-heading -->  
+
                         <div class="blog-slogan">
                            <picture>
                                 <img srcset="/images/hero/slogan.png 601w,
                                     /images/hero/slogan-tall.png 600w"
                                     alt="Shore Up Your Supply Chain With The Blockchain">
                             </picture>
-                            <div class="logo-header">
-                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
-                                
-                                
-                            </div><!-- /.logo-heading -->  
+                            
                         </div><!-- /.blog-slogan -->
 
                         
