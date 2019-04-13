@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Learn Blockchain |  Logistics  | Sign In ')
+@section('meta-title', 'Logistics |  Transport  | Sign In ')
 
 @section('content')
     <div class="form-page">

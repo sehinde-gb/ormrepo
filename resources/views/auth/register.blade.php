@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Learn Blockchain | Logistics  | Register ')
+@section('meta-title', 'Logistics | Transport  | Register ')
 
 @section('content')
 

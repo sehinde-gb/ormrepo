@@ -79,4 +79,15 @@ class PagesController extends Controller
     {
         return view('pages.diversecodertv');
     }
+
+
+    /**
+     * Show the page for the Highlights
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+     public function highlights()
+     {
+         return view('pages.highlights');
+     }
 }
