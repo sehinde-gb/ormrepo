@@ -24,11 +24,11 @@
 
                         </div><!-- /.collection -->
                         <div class="blog-slogan">
-
-                                <h5 class="is--beige text-transform">We Help Logistics Firms & Railway Businesses</h5>
-                                <h5 class="is--beige text-transform">By Providing Trustworthy, Fun & Captivating Ways</h5>
-                                <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
-
+                                <div class="row">
+                                    <h5 class="is--beige text-transform">We Help Logistics Firms & Railway Businesses</h5>
+                                    <h5 class="is--beige text-transform">By Providing Trustworthy, Fun & Captivating Ways</h5>
+                                    <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
+                                </div><!-- /.row -->
                             </div><!-- /.blog-slogan -->
                     </div><!-- .intro-slider -->
 
