@@ -89,8 +89,8 @@
 
             <div class="footer-diversity">
                 <div class="footer-header">
-                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">We Specialise In Transport & Logistics Innovations</p>
-                    <p class="is--white is--padded-l20">We build the next generation of applications using new technology with a focus on logistics. </p>
+                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Are you experiencing plummeting online sales ?</p>
+                    <p class="is--white is--padded-l20">Our new technology can help you achieve jaw dropping sales ! </p>
                     <p class="is--white is--padded-l20">We offer courses on this new technology to prepare you for the future</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
