@@ -17,7 +17,7 @@
                     <div class="intro-slider">
                         <div class="collection">
                             <div class="logo-header">
-                                <h8>CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
+                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
                                 
                                 <div class="statement">
                                 <h5 class="is--beige text-transform">Trustworthy, Captivating Ways To Boost Your Supply Chain</h5>
