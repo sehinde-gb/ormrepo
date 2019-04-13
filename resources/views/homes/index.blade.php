@@ -1,6 +1,6 @@
 @extends ('layouts.master')
 
-@section('meta-title', 'London UK | Learn Blockchain | Logistics  ')
+
 
 @section('content')
 
