@@ -17,7 +17,12 @@
                                 <img srcset="/images/hero/slogan.png 601w,
                                     /images/hero/slogan-tall.png 600w"
                                     alt="Shore Up Your Supply Chain With The Blockchain">
-                            </picture>  
+                            </picture>
+                            <div class="logo-header">
+                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
+                                
+                                
+                            </div><!-- /.logo-heading -->  
                         </div><!-- /.blog-slogan -->
 
                         
@@ -28,11 +33,7 @@
 
                             
 
-                            <div class="logo-header">
-                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
-                                
-                                
-                            </div><!-- /.logo-heading -->
+                            
 
                         </div><!-- /.collection -->
 
