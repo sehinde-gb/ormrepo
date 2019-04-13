@@ -13,22 +13,12 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="blog-slogan">
-                           
-                                    <h5 class="is--beige text-transform">Chains Come In Different Shapes & Sizes</h5>    
-                              
-
-                                <div class="row">
-                                    <h5 class="is--beige text-transform">We Help Transport & Logistics Businesses</h5>    
-                                </div><!-- /.row -->
-                                 
-                                <div class="row">
-                                    <h5 class="is--beige text-transform">By Providing Them With Trustworthy, Fun & Captivating Ways</h5>
-                                </div><!-- /.row -->   
-
-                                <div class="row">
-                                    <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
-                                </div><!-- /.row -->       
-                            </div><!-- /.blog-slogan -->
+                           <picture>
+                                <img srcset="/images/hero/slogan.png 601w,
+                                    /images/hero/slogan-tall.png 600w"
+                                    alt="Shore Up Your Supply Chain With The Blockchain">
+                            </picture>  
+                        </div><!-- /.blog-slogan -->
 
                         <div class="collection">
 
