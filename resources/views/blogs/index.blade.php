@@ -21,8 +21,8 @@
 </div><!-- /.collection -->
                         <div class="blog-slogan">
                            <picture>
-                                <img srcset="/images/hero/who.png 601w,
-                                    /images/hero/who-tall.png 600w"
+                                <img srcset="/images/hero/slogan-who.png 601w,
+                                    /images/hero/slogan-who-tall.png 600w"
                                     alt="Shore Up Your Supply Chain With The Blockchain">
                             </picture>
                             
