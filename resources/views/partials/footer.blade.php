@@ -89,9 +89,9 @@
 
             <div class="footer-diversity">
                 <div class="footer-header">
-                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">We Are A Digital Innovation And Training Company</p>
-                    <p class="is--white is--padded-l20">We build the next generation of applications using blockchain infrastructure and traditional web applications with a focus on transport. </p>
-                    <p class="is--white is--padded-l20">We train the next generation of developers to build distributed applications with a focus on transport.</p>
+                    <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">We Specialise In Transport & Logistics Innovations</p>
+                    <p class="is--white is--padded-l20">We build the next generation of applications using new technology with a focus on logistics. </p>
+                    <p class="is--white is--padded-l20">We offer courses on this new technology to prepare you for the future</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
 

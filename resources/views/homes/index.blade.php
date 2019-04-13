@@ -13,7 +13,7 @@
                 </div><!-- /.logo-header -->
 
                 <div class="slogan-container">
-                    <h14 class="is--beige is--capitals">Training | Innovation | Transport & Logistics</h14>
+                    <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
                 </div><!-- /.slogan-container -->
                 <div class="read-container">
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
