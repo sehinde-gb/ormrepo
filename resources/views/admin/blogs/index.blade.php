@@ -17,7 +17,7 @@
                     <div class="intro-slider">
                         <div class="collection">
                             <div class="logo-header">
-                                <h8>Chain</h8><h9><span class="underlined">B</span>LOG</h9>
+                                <h8>CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
                                 <div class="statement">
 
                                 </div><!-- /.statement -->
