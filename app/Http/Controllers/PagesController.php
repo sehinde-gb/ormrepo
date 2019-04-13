@@ -70,15 +70,7 @@ class PagesController extends Controller
         return view('pages.terms');
     }
 
-    /**
-     * Show the page for the youtube videos
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function diversecodertv()
-    {
-        return view('pages.diversecodertv');
-    }
+    
 
 
     /**

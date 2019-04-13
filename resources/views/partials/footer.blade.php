@@ -91,7 +91,7 @@
                 <div class="footer-header">
                     <p class="is--pastel is--uppercase is--padded-l20 is--uppercase">Are you experiencing plummeting online sales ?</p>
                     <p class="is--white is--padded-l20">Our new technology can help you achieve jaw dropping sales ! </p>
-                    <p class="is--white is--padded-l20">We offer courses on this new technology to prepare your supply chain for a sensational revolution</p>
+                    <p class="is--white is--padded-l20">We offer courses on this new technology to prepare your supply chain for a sensational revolution!</p>
                 </div><!-- /.footer-header -->
             </div><!-- /.footer-diversity -->
 

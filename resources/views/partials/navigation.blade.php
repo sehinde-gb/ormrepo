@@ -15,7 +15,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="/blogs">Posts</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>            
+                              
                    
                 </ul>
             </div><!-- /.menu -->
@@ -37,7 +37,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="admin/blogs">Posts</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="/diversecodertv">DiverseCoderTV</a></li>
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
