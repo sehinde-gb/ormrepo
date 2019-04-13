@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="@yield('meta_description', 'Learn and Commission new Technology in every day Transportation and Logistics')">
-    <meta name="keywords" content="Learn Blockchain & Logistics">
+    <meta name="keywords" content="Logistics & Transport">
     <meta id="token" name="token" value="{{ csrf_token() }}">
     <meta name="google-site-verification" content="eC0Ug40OeDQDrQrfbHIoqp7U-mHbHclTjiuAsMvv1t8" />
-    <title>Learn Blockchain | Logistics |@yield('meta-title', 'London UK | Learn Blockchain | Logistics ')</title>
+    <title>Logistics | Transport |@yield('meta-title', 'London UK | Logistics | Transport ')</title>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
