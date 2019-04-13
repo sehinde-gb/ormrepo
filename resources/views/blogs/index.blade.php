@@ -90,7 +90,7 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-->
                             @elseif($blog->id == 47)
-                                <div class="column is-one-quarter is-grey is-flex is-fifty-one">
+                                <div class="column is-one-quarter is-dark-grey is-flex is-fifty-one">
                                     <div class="arrow">
                                         <div class="indexed-image">
                                             <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
@@ -98,10 +98,10 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-one-->
+                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-fifty-one-->
 
                             @elseif($blog->id == 48)
-                                <div class="column is-one-quarter is-dark-grey is-flex is-fifty-two">
+                                <div class="column is-one-quarter is-grey is-flex is-fifty-two">
                                     <div class="arrow">
                                         <div class="indexed-image">
                                             <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport "></a>
@@ -109,10 +109,10 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-dark-grey is-flex is-fifty-one--> 
+                                </div><!-- /.column is-one-quarter is-grey is-flex is-fifty-one--> 
 
                             @elseif($blog->id == 49)
-                                <div class="column is-one-quarter is-grey is-flex is-fifty-three">
+                                <div class="column is-one-quarter is-light-grey is-flex is-fifty-three">
                                     <div class="arrow">
                                         <div class="indexed-image">
                                             <a href="{{ url('blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained "></a>
@@ -120,7 +120,7 @@
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('blogs', $blog->slug) }}">{{ $blog->title }}</a></h6>
                                     </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-grey is-flex is-fifty-three-->
+                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-fifty-three-->
                             @elseif($blog->id == 50)
                                 <div class="column is-one-quarter is-light-grey is-flex is-fifty-four">
                                     <div class="arrow">
