@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('meta-title', 'Transport & Logistics Blog | London UK | Logistics | Transport')
-
 @section('content')
 
 <div class="breadcrumb-container">
