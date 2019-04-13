@@ -12,24 +12,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-slider">
-                    <div class="collection">
-                        <div class="logo-header">
-                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
-                                
-                                
-                            </div><!-- /.logo-heading -->  
-</div><!-- /.collection -->
+                        <div class="collection">
+                            <div class="logo-header">
+                                    <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>                
+                            </div><!-- /.logo-header -->  
+                        </div><!-- /.collection -->
+                        
                         <div class="blog-slogan">
                            <picture>
-                                <img srcset="/images/hero/slogan-who.png 601w,
-                                    /images/hero/slogan-who-tall.png 600w"
+                                <img srcset="/images/hero/who.png 601w,
+                                    /images/hero/who-tall.png 600w"
                                     alt="Shore Up Your Supply Chain With The Blockchain">
                             </picture>
                             
                         </div><!-- /.blog-slogan -->
-
-                        
-                        
                     </div><!-- .intro-slider -->
 
                         
