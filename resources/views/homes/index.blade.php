@@ -30,8 +30,8 @@
             <h7 id="services"></h7>
             <div class="services-image">
                 <picture>
-                    <img srcset="/images/hero/desktop-large.png 601w,
-                          /images/hero/desktop-small.png 600w"
+                    <img srcset="/images/hero/desktop-large-one.png 601w,
+                          /images/hero/desktop-small-one.png 600w"
                          alt="Want to learn the latest blockchain technology ? We build these apps with a focus on transport">
                 </picture>
             </div><!-- /.slogan-image -->
