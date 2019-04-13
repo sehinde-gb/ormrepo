@@ -13,12 +13,16 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="blog-slogan">
+                           
+                                    <h5 class="is--beige text-transform">Chains Come In Different Shapes & Sizes</h5>    
+                              
+
                                 <div class="row">
-                                    <h5 class="is--beige text-transform">We Help Logistics Firms & Railway Businesses</h5>    
+                                    <h5 class="is--beige text-transform">We Help Transport & Logistics Businesses</h5>    
                                 </div><!-- /.row -->
                                  
                                 <div class="row">
-                                    <h5 class="is--beige text-transform">By Providing Trustworthy, Fun & Captivating Ways</h5>
+                                    <h5 class="is--beige text-transform">By Providing Them With Trustworthy, Fun & Captivating Ways</h5>
                                 </div><!-- /.row -->   
 
                                 <div class="row">
