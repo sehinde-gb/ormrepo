@@ -20,6 +20,10 @@
                             </picture>  
                         </div><!-- /.blog-slogan -->
 
+                        
+                        
+                    </div><!-- .intro-slider -->
+
                         <div class="collection">
 
                             
@@ -31,10 +35,6 @@
                             </div><!-- /.logo-heading -->
 
                         </div><!-- /.collection -->
-                        
-                    </div><!-- .intro-slider -->
-
-
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex is-one">
