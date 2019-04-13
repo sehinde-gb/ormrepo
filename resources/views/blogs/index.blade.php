@@ -12,17 +12,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-slider">
-                        <div class="collection">
-
-                            
-
-                            <div class="logo-header">
-                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
-                                
-                                
-                            </div><!-- /.logo-heading -->
-
-                        </div><!-- /.collection -->
                         <div class="blog-slogan">
                                 <div class="row">
                                     <h5 class="is--beige text-transform">We Help Logistics Firms & Railway Businesses</h5>    
@@ -36,6 +25,19 @@
                                     <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
                                 </div><!-- /.row -->       
                             </div><!-- /.blog-slogan -->
+
+                        <div class="collection">
+
+                            
+
+                            <div class="logo-header">
+                                <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
+                                
+                                
+                            </div><!-- /.logo-heading -->
+
+                        </div><!-- /.collection -->
+                        
                     </div><!-- .intro-slider -->
 
 
