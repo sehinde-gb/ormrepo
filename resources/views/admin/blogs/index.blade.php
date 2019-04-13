@@ -16,13 +16,15 @@
                 <div class="col-lg-12">
                     <div class="intro-slider">
                         <div class="collection">
+                                <h5 class="is--beige text-transform">We Help Logistics & Rail Businesses</h5>
+                                <h5 class="is--beige text-transform">By Providing Trustworthy, Fun & Captivating Articles</h5>
+                                <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
+
                             <div class="logo-header">
                                 <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
                                 
                                 <div class="statement">
-                                <h5 class="is--beige text-transform">We Help Logistics & Rail Businesses</h5>
-                                <h5 class="is--beige text-transform">By Providing Trustworthy, Fun & Captivating Articles</h5>
-                                <h5 class="is--beige text-transform">To Save Them Money And Strengthen Their Supply Chains.</h5>
+                                
                                 </div><!-- /.statement -->
                             </div><!-- /.logo-heading -->
 
