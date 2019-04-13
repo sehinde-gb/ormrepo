@@ -41,7 +41,6 @@
                             <div class="name-column">
                                 <h6 class="box--name">Sehinde Raji</h6>
                                 <h6 class="box--title">Founder</h6>
-                                <h6 class="box--title">Web Developer</h6>
                             </div><!-- /.name-column -->
                         </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-one-->
 
