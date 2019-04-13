@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e43296ca9e21d1f5b794612370707807",
+    "content-hash": "225843cd11c5cf250686ac4c29ee599f",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -3077,6 +3077,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-08-03T14:08:16+00:00"
         },
         {
@@ -3651,6 +3652,7 @@
                 "laravel",
                 "rss"
             ],
+            "abandoned": "laravelium/feed",
             "time": "2017-09-07T16:41:55+00:00"
         },
         {

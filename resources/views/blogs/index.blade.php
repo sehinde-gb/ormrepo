@@ -14,7 +14,7 @@
                     <div class="intro-slider">
                         <div class="collection">
                             <div class="logo-header">
-                                <h8>ORM</h8><h9><span class="underlined">R</span>EPO</h9>
+                                <h8>Chain</h8><h9><span class="underlined">B</span>LOG</h9>
                                 <div class="statement">
 
                                 </div><!-- /.statement -->
