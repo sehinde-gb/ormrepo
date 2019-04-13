@@ -12,12 +12,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-slider">
+                    <div class="collection">
                         <div class="logo-header">
                                 <h8>THE CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>
                                 
                                 
                             </div><!-- /.logo-heading -->  
-
+</div><!-- /.collection -->
                         <div class="blog-slogan">
                            <picture>
                                 <img srcset="/images/hero/slogan.png 601w,
@@ -31,13 +32,13 @@
                         
                     </div><!-- .intro-slider -->
 
-                        <div class="collection">
+                        
 
                             
 
                             
 
-                        </div><!-- /.collection -->
+                        
 
                     <div class="columns is-gapless is-multiline animated rotateInDownLeft">
                         <div class="column is-one-quarter box-is-beige is-flex is-one">
