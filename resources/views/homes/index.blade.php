@@ -6,6 +6,38 @@
 
 <div class="homepage-container">
     @include('partials.navigation')
+
+        <div class="proposal-container">
+            <picture>
+                <img srcset="/images/hero/myself-large.png 601w,
+                    /images/hero/myself-small.png 600w"
+                    alt="A picture of Sehinde on Westminster Bridge in February">
+            </picture>
+
+        </div><!-- /.proposal-container -->
+
+        <div class="window-container">
+            <div class="portrait-container">
+                 <picture>
+                <img srcset="/images/hero/my-picture-large.png 601w,
+                    /images/hero/my-picture-small.png 600w"
+                    alt="Sehinde is standing against a grey wall with a polkadot suit with a blue tie">
+                 </picture>    
+            </div><!-- /.proposal-container -->
+            <div class="explain-container">
+                <img srcset="/images/hero/profile-large.png 601w,
+                    /images/hero/profile-small.png 600w"
+                    alt="A profile explaining that problems bubble up in the supply chain and you can depend on us">
+                 
+
+                    <div class="button-container">
+                        <a href="https://www.facebook.com/groups/985826211807341/?ref=bookmarks"><button type="submit" class="btn btn-large">Join The Diverse Coder Network</button></a>
+                    </div><!-- /.button-container -->
+            </div><!-- /.explain-container -->
+
+        </div><!-- /.window-container -->
+
+
         <div class="hero-container">
             <h7 id="up"></h7>
                 <div class="logo-header">
@@ -14,11 +46,25 @@
 
                 <div class="slogan-container">
                     <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
+                     
                 </div><!-- /.slogan-container -->
+
+                <div class="slogan-container">
+                    <h14 class="is--beige is--capitals">Part of the DiverseCoder Network</h14>
+                     
+                </div><!-- /.slogan-container -->    
+
                 <div class="read-container">
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
+                   
                 </div><!-- /.read-container -->
+        <div class="alert-container">
+            <div id="root">
+                <!-- Using the Alert component -->
+                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
 
+            </div><!-- /#app -->
+        </div><!-- /.alert-container -->
                 <div class="jump-to-about">
                     <a href="#services"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div><!-- /.back-to-top -->
@@ -39,7 +85,7 @@
 
 
         <div class="our-container">
-            <h7 id="about"></h7>
+            <h7 id="who"></h7>
                 <div class="our-heading">
                      <h20>Who</h20>   
                 </div><!-- /.our-heading -->
@@ -59,153 +105,35 @@
         </div><!-- /.services-container -->
 
 
-        <div class="about-container">
-            <h7 id="about"></h7>
-                <div class="about-heading">
-                    <h12>Ab</h12><h13>out</h13><h12> Us</h12>
-                </div><!-- /.about-heading -->
-
-<div class="alert-container">
-            <div id="root">
-                <!-- Using the Alert component -->
-                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
-
-            </div><!-- /#app -->
-        </div><!-- /.alert-container -->
-                <div class="memes-container">
-                    <div class="opinion-picture">
-                        <img src="/images/assets/track.png" class="reduce" alt="Transport a picture of a bent track">
-                    </div><!-- /.opinion-container -->
-
-                    <div class="opinion">
-                        <h16>"My model Hornby 125 train set didn't stay on the track because it had power supply issues!"</span></h16>
-                    </div><!-- /.opinion -->
-
-                   
-                </div><!-- /.memes-container -->
-
-                <div class="memes-container">
-                    <div class="opinion-picture">
-                        <img src="/images/assets/siri.png" class="reduce" alt="Blockchain Infrastructure and a picture of an iphone">
-                    </div><!-- /.opinion-container -->
-
-                    <div class="opinion">
-
-                        <h16> "Question: Hey Siri who is your girlfriend ? "</h16>
+        <div class="window-container">
+            <div class="guide-container">
+                <img srcset="/images/hero/guide-large.png 601w,
+                /images/hero/guide-small.png 600w"
+                alt="Download My Free Blockchain Guide for Logistics">
+                <div class="brown-button-container">
+                        <a href="https://www.facebook.com/groups/985826211807341/?ref=bookmarks"><button type="submit" class="btn btn-brown">Download Now</button></a>
+                </div><!-- /.brown-button-container -->
+                
+            </div><!-- /.guide-container -->
+            <div class="red-container">
                     
-                    </div><!-- /.opinion -->
+                <img srcset="/images/hero/diversepane-large.png 601w,
+                    /images/hero/diversepane-small.png 600w"
+                    alt="The diverse coder emblem explaining how logistics and tech can save you money">
 
-                    <div class="opinion">
-
-                        <h16> "Answer: I will leave the relations to the databases"</h16>
+                    <div class="red-button-container">
+                            <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
+                    </div><!-- /.button-container -->
                     
-                    </div><!-- /.opinion -->
-
                     
-                </div><!-- /.memes-container -->
+            </div><!-- /.red-container -->
 
-                    <div class="who-container">
+        </div><!-- /.window-container -->
 
-                       <div class="monitor-container">
-                          <div class="icon-container">
-                              <img src="/images/assets/tailor.png"
-                                   class="reduce" alt="Web Development Services and the tailor's pin">
-                          </div><!-- /.icon-container -->
-
-                           <div class="title-container">
-                                <h14>Custom Fitted</h14>
-                           </div><!-- /.title-container -->
-
-                           <div class="text-container">
-                            <h18 class="aligned">We use open source back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
-                            </h18>
-                           </div><!-- /.text-container -->
-
-                       </div><!-- /.monitor-container -->
-                            <div class="gear-container">
-                                <div class="icon-container">
-                                    <img src="/images/assets/blockchain.png"
-                                         alt="Blockchain Infrastructure and a picture of the blockchain">
-                                </div><!-- /.icon-container -->
-
-                                <div class="title-container">
-                                    <h14> New Tech</h14>
-                                </div><!-- /.title-container -->
-                                <div class="text-container">
-                                    <h18 class="aligned">We build the next generation of applications using blockchain infrastructure so that your apps have enhanced security, improved traceability & greater transparency resulting in reduced costs to you and your business.
-                                    </h18>
-                                </div><!-- /.text-container -->
-
-                            </div><!-- /.gear-container -->
-
-                                <div class="free-container">
-                                    <div class="icon-container">
-                                        <img src="/images/assets/online.png"
-                                             alt="Training and a laptop that has a press play button this is an online training course">
-                                    </div><!-- /.icon-container -->
-
-                                    <div class="title-container">
-                                        <h14>Online Courses</h14>
-                                    </div><!-- /.title-container -->
-                                    <div class="text-container">
-                                        <h18 class="aligned">We deliver a suite of online and offline courses where we will cultivate your passion for understanding new technology. Within a holistic and humanistic way so that your light can shine brightly throughout your career.  </h18>
-                                    </div><!-- /.text-container -->
-                                </div><!-- /.free-container -->
-                    </div><!-- /.who-container -->
-
-                    <div class="memes-container">
-                        <div class="opinion-picture">
-                            <img src="/images/assets/training.png"
-                                 alt="Blockchain Infrastructure and a picture of a classroom that is full of students">
-                        </div><!-- /.opinion-picture -->
-                        <div class="opinion">
-                            <h16>"TechNation report states that there is a 50% shortage of technical skills"</h16>
-                            
-                        </div><!-- /.opinion -->
-
-                        <div class="opinion">
-                            <h16>"Our courses will help tackle this growing inequity"</h16>
-                            
-                        </div><!-- /.opinion -->
-
-
-
-                    </div><!-- /.memes-container -->
-
-                    <div class="memes-container">
-                        <div class="opinion-picture">
-                            <img src="/images/assets/plane.png"
-                                 alt="Transport and a picture of a passenger plane">
-                        </div><!-- /.opinion-picture -->
-                        <div class="opinion">
-                            <h16>"Question: How do you convert a closed centralised baggage system in to an open decentralised baggage system?"</h16>
-                        </div><!-- /.opinion -->
-
-                        <div class="opinion">
-                            <h16>"Answer: A blockchain based baggage system with waypoints can help improve passenger trust in baggage systems."</h16>
-                        </div><!-- /.opinion -->
-                        
-                    </div><!-- /.memes-container -->
-
-                    <div class="quote-container">
-                        <a href="/quotes"><button type="submit" class="btn btn-white">Get a Quote</button></a>
-
-                       
-                    </div><!-- /.quote-container -->
-
-
-                    <div class="jump-to-top">
-                        <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
-                    </div><!-- /.jump-to-top -->
-        </div><!-- /.about-container -->
-
-    <div class="green-container">
-
-    </div><!-- /.green-container -->
-
+    
     <div class="portfolio-container">
         <h7 id="portfolio"></h7>
-        <div class="about-heading is--padded-b50">
+        <div class="about-heading is--padded-b50 is--padded-t40">
             <h12>Po</h12><h13>rtfo</h13><h12>lio</h12>
         </div><!-- /.about-heading -->
 
@@ -325,14 +253,12 @@
         </div><!-- /.back-to-top -->
     </div><!-- /.portfolio-container -->
 
-    <div class="grey-container">
-        
-    </div><!-- /.grey-container -->
+   
 
 
     <div class="contact-container">
             <h7 id="contact"></h7>
-                <div class="about-heading is--padded-b50">
+                <div class="about-heading is--padded-b50 is--padded-t40">
                     <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
                 </div><!-- /.about-heading -->
 

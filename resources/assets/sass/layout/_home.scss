@@ -5,6 +5,31 @@ $black: #000000;
 $lato-bold: 'Lato Bold', sans-serif;
 $montserrat-bold: 'Montserrat Bold', sans-serif;
 
+.proposal-container {
+  width: 100%;
+  min-height: 100%;
+}
+
+.window-container {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}  
+
+.portrait-container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.explain-container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
 .hero-container {
   width: 100vw;
   min-height: 750px;
@@ -83,97 +108,37 @@ span.underlined {
 }
 
 
-.about-container {
-  min-height: 750px;
+.newsletter-container {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%-container
+}  
+
+.newsletter {
+  height: 100%;
   width: 100%;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  background-color: blue;
 }
 
-.about-heading {
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-
-.memes-container {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-}
-
-.opinion-picture {
-  padding-bottom: 20px;
-}
-
-.who-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  padding-top: 50px;
-}
-
-.monitor-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  padding: 0 50px;
-  height: 500px;
-  width: 300px;
-}
-
-.icon-container {
-  width: 50%;
-}
-
-.gear-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  padding: 0 50px;
-  height: 500px;
-  width: 300px;
-}
-
-.free-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  padding: 0 50px;
-  height: 500px;
-  width: 300px;
-}
-
-.title-container {
-  width: 240px;
-  padding-top: 50px;
-  padding-left: 20px;
-}
-
-.text-container {
-  width: 260px;
-  padding-top: 10px;
-  padding-left: 33px;
-  padding-right: 10px;
-}
-
-span {
-  text-indent: -1.5em;
-}
-
-.green-container {
-  background-color: #003434;
-  height: 100px;
+.freebie {
+  height: 100%;
   width: 100%;
+  background-color: white;
+}
+
+
+.guide-container {
+  height: 100%;
+  width: 100%;
+  background-color:#8f5c3a;
+}
+
+
+.red-container {
+  height: 100%;
+  width: 100%;
+  background-color: #ac212b;
 }
 
 .portfolio-container {
@@ -315,12 +280,6 @@ figcaption a:hover {
 }
 
 
-.grey-container {
-  padding-top: 40px;
-  height: 150px;
-  width: 100%;
-  background-color: #444444;
-}
 
 .contact-container {
   height: 500px;
@@ -396,6 +355,30 @@ textarea.form-control {
 
 
 @media screen and (min-width: 981px) and (max-width: 1381px) {
+
+  .proposal-container {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .window-container {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }  
+
+  .portrait-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .explain-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
 
 
   .hero-container {
@@ -477,97 +460,37 @@ textarea.form-control {
     padding-bottom: 50px;
   }
 
-  .about-container {
+  
+  .newsletter-container {
+    display: flex;
+    background-color: white;
+    height: 100%;
     width: 100%;
-    min-height: 750px;
-    overflow: hidden;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
   }
 
-  .about-heading {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
 
-  .memes-container {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .opinion-picture {
-    padding-bottom: 20px;
-  }
-
-  .who-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    padding-top: 50px;
-  }
-
-  .monitor-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .icon-container {
-    width: 50%;
-  }
-
-  .gear-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .free-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .title-container {
-    width: 240px;
-    padding-top: 50px;
-    padding-left: 20px;
-  }
-
-  .text-container {
-    width: 260px;
-    padding-top: 10px;
-    padding-left: 33px;
-    padding-right: 10px;
-  }
-
-  span {
-    text-indent: -1.5em;
-  }
-
-  .green-container {
-    background-color: #003434;
-    height: 100px;
+  .newsletter {
+    height: 100%;
     width: 100%;
+    background-color: blue;
+  }
+
+  .freebie {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .guide-container {
+    height: 100%;
+    width: 100%;
+    background-color: #8f5c3a;
+  }
+
+  .red-container {
+    height: 100%;
+    width: 100%;
+    background-color: #ac212b;
   }
 
   .portfolio-container {
@@ -709,12 +632,6 @@ textarea.form-control {
     padding: 10px 4px;
   }
 
-  .grey-container {
-    padding-top: 40px;
-    height: 150px;
-    width: 100%;
-    background-color: #444444;
-  }
 
   .contact-container {
     height: 500px;
@@ -796,6 +713,30 @@ textarea.form-control {
     overflow: hidden;
   }
 
+  .proposal-container {
+  width: 100%;
+  min-height: 100%;
+  }
+
+  .window-container {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }  
+
+  .portrait-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .explain-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
   .hero-container {
     width: 100vw;
     min-height: 750px;
@@ -873,95 +814,18 @@ textarea.form-control {
     padding-bottom: 50px;
   }
 
-
-  .about-container {
-    min-height: 1000px;
-    background-color: #FFFFFF;
+  .guide-container {
+    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    background-color: #8f5c3a;
   }
 
-  .about-heading {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
-
-  .memes-container {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .opinion-picture {
-    padding-bottom: 20px;
-  }
-
-
-  .who-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    padding-top: 20px;
-  }
-
-  .monitor-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 20px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .gear-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 20px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .free-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 20px;
-    height: 500px;
-    width: 300px;
-  }
-
-  .title-container {
-    width: 240px;
-    padding-top: 50px;
-    padding-left: 20px;
-  }
-
-  .text-container {
-    width: 260px;
-    padding-top: 10px;
-    padding-left: 33px;
-    padding-right: 10px;
-  }
-
-  span {
-    text-indent: -1.5em;
-  }
-
-  .green-container {
-    background-color: #003434;
-    height: 100px;
+  .red-container {
+    height: 100%;
     width: 100%;
+    background-color: #ac212b;
   }
+  
 
   .portfolio-container {
     height: 2500px;
@@ -1102,12 +966,7 @@ textarea.form-control {
     padding: 10px 4px;
   }
 
-  .grey-container {
-    padding-top: 50px;
-    height: 200px;
-    width: 100%;
-    background-color: #444444;
-  }
+
 
   .contact-container {
     height: 500px;
@@ -1281,92 +1140,9 @@ textarea.form-control {
     padding-bottom: 50px;
   }
 
+  
 
-  .about-container {
-    min-height: 1800px;
-    background-color: #FFFFFF;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .about-heading {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
-
-
-  .memes-container {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .opinion-picture {
-    padding-bottom: 20px;
-  }
-
-  .who-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding-top: 50px;
-  }
-
-  .monitor-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    width: 300px;
-  }
-
-  .gear-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    width: 300px;
-  }
-
-  .free-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 50px;
-    width: 300px;
-  }
-
-  .title-container {
-    width: 240px;
-    padding-top: 50px;
-    padding-left: 20px;
-  }
-
-  .text-container {
-    width: 260px;
-    padding-top: 10px;
-    padding-left: 33px;
-    padding-right: 10px;
-  }
-
-  span {
-    text-indent: -1.5em;
-  }
-
-  .green-container {
-    background-color: #003434;
-    height: 100px;
-    width: 100%;
-  }
+  
 
   .portfolio-container {
     min-height: 3500px;
@@ -1513,11 +1289,7 @@ textarea.form-control {
 
 
 
-  .grey-container {
-    height: 220px;
-    width: 100%;
-    background-color: #444444;
-  }
+
 
   .contact-container {
     height: 500px;

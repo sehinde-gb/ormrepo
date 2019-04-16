@@ -33,7 +33,7 @@ class RouteServiceProvider extends ServiceProvider
             return Tag::where('name', $name)->firstOrFail();
         });
 
-        Route::model('charge', Charge::class);
+        
     }
 
     /**

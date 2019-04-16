@@ -74,8 +74,27 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 .btn-secondary:hover {
+  color: black;
+}
+
+.btn-large {
+  animation: pulse 100s infinite;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: unset;
+  padding: 10px 15px;
   color: white;
-  background-color: #003034;
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.btn-large:hover {
+  color: black;
+
 }
 
 @keyframes pulse {
@@ -89,30 +108,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 
-.btn-white,
-.btn-white:active,
-.btn-white:visited,
-.btn-white:focus
-{
-  background-color: white;
-  outline: 0;
-  border: 1px solid black;
-  border-radius: unset;
-  padding: 10px 15px;
-  color: black;
-  font-family: $lato-bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 50px;
-  width: 150px;
-  cursor: pointer;
-
-}
-
-.btn-white:hover {
-  color: black;
-  background-color: #f3f3f3;
-}
 
 .btn-off-white,
 .btn-off-white:active,
@@ -238,6 +233,50 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   color: whitesmoke !important;
 }
 
+.btn-brown {
+  background-color: #8f5c3a;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: white;
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.btn-brown:hover {
+  color: black;
+  background-color: white;
+}
+
+.btn-white {
+  background-color: white;
+  outline: 0;
+  border: 1px solid #f3f3f3;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: black;
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.btn-white:hover {
+  color: white;
+  background-color: black;
+}
+
+
+
+
+
 .btn-link {
   margin-left: 250px;
   color: black;
@@ -299,6 +338,25 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: #F8F8F8 !important;
   }
 
+  .btn-large {
+    animation: pulse 100s infinite;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+.btn-large:hover {
+    color: black;
+  }
+
 
   .btn-secondary,
   .btn-secondary:active,
@@ -315,13 +373,12 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 150px;
+    width: 160px;
     cursor: pointer;
   }
 
   .btn-secondary:hover {
-    color: white;
-    background-color: #003034;
+    color: black;
   }
 
   @keyframes pulse {
@@ -335,30 +392,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
 
-  .btn-white,
-  .btn-white:active,
-  .btn-white:visited,
-  .btn-white:focus
-  {
-    background-color: white;
-    outline: 0;
-    border: 1px solid black;
-    border-radius: unset;
-    padding: 10px 15px;
-    color: black;
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-
-  }
-
-  .btn-white:hover {
-    color: black;
-    background-color: #f3f3f3;
-  }
 
   .btn-off-white,
   .btn-off-white:active,
@@ -493,6 +526,47 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     color: #ada074 !important;
   }
 
+  .btn-brown {
+    background-color: #8f5c3a;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-brown:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .btn-white {
+    background-color: white;
+    outline: 0;
+    border: 1px solid #f3f3f3;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-white:hover {
+    color: white;
+    background-color: black;
+  }
+
+
   .button-group {
     display: flex;
     align-content: center;
@@ -562,13 +636,31 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     height: 50px;
-    width: 150px;
+    width: 160px;
     cursor: pointer;
   }
 
   .btn-secondary:hover {
+    color: black;
+  }
+
+  .btn-large {
+    animation: pulse 100s infinite;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
     color: white;
-    background-color: #003034;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-large:hover {
+    color: black;
   }
 
   @keyframes pulse {
@@ -581,29 +673,7 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     }
   }
 
-  .btn-white,
-  .btn-white:active,
-  .btn-white:visited,
-  .btn-white:focus {
-    background-color: white;
-    outline: 0;
-    border: 1px solid black;
-    border-radius: unset;
-    padding: 10px 15px;
-    color: black;
-    font-family: $lato-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
 
-  }
-
-  .btn-white:hover {
-    background-color: #f3f3f3;
-    color: black;
-  }
 
   .btn-off-white,
   .btn-off-white:active,
@@ -726,6 +796,45 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     background-color: #808080 !important;
     color: whitesmoke !important;
   }
+  .btn-brown {
+    background-color: #8f5c3a;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-brown:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .btn-white {
+    background-color: white;
+    outline: 0;
+    border: 1px solid #f3f3f3;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-white:hover {
+    color: white;
+    background-color: black;
+  }
 
   .btn-link {
     margin-left: 250px;
@@ -806,8 +915,27 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   }
 
   .btn-secondary:hover {
+    color: black;
+  }
+
+  .btn-large {
+    animation: pulse 100s infinite;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
     color: white;
-    background-color: #003034;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-large:hover {
+    color: black;
+   
   }
 
   @keyframes pulse {
@@ -864,6 +992,47 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   .btn-add:hover {
     background-color: #f9f1dc !important;
     color: #717171 !important;
+  }
+
+  .btn-brown {
+    background-color: #8f5c3a;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: white;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-brown:hover {
+    color: black;
+    background-color: white;
+  }
+
+
+  .btn-white {
+    background-color: white;
+    outline: 0;
+    border: 1px solid #f3f3f3;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .btn-white:hover {
+    color: white;
+    background-color: black;
   }
 
 

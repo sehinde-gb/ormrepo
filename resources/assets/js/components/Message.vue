@@ -3,9 +3,11 @@
        <div>
            
             <article class="orm-message" v-show="isVisible">
-                <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times fa-4x" aria-hidden="true"></i></button>
+     
                 <div class="orm-body">
+                    
                     <h4 class="alert-notify">{{ body }}
+                        
                         <a href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
                         </h4>
                 </div><!-- /.orm-body -->
@@ -45,7 +47,7 @@
     
     .orm-message {
       width: 100%; 
-      height: 200px; 
+      height: 100px; 
       background: #f0955f;
       position: relative;  
       border-radius: 10px;  
@@ -64,10 +66,11 @@
      
     .orm-message {
       width: 100%; 
-      height: 200px; 
-      background: #f0955f;
+      height: 100px; 
       position: relative;  
       border-radius: 10px;  
+      overflow: hidden;
+      animation: pulse 100s infinite;
     }
 
      .orm-body {
@@ -81,10 +84,11 @@
         
     .orm-message {
       width: 100%; 
-      height: 200px; 
-      background: #f0955f;
+      height: 100px; 
       position: relative;  
-      border-radius: 10px; 
+      border-radius: 10px;
+      overflow: hidden;
+      animation: pulse 100s infinite; 
     }
     
     .orm-body {
@@ -99,13 +103,14 @@
 @media all and (min-width: 100px) and (max-width: 480px) {
         
     .orm-message {
-        background: #f0955f;
         height: 150px;
         padding-top: 10px;
         padding-left: 10px;
         margin: 0;
         border-radius: 2px;
         width: 100%;
+        overflow: hidden;
+        animation: pulse 100s infinite;
     }
     
     .orm-body {

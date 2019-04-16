@@ -30,15 +30,7 @@ class PagesController extends Controller
         return view('pages.portfolio');
     }
 
-    /**
-     * Show the page for a booking
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function bookings()
-    {
-        return view('pages.bookings');
-    }
+    
 
     /**
      * Show the page for privacy

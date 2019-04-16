@@ -60,11 +60,32 @@ $georgia: "Georgia Italic",  'Helvetica Normal', 'Arial', sans-serif;
 
 .button-container {
   margin-top: 50px;
+  padding-bottom: 20px !important;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   }
+
+.red-button-container {
+  margin-top: 50px;
+  padding-bottom: 20px !important;
+  background-color: #ac212b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+.brown-button-container {
+  margin-top: 50px;
+  padding-bottom: 20px !important;
+  background-color: #8f5c3a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
 
 textarea {
   min-height: 100px;
@@ -173,10 +194,33 @@ img[src*="#thumbnail"] {
   .button-container {
     margin-top: 50px;
     width: 100%;
+    padding-bottom: 20px !important;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+
+  .red-button-container {
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 20px !important;
+    background-color: #ac212b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .brown-button-container {
+    margin-top: 50px;
+    padding-bottom: 20px !important;
+    background-color: #8f5c3a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
 
   textarea {
     min-height: 100px;
@@ -287,10 +331,32 @@ img[src*="#thumbnail"] {
   .button-container {
     margin-top: 50px;
     width: 100%;
+    padding-bottom: 20px !important;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .red-button-container {
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 20px !important;
+    background-color: #ac212b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .brown-button-container {
+    margin-top: 50px;
+    padding-bottom: 20px !important;
+    background-color: #8f5c3a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
 
   textarea {
     min-height: 100px;
@@ -373,9 +439,27 @@ img[src*="#thumbnail"] {
     height: 30px;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 20px;
     padding: 0;
 
   }
+
+  .red-button-container {
+    height: 30px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    background-color: #ac212b;
+  }
+  .brown-button-container {
+    height: 30px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    background-color:#8f5c3a;
+  } 
 
   .centre li {
     padding-top: 5px;
