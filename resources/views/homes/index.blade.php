@@ -1,7 +1,5 @@
 @extends ('layouts.master')
 
-
-
 @section('content')
 
 <div class="homepage-container">
@@ -11,7 +9,7 @@
             <picture>
                 <img srcset="/images/hero/myself-large.png 601w,
                     /images/hero/myself-small.png 600w"
-                    alt="A picture of Sehinde on Westminster Bridge in February">
+                    alt="A picture of Sehinde taking a selfie on Westminster Bridge on a sunny day in February">
             </picture>
 
         </div><!-- /.proposal-container -->
@@ -45,14 +43,15 @@
                 </div><!-- /.logo-header -->
 
                 <div class="slogan-container">
-                    <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
-                     
+                    <div class="what-container">
+                        <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
+                    </div>
+                    <div class="network-container">      
+                        <h14 class="is--beige is--capitals">Part of the DiverseCoder Network</h14>
+                    </div> 
                 </div><!-- /.slogan-container -->
 
-                <div class="slogan-container">
-                    <h14 class="is--beige is--capitals">Part of the DiverseCoder Network</h14>
-                     
-                </div><!-- /.slogan-container -->    
+                   
 
                 <div class="read-container">
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
@@ -78,7 +77,7 @@
                 <picture>
                     <img srcset="/images/hero/desktop-large-one.png 601w,
                           /images/hero/desktop-small-one.png 600w"
-                         alt="Want to learn the latest blockchain technology ? We build these apps with a focus on transport">
+                         alt="We build mind blowing apps to shore up your supply chain">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -242,9 +241,6 @@
 
                 </div><!-- /.lower-portfolio -->
 
-
-
-
             </div><!-- /.projects-container -->
 
 
@@ -252,8 +248,6 @@
             <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
         </div><!-- /.back-to-top -->
     </div><!-- /.portfolio-container -->
-
-   
 
 
     <div class="contact-container">

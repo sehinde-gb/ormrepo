@@ -32,9 +32,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
 
 # Blogs
-Route::get('/blogs/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
+Route::get('/posts/{title}', 'BlogsController@showSlug')->where('title', '[A-Za-z-]+');
 Route::resource('blogs', 'BlogsController', ['only' => ['index', 'show']]);
-Route::get('/blogs', ['as' => 'blogs.index', 'uses' => 'BlogsController@index']);
+Route::get('/posts', ['as' => 'blogs.index', 'uses' => 'BlogsController@index']);
 
 Route::get('/search/{query}', function ($query) {
     return App\Blog::search($query)->get();

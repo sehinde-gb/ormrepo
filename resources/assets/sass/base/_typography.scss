@@ -361,7 +361,7 @@ h20 {
 
 a {
   color: #fef6dd;
-  text-decoration: underline;
+  //text-decoration: underline;
   }
 
 a:hover {
@@ -1352,9 +1352,10 @@ label {
     font-size: 0.85em;
     line-height: 21px;
     color: $white;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-bottom: 30px;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    padding: 0;
     border: 0;
     width: 100%;
     text-transform: none;
