@@ -23,10 +23,7 @@ class EventServiceProvider extends ServiceProvider
             \App\Listeners\SendUpdateNotification::class,
         ],
 
-        \App\Events\QuoteWasSent::class => [
-            \App\Listeners\SendQuoteConfirmation::class
-        ],
-
+        
     ];
 
     /**

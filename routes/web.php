@@ -18,10 +18,6 @@ Auth::routes();
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomesController@index']);
 
-Route::get('/quotes', ['as' => 'quotes', 'uses' => 'QuotesController@index']);
-
-Route::post('/quotes', ['as' => 'quotes_store', 'uses' => 'QuotesController@store']);
-
 Route::post('/webhooks/mailgun_unsubscribe', 'MailgunController@unsubscribe');
 Route::post('/webhooks/mailgun_info', 'MailgunController@info');
 Route::post('/webhooks/mailgun_complaints', 'MailgunController@complaints');
@@ -31,13 +27,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.','namespace' => 'Admin'], fun
 
     Route::resource('blogs', 'BlogsController');
 
-    Route::resource('charges', 'ChargesController');
 });
 
-# Checkout
-Route::post('/checkout/charges/{id}', ['as' => 'checkout.charges','uses' => 'CheckoutController@charges']);
-Route::post('/checkout', ['uses' => 'CheckoutController@index']);
-Route::get('checkout/thankyou', ['as' => 'checkout.thankyou', 'uses' => 'CheckoutController@thankyou']);
+
 
 
 # Blogs

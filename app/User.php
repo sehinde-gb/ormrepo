@@ -108,17 +108,7 @@ class User extends Authenticatable
         return $this->slack_url;
     }
 
-    /**
-     * Relationship
-     *
-     * A user can have many charges.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function charges()
-    {
-        return $this->hasMany(\App\Charge::class);
-    }
+    
 
     /**
      * Retrieves Sterling currency for Cashier.

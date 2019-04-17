@@ -14,9 +14,6 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
         'api/user',
         'broadcasting/auth',
-        'admin/charges',
-        '/checkout',
-        '/checkout/charges/*',
         '/webhooks/mailgun_info/*',
         '/webhooks/mailgun_subscribe/*',
         '/webhooks/mailgun_complaints/*'
