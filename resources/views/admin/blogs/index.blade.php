@@ -156,15 +156,12 @@
                                     </div><!-- /.arrow -->
                                 </div><!-- /.column is-one-quarter is-grey is-flex is-thirteen-->             
                             @elseif($blog->id == 12)
-                                <div class="column is-one-quarter is-light-grey is-flex is-fourteen">
-                                    <div class="arrow">
-                                        <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained: Photo by Pexels "></a>
-                                        </div>
-                                        <i class="fa fa-long-arrow-left fa-2x"></i>
-                                        <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
-                                    </div><!-- /.arrow -->
-                                </div><!-- /.column is-one-quarter is-light-grey is-flex is-fourteen-->
+                            <div class="column is-one-quarter box-is-beige is-flex is-fourteen">
+                                    <div class="name-column">
+                                        <h6 class="box--name">Railways</h6>
+                                        <h6 class="box--title">Metro Systems</h6>
+                                    </div><!-- /.name-column -->
+                            </div><!-- /.column is-one-quarter box-is-beige is-flex-bottom is-one-->
                             
                             @elseif($blog->id == 13)
                                 <div class="column is-one-quarter is-grey is-flex is-fifteen">
