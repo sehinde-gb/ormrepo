@@ -59,7 +59,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-four">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A man standing in airport by with his baggage handle"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -69,7 +69,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-five">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An American Airlines plane waiting at airport"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -79,7 +79,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-six">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Inside the airplane cabin"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -89,7 +89,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-seven">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Infrastructure "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A man in his suit with his thumb up  "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -99,7 +99,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-eight">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An Airbus Neo flying in the air "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -109,7 +109,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-nine">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An Quantas Airbus A380 flying through the air "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -119,7 +119,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-ten">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An Quantas Airbus A380 flying through the air"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -129,7 +129,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-eleven">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Photo by Quintin Gellar from Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An Aircraft Engine "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -139,7 +139,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-twelve">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blockchain Explained: Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="An Aircraft Engine"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -149,7 +149,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-thirteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A Northern line train at Edgware Station"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -159,7 +159,7 @@
                             <div class="column is-one-quarter is-dark-grey is-flex is-fourteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A Northern line train at Edgware Station" "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -170,7 +170,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-fifteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A Piccadilly line train at a station "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -181,7 +181,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-sixteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Legacy Airline Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A LNW train at Watford Junction"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -192,7 +192,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-seventeen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Legacy Airline Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A series of containers at a port "></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -203,7 +203,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-eighteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: Electricity Pylon Photo by Pexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Blue Grey Skyscrapers"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -214,7 +214,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-nineteen">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Northern Line Train Photo Courtesy of TFL @ Edgware Station"></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A green chair againsts a green blue background"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -225,7 +225,7 @@
                                 <div class="column is-one-quarter is-light-grey is-flex is-twenty">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a man with his luggage courtesy of Plexels "></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A computer program prompt with a black background"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -236,7 +236,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-twenty-one">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Public Transport: Northern Line Train Photo Courtesy of TFL @ Edgware Station"></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A person with a mobile phone held up with a prominent arch in the background"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -247,7 +247,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-twenty-two">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a jet engine Courtesy of Plexels"></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A grey background with a chain in the foreground"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -267,7 +267,7 @@
                                 <div class="column is-one-quarter is-grey is-flex is-twenty-four">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a Quantas plane"></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A light bulb on a half yellow and half aqua background"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
@@ -279,7 +279,7 @@
                                 <div class="column is-one-quarter is-dark-grey is-flex is-twenty-five">
                                     <div class="arrow">
                                         <div class="indexed-image">
-                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="Learn Blockchain: A photo of a jet engine Courtesy of Plexels"></a>
+                                            <a href="{{ url('admin/blogs', $blog->id) }}"><img src="{{ asset('featured/images/' . $blog->id. '.png') }}" class="reduction" alt="A light bulb on a half yellow and half aqua background"></a>
                                         </div>
                                         <i class="fa fa-long-arrow-left fa-2x"></i>
                                         <h6><a href="{{ url('admin/blogs', $blog->id) }}">{{ $blog->title }}</a></h6>
