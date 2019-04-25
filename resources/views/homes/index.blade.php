@@ -249,24 +249,30 @@
         </div><!-- /.back-to-top -->
     </div><!-- /.portfolio-container -->
 
+    <div class="feed-container">
+        <ul class="juicer-feed" data-feed-id="thediversecoder" data-per="6"><h1 class="referral"><a href="https://www.juicer.io"></a></h1></ul>
+        <div class="jump-to-top">
+            <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
+        </div><!-- /.jump-to-top -->
+    </div><!-- /.feed-container -->
 
     <div class="contact-container">
-            <h7 id="contact"></h7>
-                <div class="about-heading is--padded-b50 is--padded-t40">
-                    <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
-                </div><!-- /.about-heading -->
+        <h7 id="contact"></h7>
+            <div class="about-heading is--padded-b50 is--padded-t40">
+                <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
+            </div><!-- /.about-heading -->
 
-            <div class="contact-text">
-                <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
-                <h5 class="is--beige text-transform">Monday through to Friday</h5>
-                <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
-                <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
-            </div><!-- /.text-container -->
+        <div class="contact-text">
+            <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
+            <h5 class="is--beige text-transform">Monday through to Friday</h5>
+            <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
+            <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
+        </div><!-- /.text-container -->
 
-            <div class="jump-to-top">
-                <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
-            </div><!-- /.jump-to-top -->
-        </div><!-- /.contact-container -->
+        <div class="jump-to-top">
+            <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
+        </div><!-- /.jump-to-top -->
+</div><!-- /.contact-container -->
 
     @include('partials.footer')
 </div><!-- /.homepage-container -->
