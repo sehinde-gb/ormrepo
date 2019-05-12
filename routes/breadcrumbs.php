@@ -17,11 +17,7 @@ Breadcrumbs::register('portfolio', function ($breadcrumbs) {
     $breadcrumbs->push('Portfolio', route('portfolio'));
 });
 
-// Home > Videos
-Breadcrumbs::register('diversecodertv', function ($breadcrumbs) {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push('Diversecodertv', route('diversecodertv'));
-});
+
 
 // Home > Terms
 Breadcrumbs::register('terms', function ($breadcrumbs) {

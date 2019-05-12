@@ -187,12 +187,7 @@
                         
                     </div><!-- /.memes-container -->
 
-                    <div class="quote-container">
-                        <a href="/quotes"><button type="submit" class="btn btn-white">Get a Quote</button></a>
-
-                       
-                    </div><!-- /.quote-container -->
-
+                    
 
                     <div class="jump-to-top">
                         <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
