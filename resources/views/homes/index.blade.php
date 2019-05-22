@@ -57,13 +57,7 @@
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
                    
                 </div><!-- /.read-container -->
-        <div class="alert-container">
-            <div id="root">
-                <!-- Using the Alert component -->
-                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
-
-            </div><!-- /#app -->
-        </div><!-- /.alert-container -->
+        
                 <div class="jump-to-about">
                     <a href="#services"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div><!-- /.back-to-top -->
@@ -89,8 +83,19 @@
                      <h20>Who</h20>   
                 </div><!-- /.our-heading -->
 
+                <div class="alert-container">
+                        <div id="root">
+                            <!-- Using the Alert component -->
+                            <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
+            
+                        </div><!-- /#app -->
+                </div><!-- /.alert-container -->
+
+
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xt9LBnXpSzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+                
+        </div><!-- /.our-container -->
 
         <div class="services-container">
             <h7 id="services"></h7>
@@ -136,6 +141,7 @@
             <h12>Po</h12><h13>rtfo</h13><h12>lio</h12>
         </div><!-- /.about-heading -->
 
+        
             <div class="projects-container">
 
                 <div class="top-portfolio">
@@ -250,6 +256,8 @@
     </div><!-- /.portfolio-container -->
 
     <div class="feed-container">
+            
+
         <ul class="juicer-feed" data-feed-id="thediversecoder" data-per="6"><h1 class="referral"><a href="https://www.juicer.io"></a></h1></ul>
         <div class="jump-to-top">
             <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
