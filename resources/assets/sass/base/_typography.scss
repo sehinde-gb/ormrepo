@@ -425,6 +425,12 @@ p {
   margin: 0;
 }
 
+.alert-notify:hover {
+  color: $brown;
+}
+
+
+
 .find-link {
   font-family: "Lato Regular", sans-serif;
   font-weight: 700;
@@ -658,6 +664,9 @@ label {
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+  .alert-notify:hover {
+    color: $brown;
   }
 
   .find-link {
@@ -940,6 +949,10 @@ label {
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+
+  .alert-notify:hover {
+    color: $brown;
   }
 
   .find-link {
@@ -1321,6 +1334,10 @@ label {
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+  
+  .alert-notify:hover {
+    color: $brown;
   }
 
   /* Column Container & Newsletter Container Typography */

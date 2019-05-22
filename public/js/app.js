@@ -2084,7 +2084,7 @@ window.Echo.private('user.${userId}')
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(35)();
-exports.push([module.i, "\n.orm-message {\n      width: 100%; \n      height: 100px; \n      background: white;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 32px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;  \n      overflow: hidden;\n      animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;\n      overflow: hidden;\n      animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 20px;\n        padding-top: 50px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n        overflow: hidden;\n        animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.orm-message {\n      width: 100%; \n      height: 100px; \n      background: white;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 2px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;  \n      overflow: hidden;\n      animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;\n      overflow: hidden;\n      animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 20px;\n        padding-top: 50px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n        overflow: hidden;\n        animation: pulse 100s infinite;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
 
 /***/ }),
 /* 35 */
@@ -29902,7 +29902,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "isVisible"
     }],
     staticClass: "orm-message"
-  }, [_c('div', {
+  }, [_c('button', {
+    staticClass: "alert-button",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.hideModal
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-times",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('div', {
     staticClass: "orm-body"
   }, [_c('h4', {
     staticClass: "alert-notify"

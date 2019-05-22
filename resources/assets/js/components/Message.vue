@@ -3,13 +3,13 @@
        <div>
            
             <article class="orm-message" v-show="isVisible">
-     
+                <button type="button"  class="alert-button" @click="hideModal"><i class="fa fa-times" aria-hidden="true"></i></button>
                 <div class="orm-body">
                     
                     <h4 class="alert-notify">{{ body }}
                         
                         <a class="alert-notify" href="https://ormrepo.co.uk/cookie">Click here to find out more</a>
-                        </h4>
+                    </h4>
                 </div><!-- /.orm-body -->
             </article><!-- /.orm-message -->
        </div>
@@ -57,7 +57,7 @@
     
     .orm-body {
         padding-left: 200px;
-        padding-top: 32px;
+        padding-top: 2px;
     }
     
 @media screen and (min-width: 981px) and (max-width: 1381px) {
