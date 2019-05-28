@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="homepage-container">
-    @include('partials.navigation')
+
 
         <div class="proposal-container">
             <picture>

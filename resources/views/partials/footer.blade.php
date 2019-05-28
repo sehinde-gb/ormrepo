@@ -38,16 +38,16 @@
                 </style>
 
                 <div id="mc_embed_signup">
-                <form action="https://ormrepo.us19.list-manage.com/subscribe/post?u=3c9ca0fce5f540adb6eefe51a&amp;id=883f50667f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <form action="https://ormrepo.us19.list-manage.com/subscribe/post?u=3c9ca0fce5f540adb6eefe51a&amp;id=5fafe83b2c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
 	
 	                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                     <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
                     <div class="content__gdpr">
                     <label>Marketing Permissions</label>
-                    <p class="lorem--text">Please select all the ways you would like to hear from Ormrepo:</p>
+                    <p class="lorem--text">Please select all the ways you would like to hear from Us:</p>
                     <fieldset class="mc_fieldset gdprRequired mc-field-group lorem--text name="interestgroup_field">
-		                <label class="checkbox subfield" for="gdpr_17499"><input type="checkbox" id="gdpr_17499" name="gdpr[17499]" value="Y" class="av-checkbox "><span>Email</span> </label><label class="checkbox subfield" for="gdpr_17503"><input type="checkbox" id="gdpr_17503" name="gdpr[17503]" value="Y" class="av-checkbox "><span>Direct Mail</span> </label>
+		                <label class="checkbox subfield" for="gdpr_17499"><input type="checkbox" id="gdpr_17499" name="gdpr[17499]" value="Y" class="av-checkbox "><span>Email</span> </label><label class="checkbox subfield" for="gdpr_17503">
                     </fieldset>
                     <p class="lorem--text">You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
                 </div>
@@ -100,9 +100,10 @@
                 <div class="footer-navigation">
                     <ul>
                         <li class="even-spacing"><a href="/" class="foot-links">About</a></li>
+                        <li class="even-spacing"><a href="/coaching" class="foot-links">One To One Coaching</a></li>
                         <li class="even-spacing"><a href="/posts" class="foot-links">Posts</a></li>
                         <li class="even-spacing"><a href="/cookie" class="foot-links">Cookie Policy</a></li>
-                        <li class="even-spacing"><a href="#portfolio" class="foot-links">Portfolio</a></li>
+                        <li class="even-spacing"><a href="/" class="foot-links">Portfolio</a></li>
                         <li class="even-spacing"><a href="/privacy" class="foot-links">Privacy Policy</a></li>
                         <li class="even-spacing"><a href="/terms" class="foot-links">Terms & Conditions</a></li>
                     </ul>

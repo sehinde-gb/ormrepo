@@ -1,4 +1,4 @@
-@extends ('layouts.app')
+@extends ('layouts.master')
 
 @section('meta-title', 'London UK | Logistics |  Transport  | This is Our Cookie Policy ')
 

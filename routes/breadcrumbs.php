@@ -17,11 +17,6 @@ Breadcrumbs::register('portfolio', function ($breadcrumbs) {
     $breadcrumbs->push('Portfolio', route('portfolio'));
 });
 
-// Home > Videos
-Breadcrumbs::register('diversecodertv', function ($breadcrumbs) {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push('Diversecodertv', route('diversecodertv'));
-});
 
 // Home > Terms
 Breadcrumbs::register('terms', function ($breadcrumbs) {
@@ -47,11 +42,12 @@ Breadcrumbs::register('contact', function ($breadcrumbs) {
     $breadcrumbs->push('Contact', route('contact'));
 });
 
-// Home > Quotes Index
-    Breadcrumbs::register('quotes.index', function ($breadcrumbs) {
-        $breadcrumbs->parent('home');
-        $breadcrumbs->push('Quotes', route('quotes'));
-    });
+// Home > Coaching
+Breadcrumbs::register('coaching', function ($breadcrumbs) {
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('Coaching', route('coaching'));
+});
+
 
 // Home > Blogs Index
     Breadcrumbs::register('blogs.index', function ($breadcrumbs) {
@@ -95,33 +91,9 @@ Breadcrumbs::register('contact', function ($breadcrumbs) {
         $breadcrumbs->push('Edit Blog', route('admin.blogs.edit', $blog->id));
     });
 
-// Charges Index
-    Breadcrumbs::register('admin.charges.index', function ($breadcrumbs) {
-        $breadcrumbs->parent('admin');
-        $breadcrumbs->push('Charges', route('admin.charges.index'));
-    });
 
-// Home > Charge Show
-    Breadcrumbs::register('admin.charges.show', function ($breadcrumbs, $charge) {
-        $breadcrumbs->parent('admin.charges.index');
-        $breadcrumbs->push($charge->name, route('admin.charges.show', $charge->id));
-    });
 
-// Home > Charge Edit
-    Breadcrumbs::register('admin.charges.edit', function ($breadcrumbs, $charge) {
-        $breadcrumbs->parent('admin.charges.show', $charge);
-        $breadcrumbs->push('Edit Blog', route('admin.charges.edit', $charge->id));
-    });
 
-// Charges > Publish Charge
-    Breadcrumbs::register('admin.charges.create', function ($breadcrumbs) {
-        $breadcrumbs->parent('admin.charges.index');
-        $breadcrumbs->push('Publish Charge', route('admin.charges.create'));
-    });
 
-// Home > Checkout
-    Breadcrumbs::register('checkout', function ($breadcrumbs) {
-        $breadcrumbs->parent('admin');
-        $breadcrumbs->push('Charges', route('admin.charges.index'));
-        $breadcrumbs->push('Checkout', route('checkout.thankyou'));
-    });
+
+

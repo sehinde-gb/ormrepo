@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('meta-title', 'Transport, Blockchain Infrastructure | Ormrepo | London UK | Password Reset ')
+@section('meta-title', 'Logistics | Transport |Password Reset ')
 
 
 @section('content')

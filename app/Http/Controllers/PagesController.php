@@ -74,4 +74,14 @@ class PagesController extends Controller
      {
          return view('pages.highlights');
      }
+
+     /**
+     * Show the page for the Coaching
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function coaching()
+    {
+        return view('pages.coaching');
+    }
 }

@@ -46,6 +46,7 @@ Route::get('/privacy', ['as' => 'privacy', 'uses' => 'PagesController@privacy'])
 Route::get('/cookie', ['as' => 'cookie', 'uses' => 'PagesController@cookie']);
 Route::get('/terms', ['as' => 'terms', 'uses' => 'PagesController@terms']);
 Route::get('/highlights', ['as' => 'highlights', 'uses' => 'PagesController@highlights']);
+Route::get('/coaching', ['as' => 'coaching', 'uses' => 'PagesController@coaching']);
 
 
 # Tags
