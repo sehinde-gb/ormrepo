@@ -35,7 +35,7 @@
 
 @include('partials.status')
 
-@include('partials.navbar')
+@include('partials.navigation')
 
 @yield('content')
 

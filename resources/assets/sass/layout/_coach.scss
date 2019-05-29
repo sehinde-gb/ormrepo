@@ -6,8 +6,7 @@
     width: 100%;
     background-color: white;
     display: flex;
-
-  }
+}
 
 .greetings-container {
     height: 100%;
@@ -20,8 +19,6 @@
     width: 100%;
     background-color: white;
 }  
-
-
 
 
 .defense-container {
@@ -54,7 +51,6 @@
     width: 30%;
     background-color: #f0955f;
     padding-left: 20px;
-
 }  
 
 
@@ -64,10 +60,41 @@
     padding-left: 20px;
     padding-top: 30px;
     background-color: #f0955f;
-
 }
 
 
 
 
 
+
+
+
+@media all and (min-width: 100px) and (max-width: 480px) { 
+
+    .central-container {
+        flex-direction: column !important;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+        margin: 0;
+        min-height: 500px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+    }    
+
+
+    .test-container {
+        flex-direction: column !important;
+        align-items: center;
+        justify-items: center;
+        padding-top: 50px;
+        margin: 0;
+        min-height: 370px;
+        width: 100%;
+        background-color:#f0955f;
+    }
+    
+
+
+}

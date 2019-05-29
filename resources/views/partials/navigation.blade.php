@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/coaching">Coaching</a></li>
-                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/blogs">Blog Posts</a></li>
                 </ul>
             </div><!-- /.right-menu -->
         @else
@@ -32,7 +32,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/coaching">Coaching</a></li>
-                    <li><a href="/admin/posts">Posts</a></li>
+                    <li><a href="/admin/blogs">Blog Posts</a></li>
                     
                     <li><a href="{{ url('/logout') }}"
 

@@ -48,7 +48,7 @@
     .orm-message {
       width: 100%; 
       height: 100px; 
-      background: white;
+      background: white !important;
       position: relative;  
       border-radius: 10px;  
     }
@@ -65,6 +65,7 @@
     
      
     .orm-message {
+      background: white !important;  
       width: 100%; 
       height: 100px; 
       position: relative;  
@@ -75,7 +76,7 @@
 
      .orm-body {
         padding-left: 200px;
-        padding-top: 50px;
+        
     }
     
 }
@@ -83,6 +84,7 @@
 @media screen and (min-width: 481px) and (max-width: 980px) {
         
     .orm-message {
+      background: white !important;
       width: 100%; 
       height: 100px; 
       position: relative;  
@@ -93,7 +95,7 @@
     
     .orm-body {
         padding-left: 20px;
-        padding-top: 50px;
+        
     }
     
     
@@ -103,6 +105,7 @@
 @media all and (min-width: 100px) and (max-width: 480px) {
         
     .orm-message {
+        background: white !important;
         height: 150px;
         padding-top: 10px;
         padding-left: 10px;
