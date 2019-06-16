@@ -106,12 +106,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('/fonts/Nexa-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('/fonts/Nexa-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $georgia: "Georgia Italic", sans-serif;
 $lato-bold: 'Lato Bold', sans-serif;
 $lato-regular: 'Lato Regular', sans-serif;
 $lato-light: 'Lato Light', sans-serif;
 $montserrat: 'Montserrat Regular', sans-serif;
 $montserrat-bold: 'Montserrat Bold', sans-serif;
+$nexa-bold: 'Nexa Bold', sans-serif;
+$nexa-light: 'Nexa Light', sans-serif;
 $myriad-pro: 'Myriad Pro', sans-serif;
 $source-pro: 'Source Sans Pro', sans-serif;
 $source-light: 'Source Sans Pro Light', sans-serif;
@@ -127,6 +143,7 @@ $primary-color: #f8f8f8;
 $secondary-color: #003434;
 $white: #F8F8F8;
 $brown: #a4a4a4;
+$red: #ac212b;
 
 body,
 h1,
@@ -358,6 +375,27 @@ h20 {
   border-bottom: 1px solid white;
   padding-bottom: 20px;
 }
+
+
+h21 {
+  font-family: $nexa-bold;
+  font-weight: 200;
+  font-size: 5vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+h22 {
+  font-family: $nexa-light;
+  font-weight: 200;
+  font-size: 5vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $black;
+  padding-right: 5px;
+}
+
 
 a {
   color: #fef6dd;
@@ -1301,6 +1339,27 @@ label {
     line-height: 28px;
     color: $black;
     padding-bottom: 10px;
+  }
+
+
+
+  h21 {
+    font-family: $nexa-bold;
+    font-weight: 200;
+    font-size: 5vw;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $red;
+  }
+
+  h22 {
+    font-family: $nexa-light;
+    font-weight: 200;
+    font-size: 5vw;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $black;
+    padding-right: 5px;
   }
 
 

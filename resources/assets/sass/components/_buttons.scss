@@ -274,9 +274,6 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 
-
-
-
 .btn-link {
   margin-left: 250px;
   color: black;
@@ -308,6 +305,30 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
 .banner-social-buttons {
   float: right;
   margin-top: 0;
+}
+
+
+.btn-highlights,
+.btn-highlights:active,
+.btn-highlights:visited,
+.btn-highlights:focus {
+  background-color: #f3f3f3;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: unset;
+  padding: 10px 15px;
+  color: black;
+  font-family: $lato-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 150px;
+  width: 350px;
+  cursor: pointer;
+ }
+
+.btn-highlights:hover {
+  color: black;
+  background-color: #ebebeb;
 }
 
 
@@ -592,6 +613,29 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     margin-top: 0;
   }
 
+  .btn-highlights,
+  .btn-highlights:active,
+  .btn-highlights:visited,
+  .btn-highlights:focus {
+    background-color: #f3f3f3;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 150px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-highlights:hover {
+    color: black;
+    background-color: #ebebeb;
+  }
+
 
 
 }
@@ -869,6 +913,30 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
     margin-top: 0;
   }
 
+
+  .btn-highlights,
+  .btn-highlights:active,
+  .btn-highlights:visited,
+  .btn-highlights:focus {
+    background-color: #f3f3f3;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 150px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .btn-highlights:hover {
+    color: black;
+    background-color: #ebebeb;
+  }
+
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
@@ -1059,6 +1127,33 @@ $montserrat-bold: "Montserrat Bold", sans-serif;
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px;
+  }
+
+
+  .btn-highlights,
+  .btn-highlights:active,
+  .btn-highlights:visited,
+  .btn-highlights:focus {
+    background-color: #f3f3f3;
+    outline: 0;
+    //border: 1px solid black;
+    border-radius: unset;
+    padding: 10px 15px;
+    color: black;
+    font-family: $lato-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 100px;
+    width: 300px;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+  }
+
+  .btn-highlights:hover {
+    color: black;
+    background-color: #ebebeb;
   }
 
 }

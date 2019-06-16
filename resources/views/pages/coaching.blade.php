@@ -25,7 +25,7 @@
         </picture>
     </div><!-- /.sofa-container -->
 
-</div><!-- /.coaching-container -->
+</div><!-- /.central-container -->
 
 <div class="test-container">
     <div class="colleague-container">

@@ -282,7 +282,6 @@
         </div><!-- /.jump-to-top -->
 </div><!-- /.contact-container -->
 
-    @include('partials.footer')
 </div><!-- /.homepage-container -->
 @endsection
 

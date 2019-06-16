@@ -71,7 +71,7 @@
       position: relative;  
       border-radius: 10px;  
       overflow: hidden;
-      animation: pulse 100s infinite;
+      
     }
 
      .orm-body {
@@ -90,7 +90,7 @@
       position: relative;  
       border-radius: 10px;
       overflow: hidden;
-      animation: pulse 100s infinite; 
+      
     }
     
     .orm-body {
@@ -113,7 +113,7 @@
         border-radius: 2px;
         width: 100%;
         overflow: hidden;
-        animation: pulse 100s infinite;
+        
     }
     
     .orm-body {
