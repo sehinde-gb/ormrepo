@@ -9,7 +9,7 @@
             <picture>
                 <img srcset="/images/hero/gare_lyon_large.png 601w,
                     /images/hero/gare_lyon_small.png 600w"
-                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019">
+                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019 to raise awareness of Transport issues">
             </picture>
 
         </div><!-- /.proposal-container -->
@@ -25,7 +25,7 @@
             <div class="explain-container">
                 <img srcset="/images/hero/rail_profile_large.png 601w,
                     /images/hero/rail_profile_small.png 600w"
-                    alt="Our profile explains about the fragmentation of the rail industry and how we are the solution to this">
+                    alt="Our profile explains about the fragmentation of the rail industry and we can find a solution to your Transport & Logistics problems.">
                  
 
                     <div class="button-container">
@@ -71,7 +71,7 @@
                 <picture>
                     <img srcset="/images/hero/desktop-large-one.png 601w,
                           /images/hero/desktop-small-one.png 600w"
-                         alt="We build mind blowing apps to shore up your supply chain">
+                         alt="We will teach you all you need to know about Transport and Logistics">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -123,7 +123,7 @@
                     
                 <img srcset="/images/hero/diversepane-large.png 601w,
                     /images/hero/diversepane-small.png 600w"
-                    alt="The diverse coder emblem explaining about the importance of new technology in every day transportation">
+                    alt="The diverse coder emblem explaining about the importance of new technology in every day transportation for Transport and Logistics">
 
                     <div class="red-button-container">
                             <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
@@ -146,7 +146,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
+                        <img alt="Transport, Logistics and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
                         /images/showcase/goose-medium.png 640w,
                         /images/showcase/goose-medium.png 420w">
 
@@ -161,7 +161,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
+                        <img alt="Transport, Logistics and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
                         /images/showcase/games-medium.png 640w,
                         /images/showcase/games-medium.png 420w">
 
@@ -176,7 +176,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
+                        <img alt="Transport, Logistics and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
                         /images/showcase/couture-medium.png 640w,
                         /images/showcase/couture-medium.png 420w">
 
@@ -190,7 +190,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
+                        <img alt="Transport, Logistics and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
                         /images/showcase/goldsmith-medium.png 640w,
                         /images/showcase/goldsmith-medium.png 420w">
 
@@ -206,7 +206,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
+                        <img alt="Transport, Logistics and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
                         /images/showcase/zep-medium.png 640w,
                         /images/showcase/zep-medium.png 420w">
 
@@ -220,7 +220,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
+                        <img alt="Transport, Logistics and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
                         /images/showcase/digital-medium.png 640w,
                         /images/showcase/digital-medium.png 420w">
 
@@ -234,7 +234,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
+                        <img alt="Transport, Logistics and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
                         /images/showcase/gillian-medium.png 640w,
                         /images/showcase/gillian-medium.png 420w">
 
