@@ -9,7 +9,7 @@
             <picture>
                 <img srcset="/images/hero/myself-large.png 601w,
                     /images/hero/myself-small.png 600w"
-                    alt="A picture of Sehinde taking a selfie on Westminster Bridge on a sunny day in February">
+                    alt="A picture of Sehinde taking a selfie on Westminster Bridge on a sunny day in February and he is talking about Logistics and the supply chain">
             </picture>
 
         </div><!-- /.proposal-container -->
@@ -19,13 +19,13 @@
                  <picture>
                 <img srcset="/images/hero/my-picture-large.png 601w,
                     /images/hero/my-picture-small.png 600w"
-                    alt="Sehinde is standing against a grey wall with a polkadot suit with a blue tie">
+                    alt="Sehinde is standing against a grey wall with a polkadot suit with a blue tie and Logistics is the next big thing">
                  </picture>    
             </div><!-- /.proposal-container -->
             <div class="explain-container">
                 <img srcset="/images/hero/profile-large.png 601w,
                     /images/hero/profile-small.png 600w"
-                    alt="A profile explaining that problems bubble up in the supply chain and you can depend on us">
+                    alt="A profile explaining that problems bubble up through the Logistics supply chain and you can depend on us">
                  
 
                     <div class="button-container">
@@ -71,7 +71,7 @@
                 <picture>
                     <img srcset="/images/hero/desktop-large-one.png 601w,
                           /images/hero/desktop-small-one.png 600w"
-                         alt="We build mind blowing apps to shore up your supply chain">
+                         alt="We are here to find solutions for your common Logistics problems">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
@@ -115,7 +115,7 @@
                 /images/hero/guide-small.png 600w"
                 alt="Download My Free Blockchain Guide for Logistics">
                 <div class="brown-button-container">
-                        <a href="https://www.facebook.com/groups/985826211807341/?ref=bookmarks"><button type="submit" class="btn btn-brown">Download Now</button></a>
+                        <a href="https://mailchi.mp/6f609910f327/logistics"><button type="submit" class="btn btn-brown">Download Now</button></a>
                 </div><!-- /.brown-button-container -->
                 
             </div><!-- /.guide-container -->
@@ -123,7 +123,7 @@
                     
                 <img srcset="/images/hero/diversepane-large.png 601w,
                     /images/hero/diversepane-small.png 600w"
-                    alt="The diverse coder emblem explaining how logistics and tech can save you money">
+                    alt="The diverse coder emblem explaining how Logistics, Transport and Tech can save you money">
 
                     <div class="red-button-container">
                             <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
@@ -146,7 +146,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
+                        <img alt="Logistics, Transport and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
                         /images/showcase/goose-medium.png 640w,
                         /images/showcase/goose-medium.png 420w">
 
@@ -161,7 +161,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
+                        <img alt="Logistics, Transport and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
                         /images/showcase/games-medium.png 640w,
                         /images/showcase/games-medium.png 420w">
 
@@ -176,7 +176,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
+                        <img alt="Logistics, Transport and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
                         /images/showcase/couture-medium.png 640w,
                         /images/showcase/couture-medium.png 420w">
 
@@ -190,7 +190,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
+                        <img alt="Logistics, Transport and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
                         /images/showcase/goldsmith-medium.png 640w,
                         /images/showcase/goldsmith-medium.png 420w">
 
@@ -206,7 +206,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
+                        <img alt="Logistics, Transport and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
                         /images/showcase/zep-medium.png 640w,
                         /images/showcase/zep-medium.png 420w">
 
@@ -220,7 +220,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
+                        <img alt="Logistics, Transport and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
                         /images/showcase/digital-medium.png 640w,
                         /images/showcase/digital-medium.png 420w">
 
@@ -234,7 +234,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
+                        <img alt="Logistics, Transport and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
                         /images/showcase/gillian-medium.png 640w,
                         /images/showcase/gillian-medium.png 420w">
 
