@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/coaching">Coaching</a></li>
-                    <li><a href="/blogs">Blog Posts</a></li>
+                    <li><a href="/blogs">Blog</a></li>
                 </ul>
             </div><!-- /.right-menu -->
 
