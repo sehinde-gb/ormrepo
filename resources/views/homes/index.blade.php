@@ -7,9 +7,9 @@
 
         <div class="proposal-container">
             <picture>
-                <img srcset="/images/hero/myself-large.png 601w,
-                    /images/hero/myself-small.png 600w"
-                    alt="A picture of Sehinde taking a selfie on Westminster Bridge on a sunny day in February">
+                <img srcset="/images/hero/gare_lyon_large.png 601w,
+                    /images/hero/gare_lyon_small.png 600w"
+                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019">
             </picture>
 
         </div><!-- /.proposal-container -->
@@ -23,9 +23,9 @@
                  </picture>    
             </div><!-- /.proposal-container -->
             <div class="explain-container">
-                <img srcset="/images/hero/profile-large.png 601w,
-                    /images/hero/profile-small.png 600w"
-                    alt="A profile explaining that problems bubble up in the supply chain and you can depend on us">
+                <img srcset="/images/hero/rail_profile_large.png 601w,
+                    /images/hero/rail_profile_small.png 600w"
+                    alt="Our profile explains about the fragmentation of the rail industry and how we are the solution to this">
                  
 
                     <div class="button-container">
@@ -111,11 +111,11 @@
 
         <div class="window-container">
             <div class="guide-container">
-                <img srcset="/images/hero/guide-large.png 601w,
-                /images/hero/guide-small.png 600w"
-                alt="Download My Free Blockchain Guide for Logistics">
+                <img srcset="/images/hero/rail_guide_large.png 601w,
+                /images/hero/rail_guide_small.png 600w"
+                alt="Download My Free Rail Signalling Guide">
                 <div class="brown-button-container">
-                        <a href="https://www.facebook.com/groups/985826211807341/?ref=bookmarks"><button type="submit" class="btn btn-brown">Download Now</button></a>
+                        <a href="https://mailchi.mp/be57486c1731/signals"><button type="submit" class="btn btn-brown">Download Now</button></a>
                 </div><!-- /.brown-button-container -->
                 
             </div><!-- /.guide-container -->
@@ -123,7 +123,7 @@
                     
                 <img srcset="/images/hero/diversepane-large.png 601w,
                     /images/hero/diversepane-small.png 600w"
-                    alt="The diverse coder emblem explaining how logistics and tech can save you money">
+                    alt="The diverse coder emblem explaining about the importance of new technology in every day transportation">
 
                     <div class="red-button-container">
                             <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
