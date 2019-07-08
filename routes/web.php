@@ -16,7 +16,8 @@
 
 Auth::routes();
 
-Route::get('/', ['as' => 'home', 'uses' => 'HomesController@index']);
+//Route::get('/', ['as' => 'home', 'uses' => 'HomesController@index']);
+Route::get('/logistics', ['as' => 'logistics', 'uses' => 'HomesController@logistics']);
 
 Route::post('/webhooks/mailgun_unsubscribe', 'MailgunController@unsubscribe');
 Route::post('/webhooks/mailgun_info', 'MailgunController@info');

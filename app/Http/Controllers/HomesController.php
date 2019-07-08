@@ -16,4 +16,10 @@ class HomesController extends Controller
     {
         return view('homes.index');
     }
+
+
+    public function logistics()
+    {
+        return view('homes.logistics');
+     }
 }
