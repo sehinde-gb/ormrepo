@@ -73,7 +73,7 @@
                           /images/hero/desktop-small-one.png 600w"
                          alt="We are here to find solutions for your common Logistics problems">
 
- >>>>>>> logistics:resources/views/homes/logistics.blade.php               </picture>
+             </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
 
@@ -116,11 +116,7 @@
                 /images/hero/rail_guide_small.png 600w"
                 alt="Download My Free Rail Signalling Guide">
                 <div class="brown-button-container">
-<<<<<<< HEAD:resources/views/homes/index.blade.php
                         <a href="https://mailchi.mp/be57486c1731/signals"><button type="submit" class="btn btn-brown">Download Now</button></a>
-=======
-                        <a href="https://mailchi.mp/6f609910f327/logistics"><button type="submit" class="btn btn-brown">Download Now</button></a>
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                 </div><!-- /.brown-button-container -->
                 
             </div><!-- /.guide-container -->
@@ -128,11 +124,7 @@
                     
                 <img srcset="/images/hero/diversepane-large.png 601w,
                     /images/hero/diversepane-small.png 600w"
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                    alt="The diverse coder emblem explaining about the importance of new technology in every day transportation for Transport and Logistics">
-=======
                     alt="The diverse coder emblem explaining how Logistics, Transport and Tech can save you money">
->>>>>>> logistics:resources/views/homes/logistics.blade.php
 
                     <div class="red-button-container">
                             <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
