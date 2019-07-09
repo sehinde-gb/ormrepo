@@ -23,9 +23,9 @@
                  </picture>    
             </div><!-- /.proposal-container -->
             <div class="explain-container">
-                <img srcset="/images/hero/rail_profile_large.png 601w,
-                    /images/hero/rail_profile_small.png 600w"
-                    alt="Our profile explains about the fragmentation of the rail industry and we can find a solution to your Transport & Logistics problems.">
+                <img srcset="/images/hero/profile-large.png 601w,
+                    /images/hero/profile-small.png 600w"
+                    alt="A profile explaining that problems bubble up through the Logistics supply chain and you can depend on us">
                  
 
                     <div class="button-container">
@@ -72,8 +72,7 @@
                     <img srcset="/images/hero/desktop-large-one.png 601w,
                           /images/hero/desktop-small-one.png 600w"
                          alt="We are here to find solutions for your common Logistics problems">
-
-             </picture>
+                </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
 
@@ -112,11 +111,11 @@
 
         <div class="window-container">
             <div class="guide-container">
-                <img srcset="/images/hero/rail_guide_large.png 601w,
-                /images/hero/rail_guide_small.png 600w"
-                alt="Download My Free Rail Signalling Guide">
+                <img srcset="/images/hero/guide-large.png 601w,
+                /images/hero/guide-small.png 600w"
+                alt="Download My Free Blockchain Guide for Logistics">
                 <div class="brown-button-container">
-                        <a href="https://mailchi.mp/be57486c1731/signals"><button type="submit" class="btn btn-brown">Download Now</button></a>
+                        <a href="https://mailchi.mp/6f609910f327/logistics"><button type="submit" class="btn btn-brown">Download Now</button></a>
                 </div><!-- /.brown-button-container -->
                 
             </div><!-- /.guide-container -->
@@ -147,11 +146,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
-=======
                         <img alt="Logistics, Transport and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/goose-medium.png 640w,
                         /images/showcase/goose-medium.png 420w">
 
@@ -166,11 +161,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
-=======
                         <img alt="Logistics, Transport and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/games-medium.png 640w,
                         /images/showcase/games-medium.png 420w">
 
@@ -185,11 +176,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
-=======
                         <img alt="Logistics, Transport and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/couture-medium.png 640w,
                         /images/showcase/couture-medium.png 420w">
 
@@ -203,11 +190,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
-=======
                         <img alt="Logistics, Transport and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/goldsmith-medium.png 640w,
                         /images/showcase/goldsmith-medium.png 420w">
 
@@ -223,11 +206,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
-=======
                         <img alt="Logistics, Transport and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/zep-medium.png 640w,
                         /images/showcase/zep-medium.png 420w">
 
@@ -241,11 +220,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
-=======
                         <img alt="Logistics, Transport and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/digital-medium.png 640w,
                         /images/showcase/digital-medium.png 420w">
 
@@ -259,11 +234,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-<<<<<<< HEAD:resources/views/homes/index.blade.php
-                        <img alt="Transport, Logistics and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
-=======
                         <img alt="Logistics, Transport and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
->>>>>>> logistics:resources/views/homes/logistics.blade.php
                         /images/showcase/gillian-medium.png 640w,
                         /images/showcase/gillian-medium.png 420w">
 
