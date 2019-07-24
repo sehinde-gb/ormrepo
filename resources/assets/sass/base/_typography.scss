@@ -106,12 +106,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('/fonts/Nexa-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('/fonts/Nexa-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $georgia: "Georgia Italic", sans-serif;
 $lato-bold: 'Lato Bold', sans-serif;
 $lato-regular: 'Lato Regular', sans-serif;
 $lato-light: 'Lato Light', sans-serif;
 $montserrat: 'Montserrat Regular', sans-serif;
 $montserrat-bold: 'Montserrat Bold', sans-serif;
+$nexa-bold: 'Nexa Bold', sans-serif;
+$nexa-light: 'Nexa Light', sans-serif;
 $myriad-pro: 'Myriad Pro', sans-serif;
 $source-pro: 'Source Sans Pro', sans-serif;
 $source-light: 'Source Sans Pro Light', sans-serif;
@@ -127,6 +143,7 @@ $primary-color: #f8f8f8;
 $secondary-color: #003434;
 $white: #F8F8F8;
 $brown: #a4a4a4;
+$red: #ac212b;
 
 body,
 h1,
@@ -359,6 +376,27 @@ h20 {
   padding-bottom: 20px;
 }
 
+
+h21 {
+  font-family: $nexa-bold;
+  font-weight: 200;
+  font-size: 5vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+h22 {
+  font-family: $nexa-light;
+  font-weight: 200;
+  font-size: 5vw;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: $black;
+  padding-right: 5px;
+}
+
+
 a {
   color: #fef6dd;
   //text-decoration: underline;
@@ -419,11 +457,17 @@ p {
   font-weight: 900;
   font-size: 1em;
   line-height: 30px;
-  color: $white;
+  color: $black;
   text-transform: capitalize !important;
   padding: 0;
   margin: 0;
 }
+
+.alert-notify:hover {
+  color: $brown;
+}
+
+
 
 .find-link {
   font-family: "Lato Regular", sans-serif;
@@ -654,10 +698,13 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: $white;
+    color: $black;
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+  .alert-notify:hover {
+    color: $brown;
   }
 
   .find-link {
@@ -936,10 +983,14 @@ label {
     font-weight: 900;
     font-size: 1em;
     line-height: 30px;
-    color: $white;
+    color: $black;
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+
+  .alert-notify:hover {
+    color: $brown;
   }
 
   .find-link {
@@ -1291,6 +1342,27 @@ label {
   }
 
 
+
+  h21 {
+    font-family: $nexa-bold;
+    font-weight: 200;
+    font-size: 5vw;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $red;
+  }
+
+  h22 {
+    font-family: $nexa-light;
+    font-weight: 200;
+    font-size: 5vw;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $black;
+    padding-right: 5px;
+  }
+
+
   .intro-message > h1 {
     font-size: 3em;
     font-family: $montserrat;
@@ -1317,10 +1389,14 @@ label {
     font-weight: 900;
     font-size: 0.9em;
     line-height: 30px;
-    color: $white;
+    color: $black;
     text-transform: capitalize !important;
     padding: 0;
     margin: 0;
+  }
+  
+  .alert-notify:hover {
+    color: $brown;
   }
 
   /* Column Container & Newsletter Container Typography */
@@ -1352,9 +1428,10 @@ label {
     font-size: 0.85em;
     line-height: 21px;
     color: $white;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-bottom: 30px;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    padding: 0;
     border: 0;
     width: 100%;
     text-transform: none;

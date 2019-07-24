@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('meta-title', 'Logistics |  Transport  | Sign In ')
 

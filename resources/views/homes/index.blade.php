@@ -1,11 +1,41 @@
 @extends ('layouts.master')
 
-
-
 @section('content')
 
 <div class="homepage-container">
-    @include('partials.navigation')
+
+
+        <div class="proposal-container">
+            <picture>
+                <img srcset="/images/hero/gare_lyon_large.png 601w,
+                    /images/hero/gare_lyon_small.png 600w"
+                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019 to raise awareness of Transport issues">
+            </picture>
+
+        </div><!-- /.proposal-container -->
+
+        <div class="window-container">
+            <div class="portrait-container">
+                 <picture>
+                <img srcset="/images/hero/my-picture-large.png 601w,
+                    /images/hero/my-picture-small.png 600w"
+                    alt="Sehinde is standing against a grey wall with a polkadot suit with a blue tie">
+                 </picture>    
+            </div><!-- /.proposal-container -->
+            <div class="explain-container">
+                <img srcset="/images/hero/rail_profile_large.png 601w,
+                    /images/hero/rail_profile_small.png 600w"
+                    alt="Our profile explains about the fragmentation of the rail industry and we can find a solution to your Transport & Logistics problems.">
+                 
+
+                    <div class="button-container">
+                        <a href="https://www.facebook.com/groups/985826211807341/?ref=bookmarks"><button type="submit" class="btn btn-large">Join The Diverse Coder Network</button></a>
+                    </div><!-- /.button-container -->
+            </div><!-- /.explain-container -->
+
+        </div><!-- /.window-container -->
+
+
         <div class="hero-container">
             <h7 id="up"></h7>
                 <div class="logo-header">
@@ -13,12 +43,21 @@
                 </div><!-- /.logo-header -->
 
                 <div class="slogan-container">
-                    <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
+                    <div class="what-container">
+                        <h14 class="is--beige is--capitals">Logistics | Transport | Innovation</h14>
+                    </div>
+                    <div class="network-container">      
+                        <h14 class="is--beige is--capitals">Part of the DiverseCoder Network</h14>
+                    </div> 
                 </div><!-- /.slogan-container -->
+
+                   
+
                 <div class="read-container">
                     <a href="#services"><button type="submit" class="btn btn-secondary">Read More</button></a>
+                   
                 </div><!-- /.read-container -->
-
+        
                 <div class="jump-to-about">
                     <a href="#services"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div><!-- /.back-to-top -->
@@ -32,20 +71,31 @@
                 <picture>
                     <img srcset="/images/hero/desktop-large-one.png 601w,
                           /images/hero/desktop-small-one.png 600w"
-                         alt="Want to learn the latest blockchain technology ? We build these apps with a focus on transport">
+                         alt="We will teach you all you need to know about Transport and Logistics">
                 </picture>
             </div><!-- /.slogan-image -->
         </div><!-- /.services-container -->
 
 
         <div class="our-container">
-            <h7 id="about"></h7>
+            <h7 id="who"></h7>
                 <div class="our-heading">
                      <h20>Who</h20>   
                 </div><!-- /.our-heading -->
 
+                <div class="alert-container">
+                        <div id="root">
+                            <!-- Using the Alert component -->
+                            <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
+            
+                        </div><!-- /#app -->
+                </div><!-- /.alert-container -->
+
+
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xt9LBnXpSzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+                
+        </div><!-- /.our-container -->
 
         <div class="services-container">
             <h7 id="services"></h7>
@@ -59,49 +109,28 @@
         </div><!-- /.services-container -->
 
 
-        <div class="about-container">
-            <h7 id="about"></h7>
-                <div class="about-heading">
-                    <h12>Ab</h12><h13>out</h13><h12> Us</h12>
-                </div><!-- /.about-heading -->
-
-<div class="alert-container">
-            <div id="root">
-                <!-- Using the Alert component -->
-                <p class="fourthtext"><message body= "Our website uses cookies. By agreeing to access this site you are agreeing to their use."></message></p>
-
-            </div><!-- /#app -->
-        </div><!-- /.alert-container -->
-                <div class="memes-container">
-                    <div class="opinion-picture">
-                        <img src="/images/assets/track.png" class="reduce" alt="Transport a picture of a bent track">
-                    </div><!-- /.opinion-container -->
-
-                    <div class="opinion">
-                        <h16>"My model Hornby 125 train set didn't stay on the track because it had power supply issues!"</span></h16>
-                    </div><!-- /.opinion -->
-
-                   
-                </div><!-- /.memes-container -->
-
-                <div class="memes-container">
-                    <div class="opinion-picture">
-                        <img src="/images/assets/siri.png" class="reduce" alt="Blockchain Infrastructure and a picture of an iphone">
-                    </div><!-- /.opinion-container -->
-
-                    <div class="opinion">
-
-                        <h16> "Question: Hey Siri who is your girlfriend ? "</h16>
+        <div class="window-container">
+            <div class="guide-container">
+                <img srcset="/images/hero/rail_guide_large.png 601w,
+                /images/hero/rail_guide_small.png 600w"
+                alt="Download My Free Rail Signalling Guide">
+                <div class="brown-button-container">
+                        <a href="https://mailchi.mp/be57486c1731/signals"><button type="submit" class="btn btn-brown">Download Now</button></a>
+                </div><!-- /.brown-button-container -->
+                
+            </div><!-- /.guide-container -->
+            <div class="red-container">
                     
-                    </div><!-- /.opinion -->
+                <img srcset="/images/hero/diversepane-large.png 601w,
+                    /images/hero/diversepane-small.png 600w"
+                    alt="The diverse coder emblem explaining about the importance of new technology in every day transportation for Transport and Logistics">
 
-                    <div class="opinion">
-
-                        <h16> "Answer: I will leave the relations to the databases"</h16>
+                    <div class="red-button-container">
+                            <a href="https://www.youtube.com/channel/UCTZEUJh2cANK54ejYPvCEHQ"><button type="submit" class="btn btn-white">Watch Now</button></a>
+                    </div><!-- /.button-container -->
                     
-                    </div><!-- /.opinion -->
-
                     
+<<<<<<< HEAD
                 </div><!-- /.memes-container -->
 
                     <div class="who-container">
@@ -197,18 +226,25 @@
     <div class="green-container">
 
     </div><!-- /.green-container -->
+=======
+            </div><!-- /.red-container -->
 
+        </div><!-- /.window-container -->
+>>>>>>> mixed
+
+    
     <div class="portfolio-container">
         <h7 id="portfolio"></h7>
-        <div class="about-heading is--padded-b50">
+        <div class="about-heading is--padded-b50 is--padded-t40">
             <h12>Po</h12><h13>rtfo</h13><h12>lio</h12>
         </div><!-- /.about-heading -->
 
+        
             <div class="projects-container">
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
+                        <img alt="Transport, Logistics and the Great Green Gooseberry website" srcset="/images/showcase/goose-large.png 900w,
                         /images/showcase/goose-medium.png 640w,
                         /images/showcase/goose-medium.png 420w">
 
@@ -223,7 +259,7 @@
 
                 <div class="top-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
+                        <img alt="Transport, Logistics and the Gamestation website" srcset="/images/showcase/games-large.png 900w,
                         /images/showcase/games-medium.png 640w,
                         /images/showcase/games-medium.png 420w">
 
@@ -238,7 +274,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
+                        <img alt="Transport, Logistics and the Nina Naustdal Couture Fashion website" srcset="/images/showcase/couture-large.png 1280w,
                         /images/showcase/couture-medium.png 640w,
                         /images/showcase/couture-medium.png 420w">
 
@@ -252,7 +288,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
+                        <img alt="Transport, Logistics and the Oliver Goldsmith Fashionable Sunglasses website" srcset="/images/showcase/goldsmith-large.png 1280w,
                         /images/showcase/goldsmith-medium.png 640w,
                         /images/showcase/goldsmith-medium.png 420w">
 
@@ -268,7 +304,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
+                        <img alt="Transport, Logistics and the Led Zeppelin Tribute Concert Website" srcset="/images/showcase/zep-large.png 1280w,
                         /images/showcase/zep-medium.png 640w,
                         /images/showcase/zep-medium.png 420w">
 
@@ -282,7 +318,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
+                        <img alt="Transport, Logistics and the 7 Digital Official Music Download Website" srcset="/images/showcase/digital-large.png 1280w,
                         /images/showcase/digital-medium.png 640w,
                         /images/showcase/digital-medium.png 420w">
 
@@ -296,7 +332,7 @@
 
                 <div class="lower-portfolio">
                     <figure>
-                        <img alt="Web Development Services and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
+                        <img alt="Transport, Logistics and the Gillian Mckeith Wellness and Weight Loss Club Website" srcset="/images/showcase/gillian-large.png 1280w,
                         /images/showcase/gillian-medium.png 640w,
                         /images/showcase/gillian-medium.png 420w">
 
@@ -309,9 +345,6 @@
 
                 </div><!-- /.lower-portfolio -->
 
-
-
-
             </div><!-- /.projects-container -->
 
 
@@ -320,30 +353,32 @@
         </div><!-- /.back-to-top -->
     </div><!-- /.portfolio-container -->
 
-    <div class="grey-container">
-        
-    </div><!-- /.grey-container -->
+    <div class="feed-container">
+            
 
+        <ul class="juicer-feed" data-feed-id="thediversecoder" data-per="6"><h1 class="referral"><a href="https://www.juicer.io"></a></h1></ul>
+        <div class="jump-to-top">
+            <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
+        </div><!-- /.jump-to-top -->
+    </div><!-- /.feed-container -->
 
     <div class="contact-container">
-            <h7 id="contact"></h7>
-                <div class="about-heading is--padded-b50">
-                    <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
-                </div><!-- /.about-heading -->
+        <h7 id="contact"></h7>
+            <div class="about-heading is--padded-b50 is--padded-t40">
+                <h12 class="is--beige">Co<h15 class="is--beige">nta</h15>ct Us</h12>
+            </div><!-- /.about-heading -->
 
-            <div class="contact-text">
-                <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
-                <h5 class="is--beige text-transform">Monday through to Friday</h5>
-                <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
-                <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
-            </div><!-- /.text-container -->
+        <div class="contact-text">
+            <h5 class="is--beige text-transform">Email: info@ormrepo.co.uk</h5>
+            <h5 class="is--beige text-transform">Monday through to Friday</h5>
+            <h5 class="is--beige text-transform">Opening Hours: 9am - 5pm</h5>
+            <h5 class="is--beige text-transform">Telephone: 07512 305773</h5>
+        </div><!-- /.text-container -->
 
-            <div class="jump-to-top">
-                <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
-            </div><!-- /.jump-to-top -->
-        </div><!-- /.contact-container -->
+        <div class="jump-to-top">
+            <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>
+        </div><!-- /.jump-to-top -->
+</div><!-- /.contact-container -->
 
-    @include('partials.footer')
 </div><!-- /.homepage-container -->
 @endsection
-

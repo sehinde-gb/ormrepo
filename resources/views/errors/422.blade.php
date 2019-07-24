@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('meta-title', '422 Unprocessable Entity')
 

@@ -21,9 +21,8 @@ class EventServiceProvider extends ServiceProvider
         ],
         \App\Events\BlogWasUpdated::class => [
             \App\Listeners\SendUpdateNotification::class,
-        ],
+        ]
 
-        
     ];
 
     /**

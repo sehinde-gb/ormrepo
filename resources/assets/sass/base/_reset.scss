@@ -22,3 +22,16 @@ body {
 li {
   color: white;
 }
+
+.juicer-feed .j-paginate {
+  border: 2px solid white !important;
+  color: white !important;
+
+}
+
+
+
+.j-paginate:hover {
+  color: black !important;
+  background-color: #8f5c3a !important;
+}

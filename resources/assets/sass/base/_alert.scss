@@ -1,12 +1,12 @@
 .alert-container {
   width: 100%;
   flex: 0 0 100%;
+  padding-bottom: 50px;
 }
 
 .alert-button {
-  color: #f0955f;
+  color: #8f4f24 !important;
   height: 22px;
-  background-color: #f0955f;
   border: none;
   padding-left: 5px;
 }
@@ -22,11 +22,11 @@ strong {
   .alert-container {
     width: 100%;
     flex: 0 0 100%;
+    padding-bottom: 50px;
   }
 
   .alert-button {
-    color: #f0955f;
-    background-color: #f0955f;
+    color: #8f4f24 !important;
     border: none;
     height: 22px;
     padding-left: 5px;
@@ -48,8 +48,7 @@ strong {
   }
 
   .alert-button {
-    color: #f0955f;
-    background-color: #f0955f;
+    color: #8f4f24 !important;
     border: none;
     height: 22px;
     padding-left: 5px;
@@ -71,8 +70,7 @@ strong {
   }
 
   .alert-button {
-    color: #f0955f;
-    background-color: #f0955f;
+    color: #8f4f24!important;
     border: none;
     height: 20px;
     margin: 0;

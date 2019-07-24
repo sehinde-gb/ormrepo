@@ -25,6 +25,7 @@
     <!-- Calendly badge widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="preload (or prerender)" href="//disqus.com">
+    <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/sehinde', text: 'Schedule time with me', color: '#8f5c3a', branding: true});</script>
 <!-- Calendly badge widget end -->
@@ -51,10 +52,13 @@
 
 @include('partials.status')
 
-
+@include('partials.navigation')
 
 @yield('content')
 
+@include('partials.footer')
+
+<script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -72,10 +76,14 @@
     var simplemde = new SimpleMDE({ element: document.getElementById("summernote") });
 </script>
 
+
+
 <script type="application/javascript" src="/js/bootstrap.js"></script>
 
 <script type="application/javascript" src="/dist/js/sweetalert.min.js"></script>
 @include('flash')
+
+
 {{-- Show password--}}
 <script src="/js/password.js"></script>
 <script>
@@ -154,10 +162,13 @@
 </script>
 
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script type="text/javascript">
     $('select').select2();
 </script>
+
+
 
 @yield('slip')
 
@@ -179,7 +190,7 @@
 </script>
 
 <script type="application/javascript" src="{{ mix('/js/app.js') }}" data-turbolinks-suppress-warning></script>
-
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3c9ca0fce5f540adb6eefe51a","lid":"5fafe83b2c","uniqueMethods":true}) })</script>
 
 
 </body>

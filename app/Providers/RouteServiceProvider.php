@@ -31,8 +31,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::bind('tags', function ($name) {
             return Tag::where('name', $name)->firstOrFail();
         });
-
-       
     }
 
     /**

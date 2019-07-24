@@ -1990,6 +1990,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -2082,7 +2084,7 @@ window.Echo.private('user.${userId}')
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(35)();
-exports.push([module.i, "\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 50px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n      width: 100%; \n      height: 200px; \n      background: #f0955f;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 20px;\n        padding-top: 50px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background: #f0955f;\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.orm-message {\n      width: 100%; \n      height: 100px; \n      background: white !important;\n      position: relative;  \n      border-radius: 10px;\n}\n.orm-body {\n        padding-left: 200px;\n        padding-top: 2px;\n}\n@media screen and (min-width: 981px) and (max-width: 1381px) {\n.orm-message {\n      background: white !important;  \n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;  \n      overflow: hidden;\n}\n.orm-body {\n        padding-left: 200px;\n}\n}\n@media screen and (min-width: 481px) and (max-width: 980px) {\n.orm-message {\n      background: white !important;\n      width: 100%; \n      height: 100px; \n      position: relative;  \n      border-radius: 10px;\n      overflow: hidden;\n}\n.orm-body {\n        padding-left: 20px;\n}\n}\n@media all and (min-width: 100px) and (max-width: 480px) {\n.orm-message {\n        background: white !important;\n        height: 150px;\n        padding-top: 10px;\n        padding-left: 10px;\n        margin: 0;\n        border-radius: 2px;\n        width: 100%;\n        overflow: hidden;\n}\n.orm-body {\n        padding-left: 5px;\n        padding-right: 5px;\n        padding-top: 10px\n}\n}\n\n\n", ""]);
 
 /***/ }),
 /* 35 */
@@ -29909,7 +29911,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.hideModal
     }
   }, [_c('i', {
-    staticClass: "fa fa-times fa-4x",
+    staticClass: "fa fa-times",
     attrs: {
       "aria-hidden": "true"
     }
@@ -29917,7 +29919,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "orm-body"
   }, [_c('h4', {
     staticClass: "alert-notify"
-  }, [_vm._v(_vm._s(_vm.body) + "\n                 "), _c('a', {
+  }, [_vm._v(_vm._s(_vm.body) + "\n                 \n                 "), _c('a', {
+    staticClass: "alert-notify",
     attrs: {
       "href": "https://ormrepo.co.uk/cookie"
     }

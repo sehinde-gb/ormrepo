@@ -12,13 +12,10 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="/blogs">Posts</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                              
-                   
+                    <li><a href="/coaching">Coaching</a></li>
+                    <li><a href="/blogs">Blog</a></li>
                 </ul>
-            </div><!-- /.menu -->
+            </div><!-- /.right-menu -->
         @else
 
             <div class="logo-heading">
@@ -34,9 +31,9 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="admin/blogs">Posts</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/coaching">Coaching</a></li>
+                    <li><a href="/admin/blogs">Blog</a></li>
+                    
                     <li><a href="{{ url('/logout') }}"
 
                            onclick="event.preventDefault();
@@ -48,12 +45,11 @@
                         </form>
                     </li>
                 </ul>
-            </div><!-- /.menu -->
+            </div><!-- /.right-menu -->
 
 
         @endif
 
     </nav>
 </header>
-
 
