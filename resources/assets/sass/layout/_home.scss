@@ -6,8 +6,13 @@ $lato-bold: 'Lato Bold', sans-serif;
 $montserrat-bold: 'Montserrat Bold', sans-serif;
 
 .proposal-container {
-  width: 100%;
-  min-height: 100%;
+  max-width: 80%;
+  min-height: 80em;
+  margin: auto;
+  background-image: url('/images/hero/gare_lyon_large.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .window-container {
@@ -19,7 +24,7 @@ $montserrat-bold: 'Montserrat Bold', sans-serif;
 
 .portrait-container {
   height: 100%;
-  width: 100%;
+  width: 80%;
   background-color: white;
 }
 
@@ -383,8 +388,13 @@ textarea.form-control {
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 80%;
+    min-height: 80em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_large.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .window-container {
@@ -396,7 +406,7 @@ textarea.form-control {
 
   .portrait-container {
     height: 100%;
-    width: 100%;
+    width: 80%;
     background-color: white;
   }
 
@@ -764,12 +774,18 @@ textarea.form-control {
   }
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    min-height: 60em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_large.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .window-container {
     display: flex;
+    flex-direction: column;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -1141,8 +1157,13 @@ textarea.form-control {
   }
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    min-height: 60em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_large.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .window-container {
@@ -1246,9 +1267,7 @@ textarea.form-control {
     padding-bottom: 50px;
   }
 
-  
 
-  
 
   .portfolio-container {
     min-height: 3500px;

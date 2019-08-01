@@ -6,12 +6,7 @@
 
 
         <div class="proposal-container">
-            <picture>
-                <img srcset="/images/hero/gare_lyon_large.png 601w,
-                    /images/hero/gare_lyon_small.png 600w"
-                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019 to raise awareness of Transport issues">
-            </picture>
-
+            
         </div><!-- /.proposal-container -->
 
         <div class="window-container">
@@ -130,107 +125,9 @@
                     </div><!-- /.button-container -->
                     
                     
-<<<<<<< HEAD
-                </div><!-- /.memes-container -->
-
-                    <div class="who-container">
-
-                       <div class="monitor-container">
-                          <div class="icon-container">
-                              <img src="/images/assets/tailor.png"
-                                   class="reduce" alt="Web Development Services and the tailor's pin">
-                          </div><!-- /.icon-container -->
-
-                           <div class="title-container">
-                                <h14>Custom Fitted</h14>
-                           </div><!-- /.title-container -->
-
-                           <div class="text-container">
-                            <h18 class="aligned">We use open source back-end systems. This accurately allows us to give your business the exact features and options you expect from your web development services; tweaking it to your taste and specifics.
-                            </h18>
-                           </div><!-- /.text-container -->
-
-                       </div><!-- /.monitor-container -->
-                            <div class="gear-container">
-                                <div class="icon-container">
-                                    <img src="/images/assets/blockchain.png"
-                                         alt="Blockchain Infrastructure and a picture of the blockchain">
-                                </div><!-- /.icon-container -->
-
-                                <div class="title-container">
-                                    <h14> New Tech</h14>
-                                </div><!-- /.title-container -->
-                                <div class="text-container">
-                                    <h18 class="aligned">We build the next generation of applications using blockchain infrastructure so that your apps have enhanced security, improved traceability & greater transparency resulting in reduced costs to you and your business.
-                                    </h18>
-                                </div><!-- /.text-container -->
-
-                            </div><!-- /.gear-container -->
-
-                                <div class="free-container">
-                                    <div class="icon-container">
-                                        <img src="/images/assets/online.png"
-                                             alt="Training and a laptop that has a press play button this is an online training course">
-                                    </div><!-- /.icon-container -->
-
-                                    <div class="title-container">
-                                        <h14>Online Courses</h14>
-                                    </div><!-- /.title-container -->
-                                    <div class="text-container">
-                                        <h18 class="aligned">We deliver a suite of online and offline courses where we will cultivate your passion for understanding new technology. Within a holistic and humanistic way so that your light can shine brightly throughout your career.  </h18>
-                                    </div><!-- /.text-container -->
-                                </div><!-- /.free-container -->
-                    </div><!-- /.who-container -->
-
-                    <div class="memes-container">
-                        <div class="opinion-picture">
-                            <img src="/images/assets/training.png"
-                                 alt="Blockchain Infrastructure and a picture of a classroom that is full of students">
-                        </div><!-- /.opinion-picture -->
-                        <div class="opinion">
-                            <h16>"TechNation report states that there is a 50% shortage of technical skills"</h16>
-                            
-                        </div><!-- /.opinion -->
-
-                        <div class="opinion">
-                            <h16>"Our courses will help tackle this growing inequity"</h16>
-                            
-                        </div><!-- /.opinion -->
-
-
-
-                    </div><!-- /.memes-container -->
-
-                    <div class="memes-container">
-                        <div class="opinion-picture">
-                            <img src="/images/assets/plane.png"
-                                 alt="Transport and a picture of a passenger plane">
-                        </div><!-- /.opinion-picture -->
-                        <div class="opinion">
-                            <h16>"Question: How do you convert a closed centralised baggage system in to an open decentralised baggage system?"</h16>
-                        </div><!-- /.opinion -->
-
-                        <div class="opinion">
-                            <h16>"Answer: A blockchain based baggage system with waypoints can help improve passenger trust in baggage systems."</h16>
-                        </div><!-- /.opinion -->
-                        
-                    </div><!-- /.memes-container -->
-
-                    
-
-                    <div class="jump-to-top">
-                        <a href="#top" style= "color: #000000;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #000000;" aria-hidden="true"></i></a>
-                    </div><!-- /.jump-to-top -->
-        </div><!-- /.about-container -->
-
-    <div class="green-container">
-
-    </div><!-- /.green-container -->
-=======
             </div><!-- /.red-container -->
 
         </div><!-- /.window-container -->
->>>>>>> mixed
 
     
     <div class="portfolio-container">
@@ -354,8 +251,6 @@
     </div><!-- /.portfolio-container -->
 
     <div class="feed-container">
-            
-
         <ul class="juicer-feed" data-feed-id="thediversecoder" data-per="6"><h1 class="referral"><a href="https://www.juicer.io"></a></h1></ul>
         <div class="jump-to-top">
             <a href="#top" style= "color: #FFFFFF;">Back to top<i class="fa fa-angle-double-up fa-4x" style= "color: #FFFFFF;" aria-hidden="true"></i></a>

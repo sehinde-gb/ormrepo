@@ -12,7 +12,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/coaching">Coaching</a></li>
+                
                     <li><a href="/blogs">Blog</a></li>
                 </ul>
             </div><!-- /.right-menu -->
@@ -31,7 +31,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/coaching">Coaching</a></li>
+                   
                     <li><a href="/admin/blogs">Blog</a></li>
                     
                     <li><a href="{{ url('/logout') }}"

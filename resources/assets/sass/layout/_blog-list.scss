@@ -210,12 +210,13 @@
   }
 
   .collection {
-    padding-top: 150px;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding-bottom: 50px;
-    padding-left: 150px;
+    align-items: left;
+    justify-items: left;
+    //padding-bottom: 50px;
+    //padding-left: 150px;
   }
 
   .column {

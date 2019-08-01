@@ -10,32 +10,17 @@
     <div class="hero">
             
         <div class="first-container">
-            <div class="row">
-                    
+            <div class="row">    
                 <div class="col-lg-12">
-                        
                     <div class="intro-slider">
                         <div class="collection">
-                                
-                             
-
-
-                                    <h8>CHAIN</h8><h9><span class="underlined">B</span>LOG</h9>  
+                                    <h8 class="is--padded-l50">THECHAIN</h8><h9><span class="underlined">B</span>LOG</h9>  
                                     <picture>
                                          <img srcset="/images/hero/chain-large.png 601w,
                                              /images/hero/chain-small.png 600w"
                                              alt="Shore Up Your Supply Chain With New Tech">
-                                     </picture>
-                                     
-                           
-                            
+                                     </picture>         
                         </div><!-- /.collection -->
-<<<<<<< HEAD
-                                            
-=======
-                         
-                        
->>>>>>> mixed
                     </div><!-- .intro-slider -->
        
 

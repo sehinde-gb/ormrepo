@@ -127,6 +127,11 @@ $primary-color: #FFFFFF;
   padding-top: 5px;
 }
 
+.is--padded-l50 {
+  padding-left: 50px;
+}
+
+
 .is--padded-t10 {
   padding-top: 10px;
 }
@@ -541,6 +546,9 @@ $primary-color: #FFFFFF;
     margin-bottom: 20px;
   }
 
+  .is--padded-l50 {
+    padding-left: 50px;
+  }
 
 
 
@@ -705,6 +713,10 @@ $primary-color: #FFFFFF;
 
   .is--margin-bottom20 {
     margin-bottom: 20px;
+  }
+
+  .is--padded-l50 {
+    padding-left: 50px;
   }
 
 
