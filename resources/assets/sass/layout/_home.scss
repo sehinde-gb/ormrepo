@@ -1163,8 +1163,8 @@ textarea.form-control {
   .window-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    align-items: flex-start;
+    justify-items: flex-start;
     height: 100%;
     width: 100%;
   }  
@@ -1263,7 +1263,7 @@ textarea.form-control {
   
 
   .portfolio-container {
-    min-height: 3500px;
+    min-height: 3200px;
     background-color: #f3f3f3;
     width: 100%;
     display: flex;
@@ -1280,8 +1280,8 @@ textarea.form-control {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    align-items: flex-start;
+    justify-items: flex-start;
     flex-wrap: nowrap;
   }
 
