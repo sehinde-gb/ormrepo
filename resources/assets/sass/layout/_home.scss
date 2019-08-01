@@ -6,8 +6,13 @@ $lato-bold: 'Lato Bold', sans-serif;
 $montserrat-bold: 'Montserrat Bold', sans-serif;
 
 .proposal-container {
-  width: 100%;
-  min-height: 100%;
+  max-width: 80%;
+  min-height: 100em;
+  margin: auto;
+  background-image: url('/images/hero/gare_lyon_large.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .window-container {
@@ -292,8 +297,6 @@ figcaption a:hover {
   width: 50%;
 }
 
-
-
 .contact-container {
   height: 500px;
   width: 100%;
@@ -383,9 +386,15 @@ textarea.form-control {
 @media screen and (min-width: 981px) and (max-width: 1381px) {
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 80%;
+    min-height: 100em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_large.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  
 
   .window-container {
     display: flex;
@@ -405,7 +414,6 @@ textarea.form-control {
     width: 100%;
     background-color: white;
   }
-
 
   .hero-container {
     width: 100vw;
@@ -428,7 +436,6 @@ textarea.form-control {
       background-color: #8f5c3a;
     }
   }
-
 
   .logo-header {
     height: 150px;
@@ -753,7 +760,6 @@ textarea.form-control {
   }
 
 
-
 }
 
 
@@ -764,9 +770,15 @@ textarea.form-control {
   }
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    min-height: 100em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_small.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
   }
+
 
   .window-container {
     display: flex;
@@ -901,8 +913,6 @@ textarea.form-control {
     align-items: center;
     justify-items: center;
   }
-
-
 
   .projects-container {
     min-height: 900px;
@@ -1141,8 +1151,13 @@ textarea.form-control {
   }
 
   .proposal-container {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    min-height: 100em;
+    margin: auto;
+    background-image: url('/images/hero/gare_lyon_small.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
   }
 
   .window-container {
@@ -1245,9 +1260,6 @@ textarea.form-control {
     padding-top: 70px;
     padding-bottom: 50px;
   }
-
-  
-
   
 
   .portfolio-container {
@@ -1394,9 +1406,6 @@ textarea.form-control {
   }
 
 
-
-
-
   .contact-container {
     height: 500px;
     width: 100%;
@@ -1482,3 +1491,4 @@ textarea.form-control {
   }  
 
 }
+

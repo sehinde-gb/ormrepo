@@ -6,11 +6,7 @@
 
 
         <div class="proposal-container">
-            <picture>
-                <img srcset="/images/hero/gare_lyon_large.png 601w,
-                    /images/hero/gare_lyon_small.png 600w"
-                    alt="A picture of Sehinde taking a selfie at Gare Du Lyon, Paris in May 2019 to raise awareness of Transport issues">
-            </picture>
+            
 
         </div><!-- /.proposal-container -->
 

@@ -190,8 +190,10 @@
 </script>
 
 <script type="application/javascript" src="{{ mix('/js/app.js') }}" data-turbolinks-suppress-warning></script>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3c9ca0fce5f540adb6eefe51a","lid":"5fafe83b2c","uniqueMethods":true}) })</script>
 
+{{-- Mailchimp signalling ebook script 
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3c9ca0fce5f540adb6eefe51a","lid":"5fafe83b2c","uniqueMethods":true}) })</script>
+--}}
 
 </body>
 
