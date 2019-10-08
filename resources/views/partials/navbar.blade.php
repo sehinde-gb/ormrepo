@@ -12,7 +12,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/blogs">Blog</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
                 </ul>
             </div><!-- /.right-menu -->
 

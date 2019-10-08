@@ -103,7 +103,7 @@
                 <div class="footer-navigation">
                     <ul>
                         <li class="even-spacing"><a href="/" class="foot-links">About</a></li>
-                        <li class="even-spacing"><a href="/blogs" class="foot-links">Blog</a></li>
+                        <li class="even-spacing"><a href="/blogs" class="foot-links">Blogs</a></li>
                         <li class="even-spacing"><a href="/cookie" class="foot-links">Cookie Policy</a></li>
                         <li class="even-spacing"><a href="/" class="foot-links">Portfolio</a></li>
                         <li class="even-spacing"><a href="/privacy" class="foot-links">Privacy Policy</a></li>
