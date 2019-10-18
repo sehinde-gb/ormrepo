@@ -15,8 +15,8 @@
         <a href="/"><button type="submit" class="btn btn-highlights">Home</button></a>
 
         <a href="https://youtu.be/-iilpXv_07A"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 1</button></a>
-        <a href="https://youtu.be/7I0fQnx-l0M"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 2</button></a>"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 1</button></a>
-  
+        <a href="https://youtu.be/7I0fQnx-l0M"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 2</button></a>
+        <a href=" https://youtu.be/aPnVuZQe9kE"><button type="submit" class="btn btn-highlights">How To Turn Your CHOSEN NICHE In To A Success</button></a>
 </div><!-- /.coder-container -->
 
 @endsection
