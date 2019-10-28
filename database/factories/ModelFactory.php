@@ -11,21 +11,21 @@
 |
 */
 
-    /** @var \Illuminate\Database\Eloquent\Factory $factory */
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+use Carbon\Carbon;
 use Illuminate\Support\Str;
-    use Carbon\Carbon;
 
-    $factory->define(App\User::class, function (Faker\Generator $faker) {
-        static $password;
+$factory->define(App\User::class, function (Faker\Generator $faker) {
+    static $password;
 
-        return [
+    return [
         'name' => $faker->name,
         'username' => $faker->userName,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => Str::random(10),
         ];
-    });
+});
 
     $factory->define(App\Blog::class, function (Faker\Generator $faker) {
         return [
