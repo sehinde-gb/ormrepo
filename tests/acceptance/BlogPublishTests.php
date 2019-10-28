@@ -1,15 +1,15 @@
 <?php
+
 namespace tests\acceptance;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class BlogPublishTests extends \BrowserKitTestCase
 {
-
     /** @test */
-    function testPublishIsSuccessful()
+    public function testPublishIsSuccessful()
     {
         $this->visit('/login')
             ->type('ormrepo@gmail.com', 'email')
@@ -28,7 +28,7 @@ class BlogPublishTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function testPublishisUnSuccessful()
+    public function testPublishisUnSuccessful()
     {
         $this->visit('/login')
             ->type('ormrepo@gmail.com', 'email')

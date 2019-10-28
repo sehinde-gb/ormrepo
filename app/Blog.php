@@ -2,21 +2,19 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
-use Carbon\Carbon;
-use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Scout\Searchable;
 
 class Blog extends Model
 {
-
     use  Sluggable, SluggableScopeHelpers, Searchable, Notifiable;
 
     // Add the fillable fields so that they are mass-assignable on this model.
-    protected $fillable = ['title','series', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag' ];
-
+    protected $fillable = ['title', 'series', 'feat_image', 'body', 'slug', 'user_id', 'published_at', 'tag'];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -27,13 +25,13 @@ class Blog extends Model
     {
         return [
             'slug' => [
-                'source' => 'title'
-            ]
+                'source' => 'title',
+            ],
         ];
     }
 
     /**
-     * Get the tags associated with a given blog
+     * Get the tags associated with a given blog.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
@@ -52,8 +50,6 @@ class Blog extends Model
         return $this->belongsTo(\App\User::class);
     }
 
-
-
     /**
      * Return a collection of search results.
      *
@@ -62,11 +58,8 @@ class Blog extends Model
      */
     public function scopeSearch($query)
     {
-        return Blog::search($query)->get()->all();
+        return self::search($query)->get()->all();
     }
-
-
-
 
     /**
      * Find the published articles in a query scope.
@@ -77,7 +70,6 @@ class Blog extends Model
     {
         $query->where('published_at', '<=', Carbon::now()->toDateTimeString());
     }
-
 
     /**
      * Find the unpublished articles in a query scope.
@@ -101,7 +93,6 @@ class Blog extends Model
         return $query->orderBy('reads', 'desc')->take($take)->get();
     }
 
-
     /**
      * Returns the latest published blog post.
      *
@@ -121,8 +112,6 @@ class Blog extends Model
     {
         $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
     }
-
-
 
     /*
      * Return the published attribute and convert to
@@ -160,9 +149,8 @@ class Blog extends Model
         return Carbon::parse($date)->format('d-m-Y');
     }
 
-
     /**
-     * Accessor
+     * Accessor.
      *
      * Get the taglist attribute id and return it to the form.
      *
@@ -183,7 +171,7 @@ class Blog extends Model
     }
 
     /**
-     * Specify a Slack webhook to send notifications to
+     * Specify a Slack webhook to send notifications to.
      * @return mixed
      * @internal param $value
      */

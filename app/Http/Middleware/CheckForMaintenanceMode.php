@@ -3,13 +3,12 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Http\Request;
 
 class CheckForMaintenanceMode implements Middleware
 {
-
     protected $request;
     protected $app;
 
@@ -22,7 +21,7 @@ class CheckForMaintenanceMode implements Middleware
     public function handle($request, Closure $next)
     {
         if ($this->app->isDownForMaintenance() &&
-            !in_array($this->request->getClientIp(), ['86.10.190.248', '86.4.7.24'])) {
+            ! in_array($this->request->getClientIp(), ['86.10.190.248', '86.4.7.24'])) {
             return response('Be right back!', 503);
         }
 

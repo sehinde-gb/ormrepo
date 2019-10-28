@@ -2,15 +2,14 @@
 
 namespace tests\acceptance;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class BlogLinkTests extends \BrowserKitTestCase
 {
-
     /** @test */
-    function testLoremLink()
+    public function testLoremLink()
     {
         $this->visit('/');
 
@@ -19,9 +18,8 @@ class BlogLinkTests extends \BrowserKitTestCase
         $this->seePageIs('http://ormblog/blogs/1');
     }
 
-
     /** @test */
-    function testHelloLink()
+    public function testHelloLink()
     {
         $this->visit('/');
 

@@ -15,9 +15,9 @@ class DiscusHeaders
      */
     public function handle($request, Closure $next)
     {
-
         return $next($request);
         $response->header('X-Frame-Options', 'ALLOW FROM https://games-ormrepo-co-uk.disqus.com/count.js');
+
         return $response;
     }
 }

@@ -2,13 +2,12 @@
 
 namespace tests\functional\controller;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class PagesControllerTests extends \BrowserKitTestCase
 {
-
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
     /** @test */
@@ -18,7 +17,6 @@ class PagesControllerTests extends \BrowserKitTestCase
 
         $this->assertTrue(true);
     }
-
 
     /** @test */
     public function it_calls_the_contact_store_method()

@@ -11,7 +11,7 @@
 |
 */
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
+    /** @var \Illuminate\Database\Eloquent\Factory $factory */
     use Carbon\Carbon;
 
     $factory->define(App\User::class, function (Faker\Generator $faker) {
@@ -27,21 +27,18 @@
     });
 
     $factory->define(App\Blog::class, function (Faker\Generator $faker) {
-
         return [
             'title' => $faker->name,
             'excerpt' => $faker->paragraph,
             'body' => $faker->sentence,
             'slug' => $faker->name,
             'feat_image' => $faker->imageUrl($width = 640, $height = 480),
-            'user_id' => factory(\App\User::class)->create()->id
+            'user_id' => factory(\App\User::class)->create()->id,
 
         ];
     });
 
-
     $factory->define(App\Category::class, function (Faker\Generator $faker) {
-
         return [
             'name' => $faker->unique()->word,
             'slug' => $faker->unique()->word,
@@ -49,7 +46,6 @@
     });
 
     $factory->define(App\Comment::class, function (Faker\Generator $faker) {
-
         return [
             'user_id' => factory(\App\User::class)->create()->id,
             'blog_id' => factory(\App\Blog::class)->create()->id,

@@ -2,19 +2,18 @@
 
 namespace tests\functional\models;
 
+use App\Blog;
 use App\Category;
 use App\Comment;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use App\Blog;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class BlogModelTest extends \BrowserKitTestCase
 {
-
     use   WithoutMiddleware,  DatabaseTransactions;
 
-     /** @test */
-    function it_tests_user_relationship()
+    /** @test */
+    public function it_tests_user_relationship()
     {
         $blog = factory(Blog::class)->create();
 
@@ -22,13 +21,13 @@ class BlogModelTest extends \BrowserKitTestCase
     }
 
     /** @test */
-    function it_tests_categories_relationship()
+    public function it_tests_categories_relationship()
     {
         $blog = factory(Blog::class)->create();
 
         $category = factory(Category::class)->create([
             'name' => 'serom',
-            'slug' => 'help'
+            'slug' => 'help',
         ]);
 
         $blog->categories()->save($category);
@@ -36,9 +35,8 @@ class BlogModelTest extends \BrowserKitTestCase
         $this->assertEquals($category->id, $category->id);
     }
 
-
     /** @test */
-    function it_tests_comments_relationship()
+    public function it_tests_comments_relationship()
     {
         $blog = factory(Blog::class)->create();
 
@@ -49,9 +47,8 @@ class BlogModelTest extends \BrowserKitTestCase
         $this->assertEquals($blog->id, $blog->id);
     }
 
-
     /** @test */
-    function it_fetches_trending_blogs()
+    public function it_fetches_trending_blogs()
     {
         // Given
         factory(Blog::class, 2)->create();

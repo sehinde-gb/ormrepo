@@ -17,23 +17,18 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
-
-
     /**
-     * Show the page for the portfolio
+     * Show the page for the portfolio.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function portfolio()
     {
-
         return view('pages.portfolio');
     }
 
-    
-
     /**
-     * Show the page for privacy
+     * Show the page for privacy.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -43,7 +38,7 @@ class PagesController extends Controller
     }
 
     /**
-     * Show the page for the cookie policy
+     * Show the page for the cookie policy.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -53,7 +48,7 @@ class PagesController extends Controller
     }
 
     /**
-     * Show the page for the terms and conditions policy
+     * Show the page for the terms and conditions policy.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -62,21 +57,18 @@ class PagesController extends Controller
         return view('pages.terms');
     }
 
-    
-
-
     /**
-     * Show the page for the Highlights
+     * Show the page for the Highlights.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-     public function highlights()
-     {
-         return view('pages.highlights');
-     }
+    public function highlights()
+    {
+        return view('pages.highlights');
+    }
 
-     /**
-     * Show the page for the Coaching
+    /**
+     * Show the page for the Coaching.
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */

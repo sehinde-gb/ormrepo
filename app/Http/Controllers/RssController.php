@@ -1,17 +1,16 @@
 <?php
+
 namespace App\Http\Controllers;
 
-use App\Exceptions\MethodNotFoundException;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use App\Blog;
+use App\Exceptions\MethodNotFoundException;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 
 class RssController extends Controller
 {
-
     /**
      * Grab the latest blogs and create an RSS Atom feed.
-     *
      */
     public function generate()
     {
@@ -32,16 +31,15 @@ class RssController extends Controller
                 $feed->setShortening(true); // true or false
                 $feed->setTextLimit(100); // maximum length of description text
 
-
                 foreach ($blogs as $blog) {
                     // set item's title, author, url, pubdate, description and content
-                    $feed->add($blog->title, 'Author', url('blogs/' . $blog->id), $blog->created_at, $blog->content, $blog->content);
+                    $feed->add($blog->title, 'Author', url('blogs/'.$blog->id), $blog->created_at, $blog->content, $blog->content);
                 }
             }
         } catch (\Exception $e) {
-                throw new MethodNotFoundException($e->getMessage());
+            throw new MethodNotFoundException($e->getMessage());
         }
 
-                return $feed->render('rss'); // or atom
+        return $feed->render('rss'); // or atom
     }
 }

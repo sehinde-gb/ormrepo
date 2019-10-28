@@ -23,7 +23,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = ['username','name', 'email', 'password', 'password_confirmation', 'slack_url'];
+    protected $fillable = ['username', 'name', 'email', 'password', 'password_confirmation', 'slack_url'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -31,7 +31,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
-
 
     /**
      * A user can have many blogs.
@@ -52,9 +51,6 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Profile');
     }
-
-
-
 
     /**
      * Determines the username for the User Model.
@@ -84,7 +80,6 @@ class User extends Authenticatable
         return Auth::user()->id == $this->id;
     }
 
-
     /**
      * Determines if the user has an admin column within the user's table.
      *
@@ -94,8 +89,6 @@ class User extends Authenticatable
     {
         return $this->admin; // this looks for an admin column in your users table
     }
-
-
 
     /**
      * Route notifications for the Slack channel.
@@ -107,8 +100,6 @@ class User extends Authenticatable
         //return 'https://hooks.slack.com/services/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';
         return $this->slack_url;
     }
-
-    
 
     /**
      * Retrieves Sterling currency for Cashier.

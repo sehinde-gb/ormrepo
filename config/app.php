@@ -166,7 +166,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
 
-
         /*
          * Package Service Providers...
          */
@@ -178,8 +177,6 @@ return [
         Spatie\Sitemap\SitemapServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
-
-
 
         /*
          * Application Service Providers...
