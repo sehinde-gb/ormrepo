@@ -1,15 +1,15 @@
 <?php
+
 namespace tests\acceptance;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class NavigationLinkTests extends \BrowserKitTestCase
 {
-
     /** @test */
-    function testCocheLink()
+    public function testCocheLink()
     {
         $this->visit('/');
 
@@ -19,9 +19,8 @@ class NavigationLinkTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function testRentalLink()
+    public function testRentalLink()
     {
-
         $this->visit('/');
 
         $this->click('Casa Rental');
@@ -29,11 +28,9 @@ class NavigationLinkTests extends \BrowserKitTestCase
         $this->seePageIs('https://casarentals.ormrepo.co.uk');
     }
 
-
     /** @test */
-    function testGamesLink()
+    public function testGamesLink()
     {
-
         $this->visit('/');
 
         $this->click('GamesStation');
@@ -41,10 +38,8 @@ class NavigationLinkTests extends \BrowserKitTestCase
         $this->seePageIs('https://games.ormrepo.co.uk');
     }
 
-
-
     /** @test */
-    function it_clicks_on_the_about_page()
+    public function it_clicks_on_the_about_page()
     {
         $this->visit('/')
              ->click('About')
@@ -52,7 +47,7 @@ class NavigationLinkTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function it_clicks_on_login_page()
+    public function it_clicks_on_login_page()
     {
         $this->visit('/')
             ->click('Login')
@@ -60,16 +55,15 @@ class NavigationLinkTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function it_clicks_on_register_page()
+    public function it_clicks_on_register_page()
     {
         $this->visit('/')
             ->click('Register')
             ->seePageIs('/register');
     }
 
-
     /** @test */
-    function it_clicks_on_rss_page()
+    public function it_clicks_on_rss_page()
     {
         $this->visit('/')
             ->click('Rss')

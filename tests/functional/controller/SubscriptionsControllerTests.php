@@ -2,13 +2,12 @@
 
 namespace tests\functional\controller;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class SubscriptionsControllerTests extends \BrowserKitTestCase
 {
-
     use   WithoutMiddleware, DatabaseMigrations, DatabaseTransactions;
 
     /** @test */

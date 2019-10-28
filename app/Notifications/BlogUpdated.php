@@ -10,8 +10,7 @@ use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 
 /**
- * Class BlogUpdated
- * @package App\Notifications
+ * Class BlogUpdated.
  */
 class BlogUpdated extends Notification implements ShouldQueue
 {
@@ -25,7 +24,6 @@ class BlogUpdated extends Notification implements ShouldQueue
      */
     public $blog;
 
-
     /**
      * BlogUpdated constructor.
      * @param User $user
@@ -33,7 +31,6 @@ class BlogUpdated extends Notification implements ShouldQueue
      */
     public function __construct(User $user, Blog $blog)
     {
-
         $this->user = $user;
         $this->blog = $blog;
     }
@@ -46,7 +43,6 @@ class BlogUpdated extends Notification implements ShouldQueue
     {
         return ['slack'];
     }
-
 
     /**
      * @param $notifiable

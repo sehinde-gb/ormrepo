@@ -12,7 +12,6 @@ class SendUpdateNotification implements ShouldQueue
 
     /**
      * Create the event listener.
-     *
      */
     public function __construct()
     {

@@ -34,13 +34,12 @@ class Handler extends ExceptionHandler
      *
      * @param Exception $exception
      * @return void
-     *
-     *
      */
     public function report(Exception $exception)
     {
         if ($this->shouldReport($exception)) {
         }
+
         return parent::report($exception);
     }
 
@@ -61,7 +60,6 @@ class Handler extends ExceptionHandler
             return parent::render($request, $exception);
         }
 
-
         if ($exception instanceof HttpNotFoundException) {
             return response(view('errors.404'), 404);
 
@@ -74,15 +72,12 @@ class Handler extends ExceptionHandler
             return parent::render($request, $exception);
         }
 
-
         if ($e instanceof ChargeNotFoundException) {
             return response(view('errors.422'), 422);
 
             return parent::render($request, $exception);
         }
     }
-
-
 
     /**
      * Convert an authentication exception into an unauthenticated response.

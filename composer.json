@@ -9,9 +9,9 @@
     "type": "project",
     "require": {
         "php": "^7.1.8",
-        "laravel/framework": "5.8.*",
-        "laravelcollective/html": "5.8.*",
-        "cviebrock/eloquent-sluggable": "4.8",
+        "laravel/framework": "^6.4",
+        "laravelcollective/html": "6.0.*",
+        "cviebrock/eloquent-sluggable": "^6.0.0",
         "simplepie/simplepie": "^1.4",
         "propaganistas/laravel-phone": "^2.8",
         "laravel/scout": "3.0.0",
@@ -23,25 +23,24 @@
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "laravel/tinker": "^1.0.8",
         "guzzlehttp/guzzle": "^6.3",
-        "laravel/horizon": "^1.0",
+        "laravel/horizon": "^3.2.7",
         "fideloper/proxy": "^4.0",
         "pda/pheanstalk": "~4.0",
-        "spatie/laravel-sitemap": "^5.3.1",
-        "spatie/crawler":  "^4.1.0",
+        "spatie/laravel-sitemap": "^5.4",
+        "spatie/crawler": "^4.1.0",
         "kylekatarnls/laravel-carbon-2": "^1.0.0",
         "nesbot/carbon": "2.0.0-beta.2 as 1.25.0",
         "intervention/image": "^2.5"
-
-
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "^7.0",
+        "phpunit/phpunit": "^8.0",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "^4.0",
-        "filp/whoops": "~2.0",
-        "laravel/dusk": "^5.5"
+        "laravel/dusk": "^5.5",
+        "facade/ignition": "^1.4",
+        "nunomaduro/collision": "^3.0"
     },
     "autoload": {
         "classmap": [
@@ -53,7 +52,6 @@
         "psr-4": {
             "App\\": "app/"
         }
-
     },
     "autoload-dev": {
         "classmap": [
@@ -73,17 +71,14 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall"
-            
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ],
-
         "post-autoload-dump": [
-        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-        "@php artisan package:discover"
-      ]
-
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
     },
     "config": {
         "preferred-install": "dist"
@@ -91,7 +86,7 @@
     "extra": {
         "laravel": {
             "dont-discover": [
-              "laravel/dusk"
+                "laravel/dusk"
             ]
         }
     }

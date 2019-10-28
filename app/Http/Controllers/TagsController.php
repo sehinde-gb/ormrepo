@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Tag;
 use App\Exceptions\TagNotFoundException;
+use App\Tag;
+use Illuminate\Http\Request;
 
 class TagsController extends Controller
 {
@@ -33,12 +33,13 @@ class TagsController extends Controller
     public function show($tag)
     {
         try {
-                $blogs = $tag->blogs;
+            $blogs = $tag->blogs;
 
-                $index = 'Search Tags';
+            $index = 'Search Tags';
         } catch (TagNotFoundException $e) {
             throw new TagNotFoundException($e->getMessage());
         }
+
         return view('tags.show', compact('blogs', 'index'));
     }
 }

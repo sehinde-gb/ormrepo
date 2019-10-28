@@ -37,7 +37,5 @@ class MailgunController extends Controller
     public function complaints(Request $request)
     {
         dd($request->all());
-
     }
-
 }
