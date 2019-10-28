@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="breadcrumb-container">
-    {!! Breadcrumbs::render('admin.blogs.create') !!}
+    
 </div><!-- /.breadcrumb-container -->
 
     <div class="form-page">

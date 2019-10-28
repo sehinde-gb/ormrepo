@@ -20,7 +20,6 @@
         "laravel/browser-kit-testing": "^1.0",
         "andreasindal/laravel-markdown": "^1.1.6",
         "laravel/cashier": "~10.0",
-        "davejamesmiller/laravel-breadcrumbs": "^5.3.1",
         "laravel/tinker": "^1.0.8",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/horizon": "^3.2.7",

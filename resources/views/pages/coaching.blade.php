@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="breadcrumb-container">
-    {!! Breadcrumbs::render('coaching') !!}
+    
 </div><!-- /.breadcrumb-container -->
 
 <div class="central-container">

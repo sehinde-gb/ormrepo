@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="breadcrumb-container">
-    {!! Breadcrumbs::render('blogs.show', $blog) !!}
+   
 </div><!-- /.breadcrumb-container -->
 
 

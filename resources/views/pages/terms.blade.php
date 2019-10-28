@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="breadcrumb-container">
-    {!! Breadcrumbs::render('terms') !!}
+    
 </div><!-- /.breadcrumb-container -->
 
     <div class="main-container">

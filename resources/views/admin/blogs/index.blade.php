@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="breadcrumb-container">
-    {!! Breadcrumbs::render('admin.blogs.index') !!}
+    
 </div><!-- /.breadcrumb-container -->
 
     <!-- Page Content -->

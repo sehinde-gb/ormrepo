@@ -120,7 +120,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'daily'),
+    'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
@@ -175,7 +175,6 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
-        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
@@ -187,7 +186,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
-        //Laravel\Tinker\TinkerServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
     ],
 
@@ -216,7 +215,6 @@ return [
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
-        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
         'Event' => Illuminate\Support\Facades\Event::class,
         'Feed' => Roumen\Feed\Feed::class,
         'File' => Illuminate\Support\Facades\File::class,
