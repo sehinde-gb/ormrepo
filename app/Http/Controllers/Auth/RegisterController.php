@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
+use App\Http\Request;
 use App\Notifications\UserRegistered;
 use App\User;
-use Validator;
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Http\Request;
+use Validator;
 
 class RegisterController extends Controller
 {
@@ -33,7 +33,6 @@ class RegisterController extends Controller
 
     /**
      * Create a new controller instance.
-     *
      */
     public function __construct()
     {

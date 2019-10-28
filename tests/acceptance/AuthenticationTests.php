@@ -2,15 +2,14 @@
 
 namespace tests\acceptance;
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class AuthenticationTests extends \BrowserKitTestCase
 {
-
     /** @test */
-    function testLoginIsSuccessful()
+    public function testLoginIsSuccessful()
     {
         $this->visit('/login')
              ->type('ormrepo@gmail.com', 'email')
@@ -20,7 +19,7 @@ class AuthenticationTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function testLoginIsAFailure()
+    public function testLoginIsAFailure()
     {
         $this->visit('/login')
         ->type('tom@gmail.com', 'email')
@@ -30,7 +29,7 @@ class AuthenticationTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function testRegistrationIsSuccessful()
+    public function testRegistrationIsSuccessful()
     {
         $this->visit('/register')
         ->type('Jon', 'username')
@@ -43,7 +42,7 @@ class AuthenticationTests extends \BrowserKitTestCase
     }
 
     /** @test */
-    function testRegistrationHasFailed()
+    public function testRegistrationHasFailed()
     {
         $this->visit('/register')
             ->type('Michael', 'username')

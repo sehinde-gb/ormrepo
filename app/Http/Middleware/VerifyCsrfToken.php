@@ -16,6 +16,6 @@ class VerifyCsrfToken extends BaseVerifier
         'broadcasting/auth',
         '/webhooks/mailgun_info/*',
         '/webhooks/mailgun_subscribe/*',
-        '/webhooks/mailgun_complaints/*'
+        '/webhooks/mailgun_complaints/*',
     ];
 }

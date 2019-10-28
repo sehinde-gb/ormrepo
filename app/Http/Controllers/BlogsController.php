@@ -11,8 +11,6 @@ use Newsletter;
 
 class BlogsController extends Controller
 {
-
-    
     /**
      * Display a listing of the resource.
      *
@@ -20,15 +18,12 @@ class BlogsController extends Controller
      * @return \Illuminate\Http\Response
      * @throws MethodNotFoundException
      */
-
     public function index(Request $request)
     {
-
         try {
             $query = $request->input('q');
 
             if ($query) {
-
                 $blogs = Blog::search($query)->get();
 
                 return view('pages.search', compact('blogs'));
@@ -44,7 +39,6 @@ class BlogsController extends Controller
         return view('blogs.index', compact('blogs', 'title'));
     }
 
-
     /**
      * Display the specified resource.
      *
@@ -54,10 +48,8 @@ class BlogsController extends Controller
      * @internal param $id
      * @internal param int $post
      */
-
     public function show(Blog $blog)
     {
-
         try {
             $previous = Blog::where('id', '<=', $blog->id)->first();
 
@@ -69,11 +61,10 @@ class BlogsController extends Controller
         return view('blogs.show')->with([
             'blog' => $blog,
             'previous' => $previous,
-            'next' => $next
+            'next' => $next,
 
         ]);
     }
-
 
     /**
      * Show the slug within the show page.
@@ -82,7 +73,6 @@ class BlogsController extends Controller
      * @return \Illuminate\Http\Response
      * @throws MethodNotFoundException
      */
-
     public function showSlug($slug)
     {
         try {

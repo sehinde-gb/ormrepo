@@ -1,4 +1,5 @@
 <?php
+
 return [
 
     /*
@@ -55,7 +56,7 @@ return [
     'pretend' => [
         'enabled' => false,
         'options' => [
-            'isRole' => true
+            'isRole' => true,
         ],
     ],
 

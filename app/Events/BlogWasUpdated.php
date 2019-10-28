@@ -2,10 +2,10 @@
 
 namespace App\Events;
 
+use App\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Queue\SerializesModels;
-use App\User;
 
 class BlogWasUpdated
 {
@@ -15,7 +15,6 @@ class BlogWasUpdated
      * @var User
      */
     public $user;
-
 
     /**
      * Create a new event instance.

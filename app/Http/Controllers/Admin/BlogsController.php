@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Blog;
 use App\Events\BlogWasCreated;
 use App\Events\BlogWasUpdated;
+use App\Exceptions\HttpNotFoundException;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\BlogRequest;
-use App\Blog;
 use App\Notifications\BlogPublished;
 use App\Notifications\BlogUpdated;
 use App\Tag;
-use Illuminate\Http\Request;
 use App\User;
-use App\Http\Controllers\Controller;
-use App\Exceptions\HttpNotFoundException;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Markdown;
 
@@ -29,9 +29,8 @@ class BlogsController extends Controller
      */
     public function __construct(User $user)
     {
-         $this->middleware('auth');
+        $this->middleware('auth');
     }
-
 
     /**
      * Display a listing of the resource.
@@ -41,10 +40,8 @@ class BlogsController extends Controller
      */
     public function index(Request $request)
     {
-
         try {
             $query = $request->input('q');
-
 
             if ($query) {
                 $blogs = Blog::search($query)->get();
@@ -52,7 +49,6 @@ class BlogsController extends Controller
                 return view('pages.search', compact('blogs'));
             } else {
                 $blogs = Blog::latest('published_at')->get()->all();
-
 
                 $title = 'Blog Listings';
             }
@@ -63,7 +59,6 @@ class BlogsController extends Controller
         return view('admin.blogs.index', compact('blogs', 'title'));
     }
 
-
     /**
      * Show the form for creating a new resource.
      * @return Response
@@ -71,7 +66,6 @@ class BlogsController extends Controller
      */
     public function create()
     {
-
         try {
             $title = 'Create Blog';
 
@@ -80,26 +74,18 @@ class BlogsController extends Controller
             throw new HttpNotFoundException($e->getMessage());
         }
 
-
-
         return view('admin.blogs.create', compact('blog', 'tags', 'title'));
     }
-
-
-
 
     /**
      * Store a newly created resource in storage.
      *
      * @param BlogRequest|Request $request
      * @return Response
-     *
      */
     public function store(BlogRequest $request)
     {
-
         $this->createBlog($request);
-
 
         return redirect('/admin/blogs');
     }
@@ -111,11 +97,9 @@ class BlogsController extends Controller
      * @return Response
      * @throws HttpNotFoundException
      * @internal param $blog
-     *
      */
     public function show($id)
     {
-
         try {
             $blog = Blog::findOrFail($id);
 
@@ -129,12 +113,10 @@ class BlogsController extends Controller
         return view('admin.blogs.show')->with([
             'blog' => $blog,
             'previous' => $previous,
-            'next' => $next
-
+            'next' => $next,
 
         ]);
     }
-
 
     /**
      * Show the form for editing the specified resource.
@@ -142,7 +124,6 @@ class BlogsController extends Controller
      * @throws HttpNotFoundException
      * @internal param $id
      */
-
     public function edit($id)
     {
         try {
@@ -190,11 +171,10 @@ class BlogsController extends Controller
             $tag_list = $request->input('tag_list');
         }
 
-            $this->syncTags($blog, $tag_list);
+        $this->syncTags($blog, $tag_list);
 
-            return redirect('/admin/blogs');
+        return redirect('/admin/blogs');
     }
-
 
     /**
      * Deletes the blog post from storage.
@@ -214,7 +194,6 @@ class BlogsController extends Controller
 
         return redirect('/admin/blogs');
     }
-
 
     /**
      * Assign the results of the PostRequest and assign
@@ -241,15 +220,13 @@ class BlogsController extends Controller
 
         $user->notify(new BlogPublished($user, $blog));
 
-        $imageName = $blog->id . '.' .
+        $imageName = $blog->id.'.'.
             $request->file('feat_image')->getClientOriginalExtension();
 
         $request->file('feat_image')->move(
-            base_path() . '/public/featured/images/',
+            base_path().'/public/featured/images/',
             $imageName
         );
-
-
 
         return $blog;
     }
@@ -266,14 +243,12 @@ class BlogsController extends Controller
         $blog->tags()->sync($tags);
     }
 
-
     /**
-     * Show the slug within the show page
+     * Show the slug within the show page.
      * @param $slug
      * @return \Illuminate\Http\Response
      * @throws HttpNotFoundException
      */
-
     public function showSlug($slug)
     {
         try {

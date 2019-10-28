@@ -26,11 +26,9 @@ class BlogsPolicy
      */
     public function __construct(User $user, Blog $blog)
     {
-
         $this->user = $user;
         $this->blog = $blog;
     }
-
 
     /**
      * Determine if the given blog can be updated by the user.
@@ -38,7 +36,6 @@ class BlogsPolicy
      * @param  \App\User $user
      * @param Blog $blog
      * @return bool
-     *
      */
     public function update(User $user, Blog $blog)
     {
@@ -51,7 +48,6 @@ class BlogsPolicy
      * @param  \App\User $user
      * @param Blog $blog
      * @return bool
-     *
      */
     public function delete(User $user, Blog $blog)
     {
@@ -64,7 +60,6 @@ class BlogsPolicy
      * @param  \App\User $user
      * @param Blog $blog
      * @return bool
-     *
      */
     public function create(User $user, Blog $blog)
     {

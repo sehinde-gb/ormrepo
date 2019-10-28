@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-
-
     /**
      * Fillable fields for a Category.
      *
@@ -15,13 +13,11 @@ class Tag extends Model
      */
     protected $fillable = [
         'name',
-        'slug'
+        'slug',
     ];
 
-
-
     /**
-     * Get the blogs associated with a given category
+     * Get the blogs associated with a given category.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */

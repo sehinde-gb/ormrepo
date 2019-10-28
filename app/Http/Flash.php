@@ -4,9 +4,8 @@ namespace App\Http;
 
 class Flash
 {
-
     /**
-     * Flash API create flash method assigns the title, message and levels dynamically
+     * Flash API create flash method assigns the title, message and levels dynamically.
      *
      * @param $title
      * @param $message
@@ -19,7 +18,7 @@ class Flash
         return session()->flash($key, [
             'title' => $title,
             'message' => $message,
-            'level' => $level
+            'level' => $level,
 
         ]);
     }
@@ -48,7 +47,6 @@ class Flash
     {
         return $this->create($title, $message, 'success');
     }
-
 
     /**
      * Error method passes the error to the create method lsited above.
