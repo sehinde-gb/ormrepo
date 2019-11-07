@@ -28,7 +28,8 @@
         "spatie/crawler": "^4.1.0",
         "kylekatarnls/laravel-carbon-2": "^1.0.0",
         "nesbot/carbon": "2.0.0-beta.2 as 1.26.3",
-        "intervention/image": "^2.5"
+        "intervention/image": "^2.5",
+        "laravel/helpers": "^1.1"
        
     },
     "require-dev": {
