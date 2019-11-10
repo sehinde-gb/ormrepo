@@ -17,8 +17,8 @@
         <a href="https://youtu.be/-iilpXv_07A"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 1</button></a>
         <a href="https://youtu.be/7I0fQnx-l0M"><button type="submit" class="btn btn-highlights">Successful Guerilla Marketing Pt. 2</button></a>
         <a href=" https://youtu.be/aPnVuZQe9kE"><button type="submit" class="btn btn-highlights">Stand Out Niche !</button></a>
-        <a href="https://youtu.be/ampO98wM8zM"><button type="submit" class="btn btn-highlights">Improve Rail Capacity 1</button></a>
-        <a href="https://youtu.be/BgRI_FPK7PY"><button type="submit" class="btn btn-highlights">Improve Rail Capacity 2</button></a>
+        <a href="https://youtu.be/ampO98wM8zM"><button type="submit" class="btn btn-highlights">Rail Capacity Challenge 1</button></a>
+        <a href="https://youtu.be/kYk-WTaEC10"><button type="submit" class="btn btn-highlights">Rail Capacity Challenge 2</button></a>
 </div><!-- /.coder-container -->
 
 @endsection
