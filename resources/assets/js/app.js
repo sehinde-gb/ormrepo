@@ -21,10 +21,10 @@ Turbolinks.start();
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('message', require('./components/Message.vue'));
+//Vue.component('message', require('./components/Message.vue'));
 
 
-import message from './components/Message.vue'
+//import message from './components/Message.vue'
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -32,7 +32,7 @@ document.addEventListener('turbolinks:load', () => {
     const root = new Vue({
         el: '#root',
 
-        components: { message }
+        //components: { message }
 
     });
 
